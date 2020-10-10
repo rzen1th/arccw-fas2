@@ -320,24 +320,6 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.Hook_SelectReloadAnimation = function( wep, curanim )
-	local playanim
-	
-	if wep.Attachments[9].Installed == "fes_fas2_perk_proficiency" then
-		if		curanim == "reload_empty"	and	wep.Animations[reload_empty_soh]	then
-			playanim = curanim .. "_soh"
-		elseif	curanim == "reload"			and wep.Animations[reload_soh]			then
-			playanim = curanim .. "_soh"
-		end
-	end
-		
-	if playanim then
-		return playanim
-	else
-		return
-	end
-end
-
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
