@@ -301,7 +301,7 @@ SWEP.Animations = {
         LHIKIn = 0.75,
         LHIKOut = 0.75,
     },
-    ["reload_soh"] = {
+    ["reload_nomen"] = {
         Source = "reload_nomen",
         Time = 117/35,	
 		MinProgress = 110/35,		
@@ -309,7 +309,7 @@ SWEP.Animations = {
         Checkpoints = {24, 42, 59, 71, 89},
         FrameRate = 37,
     },
-    ["reload_empty_soh"] = {
+    ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
 		MinProgress = 30/35,		
         Time = 150/35,		
@@ -346,6 +346,28 @@ SWEP.Animations = {
         Source = "bipod_reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 168/35,
+        Checkpoints = {23, 51, 79, 106, 134},
+        FrameRate = 30,
+        LastClip1OutTime = 2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5
+    },	
+    ["reload_bipod_nomen"] = {
+        Source = "bipod_reload_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 119/35 * 0.7,
+        Checkpoints = {20, 60, 80, 145, 170},
+        FrameRate = 30,
+        LastClip1OutTime = 3,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5
+    },
+    ["reload_bipod_nomen_empty"] = {
+        Source = "bipod_reload_empty_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 168/35 * 0.7,
         Checkpoints = {23, 51, 79, 106, 134},
         FrameRate = 30,
         LastClip1OutTime = 2,
