@@ -251,9 +251,10 @@ SWEP.Attachments = {
 function SWEP:SelectReloadAnimation()
     local ret
 	local inbipod = (self:InBipod()) and "_bipod" or ""
+	local nomen = self:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen" or ""
 	local empty = (self:Clip1() == 0) and "_empty" or ""
 
-    ret = "reload" .. inbipod .. empty
+    ret = "reload" .. inbipod .. nomen .. empty
 
     return ret
 end
