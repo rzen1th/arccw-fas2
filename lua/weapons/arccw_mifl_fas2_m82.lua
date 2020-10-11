@@ -248,6 +248,16 @@ SWEP.Attachments = {
     },	
 }
 
+function SWEP:SelectReloadAnimation()
+    local ret
+	local inbipod = (self:InBipod()) and "_bipod" or ""
+	local empty = (self:Clip1() == 0) and "_empty" or ""
+
+    ret = "reload" .. inbipod .. empty
+
+    return ret
+end
+
 SWEP.Animations = {
     ["draw"] = {
         Source = "deploy",
@@ -332,7 +342,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5
     },
-    ["reload_empty_bipod"] = {
+    ["reload_bipod_empty"] = {
         Source = "bipod_reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 168/35,
