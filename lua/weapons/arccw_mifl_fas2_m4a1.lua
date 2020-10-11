@@ -123,13 +123,20 @@ SWEP.CustomizeAng = Angle(5, 30, 30)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["mifl_fas2_m4a1_stock_a2"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 1},					
+        },
+    },
     ["whisperer"] = {
+        NameChange = "Mark SD",	
         VMBodygroups = {
             {ind = 1, bg = 3},	
             {ind = 2, bg = 3},				
         },
     },
     ["mifl_fas2_m4a1_barrel_kompact"] = {
+        NameChange = "Mark 4c",	
         VMBodygroups = {
             {ind = 1, bg = 2},	
             {ind = 2, bg = 2},				
@@ -146,16 +153,53 @@ SWEP.AttachmentElements = {
 		},
     },
     ["mifl_fas2_m4a1_barrel_a2"] = {
+        NameChange = "Mark 16",	
         VMBodygroups = {
             {ind = 1, bg = 1},	
             {ind = 2, bg = 1},				
         },
         AttPosMods = {
             [3] = {
-                vpos = Vector(30, -1.3, 0),
+                vpos = Vector(31, -1.3, 0),
+            },		
+		},		
+    },
+    ["mifl_fas2_m4a1_barrel_no"] = {
+        NameChange = "Mark 04",	
+        VMBodygroups = {
+            {ind = 1, bg = 6},	
+            {ind = 2, bg = 6},				
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(13, -1.3, 0),
             },		
 		},		
     },	
+    ["mifl_fas2_m4a1_barrel_a1"] = {
+        NameChange = "Mark 16",		
+        VMBodygroups = {
+            {ind = 1, bg = 4},	
+            {ind = 2, bg = 4},				
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(36, -1.3, 0),
+            },		
+		},			
+    },	
+    ["mifl_fas2_m4a1_barrel_heat"] = {
+        NameChange = "Mark Grenadier",		
+        VMBodygroups = {
+            {ind = 1, bg = 5},	
+            {ind = 2, bg = 5},				
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(36, -1.3, 0),
+            },		
+		},			
+    },		
     ["20"] = {
         VMBodygroups = {
             {ind = 3, bg = 2},					
@@ -208,9 +252,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             barrel = 3
         elseif k == "mifl_fas2_m4a1_barrel_kompact" then
             barrel = 2
+        elseif k == "mifl_fas2_m4a1_barrel_no" then
+            barrel = 6	
+        elseif k == "mifl_fas2_m4a1_barrel_heat" then
+            barrel = 5				
         elseif k == "mifl_fas2_m4a1_barrel_a2" then
             barrel = 1
-        elseif k == "go_m4_barrel_long" then
+        elseif k == "mifl_fas2_m4a1_barrel_a1" then
             barrel = 4
         elseif k == "iron_none" then
             lp = true
@@ -219,7 +267,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local fs = barrel
     if lp then
-        fs = 4
+        fs = 7
     end
 
     vm:SetBodygroup(2, fs)
@@ -288,7 +336,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock_none", "go_stock"},
+        Slot = {"go_stock_none", "go_stock", "mifl_fas2_m4a1_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
@@ -319,6 +367,8 @@ SWEP.Attachments = {
         },
     },
 }
+
+SWEP.ShellRotateAngle = Angle(0, 180, 0)
 
 SWEP.Animations = {
     ["idle"] = {

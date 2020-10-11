@@ -18,7 +18,7 @@ att.GivesFlags = {"mifl_fas2_m4a1_barrel_sd"}
 att.Silencer = true
 att.Override_MuzzleEffect = "muzzleflash_suppressed"
 
-att.Mult_ShootPitch = 0.8
+att.Mult_ShootPitch = 0.9
 att.Mult_ShootVol = 0.75
 att.Mult_AccuracyMOA = 0.75
 att.Mult_Range = 1.2
