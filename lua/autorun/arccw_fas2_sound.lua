@@ -104,6 +104,13 @@ sound.Add({
 })
 
 sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RBULL.Extractor",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ragingbull/ragingbull_extractor.wav"}
+})
+
+sound.Add({
 	name = 			"Arccw_FAS2_Weapon_RBULL.Remove",
 	channel = 		CHAN_ITEM4,
 	volume = 		1.0,

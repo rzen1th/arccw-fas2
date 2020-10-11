@@ -76,7 +76,7 @@ SWEP.ShootPitch = 95 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_mifl/fas2/ragingbull/ragingbull_fire1.wav"
 SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/ragingbull/ragingbull_distance_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_fml/fas1_suppr/deagle.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/ragingbull/rag_whisper.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol_deagle"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"

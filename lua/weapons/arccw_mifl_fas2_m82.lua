@@ -73,7 +73,7 @@ SWEP.ShootVol = 170 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_mifl/fas2/m82/m82_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_fml/fas1_suppr/m82.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/m82/m82_whisper.wav"
 SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m82/m82_distance_fire1.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_1"
