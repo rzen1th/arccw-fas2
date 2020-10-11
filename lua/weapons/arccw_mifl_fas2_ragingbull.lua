@@ -233,15 +233,9 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-
-	local clipcount = wep:Clip1()
-	local clipsize	= wep.Primary.ClipSize
-
 	local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
 
-	local reloadtime = clipsize - clipcount
-
-	print("Reload" .. reloadtime .. nomen)
+	local reloadtime = wep:Clip1() - wep.Primary.ClipSize
 
     return "Reload" .. reloadtime .. nomen
 end
