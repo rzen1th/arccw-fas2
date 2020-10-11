@@ -54,7 +54,7 @@ SWEP.RecoilSide = 2
 SWEP.RecoilRise = 1.1
 SWEP.MaxRecoilBlowback = 3
 
-SWEP.Delay = 60 / 320 -- 60 / RPM.
+SWEP.Delay = 60 / 240 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -235,7 +235,7 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 	local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
 
-	local reloadtime = wep:Clip1() - wep.Primary.ClipSize
+	local reloadtime = (wep.Primary.ClipSize - wep:Clip1())
 
     return "Reload" .. reloadtime .. nomen
 end

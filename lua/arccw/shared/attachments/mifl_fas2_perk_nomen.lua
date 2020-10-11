@@ -16,12 +16,12 @@ att.Mult_SightTime = 0.95
 att.Override_FAS2NomenBackup = true
 
 att.Hook_SelectReloadAnimation = function(wep, anim)
-	local thething = wep.Animations[anim .. "_nomen"] and "_nomen" or ""
+	local thething = wep.Animations["reload_nomen"] and "_nomen" or ""
 	local empty = wep:Clip1() == 0 and "_empty" or ""
 
 	if GetConVar("developer"):GetBool() and thething == "" then print(anim .. " NO NOMEN RELOAD!!! ARCCW FAS2") end
 
-	return anim .. thething .. empty
+	return "reload" .. thething .. empty
 end
 
 att.AutoStats = true
