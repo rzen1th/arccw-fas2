@@ -404,7 +404,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
     },
-    ["reload_soh"] = {
+    ["reload_nomen"] = {
         Source = "reload_nomen",
         Time = 68/30,			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -412,7 +412,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,		
     },
-    ["reload_empty_soh"] = {
+    ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",	
         Time = 68/30,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
