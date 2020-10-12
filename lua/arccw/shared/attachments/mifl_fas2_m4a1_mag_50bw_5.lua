@@ -1,0 +1,46 @@
+att.PrintName = "5-Round .50 Beowulf"
+att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_20.png", "mips smooth")
+att.Description = ".50 Beowulf ammunition in a quad stack. Middle ground between handling and fire power. Deals more damage but reduces range."
+att.Desc_Pros = {
+}
+att.Desc_Cons = {
+    "con.magcap"
+}
+att.SortOrder = 5
+att.AutoStats = true
+att.Slot = "mifl_fas2_m4a1_mag"
+
+att.Mult_SightTime = 0.9
+att.Mult_ReloadTime = 1.1
+
+att.Override_ClipSize = 5
+att.Mult_Damage = 2.3
+att.Mult_DamageMin = 1.6
+att.Mult_Range = 0.9
+att.Mult_Recoil = 1.3
+att.Mult_ShootPitch = 0.875
+
+att.Hook_GetShootSound = function(wep, fsound)
+    if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_fire1.wav" end
+    if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_suppressed_fire1.wav" end
+end
+
+att.ExcludeFlags = {"3bst"}
+att.GivesFlags = {"a1"}
+
+att.Mult_RPM = 0.7
+
+att.Override_Ammo = "357"
+
+att.Override_Trivia_Calibre = ".50 Beowulf"
+att.Override_Trivia_Class = "Desginated Marksman Rifle"
+att.ActivateElements = {"20"}
+
+att.Override_Firemodes = {
+    {
+        Mode = 1,
+    },	
+    {
+        Mode = 0
+    }
+}

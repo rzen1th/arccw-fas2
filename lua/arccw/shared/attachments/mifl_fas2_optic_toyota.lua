@@ -24,9 +24,9 @@ att.AdditionalSights = {
 }
 
 att.Holosight = true
-att.HolosightReticle = Material("mifl_tarkov_reticle/uh1.png")
+att.HolosightReticle = Material("mifl_fas2_reticle/toyota.png")
 att.HolosightNoFlare = true
-att.HolosightSize = 1.8
+att.HolosightSize = 4
 att.HolosightBone = "holosight"
 att.Colorable = true
 

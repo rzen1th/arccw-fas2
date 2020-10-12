@@ -1,6 +1,6 @@
 att.PrintName = "32-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_32.png", "mips smooth")
-att.Description = "Extended barrel. Improves range and recoil control but poor handling."
+att.Description = "9mm mags offers decent handling exchange for overall performance."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

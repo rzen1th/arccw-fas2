@@ -31,4 +31,4 @@ att.Add_BarrelLength = 12
 
 att.Override_PhysTracerProfile = 4
 
-att.Mult_RPM = 0.6
+att.Mult_RPM = 0.9

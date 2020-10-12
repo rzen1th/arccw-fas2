@@ -2,7 +2,6 @@ att.PrintName = "Proficiency"
 att.Icon = Material("entities/arccw_fml_fas1_soh.png")
 att.Description = "Improves reloading speed and weapon handling."
 att.Desc_Pros = {
-	"Faster reloads"
 }
 att.Desc_Cons = {
 }
@@ -13,15 +12,12 @@ att.InvAtt = "perk_fastreload"
 att.Mult_DrawTime = 0.8
 att.Mult_SightTime = 0.95
 
-att.Override_FAS2NomenBackup = true
-
 att.Hook_SelectReloadAnimation = function(wep, anim)
-	local thething = wep.Animations["reload_nomen"] and "_nomen" or ""
-	local empty = wep:Clip1() == 0 and "_empty" or ""
-
-	if GetConVar("developer"):GetBool() and thething == "" then print(anim .. " NO NOMEN RELOAD!!! ARCCW FAS2") end
-
-	return "reload" .. thething .. empty
+    if anim == "reload_empty" then
+        return "reload_empty_soh"
+    elseif anim == "reload" then
+        return "reload_soh"
+    end
 end
 
 att.AutoStats = true

@@ -54,7 +54,7 @@ SWEP.RecoilSide = 2
 SWEP.RecoilRise = 1.1
 SWEP.MaxRecoilBlowback = 3
 
-SWEP.Delay = 60 / 240 -- 60 / RPM.
+SWEP.Delay = 60 / 320 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -233,11 +233,23 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-	local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
-
-	local reloadtime = (wep.Primary.ClipSize - wep:Clip1())
-
-    return "Reload" .. reloadtime .. nomen
+----	
+    if wep:Clip1() == 3 then 
+        if anim == "reload" then
+            return "reload2"
+			end
+	end		
+    if wep:Clip1() == 2 then 
+        if anim == "reload" then
+            return "reload3"
+			end
+	end	
+    if wep:Clip1() == 1 then 
+        if anim == "reload" then
+            return "reload4"
+			end
+	end		
+----		
 end
 
 SWEP.Animations = {
@@ -253,66 +265,37 @@ SWEP.Animations = {
     ["fire_iron"] = {
         Source = "Fire_Scoped01",
     },
-    ["Reload1"] = {
+    ["reload"] = {
         Source = "Reload1",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
     },
-    ["Reload2"] = {
+    ["reload2"] = {
+		Time = 105/30,
+        ShellEjectAt = 26/30,			
         Source = "Reload2",
-		Time = 105/30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
     },	
-    ["Reload3"] = {
-        Source = "Reload3",
+    ["reload3"] = {
 		Time = 120/30,	
+        Source = "Reload3",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
     },	
-    ["Reload4"] = {
-        Source = "Reload4",
+    ["reload4"] = {
 		Time = 135/30,	
+        Source = "Reload4",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
     },	
-    ["Reload5"] = {
-        Source = "Reload5",		
-        LHIK = true,
-        LHIKIn = 0.1,
-        LHIKOut = 0.25,
-    },
--- Nomen
-    ["Reload1_nomen"] = {
-        Source = "Reload1_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
-    },
-    ["Reload2_nomen"] = {	
-        Source = "Reload2_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
-    },	
-    ["Reload3_nomen"] = {
-        Source = "Reload3_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
-    },	
-    ["Reload4_nomen"] = {
-        Source = "Reload4_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
-    },	
-    ["Reload5_nomen"] = {
-        Source = "Reload5_nomen",	
+    ["reload_empty"] = {
+        Source = "Reload5",	
+        ShellEjectAt = 26/30,		
         LHIK = true,
         LHIKIn = 0.1,
         LHIKOut = 0.25,

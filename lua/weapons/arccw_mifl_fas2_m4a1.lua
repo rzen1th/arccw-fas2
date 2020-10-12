@@ -25,9 +25,9 @@ SWEP.ViewModelFOV = 54
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 30
-SWEP.DamageMin = 22 -- damage done at maximum range
-SWEP.Range = 100 -- in METRES
+SWEP.Damage = 36
+SWEP.DamageMin = 18 -- damage done at maximum range
+SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -64,7 +64,6 @@ SWEP.HipDispersion = 380 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 200
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
-SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -108,11 +107,11 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.ActivePos = Vector(0, 2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-4, 0, -1)
+SWEP.CrouchPos = Vector(-2, 0, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
-SWEP.HolsterPos = Vector(3, 3, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+SWEP.HolsterPos = Vector(4, 0, -0.2)
+SWEP.HolsterAng = Angle(-7.036, 30.016, -10)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -405,7 +404,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
     },
-    ["reload_nomen"] = {
+    ["reload_soh"] = {
         Source = "reload_nomen",
         Time = 68/30,			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -413,7 +412,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,		
     },
-    ["reload_nomen_empty"] = {
+    ["reload_empty_soh"] = {
         Source = "reload_empty_nomen",	
         Time = 68/30,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,

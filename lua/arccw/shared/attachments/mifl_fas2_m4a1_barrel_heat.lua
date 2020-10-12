@@ -12,7 +12,7 @@ att.Mult_MoveSpeed = 0.9
 
 att.Mult_Range = 1.2
 att.Mult_Recoil = 0.9
-att.Mult_SightTime = 1.275
+att.Mult_SightTime = 1.225
 att.Mult_AccuracyMOA = 0.9
 
 att.Mult_ShootPitch = 0.95
