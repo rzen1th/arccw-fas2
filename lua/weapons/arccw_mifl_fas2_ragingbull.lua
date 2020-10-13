@@ -27,7 +27,7 @@ SWEP.CrouchAng = Angle(0, 0, -30)
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_ragingbull.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_ragingbull.mdl"
-SWEP.ViewModelFOV = 50
+SWEP.ViewModelFOV = 54
 
 SWEP.Damage = 120
 SWEP.DamageMin = 49 -- damage done at maximum range
@@ -104,8 +104,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.401, 2, 1.534),
-    Ang = Angle(0.2, 0, 0),
+    Pos = Vector(-4.09, 2, 2.54),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
@@ -116,11 +116,11 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 
-SWEP.ActivePos = Vector(0, 0, 0.5)
+SWEP.ActivePos = Vector(0, 0, 1.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(2.276, -1.167, -8.44)
-SWEP.HolsterAng = Angle(30.833, 1.792, -1.269)
+SWEP.HolsterPos = Vector(0, 0, 3)
+SWEP.HolsterAng = Angle(-5, 5, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
