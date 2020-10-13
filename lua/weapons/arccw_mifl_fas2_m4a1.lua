@@ -127,6 +127,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 1},					
         },
     },
+    ["mifl_fas2_m4a1_stock_sd"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 2},					
+        },
+    },	
     ["whisperer"] = {
         NameChange = "Mark SD",	
         VMBodygroups = {
