@@ -97,18 +97,18 @@ SWEP.SightedSpeedMult = 0.55
 SWEP.SightTime = 0.415
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    [12] = "AmmoBelt12",	
-    [11] = "AmmoBelt11",
-    [10] = "AmmoBelt10",
-    [9] = "AmmoBelt09",	
-	[8] = "AmmoBelt08",
-    [7] = "AmmoBelt07",
-    [6] = "AmmoBelt06",
-    [5] = "AmmoBelt05",
-    [4] = "AmmoBelt04",
-    [3] = "AmmoBelt03",
-    [2] = "AmmoBelt02",	
-    [1] = "AmmoBelt01",	
+    [12] = "Bullet12",	
+    [11] = "Bullet11",
+    [10] = "Bullet10",
+    [9] = "Bullet09",	
+	[8] = "Bullet08",
+    [7] = "Bullet07",
+    [6] = "Bullet06",
+    [5] = "Bullet05",
+    [4] = "Bullet04",
+    [3] = "Bullet03",
+    [2] = "Bullet02",	
+    [1] = "Bullet01",	
 }
 
 
@@ -255,31 +255,28 @@ SWEP.Attachments = {
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle",
-        Time = 1,
+        Source = "idle1",
+        Time = 0,
     },
     ["draw"] = {
-        Source = "draw",
-        Time = 35/60,
-        SoundTable = {{s = "weapons/arccw/aug/aug_draw.wav", t = 0}},
+        Source = "deploy",
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 1,
     },
     ["ready"] = {
-        Source = "deploy",
-        Time = 75/60,
+        Source = "deploy_first01",
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.25,
     },
     ["fire"] = {
-        Source = "fire",
+        Source = "fire1",
         Time = 30/60,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
-        Source = "iron",
+        Source = "fire1_scoped",
         Time = 30/60,
         ShellEjectAt = 0,
     },
