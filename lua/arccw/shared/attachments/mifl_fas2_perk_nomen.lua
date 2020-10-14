@@ -1,5 +1,5 @@
 att.PrintName = "Proficiency"
-att.Icon = Material("entities/arccw_fml_fas1_soh.png")
+att.Icon = Material("entities/acwatt_fas2_generic.png", "smooth")
 att.Description = "Improves reloading speed and weapon handling."
 att.Desc_Pros = {
 	"Faster reloads"
