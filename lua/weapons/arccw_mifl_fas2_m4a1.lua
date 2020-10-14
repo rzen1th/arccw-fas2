@@ -122,6 +122,11 @@ SWEP.CustomizeAng = Angle(5, 30, 30)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["buftube"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 4},					
+        },
+    },
     ["mifl_fas2_m4a1_stock_a2"] = {
         VMBodygroups = {
             {ind = 5, bg = 1},					
@@ -344,8 +349,8 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(0, -5, -3),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(-2, -1.3, 0),
+            vang = Angle(0, 0, -90),
         },
         VMScale = Vector(1, 1, 1)
     },

@@ -25,7 +25,7 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
 SWEP.WorldModel = "models/weapons/arccw/fml/fas1/w_vollmer.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "00000000000000000000000000"
 
 SWEP.Damage = 39
 SWEP.DamageMin = 21 -- damage done at maximum range
@@ -80,9 +80,9 @@ SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_fml/mg_vollmer/vollmer_fire1.wav"
-SWEP.ShootSound = "weapons/arccw_fml/mg_vollmer/vollmer_fire2.wav", "weapons/arccw_fml/mg_vollmer/vollmer_fire3.wav", "weapons/arccw_fml/mg_vollmer/vollmer_fire4.wav","weapons/arccw_fml/mg_vollmer/vollmer_fire5.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_fml/fas1_suppr/vollmer.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/m249/m249_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/m249/m249_suppressed_fire1.wav"
+SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m249/m249_distance_fire1.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_1"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
@@ -97,18 +97,18 @@ SWEP.SightedSpeedMult = 0.55
 SWEP.SightTime = 0.415
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    [12] = "AmmoBelt12",	
-    [11] = "AmmoBelt11",
-    [10] = "AmmoBelt10",
-    [9] = "AmmoBelt09",	
-	[8] = "AmmoBelt08",
-    [7] = "AmmoBelt07",
-    [6] = "AmmoBelt06",
-    [5] = "AmmoBelt05",
-    [4] = "AmmoBelt04",
-    [3] = "AmmoBelt03",
-    [2] = "AmmoBelt02",	
-    [1] = "AmmoBelt01",	
+    [12] = "Bullet12",	
+    [11] = "Bullet11",
+    [10] = "Bullet10",
+    [9] = "Bullet09",	
+	[8] = "Bullet08",
+    [7] = "Bullet07",
+    [6] = "Bullet06",
+    [5] = "Bullet05",
+    [4] = "Bullet04",
+    [3] = "Bullet03",
+    [2] = "Bullet02",	
+    [1] = "Bullet01",	
 }
 
 
@@ -142,6 +142,21 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["23"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 1},	
+            {ind = 3, bg = 1},				
+        },
+    },
+    ["60"] = {
+		Mult_ReloadTime = 1/1.2,
+        VMBodygroups = {
+            {ind = 1, bg = 2},	
+            {ind = 3, bg = 2},	
+            {ind = 4, bg = 1},
+            {ind = 5, bg = 2},			
+        },
+    },	
     ["noch"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
         WMBodygroups = {},
@@ -216,6 +231,11 @@ SWEP.Attachments = {
         },
     },
     {
+        PrintName = "Magazine",
+        Slot = {"mifl_fas2_m249_mag"},
+        DefaultAttName = "Standard Belt-Fed 5.56"
+    },	
+    {
         PrintName = "Grip",
         Slot = "grip",
         DefaultAttName = "Standard Grip"
@@ -236,12 +256,12 @@ SWEP.Attachments = {
     },	
     {
         PrintName = "Perk",
-        Slot = {"perk"}
+        Slot = {"perk", "perk_fas2"}
     },
     {
         PrintName = "Charm",
         DefaultAttName = "None",
-        Slot = {"fml_charm", "charm"},
+        Slot = {"charm"},
         Bone = "Weapon_Main",
         Offset = {
             vpos = Vector(1, -3, 5),
@@ -253,36 +273,59 @@ SWEP.Attachments = {
     },	
 }
 
+SWEP.Hook_SelectReloadAnimation = function(wep, anim)
+    if wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" then
+        if anim == "reload" then
+            return "reload_stanag"
+		elseif anim == "reload_empty" then
+            return "reload_stanag_empty"
+        end
+    end	
+	
+    if wep:Clip1() <= 12 then
+        if anim == "reload" then
+            return "reload_empty_unfired"
+        end
+    end
+end
+
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle",
-        Time = 1,
+        Source = "idle1",
+        Time = 0,
     },
     ["draw"] = {
-        Source = "draw",
-        Time = 35/60,
-        SoundTable = {{s = "weapons/arccw/aug/aug_draw.wav", t = 0}},
+        Source = "deploy",
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 1,
     },
     ["ready"] = {
-        Source = "deploy",
-        Time = 75/60,
+        Source = "deploy_first01",
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.25,
     },
     ["fire"] = {
-        Source = "fire",
+        Source = "fire1",
         Time = 30/60,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
-        Source = "iron",
+        Source = "fire1_scoped",
         Time = 30/60,
         ShellEjectAt = 0,
     },
+    ["reload_empty_unfired"] = {
+        Source = "reload_empty_unfired",
+        LastClip1OutTime = 200/40,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Checkpoints = {37, 58, 75, 92, 119, 124},	
+        FrameRate = 30,		
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },	
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -293,13 +336,30 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 200/40,
+        LastClip1OutTime = 200/40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,
-        LastClip1OutTime = 110/60,			
+        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },	
+    ["reload_stanag"] = {
+        Source = "reload_stanag",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 180/40,		
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },
+    ["reload_stanag_empty"] = {
+        Source = "reload_stanag_empty",
+        LastClip1OutTime = 200/40,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Checkpoints = {37, 58, 75, 92, 119, 124},	
+        FrameRate = 30,		
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },		
 }

@@ -131,7 +131,7 @@ SWEP.AttachmentElements = {
 		{ind = 1, bg = 1},
 		{ind = 2, bg = 2},
 		},	
-        WMBodygroups = {},
+		Bipod = false,
     },		
 }
 
