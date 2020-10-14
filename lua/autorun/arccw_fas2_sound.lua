@@ -210,3 +210,61 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/m4a1/m4_check.wav"}
 })
+
+
+//M249
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Charge",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_charge.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Lidopen",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_lidopen.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Lidclose",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_lidclose.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Boxremove",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_boxremove.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Boxinsert",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_boxinsert.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Beltpull",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_beltpull.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Beltremove",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_beltremove.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M249.Beltload",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m249/m249_beltload.wav"}
+})
