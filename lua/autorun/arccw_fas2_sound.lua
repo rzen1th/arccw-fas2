@@ -268,3 +268,24 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/m249/m249_beltload.wav"}
 })
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M16A2.MagOut",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m16a2/m16a2_magout.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M16A2.MagIn",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m16a2/m16a2_magin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M16A2.MagHousing",
+	channel = 		CHAN_ITEM4,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m16a2/m16a2_maghousing.wav"}
+})

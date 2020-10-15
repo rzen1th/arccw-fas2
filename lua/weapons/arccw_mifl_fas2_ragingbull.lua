@@ -140,6 +140,9 @@ SWEP.AttachmentElements = {
     ["b_no"] = {
         VMBodygroups = {{ind = 2, bg = 4}},
     },		
+    ["rail"] = {
+        VMBodygroups = {{ind = 1, bg = 1}},
+    },	
 }
 
 SWEP.RejectAttachments = {
@@ -153,7 +156,7 @@ SWEP.Attachments = {
         Slot = { "optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "RagingBullBase", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(5, -2.5, 0), -- offset that the attachment will be relative to the bone
+            vpos = Vector(5, -4.2, 0), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, -90),
             wpos = Vector(5, 0.739, -3.8),
             wang = Angle(-10, 0, 180)
@@ -188,8 +191,8 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "RagingBullBase",
         Offset = {
-            vpos = Vector(-0.65, -3.5, 5), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, 180),
+            vpos = Vector(8, -2, 0), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, -90),
             wpos = Vector(6, -0.253, -3.75),
             wang = Angle(-8.829, -0.556, 90)
         },
@@ -223,8 +226,8 @@ SWEP.Attachments = {
         Slot = {"charm"},
         Bone = "RagingBullBase",
         Offset = {
-            vpos = Vector(0.5, -3, 9),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(2, -3, -0.5),
+            vang = Angle(0, 0, -90),
             wpos = Vector(10, 1, -3.5),
             wang = Angle(-9, 0, 180)
         },

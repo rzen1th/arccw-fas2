@@ -7,7 +7,9 @@ att.Desc_Cons = {
 }
 att.SortOrder = 32
 att.AutoStats = true
-att.Slot = "mifl_fas2_m4a1_mag"
+att.Slot = {"mifl_fas2_m4a1_mag", "mifl_fas2_m249_mag"}
+
+att.ActivateElements = {"32"}
 
 att.Mult_SightedSpeedMult = 1.12
 
