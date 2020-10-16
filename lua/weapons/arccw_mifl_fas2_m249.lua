@@ -3,8 +3,8 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Mini 556"
-SWEP.TrueName = "M249"
+SWEP.PrintName = "BEMG 5.56"
+SWEP.TrueName = "Minimi"
 SWEP.Trivia_Class = "Light Machine Gun"
 SWEP.Trivia_Desc = "Big belt fed m4."
 SWEP.Trivia_Manufacturer = "Gun Manufacturing"
@@ -23,7 +23,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
 SWEP.WorldModel = "models/weapons/arccw/fml/fas1/w_vollmer.mdl"
-SWEP.ViewModelFOV = 60
+SWEP.ViewModelFOV = 57
 
 SWEP.DefaultBodygroups = "00000000000000000000000000"
 
@@ -120,7 +120,7 @@ SWEP.CaseBones = {}
 SWEP.IronSightStruct = {
     Pos = Vector(-3.981, -4, 0.623),
     Ang = Angle(0.764, 0, 0),
-    Magnification = 1.1,
+    Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -130,7 +130,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(0, 5, 0)
+SWEP.ActivePos = Vector(-1, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(10, -6, -4.011)
@@ -234,11 +234,6 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_m249_mag"},
         DefaultAttName = "Standard Belt-Fed 5.56"
-    },	
-    {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
     },
     {
         PrintName = "Stock",
@@ -320,8 +315,6 @@ SWEP.Animations = {
         Source = "reload_empty_unfired",
         LastClip1OutTime = 200/40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
@@ -338,8 +331,6 @@ SWEP.Animations = {
         Source = "reload_empty",
         LastClip1OutTime = 200/40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
@@ -356,8 +347,6 @@ SWEP.Animations = {
         Source = "reload_stanag_empty",
         LastClip1OutTime = 200/40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,

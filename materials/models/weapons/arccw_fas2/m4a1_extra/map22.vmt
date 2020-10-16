@@ -3,7 +3,7 @@
 	"$baseTexture" "models\weapons\arccw_fas2\m4a1_extra\map22"
 	"$envmapmask" ""
 	"$envmap" "env_cubemap"
-	"$envmaptint" "[.08 .08 .08]"
+	"$envmaptint" "[.2 .2 .2]"
 	"$basemapalphaphongmask" 	"1"
 	"$phong" 			"1"
 	"$phongexponent"                                   "10"

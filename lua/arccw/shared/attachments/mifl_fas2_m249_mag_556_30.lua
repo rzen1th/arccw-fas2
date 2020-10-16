@@ -1,4 +1,4 @@
-att.PrintName = "60-Round 5.56"
+att.PrintName = "60-Round 5.56 M249 VERSION"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_60.png", "mips smooth")
 att.Description = "Quadstack magazine with more rounds. Poor handling."
 att.Desc_Pros = {
