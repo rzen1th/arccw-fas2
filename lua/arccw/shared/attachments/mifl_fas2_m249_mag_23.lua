@@ -26,6 +26,8 @@ att.Override_Ammo = "buckshot"
 att.Override_Trivia_Calibre = "23mm"
 att.Override_Trivia_Class = "Shotgun"
 
+att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
+
 att.Mult_AccuracyMOA = 40
 att.Mult_HipDispersion = 0.4
 att.Mult_RPM = 0.35

@@ -1,6 +1,6 @@
 att.PrintName = "Whisper Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m82_whisperer.png")
-att.Description = "Integrated suppressor."
+att.Description = "Integrated suppressor. Super Schalldämpfer."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -32,3 +32,5 @@ att.Add_BarrelLength = 24
 att.Override_PhysTracerProfile = 7
 
 att.Mult_RPM = 0.9
+
+att.AddSuffix = "SSD"

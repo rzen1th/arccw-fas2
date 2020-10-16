@@ -21,7 +21,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/arccw_go/v_rif_m4a1.mdl"
-SWEP.ViewModelFOV = 54
+SWEP.ViewModelFOV = 57
 
 SWEP.DefaultBodygroups = "000000000000"
 
@@ -81,7 +81,6 @@ SWEP.MuzzleEffect = "muzzleflash_3"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 95
 SWEP.ShellScale = 1.25
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
@@ -93,7 +92,7 @@ SWEP.SightTime = 0.32
 SWEP.IronSightStruct = {
     Pos = Vector(-4.086, -9, 0.898),
     Ang = Angle(0, 0, 0),
-    Magnification = 1.1,
+    Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
 }
@@ -104,7 +103,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(0, 2, 0)
+SWEP.ActivePos = Vector(1, 3, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
@@ -116,8 +115,8 @@ SWEP.HolsterAng = Angle(-7.036, 30.016, -10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.CustomizePos = Vector(10, 0, 0)
-SWEP.CustomizeAng = Angle(5, 30, 30)
+SWEP.CustomizePos = Vector(6, -1, -1)
+SWEP.CustomizeAng = Angle(10, 15, 15)
 
 SWEP.BarrelLength = 24
 

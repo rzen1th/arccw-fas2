@@ -1,0 +1,8 @@
+Patch
+{
+	include materials/models/weapons/fas-2hands/hand.vmt
+	insert
+	{
+		"$basetexture"		"models\weapons\fas-2hands\desertkhaki"
+	}
+}

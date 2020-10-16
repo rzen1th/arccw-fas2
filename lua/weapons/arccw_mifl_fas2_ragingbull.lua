@@ -22,12 +22,9 @@ SWEP.NPCWeight = 80
 
 SWEP.UseHands = true
 
-SWEP.CrouchPos = Vector(-4.5, 3, -1)
-SWEP.CrouchAng = Angle(0, 0, -30)
-
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_ragingbull.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_ragingbull.mdl"
-SWEP.ViewModelFOV = 50
+SWEP.ViewModelFOV = 57
 
 SWEP.Damage = 120
 SWEP.DamageMin = 49 -- damage done at maximum range
@@ -104,9 +101,9 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.011, -5, 2.559),
-    Ang = Angle(0, 0, 0),
-    Magnification = 1.1,
+    Pos = Vector(-4.071, 0, 2.659),
+    Ang = Angle(-0.2, 0, 0),
+    Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -116,11 +113,14 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 
-SWEP.ActivePos = Vector(0, 1.2, 0.5)
+SWEP.ActivePos = Vector(0, 2, 2)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(2.276, -1.167, -8.44)
-SWEP.HolsterAng = Angle(30.833, 1.792, -1.269)
+SWEP.CrouchPos = Vector(-4.5, 3, -1)
+SWEP.CrouchAng = Angle(0, 0, -30)
+
+SWEP.HolsterPos = Vector(0, 1.6, 1.6)
+SWEP.HolsterAng = Angle(-5, 5, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -196,11 +196,6 @@ SWEP.Attachments = {
             wpos = Vector(6, -0.253, -3.75),
             wang = Angle(-8.829, -0.556, 90)
         },
-    },
-    {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
     },
     {
         PrintName = "Stock",

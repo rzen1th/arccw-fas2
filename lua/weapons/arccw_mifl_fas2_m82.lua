@@ -20,7 +20,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
-SWEP.ViewModelFOV = 60
+SWEP.ViewModelFOV = 57
 
 SWEP.Damage = 140
 SWEP.DamageMin = 20 -- damage done at maximum range
@@ -95,7 +95,7 @@ SWEP.CaseBones = {}
 SWEP.IronSightStruct = {
     Pos = Vector(-4.249, -5, 2.39),
     Ang = Angle(0, 0, 0),
-    Magnification = 1.25,
+    Magnification = 1.05,
 }
 
 SWEP.HoldtypeHolstered = "passive"
@@ -104,7 +104,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_RPG
 
-SWEP.ActivePos = Vector(0, 1, 0)
+SWEP.ActivePos = Vector(1, 2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(8, -7, -4.011)
@@ -211,11 +211,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
         PrintName = "Stock",
         Slot = "stock",
         DefaultAttName = "Standard Stock"
@@ -285,19 +280,15 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {24, 42, 59, 71},
-		MinProgress = 160/35,		
-        FrameRate = 37,
+		MinProgress = 3.5,
         LHIK = true,
         LHIKIn = 0.75,
         LHIKOut = 0.75,
     },
     ["reload_empty"] = {
         Source = "reload_empty",	
-		MinProgress = 223/35,		
+		MinProgress = 3.5,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {24, 42, 59, 71, 89},
-        FrameRate = 37,
         LHIK = true,
         LHIKIn = 0.75,
         LHIKOut = 0.75,
@@ -305,18 +296,14 @@ SWEP.Animations = {
     ["reload_nomen"] = {
         Source = "reload_nomen",
         Time = 117/35,	
-		MinProgress = 110/35,		
+		MinProgress = 2,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {24, 42, 59, 71, 89},
-        FrameRate = 37,
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
-		MinProgress = 30/35,		
+		MinProgress = 2,		
         Time = 150/35,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {24, 42, 59, 71, 89},
-        FrameRate = 37,
     },	
     ["fire_bipod"] = {
         Source = "bipod_fire",
@@ -334,9 +321,7 @@ SWEP.Animations = {
     ["reload_bipod"] = {
         Source = "bipod_reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 119/35,
-        Checkpoints = {20, 60, 80, 145, 170},
-        FrameRate = 30,
+		MinProgress = 2.5,
         LastClip1OutTime = 3,
         LHIK = true,
         LHIKIn = 0.5,
@@ -344,10 +329,8 @@ SWEP.Animations = {
     },
     ["reload_bipod_empty"] = {
         Source = "bipod_reload_empty",
+		MinProgress = 2.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 168/35,
-        Checkpoints = {23, 51, 79, 106, 134},
-        FrameRate = 30,
         LastClip1OutTime = 2,
         LHIK = true,
         LHIKIn = 0.5,
@@ -356,9 +339,7 @@ SWEP.Animations = {
     ["reload_bipod_nomen"] = {
         Source = "bipod_reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 119/35 * 0.7,
-        Checkpoints = {20, 60, 80, 145, 170},
-        FrameRate = 30,
+		MinProgress = 1.5,
         LastClip1OutTime = 3,
         LHIK = true,
         LHIKIn = 0.5,
@@ -367,9 +348,7 @@ SWEP.Animations = {
     ["reload_bipod_nomen_empty"] = {
         Source = "bipod_reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 168/35 * 0.7,
-        Checkpoints = {23, 51, 79, 106, 134},
-        FrameRate = 30,
+		MinProgress = 1.5,
         LastClip1OutTime = 2,
         LHIK = true,
         LHIKIn = 0.5,

@@ -33,9 +33,9 @@ SWEP.Damage = 39
 SWEP.DamageMin = 21 -- damage done at maximum range
 SWEP.Range = 60 -- in METRES
 SWEP.Penetration = 7
-SWEP.DamageType = DMG_AmmoBelt
+SWEP.DamageType = DMG_Bullet
 SWEP.ShootEntity = nil -- entity to fire, if any
-SWEP.MuzzleVelocity = 1050 -- projectile or phys AmmoBelt muzzle velocity
+SWEP.MuzzleVelocity = 1050 -- projectile or phys Bullet muzzle velocity
 -- IN M/S
 
 SWEP.TracerNum = 1 -- tracer every X
@@ -98,19 +98,19 @@ SWEP.SpeedMult = 0.7
 SWEP.SightedSpeedMult = 0.55
 SWEP.SightTime = 0.5
 
-SWEP.AmmoBeltBones = { -- the bone that represents AmmoBelts in gun/mag
-    [12] = "AmmoBelt12",	
-    [11] = "AmmoBelt11",
-    [10] = "AmmoBelt10",
-    [9] = "AmmoBelt09",	
-	[8] = "AmmoBelt08",
-    [7] = "AmmoBelt07",
-    [6] = "AmmoBelt06",
-    [5] = "AmmoBelt05",
-    [4] = "AmmoBelt04",
-    [3] = "AmmoBelt03",
-    [2] = "AmmoBelt02",	
-    [1] = "AmmoBelt01",	
+SWEP.BulletBones = { -- the bone that represents Bullets in gun/mag
+    [12] = "Bullet12",	
+    [11] = "Bullet11",
+    [10] = "Bullet10",
+    [9] = "Bullet09",	
+	[8] = "Bullet08",
+    [7] = "Bullet07",
+    [6] = "Bullet06",
+    [5] = "Bullet05",
+    [4] = "Bullet04",
+    [3] = "Bullet03",
+    [2] = "Bullet02",	
+    [1] = "Bullet01",	
 }
 
 SWEP.CaseBones = {}
@@ -138,6 +138,8 @@ SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.BarrelLength = 24
+
+SWEP.ShellRotateAngle = Angle(0, 0, -10)
 
 SWEP.AttachmentElements = {
     ["23"] = {
@@ -167,6 +169,7 @@ SWEP.AttachmentElements = {
         },
     },		
     ["32"] = { --- botchig time ---
+		Mult_SightTime = (1/0.82)*0.8,	
 		Mult_RPM = (1/1.3)*1.2,
 		Mult_ReloadTime = (1/0.9)*0.8,
         VMBodygroups = {
@@ -272,7 +275,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Ammo Type",
-        Slot = {"ammo_AmmoBelt"}
+        Slot = {"ammo_Bullet"}
     },	
     {
         PrintName = "Perk",
@@ -306,12 +309,6 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
             return "reload_stanag_empty"			
         end
     end	
-	
-    if wep:Clip1() <= 12 and wep:Clip1() > 1 then --- turns out it aint much differents ---
-        if anim == "reload" then
-            return "reload_empty_unfired"
-        end
-    end
 end
 
 SWEP.Animations = {
@@ -341,20 +338,8 @@ SWEP.Animations = {
         Time = 30/60,
         ShellEjectAt = 0,
     },
-    ["reload_empty_unfired"] = {
-        Source = "reload_empty_unfired",
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
-        LastClip1OutTime = 200/40,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.5,
-    },	
     ["reload"] = { --- dont touch this trust me ---
-        Source = "reload_empty_unfired",
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},		
+        Source = "reload",	
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 180/40,		
         LHIK = true,
@@ -371,23 +356,12 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },	
-    ["reload_empty_unfired_nomen"] = {
-        Source = "reload_empty_unfired_nomen",
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
-        LastClip1OutTime = 200/40,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.5,
-    },		
+    },			
     ["reload_nomen"] = {
         Source = "reload_nomen",
         SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 180/40,		
+        LastClip1OutTime = 120/40,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
@@ -395,7 +369,7 @@ SWEP.Animations = {
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 70/40}},			
-        LastClip1OutTime = 170/40,
+        LastClip1OutTime = 120/40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.2,

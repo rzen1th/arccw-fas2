@@ -17,4 +17,12 @@
 	
 	"$rimlight" 0
 	"$rimlightexponent" 6
+		
+	Proxies // proxies are listed inside this block
+	{
+		FAS2_PMs_Hands
+		{
+			resultVar 3
+		}
+	}
 }
