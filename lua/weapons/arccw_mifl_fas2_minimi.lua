@@ -14,6 +14,8 @@ SWEP.Trivia_Year = "1992"
 
 SWEP.Slot = 2
 
+SWEP.PhysBulletMuzzleVelocity = 1050
+
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_shotgun"}
@@ -23,7 +25,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
 SWEP.WorldModel = "models/weapons/arccw/fml/fas1/w_vollmer.mdl"
-SWEP.ViewModelFOV = 57
+SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000000000000000000000"
 
@@ -31,17 +33,17 @@ SWEP.Damage = 39
 SWEP.DamageMin = 21 -- damage done at maximum range
 SWEP.Range = 60 -- in METRES
 SWEP.Penetration = 7
-SWEP.DamageType = DMG_BULLET
+SWEP.DamageType = DMG_AmmoBelt
 SWEP.ShootEntity = nil -- entity to fire, if any
-SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
+SWEP.MuzzleVelocity = 1050 -- projectile or phys AmmoBelt muzzle velocity
 -- IN M/S
 
 SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
-SWEP.CrouchPos = Vector(-2, 1, 0.5)
-SWEP.CrouchAng = Angle(0, 0, -20)
+SWEP.CrouchPos = Vector(-2, -2, 0.5)
+SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 100 -- DefaultClip is automatically set.
@@ -51,13 +53,19 @@ SWEP.ReducedClipSize = 40
 SWEP.Recoil = 0.45
 SWEP.RecoilSide = 0.15
 SWEP.RecoilRise = 0.8
-SWEP.VisualRecoilMult = 0.8
+SWEP.VisualRecoilMult = 0.3
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
+    },
+    {
+        Mode = -3,
+    },
+    {
+        Mode = 1,
     },
     {
         Mode = 0
@@ -88,34 +96,29 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SpeedMult = 0.7
 SWEP.SightedSpeedMult = 0.55
-SWEP.SightTime = 0.415
+SWEP.SightTime = 0.5
 
-SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    [100] = "AmmoBeltStarter",	
-    [12] = "Bullet12",	
-    [11] = "Bullet11",
-    [10] = "Bullet10",
-    [9] = "Bullet09",	
-	[8] = "Bullet08",
-    [7] = "Bullet07",
-    [6] = "Bullet06",
-    [5] = "Bullet05",
-    [4] = "Bullet04",
-    [3] = "Bullet03",
-    [2] = "Bullet02",	
-    [1] = "Bullet01",	
+SWEP.AmmoBeltBones = { -- the bone that represents AmmoBelts in gun/mag
+    [12] = "AmmoBelt12",	
+    [11] = "AmmoBelt11",
+    [10] = "AmmoBelt10",
+    [9] = "AmmoBelt09",	
+	[8] = "AmmoBelt08",
+    [7] = "AmmoBelt07",
+    [6] = "AmmoBelt06",
+    [5] = "AmmoBelt05",
+    [4] = "AmmoBelt04",
+    [3] = "AmmoBelt03",
+    [2] = "AmmoBelt02",	
+    [1] = "AmmoBelt01",	
 }
-
-
-SWEP.ProceduralRegularFire = false
-SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-6, -4, 3.4),
-    Ang = Angle(0.5, 0, 0),
-    Magnification = 1.05,
+    Pos = Vector(-5.98, -11.664, 3.476),
+    Ang = Angle(0.63, 0, 0),
+    Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -125,7 +128,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(0, 3, 0)
+SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(10, -6, -4.011)
@@ -143,23 +146,39 @@ SWEP.AttachmentElements = {
             {ind = 3, bg = 1},				
         },
     },
-    ["mifl_fas2_minimi_barrel_sd"] = {
-        VMBodygroups = {
-            {ind = 7, bg = 1},					
-        },
-    },
-    ["60"] = {
-		Mult_ReloadTime = 1/1.2,
+    ["60"] = {	
+		Mult_SightTime = (1/0.85)*0.8,
+		Mult_ReloadTime = (1/1.2)*1.1,
         VMBodygroups = {
             {ind = 1, bg = 2},	
             {ind = 3, bg = 2},	
             {ind = 4, bg = 1},
             {ind = 5, bg = 2},	
-            {ind = 6, bg = 1},			
+            {ind = 6, bg = 1},				
         },
     },	
+    ["30"] = {	
+        VMBodygroups = {
+            {ind = 1, bg = 2},	
+            {ind = 3, bg = 2},	
+            {ind = 4, bg = 1},
+            {ind = 5, bg = 1},	
+            {ind = 6, bg = 1},				
+        },
+    },		
+    ["32"] = { --- botchig time ---
+		Mult_RPM = (1/1.3)*1.2,
+		Mult_ReloadTime = (1/0.9)*0.8,
+        VMBodygroups = {
+            {ind = 1, bg = 2},	
+            {ind = 3, bg = 2},	
+            {ind = 4, bg = 1},
+            {ind = 5, bg = 3},	
+            {ind = 6, bg = 1},				
+        },
+    },		
     ["noch"] = {
-        VMBodygroups = {{ind = 1, bg = 1}},
+        VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
     },		
 }
@@ -169,21 +188,21 @@ SWEP.Attachments = {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "Weapon_Main", -- relevant bone any attachments will be mostly referring to
+        Bone = "Lid", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0, -5, 2), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
+            vpos = Vector(-7, -0.7, 0), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, -90),
             wpos = Vector(7, 0.739, -8),
             wang = Angle(-10, 0, 180)
         },
         InstalledEles = {"noch"},
         CorrectivePos = Vector(0, 2, 0),	
-		ExtraSightDist = 5		
+		ExtraSightDist = 4		
     },
     {
         PrintName = "Backup Optic", -- print name
         Slot = {"backup"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "Weapon_Main", -- relevant bone any attachments will be mostly referring to
+        Bone = "Base", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(-0.65, -5.4, 13), -- offset that the attachment will be relative to the bone
             vang = Angle(90, 0, -45),
@@ -192,20 +211,15 @@ SWEP.Attachments = {
         },		
         KeepBaseIrons = true,
 		ExtraSightDist = 15	
-    },
-    {
-        PrintName = "Handguard",
-        Slot = "mifl_fas2_minimi_hg",
-        DefaultAttName = "Standard Handguard"
-    },
+    },		
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "Weapon_Main",
+        Bone = "Base",
         Offset = {
-            vpos = Vector(0, -3, 20),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(24, -3.2, 0),
+            vang = Angle(0, 0, -90),
             wpos = Vector(27, 0.5, -9.1),
             wang = Angle(-9.79, 0, 180)
         },
@@ -213,14 +227,14 @@ SWEP.Attachments = {
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip", "ubgl", "bipod"},
-        Bone = "Weapon_Main",
+        Bone = "Base",
         Offset = {
-            vang = Angle(90,0, -90),
+            vang = Angle(0,0, -90),
             wang = Angle(-10.216, 0, 180)
         },
         SlideAmount = {
-            vmin = Vector(0, -1.75, 17),
-            vmax = Vector(0, -2.25, 20),
+            vmin = Vector(12, 1, 0),
+            vmax = Vector(12, 1, 0),
             wmin = Vector(20, 0.832, -8),
             wmax = Vector(20, 0.832, -8),
         },				
@@ -228,7 +242,7 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Weapon_Main",
+        Bone = "Base",
         Offset = {
             vpos = Vector(-1, -3, 10), -- offset that the attachment will be relative to the bone
             vang = Angle(90, 0, 180),
@@ -240,6 +254,11 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_m249_mag"},
         DefaultAttName = "Standard Belt-Fed 5.56"
+    },	
+    {
+        PrintName = "Grip",
+        Slot = "grip",
+        DefaultAttName = "Standard Grip"
     },
     {
         PrintName = "Stock",
@@ -253,7 +272,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Ammo Type",
-        Slot = {"ammo_bullet"}
+        Slot = {"ammo_AmmoBelt"}
     },	
     {
         PrintName = "Perk",
@@ -263,7 +282,7 @@ SWEP.Attachments = {
         PrintName = "Charm",
         DefaultAttName = "None",
         Slot = {"charm"},
-        Bone = "Weapon_Main",
+        Bone = "Base",
         Offset = {
             vpos = Vector(1, -3, 5),
             vang = Angle(90, 0, -90),
@@ -275,20 +294,24 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" then
+    if wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30" then --- i hate this ---
         if anim == "reload" then
             return "reload_stanag"
 		elseif anim == "reload_empty" then
             return "reload_stanag_empty"
+			
+		elseif anim == "reload_nomen" then	--- fas2 use the same animation for nomen ---
+            return "reload_stanag"
+		elseif anim == "reload_nomen_empty" then
+            return "reload_stanag_empty"			
         end
     end	
 	
-    --[[if wep:Clip1() >= 12 then
+    if wep:Clip1() <= 12 and wep:Clip1() > 1 then --- turns out it aint much differents ---
         if anim == "reload" then
-			print("reload_empty_unfired")
             return "reload_empty_unfired"
         end
-    end]]
+    end
 end
 
 SWEP.Animations = {
@@ -303,7 +326,7 @@ SWEP.Animations = {
         LHIKOut = 1,
     },
     ["ready"] = {
-        Source = "deploy_first01",
+        Source = "deploy",
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.25,
@@ -320,28 +343,64 @@ SWEP.Animations = {
     },
     ["reload_empty_unfired"] = {
         Source = "reload_empty_unfired",
+        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
         LastClip1OutTime = 200/40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Checkpoints = {37, 58, 75, 92, 119, 124},	
+        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },	
-    ["reload"] = {
-        Source = "reload",
+    ["reload"] = { --- dont touch this trust me ---
+        Source = "reload_empty_unfired",
+        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 3,		
+        LastClip1OutTime = 180/40,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        LastClip1OutTime = 3.5,
+        LastClip1OutTime = 200/40,
+        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 65/40}},			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Checkpoints = {37, 58, 75, 92, 119, 124},	
+        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },	
+    ["reload_empty_unfired_nomen"] = {
+        Source = "reload_empty_unfired_nomen",
+        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
+        LastClip1OutTime = 200/40,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Checkpoints = {37, 58, 75, 92, 119, 124},	
+        FrameRate = 30,		
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },		
+    ["reload_nomen"] = {
+        Source = "reload_nomen",
+        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 180/40,		
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },
+    ["reload_nomen_empty"] = {
+        Source = "reload_empty_nomen",
+        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 70/40}},			
+        LastClip1OutTime = 170/40,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },		
     ["reload_stanag"] = {
         Source = "reload_stanag",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -353,9 +412,9 @@ SWEP.Animations = {
     ["reload_stanag_empty"] = {
         Source = "reload_stanag_empty",
         LastClip1OutTime = 200/40,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },		
+    },			
 }

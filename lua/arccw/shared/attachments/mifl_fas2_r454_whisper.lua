@@ -9,8 +9,6 @@ att.AutoStats = true
 
 att.SortOrder = 2
 
-att.ExcludeFlags = {"backup"}
-
 att.ActivateElements = {"whisperer"}
 
 att.Slot = "mifl_fas2_r454_barrel"
