@@ -307,7 +307,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
         end
     end	
 	
-    if wep:Clip1() <= 12 and wep:Clip1() > 1 then --- turns out it aint much differents ---
+    if wep:Clip1() <= 12 and wep:Clip1() > 1 then ---- its so useless lmao the animation is the same ----
         if anim == "reload" then
             return "reload_empty_unfired"
         end

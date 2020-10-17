@@ -85,7 +85,7 @@ SWEP.SightTime = 0.200
 SWEP.IronSightStruct = {
     Pos = Vector(-2.856, -1, 1.164),
     Ang = Angle(0, 0, 0),
-    Magnification = 1.1,
+    Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
 }
@@ -260,10 +260,48 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 end
 
 
+SWEP.Hook_TranslateAnimation = function(wep, anim) ---  i hate this ---
+    if wep:Clip1() == 0 then
+        if anim == "enter_sight" then
+            return "enter_sight_empty"
+        elseif anim == "idle_sights" then
+            return "idle_sights_empty"
+        elseif anim == "exit_sight" then
+            return "exit_sight_empty"
+        end
+    end
+end
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
     },
+	
+    ["idle_sights"] = {
+        Source = "idle_iron",
+		Time = 0,
+    },	
+    ["enter_sight"] = {
+        Source = "idle",
+		Time = 0,
+    },	
+    ["exit_sight"] = {
+        Source = "idle",
+		Time = 0,
+    },	
+    ["idle_sights_empty"] = {
+        Source = "idle_iron_empty",
+		Time = 0,
+    },	
+    ["enter_sight_empty"] = {
+        Source = "idle_empty",
+		Time = 0,
+    },	
+    ["exit_sight_empty"] = {
+        Source = "idle_empty",
+		Time = 0,
+    },		
+	
     ["idle_empty"] = {
         Source = "idle_empty"
     },
