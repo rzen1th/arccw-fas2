@@ -53,19 +53,13 @@ SWEP.ReducedClipSize = 40
 SWEP.Recoil = 0.45
 SWEP.RecoilSide = 0.15
 SWEP.RecoilRise = 0.8
-SWEP.VisualRecoilMult = 0.3
+SWEP.VisualRecoilMult = 0.8
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
-    },
-    {
-        Mode = -3,
-    },
-    {
-        Mode = 1,
     },
     {
         Mode = 0

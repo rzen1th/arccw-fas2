@@ -289,3 +289,33 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/m16a2/m16a2_maghousing.wav"}
 })
+
+
+//G20
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Glock20.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/glock20/glock20_magout.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Glock20.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/glock20/glock20_magout_empty.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Glock20.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/glock20/glock20_magin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Glock20.SlideForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/glock20/glock20_sliderelease.wav"}
+})
