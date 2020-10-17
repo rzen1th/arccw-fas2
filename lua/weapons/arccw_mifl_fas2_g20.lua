@@ -251,19 +251,12 @@ SWEP.Attachments = {
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" and wep.Attachments[5].Installed == "mifl_fas2_perk_nomen" then --- y this no work NIGGGGG ---
-        if anim == "reload" then
+        if anim == "reload_nomen" then
             return "reload_nomen_33"
-		elseif anim == "reload_empty" then
+		elseif anim == "reload_nomen_empty" then
             return "reload_nomen_empty_33"
         end
     end	
-	
-    --[[if wep:Clip1() >= 12 then
-        if anim == "reload" then
-			print("reload_empty_unfired")
-            return "reload_empty_unfired"
-        end
-    end]]
 end
 
 
