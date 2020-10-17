@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models\weapons\arccw_fas2\shells\M249links"
-	"$bumpmap"	"models\weapons\arccw_fas2\shells\default_normal"
+	"$bumpmap"	"models\weapons\arccw_fas2\default_normal"
 	"$phong" 			"1"
 	"$phongexponent" 		"90"
 	"$phongboost" 			"3"

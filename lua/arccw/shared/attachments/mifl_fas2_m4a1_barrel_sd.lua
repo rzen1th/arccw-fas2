@@ -1,13 +1,12 @@
 att.PrintName = "Whisper Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_sd.png", "mips smooth")
 att.Description = "Integrated suppressor."
+att.SortOrder = 8
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
 att.AutoStats = true
-
-att.SortOrder = 2
 
 att.ActivateElements = {"whisperer"}
 
