@@ -167,10 +167,10 @@ SWEP.AttachmentElements = {
             }
         }
     },
-    ["mifl_fas2_g20_slide_17c"] = {
+    ["mifl_fas2_g20_slide_whisper"] = {
         NameChange = "Glock 17c",
         VMBodygroups = {
-            {ind = 1, bg = 3},
+            {ind = 1, bg = 4},
         },
         AttPosMods = {
             [4] = {
@@ -243,21 +243,12 @@ SWEP.Attachments = {
             vpos = Vector(0, 4.2, 0.7),
             vang = Angle(0, -90, 0),
         },
+		ExcludeFlags = {"mifl_fas2_g20_slide_whisper"}				
     },
     {
         PrintName = "Magazine",
         Slot = "mifl_fas2_g20_mag",
         DefaultAttName = "17-Round 10mm"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "go_stock_pistol_bt",
-        DefaultAttName = "No Stock",
-        Bone = "glock_main",
-        Offset = {
-            vpos = Vector(0, -1.7, -1),
-            vang = Angle(90, 0, -90),
-        },
     },
     {
         PrintName = "Ammo Type",

@@ -51,7 +51,7 @@ $illumposition -5.487 -5.297 -6.32
 $cdmaterials "models\weapons\arccw_fas2\glock20\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\kf2_g18\"
-$cdmaterials "models\weapons\fesiugmw2_attach\"
+$cdmaterials "models\weapons\arccw_fas2\mw2\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 

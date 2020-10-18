@@ -14,7 +14,4 @@
 	"$envmap" "env_cubemap"
 	"$envmaptint"			"[0.025 0.025 0.025]"
 	"$envmapfresnel"			"0.5"	
-
-    "$selfillum" "1"
-    "$selfillummask" "models\weapons\arccw_fas2\kf2_g18\wep_g18c_illum"
 }
