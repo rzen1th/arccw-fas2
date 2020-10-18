@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
-SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
+SWEP.Spawnable = true 
+SWEP.Category = "ArcCW - FA:S2" 
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Glock 20"
@@ -38,6 +38,7 @@ SWEP.Recoil = 0.6
 SWEP.RecoilSide = 0.3
 SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 0.7
+SWEP.MaxRecoilBlowback = 2
 
 SWEP.Delay = 60 / 700 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -99,8 +100,8 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 SWEP.ActivePos = Vector(0, 2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-4, 0, -1)
-SWEP.CrouchAng = Angle(0, 0, -10)
+SWEP.CrouchPos = Vector(-4, -1, -2)
+SWEP.CrouchAng = Angle(0, 0, -20)
 
 SWEP.HolsterPos = Vector(-1, 1, -3)
 SWEP.HolsterAng = Angle(-5, 10, -20)
@@ -115,24 +116,41 @@ SWEP.CustomizeAng = Angle(2, 30, 30)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
-    ["rail"] = {
-        VMElements = {
-            {
-                Model = "models/weapons/arccw_go/atts/pistol_rail.mdl",
-                Bone = "v_weapon.glock_parent",
-                Offset = {
-                    pos = Vector(0, -1.25, 4.5),
-                    ang = Angle(90, 0, -90),
-                },
-                Scale = Vector(0.95, 0.95, 0.95)
-            }
+    ["roni"] = {
+        NameChange = "Roni 20",	
+        VMBodygroups = {
+            {ind = 1, bg = 1},	
+            {ind = 4, bg = 0},	
+            {ind = 5, bg = 0},			
         },
+		Override_ActivePos = Vector(0, -2, -2),
         AttPosMods = {
+            [1] = {
+                vpos = Vector(0, 0, 3.5),
+				  },			  
             [2] = {
-                vpos = Vector(0, -0.8, 4.5),
-            }
-        }
+				vpos = Vector(0, 9.5, 0.1),
+				  },			  				
+            [4] = {
+                vpos = Vector(0, 8, 0.7),
+				  },	
+			},				  
+        Override_IronSightStruct = {
+            Pos = Vector(-2.856, -5, -1.1),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },				
     },
+    ["rail"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 1},			
+        },
+    },
+    ["rail_2"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 1},			
+        },
+    },	
     ["mifl_fas2_g20_mag33"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
@@ -176,31 +194,34 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = "optic_lp",
-        Bone = "v_weapon.glock_parent",
+        Bone = "glock_main",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, -3.4, 2),
-            vang = Angle(90, 0, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+            vpos = Vector(0, 1, 2.2),
+            vang = Angle(0, -90,0),
         },
         InstalledEles = {"rail"},
-        CorrectiveAng = Angle(-0.5, 0, 0)
+        CorrectiveAng = Angle(0, 180, 0)
     },
     {
         PrintName = "Tactical",
-        Slot = {"tac", "foregrip"},
-        Bone = "v_weapon.glock_parent",
+        Slot = {"tac"},
+        Bone = "glock_main",
         Offset = {
-            vpos = Vector(0, -1.4, 4.5),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(0, 4.5, 0),
+            vang = Angle(0, -90, 0),
         },
-        InstalledEles = {"tacms"},
+        InstalledEles = {"rail_2"},
     },
     {
         PrintName = "Slide",
         Slot = "mifl_fas2_g20_slide",
-        DefaultAttName = "G20 Slide"
+        Bone = "glock_main",		
+        DefaultAttName = "G20 Slide",
+        Offset = {
+            vpos = Vector(0, 2, 0.5),
+            vang = Angle(0, -90, 0),
+        },		
     },
     {
         PrintName = "Muzzle",
@@ -221,7 +242,7 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Slot = "go_stock_pistol_bt",
         DefaultAttName = "No Stock",
-        Bone = "v_weapon.glock_parent",
+        Bone = "glock_main",
         Offset = {
             vpos = Vector(0, -1.7, -1),
             vang = Angle(90, 0, -90),
@@ -240,7 +261,7 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "v_weapon.glock_slide", -- relevant bone any attachments will be mostly referring to
+        Bone = "glock_slide", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.5, 0, 5), -- offset that the attachment will be relative to the bone
             vang = Angle(90, 0, -90),
@@ -251,57 +272,18 @@ SWEP.Attachments = {
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" and wep.Attachments[5].Installed == "mifl_fas2_perk_nomen" then --- y this no work NIGGGGG ---
-        if anim == "reload_nomen" then
+        if anim == "reload" then
             return "reload_nomen_33"
-		elseif anim == "reload_nomen_empty" then
+		elseif anim == "reload_empty" then
             return "reload_nomen_empty_33"
         end
     end	
-end
-
-
-SWEP.Hook_TranslateAnimation = function(wep, anim) ---  i hate this ---
-    if wep:Clip1() == 0 then
-        if anim == "enter_sight" then
-            return "enter_sight_empty"
-        elseif anim == "idle_sights" then
-            return "idle_sights_empty"
-        elseif anim == "exit_sight" then
-            return "exit_sight_empty"
-        end
-    end
 end
 
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
     },
-	
-    ["idle_sights"] = {
-        Source = "idle_iron",
-		Time = 0,
-    },	
-    ["enter_sight"] = {
-        Source = "idle",
-		Time = 0,
-    },	
-    ["exit_sight"] = {
-        Source = "idle",
-		Time = 0,
-    },	
-    ["idle_sights_empty"] = {
-        Source = "idle_iron_empty",
-		Time = 0,
-    },	
-    ["enter_sight_empty"] = {
-        Source = "idle_empty",
-		Time = 0,
-    },	
-    ["exit_sight_empty"] = {
-        Source = "idle_empty",
-		Time = 0,
-    },		
-	
     ["idle_empty"] = {
         Source = "idle_empty"
     },
@@ -344,28 +326,28 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.7,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.6,
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.6,
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.7,
     },
 	
 	
@@ -374,27 +356,27 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.7,
     },
     ["reload_empty_33"] = {
         Source = "reload_empty_33",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.6,
     },
     ["reload_nomen_33"] = {
         Source = "reload_nomen_33",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.6,
     },
     ["reload_nomen_empty_33"] = {
         Source = "reload_empty_nomen_33",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.4,
+        LHIKOut = 0.7,
     },	
 }
