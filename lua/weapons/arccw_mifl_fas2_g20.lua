@@ -110,8 +110,8 @@ SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.BarrelOffsetCrouch = Vector(0, 0, -2)
 
-SWEP.CustomizePos = Vector(12, -5, 0)
-SWEP.CustomizeAng = Angle(2, 30, 30)
+SWEP.CustomizePos = Vector(6, -3, -0.5)
+SWEP.CustomizeAng = Angle(4, 20, 10)
 
 SWEP.BarrelLength = 24
 
