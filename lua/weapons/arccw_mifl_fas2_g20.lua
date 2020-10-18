@@ -7,7 +7,7 @@ SWEP.PrintName = "Glock 20"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "EeeeEeee"
 SWEP.Trivia_Manufacturer = "GLOCK GmbH"
-SWEP.Trivia_Calibre = "9x19mm Parabellum"
+SWEP.Trivia_Calibre = "10mm Parabellum"
 SWEP.Trivia_Mechanism = "Short Recoil"
 SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1982
@@ -32,7 +32,7 @@ SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 17 -- DefaultClip is automatically set.
 
-SWEP.PhysBulletMuzzleVelocity = 250
+SWEP.PhysBulletMuzzleVelocity = 700
 
 SWEP.Recoil = 0.6
 SWEP.RecoilSide = 0.3
@@ -167,6 +167,17 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_g20_slide_17c"] = {
+        NameChange = "Glock 17c",
+        VMBodygroups = {
+            {ind = 1, bg = 3},
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, 7, 0.7),
+            }
+        }
+    },	
     ["mifl_fas2_g20_slide_18"] = {
         NameChange = "Glock 18",
         VMBodygroups = {
