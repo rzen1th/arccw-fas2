@@ -17,15 +17,3 @@ att.Mult_DamageMin = 0.7
 att.Mult_MoveSpeed = 0.935
 att.Mult_SightTime = 1.08
 att.Mult_ReloadTime = 1.2
-
-att.Hook_SelectReloadAnimation = function(wep, anim)
-    if anim == "reload" then
-        return "reload_33"
-    elseif anim == "reload_empty" then
-        return "reload_empty_33"
-    elseif anim == "reload_nomen" then
-        return "reload_nomen_33"	
-    elseif anim == "reload_nomen_empty" then
-        return "reload_nomen_empty_33"			
-    end
-end
