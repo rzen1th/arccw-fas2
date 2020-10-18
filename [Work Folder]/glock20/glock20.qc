@@ -14,7 +14,8 @@ $bodygroup "slide"
 	studio "Slide.smd"
 	studio "Slide_18.smd"	
 	studio "Slide_17c.smd"	
-	studio "Slide_Whisper.smd"		
+	studio "Slide_Whisper.smd"	
+	studio "Slide_Raptor.smd"		
 	blank
 }
 $bodygroup "Mag"
@@ -27,6 +28,7 @@ $bodygroup "Stock"
 {
 	blank
 	studio "stock.smd"
+	studio "Stock_Raptor.smd"	
 }
 
 $bodygroup "Rail"

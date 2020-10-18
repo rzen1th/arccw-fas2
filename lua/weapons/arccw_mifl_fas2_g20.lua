@@ -265,10 +265,9 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "glock_slide", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.5, 0, 5), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
+            vpos = Vector(0.5, 3, -0.2), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, -90, 0),
         },
-        VMScale = Vector(0.5, 0.5, 0.5)
     },
 }
 
