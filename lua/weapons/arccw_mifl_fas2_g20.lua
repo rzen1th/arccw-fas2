@@ -296,6 +296,18 @@ SWEP.Animations = {
         LHIKIn = 0,
         LHIKOut = 0.5,
     },
+    ["holster"] = {
+        Source = "holster",
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.5,
+    },
+    ["holster_empty"] = {
+        Source = "holster_empty",
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.5,
+    },
     ["ready"] = {
         Source = "draw",
         LHIK = true,

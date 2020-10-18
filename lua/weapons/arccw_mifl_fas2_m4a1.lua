@@ -278,6 +278,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         fs = 7
     end
 
+	--[[local empty = wep:Clip1() == 0
+
+	if empty then
+		vm:SetPoseParameter("boltcatch", 1)
+		vm:InvalidateBoneCache()
+	end]]
+
     vm:SetBodygroup(2, fs)
 end
 
@@ -384,6 +391,9 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "deploy",
+    },
+    ["holster"] = {
+        Source = "holster",
     },
     ["ready"] = {
         Source = "deploy_first",
