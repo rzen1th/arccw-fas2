@@ -271,12 +271,9 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" and wep.Attachments[5].Installed == "mifl_fas2_perk_nomen" then --- y this no work NIGGGGG ---
-        if anim == "reload" then
-            return "reload_nomen_33"
-		elseif anim == "reload_empty" then
-            return "reload_nomen_empty_33"
-        end
+    if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" then --- y this no work NIGGGGG ---
+		print(anim .. "_33")
+		return anim .. "_33"
     end	
 end
 
@@ -349,8 +346,7 @@ SWEP.Animations = {
         LHIKIn = 0.4,
         LHIKOut = 0.7,
     },
-	
-	
+---------------------------------------------------------
     ["reload_33"] = {
         Source = "reload_33",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,

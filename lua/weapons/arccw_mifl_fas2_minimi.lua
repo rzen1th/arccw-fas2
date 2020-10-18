@@ -98,7 +98,8 @@ SWEP.SpeedMult = 0.7
 SWEP.SightedSpeedMult = 0.55
 SWEP.SightTime = 0.5
 
-SWEP.BulletBones = { -- the bone that represents Bullets in gun/mag
+SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
+    [100] = "AmmoBeltStarter",	
     [12] = "Bullet12",	
     [11] = "Bullet11",
     [10] = "Bullet10",
@@ -305,12 +306,6 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 		elseif anim == "reload_nomen_empty" then
             return "reload_stanag_empty"			
         end
-    end	
-	
-    if wep:Clip1() <= 12 and wep:Clip1() > 1 then ---- its so useless lmao the animation is the same ----
-        if anim == "reload" then
-            return "reload_empty_unfired"
-        end
     end
 end
 
@@ -341,29 +336,18 @@ SWEP.Animations = {
         Time = 30/60,
         ShellEjectAt = 0,
     },
-    ["reload_empty_unfired"] = {
-        Source = "reload_empty_unfired",
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
-        LastClip1OutTime = 140/40,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.5,
-    },	
-    ["reload"] = { --- dont touch this trust me ---
-        Source = "reload_empty_unfired",
+    ["reload"] = { --- dont touch this trust me ---  why
+        Source = "reload",
+        LastClip1OutTime = 3,		
         SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 140/40,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        LastClip1OutTime = 140/40,
+        LastClip1OutTime = 3.5,
         SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 65/40}},			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Checkpoints = {37, 58, 75, 92, 119, 124},	
@@ -372,17 +356,6 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },	
-    ["reload_empty_unfired_nomen"] = {
-        Source = "reload_empty_unfired_nomen",
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
-        LastClip1OutTime = 140/40,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.5,
-    },		
     ["reload_nomen"] = {
         Source = "reload_nomen",
         SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
