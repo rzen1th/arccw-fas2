@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\arccw_fas2\accessories\Acog\reticle_chevron"
+	"$translucent" 	"1"
+	"$model" 	"1"
+	//"$alphatest"	"1"
+
+}

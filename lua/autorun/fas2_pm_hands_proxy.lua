@@ -53,4 +53,19 @@ if CLIENT then
 				else end
 		end
 	} )
+	
+		matproxy.Add( {
+		name = "ArcCW_FAS2_Color_Crosshair",
+		bind = function( self, mat, ent )
+				local muah = {
+						r = GetConVar("arccw_scope_r"):GetFloat(),
+						g = GetConVar("arccw_scope_g"):GetFloat(),
+						b = GetConVar("arccw_scope_b"):GetFloat(),
+					}
+				--
+				if muah then
+					mat:SetVector( "$color2", Vector(muah.r/256, muah.g/256, muah.b/256) )
+				end
+		end
+	} )
 end

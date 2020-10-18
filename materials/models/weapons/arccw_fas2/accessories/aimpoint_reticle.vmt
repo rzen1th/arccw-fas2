@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "models\weapons\arccw_fas2\accessories\aimpoint_reticle"
+	"$additive" "1"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+}

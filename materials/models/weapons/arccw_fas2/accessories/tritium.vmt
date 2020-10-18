@@ -1,5 +1,11 @@
 "UnlitGeneric"
 {
-	"$basetexture" "models\weapons\arccw_fas2\accessories\tritium_yellow"
 	$selfillum 1
+	"Proxies"
+	{
+		"ArcCW_FAS2_Color_Crosshair"
+		{
+			"resultVar"	"$color2"
+		}
+	}
 }
