@@ -13,6 +13,8 @@ att.Mult_Range = 1.12
 att.Mult_SightTime = 1.17
 att.Mult_DrawTime = 1.17
 
+att.Add_BarrelLength = 2
+
 att.Mult_RPM = 1.5
 
 att.Mult_ShootPitch = 0.97

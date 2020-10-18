@@ -19,9 +19,9 @@ att.Override_MuzzleEffect = "muzzleflash_suppressed"
 att.Mult_ShootPitch = 0.8
 att.Mult_ShootVol = 0.75
 att.Mult_AccuracyMOA = 0.8125
-att.Mult_Range = 1.1
+att.Mult_Range = 1.5
 
-att.Mult_SightTime = 1.05
+att.Mult_SightTime = 1.1
 
 att.Mult_HipDispersion = 1.1
 

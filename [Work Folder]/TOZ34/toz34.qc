@@ -1,23 +1,40 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons\view\shotguns\toz34.mdl"
+$modelname "weapons/arccw/mifl/fas2/c_toz34.mdl"
+$include fesiug.qci
+$scale 2
 
-$bodygroup "studio"
+
+$bodygroup "Main"
 {
-	studio "ref.smd"
+	studio "Main.smd"
+	blank
 }
-$bodygroup "Hands"
+$bodygroup "Guard"
 {
-	studio "ref_hand_red.smd"
-	studio "ref_hand_blue.smd"
+	studio "Guard.smd"
+	studio "Guard_S.smd"
+	blank
+}
+
+$bodygroup "Barrel"
+{
+	studio "Barrel.smd"
+	studio "Barrel_S.smd"
+	studio "Barrel_1.smd"
+	studio "Barrel_S1.smd"	
+	blank
+}
+
+$bodygroup "Stock"
+{
+	studio "Stock.smd"
+	studio "Stock_S.smd"
+	blank
 }
 
 
-$surfaceprop "default"
-
-$contents "solid"
-
-$illumposition 12.789 -0.785 -6.786
+$illumposition 0 0 0
 
 $cdmaterials "models\weapons\view\shotguns\toz34\"
 $cdmaterials "models\weapons\view\accessories\"
@@ -27,8 +44,6 @@ $cdmaterials "models\weapons\shells\"
 $attachment "muzzle" "Box03" 12.67 0.34 1.09 rotate 0 0 0
 
 $cbox 0 0 0 0 0 0
-
-$bbox -10.804 -11.851 -23.574 28.888 17.526 5.381
 
 $definebone "Pointer Right Hand" "" -2.404157 -0.607652 -1.263551 -35.376825 82.823291 94.481945 0 0 0 0 0 0
 $definebone "Box03" "Pointer Right Hand" -1.256201 -0.440367 0.549409 -4.569091 144.248022 93.664829 0 0 0 0 0 0

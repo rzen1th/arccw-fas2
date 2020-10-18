@@ -18,6 +18,8 @@ att.ExcludeFlags = {""}
 
 att.ActivateElements = {"roni"}  
 
+att.Add_BarrelLength = 14
+
 att.Mult_Recoil = 0.8
 att.Mult_SightTime = 1.2
 att.Mult_DamageMin = 1.3
