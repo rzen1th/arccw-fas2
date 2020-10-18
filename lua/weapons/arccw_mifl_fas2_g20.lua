@@ -168,9 +168,9 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_g20_slide_whisper"] = {
-        NameChange = "Glock 17c",
+        NameChange = "Glock SD",
         VMBodygroups = {
-            {ind = 1, bg = 4},
+            {ind = 1, bg = 3},
         },
         AttPosMods = {
             [4] = {
