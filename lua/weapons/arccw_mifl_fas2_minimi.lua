@@ -336,10 +336,9 @@ SWEP.Animations = {
         Time = 30/60,
         ShellEjectAt = 0,
     },
-    ["reload"] = { --- dont touch this trust me ---  why
+    ["reload"] = {
         Source = "reload",
-        LastClip1OutTime = 3,		
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},		
+        LastClip1OutTime = 3,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.2,
@@ -347,11 +346,8 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        LastClip1OutTime = 3.5,
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 65/40}},			
+        LastClip1OutTime = 3.5,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Checkpoints = {37, 58, 75, 92, 119, 124},	
-        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
@@ -385,7 +381,6 @@ SWEP.Animations = {
     ["reload_stanag_empty"] = {
         Source = "reload_stanag_empty",
         LastClip1OutTime = 200/40,
-        FrameRate = 30,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
