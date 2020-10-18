@@ -271,8 +271,7 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" then --- y this no work NIGGGGG ---
-		print(anim .. "_33")
+    if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" then
 		return anim .. "_33"
     end	
 end
