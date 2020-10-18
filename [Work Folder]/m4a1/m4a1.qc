@@ -18,6 +18,7 @@ $bodygroup "HG"
 	studio "Handguard_A1.smd"	
 	studio "Handguard_Heat.smd"			
 	studio "Handguard_X.smd"				
+	studio "Handguard_Ribs.smd"				
 	blank	
 }
 $bodygroup "Sights"

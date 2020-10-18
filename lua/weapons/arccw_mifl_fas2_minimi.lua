@@ -24,8 +24,10 @@ SWEP.NPCWeight = 32
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
-SWEP.WorldModel = "models/weapons/arccw/fml/fas1/w_vollmer.mdl"
+SWEP.WorldModel = "models/weapons/w_mach_m249para.mdl"
 SWEP.ViewModelFOV = 60
+
+SWEP.MirrorVMWM = false
 
 SWEP.DefaultBodygroups = "00000000000000000000000000"
 
@@ -295,18 +297,15 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30" then --- i hate this ---
-        if anim == "reload" then
-            return "reload_stanag"
-		elseif anim == "reload_empty" then
-            return "reload_stanag_empty"
-			
-		elseif anim == "reload_nomen" then	--- fas2 use the same animation for nomen ---
-            return "reload_stanag"
-		elseif anim == "reload_nomen_empty" then
-            return "reload_stanag_empty"			
-        end
-    end
+	local fuckyou = wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or 
+	   wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or
+	   wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30"
+
+	local reload_stanag = (fuckyou and "_stanag") or ""
+	local reload_nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
+	local reload_empty = (wep:Clip1() == 0 and "_empty") or ""
+	
+    return "reload" .. reload_stanag .. reload_nomen .. reload_empty
 end
 
 SWEP.Animations = {
@@ -337,7 +336,7 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["reload"] = {
-        Source = "reload",
+        Source = "reload_empty",
         LastClip1OutTime = 3,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
@@ -354,17 +353,15 @@ SWEP.Animations = {
     },	
     ["reload_nomen"] = {
         Source = "reload_nomen",
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 40/40}},			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 120/40,		
+        LastClip1OutTime = 2,		
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
-        SoundTable = {{s = "weapons/arccw_mifl/fas2/m249/m249_beltremove.wav", t = 70/40}},			
-        LastClip1OutTime = 120/40,
+        LastClip1OutTime = 2.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.2,
@@ -384,5 +381,20 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },			
+    },					
+    ["reload_stanag_nomen"] = {
+        Source = "reload_stanag_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 180/40,		
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },
+    ["reload_stanag_nomen_empty"] = {
+        Source = "reload_stanag_empty_nomen",
+        LastClip1OutTime = 200/40,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },	
 }

@@ -208,6 +208,12 @@ SWEP.AttachmentElements = {
             },		
 		},			
     },		
+    ["mifl_fas2_m4a1_barrel_ribs"] = {
+        NameChange = "Mark 4-1",		
+        VMBodygroups = {
+            {ind = 1, bg = 7},				
+        },
+    },	
     ["20"] = {
         VMBodygroups = {
             {ind = 3, bg = 2},					
