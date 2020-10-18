@@ -1,6 +1,6 @@
 att.PrintName = "CompM4"
-att.Icon = Material("entities/acwatt_optic_acog2.png", "smooth")
-att.Description = "Electric boogaloo.\nMagnified medium-range optic. ACOG stands for 'Advanced Combat Optical Gunsight'. Includes a backup iron sight that can be toggled by double pressing +USE."
+att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
+att.Description = "Provides a bright red reticle to ease aiming.\nSlightly increases aim zoom.\nNarrow scope might slightly reduce awareness."
 
 att.SortOrder = 3
 

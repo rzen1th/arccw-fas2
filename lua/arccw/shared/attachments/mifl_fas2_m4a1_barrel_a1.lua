@@ -14,8 +14,8 @@ att.ExcludeFlags = {"a1"}
 
 att.Mult_MoveSpeed = 0.8
 
-att.Mult_Range = 1.5
-att.Mult_Recoil = 0.75
+att.Mult_Range = 1.2
+att.Mult_Recoil = 0.9
 att.Mult_SightTime = 1.12
 att.Mult_AccuracyMOA = 0.9
 att.Mult_RPM = 1.2
