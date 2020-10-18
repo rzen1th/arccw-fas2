@@ -13,7 +13,7 @@ att.Slot = "mifl_fas2_g20_mag"
 att.Override_ClipSize = 33
 
 att.Mult_Damage = 0.8
-att.Mult_DamageMin = 0.6
+att.Mult_DamageMin = 0.7
 att.Mult_MoveSpeed = 0.935
 att.Mult_SightTime = 1.08
 att.Mult_ReloadTime = 1.2
