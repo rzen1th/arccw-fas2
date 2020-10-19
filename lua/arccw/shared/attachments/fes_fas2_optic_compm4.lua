@@ -23,8 +23,9 @@ att.AdditionalSights = {
     },
 }
 att.Holosight = true
-att.HolosightReticle = Material("holosights/dot.png")
-att.HolosightSize = 0.3
+att.HolosightReticle = Material("mifl_fas2_reticle/dot.png" , "mips smooth")
+att.HolosightFlare = Material("mifl_fas2_reticle/dot_flare.png" , "mips smooth")
+att.HolosightSize = 2
 att.HolosightBone = "holosight"
 
 att.Mult_SightTime = 1.01
