@@ -18,6 +18,7 @@ $bodygroup "HG"
 	studio "Handguard_A1.smd"	
 	studio "Handguard_Heat.smd"			
 	studio "Handguard_X.smd"				
+	studio "Handguard_Ribs.smd"				
 	blank	
 }
 $bodygroup "Sights"
@@ -153,6 +154,7 @@ $sequence "idle" {
 	fadeout 0.2
 	snap
 	fps 20
+	addlayer blend_gear
 }
 
 $sequence "deploy_first" {
@@ -169,6 +171,7 @@ $sequence "deploy_first" {
 	fadeout 0.2
 	snap
 	fps 30
+	addlayer blend_gear
 }
 
 $sequence "deploy" {
@@ -179,6 +182,7 @@ $sequence "deploy" {
 	fadeout 0.2
 	snap
 	fps 40
+	addlayer blend_gear
 }
 
 $sequence "iron" {
@@ -187,6 +191,7 @@ $sequence "iron" {
 	fadeout 0.2
 	snap
 	fps 30
+	addlayer blend_gear
 }
 
 $sequence "reload" {
@@ -261,4 +266,17 @@ $sequence "shoot" {
 	fadeout 0.2
 	snap
 	fps 30
+	addlayer blend_gear
+}
+
+$animation "blend_geardown_a" "anims/idle.smd"	subtract idle 0
+$animation "blend_gearup_a" "anims/gamingboltcatch.smd"		subtract idle 0
+
+$sequence "blend_gear" {
+	blend_geardown_a
+	blend_gearup_a
+	
+	blendwidth 2
+	blend boltcatch 0 1
+	delta
 }

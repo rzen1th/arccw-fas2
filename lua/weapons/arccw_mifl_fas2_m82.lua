@@ -268,6 +268,12 @@ SWEP.Animations = {
         LHIKIn = 0,
         LHIKOut = 0.25,
     },
+    ["idle"] = {
+        Source = "idle",
+    },
+    ["idle_bipod"] = {
+        Source = "bipod_idle",
+    },
     ["fire"] = {
         Source = {"fire","fire_2","fire_3"},
         ShellEjectAt = 0,
@@ -313,10 +319,16 @@ SWEP.Animations = {
     ["enter_bipod"] = {
         Source = "bipod_dn",
         Time = 110/35,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0,
     },
     ["exit_bipod"] = {
         Source = "bipod_up",
         Time = 102/35,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.4,
     },
     ["reload_bipod"] = {
         Source = "bipod_reload",

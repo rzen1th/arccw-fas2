@@ -208,6 +208,12 @@ SWEP.AttachmentElements = {
             },		
 		},			
     },		
+    ["mifl_fas2_m4a1_barrel_ribs"] = {
+        NameChange = "Mark 4-1",		
+        VMBodygroups = {
+            {ind = 1, bg = 7},				
+        },
+    },	
     ["20"] = {
         VMBodygroups = {
             {ind = 3, bg = 2},					
@@ -277,6 +283,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if lp then
         fs = 7
     end
+
+	--[[local empty = wep:Clip1() == 0
+
+	if empty then
+		vm:SetPoseParameter("boltcatch", 1)
+		vm:InvalidateBoneCache()
+	end]]
 
     vm:SetBodygroup(2, fs)
 end
@@ -384,6 +397,9 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "deploy",
+    },
+    ["holster"] = {
+        Source = "holster",
     },
     ["ready"] = {
         Source = "deploy_first",
