@@ -132,7 +132,7 @@ SWEP.AttachmentElements = {
 				vpos = Vector(0, 9.5, 0.1),
 				  },			  				
             [4] = {
-                vpos = Vector(0, 8, 0.7),
+                vpos = Vector(0, 8, 0.78),
 				  },	
 			},				  
         Override_IronSightStruct = {
@@ -163,10 +163,21 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, 7, 0.7),
+                vpos = Vector(0, 7, 0.78),
             }
         }
     },
+    ["mifl_fas2_g20_slide_raptor"] = {
+        NameChange = "Glock Raptor",
+        VMBodygroups = {
+            {ind = 1, bg = 4},
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, 5, 0.78),
+            }
+        }
+    },	
     ["mifl_fas2_g20_slide_whisper"] = {
         NameChange = "Glock SD",
         VMBodygroups = {
@@ -174,7 +185,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, 7, 0.7),
+                vpos = Vector(0, 7, 0.78),
             }
         }
     },	
@@ -185,7 +196,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, 5, 0.7),
+                vpos = Vector(0, 5, 0.78),
             }
         }
     },
@@ -240,7 +251,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "glock_barrel",
         Offset = {
-            vpos = Vector(0, 4.2, 0.7),
+            vpos = Vector(0, 4.2, 0.78),
             vang = Angle(0, -90, 0),
         },
 		ExcludeFlags = {"mifl_fas2_g20_slide_whisper"}				
