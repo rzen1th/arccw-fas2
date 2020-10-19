@@ -118,7 +118,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.BarrelLength = 60
 
-SWEP.ShellRotateAngle = Angle(0, -90, 0)
+SWEP.ShellRotateAngle = Angle(0, 90, 0)
 
 SWEP.AttachmentElements = {
     ["whisperer"] = {

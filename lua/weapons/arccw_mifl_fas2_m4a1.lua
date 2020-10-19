@@ -389,8 +389,6 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
-
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
