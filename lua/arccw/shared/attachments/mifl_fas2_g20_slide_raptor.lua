@@ -18,10 +18,11 @@ att.Mult_VisualRecoilMult = 1.2
 att.ModelOffset = Vector(0.5, -0.3, -1.8)
 
 att.LHIK = true
+att.LHIK_Priority = -2
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2_raptor_glock.mdl"
 
-att.Mult_RPM = 3
+att.Mult_RPM = 2
 
 att.Mult_ShootPitch = 0.97
 

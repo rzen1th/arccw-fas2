@@ -16,4 +16,6 @@ att.Mult_Recoil = 0.95
 att.Mult_SightTime = 1.225
 att.Mult_AccuracyMOA = 0.85
 
+att.Add_BarrelLength = 9
+
 att.Mult_ShootPitch = 0.95

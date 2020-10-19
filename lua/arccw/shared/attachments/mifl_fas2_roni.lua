@@ -11,6 +11,7 @@ att.AutoStats = true
 att.ModelOffset = Vector(0.5, 0, -2)
 
 att.LHIK = true
+att.LHIK_Priority = -2
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2_roni.mdl"
 

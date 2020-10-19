@@ -15,6 +15,8 @@ att.Mult_SightTime = 0.85
 att.Mult_AccuracyMOA = 1.25
 att.Mult_RPM = 1.1
 
+att.Add_BarrelLength = -5
+
 att.Mult_MoveDispersion = 0.8
 att.Mult_HipDispersion = 0.8
 
