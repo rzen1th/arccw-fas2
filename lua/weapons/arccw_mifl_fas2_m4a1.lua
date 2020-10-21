@@ -196,6 +196,18 @@ SWEP.AttachmentElements = {
             },		
 		},			
     },	
+    ["mifl_fas2_m4a1_barrel_para_a1"] = {
+        NameChange = "Mark 16",		
+        VMBodygroups = {
+            {ind = 1, bg = 8},	
+            {ind = 2, bg = 7},				
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(23, -1.3, 0),
+            },		
+		},			
+    },		
     ["mifl_fas2_m4a1_barrel_heat"] = {
         NameChange = "Mark Grenadier",		
         VMBodygroups = {
@@ -204,7 +216,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [3] = {
-                vpos = Vector(36, -1.3, 0),
+                vpos = Vector(29, -1.3, 0),
             },		
 		},			
     },		
@@ -274,6 +286,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             barrel = 1
         elseif k == "mifl_fas2_m4a1_barrel_a1" then
             barrel = 4
+        elseif k == "mifl_fas2_m4a1_barrel_para_a1" then
+            barrel = 7			
         elseif k == "iron_none" then
             lp = true
         end

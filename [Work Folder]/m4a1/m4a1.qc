@@ -18,7 +18,8 @@ $bodygroup "HG"
 	studio "Handguard_A1.smd"	
 	studio "Handguard_Heat.smd"			
 	studio "Handguard_X.smd"				
-	studio "Handguard_Ribs.smd"				
+	studio "Handguard_Ribs.smd"	
+	studio "Handguard_Para.smd"		
 	blank	
 }
 $bodygroup "Sights"
@@ -29,7 +30,8 @@ $bodygroup "Sights"
 	studio "Iron_SD.smd"
 	studio "Iron_A1.smd"	
 	studio "Iron_Heat.smd"	
-	studio "Iron_X.smd"			
+	studio "Iron_X.smd"		
+	studio "Iron_Para.smd"			
 	blank	
 }
 $bodygroup "Mag"
