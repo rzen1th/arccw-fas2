@@ -8,11 +8,8 @@ att.Desc_Pros = {
 att.Desc_Cons = {
     "- Cannot use ironsights"
 }
-att.Desc_Neutrals = {
-    "Don't toggle the UBGL"
-}
 att.AutoStats = true
-att.Mult_HipDispersion = 4
+att.Mult_HipDispersion = 2
 att.Slot = "gso_extra_pistol_akimbo"
 
 att.ModelOffset = Vector(-1, -0.2, 0.5)
@@ -37,13 +34,13 @@ att.UBGL = true
 
 att.UBGL_PrintName = "AKIMBO"
 att.UBGL_Automatic = false
-att.UBGL_MuzzleEffect = "muzzleflash_4"
+att.UBGL_MuzzleEffect = "muzzleflash_pistol"
 att.UBGL_ClipSize = 20
 att.UBGL_Ammo = "pistol"
 att.UBGL_RPM = 800
-att.UBGL_Recoil = .45
-att.UBGL_RecoilSide = .55
-att.UBGL_RecoilRise = .25
+att.UBGL_Recoil = .7
+att.UBGL_RecoilSide = .3
+att.UBGL_RecoilRise = .3
 att.UBGL_Capacity = 20
 
 att.Hook_ShouldNotSight = function(wep)
