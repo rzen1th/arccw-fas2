@@ -61,11 +61,12 @@ $attachment "muzzle" "muzzle_flash" 0 0 0 rotate 0 0 0
 $attachment "ejector" "shell_ejection" 0 0 0 rotate 0 0 0
 $attachment "muzzle_suppressor" "muzzle_flash_sup" 0 0 0 rotate 0 0 0
 $attachment "Sight1" "glock_main" 1 -1.43 0.57 rotate 0.15 0 0
+$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
 $cbox 0 0 0 0 0 0
 
-$bbox -6.335 -16.886 -12.175 16.928 5.912 -0.466
 
+$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "glock_main" "" -1.420426 -10.135149 -1.581428 0 0 0 0 0 0 0 0 0
 $definebone "glock_magazine_release" "glock_main" 0.371365 0.268686 -0.462893 0 0 0 0 0 0 0 0 0
 $definebone "glock_slide" "glock_main" 0 -0.685104 0.700115 0 0 0 0 0 0 0 0 0
@@ -265,6 +266,37 @@ $sequence "reload_empty" {
 	{ event 5004 44 "Arccw_FAS2_Weapon_Glock20.MagIn" }
 	{ event 5004 45 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 58 "Arccw_FAS2_Weapon_Glock20.SlideForward" }
+	{ event 3018 44 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 31.5
+}
+
+$sequence "reload_akimbo_empty" {
+	"anims\reload_akimbo_empty.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_Glock20.MagOutEmpty" }
+	{ event 5004 14 "Arccw_FAS2_Generic.Cloth_Fast" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 44 "Arccw_FAS2_Weapon_Glock20.MagIn" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 58 "Arccw_FAS2_Weapon_Glock20.SlideForward" }
+	{ event 3018 44 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 31.5
+}
+
+$sequence "reload_akimbo" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_Glock20.MagOutEmpty" }
+	{ event 5004 14 "Arccw_FAS2_Generic.Cloth_Fast" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 44 "Arccw_FAS2_Weapon_Glock20.MagIn" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 44 "" }
 	fadein 0.2
 	fadeout 0.2

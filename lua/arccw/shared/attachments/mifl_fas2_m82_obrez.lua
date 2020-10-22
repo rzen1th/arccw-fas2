@@ -24,6 +24,13 @@ att.Mult_SightedSpeedMult = 1.5
 
 att.Mult_HipDispersion = 1.2
 
-att.Add_BarrelLength = -20
+att.Add_BarrelLength = -30
+
+att.ModelOffset = Vector(-5, -4.5, 1.2)
+
+att.LHIK = true
+att.LHIK_Priority = -2
+
+att.Model = "models/weapons/arccw/mifl_att/fas2/grip_m4x.mdl"
 
 att.Mult_RPM = 2

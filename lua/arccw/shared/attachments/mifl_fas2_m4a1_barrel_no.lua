@@ -17,6 +17,13 @@ att.Mult_RPM = 1.2
 
 att.Add_BarrelLength = -7
 
+att.ModelOffset = Vector(-5, -4.5, 1.2)
+
+att.LHIK = true
+att.LHIK_Priority = -2
+
+att.Model = "models/weapons/arccw/mifl_att/fas2/grip_m4x.mdl"
+
 att.Mult_MoveDispersion = 0.8
 att.Mult_HipDispersion = 1.2
 

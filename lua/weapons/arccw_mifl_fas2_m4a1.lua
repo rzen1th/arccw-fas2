@@ -295,7 +295,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local fs = barrel
     if lp then
-        fs = 7
+        fs = 8
     end
 
 	--[[local empty = wep:Clip1() == 0
@@ -326,7 +326,12 @@ SWEP.Attachments = {
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_m4a1_hg",
-        DefaultAttName = "Standard Barrel"
+        Bone = "Dummy01",	
+        DefaultAttName = "Standard Barrel",
+        Offset = {
+            vpos = Vector(10, 1, 0),
+            vang = Angle(0, 0, -90),
+		}			
     },
     {
         PrintName = "Muzzle",

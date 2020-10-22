@@ -154,33 +154,15 @@ SWEP.Attachments = {
 		CorrectiveAng = Angle(180, 0, 0),		
         InstalledEles = {"noch"},
 		ExtraSightDist = 3
-    },
-    {
-        PrintName = "Backup Optic", -- print name
-        Slot = {"backup"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "M82_Body", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0, 10, 2.5), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, -90, -90),
-            wpos = Vector(15, -0.45, -6.5),
-            wang = Angle(-10.393, 0, -135)
-        },	
-		CorrectiveAng = Angle(180, 0, 0),		
-        InstalledEles = {"bkrail"},		
-        KeepBaseIrons = true,
-		ExtraSightDist = 8,
-		GivesFlags = {"backup"}	
-    },		
+    },	
     {
         PrintName = "Handguard",
         DefaultAttName = "Standard Barrel",
         Slot = "mifl_fas2_m82_hg",
-        Bone = "Weapon_Barrel",
+        Bone = "M82_Body",
         Offset = {
-            vpos = Vector(0, -0.1, 12),
+            vpos = Vector(0.5, 6, -1),
             vang = Angle(90, -90, -90),
-            wpos = Vector(38, 0.782, -10),
-            wang = Angle(-9.79, 0, 180)
         },	
     },
     {

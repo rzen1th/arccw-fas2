@@ -200,6 +200,9 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["akimbo"] = {
+		Override_ActivePos = Vector(2, 0, 0),
+	}
 }
 
 SWEP.ExtraSightDist = 7
@@ -262,6 +265,17 @@ SWEP.Attachments = {
         DefaultAttName = "17-Round 10mm"
     },
     {
+        PrintName = "Left Hand",
+        Slot = "gso_extra_pistol_akimbo",
+        Bone = "Akimbo_Base",		
+        DefaultAttName = "None",
+        Offset = {
+            vpos = Vector(5, -2.5, 0.8),
+            vang = Angle(0, 0, 0),
+        },		
+        InstalledEles = {"akimbo"},		
+    },	
+    {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
         DefaultAttName = "Standard Ammo"
@@ -282,10 +296,14 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.Hook_SelectReloadAnimation = function(wep, anim)
+SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
+    if wep.Attachments[6].Installed then
+		return anim .. "_akimbo"
+    end	
+	
     if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" then
 		return anim .. "_33"
-    end	
+    end		
 end
 
 SWEP.Animations = {
@@ -297,9 +315,6 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -321,9 +336,6 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["fire"] = {
         Source = "fire_1",
@@ -397,5 +409,37 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.7,
+    },	
+	
+--------------------------------------------------------
+    ["reload_akimbo"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+		Time = 60/30
+    },
+    ["reload_akimbo_empty"] = {
+        Source = "reload_akimbo_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+		Time = 65/30	
+    },
+    ["reload_akimbo_33"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+		Time = 72/30
+    },
+    ["reload_akimbo_empty_33"] = {
+        Source = "reload_akimbo_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+		Time = 77/30	
+    },	
+    ["reload_nomen_akimbo"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+		Time = 52/30		
+    },
+    ["reload_nomen_empty_akimbo"] = {
+        Source = "reload_akimbo_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+		Time = 57/30		
     },	
 }
