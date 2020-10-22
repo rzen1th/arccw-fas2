@@ -324,9 +324,6 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["holster_empty"] = {
         Source = "holster_empty",
@@ -417,7 +414,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
 		Time = 60/30
     },
-    ["reload_akimbo_empty"] = {
+    ["reload_empty_akimbo"] = {
         Source = "reload_akimbo_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
 		Time = 65/30	
