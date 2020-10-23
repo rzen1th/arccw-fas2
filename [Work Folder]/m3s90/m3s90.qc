@@ -7,6 +7,30 @@ $scale 2
 $bodygroup "studio"
 {
 	studio "Main.smd"
+	blank
+}
+
+$bodygroup "barrel"
+{
+	studio "Barrel.smd"
+	studio "Barrel_Kurz.smd"
+	studio "Barrel_Long.smd"	
+	blank
+}
+
+$bodygroup "stock"
+{
+	studio "Grip_Fixed.smd"
+	studio "Grip_Col.smd"
+	studio "Grip_Ex.smd"	
+	studio "Grip_Pistol.smd"	
+	blank
+}
+
+$bodygroup "Rail"
+{
+	blank
+	studio "Rail.smd"
 }
 
 $bodygroup "Ammo"
