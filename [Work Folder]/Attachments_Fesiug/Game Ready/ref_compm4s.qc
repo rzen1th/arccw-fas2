@@ -15,7 +15,7 @@ $bodygroup "hsp"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\view\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\accessories"
 
 $attachment "holosight" "holosight" 0 0 0 rotate 0 0 0
 
