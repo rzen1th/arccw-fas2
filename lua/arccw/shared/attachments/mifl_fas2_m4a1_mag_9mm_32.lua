@@ -1,6 +1,6 @@
 att.PrintName = "32-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_32.png", "mips smooth")
-att.Description = "9mm mags offers decent handling exchange for overall performance."
+att.Description = "Conversion to 9mm allows for faster firing rate and a few more rounds at the cost of range."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -37,3 +37,5 @@ att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/mac11/mac11_suppressed_fire1.wav" end
 	
 end
+
+att.AddSuffix = " C9"

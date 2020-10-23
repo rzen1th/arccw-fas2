@@ -1,6 +1,6 @@
 att.PrintName = "Covered Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a2.png", "mips smooth")
-att.Description = "Handguard w da rail coverrs."
+att.Description = "Rail covers, increasing the weight of the weapon and looking good while doing it."
 att.SortOrder = 8.4
 att.Desc_Pros = {
 }

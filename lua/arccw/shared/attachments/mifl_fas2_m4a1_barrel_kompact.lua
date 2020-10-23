@@ -1,6 +1,6 @@
 att.PrintName = "Carbine Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_g36c.png", "mips smooth")
-att.Description = "Medium-length barrel used originally on the G36 carbine."
+att.Description = "What happens when a M4A1 and a G36c have a child? This."
 att.SortOrder = 6
 att.Desc_Pros = {
 }

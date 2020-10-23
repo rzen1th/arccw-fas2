@@ -1,6 +1,6 @@
 att.PrintName = "HEAT Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_heat.png", "mips smooth")
-att.Description = "Heat shield orignally designed for a M203. Enables underbarrel weapons."
+att.Description = "Heat-shielded handguard. Allows the use of underbarrel weapons."
 att.SortOrder = 9-.5
 att.Desc_Pros = {
 }

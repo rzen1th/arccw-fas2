@@ -1,13 +1,11 @@
 /*
 
 mammal is fleshy - literally everything [else] 
-
 Fesiug - QCI, anything related to coding and other stuff
 oranchepopsicle - Text 
 FA:S 2.0 - Assets
 Killing Floor 2 - Assets
 Infinity Ward - Assets 
-Warface - Roni Frame
 
 
 --- look ight these nibbas dont really give specific credits ---
@@ -54,6 +52,9 @@ Infinity Ward / Beenox / CoD dev in general
 -Raptor Kit (MW2CR)
 -MP5 Shroud (MW2) [soon ?]
 -Volked AKM (IW) [soon ?]
+
+Warface
+- Roni Frame
 
 FA:S2 
 -your guess is as good as mine

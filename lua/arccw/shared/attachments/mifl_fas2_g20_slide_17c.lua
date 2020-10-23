@@ -1,6 +1,6 @@
 att.PrintName = "G17C Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slide17c.png", "mips smooth")
-att.Description = "Long barrel for long range."
+att.Description = "Unusually long slide and barrel for unusually long range."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -8,7 +8,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_g20_slide"
 
-att.Mult_Range = 1.4
+att.Mult_Range = 1.7
 att.Mult_Recoil = 0.9
 att.Mult_SightTime = 1.25
 att.Mult_AccuracyMOA = 0.5

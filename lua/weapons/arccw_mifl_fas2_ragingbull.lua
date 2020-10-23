@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "R454"
+SWEP.PrintName = "Pissed Bovine"
 SWEP.TrueName = "Raging Bull"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Powerful revolver, lacking a speed loader."
@@ -129,6 +129,8 @@ SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
     ["whisperer"] = {
+        NameChange = "Quiet Bovine",		
+		TrueNameChange = "Quiet Bull",		
         VMBodygroups = {{ind = 2, bg = 1}},
     },
     ["b_long"] = {
@@ -138,6 +140,8 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 3}},
     },		
     ["b_no"] = {
+        NameChange = "Infant Bovine",		
+		TrueNameChange = "Baby Bull",	
         VMBodygroups = {{ind = 2, bg = 4}},
     },		
     ["rail"] = {

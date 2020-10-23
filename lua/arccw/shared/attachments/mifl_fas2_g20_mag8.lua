@@ -1,10 +1,10 @@
 att.PrintName = "8-Round .50AE"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_8.png", "mips smooth")
-att.Description = "Less bullets per mag exchange for more damage."
+att.Description = "Conversion to .50 AE to ruin your wrist, your gun, and whatever happens to be in front of you. This shouldn't be working at all, yet here you are, using it."
 att.Desc_Pros = {
-    "pro.magcap"
 }
 att.Desc_Cons = {
+    "con.magcap"
 }
 att.SortOrder = 8
 att.AutoStats = true

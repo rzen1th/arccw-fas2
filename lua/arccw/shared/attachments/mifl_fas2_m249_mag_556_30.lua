@@ -1,6 +1,6 @@
 att.PrintName = "30-Round 5.56"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_60.png", "mips smooth")
-att.Description = "Stanag magazine with better handling exchange for mag cap."
+att.Description = "Standard STANAG magazine. Less heavy than the belt."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

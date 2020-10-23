@@ -1,6 +1,6 @@
 att.PrintName = "20-Round 5.56"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_20.png", "mips smooth")
-att.Description = "Small magazine with far superior rounds. Improves handling."
+att.Description = "Smaller but lighter 20 round magazine."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

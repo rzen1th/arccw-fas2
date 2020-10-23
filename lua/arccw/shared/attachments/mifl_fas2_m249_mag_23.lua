@@ -1,6 +1,6 @@
 att.PrintName = "20-Round 23mm"
 att.Icon = Material("entities/arccw_mifl_fas2_m249_20.png", "mips smooth")
-att.Description = "Belt-Fed Shotgun. More pellets exchange for worse everything."
+att.Description = "Converts the weapon into a scary-sounding LMG-shotgun hybrid, making a mess of the room- at the cost of everything else."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

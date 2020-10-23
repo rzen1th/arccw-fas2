@@ -1,6 +1,6 @@
 att.PrintName = "G18 Raptor Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slideraptor.png", "mips smooth")
-att.Description = "3-round burst conversion. Stabilize recoil"
+att.Description = "Modifies the weapon with a 3-burst and a foregrip for stability."
 
 att.AutoStats = true
 att.Slot = "mifl_fas2_g20_slide"

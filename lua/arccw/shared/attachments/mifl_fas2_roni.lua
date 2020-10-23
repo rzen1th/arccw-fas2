@@ -1,6 +1,6 @@
 att.PrintName = "Roni Conversion"
 att.Icon = Material("entities/arccw_mifl_roni_frame.png")
-att.Description = "Turns your pistol into a carbine with this CAA Frame."
+att.Description = "Curious modification turning the pistol into a pistol-caliber carbine."
 
 att.Slot = {"mifl_roni_conv", "mifl_fas2_g20_slide"}
 

@@ -1,6 +1,6 @@
 att.PrintName = "Toyota Pickup Truck (Holo)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_toyota.png", "mips smooth")
-att.Description = "HOW. And why."
+att.Description = "A very strange optic resembling a truck. Has a childlike drawing of a crosshair on the windshield. Its not very pretty, but insurgents have to make do."
 
 att.SortOrder = 0.5
 

@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Mark 4"
+SWEP.PrintName = "AR-C4"
 SWEP.TrueName = "M4A1"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Gun."
+SWEP.Trivia_Desc = "Modern carbine, standard issue to the United States Army. Despite its somewhat-short length, it can put out rounds to a decent range"
 SWEP.Trivia_Manufacturer = "Colt"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -137,14 +137,16 @@ SWEP.AttachmentElements = {
         },
     },	
     ["whisperer"] = {
-        NameChange = "Mark SD",	
+        NameChange = "AR-C4S",	
+		TrueNameChange = "M4A1S",		
         VMBodygroups = {
             {ind = 1, bg = 3},	
             {ind = 2, bg = 3},				
         },
     },
     ["mifl_fas2_m4a1_barrel_kompact"] = {
-        NameChange = "Mark 4c",	
+        NameChange = "AR-G6c",	
+		TrueNameChange = "MG36",			
         VMBodygroups = {
             {ind = 1, bg = 2},	
             {ind = 2, bg = 2},				
@@ -161,7 +163,8 @@ SWEP.AttachmentElements = {
 		},
     },
     ["mifl_fas2_m4a1_barrel_a2"] = {
-        NameChange = "Mark 16",	
+        NameChange = "AR-A2",	
+		TrueNameChange = "M16A2",		
         VMBodygroups = {
             {ind = 1, bg = 1},	
             {ind = 2, bg = 1},				
@@ -173,7 +176,8 @@ SWEP.AttachmentElements = {
 		},		
     },
     ["mifl_fas2_m4a1_barrel_no"] = {
-        NameChange = "Mark 04",	
+        NameChange = "AR-Kurz",	
+		TrueNameChange = "M4A1 Kurz",		
         VMBodygroups = {
             {ind = 1, bg = 6},	
             {ind = 2, bg = 6},				
@@ -185,7 +189,8 @@ SWEP.AttachmentElements = {
 		},		
     },	
     ["mifl_fas2_m4a1_barrel_a1"] = {
-        NameChange = "Mark 16",		
+        NameChange = "AR-A1",	
+		TrueNameChange = "M16A1",		
         VMBodygroups = {
             {ind = 1, bg = 4},	
             {ind = 2, bg = 4},				
@@ -197,7 +202,8 @@ SWEP.AttachmentElements = {
 		},			
     },	
     ["mifl_fas2_m4a1_barrel_para_a1"] = {
-        NameChange = "Mark 16",		
+        NameChange = "AR-A1",	
+		TrueNameChange = "M16A1",	
         VMBodygroups = {
             {ind = 1, bg = 8},	
             {ind = 2, bg = 7},				
@@ -209,7 +215,8 @@ SWEP.AttachmentElements = {
 		},			
     },		
     ["mifl_fas2_m4a1_barrel_heat"] = {
-        NameChange = "Mark Grenadier",		
+        NameChange = "AR-Grenadier",	
+		TrueNameChange = "M16 Grenadier",	
         VMBodygroups = {
             {ind = 1, bg = 5},	
             {ind = 2, bg = 5},				
@@ -221,7 +228,7 @@ SWEP.AttachmentElements = {
 		},			
     },		
     ["mifl_fas2_m4a1_barrel_ribs"] = {
-        NameChange = "Mark 4-1",		
+        NameChange = "AR-C41",		
         VMBodygroups = {
             {ind = 1, bg = 7},				
         },

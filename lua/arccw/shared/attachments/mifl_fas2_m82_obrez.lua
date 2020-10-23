@@ -1,6 +1,6 @@
 att.PrintName = "Obrez-ed"
 att.Icon = Material("entities/arccw_mifl_fas2_m82_obrez.png")
-att.Description = "Cut down barrel, handguard and stock. Increase cylcing speed and overall handling"
+att.Description = "Okay, you know you need that right? Where’s the barrel gonna go, into your shoulder?"
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

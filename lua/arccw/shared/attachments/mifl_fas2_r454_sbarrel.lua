@@ -1,6 +1,6 @@
 att.PrintName = "Short Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_r454_b_short.png", "mips smooth")
-att.Description = "Shorten barrel. Improves handling."
+att.Description = "Small but reasonable barrel increasing maneuverability."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -1,6 +1,6 @@
 att.PrintName = "A1 Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a1.png", "mips smooth")
-att.Description = "Antique M16A1 barrel. Burst and Semi only."
+att.Description = "Antique handguard from the ‘Nam days."
 att.SortOrder = 10
 att.Desc_Pros = {
 }

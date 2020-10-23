@@ -3,14 +3,17 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2" 
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Glock 20"
+SWEP.PrintName = "HKP20"
+SWEP.TrueName = "Glock 20"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "EeeeEeee"
+SWEP.Trivia_Desc = "Polymer handgun firing 10mm Auto, a far cry from its usual 9x19mm cousins, making it capable of having more range and damage."
 SWEP.Trivia_Manufacturer = "GLOCK GmbH"
 SWEP.Trivia_Calibre = "10mm Parabellum"
 SWEP.Trivia_Mechanism = "Short Recoil"
 SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1982
+
+if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
 SWEP.Slot = 1
 
@@ -117,7 +120,8 @@ SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
     ["roni"] = {
-        NameChange = "Roni 20",	
+		TrueNameChange = "Glock Carbine",
+        NameChange = "HKP-C",	
         VMBodygroups = {
             {ind = 1, bg = 1},	
             {ind = 4, bg = 0},	
@@ -157,7 +161,8 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_g20_slide_17c"] = {
-        NameChange = "Glock 17c",
+		TrueNameChange = "Glock 17c",	
+        NameChange = "HKP 17c",
         VMBodygroups = {
             {ind = 1, bg = 2},
         },
@@ -168,7 +173,8 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_g20_slide_raptor"] = {
-        NameChange = "Glock Raptor",
+		TrueNameChange = "Glock Raptor",		
+        NameChange = "HKP Raptor",
         VMBodygroups = {
             {ind = 1, bg = 4},
         },
@@ -179,7 +185,8 @@ SWEP.AttachmentElements = {
         }
     },	
     ["mifl_fas2_g20_slide_whisper"] = {
-        NameChange = "Glock SD",
+		TrueNameChange = "Glock SD",		
+        NameChange = "HKP SD",
         VMBodygroups = {
             {ind = 1, bg = 3},
         },
@@ -190,7 +197,8 @@ SWEP.AttachmentElements = {
         }
     },	
     ["mifl_fas2_g20_slide_18"] = {
-        NameChange = "Glock 18",
+		TrueNameChange = "Glock 18",	
+        NameChange = "HKP 18",
         VMBodygroups = {
             {ind = 1, bg = 1}
         },

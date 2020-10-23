@@ -1,6 +1,6 @@
 att.PrintName = "33-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_33.png", "mips smooth")
-att.Description = "More bullets per mag exchange for less damage."
+att.Description = "Conversion to 9mm to hold more rounds at the cost of damage and range."
 att.Desc_Pros = {
     "pro.magcap"
 }

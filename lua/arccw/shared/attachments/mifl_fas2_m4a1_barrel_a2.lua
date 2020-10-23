@@ -1,6 +1,6 @@
 att.PrintName = "A2 Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a2.png", "mips smooth")
-att.Description = "Long M16A2 barrel. Good for long range engagements."
+att.Description = "Modern long barrel and handguard, making the weapon lean towards the ‘rifle’ side of things."
 att.SortOrder = 9
 att.Desc_Pros = {
 }

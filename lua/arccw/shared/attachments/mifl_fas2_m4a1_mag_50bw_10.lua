@@ -1,6 +1,6 @@
 att.PrintName = "10-Round .50 Beowulf"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_60.png", "mips smooth")
-att.Description = ".50 Beowulf ammunition in a quad stack. Deals more damage but reduces range."
+att.Description = "Conversion to .50 Beowolf allows for higher damage and range, but you cant stuff many bullets into a magazine of one."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -42,3 +42,5 @@ att.Override_Firemodes = {
         Mode = 0
     }
 }
+
+att.AddSuffix = " C50"

@@ -1,6 +1,6 @@
 att.PrintName = "No Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_r454_b_xshort.png", "mips smooth")
-att.Description = "Barrel is gone. Improves handling but offers much much worse range and accuracy."
+att.Description = "When you asked for a snub nose, you weren’t thinking about this, were you? I hope not."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
