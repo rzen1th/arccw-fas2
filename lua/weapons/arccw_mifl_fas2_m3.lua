@@ -62,7 +62,7 @@ SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "arccw_go/nova/nova-1.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/m3s90p/m3s90_fire1.wav"
 SWEP.ShootSoundSilenced = "arccw_go/m590_suppressed_fp.wav"
 SWEP.DistantShootSound = "arccw_go/nova/nova-1-distant.wav"
 
