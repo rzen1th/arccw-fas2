@@ -249,14 +249,12 @@ SWEP.AttachmentElements = {
 		},
     },	
     ["mifl_fas2_m4a1_mag_9mm_21"] = {
-        NameChange = "Mark 9mm",
         VMBodygroups = {
             {ind = 3, bg = 4},
             {ind = 4, bg = 1},			
         },
     },
     ["mifl_fas2_m4a1_mag_9mm_32"] = {
-        NameChange = "Mark 9mm",
         VMBodygroups = {
             {ind = 3, bg = 3},
             {ind = 4, bg = 1},			

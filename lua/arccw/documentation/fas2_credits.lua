@@ -32,7 +32,7 @@ mammal is fleshy
 
 Fesiug
 -akimbo
--rewriting nomen, anything to do with reloading 																		end lol
+-rewriting nomen, anything to do with reloading 																		end my life lol
 -spawnicon
 -other stuff i forgot idk
 
@@ -55,6 +55,7 @@ Infinity Ward / Beenox / CoD dev in general
 
 Warface
 - Roni Frame
+- AS Val [soon ?]
 
 FA:S2 
 -your guess is as good as mine

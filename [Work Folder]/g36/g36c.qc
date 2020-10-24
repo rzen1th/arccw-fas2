@@ -43,6 +43,7 @@ $bodygroup "Magwell"
 $bodygroup "Mag"
 {
 	studio "Mag_556_30.smd"
+	studio "Mag_10.smd"	
 	studio "Mag_556_20.smd"
 	studio "Mag_556_60.smd"	
 	studio "Mag_9_15.smd"	
@@ -57,26 +58,18 @@ $bodygroup "Ammo"
 	blank	
 }
 
-$surfaceprop "default"
-
-$contents "solid"
-
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\view\rifles\g36c\"
-$cdmaterials "models\weapons\view\hands\"
-$cdmaterials "models\weapons\view\accessories\"
-$cdmaterials "models\weapons\shells\"
+$cdmaterials "models\weapons\arccw_fas2\g36c\"
+$cdmaterials "models\weapons\arccw_fas2\mp5sd\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1\"
+$cdmaterials "models\weapons\arccw_fas2\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "muzzle" "Dummy01" 11.25 0 0 rotate 0 0 0
 $attachment "ejector" "Dummy01" 2.62 0 0 rotate -70 30 -30
-$attachment "muzzle_suppressor" "Dummy01" 11.25 0 0 rotate 0 0 0
-$attachment "Sight1" "Dummy01" 1 -2.47 1.15 rotate 0 0 0
-$attachment "Sight2" "Dummy01" 0 -2.47 0.7 rotate 0 0 0
 
 $cbox 0 0 0 0 0 0
-
-$bbox -12.507 -28.918 -40.421 112.006 79.042 49.943
 
 $definebone "Dummy01" "" -2.323339 -7.870985 -3.402039 0.000019 -90.000016 90.000016 0 0 0 0 0 0
 $definebone "Dummy05" "Dummy01" -1.428614 -0.371249 0.557884 0 0 0 0 0 0 0 0 0
@@ -131,19 +124,24 @@ $definebone "Right Upper Arm" "Right shoulder" 0 0 0 -1.190663 -89.788103 0.0036
 $definebone "Right Lower Arm" "Right Upper Arm" -9.996876 0 0 -0.054718 -3.963264 -0.000172 0 0 0 0 0 0
 $definebone "CompM4S" "Dummy01" 2.869866 1.558331 -0.000108 -89.980215 0 0 0 0 0 0 0 0
 
+$sequence "idle" {
+	"anims\idle.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 0.01
+}
 
 $sequence "deploy_first" {
-	"g36c_anims\deploy_first.smd"
+	"anims\deploy_first.smd"
 	activity "ACT_VM_DRAW_FIRST" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 14 "Weapon_G36.BoltHandle" }
-	{ event 5004 23 "Weapon_G36.BoltBack" }
-	{ event 5004 23 "Generic.Cloth_Movement" }
-	{ event 5004 31 "Weapon_G36.BoltForward" }
-	{ event 5004 43 "Weapon_G36.Stock" }
-	{ event 5004 43 "Generic.Cloth_Movement" }
-	{ event 5004 58 "Generic.Cloth_Movement" }
-	{ event 5004 79 "Weapon_G36.switch" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_G36.BoltHandle" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_G36.BoltBack" }
+	{ event 5004 23 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_G36.BoltForward" }
+	{ event 5004 43 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -151,7 +149,7 @@ $sequence "deploy_first" {
 }
 
 $sequence "deploy" {
-	"g36c_anims\deploy.smd"
+	"anims\deploy.smd"
 	activity "ACT_VM_DRAW" 1
 	{ event 5004 0 "Weapon.Deploy" }
 	fadein 0.2
@@ -161,7 +159,7 @@ $sequence "deploy" {
 }
 
 $sequence "holster" {
-	"g36c_anims\holster.smd"
+	"anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
 	{ event 5004 0 "Weapon.Holster" }
 	fadein 0.2
@@ -171,7 +169,7 @@ $sequence "holster" {
 }
 
 $sequence "deploy_empty" {
-	"g36c_anims\deploy_empty.smd"
+	"anims\deploy_empty.smd"
 	activity "ACT_VM_DRAW_EMPTY" 1
 	{ event 5004 0 "Weapon.Deploy" }
 	fadein 0.2
@@ -181,7 +179,7 @@ $sequence "deploy_empty" {
 }
 
 $sequence "holster_empty" {
-	"g36c_anims\holster_empty.smd"
+	"anims\holster_empty.smd"
 	activity "ACT_VM_HOLSTER_EMPTY" 1
 	{ event 5004 0 "Weapon.Holster" }
 	fadein 0.2
@@ -190,17 +188,8 @@ $sequence "holster_empty" {
 	fps 60
 }
 
-$sequence "idle" {
-	"g36c_anims\idle.smd"
-	activity "ACT_VM_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 0.01
-}
-
 $sequence "idle_empty" {
-	"g36c_anims\idle_empty.smd"
+	"anims\idle_empty.smd"
 	activity "ACT_VM_IDLE_EMPTY" 1
 	fadein 0.2
 	fadeout 0.2
@@ -208,7 +197,7 @@ $sequence "idle_empty" {
 }
 
 $sequence "idle_scoped" {
-	"g36c_anims\idle_scoped.smd"
+	"anims\idle_scoped.smd"
 	activity "ACT_VM_IDLE_SCOPED" 1
 	fadein 0.2
 	fadeout 0.2
@@ -216,23 +205,15 @@ $sequence "idle_scoped" {
 	fps 0.01
 }
 
-$sequence "idle_empty_scoped" {
-	"g36c_anims\idle_empty_scoped.smd"
-	activity "ACT_VM_IDLE_EMPTY_SCOPED" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 0.01
-}
-
 $sequence "reload" {
-	"g36c_anims\reload.smd"
+	"anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_G36.MagOut" }
-	{ event 5004 11 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_G36.MagOut" }
+	{ event 5004 11 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 35 "Generic.Magpouch" }
-	{ event 5004 42 "Weapon_G36.MagIn" }
-	{ event 5004 42 "Generic.Cloth_Movement" }
+	{ event 5004 42 "Arccw_FAS2_Weapon_G36.MagIn" }
+	{ event 5004 42 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 52 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -240,17 +221,17 @@ $sequence "reload" {
 }
 
 $sequence "reload_empty" {
-	"g36c_anims\reload_empty.smd"
+	"anims\reload_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 11 "Weapon_G36.MagOutEmpty" }
-	{ event 5004 11 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_G36.MagOutEmpty" }
+	{ event 5004 11 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 35 "Generic.Magpouch" }
-	{ event 5004 42 "Weapon_G36.MagIn" }
-	{ event 5004 42 "Generic.Cloth_Movement" }
-	{ event 5004 61 "Weapon_G36.BoltHandle" }
-	{ event 5004 67 "Generic.Cloth_Movement" }
-	{ event 5004 67 "Weapon_G36.BoltForward" }
+	{ event 5004 42 "Arccw_FAS2_Weapon_G36.MagIn" }
+	{ event 5004 42 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_G36.BoltHandle" }
+	{ event 5004 67 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 67 "Arccw_FAS2_Weapon_G36.BoltForward" }
 	{ event 3018 77 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -259,14 +240,14 @@ $sequence "reload_empty" {
 }
 
 $sequence "reload_nomen" {
-	"g36c_anims\reload_nomen.smd"
+	"anims\reload_nomen.smd"
 	activity "ACT_VM_RELOAD_NOMEN" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 8 "Weapon_G36.MagOut" }
-	{ event 5004 8 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_G36.MagOut" }
+	{ event 5004 8 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 27 "Generic.Magpouch" }
-	{ event 5004 33 "Weapon_G36.MagIn" }
-	{ event 5004 33 "Generic.Cloth_Movement" }
+	{ event 5004 33 "Arccw_FAS2_Weapon_G36.MagIn" }
+	{ event 5004 33 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 38 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -275,17 +256,17 @@ $sequence "reload_nomen" {
 }
 
 $sequence "reload_empty_nomen" {
-	"g36c_anims\reload_empty_nomen.smd"
+	"anims\reload_empty_nomen.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 10 "Weapon_G36.MagOutEmpty" }
-	{ event 5004 10 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_G36.MagOutEmpty" }
+	{ event 5004 10 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 28 "Generic.Magpouch" }
-	{ event 5004 35 "Weapon_G36.MagIn" }
-	{ event 5004 35 "Generic.Cloth_Movement" }
-	{ event 5004 48 "Weapon_G36.BoltHandle" }
-	{ event 5004 48 "Generic.Cloth_Movement" }
-	{ event 5004 51 "Weapon_G36.BoltForward" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_G36.MagIn" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 48 "Arccw_FAS2_Weapon_G36.BoltHandle" }
+	{ event 5004 48 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_G36.BoltForward" }
 	{ event 3018 56 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -294,11 +275,8 @@ $sequence "reload_empty_nomen" {
 }
 
 $sequence "fire1" {
-	"g36c_anims\fire1.smd"
+	"anims\fire1.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
-	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }
-	{ event AE_FAS_EJECT_BRASS 1 "" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -306,11 +284,8 @@ $sequence "fire1" {
 }
 
 $sequence "fire2" {
-	"g36c_anims\fire2.smd"
+	"anims\fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
-	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }
-	{ event AE_FAS_EJECT_BRASS 1 "" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -318,7 +293,7 @@ $sequence "fire2" {
 }
 
 $sequence "fire3" {
-	"g36c_anims\fire3.smd"
+	"anims\fire3.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
 	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }
@@ -330,7 +305,7 @@ $sequence "fire3" {
 }
 
 $sequence "fire_last" {
-	"g36c_anims\fire_last.smd"
+	"anims\fire_last.smd"
 	activity "ACT_VM_FIRE_LAST" 1
 	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
 	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }
@@ -342,7 +317,7 @@ $sequence "fire_last" {
 }
 
 $sequence "fire1_scoped" {
-	"g36c_anims\fire1_scoped.smd"
+	"anims\fire1_scoped.smd"
 	activity "ACT_VM_PRIMARYATTACK_SCOPED" 1
 	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
 	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }
@@ -354,7 +329,7 @@ $sequence "fire1_scoped" {
 }
 
 $sequence "fire2_scoped" {
-	"g36c_anims\fire2_scoped.smd"
+	"anims\fire2_scoped.smd"
 	activity "ACT_VM_PRIMARYATTACK_SCOPED" 1
 	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
 	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }
@@ -366,7 +341,7 @@ $sequence "fire2_scoped" {
 }
 
 $sequence "fire3_scoped" {
-	"g36c_anims\fire3_scoped.smd"
+	"anims\fire3_scoped.smd"
 	activity "ACT_VM_PRIMARYATTACK_SCOPED" 1
 	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
 	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }
@@ -378,7 +353,7 @@ $sequence "fire3_scoped" {
 }
 
 $sequence "fire_last_scoped" {
-	"g36c_anims\fire_last_scoped.smd"
+	"anims\fire_last_scoped.smd"
 	activity "ACT_VM_FIRE_LAST_SCOPED" 1
 	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_G36C_View" }
 	{ event AE_FAS_MUZZLE_EFFECT 2 "Ejector_Smoke" }

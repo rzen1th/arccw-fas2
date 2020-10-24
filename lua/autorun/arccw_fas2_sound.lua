@@ -319,3 +319,47 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/glock20/glock20_sliderelease.wav"}
 })
+
+
+//G36c
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G36.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g36c/g36c_magout_empty.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G36.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g36c/g36c_magout.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G36.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g36c/g36c_magin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G36.BoltBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g36c/g36c_boltback.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G36.BoltForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g36c/g36c_boltforward.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G36.BoltHandle",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g36c/g36c_handle.wav"}
+})
