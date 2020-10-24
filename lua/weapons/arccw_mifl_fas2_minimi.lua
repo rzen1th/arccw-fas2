@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "BEMG 5.56"
 SWEP.TrueName = "Minimi"
 SWEP.Trivia_Class = "Light Machine Gun"
-SWEP.Trivia_Desc = "Big belt fed m4."
+SWEP.Trivia_Desc = "Machine gun of Belgian origin. Adopted into the US military as the M249."
 SWEP.Trivia_Manufacturer = "Gun Manufacturing"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Country = "Belgium"
@@ -336,7 +336,7 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["reload"] = {
-        Source = "reload_empty",
+        Source = "reload",
         LastClip1OutTime = 3,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,

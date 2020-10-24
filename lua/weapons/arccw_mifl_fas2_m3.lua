@@ -268,6 +268,16 @@ SWEP.Attachments = {
     },
 }
 
+SWEP.Hook_SelectInsertAnimation = function( wep, anim )
+	--local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
+
+	local reloadtime = math.min( (wep.Primary.ClipSize - wep:Clip1()), 4 )
+
+    print("sgreload_insert" .. reloadtime)
+
+    return {reloadtime, "sgreload_insert" .. reloadtime, anim[3] }
+end
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
@@ -310,9 +320,46 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0,
-    },	
+    },
     ["sgreload_insert"] = {
         Source = "reload_load1",
+        Time = 1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnimStartTime = 0.3,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0,
+    },
+    ["sgreload_insert1"] = {
+        Source = "reload_load1",
+        Time = 1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnimStartTime = 0.3,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0,
+    },
+    ["sgreload_insert2"] = {
+        Source = "reload_load2",
+        Time = 1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnimStartTime = 0.3,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0,
+    },
+    ["sgreload_insert3"] = {
+        Source = "reload_load3",
+        Time = 1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnimStartTime = 0.3,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0,
+    },
+    ["sgreload_insert4"] = {
+        Source = "reload_load4",
+        Time = 1,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
