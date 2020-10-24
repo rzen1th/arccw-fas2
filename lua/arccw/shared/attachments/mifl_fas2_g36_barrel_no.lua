@@ -1,6 +1,6 @@
 att.PrintName = "No Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_no.png", "mips smooth")
-att.Description = "short boi"
+att.Description = "I suppose the G36 bareley even had a barrel."
 att.SortOrder = 1
 att.Desc_Pros = {
 }

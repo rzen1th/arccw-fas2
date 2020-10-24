@@ -1,6 +1,6 @@
 att.PrintName = "Extended Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_mgsl8.png", "mips smooth")
-att.Description = "long boi"
+att.Description = "Longer barrel extending the weapons range at the cost of weight and maneuverability."
 att.SortOrder = 10
 att.Desc_Pros = {
 }

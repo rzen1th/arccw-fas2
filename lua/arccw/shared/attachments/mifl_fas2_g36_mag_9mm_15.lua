@@ -1,6 +1,6 @@
 att.PrintName = "15-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g36_ammo_15.png", "mips smooth")
-att.Description = "Conversion to 9mm allows for faster firing rate and a few more rounds at the cost of range."
+att.Description = "Converting the weapon into 9mm is not possible in real life, but here it decreases damage and increases firerate."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

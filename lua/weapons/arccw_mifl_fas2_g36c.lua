@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "G36c"
+SWEP.PrintName = "Gewehr-36C"
 SWEP.TrueName = "G36c"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "German gun"
+SWEP.Trivia_Desc = "Compact carbine with folding stock and good ergonomics."
 SWEP.Trivia_Manufacturer = "Colt"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -134,8 +134,8 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_g36_barrel_no"] = {
-        NameChange = "Kurz",	
-		TrueNameChange = "Kurz",		
+        NameChange = "Gewehr-Kurz",	
+		TrueNameChange = "G-Kurz",		
         VMBodygroups = {
             {ind = 3, bg = 3},				
         },
@@ -154,8 +154,8 @@ SWEP.AttachmentElements = {
 		},		
     },	
     ["mifl_fas2_g36_barrel_long"] = {
-        NameChange = "boi",	
-		TrueNameChange = "long",		
+        NameChange = "Gewehr-36",	
+		TrueNameChange = "G36",		
         VMBodygroups = {
             {ind = 3, bg = 2},				
         },
