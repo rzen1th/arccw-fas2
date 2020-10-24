@@ -11,3 +11,4 @@ att.Slot = "mifl_fas2_m4a1_hg"
 
 att.Mult_MoveSpeed = 1.1
 att.Mult_SightTime = 1.1
+att.Mult_SightedSpeedMult = 1.1
