@@ -258,7 +258,7 @@ SWEP.Attachments = {
         Bone = "Dummy01",	
         DefaultAttName = "Standard Barrel",
         Offset = {
-            vpos = Vector(10, 2.5, -0.5),
+            vpos = Vector(10, 2.5, -0.2),
             vang = Angle(0, 0, -90),
 		}			
     },
