@@ -48,10 +48,14 @@ Tripwire (Killing Floor 2)
 -Gluke Slide
 
 Infinity Ward / Beenox / CoD dev in general
+-9mm Adaptor (MW19)
 -Pistol Rail(MW2)
 -Raptor Kit (MW2CR)
 -MP5 Shroud (MW2) [soon ?]
 -Volked AKM (IW) [soon ?]
+
+Saber Interactive
+- Felin (+big ass scope)
 
 Warface
 - Roni Frame
