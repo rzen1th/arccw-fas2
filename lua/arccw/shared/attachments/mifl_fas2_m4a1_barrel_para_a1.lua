@@ -9,9 +9,6 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_m4a1_hg"
 
-att.GivesFlags = {"3bst"}
-att.ExcludeFlags = {"a1"}
-
 att.Mult_MoveSpeed = 0.9
 
 att.Mult_Range = 0.9

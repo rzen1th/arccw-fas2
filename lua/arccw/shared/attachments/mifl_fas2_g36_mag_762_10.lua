@@ -34,6 +34,7 @@ end
 att.Override_Trivia_Calibre = "7.62mm"
 att.Override_Trivia_Class = "Desginated Marksman Rifle"
 
+att.Override_Firemodes_Priority = 10
 att.Override_Firemodes = {
     {
         Mode = 1,

@@ -427,7 +427,7 @@ SWEP.Animations = {
         Source = "deploy_first",
         LHIK = true,
         LHIKIn = 0,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
     },
     ["fire"] = {
         Source = {"shoot"},
