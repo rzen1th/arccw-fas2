@@ -327,13 +327,13 @@ SWEP.Animations = {
         Source = "idle"
     },
     ["draw"] = {
-        Source = "deploy",
+        Source = "draw",
     },
     ["holster"] = {
         Source = "holster",
     },
     ["ready"] = {
-        Source = "deploy_first",
+        Source = "deploy_1",
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.7,
@@ -361,16 +361,14 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["reload_nomen"] = {
-        Source = "reload_nomen",
-        Time = 68/30,			
+        Source = "reload_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,		
     },
     ["reload_nomen_empty"] = {
-        Source = "reload_empty_nomen",	
-        Time = 68/30,		
+        Source = "reload_empty_nomen",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
@@ -394,16 +392,14 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["reload_nomen_felin"] = {
-        Source = "reload_nomen",
-        Time = 68/30,			
+        Source = "reload_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,		
     },
     ["reload_nomen_empty_felin"] = {
-        Source = "reload_empty_nomen_felin",	
-        Time = 68/30,		
+        Source = "reload_empty_nomen_felin",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
