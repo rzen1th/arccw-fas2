@@ -1,5 +1,5 @@
 att.PrintName = "La Valorisé"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a1.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_felin.png", "mips smooth")
 att.Description = "Modernized all purpose upgrade."
 att.SortOrder = 10
 att.Desc_Pros = {

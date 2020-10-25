@@ -1,5 +1,5 @@
 att.PrintName = "Commando Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_g36c.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_kurz.png", "mips smooth")
 att.Description = "short"
 att.SortOrder = 6
 att.Desc_Pros = {

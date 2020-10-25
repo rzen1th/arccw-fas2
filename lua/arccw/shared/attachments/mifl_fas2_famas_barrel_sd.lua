@@ -1,5 +1,5 @@
 att.PrintName = "Whisper Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_sd.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_sd.png", "mips smooth")
 att.Description = "Smaller frame exchange for longer muzzle."
 att.SortOrder = 10
 att.Desc_Pros = {
