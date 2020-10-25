@@ -1,5 +1,5 @@
 att.PrintName = "Left Shield"
-att.Icon = Material("entities/acwatt_mw2_akimbo.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_lhand_shield.png", "smooth")
 att.Description = "SHOE"
 att.Hidden = false
 att.Desc_Pros = {
@@ -50,11 +50,12 @@ end
 
 --- nopog ---
 
-att.UBGL_Reload = function(wep, ubgl) ---- how 2 always play reload anim halp ????? ----
+att.UBGL_Reload = function(wep, ubgl) ---- how 2 no play reload anim when clip1 = full halp ????? ----
+
     wep:Reload()
         wep:DoLHIKAnimation("reload", 130/60)
         wep:SetNextSecondaryFire(CurTime() + 130/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/gso/glock18/glock_clipout.wav", 	t = 13/60},		
+            {s = "weapons/arccw_mifl/gso/glock18/glock_clipout.wav", 	t = 13/60},	--- woooosh ---	
         })
 end
