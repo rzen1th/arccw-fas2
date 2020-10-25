@@ -103,7 +103,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(1, 3, 1)
+SWEP.ActivePos = Vector(1, -1, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
@@ -193,17 +193,22 @@ SWEP.WorldModelOffset = {
 
 SWEP.MirrorVMWM = true
 
-SWEP.Hook_ModifyBodygroups = function(wep, data) ---- fuck am i doing ----
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
+
+    local optic = wep.Attachments[1].Installed
+    local type = wep.Attachments[2].Installed
 	
-    if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_felin" then
-	    vm:SetBodygroup(2, 0)
-	elseif wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_commando" then
-	    vm:SetBodygroup(2, 1)
-    elseif wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_sd" then
-	    vm:SetBodygroup(2, 2)
-    elseif wep.Attachments[1].Installed then
-	    vm:SetBodygroup(2, 1)
+	if optic then
+		if		type == "mifl_fas2_famas_barrel_felin" then
+			vm:SetBodygroup(2, 0)
+		elseif	type == "mifl_fas2_famas_barrel_commando" then
+			vm:SetBodygroup(2, 1)
+		elseif	type == "mifl_fas2_famas_barrel_sd" then
+			vm:SetBodygroup(2, 2)
+		else
+			vm:SetBodygroup(2, 1)
+		end
 	end
 end
 
@@ -320,6 +325,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+		Time = 1,
     },
     ["holster"] = {
         Source = "holster",
