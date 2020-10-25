@@ -359,11 +359,11 @@ SWEP.Animations = {
         Source = {"fire1"},
         ShellEjectAt = 0,
     },
-    ["fire_iron"] = {
+    ["fire_iron_empty"] = {
         Source = "fire_last_scoped",
         ShellEjectAt = 0,
     },	
-    ["fire"] = {
+    ["fire_empty"] = {
         Source = {"fire_last"},
         ShellEjectAt = 0,
     },
