@@ -23,7 +23,7 @@ att.Override_ClipSize = 25
 att.Mult_Damage = 0.8
 att.Mult_DamageMin = 0.75
 att.Mult_ShootPitch = 0.9
-att.Mult_ReloadTime = 1.1
+att.Mult_ReloadTime = 0.9
 
 att.Override_Ammo = "pistol"
 

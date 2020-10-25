@@ -150,7 +150,7 @@ SWEP.AttachmentElements = {
 		TrueNameChange = "FAMAS Félin",		
         VMBodygroups = {
             {ind = 1, bg = 2},	
-            {ind = 2, bg = 2},				
+            {ind = 2, bg = 3},				
             {ind = 4, bg = 1},				
         },
         AttPosMods = {
@@ -198,20 +198,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local lp = false
 
     for i, k in pairs(eles or {}) do
-        if k == "mifl_fas2_m4a1_barrel_sd" then
+        if k == "mifl_fas2_famas_barrel_felin" then
             barrel = 3
         elseif k == "mifl_fas2_m4a1_barrel_kompact" then
-            barrel = 2
-        elseif k == "mifl_fas2_m4a1_barrel_no" then
-            barrel = 6	
-        elseif k == "mifl_fas2_m4a1_barrel_heat" then
-            barrel = 5				
-        elseif k == "mifl_fas2_m4a1_barrel_a2" then
-            barrel = 1
-        elseif k == "mifl_fas2_m4a1_barrel_a1" then
-            barrel = 4
-        elseif k == "mifl_fas2_m4a1_barrel_para_a1" then
-            barrel = 7			
+            barrel = 2	
         elseif k == "iron_none" then
             lp = true
         end
@@ -219,7 +209,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local fs = barrel
     if lp then
-        fs = 8
+        fs = 0
     end
 
     vm:SetBodygroup(2, fs)
@@ -229,16 +219,17 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = {"optic", "optic_lp"},
-        Bone = "Dummy01",
+        Bone = "famas",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(3, -2.65, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(-3.3, 19, -1.3),
+            vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
         InstalledEles = {"iron_none"},
-		ExtraSightDist = 3		
+		ExtraSightDist = 3,
+		CorrectiveAng = Angle(0, 180, 0)		
     },
     {
         PrintName = "Handguard",
@@ -325,6 +316,12 @@ SWEP.Attachments = {
     },
 }
 
+SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
+    if wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_felin" then
+		return anim .. "_felin"
+    end		
+end
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
@@ -379,5 +376,37 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
     },	
-		
+	
+	
+
+    ["reload_felin"] = {
+        Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },
+    ["reload_empty_felin"] = {
+        Source = "reload_empty_felin",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },
+    ["reload_nomen_felin"] = {
+        Source = "reload_nomen",
+        Time = 68/30,			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,		
+    },
+    ["reload_nomen_empty_felin"] = {
+        Source = "reload_empty_nomen_felin",	
+        Time = 68/30,		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },			
 }

@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"materials\models\weapons\arccw_fas2\wwz_famas\aug_smg_mag"
+	"$bumpmap"					"materials\models\weapons\arccw_fas2\wwz_famas\aug_smg_mag_n"
+
+	"$phong"	"1"
+	"$phongexponent"	"3"
+	"$phongalbedotint"	"1"
+	"$phongboost"	"0.25"
+	"$phongfresnelranges"	"[1 1 1]"
+        "$phongdisablehalflambert"  "1"
+
+        "$halflambert"                 "0"
+        "$nodecal"                     "0"
+        "$ambientocclusion"         "1"
+}
