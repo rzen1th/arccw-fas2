@@ -38,9 +38,9 @@ SWEP.Primary.ClipSize = 25 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 1050
 
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.4
 SWEP.RecoilSide = 0.25
-SWEP.RecoilRise = 0.8
+SWEP.RecoilRise = 0.3
 
 SWEP.Delay = 60 / 950 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -154,6 +154,9 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 1},				
         },
         AttPosMods = {
+            [1] = {
+                vpos = Vector(-3.3, 19, -1.3),
+            },			
             [3] = {
                 vpos = Vector(36, -1.3, 0),
             },		
@@ -168,11 +171,6 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 3, bg = 1},					
         },
-    },	
-    ["iron_none"] = {
-		VMBodygroups = {
-            {ind = 2, bg = 4},	
-		},
     },	
     ["mifl_fas2_famas_mag_9mm_25"] = {
         VMBodygroups = {
@@ -209,7 +207,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local fs = barrel
     if lp then
-        fs = 0
+        fs = 1
     end
 
     vm:SetBodygroup(2, fs)
@@ -222,7 +220,7 @@ SWEP.Attachments = {
         Bone = "famas",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(-3.3, 19, -1.3),
+            vpos = Vector(-3.3, 20, -0),
             vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)

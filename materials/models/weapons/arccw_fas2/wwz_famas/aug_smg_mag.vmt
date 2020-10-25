@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$basetexture"					"materials\models\weapons\arccw_fas2\wwz_famas\aug_smg_mag"
-	"$bumpmap"					"materials\models\weapons\arccw_fas2\wwz_famas\aug_smg_mag_n"
+	"$basetexture"					"models\weapons\arccw_fas2\wwz_famas\aug_smg_mag"
+	"$bumpmap"					"models\weapons\arccw_fas2\wwz_famas\aug_smg_mag_n"
 
 	"$phong"	"1"
 	"$phongexponent"	"3"
