@@ -12,9 +12,9 @@ att.Slot = "mifl_fas2_g36_mag"
 
 att.ActivateElements = {"10"}
 
-att.Mult_Recoil = 3
-att.Mult_RecoilSide = 2
-att.Mult_VisualRecoilMult = 2
+att.Mult_Recoil = 1.9
+att.Mult_RecoilSide = 1.2
+att.Mult_VisualRecoilMult = 1.2
 
 att.Mult_MoveSpeed = 1.1
 att.Mult_Damage = 2.7
