@@ -52,10 +52,9 @@ att.Hook_Think = function(wep)
     if wep:GetOwner():KeyPressed(IN_RELOAD) then
         wep:SetInUBGL(false)
         wep:ReloadUBGL()
-        wep:Reload()
+        --wep:Reload()
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetInUBGL(false)
-        wep:PrimaryAttack()
     elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
         wep:SetInUBGL(true)
         wep:ShootUBGL()
@@ -119,7 +118,7 @@ end
 att.UBGL_Reload = function(wep, ubgl)
     wep:Reload()
 
-    local clip = 15 + (1 * GetConVar("arccw_mw2_chambering"):GetInt())
+    local clip = 15 + 1
 
     if wep:Clip2() >= clip then return end -- att.UBGL_Capacity
 

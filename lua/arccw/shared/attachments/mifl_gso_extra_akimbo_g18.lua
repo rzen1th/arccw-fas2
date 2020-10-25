@@ -33,7 +33,7 @@ att.LHIK_MovementMult = 0
 att.UBGL = true
 
 att.UBGL_PrintName = "AKIMBO"
-att.UBGL_Automatic = false
+att.UBGL_Automatic = true
 att.UBGL_MuzzleEffect = "muzzleflash_pistol"
 att.UBGL_ClipSize = 20
 att.UBGL_Ammo = "pistol"
@@ -52,13 +52,15 @@ att.Hook_Think = function(wep)
     if wep:GetOwner():KeyPressed(IN_RELOAD) then
         wep:SetInUBGL(false)
         wep:ReloadUBGL()
-        wep:Reload()
+        --wep:Reload()
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetInUBGL(false)
-        wep:PrimaryAttack()
-    elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
+	elseif wep:GetOwner():KeyDown(IN_ATTACK2) then -- Wake me up when Arctic picks up an interest in akimbo (I will die of oversleep!)
         wep:SetInUBGL(true)
         wep:ShootUBGL()
+    --[[elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
+        wep:SetInUBGL(true)
+        wep:ShootUBGL()]]
     end
 end
 
@@ -119,7 +121,7 @@ end
 att.UBGL_Reload = function(wep, ubgl)
     wep:Reload()
 
-    local clip = 20 + (1 * GetConVar("arccw_mw2_chambering"):GetInt())
+    local clip = 20 + 1
 
     if wep:Clip2() >= clip then return end -- att.UBGL_Capacity
 
