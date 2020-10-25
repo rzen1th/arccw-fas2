@@ -22,7 +22,7 @@ att.ModelOffset = Vector(-5, -4.5, 1.2)
 att.LHIK = true
 att.LHIK_Priority = -2
 
-att.Model = "models/weapons/arccw/mifl_att/fas2/grip_m4x.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_m4x.mdl"
 
 att.Mult_MoveDispersion = 0.7
 att.Mult_HipDispersion = 1.4

@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+"$baseTexture" 	"models\weapons\mifl_custom\shield\shield_glass d"
+"$bumpmap" "models\weapons\mifl_custom\shield\shield_glass n"
+"$additive" "1"
+"$model" "1"	
+"$nocull" "1"	
+$vertexalpha 1
+$alphatest 1
+}

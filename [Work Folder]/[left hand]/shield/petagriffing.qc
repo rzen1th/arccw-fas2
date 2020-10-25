@@ -1,15 +1,17 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons/arccw/mifl_att/fas2/grip_m4x.mdl"
+$modelname "weapons/arccw/mifl_atts/fas2/left_shield.mdl"
 
 $bodygroup "studio"
 {
-	blank
-	studio "foregrip_vertical.smd"
+	studio "shield.smd"
+	blank	
 }
 
 
 $surfaceprop "default"
+
+$cdmaterials "models\weapons\mifl_custom\shield\"
 
 $contents "solid"
 
@@ -103,3 +105,22 @@ $sequence "idle" {
 	fadeout 0.2
 	fps 30
 }
+
+$sequence "reload" {
+	"anims\reload.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$collisionmodel "shield.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
+}
+

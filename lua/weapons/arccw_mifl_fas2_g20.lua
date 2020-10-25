@@ -210,7 +210,10 @@ SWEP.AttachmentElements = {
     },
     ["akimbo"] = {
 		Override_ActivePos = Vector(2, 0, 0),
-	}
+	},
+    ["shield"] = {
+		Override_ActivePos = Vector(8, 0, 0),
+	},
 }
 
 SWEP.ExtraSightDist = 7
@@ -274,7 +277,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Left Hand",
-        Slot = "gso_extra_pistol_akimbo",
+        Slot = {"gso_extra_pistol_akimbo"},
         Bone = "Akimbo_Base",		
         DefaultAttName = "None",
         Offset = {
@@ -282,7 +285,19 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },		
         InstalledEles = {"akimbo"},		
+		MergeSlots = {7},
     },	
+    {
+        Hidden = true,
+        Slot = {"mifl_fas2_lhand_shield"},
+        Bone = "Akimbo_Base",		
+        DefaultAttName = "None",
+        Offset = {
+            vpos = Vector(5.3, -2.5, 0.8),
+            vang = Angle(0, 0, 0),
+        },		
+        InstalledEles = {"shield"},		
+    },		
     {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
@@ -305,7 +320,7 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-    if wep.Attachments[6].Installed then
+    if wep.Attachments[6].Installed or wep.Attachments[7].Installed  then
 		return anim .. "_akimbo"
     end	
 	
