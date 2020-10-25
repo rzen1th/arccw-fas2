@@ -17,7 +17,7 @@ att.Override_ClipSize = 5
 att.Mult_Damage = 2.3
 att.Mult_DamageMin = 1.6
 att.Mult_Range = 0.9
-att.Mult_Recoil = 1.3
+att.Mult_Recoil = 2.1
 att.Mult_ShootPitch = 0.875
 
 att.Hook_GetShootSound = function(wep, fsound)

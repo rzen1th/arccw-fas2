@@ -7,7 +7,7 @@ att.Desc_Cons = {
 }
 att.SortOrder = 10
 att.AutoStats = true
-att.Slot = "mifl_fas2_m4a1_mag"
+att.Slot = {"mifl_fas2_m4a1_mag", "mifl_fas2_m249_mag", "mifl_fas2_famas_mag"}
 
 att.Mult_SightTime = 1.1
 att.Mult_ReloadTime = 1.175
@@ -16,7 +16,7 @@ att.Override_ClipSize = 10
 att.Mult_Damage = 2.3
 att.Mult_DamageMin = 1.6
 att.Mult_Range = 0.9
-att.Mult_Recoil = 1.3
+att.Mult_Recoil = 2.1
 att.Mult_ShootPitch = 0.875
 
 att.Hook_GetShootSound = function(wep, fsound)

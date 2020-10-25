@@ -363,3 +363,32 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/g36c/g36c_handle.wav"}
 })
+
+//Famas
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_FAMAS.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/famas/famas_magout_empty.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_FAMAS.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/famas/famas_magout.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_FAMAS.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/famas/famas_magin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_FAMAS.BoltPull",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/famas/famas_boltpull.wav"}
+})

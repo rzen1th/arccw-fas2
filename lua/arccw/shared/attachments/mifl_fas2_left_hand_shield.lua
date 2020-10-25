@@ -16,15 +16,14 @@ att.ModelOffset = Vector(10, -7, -7)
 
 att.GivesFlags = {"handlocked"}
 
-att.ModelScale = Vector(1, 1, 1)
+att.ShieldCorrectAng = Angle(0, 0, 0)
+att.ShieldCorrectPos = Vector(0, 0, 5)
 
 att.SortOrder = 1
 
 att.AddSuffix = " Ballista" -- busta lookin ass ---
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/left_shield.mdl"
-
-att.ShieldCorrectPos = Vector(0, 0, 0)
 
 att.ModelIsShield = true --- fuck does this do ???? ---
 att.ShieldBone = "ValveBiped.Bip01_L_Hand"

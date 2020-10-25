@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+$baseTexture "models\weapons\arccw_fas2\wwz_famas\T_AR_23_FAMASFELIN_D"
+$bumpmap  "models\weapons\arccw_fas2\wwz_famas\T_AR_23_FAMASFELIN_S"
+$normalmapalphaenvmapmask "1"
+$phong "1"
+$phongboost "1"
+$phongfresnelranges "[.2 .4 .5]"
+$phongexponent "100"
+$phongalbedotint "1"
+$envmaptint "[0.1 0.1 0.1]"
+$nocull "1"
+$halflambert "1"
+
+}

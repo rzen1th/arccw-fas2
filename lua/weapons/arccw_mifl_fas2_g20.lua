@@ -119,6 +119,12 @@ SWEP.CustomizeAng = Angle(4, 20, 10)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["akimbo"] = {
+		Override_ActivePos = Vector(2, 0, 0),
+	},
+    ["shield"] = {
+		Override_ActivePos = Vector(8, 0, 0),
+	},
     ["roni"] = {
 		TrueNameChange = "Glock Carbine",
         NameChange = "HKP-C",	
@@ -208,12 +214,6 @@ SWEP.AttachmentElements = {
             }
         }
     },
-    ["akimbo"] = {
-		Override_ActivePos = Vector(2, 0, 0),
-	},
-    ["shield"] = {
-		Override_ActivePos = Vector(8, 0, 0),
-	},
 }
 
 SWEP.ExtraSightDist = 7
@@ -293,7 +293,7 @@ SWEP.Attachments = {
         Bone = "Akimbo_Base",		
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(5.3, -2.5, 0.8),
+            vpos = Vector(3, -1.2, 0.8),
             vang = Angle(0, 0, 0),
         },		
         InstalledEles = {"shield"},		

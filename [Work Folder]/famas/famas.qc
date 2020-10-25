@@ -20,7 +20,8 @@ $bodygroup "Rail"
 {
 	blank
 	studio "Rail.smd"
-	studio "Rail_SD.smd"	
+	studio "Rail_SD.smd"
+	studio "Rail_Felin.smd"	
 }
 $bodygroup "Mag"
 {

@@ -299,7 +299,8 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 	local fuckyou = wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or 
 	   wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or
-	   wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30"
+	   wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30" or
+	   wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_50bw_10"	   
 
 	local reload_stanag = (fuckyou and "_stanag") or ""
 	local reload_nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
