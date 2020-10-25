@@ -390,5 +390,5 @@ sound.Add({
 	name = 			"Arccw_FAS2_Weapon_FAMAS.BoltPull",
 	channel = 		CHAN_ITEM1,
 	volume = 		1.0,
-	sound = {"weapons/arccw_mifl/fas2/famas/famas_boltpull.wav"}
+	sound = {"weapons/arccw_mifl/fas2/famas/famas_cock.wav"}
 })
