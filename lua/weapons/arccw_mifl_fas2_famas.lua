@@ -132,6 +132,11 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 1, bg = 1},				
         },
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(-3.3, 20, -1),
+            },				
+		},			
     },
     ["mifl_fas2_famas_barrel_commando"] = {
         NameChange = "Commando",	
@@ -141,7 +146,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [3] = {
-                vpos = Vector(13, -1.3, 0),
+                vpos = Vector(-3.3, 26, -4.4),
             },		
 		},		
     },	
@@ -158,7 +163,7 @@ SWEP.AttachmentElements = {
                 vpos = Vector(-3.3, 19, -1.3),
             },			
             [3] = {
-                vpos = Vector(36, -1.3, 0),
+                vpos = Vector(-3.3, 34, -4.1),
             },		
 		},			
     },	
@@ -188,29 +193,18 @@ SWEP.WorldModelOffset = {
 
 SWEP.MirrorVMWM = true
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
+SWEP.Hook_ModifyBodygroups = function(wep, data) ---- fuck am i doing ----
     local vm = data.vm
-    local eles = data.eles
-
-    local barrel = 0
-    local lp = false
-
-    for i, k in pairs(eles or {}) do
-        if k == "mifl_fas2_famas_barrel_felin" then
-            barrel = 3
-        elseif k == "mifl_fas2_m4a1_barrel_kompact" then
-            barrel = 2	
-        elseif k == "iron_none" then
-            lp = true
-        end
-    end
-
-    local fs = barrel
-    if lp then
-        fs = 1
-    end
-
-    vm:SetBodygroup(2, fs)
+	
+    if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_felin" then
+	    vm:SetBodygroup(2, 0)
+	elseif wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_commando" then
+	    vm:SetBodygroup(2, 1)
+    elseif wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_sd" then
+	    vm:SetBodygroup(2, 2)
+    elseif wep.Attachments[1].Installed then
+	    vm:SetBodygroup(2, 1)
+	end
 end
 
 SWEP.Attachments = {
@@ -243,14 +237,14 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "Dummy01",
+        Bone = "famas",
         Offset = {
-            vpos = Vector(26, -1.3, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(-3.3, 32.5, -4.4),
+            vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_m4a1_barrel_sd"}		
+        ExcludeFlags = {"mifl_fas2_famas_barrel_sd"}		
     },	
     {
         PrintName = "Underbarrel",
