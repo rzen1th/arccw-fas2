@@ -143,7 +143,7 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_famas_barrel_commando"] = {
         NameChange = "Fusile Kurz",	
-		TrueNameChange = "Famas-C",		
+		TrueNameChange = "Famas PDW",		
         VMBodygroups = {
             {ind = 1, bg = 3},				
         },
