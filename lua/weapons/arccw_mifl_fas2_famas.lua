@@ -121,9 +121,9 @@ SWEP.CustomizeAng = Angle(10, 15, 15)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
-    ["buftube"] = {
+    ["grip_none"] = {
         VMBodygroups = {
-            {ind = 5, bg = 4},					
+            {ind = 4, bg = 2},					
         },
     },
     ["mifl_fas2_famas_barrel_sd"] = {
@@ -135,6 +135,9 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [1] = {
                 vpos = Vector(-3.3, 20, -1),
+            },	
+            [5] = {
+				vpos = Vector(-1.8, 22, -4.4),
             },				
 		},			
     },
@@ -147,7 +150,10 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [3] = {
                 vpos = Vector(-3.3, 26, -4.4),
-            },		
+            },	
+            [5] = {
+				vpos = Vector(-2.5, 20, -4.4),
+            },				
 		},		
     },	
     ["mifl_fas2_famas_barrel_felin"] = {
@@ -197,6 +203,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
 
     local optic = wep.Attachments[1].Installed
+    local grip = wep.Attachments[4].Installed
     local type = wep.Attachments[2].Installed
 	
 	if optic then
@@ -210,6 +217,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 			vm:SetBodygroup(2, 1)
 		end
 	end
+
+	if grip then
+		if		type == "mifl_fas2_famas_barrel_felin" then
+			vm:SetBodygroup(4, 2)
+		else
+			vm:SetBodygroup(4, 0)
+		end
+	end	
 end
 
 SWEP.Attachments = {
@@ -221,21 +236,19 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(-3.3, 20, -0),
             vang = Angle(0, -90, 0),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
         },
         InstalledEles = {"iron_none"},
 		ExtraSightDist = 3,
 		CorrectiveAng = Angle(0, 180, 0)		
     },
     {
-        PrintName = "Handguard",
+        PrintName = "Frame",
         Slot = "mifl_fas2_famas_hg",
-        Bone = "Dummy01",	
-        DefaultAttName = "Standard Barrel",
+        Bone = "famas",	
+        DefaultAttName = "Standard FAMAS",
         Offset = {
-            vpos = Vector(10, 1, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(-2.8, 23, -6),
+            vang = Angle(0, -90, 0),
 		}			
     },
     {
@@ -246,31 +259,26 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(-3.3, 32.5, -4.4),
             vang = Angle(0, -90, 0),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
         },
         ExcludeFlags = {"mifl_fas2_famas_barrel_sd"}		
     },	
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
-        Bone = "Dummy01",
+        Bone = "famas",
         Offset = {
-            vpos = Vector(12, 0, 0),
-            vang = Angle(0, 0, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
-        },
+            vpos = Vector(-2.8, 23, -6),
+            vang = Angle(0, -90, 0),
+		},
+        InstalledEles = {"grip_none"},		
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Dummy01",
+        Bone = "famas",
         Offset = {
-            vpos = Vector(10, -2, 0.5),
-            vang = Angle(0, 0, 180),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+            vpos = Vector(-2.5, 25, -4.4),
+            vang = Angle(90, -90, 0),
         },
         ExcludeFlags = {"go_m4_barrel_stub"}
     },
@@ -278,17 +286,6 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_famas_mag"},
         DefaultAttName = "Standard 5.56"
-    },
-    {
-        PrintName = "Stock",
-        Slot = {"go_stock_none", "go_stock", "mifl_fas2_m4a1_stock"},
-        DefaultAttName = "Standard Stock",
-        Bone = "Dummy01",
-        Offset = {
-            vpos = Vector(-2, -1.3, 0),
-            vang = Angle(0, 0, -90),
-        },
-        VMScale = Vector(1, 1, 1)
     },
     {
         PrintName = "Ammo Type",
@@ -303,12 +300,10 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "Dummy01", -- relevant bone any attachments will be mostly referring to
+        Bone = "famas",
         Offset = {
-            vpos = Vector(0.6, -3.25, 4), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
-            wpos = Vector(6.099, 1.1, -3.301),
-            wang = Angle(171.817, 180-1.17, 0),
+            vpos = Vector(-2.3, 20, -4.6),
+            vang = Angle(0, -90, 0),
         },
     },
 }
@@ -355,21 +350,21 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,		
+        LHIKOut = 0.7,		
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",		
@@ -386,21 +381,21 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
     },
     ["reload_empty_felin"] = {
         Source = "reload_empty_felin",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
     },
     ["reload_nomen_felin"] = {
         Source = "reload_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,		
+        LHIKOut = 0.7,		
     },
     ["reload_nomen_empty_felin"] = {
         Source = "reload_empty_nomen_felin",			
