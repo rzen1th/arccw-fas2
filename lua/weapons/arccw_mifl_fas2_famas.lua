@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Fusile"
 SWEP.TrueName = "FAMAS"  --- its a fucking hybrid model ---
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Modern carbine, standard issue to the United States Army. Despite its somewhat-short length, it can put out rounds to a decent range"
+SWEP.Trivia_Desc = "French bullpup assault rifle with exponentially high firerate. Good for longer range accuracy."
 SWEP.Trivia_Manufacturer = "baguette"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -42,7 +42,7 @@ SWEP.Recoil = 0.4
 SWEP.RecoilSide = 0.25
 SWEP.RecoilRise = 0.3
 
-SWEP.Delay = 60 / 950 -- 60 / RPM.
+SWEP.Delay = 60 / 1000 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -334,7 +334,13 @@ SWEP.Animations = {
         Source = "deploy_1",
         LHIK = true,
         LHIKIn = 0,
-        LHIKOut = 0.7,
+        LHIKOut = 0.5,
+        SoundTable = {
+            {
+            s = "weapons/arccw_mifl/fas2/famas/famas_cock.wav",
+            t = 13/30
+            }
+        },		
     },
     ["fire"] = {
         Source = {"shoot1"},
