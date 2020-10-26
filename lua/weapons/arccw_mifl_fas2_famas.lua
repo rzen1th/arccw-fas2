@@ -3,8 +3,8 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "FR556"
-SWEP.TrueName = "FAMAS G21"  --- its a fucking hybrid model ---
+SWEP.PrintName = "Fusile"
+SWEP.TrueName = "FAMAS"  --- its a fucking hybrid model ---
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Modern carbine, standard issue to the United States Army. Despite its somewhat-short length, it can put out rounds to a decent range"
 SWEP.Trivia_Manufacturer = "baguette"
@@ -127,8 +127,8 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_famas_barrel_sd"] = {
-        NameChange = "FSD",	
-		TrueNameChange = "FAMAS SD",	
+        NameChange = "Fusile-SD",	
+		TrueNameChange = "FAMAS-SD",	
         VMBodygroups = {
             {ind = 1, bg = 1},				
         },
@@ -139,8 +139,8 @@ SWEP.AttachmentElements = {
 		},			
     },
     ["mifl_fas2_famas_barrel_commando"] = {
-        NameChange = "Commando",	
-		TrueNameChange = "Kurz",		
+        NameChange = "Fusile Kurz",	
+		TrueNameChange = "Famas-C",		
         VMBodygroups = {
             {ind = 1, bg = 3},				
         },
@@ -151,7 +151,7 @@ SWEP.AttachmentElements = {
 		},		
     },	
     ["mifl_fas2_famas_barrel_felin"] = {
-        NameChange = "FAMAS Valorisé",	
+        NameChange = "Fusile Valorisé",	
 		TrueNameChange = "FAMAS Félin",		
         VMBodygroups = {
             {ind = 1, bg = 2},	

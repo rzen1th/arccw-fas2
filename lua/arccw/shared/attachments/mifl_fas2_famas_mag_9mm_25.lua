@@ -1,5 +1,5 @@
 att.PrintName = "25-Round 9mm"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_32.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_famas_mag_25.png", "mips smooth")
 att.Description = "Conversion to 9mm allows for faster firing rate and a few more rounds at the cost of range."
 att.Desc_Pros = {
 }
@@ -13,15 +13,15 @@ att.ActivateElements = {"25"}
 
 att.Mult_SightedSpeedMult = 1.12
 
-att.Mult_Range = 0.75
+att.Mult_Range = 0.8
 att.Mult_Penetration = 0.5
-att.Mult_Recoil = 0.79
+att.Mult_Recoil = 0.78
 att.Mult_SightTime = 0.82
-att.Mult_RPM = 1.35
-att.Mult_AccuracyMOA = 2.1
+att.Mult_RPM = 1.375
+att.Mult_AccuracyMOA = 2.3
 att.Override_ClipSize = 25
 att.Mult_Damage = 0.8
-att.Mult_DamageMin = 0.75
+att.Mult_DamageMin = 0.9
 att.Mult_ShootPitch = 0.9
 att.Mult_ReloadTime = 0.9
 
