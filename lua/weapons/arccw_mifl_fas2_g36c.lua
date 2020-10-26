@@ -280,7 +280,7 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(12, 0, 0),
+            vpos = Vector(15, 1.2, 0),
             vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -386,16 +386,14 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["reload_nomen"] = {
-        Source = "reload_nomen",
-        Time = 68/30,			
+        Source = "reload_nomen",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,		
     },
     ["reload_nomen_empty"] = {
-        Source = "reload_empty_nomen",	
-        Time = 68/30,		
+        Source = "reload_empty_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,

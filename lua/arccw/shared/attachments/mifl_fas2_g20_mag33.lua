@@ -16,6 +16,10 @@ att.Mult_Damage = 0.8
 att.Mult_DamageMin = 0.7
 att.Mult_MoveSpeed = 0.935
 att.Mult_SightTime = 1.08
-att.Mult_ReloadTime = 1.2
+att.Mult_ReloadTime = 1.15
+
+att.Mult_Recoil = 0.9
+att.Mult_RecoilSide = 0.9
+att.Mult_VisualRecoilMult = 0.8
 
 att.Override_Trivia_Calibre = "9x19mm Parabellum"

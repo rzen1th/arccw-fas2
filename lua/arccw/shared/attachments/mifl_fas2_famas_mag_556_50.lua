@@ -15,4 +15,4 @@ att.ActivateElements = {"50"}
 att.Mult_MoveSpeed = 1.1
 att.Mult_SightTime = 0.85
 att.Override_ClipSize = 50
-att.Mult_ReloadTime = 1.2
+att.Mult_ReloadTime = 1.15

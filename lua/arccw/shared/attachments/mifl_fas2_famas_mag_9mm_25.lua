@@ -15,8 +15,8 @@ att.Mult_SightedSpeedMult = 1.12
 
 att.Mult_Range = 0.8
 att.Mult_Penetration = 0.5
-att.Mult_Recoil = 0.78
-att.Mult_SightTime = 0.82
+att.Mult_Recoil = 0.85
+att.Mult_SightTime = 0.88
 att.Mult_RPM = 1.2
 att.Mult_AccuracyMOA = 2.3
 att.Override_ClipSize = 25

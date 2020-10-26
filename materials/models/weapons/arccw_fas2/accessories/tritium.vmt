@@ -2,4 +2,12 @@
 {
 	$color2 "[1 1 1]"
 	$selfillum 1
+	
+		"Proxies"
+	{
+		"ArcCW_FAS2_Color_Crosshair"
+		{
+			"resultVar"	"$color2"
+		}
+	}
 }
