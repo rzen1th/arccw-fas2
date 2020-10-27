@@ -268,15 +268,15 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.Hook_SelectInsertAnimation = function( wep, anim )
+--[[SWEP.Hook_SelectInsertAnimation = function( wep, anim )
 	--local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
 
 	local reloadtime = math.min( (wep.Primary.ClipSize - wep:Clip1()), 4 )
 
     print("sgreload_insert" .. reloadtime)
 
-    return {reloadtime, "sgreload_insert" .. reloadtime, anim[3] }
-end
+    return {1, "sgreload_insert" .. reloadtime}
+end]]
 
 SWEP.Animations = {
     ["idle"] = {
