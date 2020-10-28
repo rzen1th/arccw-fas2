@@ -1,6 +1,8 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons\view\rifles\sg552.mdl"
+$modelname "weapons/arccw/mifl/fas2/c_sg552.mdl"
+$include fesiug.qci
+$scale 2
 
 $bodygroup "studio"
 {

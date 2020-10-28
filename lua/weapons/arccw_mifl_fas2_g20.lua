@@ -217,7 +217,6 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.ExtraSightDist = 7
-SWEP.GuaranteeLaser = true
 
 SWEP.WorldModelOffset = {
     pos = Vector(-12.5, 4, -2.5),
