@@ -63,10 +63,12 @@ $contents "solid"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\view\rifles\sg55x\"
-$cdmaterials "models\weapons\view\hands\"
-$cdmaterials "models\weapons\view\accessories\"
-$cdmaterials "models\weapons\shells\"
+$cdmaterials "models\weapons\arccw_fas2\sg55x\"
+$cdmaterials "models\weapons\arccw_fas2\akm\"
+$cdmaterials "models\weapons\arccw_fas2\mp5sd\"
+$cdmaterials "models\weapons\arccw_fas2\sg55x_extra\"
+$cdmaterials "models\weapons\arccw_fas2\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "muzzle" "muzzle_flash" -5.78 0 0 rotate 0 0 0
 $attachment "ejector" "shell_ejection" 0.45 0 0 rotate 0 0 0
