@@ -18,6 +18,14 @@ $bodygroup "barrel"
 	blank
 }
 
+$bodygroup "Iron"
+{
+	studio "Iron.smd"
+	studio "Iron_Kurz.smd"
+	studio "Iron_Long.smd"	
+	blank
+}
+
 $bodygroup "stock"
 {
 	studio "Grip_Fixed.smd"

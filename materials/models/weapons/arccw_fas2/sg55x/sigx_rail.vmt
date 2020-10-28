@@ -1,6 +1,6 @@
 VertexLitGeneric 
 { 
-	"$baseTexture" "models\weapons\view\rifles\sg55x\sigx_rail"
+	"$baseTexture" "models\weapons\arccw_fas2\sg55x\sigx_rail"
 	"$phong" "1" 
 	"$phongexponent" "20"
 	"$phongboost" "1"

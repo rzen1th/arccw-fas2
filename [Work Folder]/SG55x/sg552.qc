@@ -46,8 +46,8 @@ $bodygroup "Iron"
 
 $bodygroup "Rail"
 {
-	blank
 	studio "Rail.smd"
+	blank
 }
 
 $bodygroup "Stock"
