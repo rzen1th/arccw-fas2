@@ -4,7 +4,7 @@ $modelname "weapons\view\rifles\sg552.mdl"
 
 $bodygroup "studio"
 {
-	studio Frame.smd"
+	studio "Frame.smd"
 	blank
 }
 
@@ -45,7 +45,7 @@ $bodygroup "Iron"
 $bodygroup "Rail"
 {
 	blank
-	studio Rail.smd"
+	studio "Rail.smd"
 }
 
 $bodygroup "Stock"
@@ -408,8 +408,8 @@ $sequence "reload_762" {
 	fps 34
 }
 
-$sequence "reload_empty_762" {
-	"anims\reload_empty_762.smd"
+$sequence "reload_762_empty" {
+	"anims\reload_762_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 13 "Arccw_FAS2_Weapon_Misc.Switch" }
@@ -426,8 +426,8 @@ $sequence "reload_empty_762" {
 	fps 35
 }
 
-$sequence "reload_nomen_762" {
-	"anims\reload_nomen_762.smd"
+$sequence "reload_762_nomen" {
+	"anims\reload_762_nomen.smd"
 	activity "ACT_VM_RELOAD_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 11 "Arccw_FAS2_Generic.Magpouch" }
@@ -442,8 +442,8 @@ $sequence "reload_nomen_762" {
 	fps 35
 }
 
-$sequence "reload_empty_nomen_762" {
-	"anims\reload_empty_nomen_762.smd"
+$sequence "reload_empty_762_nomen" {
+	"anims\reload_empty_762_nomen.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 11 "Arccw_FAS2_Generic.Magpouch" }
@@ -479,8 +479,8 @@ $sequence "reload_45" {
 	fps 34
 }
 
-$sequence "reload_empty_45" {
-	"anims\reload_empty_45.smd"
+$sequence "reload_45_empty" {
+	"anims\reload_45_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 13 "Arccw_FAS2_Weapon_Misc.Switch" }
@@ -497,8 +497,8 @@ $sequence "reload_empty_45" {
 	fps 35
 }
 
-$sequence "reload_nomen_45" {
-	"anims\reload_nomen_45.smd"
+$sequence "reload_45_nomen" {
+	"anims\reload_45_nomen.smd"
 	activity "ACT_VM_RELOAD_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 11 "Arccw_FAS2_Generic.Magpouch" }
@@ -513,8 +513,8 @@ $sequence "reload_nomen_45" {
 	fps 35
 }
 
-$sequence "reload_empty_nomen_45" {
-	"anims\reload_empty_nomen_45.smd"
+$sequence "reload_empty_45_nomen" {
+	"anims\reload_empty_45_nomen.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 11 "Arccw_FAS2_Generic.Magpouch" }
