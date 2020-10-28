@@ -37,6 +37,13 @@ sound.Add({
 	sound = "weapons/arccw_mifl/fas2/handling/generic_magpouch1.wav"
 })
 
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Misc.Switch",
+	channel = 		CHAN_ITEM3,
+	volume = 		1.0,
+	sound = "weapons/arccw_mifl/fas2/handling/switch.wav"
+})
+
 //M82
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_M82.MagRelease",
@@ -391,4 +398,35 @@ sound.Add({
 	channel = 		CHAN_ITEM1,
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/famas/famas_cock.wav"}
+})
+
+
+
+//SG55#
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SG550.BoltBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SG550.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SG550.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sg55x/sg550_magin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SG550.BoltForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav"}
 })

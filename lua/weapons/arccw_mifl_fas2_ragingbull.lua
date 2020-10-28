@@ -37,6 +37,8 @@ SWEP.MuzzleVelocity = 900 -- projectile or phys bullet muzzle velocity
 
 SWEP.CanFireUnderwater = false
 
+SWEP.PhysBulletMuzzleVelocity = 800
+
 SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3

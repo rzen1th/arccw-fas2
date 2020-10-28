@@ -68,9 +68,9 @@ SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/m4a1/m4_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/m4a1/m4_suppressed_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m4a1/m4_distance_fire1.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/sg55x/sg550_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/sg55x/sg550_suppressed_fire1.wav"
+SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/sg55x/sg550_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
@@ -115,8 +115,8 @@ SWEP.HolsterAng = Angle(-7.036, 30.016, -10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.CustomizePos = Vector(6, -1, -1)
-SWEP.CustomizeAng = Angle(10, 15, 15)
+SWEP.CustomizePos = Vector(12, -1, -6)
+SWEP.CustomizeAng = Angle(20, 25, 15)
 
 SWEP.BarrelLength = 24
 
@@ -482,16 +482,14 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["reload_nomen_45"] = {
-        Source = "reload_45_nomen",
-        Time = 68/30,			
+        Source = "reload_45_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,		
     },
     ["reload_nomen_empty_45"] = {
-        Source = "reload_empty_45_nomen",	
-        Time = 68/30,		
+        Source = "reload_empty_45_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
@@ -513,16 +511,14 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["reload_nomen_762"] = {
-        Source = "reload_762_nomen",
-        Time = 68/30,			
+        Source = "reload_762_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,		
     },
     ["reload_nomen_empty_762"] = {
-        Source = "reload_empty_762_nomen",	
-        Time = 68/30,		
+        Source = "reload_empty_762_nomen",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,

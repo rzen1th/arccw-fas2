@@ -53,6 +53,7 @@ Infinity Ward / Beenox / CoD dev in general
 -Raptor Kit (MW2CR)
 -MP5 Shroud (MW2) [soon ?]
 -Volked AKM (IW) [soon ?]
+-Suppressed sound and firing sound for calibre conversion (Mostly MW19)
 
 Saber Interactive
 - Felin (+big ass scope)

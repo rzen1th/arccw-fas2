@@ -153,8 +153,10 @@ $sequence "idle" {
 	"anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
 	fps 20
+	fadein 0.00002
+	fadeout 0.00002	
 	addlayer blend_gear
-	snap	
+	snap
 }
 
 $sequence "deploy_first" {
