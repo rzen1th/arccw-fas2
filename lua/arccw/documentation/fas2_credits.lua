@@ -2,7 +2,7 @@
 
 mammal is fleshy - literally everything [else] 
 Fesiug - QCI, anything related to coding and other stuff
-oranchepopsicle - Text 
+oranchepopsicle - Bottom Text 
 FA:S 2.0 - Assets
 Killing Floor 2 - Assets
 Infinity Ward - Assets 
@@ -17,8 +17,8 @@ https://gamebanana.com/skins/19381
 MP7 (ironsight for the roni) - Shumung/The_tub
 https://gamebanana.com/skins/19741
 
-
---- soon to use ---
+SAF KIT - ???
+--- i dont even remember where i got it from ---
 
 Shield - ???
 https://gamebanana.com/skins/126616
@@ -56,6 +56,7 @@ Infinity Ward / Beenox / CoD dev in general
 
 Saber Interactive
 - Felin (+big ass scope)
+- Mp5 Kit [soon ?]
 
 Warface
 - Roni Frame

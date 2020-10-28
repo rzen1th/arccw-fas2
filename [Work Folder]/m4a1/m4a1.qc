@@ -152,11 +152,9 @@ $sectionframes 30 120
 $sequence "idle" {
 	"anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
 	fps 20
 	addlayer blend_gear
+	snap	
 }
 
 $sequence "deploy_first" {
@@ -209,6 +207,7 @@ $sequence "reload" {
 	{ event 3018 71 "" }
 	fadein 1
 	fadeout 0.2
+	snap
 	fps 30
 }
 
@@ -226,6 +225,7 @@ $sequence "reload_empty" {
 	{ event 3018 73 "" }
 	fadein 1
 	fadeout 0.2
+	snap
 	fps 30
 }
 
@@ -241,6 +241,7 @@ $sequence "reload_nomen" {
 	{ event 3018 37 "" }
 	fadein 1
 	fadeout 0.2
+	snap
 	fps 30
 }
 
@@ -258,6 +259,7 @@ $sequence "reload_empty_nomen" {
 	{ event 3018 50 "" }
 	fadein 1
 	fadeout 0.2
+	snap
 	fps 30
 }
 

@@ -420,9 +420,6 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "deploy",
     },
-    ["holster"] = {
-        Source = "holster",
-    },
     ["ready"] = {
         Source = "deploy_first",
         LHIK = true,

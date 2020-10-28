@@ -1,6 +1,6 @@
 att.PrintName = "FRF2 (3-12x)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_felin.png", "mips smooth")
-att.Description = "Heavy advance optic system. Both Thermal and Night Vision. As well as a backup EO553."
+att.Description = "Heavy advance optic system. Comes with a Thermal option. As well as a backup EO553."
 
 att.SortOrder = 12
 
@@ -53,8 +53,8 @@ att.AdditionalSights = {
         HolosightData = {
             Holosight = true,
 			HolosightMagnification = 3,
-			HolosightMagnificationMin = 3,
-			HolosightMagnificationMax = 12,
+			HolosightMagnificationMin = 1.5,
+			HolosightMagnificationMax = 6,
             HolosightReticle = Material("mifl_tarkov_reticle/ncs_bottom.png"),
             HolosightNoFlare = true,
             HolosightSize = 4,
