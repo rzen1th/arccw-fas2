@@ -7,11 +7,11 @@ SWEP.PrintName = "Fusile"
 SWEP.TrueName = "FAMAS"  --- its a fucking hybrid model ---
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "French bullpup assault rifle with exponentially high firerate. Good for longer range accuracy."
-SWEP.Trivia_Manufacturer = "baguette"
+SWEP.Trivia_Manufacturer = "Nexter Systems"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
 SWEP.Trivia_Country = "France"
-SWEP.Trivia_Year = 1993
+SWEP.Trivia_Year = 1971
 
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 

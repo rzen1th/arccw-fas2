@@ -7,11 +7,11 @@ SWEP.PrintName = "Gewehr-36C"
 SWEP.TrueName = "G36c"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Compact carbine with folding stock and good ergonomics."
-SWEP.Trivia_Manufacturer = "Colt"
+SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
-SWEP.Trivia_Country = "USA"
-SWEP.Trivia_Year = 1993
+SWEP.Trivia_Country = "Germany"
+SWEP.Trivia_Year = 2001
 
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 

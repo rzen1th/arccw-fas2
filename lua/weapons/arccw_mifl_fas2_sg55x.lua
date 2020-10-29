@@ -3,15 +3,15 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "lol"
-SWEP.TrueName = "SG552"
+SWEP.PrintName = "Gevär-552"
+SWEP.TrueName = "SG-552"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "gun"
-SWEP.Trivia_Manufacturer = "Colt"
+SWEP.Trivia_Desc = "Swedish assault rifle with a compact, comfortable, ergonomic build."
+SWEP.Trivia_Manufacturer = "Schweizerische Industrie Gesellschaft"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
-SWEP.Trivia_Country = "USA"
-SWEP.Trivia_Year = 1993
+SWEP.Trivia_Country = "Switzerland"
+SWEP.Trivia_Year = 1980
 
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
