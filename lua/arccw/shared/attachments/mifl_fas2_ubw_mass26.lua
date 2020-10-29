@@ -1,13 +1,16 @@
 att.PrintName = "MASS-26 (BUCK)"
 att.Icon = Material("entities/arccw_mifl_fas2_ubw_mass26.png")
-att.Description = "Magazine-fed bolt-action 12 gauge underbarrel shotgun. Double tap +ZOOM to equip/dequip."
+att.Description = "Magazine-fed pump-action 12 gauge underbarrel shotgun."
 att.Desc_Pros = {
     "+ Selectable underbarrel shotgun",
 }
 att.Desc_Cons = {
 }
+att.Desc_Neutrals = {
+	"Double tap +ZOOM to equip/dequip",
+}
 att.AutoStats = true
-att.Slot = "ubgl"
+att.Slot = {"ubgl"}
 
 att.LHIK = true
 att.LHIK_Animation = true
@@ -34,14 +37,39 @@ local function Ammo(wep)
 end
 
 ---- fuck did i do wrong ?
-att.Hook_Think  = function(wep, ubgl)
+--[[att.Hook_Think  = function(wep, ubgl)
 	if wep:GetInUBGL() then
 		return wep:DoLHIKAnimation("out", 30/60)
 	else	
 		return wep:DoLHIKAnimation("in", 30/60)
 	end
+end]]
+
+att.Hook_LHIK_TranslateAnimation = function(wep, key)
+    if key == "idle" then
+        if wep:GetInUBGL() then
+            return "idle"
+        else
+            return "pose"
+        end
+    end
 end
 
+att.Hook_OnSelectUBGL = function(wep)
+	wep:DoLHIKAnimation("in", 0.6)
+    wep:PlaySoundTable({
+        {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+    })
+end
+
+att.Hook_OnDeselectUBGL = function(wep)
+	wep:DoLHIKAnimation("out", 0.9)
+    wep:PlaySoundTable({
+        {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+        {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.3},
+        {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0.4},
+    })
+end
 
 att.UBGL_Fire = function(wep, ubgl)
     if wep:Clip2() <= 0 then return end
@@ -72,11 +100,13 @@ att.UBGL_Fire = function(wep, ubgl)
         end
     })
 
-    wep:EmitSound("weapons/arccw/mag7/mag7_02.wav", 120)
+    wep:EmitSound("weapons/arccw_mifl/fas2/m3s90p/m3s90_fire1.wav", 120)
 
     wep:PlaySoundTable({
-        {s = "weapons/arccw/mag7/mag7_pump_back.wav", t = 0.25},
-        {s = "weapons/arccw/mag7/mag7_pump_forward.wav", t = 0.5},
+        {s = "weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav",			t = 0.1},
+        {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav",		t = 0.4},
+        {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.7},
+        {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav",		t = 0.9},
     })
 
     wep:SetClip2(wep:Clip2() - 1)
@@ -95,10 +125,12 @@ att.UBGL_Reload = function(wep, ubgl)
         wep:SetNextSecondaryFire(CurTime() + 150/60)
 
         wep:PlaySoundTable({
-            {s = "weapons/arccw/mag7/mag7_clipout.wav", t = 0.5},
-            {s = "weapons/arccw/mag7/mag7_clipin.wav", t = 1.5},
-            {s = "weapons/arccw/mag7/mag7_pump_back.wav", t = 2.5},
-            {s = "weapons/arccw/mag7/mag7_pump_forward.wav", t = 2.75},
+            {s = "weapons/arccw_mifl/fas2/famas/famas_magout_empty.wav", t = 0.25},
+            {s = "weapons/arccw_mifl/fas2/famas/famas_magin.wav", t = 1.05},
+			{s = "weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav",			t = 1.2 + 0.1},
+			{s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav",		t = 1.2 + 0.4},
+			{s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 1.2 + 0.7},
+			{s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav",		t = 1.2 + 0.9},
         })
 
     else
@@ -108,8 +140,8 @@ att.UBGL_Reload = function(wep, ubgl)
         wep:SetNextSecondaryFire(CurTime() + 113/60)
 
         wep:PlaySoundTable({
-            {s = "weapons/arccw/mag7/mag7_clipout.wav", t = 0.5},
-            {s = "weapons/arccw/mag7/mag7_clipin.wav", t = 1.5},
+            {s = "weapons/arccw_mifl/fas2/famas/famas_magout.wav", t = 0.25},
+            {s = "weapons/arccw_mifl/fas2/famas/famas_magin.wav", t = 1.05},
         })
 
     end

@@ -90,7 +90,7 @@ SWEP.SightedSpeedMult = 0.775
 SWEP.SightTime = 0.32
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.3, -5, 1.08),
+    Pos = Vector(-3.305, -5, 1.05),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -115,8 +115,8 @@ SWEP.HolsterAng = Angle(-7.036, 30.016, -10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.CustomizePos = Vector(12, -1, -6)
-SWEP.CustomizeAng = Angle(20, 25, 15)
+SWEP.CustomizePos = Vector(3, 1, -1)
+SWEP.CustomizeAng = Angle(5, 10, 5)
 
 SWEP.BarrelLength = 24
 
@@ -266,7 +266,7 @@ SWEP.ExtraSightDist = 10
 
 SWEP.WorldModelOffset = {
     pos = Vector(-13, 5.5, -5),
-    ang = Angle(-10, 0, 180)
+    ang = Angle(0, 0, 180)
 }
 
 SWEP.MirrorVMWM = true
@@ -313,7 +313,7 @@ SWEP.Attachments = {
         Bone = "weapon_main",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, 2, 2.8),
+            vpos = Vector(0, 2, 2.7),
             vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -350,8 +350,21 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(12, 0, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(0, 10, -1),
+            vang = Angle(90, -90, -90),
+            wpos = Vector(22, 1, -7),
+            wang = Angle(-9.79, 0, 180)
+        },
+        MergeSlots = {5},
+    },	
+    {
+        PrintName = "INTEG-UBGL",
+        Hidden = true,
+        Slot = "ubgl",
+        Bone = "weapon_main",
+        Offset = {
+            vpos = Vector(0, 7, -1),
+            vang = Angle(90, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
@@ -422,6 +435,12 @@ SWEP.Animations = {
     ["idle_empty"] = {
         Source = "idle_empty",
     },	
+    ["idle_sights"] = {
+        Source = "idle_iron",
+    },
+    ["idle_sights_empty"] = {
+        Source = "idle_empty_iron",
+    },	
     ["draw"] = {
         Source = "deploy",
     },
@@ -455,14 +474,14 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 1,
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
@@ -470,7 +489,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,		
+        LHIKOut = 0.8,		
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",	
@@ -478,7 +497,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.6,
     },	
 	
 	
@@ -487,28 +506,28 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.9,
     },		
     ["reload_empty_45"] = {
         Source = "reload_45_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.9,
     },
     ["reload_nomen_45"] = {
         Source = "reload_45_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,		
+        LHIKOut = 0.9,		
     },
     ["reload_nomen_empty_45"] = {
         Source = "reload_empty_45_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
     },
 
     ["reload_762"] = {
@@ -530,13 +549,13 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,		
+        LHIKOut = 1,		
     },
     ["reload_nomen_empty_762"] = {
         Source = "reload_empty_762_nomen",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.8,
     },				
 }

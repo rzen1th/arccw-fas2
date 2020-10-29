@@ -1,25 +1,17 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models\weapons\mifl_custom\mass26\m26mass_d"
-	"$bumpmap" "models\weapons\mifl_custom\mass26\m26mass_n"
-	"$phongexponenttexture" "models\weapons\mifl_custom\mass26\m26mass_s"
-	$color2 "[1.5 1.5 1.5]"
+	"$bumpmap"	"models\weapons\mifl_custom\mass26\m26mass_n" //small
+
+
 	"$envmap" "env_cubemap"
-	"$envmaptint" "[ .035 .035 .035]"
-	"$envmapconstrast" "1"
-	"$halflambert""1"
-	"$phong" "1"
-	"$phongfresnelranges" "[3 3 3]"
-	"$phongexponent" "45"
-	"$phongboost" "55"
-	"$phongalbedotint" 	"1"
-	"$phongalbedoboost" "25"
-
-	"$rimlight" "1"
-	"$rimlightexponent" 	"50"	
-	"$rimlightboost"	"15"
-	"$rimmask" "1"
-
+	"$envmaptint" "[.2 .2 .2]"
+	"$basemapalphaphongmask" 	"1"
+	"$phong" 			"1"
+	"$phongexponent"                                   "15"
+	"$phongboost" 			"2"
+	"$phongfresnelranges"		"[0.5 1.5 3.0]"//"[0.1 0.4 .8]"
+	"$halflambert"			"1"
 }
 
 

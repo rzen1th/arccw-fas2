@@ -58,7 +58,13 @@ $sequence "idle" {
 	fadein 0.2
 	fadeout 0.2
 	fps 60
-	snap	
+}
+
+$sequence "pose" {
+	"anims\pose.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
 }
 
 $sequence "in" {
@@ -66,7 +72,6 @@ $sequence "in" {
 	fadein 0.2
 	fadeout 0.2
 	fps 60
-	snap	
 }
 
 $sequence "out" {
@@ -74,13 +79,10 @@ $sequence "out" {
 	fadein 0.2
 	fadeout 0.2
 	fps 60
-	snap	
 }
 
 $sequence "fire" {
 	"anims\fire.smd"
-	fadein 0.2
-	fadeout 0.2
 	fps 60
 	snap
 }
@@ -90,7 +92,6 @@ $sequence "wet" {
 	fadein 0.2
 	fadeout 0.2
 	fps 60
-	snap
 }
 
 $sequence "dry" {
@@ -98,17 +99,6 @@ $sequence "dry" {
 	fadein 0.2
 	fadeout 0.2
 	fps 60
-	snap
 }
 
 $collisionmodel "Main.smd"
-{
-	$mass 6.971907
-	$inertia 1
-	$damping 0
-	$rotdamping 0
-	$rootbone " "
-	$concave
-	$maxconvexpieces 24
-
-}
