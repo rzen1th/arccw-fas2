@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "lol"
-SWEP.TrueName = "cum"
+SWEP.TrueName = "SG552"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "gun"
 SWEP.Trivia_Manufacturer = "Colt"
@@ -38,11 +38,11 @@ SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 900
 
-SWEP.Recoil = 0.7
-SWEP.RecoilSide = 0.5
-SWEP.RecoilRise = 0.8
+SWEP.Recoil = 0.6
+SWEP.RecoilSide = 0.42
+SWEP.RecoilRise = 1.2
 
-SWEP.Delay = 60 / 700 -- 60 / RPM.
+SWEP.Delay = 60 / 721 -- LOL
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {

@@ -24,6 +24,22 @@ sound.Add({
 })
 
 sound.Add({
+	name = 			"Arccw_FAS2_Weapon.Holster",
+	channel = 		CHAN_ITEM3,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/weapon_holster1.wav", "weapons/arccw_mifl/fas2/weapon_holster2.wav", "weapons/arccw_mifl/fas2/weapon_holster3.wav"
+	}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon.Deploy",
+	channel = 		CHAN_ITEM3,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/weapon_deploy1.wav", "weapons/arccw_mifl/fas2/weapon_deploy2.wav", "weapons/arccw_mifl/fas2/weapon_deploy3.wav"
+	}
+})
+
+sound.Add({
 	name = 			"Arccw_FAS2_Generic.Magpouch_MG",
 	channel = 		CHAN_ITEM3,
 	volume = 		1.0,
