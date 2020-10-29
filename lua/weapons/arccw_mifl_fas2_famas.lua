@@ -38,9 +38,9 @@ SWEP.Primary.ClipSize = 25 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 1050
 
-SWEP.Recoil = 0.4
+SWEP.Recoil = 0.7
 SWEP.RecoilSide = 0.25
-SWEP.RecoilRise = 0.3
+SWEP.RecoilRise = 0.25
 
 SWEP.Delay = 60 / 1000 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
