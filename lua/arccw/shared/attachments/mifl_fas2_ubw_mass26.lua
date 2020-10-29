@@ -56,14 +56,14 @@ att.Hook_LHIK_TranslateAnimation = function(wep, key)
 end
 
 att.Hook_OnSelectUBGL = function(wep)
-	wep:DoLHIKAnimation("in", 0.6)
+	wep:DoLHIKAnimation("in", 0.5)
     wep:PlaySoundTable({
         {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
     })
 end
 
 att.Hook_OnDeselectUBGL = function(wep)
-	wep:DoLHIKAnimation("out", 0.9)
+	wep:DoLHIKAnimation("out", 0.7)
     wep:PlaySoundTable({
         {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
         {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.3},
@@ -73,9 +73,7 @@ end
 
 att.UBGL_Fire = function(wep, ubgl)
     if wep:Clip2() <= 0 then return end
-
-    wep:DoLHIKAnimation("fire", 80/60)
-
+	
     wep.Owner:FireBullets({
         Src = wep.Owner:EyePos(),
         Num = 12,
@@ -102,14 +100,21 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:EmitSound("weapons/arccw_mifl/fas2/m3s90p/m3s90_fire1.wav", 120)
 
+    wep:SetClip2(wep:Clip2() - 1)
+
+    if wep:Clip2() <= 0 then return end
+
+    if wep:Clip2() > 0 then
+        wep:DoLHIKAnimation("fire", 80/60)
     wep:PlaySoundTable({
         {s = "weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav",			t = 0.1},
         {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav",		t = 0.4},
         {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.7},
         {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav",		t = 0.9},
-    })
-
-    wep:SetClip2(wep:Clip2() - 1)
+    })		
+    else
+        wep:DoLHIKAnimation("idle", 30/60)
+    end	
 
     wep:DoEffects()
 end
