@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M3 Super 90"
+SWEP.PrintName = "(Remington fake name) 870"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "Semi auto shell fed shotgun."
 SWEP.Trivia_Manufacturer = "Benelli Armi SpA"
@@ -16,14 +16,14 @@ SWEP.Slot = 2
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m3s90.mdl"
+SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_870_1.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m3s90.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 19
-SWEP.DamageMin = 2 -- damage done at maximum range
+SWEP.Damage = 21
+SWEP.DamageMin = 7 -- damage done at maximum range
 SWEP.Num = 12
 SWEP.Range = 40 -- in METRES
 SWEP.Penetration = 1
@@ -39,6 +39,7 @@ SWEP.RecoilSide = 1.3
 SWEP.RecoilRise = 0.8
 
 SWEP.ShotgunReload = true
+SWEP.ManualAction = true
 SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Firemodes = {
     {
@@ -116,63 +117,7 @@ SWEP.CustomizeAng = Angle(5, 30, 30)
 
 SWEP.BarrelLength = 24
 
-SWEP.AttachmentElements = {
-    ["rail"] = {
-        VMBodygroups = {{ind = 4, bg = 1}},
-    },
-    ["ubrms"] = {
-        VMBodygroups = {{ind = 5, bg = 1}},
-    },
-    ["tacms"] = {
-        VMBodygroups = {{ind = 6, bg = 1}},
-    },
-    ["go_nova_barrel_short"] = {
-        VMBodygroups = {{ind = 1, bg = 1}},
-        AttPosMods = {
-            [5] = {
-                vpos = Vector(0, -1.7, 22.5),
-            }
-        }
-    },
-    ["go_nova_barrel_long"] = {
-        VMBodygroups = {{ind = 1, bg = 2}},
-        AttPosMods = {
-            [5] = {
-                vpos = Vector(0, -1.7, 33.5),
-            }
-        }
-    },
-    ["go_nova_mag_8"] = {
-        VMBodygroups = {{ind = 2, bg = 1}},
-    },
-    ["go_nova_stock_pistol"] = {
-        VMBodygroups = {{ind = 3, bg = 1}},
-        VMPoseParams = {["grip"] = 1}
-    },
-    ["go_nova_stock_sport"] = {
-        VMBodygroups = {{ind = 3, bg = 2}},
-        VMPoseParams = {["grip"] = 1}
-    },
-    ["go_nova_stock_folded"] = {
-        VMBodygroups = {{ind = 3, bg = 1}},
-        VMPoseParams = {["grip"] = 1}
-    },
-    ["go_stock"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 1},
-        },
-        VMElements = {
-            {
-                Model = "models/weapons/arccw_go/atts/stock_buftube_lp.mdl",
-                Bone = "v_weapon.NOVA_PARENT",
-                Offset = {
-                    pos = Vector(0, -0.25, 1),
-                    ang = Angle(90, 0, -90),
-                },
-            }
-        },
-    },
-}
+SWEP.AttachmentElements = {}
 
 SWEP.ExtraSightDist = 10
 
@@ -254,7 +199,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Slot = "go_perk"
+        Slot = {"go_perk", "perk_fas2"}
     },
     {
         PrintName = "Charm",
@@ -288,8 +233,14 @@ SWEP.Animations = {
         LHIKIn = 0,
         LHIKOut = 0.5,
     },
+    ["holster"] = {
+        Source = "holster",
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.5,
+    },
     ["ready"] = {
-        Source = "ready",
+        Source = "deploy_first",
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.5,
@@ -303,7 +254,22 @@ SWEP.Animations = {
         Time = 0.5,
     },
     ["cycle"] = {
-        Source = "cycle",
+        Source = "pump02",
+        ShellEjectAt = 0.25,
+        TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
+    },
+    ["cycle_iron"] = {
+        Source = "pump01_scoped",
+        ShellEjectAt = 0.25,
+        TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
+    },
+    ["cycle_nomen"] = {
+        Source = "pump01_nomen",
+        ShellEjectAt = 0.25,
+        TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
+    },
+    ["cycle_iron_nomen"] = {
+        Source = "pump01_nomen_scoped",
         ShellEjectAt = 0.25,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
@@ -322,43 +288,7 @@ SWEP.Animations = {
         LHIKOut = 0,
     },
     ["sgreload_insert"] = {
-        Source = "reload_load1",
-        Time = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
-    },
-    ["sgreload_insert1"] = {
-        Source = "reload_load1",
-        Time = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
-    },
-    ["sgreload_insert2"] = {
-        Source = "reload_load2",
-        Time = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
-    },
-    ["sgreload_insert3"] = {
-        Source = "reload_load3",
-        Time = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
-    },
-    ["sgreload_insert4"] = {
-        Source = "reload_load4",
+        Source = "reload",
         Time = 1,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,

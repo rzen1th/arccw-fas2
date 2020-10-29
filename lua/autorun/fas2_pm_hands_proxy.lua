@@ -58,13 +58,13 @@ if CLIENT then
 		name = "ArcCW_FAS2_Color_Crosshair",
 		bind = function( self, mat, ent )
 				local muah = {
-						r = GetConVar("arccw_scope_r"):GetFloat(),
-						g = GetConVar("arccw_scope_g"):GetFloat(),
-						b = GetConVar("arccw_scope_b"):GetFloat(),
+						r = GetConVar("arccw_fas2_tri_clr_r"):GetFloat(),
+						g = GetConVar("arccw_fas2_tri_clr_g"):GetFloat(),
+						b = GetConVar("arccw_fas2_tri_clr_b"):GetFloat(),
 					}
 				--
 				if muah then
-					mat:SetVector( "$color2", Vector(muah.r/256, muah.g/256, muah.b/256) )
+					mat:SetVector( "$color2", Vector(muah.r/255, muah.g/255, muah.b/255) )
 				end
 		end
 	} )

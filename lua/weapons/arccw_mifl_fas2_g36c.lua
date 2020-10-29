@@ -103,7 +103,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(1, -1, 1)
+SWEP.ActivePos = Vector(0, -2, 1.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
@@ -282,8 +282,17 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(15, 1.2, 0),
             vang = Angle(0, 0, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+        },
+        MergeSlots = {5},
+    },	
+    {
+        PrintName = "INTEG-UBGL",
+        Hidden = true,
+        Slot = "ubgl",
+        Bone = "Dummy01",
+        Offset = {
+            vpos = Vector(11, 1.2, 0),
+            vang = Angle(0, 0, -90),
         },
     },
     {

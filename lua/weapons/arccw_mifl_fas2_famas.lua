@@ -136,8 +136,8 @@ SWEP.AttachmentElements = {
             [1] = {
                 vpos = Vector(-3.3, 20, -1),
             },	
-            [5] = {
-				vpos = Vector(-1.8, 22, -4.4),
+            [4] = {
+				vpos = Vector(-3.4, 27, -6.3),
             },				
 		},			
     },
@@ -151,8 +151,8 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(-3.3, 26, -4.4),
             },	
-            [5] = {
-				vpos = Vector(-2.5, 20, -4.4),
+            [4] = {
+				vpos = Vector(-3.4, 24, -6),
             },				
 		},		
     },	
@@ -267,10 +267,21 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "famas",
         Offset = {
-            vpos = Vector(-2.8, 23, -6),
+            vpos = Vector(-3.4, 25, -6),
             vang = Angle(0, -90, 0),
 		},
         InstalledEles = {"grip_none"},		
+        MergeSlots = {5},
+    },	
+    {
+        PrintName = "INTEG-UBGL",
+        Hidden = true,
+        Slot = "ubgl",
+        Bone = "famas",
+        Offset = {
+            vpos = Vector(-3.4, 22.5, -6),
+            vang = Angle(0, -90, 0),
+        },
     },
     {
         PrintName = "Tactical",

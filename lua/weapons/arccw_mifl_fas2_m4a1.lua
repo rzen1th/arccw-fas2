@@ -358,8 +358,17 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(12, 0, 0),
             vang = Angle(0, 0, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+        },
+        MergeSlots = {5},
+    },
+    {
+        PrintName = "INTEG-UBGL",
+        Hidden = true,
+        Slot = "ubgl",
+        Bone = "Dummy01",
+        Offset = {
+            vpos = Vector(10, 0, 0),
+            vang = Angle(0, 0, -90),
         },
     },
     {
@@ -369,11 +378,9 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(10, -2, 0.5),
             vang = Angle(0, 0, 180),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"go_m4_barrel_stub"}
-    },
+        ExcludeFlags = {"go_m4_barrel_stub"},
+    },	
     {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_m4a1_mag"},
