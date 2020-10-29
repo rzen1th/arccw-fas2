@@ -149,6 +149,16 @@ $definebone "CompM4S_Frontcover" "CompM4S_Frontcover_Orientation" 0 0.665918 -0.
 
 $sectionframes 30 120
 
+$sequence "idle_3rd" {
+	"anims\idle_3rd.smd"
+	activity "ACT_VM_IDLE" 1
+	fps 20
+	fadein 0.00002
+	fadeout 0.00002	
+	addlayer blend_gear
+	snap
+}
+
 $sequence "idle" {
 	"anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
@@ -285,4 +295,18 @@ $sequence "blend_gear" {
 	blendwidth 2
 	blend boltcatch 0 1
 	delta
+}
+
+
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }

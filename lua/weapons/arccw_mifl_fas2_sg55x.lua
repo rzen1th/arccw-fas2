@@ -90,7 +90,7 @@ SWEP.SightedSpeedMult = 0.775
 SWEP.SightTime = 0.32
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.086, -9, 0.898),
+    Pos = Vector(-3.3, -5, 1.08),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -310,21 +310,22 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = {"optic", "optic_lp"},
-        Bone = "Dummy01",
+        Bone = "weapon_main",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(3, -2.65, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(0, 2, 2.8),
+            vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
         InstalledEles = {"iron_none"},
-		ExtraSightDist = 3		
+		ExtraSightDist = 3,
+		CorrectiveAng = Angle(0, 180, 0)			
     },
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_m4a1_hg",
-        Bone = "Dummy01",	
+        Bone = "weapon_main",	
         DefaultAttName = "Standard Barrel",
         Offset = {
             vpos = Vector(10, 1, 0),
@@ -335,7 +336,7 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "Dummy01",
+        Bone = "weapon_main",
         Offset = {
             vpos = Vector(26, -1.3, 0),
             vang = Angle(0, 0, -90),
@@ -347,7 +348,7 @@ SWEP.Attachments = {
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
-        Bone = "Dummy01",
+        Bone = "weapon_main",
         Offset = {
             vpos = Vector(12, 0, 0),
             vang = Angle(0, 0, -90),
@@ -358,7 +359,7 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Dummy01",
+        Bone = "weapon_main",
         Offset = {
             vpos = Vector(10, -2, 0.5),
             vang = Angle(0, 0, 180),
@@ -375,7 +376,7 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Slot = {"go_stock", "mifl_fas2_m4a1_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "Dummy01",
+        Bone = "weapon_main",
         Offset = {
             vpos = Vector(-2, -1.3, 0),
             vang = Angle(0, 0, -90),
@@ -395,7 +396,7 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "Dummy01", -- relevant bone any attachments will be mostly referring to
+        Bone = "weapon_main", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.6, -3.25, 4), -- offset that the attachment will be relative to the bone
             vang = Angle(90, 0, -90),
@@ -416,13 +417,19 @@ end
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle"
+        Source = "idle",
     },
+    ["idle_empty"] = {
+        Source = "idle_empty",
+    },	
     ["draw"] = {
         Source = "deploy",
     },
+    ["draw_empty"] = {
+        Source = "deploy_empty",
+    },	
     ["ready"] = {
-        Source = "deploy_first",
+        Source = "draw_first",
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.7,
@@ -431,10 +438,18 @@ SWEP.Animations = {
         Source = {"fire"},
         ShellEjectAt = 0,
     },
+    ["fire_empty"] = {
+        Source = {"fire_last"},
+        ShellEjectAt = 0,
+    },	
     ["fire_iron"] = {
-        Source = "idle",
+        Source = "fire_scoped",
         ShellEjectAt = 0,
     },
+    ["fire_iron_empty"] = {
+        Source = "fire_scoped_last",
+        ShellEjectAt = 0,
+    },	
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
