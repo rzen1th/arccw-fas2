@@ -246,12 +246,12 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["fire"] = {
-        Source = "shoot",
-        Time = 0.5,
+        Source = "fire02",
+        MinProgress = 0.25,
     },
     ["fire_iron"] = {
-        Source = "idle",
-        Time = 0.5,
+        Source = "fire01_scoped",
+        MinProgress = 0.25,
     },
     ["cycle"] = {
         Source = "pump02",

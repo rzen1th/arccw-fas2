@@ -24,10 +24,4 @@ att.Hook_SelectReloadAnimation = function(wep, anim)
 	return "reload" .. thething .. empty
 end
 
-att.Hook_TranslateAnimation = function(wep, anim)
-	local thething = wep.Animations[anim .. "_nomen"] and "_nomen" or ""
-
-	return anim .. thething
-end
-
 att.AutoStats = true

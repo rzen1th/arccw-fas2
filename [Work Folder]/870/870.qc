@@ -2,7 +2,7 @@
 
 $modelname "weapons/arccw/mifl/fas2/c_870_1.mdl"
 $include fesiug.qci
-$scale 2
+$scale 1.5
 
 $bodygroup "studio"
 {
