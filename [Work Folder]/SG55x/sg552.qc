@@ -140,6 +140,16 @@ $definebone "weapon_magazine_nomen" "" 1.535405 14.423149 -9.478752 0 0 0 0 0 0 
 
 $sectionframes 30 120
 
+$sequence "idle" {
+	"sg552_anims\idle.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+	loop
+}
+
 $sequence "draw_first" {
 	"sg552_anims\draw_first.smd"
 	activity "ACT_VM_DRAW_FIRST" 1
@@ -218,21 +228,12 @@ $sequence "holster_empty" {
 	fps 34
 }
 
-$sequence "idle" {
-	"sg552_anims\idle.smd"
-	activity "ACT_VM_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-	loop
-}
-
 $sequence "idle_iron" {
 	"sg552_anims\idle_iron.smd"
 	activity "ACT_VM_IDLE_SCOPED" 1
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 	loop
 }

@@ -1,5 +1,5 @@
 att.PrintName = "Soviet Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_stock_a2.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_s_762.png", "mips smooth")
 att.Description = "Stock from the ak how?"
 att.Desc_Pros = {
 }

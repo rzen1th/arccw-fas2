@@ -1,5 +1,5 @@
 att.PrintName = "Sniper Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_stock_a2.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_s_550.png", "mips smooth")
 att.Description = "Good stocks don't come cheap, and this is no exception. Known to be *very* comfortable and *very* adjustable."
 att.Desc_Pros = {
 }
