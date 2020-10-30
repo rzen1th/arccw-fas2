@@ -37,7 +37,7 @@ $sequence "idle" {
 $sequence "draw" {
 	"870_anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
-	{ event AE_CL_PLAYSOUND 0 "Weapon.Deploy" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"
@@ -48,7 +48,7 @@ $sequence "draw" {
 $sequence "holster" {
 	"870_anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
-	{ event AE_CL_PLAYSOUND 0 "Weapon.Holster" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"

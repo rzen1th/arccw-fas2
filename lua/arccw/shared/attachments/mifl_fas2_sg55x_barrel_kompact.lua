@@ -1,5 +1,5 @@
 att.PrintName = "762"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_hg_g36c.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_762.png", "mips smooth")
 att.Description = "The Swiss and the Russians devise a dastardly plan."
 att.SortOrder = 6
 att.Desc_Pros = {

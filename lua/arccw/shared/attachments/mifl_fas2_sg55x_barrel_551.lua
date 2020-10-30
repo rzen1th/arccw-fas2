@@ -1,5 +1,5 @@
 att.PrintName = "551"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_hg_a1.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_551.png", "mips smooth")
 att.Description = "Beautiful long-range DMR with anti-glare strap."
 att.SortOrder = 10
 att.Desc_Pros = {

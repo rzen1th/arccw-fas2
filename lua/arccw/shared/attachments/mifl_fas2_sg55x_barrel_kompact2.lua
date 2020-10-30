@@ -1,5 +1,5 @@
 att.PrintName = "552C"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_hg_g36c.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_kurz.png", "mips smooth")
 att.Description = "Short as hell barrel"
 att.SortOrder = 2
 att.Desc_Pros = {

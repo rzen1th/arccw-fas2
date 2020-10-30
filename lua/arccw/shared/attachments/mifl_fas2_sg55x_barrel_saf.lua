@@ -1,5 +1,5 @@
 att.PrintName = "SAF"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_hg_a1.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_saf.png", "mips smooth")
 att.Description = "Shorter barrel with more maneuverability meant for paratroopers.\nSwiss engineering traps recoil until the last shot."
 att.SortOrder = 3
 att.Desc_Pros = {
@@ -15,7 +15,7 @@ att.Mult_Range = 0.9
 --att.Mult_Recoil = 1.1
 att.Mult_SightTime = 0.8
 --att.Mult_AccuracyMOA = 1.2
-att.Mult_RPM = 1.5
+att.Mult_RPM = 1.2
 
 att.Mult_ShootPitch = 0.9
 
@@ -23,8 +23,8 @@ att.Mult_ShootPitch = 0.9
 
 att.Override_Firemodes = {
     {
-        Mode = -3,
-        PostBurstDelay = 0.2,
+        Mode = -5,
+        PostBurstDelay = 0.15,
     },
     {
         Mode = 1,

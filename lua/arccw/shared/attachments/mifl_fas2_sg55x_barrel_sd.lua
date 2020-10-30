@@ -1,5 +1,5 @@
 att.PrintName = "552S"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_hg_sd.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_sd.png", "mips smooth")
 att.Description = "Integral supressor for stealth operations."
 att.SortOrder = 8
 att.Desc_Pros = {
