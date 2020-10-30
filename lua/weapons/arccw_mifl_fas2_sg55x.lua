@@ -315,8 +315,8 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(-2, -1.3, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(-0.2, -1.8, -0.2),
+            vang = Angle(0, -90, 0),
         },
         VMScale = Vector(1, 1, 1)
     },
