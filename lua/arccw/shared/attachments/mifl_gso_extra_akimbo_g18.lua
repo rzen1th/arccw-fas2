@@ -121,7 +121,7 @@ end
 att.UBGL_Reload = function(wep, ubgl)
     wep:Reload()
 
-    local clip = 20 + 1
+    local clip = 20-- + 1
 
     if wep:Clip2() >= clip then return end -- att.UBGL_Capacity
 

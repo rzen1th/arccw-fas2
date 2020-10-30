@@ -28,8 +28,12 @@ att.Override_ClipSize = 30
 att.Mult_ReloadTime = 1.12
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_fire1.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_suppressed_fire1.wav" end
+	if fsound == "weapons/arccw_mifl/fas2/sg55x/sg552_fire1.wav" then 
+		return "weapons/arccw_mifl/fas2/m249/m249_fire1.wav"
+    end
+	if fsound == "weapons/arccw_mifl/fas2/sg55x/sg552_suppressed_fire1.wav" then
+		return "weapons/arccw_mifl/fas2/m249/m249_suppressed_fire1.wav"
+    end
 end
 
 att.Override_Trivia_Calibre = "7.62mm"

@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Gevär-552"
 SWEP.TrueName = "SG-552"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Swiss assault rifle with a compact, comfortable, ergonomic build."
+SWEP.Trivia_Desc = "Swiss rifle with a compact, comfortable, ergonomic build that allows it to be modified to fit many purposes."
 SWEP.Trivia_Manufacturer = "Schweizerische Industrie Gesellschaft"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -68,9 +68,9 @@ SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/sg55x/sg550_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/sg55x/sg550_suppressed_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/sg55x/sg550_distance_fire1.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/sg55x/sg552_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/sg55x/sg552_suppressed_fire1.wav"
+SWEP.DistantShootSound = ")weapons/arccw_mifl/fas2/sg55x/sg550_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"

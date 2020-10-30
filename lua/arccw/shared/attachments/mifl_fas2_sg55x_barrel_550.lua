@@ -32,3 +32,12 @@ att.Override_Firemodes = {
         Mode = 0
     }
 }
+
+att.Hook_GetShootSound = function(wep, fsound)
+	if fsound == "weapons/arccw_mifl/fas2/sg55x/sg552_fire1.wav" then 
+		return "weapons/arccw_mifl/fas2/sg55x/sg550_fire1.wav"
+    end
+	if fsound == "weapons/arccw_mifl/fas2/sg55x/sg552_suppressed_fire1.wav" then
+		return "weapons/arccw_mifl/fas2/sg55x/sg550_suppressed_fire1.wav"
+    end
+end
