@@ -4,7 +4,7 @@ att.Description = ""
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
-    "con.magcap"
+--    "con.magcap"
 }
 att.SortOrder = 30
 att.AutoStats = true
@@ -14,16 +14,16 @@ att.ActivateElements = {"30"}
 
 att.Mult_Recoil = 1.2
 att.Mult_RecoilSide = 1.4
-att.Mult_VisualRecoilMult = 1.3
+--att.Mult_VisualRecoilMult = 1.3
 
 att.Mult_RPM = 0.85
-att.Mult_MoveSpeed = 0.9
+--att.Mult_MoveSpeed = 0.9
 att.Mult_Damage = 1.2
-att.Mult_DamageMin = 1.5
-att.Mult_Range = 2
-att.Mult_Penetration = 1.8
-att.Mult_MuzzleVelocity = 1.3
-att.Mult_SightTime = 0.95
+--att.Mult_DamageMin = 0.9
+--att.Mult_Range = 2
+att.Mult_Penetration = 2
+--att.Mult_MuzzleVelocity = 1.3
+--att.Mult_SightTime = 0.95
 att.Override_ClipSize = 30
 att.Mult_ReloadTime = 1.12
 

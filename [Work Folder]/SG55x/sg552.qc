@@ -59,6 +59,12 @@ $bodygroup "Stock"
 	blank
 }
 
+$texturegroup "fgd"
+{
+	{ sigx_receiver }
+	{ sig550_s_receiver }
+}
+
 $surfaceprop "default"
 
 $contents "solid"

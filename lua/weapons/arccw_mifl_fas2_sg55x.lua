@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Gevär-552"
 SWEP.TrueName = "SG-552"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Swedish assault rifle with a compact, comfortable, ergonomic build."
+SWEP.Trivia_Desc = "Swiss assault rifle with a compact, comfortable, ergonomic build."
 SWEP.Trivia_Manufacturer = "Schweizerische Industrie Gesellschaft"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -90,7 +90,7 @@ SWEP.SightedSpeedMult = 0.775
 SWEP.SightTime = 0.32
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.305, -5, 1.05),
+    Pos = Vector(-3.293, -5, 1.08),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -126,113 +126,49 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 4},					
         },
     },
-    ["mifl_fas2_m4a1_stock_a2"] = {
+    ["mifl_fas2_sg55x_stock_sniper"] = {
         VMBodygroups = {
             {ind = 5, bg = 1},					
         },
     },
-    ["mifl_fas2_m4a1_stock_sd"] = {
+    ["mifl_fas2_sg55x_stock_sd"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 3},					
+        },
+    },	
+    ["mifl_fas2_sg55x_stock_soviet"] = {
         VMBodygroups = {
             {ind = 5, bg = 2},					
         },
-    },	
+    },
     ["whisperer"] = {
-        NameChange = "AR-C4S",	
-		TrueNameChange = "M4A1S",		
-        VMBodygroups = {
-            {ind = 1, bg = 3},	
-            {ind = 2, bg = 3},				
-        },
+        NameChange = "Gevär-552S",	
+		TrueNameChange = "SG-552S",
     },
-    ["mifl_fas2_m4a1_barrel_kompact"] = {
-        NameChange = "AR-G6c",	
-		TrueNameChange = "MG36",			
-        VMBodygroups = {
-            {ind = 1, bg = 2},	
-            {ind = 2, bg = 2},				
-        },
-        Override_IronSightStruct = {
-            Pos = Vector(-4.086, -9, 1.7),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.1,
-        },	
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(19, -1.2, 0),
-            },		
-		},
+    ["mifl_fas2_sg55x_barrel_550"] = {
+        NameChange = "Gevär-550",	
+		TrueNameChange = "SG-550",
     },
-    ["mifl_fas2_m4a1_barrel_a2"] = {
-        NameChange = "AR-A2",	
-		TrueNameChange = "M16A2",		
-        VMBodygroups = {
-            {ind = 1, bg = 1},	
-            {ind = 2, bg = 1},				
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(31, -1.3, 0),
-            },		
-		},		
+    ["mifl_fas2_sg55x_barrel_551"] = {
+        NameChange = "Gevär-551",	
+		TrueNameChange = "SG-551",
     },
-    ["mifl_fas2_m4a1_barrel_no"] = {
-        NameChange = "AR-Kurz",	
-		TrueNameChange = "M4A1 Kurz",		
-        VMBodygroups = {
-            {ind = 1, bg = 6},	
-            {ind = 2, bg = 6},				
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(13, -1.3, 0),
-            },		
-		},		
+    ["mifl_fas2_sg55x_barrel_kompact"] = {
+        NameChange = "Gevär-762",	
+		TrueNameChange = "SG-762",
+    },
+    ["mifl_fas2_sg55x_barrel_kompact2"] = {
+        NameChange = "Gevär-552C",	
+		TrueNameChange = "SG-552C",
+    },
+    ["mifl_fas2_sg55x_barrel_no"] = {
+        NameChange = "Gevär-XS",	
+		TrueNameChange = "SG-XS",
     },	
-    ["mifl_fas2_m4a1_barrel_a1"] = {
-        NameChange = "AR-A1",	
-		TrueNameChange = "M16A1",		
-        VMBodygroups = {
-            {ind = 1, bg = 4},	
-            {ind = 2, bg = 4},				
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(36, -1.3, 0),
-            },		
-		},			
-    },	
-    ["mifl_fas2_m4a1_barrel_para_a1"] = {
-        NameChange = "AR-A1",	
-		TrueNameChange = "M16A1",	
-        VMBodygroups = {
-            {ind = 1, bg = 8},	
-            {ind = 2, bg = 7},				
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(23, -1.3, 0),
-            },		
-		},			
-    },		
-    ["mifl_fas2_m4a1_barrel_heat"] = {
-        NameChange = "AR-Grenadier",	
-		TrueNameChange = "M16 Grenadier",	
-        VMBodygroups = {
-            {ind = 1, bg = 5},	
-            {ind = 2, bg = 5},				
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(29, -1.3, 0),
-            },		
-		},			
-    },		
-    ["mifl_fas2_m4a1_barrel_ribs"] = {
-        NameChange = "AR-C41",		
-        VMBodygroups = {
-            {ind = 1, bg = 7},				
-        },
-    },	
+    ["mifl_fas2_sg55x_barrel_saf"] = {
+        NameChange = "Gevär-SAF",	
+		TrueNameChange = "SG-SAF",
+    },
     ["32"] = {
         VMBodygroups = {
             {ind = 1, bg = 3},					
@@ -243,18 +179,13 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 2},					
         },
     },	
-    ["iron_none"] = {
-		VMBodygroups = {
-            {ind = 2, bg = 4},	
-		},
-    },	
-    ["mifl_fas2_m4a1_mag_9mm_21"] = {
+    ["mifl_fas2_sg55x_mag_9mm_21"] = {
         VMBodygroups = {
             {ind = 3, bg = 4},
             {ind = 4, bg = 1},			
         },
     },
-    ["mifl_fas2_m4a1_mag_9mm_32"] = {
+    ["mifl_fas2_sg55x_mag_9mm_32"] = {
         VMBodygroups = {
             {ind = 3, bg = 3},
             {ind = 4, bg = 1},			
@@ -273,37 +204,31 @@ SWEP.MirrorVMWM = true
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    local eles = data.eles
-
-    local barrel = 0
-    local lp = false
-
-    for i, k in pairs(eles or {}) do
-        if k == "mifl_fas2_m4a1_barrel_sd" then
-            barrel = 3
-        elseif k == "mifl_fas2_m4a1_barrel_kompact" then
-            barrel = 2
-        elseif k == "mifl_fas2_m4a1_barrel_no" then
-            barrel = 6	
-        elseif k == "mifl_fas2_m4a1_barrel_heat" then
-            barrel = 5				
-        elseif k == "mifl_fas2_m4a1_barrel_a2" then
-            barrel = 1
-        elseif k == "mifl_fas2_m4a1_barrel_a1" then
-            barrel = 4
-        elseif k == "mifl_fas2_m4a1_barrel_para_a1" then
-            barrel = 7			
-        elseif k == "iron_none" then
-            lp = true
-        end
+    local type = wep.Attachments[2].Installed
+	
+    if	type == "mifl_fas2_sg55x_barrel_551" then -- SNIPER 551
+        vm:SetBodygroup(2, 1)
+        vm:SetBodygroup(3, 7)
+        vm:SetSkin(1)
+    elseif	type == "mifl_fas2_sg55x_barrel_550" then -- FULL LENGTH 550
+        vm:SetBodygroup(2, 2)
+        vm:SetBodygroup(3, 1)
+    elseif	type == "mifl_fas2_sg55x_barrel_kompact" then -- 762
+        vm:SetBodygroup(2, 3)
+        vm:SetBodygroup(3, 2)
+    elseif		type == "mifl_fas2_sg55x_barrel_sd" then -- 552S
+        vm:SetBodygroup(2, 4)
+        vm:SetBodygroup(3, 2)
+    elseif	type == "mifl_fas2_sg55x_barrel_kompact2" then -- 762
+        vm:SetBodygroup(2, 5)
+        vm:SetBodygroup(3, 4)
+    elseif	type == "mifl_fas2_sg55x_barrel_no" then -- XS
+        vm:SetBodygroup(2, 6)
+        vm:SetBodygroup(3, 5)
+    elseif	type == "mifl_fas2_sg55x_barrel_saf" then -- SAF
+        vm:SetBodygroup(2, 7)
+        vm:SetBodygroup(3, 6)
     end
-
-    local fs = barrel
-    if lp then
-        fs = 8
-    end
-
-    vm:SetBodygroup(2, fs)
 end
 
 SWEP.Attachments = {
@@ -318,18 +243,17 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        InstalledEles = {"iron_none"},
-		ExtraSightDist = 3,
+		ExtraSightDist = 5,
 		CorrectiveAng = Angle(0, 180, 0)			
     },
     {
         PrintName = "Handguard",
-        Slot = "mifl_fas2_m4a1_hg",
+        Slot = "mifl_fas2_sg55x_hg",
         Bone = "weapon_main",	
-        DefaultAttName = "Standard Barrel",
+        DefaultAttName = "552",
         Offset = {
-            vpos = Vector(10, 1, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(0.5, 8, -1),
+            vang = Angle(90, -90, -90),
 		}			
     },
     {
@@ -387,7 +311,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_m4a1_stock"},
+        Slot = {"go_stock", "mifl_fas2_sg55x_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "weapon_main",
         Offset = {
@@ -430,10 +354,10 @@ end
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle",
+        Source = "idle" .. "_iron",
     },
     ["idle_empty"] = {
-        Source = "idle_empty",
+        Source = "idle_empty" .. "_iron",
     },	
     ["idle_sights"] = {
         Source = "idle_iron",
