@@ -102,19 +102,16 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:SetClip2(wep:Clip2() - 1)
 
-    if wep:Clip2() <= 0 then return end
-
     if wep:Clip2() > 0 then
         wep:DoLHIKAnimation("fire", 80/60)
-    wep:PlaySoundTable({
-        {s = "weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav",			t = 0.1},
-        {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav",		t = 0.4},
-        {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.7},
-        {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav",		t = 0.9},
-    })		
-    else
-        wep:DoLHIKAnimation("idle", 30/60)
-    end	
+        wep:SetNextSecondaryFire( CurTime() + (60 / 60) )
+        wep:PlaySoundTable({
+            {s = "weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav",			t = 0.1},
+            {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav",		t = 0.4},
+            {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.7},
+            {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav",		t = 0.9},
+        })
+    end
 
     wep:DoEffects()
 end

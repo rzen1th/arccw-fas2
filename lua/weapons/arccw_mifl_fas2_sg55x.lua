@@ -169,6 +169,24 @@ SWEP.AttachmentElements = {
         NameChange = "Gevär-SAF",	
 		TrueNameChange = "SG-SAF",
     },
+    ["mifl_fas2_sg55x_barrel_saf2"] = {
+        NameChange = "Gevär-SAF M.0",	
+		TrueNameChange = "SG-SAF M.0",
+        VMElements = {
+            {
+                Model = "models/weapons/arccw/mifl/fas2/c_minimi.mdl",
+				Bone = "weapon_main",
+                Offset = {
+                    pos = Vector(4.822, -24.784, 6.864),
+                    ang = Angle(0, -90, 0),
+                },
+                ModelBodygroups = "123220101",
+                Scale = Vector(1, 0.8, 0.8),
+                            --{[0] = 1, [1] = 2, [2] = 3, [3] = 2, [4] = 2, [6] = 1, [8] = 1} }
+
+            }
+        },
+    },
     ["32"] = {
         VMBodygroups = {
             {ind = 1, bg = 3},					
@@ -219,7 +237,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     elseif		type == "mifl_fas2_sg55x_barrel_sd" then -- 552S
         vm:SetBodygroup(2, 4)
         vm:SetBodygroup(3, 2)
-    elseif	type == "mifl_fas2_sg55x_barrel_kompact2" then -- 762
+    elseif	type == "mifl_fas2_sg55x_barrel_kompact2" then -- 552C
         vm:SetBodygroup(2, 5)
         vm:SetBodygroup(3, 4)
     elseif	type == "mifl_fas2_sg55x_barrel_no" then -- XS
@@ -228,6 +246,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     elseif	type == "mifl_fas2_sg55x_barrel_saf" then -- SAF
         vm:SetBodygroup(2, 7)
         vm:SetBodygroup(3, 6)
+    elseif	type == "mifl_fas2_sg55x_barrel_saf2" then -- SAF MOD 0
+        vm:SetBodygroup(2, 6)
+        vm:SetBodygroup(3, 3)
     end
 end
 
