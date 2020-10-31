@@ -3,7 +3,8 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "(Remington fake name) 870"
+SWEP.PrintName = "Rodger 400"
+SWEP.TrueName = "Remington 870"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "Semi auto shell fed shotgun."
 SWEP.Trivia_Manufacturer = "Benelli Armi SpA"
@@ -11,6 +12,8 @@ SWEP.Trivia_Calibre = "12 Gauge"
 SWEP.Trivia_Mechanism = "Pump-Action"
 SWEP.Trivia_Country = "Italy"
 SWEP.Trivia_Year = 2006
+
+if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
 SWEP.Slot = 2
 
