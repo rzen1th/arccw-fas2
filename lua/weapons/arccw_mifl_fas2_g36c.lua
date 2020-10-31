@@ -127,8 +127,8 @@ SWEP.AttachmentElements = {
         },
     },	
     ["mifl_fas2_g36_barrel_sd"] = {
-        NameChange = "AR-C4S",	
-		TrueNameChange = "M4A1S",		
+        NameChange = "Gewehr-S",	
+		TrueNameChange = "G36S",		
         VMBodygroups = {
             {ind = 3, bg = 1},				
         },
