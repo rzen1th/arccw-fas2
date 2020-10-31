@@ -36,4 +36,5 @@ att.Hook_GetShootSound = function(wep, fsound)
     end
 end
 
-att.Override_Trivia_Calibre = "7.62mm"
+att.Override_Trivia_Calibre = "7.62x39mm Soviet"
+att.AddSuffix = " 7.62"

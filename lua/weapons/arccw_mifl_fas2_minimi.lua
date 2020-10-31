@@ -24,10 +24,10 @@ SWEP.NPCWeight = 32
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
-SWEP.WorldModel = "models/weapons/w_mach_m249para.mdl"
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.MirrorVMWM = false
+SWEP.MirrorVMWM = true
 
 SWEP.DefaultBodygroups = "00000000000000000000000000"
 

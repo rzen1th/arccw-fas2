@@ -20,7 +20,7 @@ SWEP.Slot = 2
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_famas.mdl"
-SWEP.WorldModel = "models/weapons/arccw_go/v_rif_m4a1.mdl"
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_famas.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
@@ -47,6 +47,9 @@ SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
+    },
+    {
+        Mode = -3,
     },
     {
         Mode = 1,
@@ -203,7 +206,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
 
     local optic = wep.Attachments[1].Installed
-    local grip = wep.Attachments[4].Installed
+    local grip = wep.Attachments[4].Installed or wep.Attachments[5].Installed
     local type = wep.Attachments[2].Installed
 	
 	if optic then

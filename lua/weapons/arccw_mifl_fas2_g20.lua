@@ -20,7 +20,7 @@ SWEP.Slot = 1
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_glock20.mdl"
-SWEP.WorldModel = ""
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_glock20.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
