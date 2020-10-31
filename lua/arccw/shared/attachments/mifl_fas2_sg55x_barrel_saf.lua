@@ -6,7 +6,7 @@ att.Desc_Pros = {
     "Halves recoil until the last shot"
 }
 att.Desc_Cons = {
-    "Last shotgun is disorienting"
+    "Last shot is disorienting"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_sg55x_hg"
@@ -23,8 +23,8 @@ att.Mult_AccuracyMOA = 1.5
 
 att.Override_Firemodes = {
     {
-        Mode = -5,
-        PostBurstDelay = 0.18,
+        Mode = -3,
+        PostBurstDelay = 0.2,
     },
     {
         Mode = 1,
@@ -43,8 +43,8 @@ att.Hook_ModifyRecoil = function(wep)
     end
     return {
         Recoil           = thing,
-        RecoilSide       = thing * 0.9,
-        VisualRecoilMult = 0.8,
+        RecoilSide       = thing * 0.75,
+        VisualRecoilMult = 1,
     }
 end
 

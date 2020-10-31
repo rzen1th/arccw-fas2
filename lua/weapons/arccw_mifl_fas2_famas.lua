@@ -203,7 +203,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
 
     local optic = wep.Attachments[1].Installed
-    local grip = wep.Attachments[4].Installed
+    local grip = wep.Attachments[4].Installed or wep.Attachments[5].Installed
     local type = wep.Attachments[2].Installed
 	
 	if optic then
