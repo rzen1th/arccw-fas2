@@ -10,7 +10,7 @@ att.Slot = "mifl_fas2_sg55x_stock"
 
 att.Mult_Recoil = 2
 att.Mult_RecoilSide = 2
-att.Mult_SightTime = 1.5
+att.Mult_SightTime = 0.75
 att.Mult_MoveDispersion = 0.75
 
 att.Mult_SightedSpeedMult = 1.25
