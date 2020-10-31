@@ -33,7 +33,7 @@ SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 4 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 7 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 700
 
@@ -66,9 +66,9 @@ SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/m3s90p/m3s90_fire1.wav"
-SWEP.ShootSoundSilenced = "arccw_go/m590_suppressed_fp.wav"
-SWEP.DistantShootSound = "arccw_go/nova/nova-1-distant.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/rem870/rem870_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rem870/sd_fire.wav"
+SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/rem870/rem870_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
@@ -300,9 +300,40 @@ SWEP.Animations = {
         LHIKOut = 0,
     },
     ["sgreload_finish"] = {
-        Source = "reload_abort",
+        Source = "reload_end",
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 1,
     },
+	
+	
+    ["sgreload_start_nomen"] = {
+        Source = "reload_start_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0,
+    },
+    ["sgreload_start_empty_nomen"] = {
+        Source = "reload_start_empty_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0,
+    },
+    ["sgreload_insert_nomen"] = {
+        Source = "reload_nomen",
+        Time = 1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnimStartTime = 0.3,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0,
+    },
+    ["sgreload_finish_nomen"] = {
+        Source = "reload_end_nomen",
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 1,
+    },	
 }

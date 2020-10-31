@@ -101,9 +101,8 @@ $sequence "pump02" {
 	{ event AE_FAS_EJECT_BRASS 2 "" }
 	{ event 5004 10 "Arccw_FAS2_Weapon_REM870.PumpForward" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0.02
 	node "0"
-	snap
 	fps 30
 }
 
@@ -115,9 +114,8 @@ $sequence "pump01_scoped" {
 	{ event AE_FAS_EJECT_BRASS 2 "" }
 	{ event 5004 10 "Arccw_FAS2_Weapon_REM870.PumpForward" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0.02
 	node "0"
-	snap
 	fps 30
 }
 
@@ -129,9 +127,8 @@ $sequence "pump01_nomen" {
 	{ event AE_FAS_EJECT_BRASS 2 "" }
 	{ event 5004 7 "Arccw_FAS2_Weapon_REM870.PumpForward" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0.02
 	node "0"
-	snap
 	fps 30
 }
 
@@ -143,9 +140,8 @@ $sequence "pump01_nomen_scoped" {
 	{ event AE_FAS_EJECT_BRASS 2 "" }
 	{ event 5004 7 "Arccw_FAS2_Weapon_REM870.PumpForward" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0.02
 	node "0"
-	snap
 	fps 30
 }
 

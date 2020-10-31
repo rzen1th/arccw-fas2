@@ -446,3 +446,25 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav"}
 })
+
+
+//R870
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_REM870.PumpBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rem870/rem870_pump_back.wav", "weapons/arccw_mifl/fas2/rem870/rem870_pump_back1.wav","weapons/arccw_mifl/fas2/rem870/rem870_pump_back2.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_REM870.PumpForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rem870/rem870_pump_forward.wav", "weapons/arccw_mifl/fas2/rem870/rem870_pump_forward1.wav","weapons/arccw_mifl/fas2/rem870/rem870_pump_forward2.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_REM870.Insert",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rem870/rem870_insert1.wav", "weapons/arccw_mifl/fas2/rem870/rem870_insert2.wav","weapons/arccw_mifl/fas2/rem870/rem870_insert3.wav"}
+})
