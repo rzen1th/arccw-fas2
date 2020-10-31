@@ -17,7 +17,7 @@ SWEP.Slot = 2
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_870_1.mdl"
-SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m3s90.mdl"
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_870_1.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"

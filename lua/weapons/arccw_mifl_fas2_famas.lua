@@ -20,7 +20,7 @@ SWEP.Slot = 2
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_famas.mdl"
-SWEP.WorldModel = "models/weapons/arccw_go/v_rif_m4a1.mdl"
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_famas.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
@@ -47,6 +47,9 @@ SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
+    },
+    {
+        Mode = -3,
     },
     {
         Mode = 1,
