@@ -23,8 +23,8 @@ att.Mult_AccuracyMOA = 1.5
 
 att.Override_Firemodes = {
     {
-        Mode = -3,
-        PostBurstDelay = 0.2,
+        Mode = -5,
+        PostBurstDelay = 0.18,
     },
     {
         Mode = 1,
@@ -39,12 +39,12 @@ att.Hook_ModifyRecoil = function(wep)
     if wep:GetBurstCount() >= wep:GetBurstLength() then
         thing = wep:GetBurstCount()
     else
-        thing = 0.5
+        thing = 0.6
     end
     return {
         Recoil           = thing,
-        RecoilSide       = thing * 0.75,
-        VisualRecoilMult = 1,
+        RecoilSide       = thing * 0.9,
+        VisualRecoilMult = 0.8,
     }
 end
 

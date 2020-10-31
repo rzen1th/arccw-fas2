@@ -373,9 +373,6 @@ SWEP.Animations = {
     },	
     ["ready"] = {
         Source = "draw_first",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.7,
     },
     ["fire"] = {
         Source = {"fire"},
