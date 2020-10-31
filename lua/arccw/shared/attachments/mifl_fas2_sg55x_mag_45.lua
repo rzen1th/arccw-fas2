@@ -23,3 +23,4 @@ att.Override_ClipSize = 32
 att.Mult_ReloadTime = 0.88
 
 att.Override_Trivia_Calibre = ".45 ACP"
+att.AddSuffix = " .45"
