@@ -468,3 +468,43 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/rem870/rem870_insert1.wav", "weapons/arccw_mifl/fas2/rem870/rem870_insert2.wav","weapons/arccw_mifl/fas2/rem870/rem870_insert3.wav"}
 })
+
+
+
+
+//1911
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_1911.MagInPartial",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/1911/1911_magin_partial.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_1911.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/1911/1911_magin.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_1911.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/1911/1911_magout.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_1911.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/1911/1911_magout_empty.wav"}
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_1911.SlideStop",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/1911/1911_sliderelease.wav"}
+})
+
