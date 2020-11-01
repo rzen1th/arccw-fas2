@@ -7,6 +7,7 @@ $scale 2
 $bodygroup "weapon"
 {
 	studio "Frame.smd"
+	studio "THICC.smd"	
 	blank
 }
 

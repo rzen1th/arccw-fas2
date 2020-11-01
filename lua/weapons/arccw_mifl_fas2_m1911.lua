@@ -135,11 +135,31 @@ SWEP.AttachmentElements = {
             {ind = 7, bg = 1},			
         },
     },	
+    ["mifl_fas2_m1911_stock"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 1},
+        },
+    },		
     ["mifl_fas2_m1911_mag50"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
         },
-    },
+    },	
+    ["mifl_fas2_m1911_slide_2x"] = {
+		TrueNameChange = "Chesse Burger",	
+        NameChange = "Chesse Burger",
+        VMBodygroups = {
+            {ind = 0, bg = 1},
+            {ind = 1, bg = 4},	
+            {ind = 2, bg = 2},				
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(13, -0.2, -0.15),
+            }
+        }
+    },	
+	
     ["mifl_fas2_m1911_slide_para"] = {
 		TrueNameChange = "",	
         NameChange = "",
@@ -152,7 +172,7 @@ SWEP.AttachmentElements = {
                 vpos = Vector(13, -0.2, -0.15),
             }
         }
-    },	
+    },		
     ["mifl_fas2_m1911_slide_carbine"] = {
 		TrueNameChange = "",	
         NameChange = "",
@@ -259,7 +279,17 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },		
         InstalledEles = {"shield"},		
-    },		
+    },	
+    {
+        PrintName = "Stock",
+        Slot = {"mifl_fas2_m1911_stock"},
+        DefaultAttName = "Standard Stock",
+        Bone = "weapon_main",
+        Offset = {
+            vpos = Vector(-0.2, -1.8, -0.2),
+            vang = Angle(0, -90, 0),
+        },
+    },	
     {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
