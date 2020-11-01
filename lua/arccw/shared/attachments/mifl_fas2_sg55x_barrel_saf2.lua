@@ -38,27 +38,18 @@ att.Override_Firemodes = {
 att.Hook_FiremodeBars = function(wep)
 	if wep:GetCurrentFiremode().Mode == -5 then
 		local gbc = wep:GetBurstCount()
-		local gbl = wep:GetBurstLength()
 		local ourreturn = ""
 		-- Prepare for the least arsed shit on earth
-			-- Section 1
-			if wep:GetBurstCount() == 1 then
-				ourreturn = ourreturn .. "-"
-			else ourreturn = ourreturn .. "_" end
-			-- Section 2
-			if wep:GetBurstCount() == 2 then
-				ourreturn = ourreturn .. "-"
-			else ourreturn = ourreturn .. "_" end
-			-- Section 3
-			if wep:GetBurstCount() == 3 then
-				ourreturn = ourreturn .. "-"
-			else ourreturn = ourreturn .. "_" end
-			-- Section 4
-			if wep:GetBurstCount() == 4 then
-				ourreturn = ourreturn .. "-"
-			else ourreturn = ourreturn .. "_" end
-			-- Section 5
-			if wep:GetBurstCount() == 5 then
+		-- Section 1
+				ourreturn = ourreturn .. ((gbc >= 1 and "-") or "_")
+		-- Section 2
+				ourreturn = ourreturn .. ((gbc >= 2 and "-") or "_")
+		-- Section 3
+				ourreturn = ourreturn .. ((gbc >= 3 and "-") or "_")
+		-- Section 4
+				ourreturn = ourreturn .. ((gbc >= 4 and "-") or "_")
+		-- Section 5
+			if gbc >= 5 then
 				ourreturn = "!!!!!"
 			else ourreturn = ourreturn .. "!" end
 		
