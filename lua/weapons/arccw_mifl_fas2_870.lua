@@ -103,14 +103,14 @@ SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_RPG
 
-SWEP.ActivePos = Vector(-1, -2, 1)
+SWEP.ActivePos = Vector(-0.2, -2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-4, 0, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
-SWEP.HolsterPos = Vector(3, 3, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+SWEP.HolsterPos = Vector(1, 0, 2)
+SWEP.HolsterAng = Angle(-5, 5, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -250,11 +250,11 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire02",
-        MinProgress = 0.25,
+        MinProgress = 0.15,
     },
     ["fire_iron"] = {
         Source = "fire01_scoped",
-        MinProgress = 0.25,
+        MinProgress = 0.15,
     },
     ["cycle"] = {
         Source = "pump02",
@@ -292,7 +292,8 @@ SWEP.Animations = {
     },
     ["sgreload_insert"] = {
         Source = "reload",
-        Time = 1,
+        Time = 0.8,
+        MinProgress = 0.7,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -323,7 +324,8 @@ SWEP.Animations = {
     },
     ["sgreload_insert_nomen"] = {
         Source = "reload_nomen",
-        Time = 1,
+        Time = 0.7,
+        MinProgress = 0.6,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,

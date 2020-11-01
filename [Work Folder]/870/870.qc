@@ -29,7 +29,6 @@ $sequence "idle" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 	loop
 }
@@ -41,7 +40,6 @@ $sequence "draw" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 40
 }
 
@@ -52,7 +50,6 @@ $sequence "holster" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 60
 }
 
@@ -89,7 +86,6 @@ $sequence "deploy_first" {
 	{ event 5004 74 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
-	snap
 	fps 33
 }
 
@@ -153,7 +149,6 @@ $sequence "reload_start" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -171,7 +166,6 @@ $sequence "reload_start_empty" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -189,7 +183,6 @@ $sequence "reload_start_empty_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -200,7 +193,6 @@ $sequence "reload_start_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -213,7 +205,6 @@ $sequence "reload_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -224,7 +215,6 @@ $sequence "reload_end_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -239,7 +229,6 @@ $sequence "reload_end_pump_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -252,7 +241,6 @@ $sequence "reload" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -264,7 +252,6 @@ $sequence "reload_end" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
 
@@ -279,6 +266,5 @@ $sequence "reload_end_pump" {
 	fadein 0.2
 	fadeout 0.2
 	node "0"
-	snap
 	fps 30
 }
