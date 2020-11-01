@@ -58,7 +58,7 @@ att.Hook_FiremodeBars = function(wep)
 				ourreturn = ourreturn .. "-"
 			else ourreturn = ourreturn .. "_" end
 			-- Section 5
-			if wep:GetBurstCount() == 4 then
+			if wep:GetBurstCount() == 5 then
 				ourreturn = "!!!!!"
 			else ourreturn = ourreturn .. "!" end
 		

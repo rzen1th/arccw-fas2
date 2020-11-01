@@ -21,7 +21,7 @@ att.Mult_DrawTime = 1.3
 
 att.Add_BarrelLength = 10
 
-att.Mult_RPM = 1.2
+att.Mult_RPM = 2.5
 
 att.Mult_ShootPitch = 0.95
 

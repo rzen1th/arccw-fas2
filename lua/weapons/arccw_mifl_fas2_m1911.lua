@@ -3,8 +3,8 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2" 
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M1911"
-SWEP.TrueName = "911 lol"
+SWEP.PrintName = "Government Special"
+SWEP.TrueName = "M1911"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "piss"
 SWEP.Trivia_Manufacturer = "Colt"
@@ -43,7 +43,7 @@ SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 0.7
 SWEP.MaxRecoilBlowback = 2
 
-SWEP.Delay = 60 / 700 -- 60 / RPM.
+SWEP.Delay = 60 / 400 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -100,7 +100,7 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(0, 2, 0)
+SWEP.ActivePos = Vector(0, 2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-4, -1, -2)
