@@ -77,7 +77,7 @@ SWEP.MuzzleEffect = "muzzleflash_pistol"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellScale = 1.25
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
+SWEP.ShellRotateAngle = Angle(0, 90, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
@@ -127,12 +127,12 @@ SWEP.AttachmentElements = {
 	},
     ["rail"] = {
         VMBodygroups = {
-            {ind = 4, bg = 1},			
+            {ind = 6, bg = 1},			
         },
     },
     ["rail_2"] = {
         VMBodygroups = {
-            {ind = 5, bg = 1},			
+            {ind = 7, bg = 1},			
         },
     },	
     ["mifl_fas2_m1911_mag50"] = {
@@ -149,7 +149,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, 7, 0.78),
+                vpos = Vector(13, -0.2, -0.15),
             }
         }
     },	
@@ -157,11 +157,11 @@ SWEP.AttachmentElements = {
 		TrueNameChange = "",	
         NameChange = "",
         VMBodygroups = {
-            {ind = 1, bg = 2}
+            {ind = 1, bg = 3}
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, 5, 0.78),
+                vpos = Vector(6.5, -0.2, -0.15),
             }
         }
     },
@@ -169,11 +169,11 @@ SWEP.AttachmentElements = {
 		TrueNameChange = "",	
         NameChange = "",
         VMBodygroups = {
-            {ind = 1, bg = 3}
+            {ind = 1, bg = 2}
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(0, 5, 0.78),
+                vpos = Vector(1.2, -0.2, -0.15),
             }
         }
     },	
@@ -195,11 +195,11 @@ SWEP.Attachments = {
         Bone = "Frame_BONE",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, 1, 2.2),
-            vang = Angle(0, -90,0),
+            vpos = Vector(2, -4, -0.18),
+            vang = Angle(0, 0,-90),
         },
         InstalledEles = {"rail"},
-        CorrectiveAng = Angle(0, 180, 0)
+        CorrectiveAng = Angle(0, 0, 0)
     },
     {
         PrintName = "Tactical",
@@ -227,8 +227,8 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "Barrel_BONE",
         Offset = {
-            vpos = Vector(0, 4.2, 0.78),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(2.5, -0.2, -0.15),
+            vang = Angle(0, 0, -90),
         },
 		ExcludeFlags = {"mifl_fas2_g20_slide_whisper"}				
     },
@@ -340,28 +340,28 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.7,
+        LHIKOut = 0.4,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.6,
+        LHIKOut = 0.4,
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.6,
+        LHIKOut = 0.4,
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.7,
+        LHIKOut = 0.4,
     },
 ---------------------------------------------------------
     ["reload_50"] = {
@@ -369,28 +369,28 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.7,
+        LHIKOut = 0.4,
     },
     ["reload_empty_50"] = {
         Source = "reload_empty_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.6,
+        LHIKOut = 0.4,
     },
     ["reload_nomen_50"] = {
         Source = "reload_nomen_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.6,
+        LHIKOut = 0.4,
     },
     ["reload_nomen_empty_50"] = {
         Source = "reload_empty_nomen_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.7,
+        LHIKOut = 0.4,
     },	
 	
 --------------------------------------------------------
