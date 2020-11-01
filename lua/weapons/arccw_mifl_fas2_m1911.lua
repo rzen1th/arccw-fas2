@@ -125,32 +125,6 @@ SWEP.AttachmentElements = {
     ["shield"] = {
 		Override_ActivePos = Vector(8, 0, 0),
 	},
-    ["roni"] = {
-		TrueNameChange = "Glock Carbine",
-        NameChange = "HKP-C",	
-        VMBodygroups = {
-            {ind = 1, bg = 1},	
-            {ind = 4, bg = 0},	
-            {ind = 5, bg = 0},			
-        },
-		Override_ActivePos = Vector(0, -2, -2),
-        AttPosMods = {
-            [1] = {
-                vpos = Vector(0, 0, 3.5),
-				  },			  
-            [2] = {
-				vpos = Vector(0, 9.5, 0.1),
-				  },			  				
-            [4] = {
-                vpos = Vector(0, 8, 0.78),
-				  },	
-			},				  
-        Override_IronSightStruct = {
-            Pos = Vector(-2.856, -5, -1.1),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.1,
-        },				
-    },
     ["rail"] = {
         VMBodygroups = {
             {ind = 4, bg = 1},			
@@ -161,40 +135,17 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 1},			
         },
     },	
-    ["mifl_fas2_g20_mag33"] = {
+    ["mifl_fas2_m1911_mag50"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
         },
     },
-    ["mifl_fas2_g20_slide_17c"] = {
-		TrueNameChange = "Glock 17c",	
-        NameChange = "HKP 17c",
+    ["mifl_fas2_m1911_slide_para"] = {
+		TrueNameChange = "",	
+        NameChange = "",
         VMBodygroups = {
-            {ind = 1, bg = 2},
-        },
-        AttPosMods = {
-            [4] = {
-                vpos = Vector(0, 7, 0.78),
-            }
-        }
-    },
-    ["mifl_fas2_g20_slide_raptor"] = {
-		TrueNameChange = "Glock Raptor",		
-        NameChange = "HKP Raptor",
-        VMBodygroups = {
-            {ind = 1, bg = 4},
-        },
-        AttPosMods = {
-            [4] = {
-                vpos = Vector(0, 5, 0.78),
-            }
-        }
-    },	
-    ["mifl_fas2_g20_slide_whisper"] = {
-		TrueNameChange = "Glock SD",		
-        NameChange = "HKP SD",
-        VMBodygroups = {
-            {ind = 1, bg = 3},
+            {ind = 1, bg = 1},
+            {ind = 3, bg = 1},			
         },
         AttPosMods = {
             [4] = {
@@ -202,11 +153,11 @@ SWEP.AttachmentElements = {
             }
         }
     },	
-    ["mifl_fas2_g20_slide_18"] = {
-		TrueNameChange = "Glock 18",	
-        NameChange = "HKP 18",
+    ["mifl_fas2_m1911_slide_carbine"] = {
+		TrueNameChange = "",	
+        NameChange = "",
         VMBodygroups = {
-            {ind = 1, bg = 1}
+            {ind = 1, bg = 2}
         },
         AttPosMods = {
             [4] = {
@@ -214,6 +165,18 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_m1911_slide_compact"] = {
+		TrueNameChange = "",	
+        NameChange = "",
+        VMBodygroups = {
+            {ind = 1, bg = 3}
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, 5, 0.78),
+            }
+        }
+    },	
 }
 
 SWEP.ExtraSightDist = 7
@@ -254,8 +217,8 @@ SWEP.Attachments = {
         Bone = "Frame_BONE",		
         DefaultAttName = "Default Slide",
         Offset = {
-            vpos = Vector(0, 2, 0.5),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(4.5, -3.5, 0.2),
+            vang = Angle(0, 0, -90),
         },		
     },
     {
@@ -323,8 +286,8 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
 		return anim .. "_akimbo"
     end	
 	
-    if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" then
-		return anim .. "_33"
+    if wep.Attachments[5].Installed == "mifl_fas2_m1911_mag50" then
+		return anim .. "_50"
     end		
 end
 
@@ -376,57 +339,57 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.7,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.6,
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.6,
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.7,
     },
 ---------------------------------------------------------
-    ["reload_33"] = {
-        Source = "reload_33",
+    ["reload_50"] = {
+        Source = "reload_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.7,
     },
-    ["reload_empty_33"] = {
-        Source = "reload_empty_33",
+    ["reload_empty_50"] = {
+        Source = "reload_empty_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.6,
     },
-    ["reload_nomen_33"] = {
-        Source = "reload_nomen_33",
+    ["reload_nomen_50"] = {
+        Source = "reload_nomen_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.6,
     },
-    ["reload_nomen_empty_33"] = {
-        Source = "reload_empty_nomen_33",
+    ["reload_nomen_empty_50"] = {
+        Source = "reload_empty_nomen_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.4,
+        LHIKIn = 0.3,
         LHIKOut = 0.7,
     },	
 	

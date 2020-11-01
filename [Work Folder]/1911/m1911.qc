@@ -41,6 +41,7 @@ $bodygroup "Stonk"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\M1911\"
+$cdmaterials "models\weapons\arccw_fas2\m1911_extra\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 
