@@ -3,7 +3,7 @@ att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_kurz.png", "mips smooth")
 att.Description = ""
 att.SortOrder = -2000000
 
-att.Slot = "abgghkadhjkgahjghajljasjhgadjojjdkhjihjhjljk;kljihhhhhbhhss"
+att.Slot = "mifl_integral_lhik_fas2"
 
 att.LHIK = true
 att.LHIK_Priority = -20000

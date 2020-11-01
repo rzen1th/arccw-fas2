@@ -170,7 +170,10 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [4] = {
                 vpos = Vector(13, -0.2, -0.15),
-            }
+            },
+            [2] = {
+                vpos = Vector(7.5, -1.2, -0.18),
+            }			
         }
     },		
     ["mifl_fas2_m1911_slide_carbine"] = {
@@ -226,8 +229,8 @@ SWEP.Attachments = {
         Slot = {"tac"},
         Bone = "Frame_BONE",
         Offset = {
-            vpos = Vector(0, 4.5, 0),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(4, -2, -0.18),
+            vang = Angle(0, 0, -90),
         },
         InstalledEles = {"rail_2"},
     },
@@ -250,7 +253,7 @@ SWEP.Attachments = {
             vpos = Vector(2.5, -0.2, -0.15),
             vang = Angle(0, 0, -90),
         },
-		ExcludeFlags = {"mifl_fas2_g20_slide_whisper"}				
+		ExcludeFlags = {"mifl_fas2_m1911_slide_whisper", "mifl_fas2_m1911_slide_2x"}				
     },
     {
         PrintName = "Magazine",

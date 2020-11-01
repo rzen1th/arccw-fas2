@@ -20,7 +20,7 @@ att.Add_BarrelLength = -7
 att.ModelOffset = Vector(-5, -4.5, 1.2)
 
 att.LHIK = true
-att.LHIK_Priority = -2
+att.LHIK_Priority = 0.1
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_m4x.mdl"
 

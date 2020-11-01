@@ -343,6 +343,18 @@ SWEP.Attachments = {
             wang = Angle(171.817, 180-1.17, 0),
         },
     },
+	
+   {				-- why dis no work :((((((((((((((((((((((((((((((((((((((
+        PrintName = "",   
+        Slot = "mifl_integral_lhik_fas2",
+        Bone = "Dummy01",	
+		Integral = true,	
+		Hidden = false,		
+        Offset = {
+            vpos = Vector(12, 1, -0.5),
+            vang = Angle(0, 0, -90),
+		}			
+    },	
 }
 
 SWEP.Animations = {
