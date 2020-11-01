@@ -9,7 +9,9 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_m1911_slide"
 
-att.Mult_Recoil = 1.5
+att.Mult_Recoil = 1.8
+att.Mult_RecoilSide = 1.7
+att.Mult_VisualRecoilMult = 1.5
 att.Mult_SightTime = 1.3
 att.Mult_AccuracyMOA = 2
 att.Mult_DrawTime = 1.3
