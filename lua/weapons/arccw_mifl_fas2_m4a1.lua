@@ -109,8 +109,8 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
-SWEP.HolsterPos = Vector(4, 0, -0.2)
-SWEP.HolsterAng = Angle(-7.036, 30.016, -10)
+SWEP.HolsterPos = Vector(1, 0, 2)
+SWEP.HolsterAng = Angle(-5, 5, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -229,6 +229,7 @@ SWEP.AttachmentElements = {
     },		
     ["mifl_fas2_m4a1_barrel_ribs"] = {
         NameChange = "AR-C41",		
+        TrueNameChange = "M4 Carbine",		
         VMBodygroups = {
             {ind = 1, bg = 7},				
         },

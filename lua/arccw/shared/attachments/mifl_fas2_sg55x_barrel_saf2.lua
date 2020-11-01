@@ -3,10 +3,10 @@ att.Icon = Material("entities/arccw_mifl_fas2_sg55x_saf.png", "mips smooth")
 att.Description = "Shorter barrel with more maneuverability meant for paratroopers.\nSwiss engineering traps recoil until the last shot."
 att.SortOrder = 3
 att.Desc_Pros = {
-    "Halves recoil until the last shot"
+	"Halves recoil until the last shot"
 }
 att.Desc_Cons = {
-    "Last shot is disorienting"
+	"Last shot is disorienting"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_sg55x_hg"
@@ -22,34 +22,66 @@ att.Mult_ShootPitch = 0.9
 att.Mult_AccuracyMOA = 1.5
 
 att.Override_Firemodes = {
-    {
-        Mode = -5,
-        PostBurstDelay = 0.17,
-    },
-    {
-        Mode = 1,
-    },	
-    {
-        Mode = 0
-    }
+	{
+		Mode = -5,
+		PostBurstDelay = 0.17,
+		CustomBars = "----!"
+	},
+	{
+		Mode = 1,
+	},	
+	{
+		Mode = 0
+	}
 }
 
+att.Hook_FiremodeBars = function(wep)
+	if wep:GetCurrentFiremode().Mode == -5 then
+		local gbc = wep:GetBurstCount()
+		local gbl = wep:GetBurstLength()
+		local ourreturn = ""
+		-- Prepare for the least arsed shit on earth
+			-- Section 1
+			if wep:GetBurstCount() == 1 then
+				ourreturn = ourreturn .. "-"
+			else ourreturn = ourreturn .. "_" end
+			-- Section 2
+			if wep:GetBurstCount() == 2 then
+				ourreturn = ourreturn .. "-"
+			else ourreturn = ourreturn .. "_" end
+			-- Section 3
+			if wep:GetBurstCount() == 3 then
+				ourreturn = ourreturn .. "-"
+			else ourreturn = ourreturn .. "_" end
+			-- Section 4
+			if wep:GetBurstCount() == 4 then
+				ourreturn = ourreturn .. "-"
+			else ourreturn = ourreturn .. "_" end
+			-- Section 5
+			if wep:GetBurstCount() == 4 then
+				ourreturn = "!!!!!"
+			else ourreturn = ourreturn .. "!" end
+		
+		return ourreturn
+	end
+end
+
 att.Hook_ModifyRecoil = function(wep)
-    local thing
-    if wep:GetBurstCount() >= wep:GetBurstLength() then
-        thing = wep:GetBurstCount()
-    else
-        thing = 0.63
-    end
-    return {
-        Recoil           = thing,
-        RecoilSide       = thing * 0.85,
-        VisualRecoilMult = 0.8,
-    }
+	local thing
+	if wep:GetBurstCount() >= wep:GetBurstLength() then
+		thing = wep:GetBurstCount()
+	else
+		thing = 0.63
+	end
+	return {
+		Recoil           = thing,
+		RecoilSide       = thing * 0.85,
+		VisualRecoilMult = 0.8,
+	}
 end
 
 att.Hook_AddShootSound = function(wep, fsound, volume, pitch)
-    if wep:GetBurstCount() >= wep:GetBurstLength() then
-        wep:MyEmitSound("weapons/arccw_mifl/fas2/sg55x/sg550_stock.wav", 70, 100, 1, CHAN_ITEM)
-    end
+	if wep:GetBurstCount() >= wep:GetBurstLength() then
+		wep:MyEmitSound("weapons/arccw_mifl/fas2/sg55x/sg550_stock.wav", 70, 100, 1, CHAN_ITEM)
+	end
 end

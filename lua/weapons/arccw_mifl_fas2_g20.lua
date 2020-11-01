@@ -106,8 +106,8 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-4, -1, -2)
 SWEP.CrouchAng = Angle(0, 0, -20)
 
-SWEP.HolsterPos = Vector(-1, 1, -3)
-SWEP.HolsterAng = Angle(-5, 10, -20)
+SWEP.HolsterPos = Vector(1, 0, 0)
+SWEP.HolsterAng = Angle(-5, 5, -10)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
