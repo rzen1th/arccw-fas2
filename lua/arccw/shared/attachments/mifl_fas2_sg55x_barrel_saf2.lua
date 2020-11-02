@@ -39,19 +39,15 @@ att.Hook_FiremodeBars = function(wep)
 	if wep:GetCurrentFiremode().Mode == -5 then
 		local gbc = wep:GetBurstCount()
 		local ourreturn = ""
-		-- Prepare for the least arsed shit on earth
-		-- Section 1
-				ourreturn = ourreturn .. ((gbc >= 1 and "-") or "_")
-		-- Section 2
-				ourreturn = ourreturn .. ((gbc >= 2 and "-") or "_")
-		-- Section 3
-				ourreturn = ourreturn .. ((gbc >= 3 and "-") or "_")
-		-- Section 4
-				ourreturn = ourreturn .. ((gbc >= 4 and "-") or "_")
-		-- Section 5
-			if gbc >= 5 then
-				ourreturn = "!!!!!"
-			else ourreturn = ourreturn .. "!" end
+
+		ourreturn = ourreturn .. ((gbc >= 1 and "-") or "_")
+		ourreturn = ourreturn .. ((gbc >= 2 and "-") or "_")
+		ourreturn = ourreturn .. ((gbc >= 3 and "-") or "_")
+		ourreturn = ourreturn .. ((gbc >= 4 and "-") or "_")
+		
+		if gbc >= 5 then
+			ourreturn = "!!!!!"
+		else ourreturn = ourreturn .. "!" end
 		
 		return ourreturn
 	end
