@@ -13,4 +13,6 @@
 	
 	"$rimlight" 1
 	"$rimlightexponent" 15
+	
+	$color2 "[.9 .9 .9]"	
 }
