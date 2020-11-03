@@ -127,7 +127,7 @@ SWEP.AttachmentElements = {
 	},
     ["rail"] = {
         VMBodygroups = {
-            {ind = 6, bg = 1},			
+            {ind = 5, bg = 1},			
         },
     },
     ["rail_2"] = {
@@ -202,8 +202,6 @@ SWEP.AttachmentElements = {
     },	
 }
 
-SWEP.ExtraSightDist = 7
-
 SWEP.WorldModelOffset = {
     pos = Vector(-12.5, 4, -2.5),
     ang = Angle(-10, 0, 180)
@@ -215,14 +213,14 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = "optic_lp",
-        Bone = "Frame_BONE",
+        Bone = "Slide_BONE",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(2, -4, -0.18),
+            vpos = Vector(0, -0.2, -0.18),
             vang = Angle(0, 0,-90),
         },
         InstalledEles = {"rail"},
-        CorrectiveAng = Angle(0, 0, 0)
+		ExtraSightDist = 13		
     },
     {
         PrintName = "Tactical",

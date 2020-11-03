@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "AMR82"
+SWEP.PrintName = "AM-R50SA"
 SWEP.TrueName = "M82"
 SWEP.Trivia_Class = "Antimateriel Rifle"
-SWEP.Trivia_Desc = "Heavy hitting rifle. Super impratical in every way."
+SWEP.Trivia_Desc = "Huge anti-material rifle firing a huge round. Meant for use against light vehicles and communication equipment. Extreme long range capabilities, but is very heavy."
 SWEP.Trivia_Manufacturer = "Barrett Firearms Manufacturing"
 SWEP.Trivia_Calibre = ".50 BMG"
 SWEP.Trivia_Country = "United States"
@@ -22,10 +22,10 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
 SWEP.ViewModelFOV = 57
 
-SWEP.Damage = 140
-SWEP.DamageMin = 20 -- damage done at maximum range
-SWEP.Range = 300 -- in METRES
-SWEP.Penetration = 40
+SWEP.Damage = 160
+SWEP.DamageMin = 35 -- damage done at maximum range
+SWEP.Range = 270 -- in METRES
+SWEP.Penetration = 45
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 6000 -- projectile or phys bullet muzzle velocity
@@ -122,10 +122,14 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0)
 
 SWEP.AttachmentElements = {
     ["whisperer"] = {
+		TrueNameChange = "M82S",	
+        NameChange = "AM-R50SA-S",	
         VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
     },
     ["obrez"] = {
+		TrueNameChange = "M28",	
+        NameChange = "AM-R50 Kurz",		
         VMBodygroups = {
 		{ind = 0, bg = 1},
 		{ind = 1, bg = 1},

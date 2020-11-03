@@ -26,6 +26,15 @@ https://gamebanana.com/skins/126616
 VOLKED KIT - ???
 http://gamer-lab.com/eng/mdl_source/X-90
 
+G36 Sight - ???
+https://gamebanana.com/skins/4406
+
+XM8 - End of Days
+https://gamebanana.com/skins/41834
+
+F2000 - Ankalar
+https://gamebanana.com/skins/43401
+
 ---------------------------------------------------------------
 In Depth Credits
 

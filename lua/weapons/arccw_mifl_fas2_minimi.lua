@@ -144,6 +144,8 @@ SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
     ["23"] = {
+		TrueNameChange = "M223",	
+        NameChange = "BEMG 23",		
         VMBodygroups = {
             {ind = 1, bg = 1},	
             {ind = 3, bg = 1},				
@@ -169,7 +171,7 @@ SWEP.AttachmentElements = {
             {ind = 6, bg = 1},				
         },
     },		
-    ["32"] = { --- botchig time ---
+    ["32"] = { --- bodging time ---
 		Mult_RPM = (1/1.3)*1.2,
 		Mult_ReloadTime = (1/0.9)*0.8,
         VMBodygroups = {

@@ -39,9 +39,16 @@ $bodygroup "Stonk"
 	studio "Stock.smd"
 }
 
+$bodygroup "Rail"
+{
+	blank
+	studio "Rail.smd"
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\M1911\"
+$cdmaterials "models\weapons\arccw_fas2\mw2\"
 $cdmaterials "models\weapons\arccw_fas2\m1911_extra\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"

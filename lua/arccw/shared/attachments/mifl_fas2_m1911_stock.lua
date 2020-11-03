@@ -13,3 +13,4 @@ att.Mult_SightedSpeedMult = 0.8
 att.Mult_SightTime = 0.95
 att.Mult_Recoil = 0.85
 att.Mult_MoveDispersion = 0.8
+att.Mult_VisualRecoilMult = 0.75
