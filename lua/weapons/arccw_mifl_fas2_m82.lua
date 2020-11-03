@@ -66,7 +66,7 @@ SWEP.HipDispersion = 1000 -- inaccuracy added by hip firing.
 SWEP.Primary.Ammo = "SniperPenetratedRound" -- what ammo type the gun uses
 SWEP.MagID = "bfg" -- the magazine pool this gun draws from
 
-SWEP.ShootVol = 170 -- volume of shoot sound
+SWEP.ShootVol = 150 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_mifl/fas2/m82/m82_fire1.wav"
@@ -123,7 +123,7 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0)
 SWEP.AttachmentElements = {
     ["whisperer"] = {
 		TrueNameChange = "M82S",	
-        NameChange = "AM-R50SA-S",	
+        NameChange = "AM-R50SA-SSD",	
         VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
     },
@@ -195,16 +195,6 @@ SWEP.Attachments = {
             wpos = Vector(15.625, -0.253, -6.298),
             wang = Angle(-8.829, -0.556, 90)
         },
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
-        PrintName = "Fire Group",
-        Slot = "fcg",
-        DefaultAttName = "Standard FCG"
     },
     {
         PrintName = "Ammo Type",
