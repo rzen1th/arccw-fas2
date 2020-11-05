@@ -3,14 +3,14 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2" 
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Government Special"
+SWEP.PrintName = "11GI"
 SWEP.TrueName = "M1911"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "piss"
+SWEP.Trivia_Desc = "enerable, popular, and reliable pistol over a century old."
 SWEP.Trivia_Manufacturer = "Colt"
-SWEP.Trivia_Calibre = "9x19mm Parabellum"
+SWEP.Trivia_Calibre = ".45 ACP"
 SWEP.Trivia_Mechanism = "Short Recoil"
-SWEP.Trivia_Country = "Austria"
+SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 1911
 
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
@@ -20,7 +20,7 @@ SWEP.Slot = 1
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m1911.mdl"
-SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_glock20.mdl"
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m1911.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
@@ -146,8 +146,8 @@ SWEP.AttachmentElements = {
         },
     },	
     ["mifl_fas2_m1911_slide_2x"] = {
-		TrueNameChange = "Chesse Burger",	
-        NameChange = "Chesse Burger",
+		TrueNameChange = "AF1911",	
+        NameChange = "22GI",
         VMBodygroups = {
             {ind = 0, bg = 1},
             {ind = 1, bg = 4},	
@@ -161,8 +161,8 @@ SWEP.AttachmentElements = {
     },	
 	
     ["mifl_fas2_m1911_slide_para"] = {
-		TrueNameChange = "",	
-        NameChange = "",
+		TrueNameChange = "MP 1911",	
+        NameChange = "MP 11GI",
         VMBodygroups = {
             {ind = 1, bg = 1},
             {ind = 3, bg = 1},			
@@ -177,8 +177,8 @@ SWEP.AttachmentElements = {
         }
     },		
     ["mifl_fas2_m1911_slide_carbine"] = {
-		TrueNameChange = "",	
-        NameChange = "",
+		TrueNameChange = "M1911 Carbine",	
+        NameChange = "11GI-C",
         VMBodygroups = {
             {ind = 1, bg = 3}
         },
@@ -189,8 +189,8 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_m1911_slide_compact"] = {
-		TrueNameChange = "",	
-        NameChange = "",
+		TrueNameChange = "M1911-C",	
+        NameChange = "11GI-K",
         VMBodygroups = {
             {ind = 1, bg = 2}
         },

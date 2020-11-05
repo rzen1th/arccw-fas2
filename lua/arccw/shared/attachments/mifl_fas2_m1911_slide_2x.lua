@@ -1,8 +1,8 @@
 att.PrintName = "Double Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slide17c.png", "mips smooth")
-att.Description = "Twice the barrel for twice the firepower."
+att.Description = "Twice the gun for twice the firepower."
 att.Desc_Pros = {
-"THATS A THICC BOI"
+"Thicc"
 }
 att.Desc_Cons = {
 }

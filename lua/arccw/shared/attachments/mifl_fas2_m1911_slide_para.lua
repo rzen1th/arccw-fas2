@@ -1,6 +1,6 @@
 att.PrintName = "Para Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slide18.png", "mips smooth")
-att.Description = ""
+att.Description = "Conversion and extensive modifications effectively turn the weapon into an SMG. Grip is added for controllability."
 att.Desc_Pros = {
     "pro.fullauto"
 }
@@ -21,7 +21,7 @@ att.Mult_DrawTime = 1.3
 
 att.Add_BarrelLength = 10
 
-att.Mult_RPM = 2
+att.Mult_RPM = 1.8
 
 att.Mult_ShootPitch = 0.95
 

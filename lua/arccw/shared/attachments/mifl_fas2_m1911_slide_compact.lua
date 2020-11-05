@@ -1,6 +1,6 @@
 att.PrintName = "Compact Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slide17c.png", "mips smooth")
-att.Description = "Short cunt."
+att.Description = "Shorter barrel and slide reduces range but increases mobility. Also looks adorable!"
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -1,6 +1,6 @@
 att.PrintName = "Thompson Stock"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_s_762.png", "mips smooth")
-att.Description = "Stock from the thompson how?"
+att.Description = "Solid stock increases controllability by a lot but suffers from bulkiness."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
