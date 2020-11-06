@@ -1,5 +1,5 @@
-att.PrintName = "Para Slide"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_slide18.png", "mips smooth")
+att.PrintName = "Sweeper Kit"
+att.Icon = Material("entities/arccw_mifl_fas2_m1911_slide_sweeper.png", "mips smooth")
 att.Description = "Conversion and extensive modifications effectively turn the weapon into an SMG. Grip is added for controllability."
 att.Desc_Pros = {
     "pro.fullauto"

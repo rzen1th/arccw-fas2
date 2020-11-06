@@ -17,6 +17,7 @@ $bodygroup "Slide"
 	studio "Slide_Auto.smd"
 	studio "Slide_C.smd"	
 	studio "Slide_R.smd"	
+	studio "Slide_Alyx.smd"
 	blank	
 }
 

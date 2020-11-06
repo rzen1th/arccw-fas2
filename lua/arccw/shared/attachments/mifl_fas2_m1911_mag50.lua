@@ -1,5 +1,5 @@
 att.PrintName = "50-Round 9mm"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_33.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m1911_mag_50.png", "mips smooth")
 att.Description = "Drum magazine holding 50 rounds effectively reduces the need to reload but adds unecessary bulk. Weaker round but maybe it's worth it."
 att.Desc_Pros = {
     "pro.magcap"

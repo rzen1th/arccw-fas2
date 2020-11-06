@@ -1,5 +1,5 @@
 att.PrintName = "Compact Slide"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_slide17c.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m1911_slide_compact.png", "mips smooth")
 att.Description = "Shorter barrel and slide reduces range but increases mobility. Also looks adorable!"
 att.Desc_Pros = {
 }

@@ -1,5 +1,5 @@
 att.PrintName = "Carbine Slide"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_slide17c.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m1911_slide_carbine.png", "mips smooth")
 att.Description = "Longer barrel extends range."
 att.Desc_Pros = {
 }

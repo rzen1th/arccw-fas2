@@ -154,14 +154,9 @@ SWEP.AttachmentElements = {
         NameChange = "22GI",
         VMBodygroups = {
             {ind = 0, bg = 1},
-            {ind = 1, bg = 4},	
+            {ind = 1, bg = 5},	
             {ind = 2, bg = 2},				
         },
-        AttPosMods = {
-            [4] = {
-                vpos = Vector(13, -0.2, -0.15),
-            }
-        }
     },	
 	
     ["mifl_fas2_m1911_slide_para"] = {
@@ -179,7 +174,24 @@ SWEP.AttachmentElements = {
                 vpos = Vector(7.5, -1.2, -0.18),
             }			
         }
-    },		
+    },	
+
+    ["mifl_fas2_m1911_slide_alyx"] = {
+		TrueNameChange = "M1911 Raptor",	
+        NameChange = "Raptor 11",
+        VMBodygroups = {
+            {ind = 1, bg = 4},		
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(13, -0.2, -0.15),
+            },
+            [2] = {
+                vpos = Vector(7.5, -1.2, -0.18),
+            }			
+        }
+    },	
+	
     ["mifl_fas2_m1911_slide_carbine"] = {
 		TrueNameChange = "M1911 Carbine",	
         NameChange = "11GI-C",
