@@ -1,6 +1,7 @@
-att.PrintName = "Double Slide"
+att.PrintName = "Double Frame"
 att.Icon = Material("entities/arccw_mifl_fas2_m1911_slide_af.png", "mips smooth")
 att.Description = "Twice the gun for twice the firepower."
+att.SortOrder = 12
 att.Desc_Pros = {
 "Thicc"
 }

@@ -1,7 +1,7 @@
 att.PrintName = "Combine Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_m1911_slide_alyx.png", "mips smooth")
 att.Description = "Conversion kit from beyond this world and time."
-
+att.SortOrder = 7
 att.AutoStats = true
 att.Slot = "mifl_fas2_m1911_slide"
 
