@@ -1,11 +1,10 @@
-att.PrintName = "Combine Slide"
+att.PrintName = "Overlord Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_m1911_slide_alyx.png", "mips smooth")
-att.Description = "Conversion kit from beyond this world allowing for damped 5 round burst."
+att.Description = "Strange Combine technology conversion kit allowing for damped burst."
 att.SortOrder = 7
 att.AutoStats = true
 att.Slot = "mifl_fas2_m1911_slide"
 
-att.Mult_Range = 1.3
 att.Mult_SightTime = 1.12
 att.Mult_DrawTime = 1.12
 
@@ -21,7 +20,7 @@ att.Mult_ShootPitch = 0.97
 
 att.Override_Firemodes = {
 	{
-		Mode = -5,
+		Mode = -7,
 		PostBurstDelay = 0.2,
 		CustomBars = "----!"
 	},
@@ -34,7 +33,7 @@ att.Override_Firemodes = {
 }
 
 att.Hook_FiremodeBars = function(wep)
-	if wep:GetCurrentFiremode().Mode == -5 then
+	if wep:GetCurrentFiremode().Mode == -7 then
 		local gbc = wep:GetBurstCount()
 		local ourreturn = ""
 
@@ -42,8 +41,10 @@ att.Hook_FiremodeBars = function(wep)
 		ourreturn = ourreturn .. ((gbc >= 2 and "-") or "_")
 		ourreturn = ourreturn .. ((gbc >= 3 and "-") or "_")
 		ourreturn = ourreturn .. ((gbc >= 4 and "-") or "_")
+		ourreturn = ourreturn .. ((gbc >= 5 and "-") or "_")
+		ourreturn = ourreturn .. ((gbc >= 6 and "-") or "_")		
 		
-		if gbc >= 5 then
+		if gbc >= 7 then
 			ourreturn = "!!!!!"
 		else ourreturn = ourreturn .. "!" end
 		
