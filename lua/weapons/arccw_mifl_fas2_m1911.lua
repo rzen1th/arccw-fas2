@@ -177,6 +177,11 @@ SWEP.AttachmentElements = {
     },	
 
     ["mifl_fas2_m1911_slide_alyx"] = {
+        Override_IronSightStruct = {
+			Pos = Vector(-3.56, 2, 1.7),
+			Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },		
 		TrueNameChange = "M1911 Raptor",	
         NameChange = "Raptor 11",
         VMBodygroups = {
