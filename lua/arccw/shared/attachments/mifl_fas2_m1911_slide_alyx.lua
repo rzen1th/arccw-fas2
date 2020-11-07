@@ -45,7 +45,7 @@ att.Hook_FiremodeBars = function(wep)
 		ourreturn = ourreturn .. ((gbc >= 6 and "-") or "_")		
 		
 		if gbc >= 7 then
-			ourreturn = "!!!!!"
+			ourreturn = "!!!!!!!"
 		else ourreturn = ourreturn .. "!" end
 		
 		return ourreturn
