@@ -182,8 +182,8 @@ SWEP.AttachmentElements = {
 			Ang = Angle(0, 0, 0),
             Magnification = 1.1,
         },		
-		TrueNameChange = "M1911 Raptor",	
-        NameChange = "Raptor 11",
+		TrueNameChange = "M1911A9",	
+        NameChange = "11GI9",
         VMBodygroups = {
             {ind = 1, bg = 4},		
         },

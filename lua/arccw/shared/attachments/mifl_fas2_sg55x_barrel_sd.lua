@@ -15,7 +15,7 @@ att.Slot = "mifl_fas2_sg55x_hg"
 att.Silencer = true
 att.Override_MuzzleEffect = "muzzleflash_suppressed"
 
-att.Mult_ShootPitch = 0.9
+att.Mult_ShootPitch = 1.5
 att.Mult_ShootVol = 0.75
 att.Mult_AccuracyMOA = 0.9
 att.Mult_Range = 1.2

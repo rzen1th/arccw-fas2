@@ -13,7 +13,7 @@ att.Mult_SightTime = 1.15
 att.Mult_DrawTime = 1.25
 
 att.Mult_DamageMin = 1.1
-att.Mult_ShootPitch = 0.8
+att.Mult_ShootPitch = 2.2
 att.Mult_ShootVol = 0.6
 att.Mult_AccuracyMOA = 0.72
 att.Mult_Range = 1.4

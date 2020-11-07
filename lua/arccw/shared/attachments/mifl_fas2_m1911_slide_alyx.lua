@@ -14,7 +14,7 @@ att.Mult_Recoil = 1.6
 att.Mult_RecoilSide = 1.2
 att.Mult_VisualRecoilMult = 1.2
 
-att.Mult_RPM = 2.5
+att.Mult_RPM = 2.75
 
 att.Mult_ShootPitch = 0.97
 

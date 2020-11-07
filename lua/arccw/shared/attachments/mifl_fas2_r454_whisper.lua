@@ -16,7 +16,7 @@ att.Slot = "mifl_fas2_r454_barrel"
 att.Silencer = true
 att.Override_MuzzleEffect = "muzzleflash_suppressed"
 
-att.Mult_ShootPitch = 0.8
+att.Mult_ShootPitch = 1.8
 att.Mult_ShootVol = 0.75
 att.Mult_AccuracyMOA = 0.8125
 att.Mult_Range = 1.5
