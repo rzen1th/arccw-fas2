@@ -131,12 +131,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 2},					
         },
     },	
-    ["whisperer"] = {
-        NameChange = "AR-C4S",	
-		TrueNameChange = "M4A1S",		
+    ["mifl_fas2_mp5_hg_sd"] = {
+        NameChange = "Pissed",	
+		TrueNameChange = "MP5SD",		
         VMBodygroups = {
-            {ind = 1, bg = 3},	
-            {ind = 2, bg = 3},				
+	        {ind = 3, bg = 2},				
         },
     },
     ["mifl_fas2_mp5_stock_pdw"] = {		
