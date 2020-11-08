@@ -57,9 +57,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 100
 
-SWEP.AccuracyMOA = 25 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 150 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 25
+SWEP.AccuracyMOA = 30 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 350 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
@@ -90,7 +90,7 @@ SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.25
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.28, -5, 2.7),
+    Pos = Vector(-2.859, -9, 1.391),
     Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -258,22 +258,22 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "pump02",
-        ShellEjectAt = 0.25,
+        ShellEjectAt = 0.17,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron"] = {
         Source = "pump01_scoped",
-        ShellEjectAt = 0.25,
+        ShellEjectAt = 0.17,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_nomen"] = {
         Source = "pump01_nomen",
-        ShellEjectAt = 0.25,
+        ShellEjectAt = 0.17,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron_nomen"] = {
         Source = "pump01_nomen_scoped",
-        ShellEjectAt = 0.25,
+        ShellEjectAt = 0.17,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["sgreload_start"] = {
