@@ -1,7 +1,7 @@
-att.PrintName = "Kurz Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_k.png", "mips smooth")
+att.PrintName = "UMP-Kurz Kit"
+att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_umpk.png", "mips smooth")
 att.Description = ""
-att.SortOrder = 1
+att.SortOrder = 10
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -15,8 +15,11 @@ att.Mult_Range = 0.7
 att.Mult_Recoil = 0.8
 att.Mult_SightTime = 0.8
 att.Mult_AccuracyMOA = 1.6
-att.Mult_RPM = 900/800
-att.Mult_ReloadTime = 0.875
+
+att.Mult_Range = 1.3
+att.Mult_RPM = 1.1
+att.Mult_DamageMin = 1.1
+att.Mult_ReloadTime = 0.9
 
 att.Add_BarrelLength = -6
 

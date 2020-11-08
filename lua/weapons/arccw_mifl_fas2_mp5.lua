@@ -69,7 +69,7 @@ SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/mp5/mp5_suppressed_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/mp5/mp5_40cal_suppressed_fire1.wav"
 SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/mp5/mp5_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
@@ -90,8 +90,8 @@ SWEP.SightedSpeedMult = 0.875
 SWEP.SightTime = 0.32
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.086, -9, 0.898),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-3.945, -7, 1.848),
+    Ang = Angle(0.275, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
@@ -139,33 +139,25 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 3},				
         },
     },
-    ["mifl_fas2_m4a1_barrel_kompact"] = {
-        NameChange = "AR-G6c",	
-		TrueNameChange = "MG36",			
+    ["mifl_fas2_mp5_stock_pdw"] = {		
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-            {ind = 2, bg = 2},				
+            {ind = 5, bg = 1},			
         },
-        Override_IronSightStruct = {
-            Pos = Vector(-4.086, -9, 1.7),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.1,
-        },	
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(19, -1.2, 0),
-            },		
-		},
-    },	
+	},
+    ["mifl_fas2_mp5_stock_ump"] = {		
+        VMBodygroups = {
+            {ind = 5, bg = 3},			
+        },
+	},	
     ["mifl_fas2_mp5_hg_eod"] = {
-        NameChange = "E",	
+        NameChange = "EOD",	
 		TrueNameChange = "MP5-EOD",	
         VMBodygroups = {
 	        {ind = 3, bg = 3},				
         },
         AttPosMods = {
             [3] = {
-                vpos = Vector(29, -1.3, 0),
+                vpos = Vector(21.2, -1, 0),
             },		
 		},			
     },		
@@ -176,22 +168,78 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 1},	
 	        {ind = 3, bg = 4},			
         },
-    },	
-    ["20"] = {
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(12.5, -1, 0),
+            },		
+		},			
+    },		
+    ["mifl_fas2_mp5_ump_k"] = {
+        NameChange = "Kurz",		
+        TrueNameChange = "UMP5K",		
         VMBodygroups = {
-            {ind = 3, bg = 2},					
+            {ind = 1, bg = 2},	
+	        {ind = 3, bg = 4},	
+	        {ind = 2, bg = 2},				
         },
+        Override_IronSightStruct = {
+			Pos = Vector(-3.945, -7, 1.552),
+			Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },			
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(2, -3.4, 0),
+            },	
+            [3] = {
+                vpos = Vector(12, -1, 0),
+            },				
+		},	
     },
-    ["60"] = {
+    ["mifl_fas2_mp5_ump_usc"] = {
+        NameChange = "Carbine",		
+        TrueNameChange = "USC5",		
         VMBodygroups = {
-            {ind = 3, bg = 1},					
+            {ind = 1, bg = 2},	
+	        {ind = 3, bg = 4},	
+	        {ind = 2, bg = 3},				
         },
+        Override_IronSightStruct = {
+			Pos = Vector(-3.945, -7, 1.552),
+			Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },			
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(2, -3.4, 0),
+            },	
+            [3] = {
+                vpos = Vector(28, -1, 0),
+            },				
+		},	
     },	
-    ["iron_none"] = {
-		VMBodygroups = {
-            {ind = 2, bg = 4},	
-		},
-    },	
+    ["mifl_fas2_mp5_ump_nor"] = {
+        NameChange = "Piss2",		
+        TrueNameChange = "UMP5",		
+        VMBodygroups = {
+            {ind = 1, bg = 2},	
+	        {ind = 3, bg = 4},	
+	        {ind = 2, bg = 1},				
+        },
+        Override_IronSightStruct = {
+			Pos = Vector(-3.945, -7, 1.552),
+			Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },			
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(2, -3.4, 0),
+            },	
+            [3] = {
+                vpos = Vector(16.5, -1, 0),
+            },				
+		},	
+    },		
     ["mifl_fas2_mp5_mag_20"] = {
         VMBodygroups = {
             {ind = 4, bg = 2},			
@@ -220,12 +268,13 @@ SWEP.Attachments = {
         Bone = "Dummy01",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(3, -2.65, 0),
+            vpos = Vector(3.5, -3.4, 0),
             vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-		ExtraSightDist = 3		
+		ExtraSightDist = 8,
+        VMScale = Vector(1.2, 1.2, 1.2)		
     },
     {
         PrintName = "Handguard",
@@ -243,7 +292,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(26, -1.3, 0),
+            vpos = Vector(17, -1, 0),
             vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -255,11 +304,11 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(12, 0, 0),
+            vpos = Vector(11, 1, 0),
             vang = Angle(0, 0, -90),
         },
         MergeSlots = {5},
-        ExcludeFlags = {"mifl_fas2_mp5_hg_k"},	
+        ExcludeFlags = {"mifl_fas2_mp5_hg_k", "mifl_fas2_mp5_ump_k"},	
     },
     {
         PrintName = "INTEG-UBGL",
@@ -277,10 +326,9 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(10, -2, 0.5),
+            vpos = Vector(8, -1, 1),
             vang = Angle(0, 0, 180),
         },
-        ExcludeFlags = {"go_m4_barrel_stub"},
     },	
     {
         PrintName = "Magazine",
@@ -322,9 +370,9 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-    if wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" and wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"then
+    if (wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k") and wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"then
 		return anim .. "_k_80"
-	elseif wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" then
+	elseif wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" then
 		return anim .. "_k"
     elseif wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80" then
 		return anim .. "_80"

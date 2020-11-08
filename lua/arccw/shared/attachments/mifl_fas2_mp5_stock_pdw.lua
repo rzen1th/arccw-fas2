@@ -1,5 +1,5 @@
 att.PrintName = "PDW Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_m1911_stock.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_mp5_stock_pdw.png", "mips smooth")
 att.Description = ""
 att.Desc_Pros = {
 }
