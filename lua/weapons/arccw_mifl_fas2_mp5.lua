@@ -39,7 +39,7 @@ SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 900
 
 SWEP.Recoil = 0.7
-SWEP.RecoilSide = 0.5
+SWEP.RecoilSide = 0.2
 SWEP.RecoilRise = 0.8
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
@@ -215,7 +215,10 @@ SWEP.AttachmentElements = {
             },	
             [3] = {
                 vpos = Vector(28, -1, 0),
-            },				
+            },		
+            [4] = {
+                vpos = Vector(11, 0, 0),
+            },					
 		},	
     },	
     ["mifl_fas2_mp5_ump_nor"] = {
@@ -237,6 +240,9 @@ SWEP.AttachmentElements = {
             },	
             [3] = {
                 vpos = Vector(16.5, -1, 0),
+            },
+            [4] = {
+                vpos = Vector(11, 0, 0),
             },				
 		},	
     },		
