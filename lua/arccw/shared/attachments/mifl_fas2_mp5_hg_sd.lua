@@ -1,4 +1,4 @@
-att.PrintName = "SD Frame"
+att.PrintName = "SD Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_sd.png", "mips smooth")
 att.Description = ""
 att.SortOrder = 4
