@@ -1,4 +1,4 @@
-att.PrintName = "Kurz"
+att.PrintName = "Kurz Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_k.png", "mips smooth")
 att.Description = ""
 att.SortOrder = -1

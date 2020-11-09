@@ -1,4 +1,4 @@
-att.PrintName = "UMP-Kurz"
+att.PrintName = "UMP-Kurz Kit"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_umpk.png", "mips smooth")
 att.Description = ""
 att.SortOrder = -1 +.1

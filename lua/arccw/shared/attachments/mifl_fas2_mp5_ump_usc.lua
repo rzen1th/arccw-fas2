@@ -1,4 +1,4 @@
-att.PrintName = "USC"
+att.PrintName = "USC Kit"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_usc.png", "mips smooth")
 att.Description = ""
 att.SortOrder = 10.9
