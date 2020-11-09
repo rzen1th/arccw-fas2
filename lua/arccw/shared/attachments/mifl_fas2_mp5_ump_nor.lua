@@ -1,7 +1,7 @@
-att.PrintName = "UMP Kit"
+att.PrintName = "UMP"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_ump.png", "mips smooth")
 att.Description = ""
-att.SortOrder = 10.5
+att.SortOrder = 1
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

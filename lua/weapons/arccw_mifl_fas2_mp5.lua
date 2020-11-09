@@ -21,7 +21,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_mp5.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_mp5.mdl"
-SWEP.ViewModelFOV = 54
+SWEP.ViewModelFOV = 57
 
 SWEP.DefaultBodygroups = "000000000000"
 
@@ -39,7 +39,7 @@ SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 900
 
 SWEP.Recoil = 0.7
-SWEP.RecoilSide = 0.2
+SWEP.RecoilSide = 0.5
 SWEP.RecoilRise = 0.8
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
@@ -103,7 +103,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(1, -2, 1)
+SWEP.ActivePos = Vector(1, -1, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
@@ -182,7 +182,7 @@ SWEP.AttachmentElements = {
     },		
     ["mifl_fas2_mp5_ump_k"] = {
         NameChange = "Kurz",		
-        TrueNameChange = "UMP5K",		
+        TrueNameChange = "UMP-K",		
         VMBodygroups = {
             {ind = 1, bg = 2},	
 	        {ind = 3, bg = 4},	
@@ -204,7 +204,7 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_mp5_ump_usc"] = {
         NameChange = "Carbine",		
-        TrueNameChange = "USC5",		
+        TrueNameChange = "USC",		
         VMBodygroups = {
             {ind = 1, bg = 2},	
 	        {ind = 3, bg = 4},	
@@ -229,7 +229,7 @@ SWEP.AttachmentElements = {
     },	
     ["mifl_fas2_mp5_ump_nor"] = {
         NameChange = "Piss2",		
-        TrueNameChange = "UMP5",		
+        TrueNameChange = "UMP",		
         VMBodygroups = {
             {ind = 1, bg = 2},	
 	        {ind = 3, bg = 4},	
@@ -271,6 +271,9 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 4, bg = 4},			
         },
+    },		
+    ["bitchbasic9mm"] = {
+        AddSuffix = "/9"
     },
 }
 
@@ -392,11 +395,14 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-    if (wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k") and wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"then
+    local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k"
+    local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
+
+    if kurz and eighty then
 		return anim .. "_k_80"
-	elseif wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" then
+	elseif kurz then
 		return anim .. "_k"
-    elseif wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80" then
+    elseif eighty then
 		return anim .. "_80"
     end		
 end
