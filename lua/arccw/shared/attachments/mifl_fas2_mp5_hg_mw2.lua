@@ -1,7 +1,7 @@
 att.PrintName = "MW2 Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_mw2.png", "mips smooth")
 att.Description = "riot shield"
-att.SortOrder = -1
+att.SortOrder = -0.5
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

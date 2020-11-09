@@ -1,7 +1,7 @@
 att.PrintName = "G3 Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_g3.png", "mips smooth")
 att.Description = ""
-att.SortOrder = 10
+att.SortOrder = 12
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -87,7 +87,7 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SpeedMult = 0.975
 SWEP.SightedSpeedMult = 0.875
-SWEP.SightTime = 0.32
+SWEP.SightTime = 0.275
 
 SWEP.IronSightStruct = {
     Pos = Vector(-3.945, -7, 1.848),
