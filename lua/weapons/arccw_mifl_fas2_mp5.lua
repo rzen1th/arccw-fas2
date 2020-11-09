@@ -69,7 +69,7 @@ SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/mp5/mp5_40cal_suppressed_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/mp5/mp5k_suppressed_fire1.wav"
 SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/mp5/mp5_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
