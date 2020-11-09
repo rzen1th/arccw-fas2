@@ -14,6 +14,8 @@ $bodygroup "Frame"
 	studio "MP5_Frame.smd"
 	studio "MP5_K.smd"
 	blank	
+	studio "MP5_MW2.smd"
+	studio "MP5_G3.smd"	
 }
 $bodygroup "Kit"
 {
@@ -41,6 +43,8 @@ $bodygroup "Mag"
 	studio "Mag_10mm.smd"	
 	studio "Mag_80.smd"		
 	blank
+	studio "Mag_50.smd"		
+	studio "Mag_Waffle.smd"		
 }
 
 $bodygroup "Stock"
@@ -50,6 +54,7 @@ $bodygroup "Stock"
 	studio "Stock_Non.smd"
 	studio "Stock_UMP.smd"		
 	blank
+	studio "Stock_G3.smd"			
 }
 
 $surfaceprop "default"
@@ -59,6 +64,7 @@ $contents "solid"
 $illumposition 12.789 -0.785 -6.786
 
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
+$cdmaterials "models\weapons\arccw_fas2\g3\"
 $cdmaterials "models\weapons\arccw_fas2\minimi\"
 $cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
