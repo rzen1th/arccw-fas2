@@ -257,6 +257,16 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 2},			
         },
     },
+    ["mifl_fas2_mp5_mag_30"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 3},			
+        },
+    },	
+    ["mifl_fas2_mp5_mag_15"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 1},			
+        },
+    },		
     ["mifl_fas2_mp5_mag_80"] = {
         VMBodygroups = {
             {ind = 4, bg = 4},			
@@ -353,7 +363,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(-2, -1.3, 0),
+            vpos = Vector(-1.4, -1.3, 0),
             vang = Angle(0, 0, -90),
         },
         VMScale = Vector(1, 1, 1)
