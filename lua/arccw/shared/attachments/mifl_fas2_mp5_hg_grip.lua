@@ -1,7 +1,7 @@
-att.PrintName = "EOD Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_heat.png", "mips smooth")
+att.PrintName = "Gripped Barrel"
+att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_fg.png", "mips smooth")
 att.Description = ""
-att.SortOrder = 1
+att.SortOrder = 2
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -11,11 +11,13 @@ att.Slot = "mifl_fas2_mp5_hg"
 
 att.Mult_MoveSpeed = 0.9
 
-att.Mult_Range = 1
-att.Mult_Recoil = 1
-att.Mult_SightTime = 1
-att.Mult_AccuracyMOA = 1
+att.Mult_Recoil = 0.8
+att.Mult_RecoilSide = 0.7
+att.Mult_SightTime = 1.2
 
-att.Add_BarrelLength = 0
+att.LHIK = true
+att.LHIK_Priority = -2
 
-att.Mult_ShootPitch = 1
+att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_felin.mdl"
+
+att.ModelOffset = Vector(3.8, 0, 0)

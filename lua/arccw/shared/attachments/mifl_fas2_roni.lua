@@ -1,4 +1,4 @@
-att.PrintName = "Roni Conversion"
+att.PrintName = "Roni Kit"
 att.Icon = Material("entities/arccw_mifl_roni_frame.png")
 att.Description = "Curious modification turning the pistol into a pistol-caliber carbine."
 

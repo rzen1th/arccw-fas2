@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\arccw_fas2\mp5_extra\wep_mp5ras_10mmmag"
+	"$bumpmap" 			"models\weapons\arccw_fas2\mp5_extra\wep_mp5ras_10mmmag_n"
+
+//	"$halflambert" 					"1"
+	"$phong"                        "1"	
+	"$phongalbedotint"              "1"	
+	"$phongexponenttexture"			"models\weapons\arccw_fas2\exponent"
+	"$phongexponent"                "16"	
+	"$phongboost"                   "20"
+	"$phongfresnelranges"           "[0.75 1.5 3]"
+
+	"$basetexturealphaenvmapmask"	"1"
+	"$envmap" "env_cubemap"
+	"$envmaptint"			"[0.025 0.025 0.025]"
+	"$envmapfresnel"			"0.5"		
+
+	"$color2"	"[0.8 0.8 0.8]"
+}

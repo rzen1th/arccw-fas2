@@ -53,8 +53,9 @@ oranchepopsicle
 
 Tripwire (Killing Floor 2)
 -HEAT Barrel (M4)
--EOD Barrel (MP5) [soon]
--Waffle Mag (MP5) [soon]
+-EOD Barrel (MP5) 
+-10mm Mag (MP5) 
+-UMP45 (MP5) 
 -M3 Stock
 -G18c/G17 Slide
 -Gluke Slide
@@ -64,7 +65,6 @@ Infinity Ward / Beenox / CoD dev in general
 -Pistol Rail(MW2)
 -Raptor Kit (MW2CR)
 -MP5 Shroud (MW2) [soon ?]
--Volked AKM (IW) [soon ?]
 -Suppressed sound and firing sound for calibre conversion (Mostly MW19)
 
 Saber Interactive

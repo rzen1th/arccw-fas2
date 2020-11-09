@@ -138,6 +138,13 @@ SWEP.AttachmentElements = {
 	        {ind = 3, bg = 2},				
         },
     },
+    ["mifl_fas2_mp5_hg_grip"] = {
+        NameChange = "Peta Griffin",	
+		TrueNameChange = "MP5",		
+        VMBodygroups = {
+	        {ind = 3, bg = 1},				
+        },
+    },	
     ["mifl_fas2_mp5_stock_pdw"] = {		
         VMBodygroups = {
             {ind = 5, bg = 1},			
@@ -313,7 +320,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         MergeSlots = {5},
-        ExcludeFlags = {"mifl_fas2_mp5_hg_k", "mifl_fas2_mp5_ump_k"},	
+        ExcludeFlags = {"mifl_fas2_mp5_hg_k", "mifl_fas2_mp5_ump_k", "mifl_fas2_mp5_hg_grip"},	
     },
     {
         PrintName = "INTEG-UBGL",

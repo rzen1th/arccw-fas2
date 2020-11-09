@@ -1,7 +1,7 @@
 att.PrintName = "SD Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_heat.png", "mips smooth")
 att.Description = ""
-att.SortOrder = 1
+att.SortOrder = 3
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
