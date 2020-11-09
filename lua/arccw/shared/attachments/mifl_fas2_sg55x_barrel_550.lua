@@ -1,4 +1,4 @@
-att.PrintName = "550"
+att.PrintName = "550 Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_550.png", "mips smooth")
 att.Description = "Longer handguard and barrel effectively leans the weapon into an assault rifle role rather than a carbine."
 att.SortOrder = 9
