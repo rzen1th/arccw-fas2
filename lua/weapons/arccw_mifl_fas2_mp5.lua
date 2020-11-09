@@ -131,6 +131,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 2},					
         },
     },	
+    ["mifl_fas2_mp5_stock_g3"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 5},					
+        },
+    },	
     ["mifl_fas2_mp5_hg_sd"] = {
         NameChange = "Pissed",	
 		TrueNameChange = "MP5SD",		
@@ -178,6 +183,36 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(12.5, -1, 0),
             },		
+		},			
+    },	
+    ["mifl_fas2_mp5_hg_mw2"] = {
+        NameChange = "Kurz",		
+        TrueNameChange = "MP5K",		
+        VMBodygroups = {
+            {ind = 1, bg = 3},	
+            {ind = 2, bg = 4},				
+	        {ind = 3, bg = 4},			
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(14, -1, 0),
+            },		
+		},			
+    },		
+    ["mifl_fas2_mp5_hg_g3"] = {
+        NameChange = "Long",		
+        TrueNameChange = "MP5L",		
+        VMBodygroups = {
+            {ind = 1, bg = 4},	
+	        {ind = 3, bg = 4},				
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(29, -1, 0),
+            },		
+            [4] = {
+                vpos = Vector(11, 0, 0),
+            },					
 		},			
     },		
     ["mifl_fas2_mp5_ump_k"] = {
@@ -261,7 +296,17 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 4, bg = 3},			
         },
+    },
+    ["mifl_fas2_mp5_mag_50"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 6},			
+        },
     },	
+    ["mifl_fas2_mp5_mag_waffle"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 7},			
+        },
+    },		
     ["mifl_fas2_mp5_mag_15"] = {
         VMBodygroups = {
             {ind = 4, bg = 1},			
@@ -395,7 +440,7 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-    local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k"
+    local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
     local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
 
     if kurz and eighty then
