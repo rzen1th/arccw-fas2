@@ -126,7 +126,7 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 4},					
         },
     },
-    ["mifl_fas2_m4a1_stock_sd"] = {
+    ["mifl_fas2_mp5_stock_none"] = {
         VMBodygroups = {
             {ind = 5, bg = 2},					
         },
