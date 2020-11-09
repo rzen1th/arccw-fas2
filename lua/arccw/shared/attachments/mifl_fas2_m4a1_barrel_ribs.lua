@@ -1,4 +1,4 @@
-att.PrintName = "Covered Barrel"
+att.PrintName = "Covered Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a2.png", "mips smooth")
 att.Description = "Rail covers, increasing the weight of the weapon and looking good while doing it."
 att.SortOrder = 8.4

@@ -1,4 +1,4 @@
-att.PrintName = "551"
+att.PrintName = "551 Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_551.png", "mips smooth")
 att.Description = "Beautiful long-range DMR with anti-glare strap."
 att.SortOrder = 10

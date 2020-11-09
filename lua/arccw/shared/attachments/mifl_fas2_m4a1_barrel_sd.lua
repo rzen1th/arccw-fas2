@@ -1,4 +1,4 @@
-att.PrintName = "Whisper Barrel"
+att.PrintName = "Whisper Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_sd.png", "mips smooth")
 att.Description = "Integrated suppressor."
 att.SortOrder = 8

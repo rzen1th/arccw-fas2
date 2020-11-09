@@ -1,4 +1,4 @@
-att.PrintName = "Commando Barrel"
+att.PrintName = "Commando Frame"
 att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_kurz.png", "mips smooth")
 att.Description = "Shorter barrel for the FAMAS intended for better maneuverability. Not as far-reaching, though."
 att.SortOrder = 6

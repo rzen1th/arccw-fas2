@@ -1,4 +1,4 @@
-att.PrintName = "Whisper Barrel"
+att.PrintName = "Whisper Frame"
 att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_sd.png", "mips smooth")
 att.Description = "Silencieux in lighter frame for manuevorous purpose."
 att.SortOrder = 10
