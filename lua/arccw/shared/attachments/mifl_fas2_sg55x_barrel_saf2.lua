@@ -1,4 +1,4 @@
-att.PrintName = "SAF Mod. 0 Handguard"
+att.PrintName = "SAF Mod. 0"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_saf.png", "mips smooth")
 att.Description = "Shorter barrel with more maneuverability meant for paratroopers.\nSwiss engineering traps recoil until the last shot."
 att.SortOrder = 3

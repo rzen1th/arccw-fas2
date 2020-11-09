@@ -1,4 +1,4 @@
-att.PrintName = "No Barrel"
+att.PrintName = "XS"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_xbarrel.png", "mips smooth")
 att.Description = "\"Ok, not that short!\""
 att.SortOrder = 1

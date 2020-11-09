@@ -1,4 +1,4 @@
-att.PrintName = "762 Handguard"
+att.PrintName = "762"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_762.png", "mips smooth")
 att.Description = "The Swiss and the Russians devise a dastardly plan."
 att.SortOrder = 6
