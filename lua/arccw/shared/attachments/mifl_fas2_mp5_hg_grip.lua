@@ -1,6 +1,6 @@
 att.PrintName = "Gripped Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_fg.png", "mips smooth")
-att.Description = ""
+att.Description = "Adds a grip to the front end of the MP5 for more controllability."
 att.SortOrder = 0
 att.Desc_Pros = {
 }
@@ -9,10 +9,10 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_hg"
 
-att.Mult_Recoil = 0.95
-att.Mult_RecoilSide = 0.9
+att.Mult_Recoil = 0.9
+att.Mult_RecoilSide = 0.7
 
-att.Mult_SightTime = 1.2
+att.Mult_SightTime = 1.15
 att.Mult_MoveSpeed = 0.9
 
 att.LHIK = true

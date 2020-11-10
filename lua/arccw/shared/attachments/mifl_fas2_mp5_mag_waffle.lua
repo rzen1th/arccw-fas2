@@ -1,6 +1,6 @@
 att.PrintName = "25-Round X.223"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_mag_waffle.png", "mips smooth")
-att.Description = "High capacity Vollmer magazine firing experimental .223R rounds that fragment."
+att.Description = "Waffle magazine firing experimental fragmented .223R rounds."
 att.SortOrder = 25
 att.Desc_Pros = {
     "pro.magcap"

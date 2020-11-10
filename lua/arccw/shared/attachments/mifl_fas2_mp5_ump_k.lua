@@ -1,6 +1,6 @@
 att.PrintName = "UMP-Kurz Kit"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_umpk.png", "mips smooth")
-att.Description = ""
+att.Description = "Upper body kit much like the UMP, but shorter."
 att.SortOrder = -1 +.1
 att.Desc_Pros = {
 }

@@ -1,6 +1,6 @@
 att.PrintName = "Kurz Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_k.png", "mips smooth")
-att.Description = ""
+att.Description = "Shortens the weapon by a significant amount, and out goes the accuracy."
 att.SortOrder = -1
 att.Desc_Pros = {
 }

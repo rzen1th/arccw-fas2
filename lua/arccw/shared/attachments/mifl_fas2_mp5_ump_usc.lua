@@ -1,6 +1,6 @@
 att.PrintName = "USC Kit"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_usc.png", "mips smooth")
-att.Description = ""
+att.Description = "Long-barreled UMP conversion extends reach and gives some nice rails."
 att.SortOrder = 10.9
 att.Desc_Pros = {
 }

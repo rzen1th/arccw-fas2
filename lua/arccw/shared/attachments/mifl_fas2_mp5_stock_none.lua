@@ -1,6 +1,6 @@
 att.PrintName = "No Stock"
 att.Icon = Material("entities/arccw_mifl_fas2_no_grip.png", "mips smooth")
-att.Description = "Oranche moment."
+att.Description = "Removing the stock decreases controllability but increases speed significantly."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

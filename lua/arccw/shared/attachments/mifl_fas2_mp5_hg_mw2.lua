@@ -1,6 +1,6 @@
-att.PrintName = "MW2 Handguard"
+att.PrintName = "Specops Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_mw2.png", "mips smooth")
-att.Description = "riot shield"
+att.Description = "Upper body kit used by various special forces."
 att.SortOrder = -0.5
 att.Desc_Pros = {
 }
