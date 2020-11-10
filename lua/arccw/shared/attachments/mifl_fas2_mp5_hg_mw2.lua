@@ -18,3 +18,10 @@ att.Mult_Range = 0.8
 att.Add_BarrelLength = -4
 
 att.Mult_ShootPitch = 1.1
+
+att.LHIK = true
+att.LHIK_Priority = -2
+
+att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
+
+att.ModelOffset = Vector(-0.5, 0.2, 0)
