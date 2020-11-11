@@ -77,7 +77,7 @@ SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
 SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
 SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 
-SWEP.MuzzleEffect = "muzzleflash_3"
+SWEP.MuzzleEffect = "muzzleflash_mp5"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellPitch = 95
 SWEP.ShellScale = 1.25
