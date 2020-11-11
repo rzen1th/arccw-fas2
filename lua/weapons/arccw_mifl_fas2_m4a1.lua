@@ -215,8 +215,8 @@ SWEP.AttachmentElements = {
 		},			
     },		
     ["mifl_fas2_m4a1_barrel_heat"] = {
-        NameChange = "AR-Grenadier",	
-		TrueNameChange = "M16 Grenadier",	
+        NameChange = "AR-A3",	
+		TrueNameChange = "M16A3",	
         VMBodygroups = {
             {ind = 1, bg = 5},	
             {ind = 2, bg = 5},				
