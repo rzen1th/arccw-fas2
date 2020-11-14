@@ -261,27 +261,13 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Belt-Fed 5.56"
     },	
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
-        PrintName = "Fire Group",
-        Slot = "fcg",
-        DefaultAttName = "Standard FCG"
-    },
-    {
         PrintName = "Ammo Type",
-        Slot = {"ammo_Bullet"}
-    },	
+        Slot = "go_ammo",
+        DefaultAttName = "Standard Ammo"
+    },
     {
         PrintName = "Perk",
-        Slot = {"perk", "perk_fas2"}
+        Slot = {"go_perk", "perk_fas2"}
     },
     {
         PrintName = "Charm",

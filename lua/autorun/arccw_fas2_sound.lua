@@ -520,7 +520,7 @@ sound.Add({
 //MP5
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_MP5.MagOut",
-	channel = 		CHAN_ITEM1,
+	channel = 		CHAN_ITEM,
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/mp5/mp5_magout.wav"}
 })
@@ -556,7 +556,7 @@ sound.Add({
 })
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_MP5.SelectorSwitch",
-	channel = 		CHAN_ITEM1,
+	channel = 		CHAN_ITEM,
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/mp5/mp5_selectorswitch.wav"}
 })
