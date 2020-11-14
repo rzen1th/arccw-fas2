@@ -18,7 +18,7 @@ SWEP.Slot = 1
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
 SWEP.NPCWeaponType = "weapon_357"
-SWEP.NPCWeight = 80
+SWEP.NPCWeight = 150
 
 SWEP.UseHands = true
 

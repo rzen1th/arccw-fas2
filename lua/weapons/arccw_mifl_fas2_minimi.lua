@@ -19,7 +19,7 @@ SWEP.PhysBulletMuzzleVelocity = 1050
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_shotgun"}
-SWEP.NPCWeight = 32
+SWEP.NPCWeight = 120
 
 SWEP.UseHands = true
 

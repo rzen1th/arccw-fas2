@@ -12,7 +12,7 @@ att.Slot = "mifl_fas2_mp5_hg"
 att.Mult_Range = 1.1
 att.Mult_SightTime = 1.1
 
-att.Mult_MoveSpeed = 0.9
+att.Mult_MoveSpeed = 0.975
 
 att.Add_BarrelLength = 3
 att.Mult_ShootPitch = 0.95

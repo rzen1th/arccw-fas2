@@ -21,7 +21,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_mp5.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_mp5.mdl"
-SWEP.ViewModelFOV = 57
+SWEP.ViewModelFOV = 54
 
 SWEP.DefaultBodygroups = "000000000000"
 
@@ -57,7 +57,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.NPCWeaponType = "weapon_ar2"
-SWEP.NPCWeight = 100
+SWEP.NPCWeight = 210
 
 SWEP.AccuracyMOA = 7 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 390 -- inaccuracy added by hip firing.
@@ -103,7 +103,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(1, -1, 1)
+SWEP.ActivePos = Vector(1, -1.5, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
@@ -431,10 +431,8 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "Dummy01", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.6, -3.25, 4), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
-            wpos = Vector(6.099, 1.1, -3.301),
-            wang = Angle(171.817, 180-1.17, 0),
+            vpos = Vector(2, -0.8, -1), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, -90),
         },
     },
 }

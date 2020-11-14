@@ -13,7 +13,7 @@ att.Mult_Recoil = 0.9
 att.Mult_RecoilSide = 0.7
 
 att.Mult_SightTime = 1.15
-att.Mult_MoveSpeed = 0.9
+att.Mult_MoveSpeed = 0.95
 
 att.LHIK = true
 att.LHIK_Priority = -2

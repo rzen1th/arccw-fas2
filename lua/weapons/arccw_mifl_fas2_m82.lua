@@ -58,7 +58,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_crossbow"}
-SWEP.NPCWeight = 10
+SWEP.NPCWeight = 80
 
 SWEP.AccuracyMOA = 1.2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 1000 -- inaccuracy added by hip firing.
