@@ -119,6 +119,16 @@ SWEP.CustomizeAng = Angle(4, 20, 10)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["mifl_fas2_g20_stock_g18"] = {
+        VMBodygroups = {
+            {ind = 3, bg = 1},			
+        },
+    },
+    ["mifl_fas2_g20_stock_raptor"] = {
+        VMBodygroups = {
+            {ind = 3, bg = 2},			
+        },
+    },	
     ["akimbo"] = {
 		Override_ActivePos = Vector(2, 0, 0),
 	},
@@ -296,6 +306,16 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },		
         InstalledEles = {"shield"},		
+    },	
+    {
+        PrintName = "Stock",
+        Slot = {"mifl_fas2_g20_stock"},
+        DefaultAttName = "Standard Stock",
+        Bone = "weapon_main",
+        Offset = {
+            vpos = Vector(-0.2, -1.8, -0.2),
+            vang = Angle(0, -90, 0),
+        },
     },		
     {
         PrintName = "Ammo Type",

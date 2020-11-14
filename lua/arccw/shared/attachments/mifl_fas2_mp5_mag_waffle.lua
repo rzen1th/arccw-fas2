@@ -20,4 +20,4 @@ att.AddSuffix = "/X223"
 att.Mult_AccuracyMOA = 10
 att.Mult_HipDispersion = 1.5
 att.Override_Num = 4
-att.Mult_ShootPitch = 0.5
+att.Mult_ShootPitch = 0.65
