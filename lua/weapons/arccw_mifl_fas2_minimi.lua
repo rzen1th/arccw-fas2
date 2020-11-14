@@ -143,6 +143,11 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["whisperer"] = {	
+        VMBodygroups = {
+            {ind = 7, bg = 1},				
+        },
+    },
     ["23"] = {
 		TrueNameChange = "M223",	
         NameChange = "BEMG 23",		
@@ -210,18 +215,15 @@ SWEP.Attachments = {
 		ExtraSightDist = 4		
     },
     {
-        PrintName = "Backup Optic", -- print name
-        Slot = {"backup"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "Base", -- relevant bone any attachments will be mostly referring to
+        PrintName = "Handguard",
+        Slot = "mifl_fas2_m249_hg",
+        Bone = "Base",	
+        DefaultAttName = "Standard Handguard",
         Offset = {
-            vpos = Vector(-0.65, -5.4, 13), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -45),
-            wpos = Vector(15, -0.45, -6.5),
-            wang = Angle(-10.393, 0, -135)
-        },		
-        KeepBaseIrons = true,
-		ExtraSightDist = 15	
-    },		
+            vpos = Vector(10, 1, 0),
+            vang = Angle(0, 0, -90),
+		}			
+    },	
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -289,7 +291,19 @@ SWEP.Attachments = {
     },	
 }
 
+
+SWEP.Hook_SelectFireAnimation = function(wep, anim)
+    if wep.Attachments[6].Installed == "mifl_fas2_m249_mag_23" then
+		return anim .. "_23"
+    end	
+end
+
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
+    if wep.Attachments[6].Installed == "mifl_fas2_m249_mag_23" then
+		return anim .. "_23"
+    end	
+
+
 	local fuckyou = wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or 
 	   wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or
 	   wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30" or
@@ -299,11 +313,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 	local reload_nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
 	local reload_empty = (wep:Clip1() == 0 and "_empty") or ""
 	
-    return "reload" .. reload_stanag .. reload_nomen .. reload_empty
-	
-    if wep.Attachments[6].Installed == "mifl_fas2_m249_mag_23" then
-		return anim .. "_23"
-    end			
+    return "reload" .. reload_stanag .. reload_nomen .. reload_empty		
 end
 
 SWEP.Animations = {
@@ -394,6 +404,12 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
+    },	
+	
+    ["fire_23"] = {
+        Source = "fire1_23",
+        Time = 30/60,
+        ShellEjectAt = 0,
     },	
 	
 

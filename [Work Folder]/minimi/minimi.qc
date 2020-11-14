@@ -510,6 +510,14 @@ $sequence "reload_stanag_empty_nomen" {
 
 
 
+$sequence "fire1_23" {
+	"anims\fire_23.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 55
+}
 
 
 
