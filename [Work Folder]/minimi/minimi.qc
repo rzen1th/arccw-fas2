@@ -342,7 +342,7 @@ $sequence "fire3_stanag_scoped" {
 }
 
 $sequence "reload" {
-	"anims\reload.smd"
+	"minimi_anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 18 "Arccw_FAS2_Weapon_M249.Lidopen" }
@@ -375,7 +375,7 @@ $sequence "reload_empty_unfired" {
 }
 
 $sequence "reload_empty" {
-	"anims\reload_empty.smd"
+	"minimi_anims\reload_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3104 152 "" }
@@ -393,7 +393,7 @@ $sequence "reload_empty" {
 }
 
 $sequence "reload_nomen" {
-	"anims\reload_nomen.smd"
+	"minimi_anims\reload_nomen.smd"
 	activity "ACT_VM_RELOAD_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3104 90 "" }
@@ -428,7 +428,7 @@ $sequence "reload_empty_unfired_nomen" {
 }
 
 $sequence "reload_empty_nomen" {
-	"anims\reload_empty_nomen.smd"
+	"minimi_anims\reload_empty_nomen.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3104 118 "" }
@@ -502,6 +502,82 @@ $sequence "reload_stanag_empty_nomen" {
 	{ event 5004 72 "Generic.Magpouch" }
 	{ event 5004 90 "Arccw_FAS2_Weapon_M16A2.MagHousing" }
 	{ event 5004 95 "Arccw_FAS2_Weapon_M16A2.MagIn" }
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
+
+
+
+
+
+
+
+$sequence "reload_23" {
+	"anims\reload_23.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_M249.Lidopen" }
+	{ event 5004 40 "Arccw_FAS2_Weapon_M249.Beltremove" }
+	{ event 5004 95 "Arccw_FAS2_Weapon_M249.Boxremove" }
+	{ event 5004 148 "Arccw_FAS2_Weapon_M249.Boxinsert" }
+	{ event 5004 175 "Arccw_FAS2_Weapon_M249.Beltpull" }
+	{ event 5004 200 "Arccw_FAS2_Weapon_M249.Beltload" }
+	{ event 5004 225 "Arccw_FAS2_Weapon_M249.Lidclose" }
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
+
+$sequence "reload_empty_23" {
+	"anims\reload_empty_23.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3104 152 "" }
+	{ event 3018 255 "" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_M249.Charge" }
+	{ event 5004 48 "Arccw_FAS2_Weapon_M249.Lidopen" }
+	{ event 5004 125 "Arccw_FAS2_Weapon_M249.Boxremove" }
+	{ event 5004 178 "Arccw_FAS2_Weapon_M249.Boxinsert" }
+	{ event 5004 205 "Arccw_FAS2_Weapon_M249.Beltpull" }
+	{ event 5004 230 "Arccw_FAS2_Weapon_M249.Beltload" }
+	{ event 5004 255 "Arccw_FAS2_Weapon_M249.Lidclose" }
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
+
+$sequence "reload_nomen_23" {
+	"anims\reload_nomen_23.smd"
+	activity "ACT_VM_RELOAD_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3104 90 "" }
+	{ event 3018 166 "" }
+	{ event 5004 20 "Arccw_FAS2_Weapon_M249.Lidopen" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_M249.Beltremove" }
+	{ event 5004 72 "Arccw_FAS2_Weapon_M249.Boxremove" }
+	{ event 5004 111 "Arccw_FAS2_Weapon_M249.Boxinsert" }
+	{ event 5004 125 "Arccw_FAS2_Weapon_M249.Beltpull" }
+	{ event 5004 143 "Arccw_FAS2_Weapon_M249.Beltload" }
+	{ event 5004 166 "Arccw_FAS2_Weapon_M249.Lidclose" }
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
+
+$sequence "reload_empty_nomen_23" {
+	"anims\reload_empty_nomen_23.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3104 118 "" }
+	{ event 3018 189 "" }
+	{ event 5004 20 "Arccw_FAS2_Weapon_M249.Lidopen" }
+	{ event 5004 44 "Arccw_FAS2_Weapon_M249.Charge" }
+	{ event 5004 92 "Arccw_FAS2_Weapon_M249.Boxremove" }
+	{ event 5004 133 "Arccw_FAS2_Weapon_M249.Boxinsert" }
+	{ event 5004 148 "Arccw_FAS2_Weapon_M249.Beltpull" }
+	{ event 5004 167 "Arccw_FAS2_Weapon_M249.Beltload" }
+	{ event 5004 189 "Arccw_FAS2_Weapon_M249.Lidclose" }
 	fadein 0.2
 	fadeout 0.2
 	fps 40

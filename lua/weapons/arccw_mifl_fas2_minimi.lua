@@ -151,6 +151,11 @@ SWEP.AttachmentElements = {
             {ind = 3, bg = 1},				
         },
     },
+    ["200"] = {	
+        VMBodygroups = {
+            {ind = 3, bg = 1},				
+        },
+    },	
     ["60"] = {	
 		Mult_SightTime = (1/0.85)*0.8,
 		Mult_ReloadTime = (1/1.2)*1.1,
@@ -295,6 +300,10 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 	local reload_empty = (wep:Clip1() == 0 and "_empty") or ""
 	
     return "reload" .. reload_stanag .. reload_nomen .. reload_empty
+	
+    if wep.Attachments[6].Installed == "mifl_fas2_m249_mag_23" then
+		return anim .. "_23"
+    end			
 end
 
 SWEP.Animations = {
@@ -386,4 +395,38 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },	
+	
+
+    ["reload_23"] = {
+        Source = "reload_23",
+        LastClip1OutTime = 3,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },
+    ["reload_empty_23"] = {
+        Source = "reload_empty_23",
+        LastClip1OutTime = 3.5,		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },	
+    ["reload_nomen_23"] = {
+        Source = "reload_nomen_23",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,		
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },
+    ["reload_nomen_empty_23"] = {
+        Source = "reload_empty_nomen_23",
+        LastClip1OutTime = 2.5,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+    },		
 }
