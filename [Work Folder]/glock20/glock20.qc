@@ -43,12 +43,7 @@ $bodygroup "Rail2"
 	studio "Rail_Bottom.smd"
 }
 
-
-$surfaceprop "default"
-
-$contents "solid"
-
-$illumposition -5.487 -5.297 -6.32
+$illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\glock20\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
@@ -62,9 +57,6 @@ $attachment "ejector" "shell_ejection" 0 0 0 rotate 0 0 0
 $attachment "muzzle_suppressor" "muzzle_flash_sup" 0 0 0 rotate 0 0 0
 $attachment "Sight1" "glock_main" 1 -1.43 0.57 rotate 0.15 0 0
 $attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
-
-$cbox 0 0 0 0 0 0
-
 
 $definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "glock_main" "" -1.420426 -10.135149 -1.581428 0 0 0 0 0 0 0 0 0

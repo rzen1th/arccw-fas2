@@ -1,6 +1,6 @@
-att.PrintName = "Left USP"
+att.PrintName = "Left MP5K"
 att.Icon = Material("entities/acwatt_mw2_akimbo.png", "smooth")
-att.Description = "HOW."
+att.Description = "No foregrip for the lol."
 att.Hidden = false
 att.Desc_Pros = {
     "+100% more gun",
@@ -10,21 +10,21 @@ att.Desc_Cons = {
 }
 att.AutoStats = true
 att.Mult_HipDispersion = 2
-att.Slot = "gso_extra_pistol_akimbo"
+att.Slot = "mifl_fas2_akimbo"
 
-att.ModelOffset = Vector(0, 0, 0)
+att.ModelOffset = Vector(-1, -0.8, 0)
 
 att.GivesFlags = {"handlocked"}
 
 att.ModelScale = Vector(1, 1, 1)
 
-att.SortOrder = 700 + 3
+att.SortOrder = 700 + 5
 
-att.AddSuffix = " + USP"
+att.AddSuffix = " + MP5K"
 
 att.MountPositionOverride = 0
 
-att.Model = "models/weapons/arccw/gunsmith/mifl/c_usp_left_2.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/c_mp5k.mdl"
 
 att.LHIK = true
 att.LHIK_Animation = true
@@ -33,15 +33,15 @@ att.LHIK_MovementMult = 0
 att.UBGL = true
 
 att.UBGL_PrintName = "AKIMBO"
-att.UBGL_Automatic = false
-att.UBGL_MuzzleEffect = "muzzleflash_pistol"
-att.UBGL_ClipSize = 15
+att.UBGL_Automatic = true
+att.UBGL_MuzzleEffect = "muzzleflash_mp5"
+att.UBGL_ClipSize = 30
 att.UBGL_Ammo = "pistol"
-att.UBGL_RPM = 650
-att.UBGL_Recoil = .8
-att.UBGL_RecoilSide = .55
-att.UBGL_RecoilRise = .4
-att.UBGL_Capacity = 15
+att.UBGL_RPM = 900
+att.UBGL_Recoil = 1.1
+att.UBGL_RecoilSide = .5
+att.UBGL_RecoilRise = .9
+att.UBGL_Capacity = 30
 
 att.Hook_ShouldNotSight = function(wep)
     return true
@@ -55,15 +55,12 @@ att.Hook_Think = function(wep)
         --wep:Reload()
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetInUBGL(false)
-    elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
+	elseif wep:GetOwner():KeyDown(IN_ATTACK2) then -- Wake me up when Arctic picks up an interest in akimbo (I will die of oversleep!)
         wep:SetInUBGL(true)
         wep:ShootUBGL()
-    end
-end
-
-att.Hook_LHIK_TranslateAnimation = function(wep, anim)
-    if anim == "idle" and wep:Clip2() <= 0 then
-        return "idle_empty"
+    --[[elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
+        wep:SetInUBGL(true)
+        wep:ShootUBGL()]]
     end
 end
 
@@ -75,12 +72,12 @@ att.UBGL_Fire = function(wep, ubgl)
     if wep:Clip2() <= 0 then return end
 
     -- this bitch
-    local fixedcone = wep:GetDispersion() / 170 / 60
+    local fixedcone = wep:GetDispersion() / 120 / 60
 
     wep.Owner:FireBullets({
 		Src = wep.Owner:EyePos(),
 		Num = 1,
-		Damage = 28,
+		Damage = 21,
 		Force = 1,
 		Attacker = wep.Owner,
 		Dir = wep.Owner:EyeAngles():Forward(),
@@ -88,10 +85,10 @@ att.UBGL_Fire = function(wep, ubgl)
 		Callback = function(_, tr, dmg)
 			local dist = (tr.HitPos - tr.StartPos):Length() * ArcCW.HUToM
 
-			local dmgmax = 28
+			local dmgmax = 21
 			local dmgmin = 12
 
-			local delta = dist / 50
+			local delta = dist / 40
 
 			delta = math.Clamp(delta, 0, 1)
 
@@ -100,16 +97,14 @@ att.UBGL_Fire = function(wep, ubgl)
 			dmg:SetDamage(amt)
 		end
 	})
-    wep:EmitSound("weapons/arccw_mifl/gso/usp/hkp2000-1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
+    wep:EmitSound("weapons/arccw_mifl/fas2/mp5/mp5k_fire1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
                             -- This is kinda important
                                             -- Wep volume
                                                     -- Weapon pitch (along with the pitch randomizer)
     wep:SetClip2(wep:Clip2() - 1)
     
     if wep:Clip2() > 0 then
-        wep:DoLHIKAnimation("shoot1", 30/60)
-    else
-        wep:DoLHIKAnimation("last", 30/60)
+        wep:DoLHIKAnimation("fire", 30/60)
     end
 
     wep:DoEffects()
@@ -118,26 +113,26 @@ end
 att.UBGL_Reload = function(wep, ubgl)
     wep:Reload()
 
-    local clip = 15-- + 1
+    local clip = 30-- + 1
 
     if wep:Clip2() >= clip then return end -- att.UBGL_Capacity
 
     if Ammo(wep) <= 0 then return end
 
     if wep:Clip2() <= 0 then
-        wep:DoLHIKAnimation("dry_akimbo", 58/30)
-        wep:SetNextSecondaryFire(CurTime() + 58/30)
+        wep:DoLHIKAnimation("dry", 150/60)
+        wep:SetNextSecondaryFire(CurTime() + 150/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/gso/usp/hkp2000_clipout.wav", 	t = 8/30},
-            {s = "weapons/arccw_mifl/gso/usp/hkp2000_clipin.wav", 	    t = 27/30},
-            {s = "weapons/arccw_mifl/gso/usp/hkp2000_sliderelease.wav", 	t = 41/30},
+            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magout_empty.wav", 	t = 11/60},
+            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magin.wav", 	    	t = 65/60},
+            {s = "weapons/arccw_mifl/fas2/mp5/mp5_boltpull.wav", 	t = 85/60},		
         })
     else
-        wep:DoLHIKAnimation("wet_akimbo", 65/30)
-        wep:SetNextSecondaryFire(CurTime() + 65/30)
+        wep:DoLHIKAnimation("wet", 130/60)
+        wep:SetNextSecondaryFire(CurTime() + 130/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/gso/usp/hkp2000_clipout.wav", 	t = 8/30},
-            {s = "weapons/arccw_mifl/gso/usp/hkp2000_clipin.wav", 	    t = 27/30},
+            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magout_empty.wav", 	t = 11/60},
+            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magin.wav", 	    	t = 65/60},
         })
     end
 

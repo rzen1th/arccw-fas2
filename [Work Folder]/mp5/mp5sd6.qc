@@ -1,6 +1,6 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons/arccw/mifl/fas2/c_mp5.mdl"
+$modelname "weapons/arccw/mifl_atts/fas2/c_mp5.mdl"
 $include fesiug.qci
 $scale 2
 
@@ -16,6 +16,7 @@ $bodygroup "Frame"
 	blank	
 	studio "MP5_MW2.smd"
 	studio "MP5_G3.smd"	
+	studio "MP5_K2.smd"	
 }
 $bodygroup "Kit"
 {
@@ -57,11 +58,7 @@ $bodygroup "Stock"
 	studio "Stock_G3.smd"			
 }
 
-$surfaceprop "default"
-
-$contents "solid"
-
-$illumposition 12.789 -0.785 -6.786
+$illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\g3\"
@@ -72,10 +69,7 @@ $cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "Muzzle" "Dummy01" 11.81 0.38 0 rotate 0 0 0
 $attachment "Ejector" "Dummy01" 1.65 0.75 0.08 rotate -60 50 -50
-
-$cbox 0 0 0 0 0 0
-
-$bbox -6.912 -10.387 -19.463 124.653 7.84 4.148
+$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
 $definebone "Dummy01" "" -1.972849 -10.309934 -2.883476 0 -90.000037 89.999982 0 0 0 0 0 0
 $definebone "Dummy02" "Dummy01" 1.388909 0.626056 0 0 0 0 0 0 0 0 0 0
@@ -136,6 +130,7 @@ $definebone "Left Shoulder" "" 1.264477 7.263318 -4.279625 -1.500003 179.999978 
 $definebone "Left Upper Arm" "Left Shoulder" 0 0 0 -3.759864 89.972593 1.596375 0 0 0 0 0 0
 $definebone "Left Lower Arm" "Left Upper Arm" 9.996877 0 0 -0.002751 -0.200249 -0.000172 0 0 0 0 0 0
 $definebone "Bone03" "Dummy01" -0.263522 -0.5449 0 0 179.999978 0 0 0 0 0 0 0
+$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 
 $sequence "idle" {
 	"anims\idle.smd"
@@ -602,6 +597,35 @@ $sequence "reload_empty_nomen_k" {
 	fps 30
 }
 
+$sequence "reload_akimbo" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_MP5.MagOut" }
+	{ event 5004 10 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch_SMG" }
+	{ event 5004 40 "Arccw_FAS2_Weapon_MP5.MagIn" }
+	{ event 5004 40 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_akimbo" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_MP5.MagOut" }
+	{ event 5004 10 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch_SMG" }
+	{ event 5004 40 "Arccw_FAS2_Weapon_MP5.MagIn" }
+	{ event 5004 40 "Arccw_FAS2_Generic.Cloth_Movement" }	
+	{ event 5004 45 "Arccw_FAS2_Weapon_MP5.BoltPull" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Cloth_Movement" }	
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
 
 
 $collisionmodel "Phys.smd"

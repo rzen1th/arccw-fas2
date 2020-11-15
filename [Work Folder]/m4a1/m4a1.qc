@@ -144,12 +144,6 @@ $definebone "Right Lower Arm" "Right Upper Arm" -9.996876 0 0 -0.054718 -3.96326
 $definebone "Left Shoulder" "" 1.264477 7.263318 -4.279625 -1.500003 179.999978 0 0 0 0 0 0 0
 $definebone "Left Upper Arm" "Left Shoulder" 0 0 0 -3.759864 89.972593 1.596375 0 0 0 0 0 0
 $definebone "Left Lower Arm" "Left Upper Arm" 9.996877 0 0 -0.002751 -0.200249 -0.000172 0 0 0 0 0 0
-$definebone "CompM4S" "Dummy01" 2.397806 1.396592 0.007789 -89.980195 0 0 0 0 0 0 0 0
-$definebone "CompM4S_Rearcover_Orientation" "CompM4S" 0 0.985565 0.950756 0 -179.999978 0 0 0 0 0 0 0
-$definebone "CompM4S_Rearcover" "CompM4S_Rearcover_Orientation" 0 0.557812 0.19768 0.000019 180.000005 101.426574 0 0 0 0 0 0
-$definebone "CompM4S_Frontcover_Orientation" "CompM4S" 0 0.985564 -1.419447 0 0 0 0 0 0 0 0 0
-$definebone "CompM4S_Frontcover" "CompM4S_Frontcover_Orientation" 0 0.665918 -0.082173 0 0 65.000001 0 0 0 0 0 0
-
 
 $sectionframes 30 120
 

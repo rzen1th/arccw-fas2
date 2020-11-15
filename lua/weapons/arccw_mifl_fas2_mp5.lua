@@ -28,7 +28,7 @@ SWEP.DefaultBodygroups = "000000000000"
 SWEP.Damage = 21
 SWEP.DamageMin = 12 -- damage done at maximum range
 SWEP.Range = 40 -- in METRES
-SWEP.Penetration = 10
+SWEP.Penetration = 6
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
@@ -435,13 +435,26 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
     },
+    {
+        PrintName = "AKIMBO",
+        Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
+        Bone = "Akimbo_Base",		
+        DefaultAttName = "None",
+        Offset = {
+            vpos = Vector(5.3, -2.5, 0.8),
+            vang = Angle(0, 0, 0),
+        },			
+        InstalledEles = {"akimbo"},				
+    },	
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-    local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
+	local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
     local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
-
-    if kurz and eighty then
+	
+    if wep.Attachments[12].Installed  then
+		return anim .. "_akimbo"	
+    elseif kurz and eighty then
 		return anim .. "_k_80"
 	elseif kurz then
 		return anim .. "_k"
@@ -580,4 +593,25 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
     },		
+
+
+
+    ["reload_akimbo"] = {
+        Source = "reload_akimbo",			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+    },
+    ["reload_nomen_akimbo"] = {
+        Source = "reload_akimbo",			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+		Mult = 0.75,		
+    },	
+    ["reload_empty_akimbo"] = {
+        Source = "reload_empty_akimbo",			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+    },
+    ["reload_nomen_empty_akimbo"] = {
+        Source = "reload_empty_akimbo",		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+		Mult = 0.75,
+    },	
 }
