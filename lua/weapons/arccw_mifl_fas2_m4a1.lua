@@ -321,7 +321,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         elseif k == "mifl_fas2_m4a1_barrel_para_a1" then
             barrel = 7	
         elseif k == "mifl_fas2_m4a1_barrel_commando" then
-            barrel = 9				
+            barrel = 9		
+        elseif k == "mifl_fas2_m4a1_barrel_ar2" then
+            barrel = 10					
         elseif k == "iron_none" then
             lp = true
         end

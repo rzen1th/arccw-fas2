@@ -70,7 +70,7 @@ $cdmaterials "models\weapons\arccw_fas2\m16a2\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
-
+$cdmaterials "models\weapons\v_irifle\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1_extra\"
 
 $attachment "muzzle" "Dummy01" 13.5 0.6 0 rotate 0 0 0
