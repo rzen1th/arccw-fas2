@@ -21,6 +21,8 @@ $bodygroup "HG"
 	studio "Handguard_Ribs.smd"	
 	studio "Handguard_Para.smd"		
 	blank	
+	studio "Handguard_Commando.smd"	
+	studio "Handguard_AR2.smd"		
 }
 $bodygroup "Sights"
 {
@@ -33,6 +35,8 @@ $bodygroup "Sights"
 	studio "Iron_X.smd"		
 	studio "Iron_Para.smd"			
 	blank	
+	studio "Iron_Commando.smd"	
+	studio "Iron_AR2.smd"		
 }
 $bodygroup "Mag"
 {

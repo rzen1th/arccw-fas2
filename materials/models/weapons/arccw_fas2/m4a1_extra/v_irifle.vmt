@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/Weapons/V_IRifle/V_IRifle"
+	"$bumpmap" "models\weapons\arccw_fas2\m4a1_extra\V_IRifle_normal"
+	"$surfaceprop" "metal"
+	"$selfillum" "1"
+
+	"360?$color2" "[ 0.8 0.8 0.8 ]"
+
+// -- From here down is new stuff which will only be applied if $phong is set to 1 --
+	"$phong" "1"
+	"$phongexponent" "11"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[.1 0.4 3]"
+	"$nocull" "1"
+}

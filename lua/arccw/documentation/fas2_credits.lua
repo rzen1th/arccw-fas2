@@ -114,7 +114,7 @@ Google Images
 [Assets Ripper] -- everyone deserves a place 
 -Fesiug (mw2 rip)
 -Stefano (mw2cr rip)
--Sirgibsalot (kf2 and others rip, this guy is a fucking chad)
+-Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
 -HK G41/empty (wwz,warface rip, pretty fucking sure these two are the same)
 - ClearSkyC (warface rip)
 */

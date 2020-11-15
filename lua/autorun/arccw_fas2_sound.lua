@@ -1,3 +1,10 @@
+game.AddParticles( "particles/ar2_effects.pcf" )
+PrecacheParticleSystem( "ar2_muzzle" )
+
+
+
+
+
 //Handling
 sound.Add({
 	name = 			"Arccw_FAS2_Generic.Cloth_Movement",

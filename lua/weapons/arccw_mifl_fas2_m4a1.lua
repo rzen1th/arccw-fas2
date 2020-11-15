@@ -136,6 +136,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 2},					
         },
     },	
+    ["mifl_fas2_m4a1_stock_pdw"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 3},					
+        },
+    },		
     ["whisperer"] = {
         NameChange = "AR-C4S",	
 		TrueNameChange = "M4A1S",		
@@ -202,7 +207,7 @@ SWEP.AttachmentElements = {
 		},			
     },	
     ["mifl_fas2_m4a1_barrel_para_a1"] = {
-        NameChange = "AR-A1",	
+        NameChange = "AR-A1C",	
 		TrueNameChange = "M16A1",	
         VMBodygroups = {
             {ind = 1, bg = 8},	
@@ -214,9 +219,30 @@ SWEP.AttachmentElements = {
             },		
 		},			
     },		
+    ["mifl_fas2_m4a1_barrel_commando"] = {
+        NameChange = "AR-C",	
+		TrueNameChange = "M4C",	
+        VMBodygroups = {
+            {ind = 1, bg = 10},	
+            {ind = 2, bg = 9},				
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(17, -1.3, 0),
+            },		
+		},			
+    },		
+    ["mifl_fas2_m4a1_barrel_ar2"] = {
+        NameChange = "AR-Overlord",	
+		TrueNameChange = "AR2",	
+        VMBodygroups = {
+            {ind = 1, bg = 11},	
+            {ind = 2, bg = 10},				
+        },		
+    },		
     ["mifl_fas2_m4a1_barrel_heat"] = {
-        NameChange = "AR-A3",	
-		TrueNameChange = "M16A3",	
+        NameChange = "AR-EOD",	
+		TrueNameChange = "M16 EOD",	
         VMBodygroups = {
             {ind = 1, bg = 5},	
             {ind = 2, bg = 5},				
@@ -293,7 +319,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         elseif k == "mifl_fas2_m4a1_barrel_a1" then
             barrel = 4
         elseif k == "mifl_fas2_m4a1_barrel_para_a1" then
-            barrel = 7			
+            barrel = 7	
+        elseif k == "mifl_fas2_m4a1_barrel_commando" then
+            barrel = 9				
         elseif k == "iron_none" then
             lp = true
         end
@@ -350,7 +378,7 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_m4a1_barrel_sd"}		
+        ExcludeFlags = {"mifl_fas2_m4a1_barrel_sd", "mifl_fas2_m4a1_barrel_ar2"}		
     },	
     {
         PrintName = "Underbarrel",
@@ -361,6 +389,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         MergeSlots = {5},
+        ExcludeFlags = {"mifl_fas2_m4a1_barrel_ar2"}			
     },
     {
         PrintName = "INTEG-UBGL",
@@ -371,6 +400,7 @@ SWEP.Attachments = {
             vpos = Vector(10, 0, 0),
             vang = Angle(0, 0, -90),
         },
+        RequireFlags = {"mifl_fas2_m4a1_barrel_heat"},			
     },
     {
         PrintName = "Tactical",
@@ -389,7 +419,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock_none", "go_stock", "mifl_fas2_m4a1_stock"},
+        Slot = {"go_stock", "mifl_fas2_m4a1_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
