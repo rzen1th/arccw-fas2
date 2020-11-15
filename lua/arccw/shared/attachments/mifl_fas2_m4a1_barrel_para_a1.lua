@@ -23,8 +23,7 @@ att.Add_BarrelLength = -5
 
 att.Override_Firemodes = {
     {
-        Mode = -3,
-        RunawayBurst = true,
+        Mode = -5,
         PostBurstDelay = 0.14
     },
     {

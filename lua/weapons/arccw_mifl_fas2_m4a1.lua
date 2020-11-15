@@ -399,7 +399,7 @@ SWEP.Attachments = {
         Slot = "ubgl",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(10, 0, 0),
+            vpos = Vector(10, -0.5, 0),
             vang = Angle(0, 0, -90),
         },
         RequireFlags = {"mifl_fas2_m4a1_barrel_heat"},			
