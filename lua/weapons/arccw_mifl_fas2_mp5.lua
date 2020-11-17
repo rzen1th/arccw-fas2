@@ -121,6 +121,9 @@ SWEP.CustomizeAng = Angle(10, 15, 15)
 SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
+    ["akimbo"] = {
+		Override_ActivePos = Vector(2.5, 4, 0),
+	},
     ["buftube"] = {
         VMBodygroups = {
             {ind = 5, bg = 4},					
@@ -436,12 +439,12 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "AKIMBO",
+        PrintName = "Left Hand",
         Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
         Bone = "Akimbo_Base",		
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(5.3, -2.5, 0.8),
+            vpos = Vector(4, -3, -0.5),
             vang = Angle(0, 0, 0),
         },			
         InstalledEles = {"akimbo"},				
@@ -472,9 +475,6 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "deploy_first3",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.7,
     },
     ["fire"] = {
         Source = {"shoot"},

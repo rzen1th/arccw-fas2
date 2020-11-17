@@ -1,13 +1,12 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons/arccw/mifl_atts/fas2/c_mp5.mdl"
+$modelname "weapons/arccw/mifl/fas2/c_mp5.mdl"
 $include fesiug.qci
 $scale 2
 
 $bodygroup "1"
 {
 	studio "Main.smd"
-	blank	
 }
 $bodygroup "Frame"
 {
@@ -71,6 +70,7 @@ $attachment "Muzzle" "Dummy01" 11.81 0.38 0 rotate 0 0 0
 $attachment "Ejector" "Dummy01" 1.65 0.75 0.08 rotate -60 50 -50
 $attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
+$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Dummy01" "" -1.972849 -10.309934 -2.883476 0 -90.000037 89.999982 0 0 0 0 0 0
 $definebone "Dummy02" "Dummy01" 1.388909 0.626056 0 0 0 0 0 0 0 0 0 0
 $definebone "Bone01" "Dummy01" 0.121287 -1.023032 0 0 -79.640907 0 0 0 0 0 0 0
@@ -130,7 +130,6 @@ $definebone "Left Shoulder" "" 1.264477 7.263318 -4.279625 -1.500003 179.999978 
 $definebone "Left Upper Arm" "Left Shoulder" 0 0 0 -3.759864 89.972593 1.596375 0 0 0 0 0 0
 $definebone "Left Lower Arm" "Left Upper Arm" 9.996877 0 0 -0.002751 -0.200249 -0.000172 0 0 0 0 0 0
 $definebone "Bone03" "Dummy01" -0.263522 -0.5449 0 0 179.999978 0 0 0 0 0 0 0
-$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 
 $sequence "idle" {
 	"anims\idle.smd"
@@ -444,15 +443,6 @@ $sequence "deploy_first4" {
 	fps 30
 }
 
-
-
-
-
-
-
-
-
-
 $sequence "reload_80" {
 	"anims\reload_80.smd"
 	activity "ACT_VM_RELOAD" 1
@@ -554,14 +544,6 @@ $sequence "reload_empty_nomen_k_80" {
 	fps 41
 }
 
-
-
-
-
-
-
-
-
 $sequence "reload_empty_k" {
 	"anims\reload_empty_k.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
@@ -580,6 +562,7 @@ $sequence "reload_empty_k" {
 	snap
 	fps 30
 }
+
 $sequence "reload_empty_nomen_k" {
 	"anims\reload_empty_nomen_k.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
