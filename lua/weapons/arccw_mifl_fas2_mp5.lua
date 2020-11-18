@@ -188,6 +188,19 @@ SWEP.AttachmentElements = {
             },		
 		},			
     },	
+    ["mifl_fas2_mp5_hg_no"] = {
+        NameChange = "Kurz",		
+        TrueNameChange = "MP5K",		
+        VMBodygroups = {
+            {ind = 1, bg = 5},	
+	        {ind = 3, bg = 4},			
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(11.5, -1, 0),
+            },				
+		},			
+    },		
     ["mifl_fas2_mp5_hg_mw2"] = {
         NameChange = "Kurz",		
         TrueNameChange = "MP5K",		
@@ -381,7 +394,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         MergeSlots = {5},
-        ExcludeFlags = {"mifl_fas2_mp5_hg_k", "mifl_fas2_mp5_ump_k", "mifl_fas2_mp5_hg_grip"},	
+        ExcludeFlags = {"mifl_fas2_mp5_hg_k", "mifl_fas2_mp5_ump_k", "mifl_fas2_mp5_hg_grip", "mifl_fas2_mp5_hg_no"},	
     },
     {
         PrintName = "INTEG-UBGL",
@@ -447,12 +460,13 @@ SWEP.Attachments = {
             vpos = Vector(4, -3, -0.5),
             vang = Angle(0, 0, 0),
         },			
-        InstalledEles = {"akimbo"},				
+        InstalledEles = {"akimbo"},		
+        RequireFlags = {"Akimbo_Yes"},			
     },	
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-	local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
+	local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"
     local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
 	
     if wep.Attachments[12].Installed  then
