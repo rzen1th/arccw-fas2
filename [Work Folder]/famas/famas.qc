@@ -325,3 +325,14 @@ $sequence "reload_empty_nomen_felin" {
 	snap
 	fps 30
 }
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
+}

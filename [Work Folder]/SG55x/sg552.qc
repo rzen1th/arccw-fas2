@@ -81,10 +81,6 @@ $cdmaterials "models\weapons\arccw_fas2\shells\"
 $attachment "muzzle" "muzzle_flash" -5.78 0 0 rotate 0 0 0
 $attachment "ejector" "shell_ejection" 0.45 0 0 rotate 0 0 0
 
-$cbox 0 0 0 0 0 0
-
-$bbox -16.31 -32.238 -62.857 98.731 63.628 54.726
-
 $definebone "shell_ejection" "" -1.536584 -8.96816 -1.598961 -23.969328 -170.752803 93.044778 0 0 0 0 0 0
 $definebone "weapon_main" "" -1.661013 -6.99037 -2.319382 0 0 0 0 0 0 0 0 0
 $definebone "muzzle_flash" "weapon_main" 0.04346 -9.667673 0.290768 -0.000036 -90.000016 90.000016 0 0 0 0 0 0
@@ -140,6 +136,16 @@ $definebone "weapon_magazine_nomen" "" 1.535405 14.423149 -9.478752 0 0 0 0 0 0 
 
 $sectionframes 30 120
 
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+	loop
+}
+
 $sequence "idle" {
 	"sg552_anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
@@ -162,6 +168,20 @@ $sequence "draw_first" {
 	{ event 5004 82 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 92 "Arccw_FAS2_Weapon_SG550.BoltForward" }
 	{ event 5004 115 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 32
+}
+
+$sequence "deploy_1st" {
+	"anims\deploy_1st.smd"
+	activity "ACT_VM_DRAW_FIRST" 1
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
+	{ event 5004 6 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Weapon_SG550.BoltBack" }
+	{ event 5004 18 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 27 "Arccw_FAS2_Weapon_SG550.BoltForward" }
+	{ event 5004 44 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	fps 32
@@ -540,4 +560,15 @@ $sequence "reload_empty_45_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	fps 35
+}
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }
