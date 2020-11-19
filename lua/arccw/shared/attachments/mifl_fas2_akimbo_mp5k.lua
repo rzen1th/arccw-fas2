@@ -1,5 +1,5 @@
 att.PrintName = "Left MP5K"
-att.Icon = Material("entities/acwatt_mw2_akimbo.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_akimbo_mp5k.png", "smooth")
 att.Description = "No foregrip for the lol."
 att.Hidden = false
 att.Desc_Pros = {

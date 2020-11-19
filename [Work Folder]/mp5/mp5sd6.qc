@@ -131,6 +131,15 @@ $definebone "Left Upper Arm" "Left Shoulder" 0 0 0 -3.759864 89.972593 1.596375 
 $definebone "Left Lower Arm" "Left Upper Arm" 9.996877 0 0 -0.002751 -0.200249 -0.000172 0 0 0 0 0 0
 $definebone "Bone03" "Dummy01" -0.263522 -0.5449 0 0 179.999978 0 0 0 0 0 0 0
 
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fps 20
+	fadein 0.00002
+	fadeout 0.00002	
+	snap
+}
+
 $sequence "idle" {
 	"anims\idle.smd"
 	activity "ACT_VM_IDLE" 3
@@ -591,6 +600,7 @@ $sequence "reload_akimbo" {
 	{ event 5004 40 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 30
 }
 
@@ -607,6 +617,7 @@ $sequence "reload_empty_akimbo" {
 	{ event 5004 45 "Arccw_FAS2_Generic.Cloth_Movement" }	
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 30
 }
 

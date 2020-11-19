@@ -1,6 +1,6 @@
-att.PrintName = "Obrez Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_k.png", "mips smooth")
-att.Description = "Grip is gone, and out goes the accuracy."
+att.PrintName = "No Handguard"
+att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_no.png", "mips smooth")
+att.Description = "One hand nigga."
 att.SortOrder = -2
 att.Desc_Pros = {
 }
