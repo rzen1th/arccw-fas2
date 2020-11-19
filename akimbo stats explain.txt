@@ -6,6 +6,7 @@ SWEP.Recoil = 0.7
 SWEP.RecoilSide = 0.5
 SWEP.RecoilRise = 0.8
 SWEP.MoveDispersion = 205
+SWEP.HipDispersion = 390
 
 
 
@@ -25,4 +26,4 @@ akimbo result
 (Value)RecoilRise = (0.8*1*1)*1.15 = 0.92
 (Mult)MoveDispersion = 0.75*1.15 = 0.8625
 
-times 1/2 cuz math lol
+times 3/4 cuz math lol
