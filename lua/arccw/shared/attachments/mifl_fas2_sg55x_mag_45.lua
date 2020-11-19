@@ -22,5 +22,10 @@ att.Mult_Penetration = 0.7
 att.Override_ClipSize = 32
 att.Mult_ReloadTime = 0.88
 
+att.Override_Ammo = "pistol"
+
+att.Override_ShellModel = "models/shells/shell_9mm.mdl"
+
+att.Override_Trivia_Class = "Submachine Gun"
 att.Override_Trivia_Calibre = ".45 ACP"
-att.AddSuffix = " .45"
+att.AddSuffix = "/45"

@@ -148,26 +148,56 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_sg55x_barrel_550"] = {
         NameChange = "Gevär-550",	
 		TrueNameChange = "SG-550",
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 30, 0.6),
+            },		
+		},			
     },
     ["mifl_fas2_sg55x_barrel_551"] = {
         NameChange = "Gevär-551",	
 		TrueNameChange = "SG-551",
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 30, 0.6),
+            },		
+		},			
     },
     ["mifl_fas2_sg55x_barrel_kompact"] = {
         NameChange = "Gevär-762",	
 		TrueNameChange = "SG-762",
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 21.8, 0.6),
+            },		
+		},			
     },
     ["mifl_fas2_sg55x_barrel_kompact2"] = {
         NameChange = "Gevär-552C",	
 		TrueNameChange = "SG-552C",
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 13.5, 0.6),
+            },		
+		},			
     },
     ["mifl_fas2_sg55x_barrel_no"] = {
         NameChange = "Gevär-XS",	
 		TrueNameChange = "SG-XS",
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 9.8, 0.6),
+            },		
+		},			
     },	
     ["mifl_fas2_sg55x_barrel_saf"] = {
         NameChange = "Gevär-SAF",	
 		TrueNameChange = "SG-SAF",
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 15.5, 0.6),
+            },		
+		},			
     },
     ["mifl_fas2_sg55x_barrel_saf2"] = {
         NameChange = "Gevär-SAF M.0",	
@@ -186,6 +216,11 @@ SWEP.AttachmentElements = {
 
             }
         },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 23, 1.8),
+            },		
+		},			
     },
     ["32"] = {
         VMBodygroups = {
@@ -283,8 +318,8 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(26, -1.3, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(0, 17.5, 0.6),
+            vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
@@ -319,8 +354,8 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(10, -2, 0.5),
-            vang = Angle(0, 0, 180),
+            vpos = Vector(-1, 8, 0.5),
+            vang = Angle(0, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
@@ -356,10 +391,8 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "weapon_main", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.6, -3.25, 4), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
-            wpos = Vector(6.099, 1.1, -3.301),
-            wang = Angle(171.817, 180-1.17, 0),
+            vpos = Vector(0.8, 2, 0.8), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, -90, 0),
         },
     },
 }
