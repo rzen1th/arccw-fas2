@@ -422,6 +422,18 @@ SWEP.Attachments = {
         DefaultAttName = "Standard 9mm"
     },
     {
+        PrintName = "Left Hand",
+        Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
+        Bone = "Akimbo_Base",		
+        DefaultAttName = "None",
+        Offset = {
+            vpos = Vector(4, -3, -0.5),
+            vang = Angle(0, 0, 0),
+        },			
+        InstalledEles = {"akimbo"},		
+        RequireFlags = {"Akimbo_Yes"},			
+    },		
+    {
         PrintName = "Stock",
         Slot = {"go_stock", "mifl_fas2_mp5_stock"},
         DefaultAttName = "Standard Stock",
@@ -451,25 +463,13 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
     },
-    {
-        PrintName = "Left Hand",
-        Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
-        Bone = "Akimbo_Base",		
-        DefaultAttName = "None",
-        Offset = {
-            vpos = Vector(4, -3, -0.5),
-            vang = Angle(0, 0, 0),
-        },			
-        InstalledEles = {"akimbo"},		
-        RequireFlags = {"Akimbo_Yes"},			
-    },	
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
 	local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"
     local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
 	
-    if wep.Attachments[12].Installed  then
+    if wep.Attachments[8].Installed  then
 		return anim .. "_akimbo"	
     elseif kurz and eighty then
 		return anim .. "_k_80"
@@ -491,7 +491,7 @@ SWEP.Animations = {
         Source = "deploy_first3",
     },
     ["fire"] = {
-        Source = {"shoot"},
+        Source = {"shoot2"},
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {

@@ -17,8 +17,8 @@ att.Mult_RecoilSide = 1.2
 att.Mult_VisualRecoilMult = 1.2
 
 att.Mult_MoveSpeed = 1.1
-att.Mult_Damage = 2.7
-att.Mult_DamageMin = 2
+att.Mult_Damage = 2.3
+att.Mult_DamageMin = 1.9
 att.Mult_Range = 2
 att.Mult_Penetration = 2
 att.Mult_MuzzleVelocity = 1.3
