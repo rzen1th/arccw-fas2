@@ -238,6 +238,11 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 1},			
         },
     },
+    ["20"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 1},		
+        },
+    },	
     ["mifl_fas2_sg55x_mag_9mm_32"] = {
         VMBodygroups = {
             {ind = 3, bg = 3},
