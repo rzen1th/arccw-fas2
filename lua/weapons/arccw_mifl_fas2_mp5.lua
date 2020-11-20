@@ -466,15 +466,18 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-	local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"
+	local onehand = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"
+	local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
     local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
 	
     if wep.Attachments[8].Installed  then
 		return anim .. "_akimbo"	
-    elseif kurz and eighty then
+    elseif (kurz or onehand) and eighty then
 		return anim .. "_k_80"
 	elseif kurz then
-		return anim .. "_k"
+		return anim .. "_k"		
+	elseif onehand then
+		return anim .. "_one"		
     elseif eighty then
 		return anim .. "_80"
     end		
@@ -606,9 +609,36 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+    },	
+	
+    ["reload_one"] = {
+        Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },
+    ["reload_empty_one"] = {
+        Source = "reload_empty_k",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },	
+    ["reload_nomen_one"] = {
+        Source = "reload_nomen",			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+        LHIK = true,
+        LHIKIn = 0.35,
+        LHIKOut = 0.35,		
     },		
-
-
+    ["reload_nomen_empty_one"] = {
+        Source = "reload_empty_nomen_k",		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },	
 
     ["reload_akimbo"] = {
         Source = "reload_akimbo",			
