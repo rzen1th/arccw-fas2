@@ -1,6 +1,6 @@
-att.PrintName = "Left MP5K"
-att.Icon = Material("entities/arccw_mifl_fas2_akimbo_mp5k.png", "smooth")
-att.Description = "No foregrip for the lol."
+att.PrintName = "Left Raging Bull"
+att.Icon = Material("entities/arccw_mifl_fas2_akimbo_ragbul.png", "smooth")
+att.Description = "ambidestrous yes."
 att.Hidden = false
 att.Desc_Pros = {
     "+100% more gun",
@@ -12,19 +12,19 @@ att.AutoStats = true
 att.Mult_HipDispersion = 2
 att.Slot = "mifl_fas2_akimbo"
 
-att.ModelOffset = Vector(-1, -0.8, 0)
+att.ModelOffset = Vector(1, -0.5, 0)
 
 att.GivesFlags = {"handlocked"}
 
 att.ModelScale = Vector(1, 1, 1)
 
-att.SortOrder = 700 + 5
+att.SortOrder = 700 + 6
 
-att.AddSuffix = " + MP5K"
+att.AddSuffix = " + USP"
 
 att.MountPositionOverride = 0
 
-att.Model = "models/weapons/arccw/mifl_atts/fas2/c_mp5k.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/c_revolver.mdl"
 
 att.LHIK = true
 att.LHIK_Animation = true
@@ -33,16 +33,15 @@ att.LHIK_MovementMult = 0
 att.UBGL = true
 
 att.UBGL_PrintName = "AKIMBO"
-att.UBGL_Automatic = true
-att.UBGL_MuzzleEffect = "muzzleflash_mp5"
-att.UBGL_ClipSize = 30
+att.UBGL_Automatic = false
+att.UBGL_MuzzleEffect = "muzzleflash_pistol"
+att.UBGL_ClipSize = 5
 att.UBGL_Ammo = "pistol"
-att.UBGL_RPM = 900
-att.UBGL_Recoil = 1.5939*0.75
-att.UBGL_RecoilSide = 0.1035*0.75
-att.UBGL_RecoilRise = 0.92
-att.UBGL_Capacity = 30
-att.Mult_MoveDispersion = 0.8625*0.75
+att.UBGL_RPM = 350
+att.UBGL_Recoil = 1.8
+att.UBGL_RecoilSide = 1.2
+att.UBGL_RecoilRise = 0.4
+att.UBGL_Capacity = 5
 
 att.Hook_ShouldNotSight = function(wep)
     return true
@@ -56,12 +55,9 @@ att.Hook_Think = function(wep)
         --wep:Reload()
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetInUBGL(false)
-	elseif wep:GetOwner():KeyDown(IN_ATTACK2) then -- Wake me up when Arctic picks up an interest in akimbo (I will die of oversleep!)
+    elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
         wep:SetInUBGL(true)
         wep:ShootUBGL()
-    --[[elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
-        wep:SetInUBGL(true)
-        wep:ShootUBGL()]]
     end
 end
 
@@ -73,12 +69,12 @@ att.UBGL_Fire = function(wep, ubgl)
     if wep:Clip2() <= 0 then return end
 
     -- this bitch
-    local fixedcone = wep:GetDispersion() / 110 / 60
+    local fixedcone = wep:GetDispersion() / 140 / 60
 
     wep.Owner:FireBullets({
 		Src = wep.Owner:EyePos(),
 		Num = 1,
-		Damage = 21,
+		Damage = 120,
 		Force = 1,
 		Attacker = wep.Owner,
 		Dir = wep.Owner:EyeAngles():Forward(),
@@ -86,10 +82,10 @@ att.UBGL_Fire = function(wep, ubgl)
 		Callback = function(_, tr, dmg)
 			local dist = (tr.HitPos - tr.StartPos):Length() * ArcCW.HUToM
 
-			local dmgmax = 21
-			local dmgmin = 12
+			local dmgmax = 120
+			local dmgmin = 49
 
-			local delta = dist / 40
+			local delta = dist / 30
 
 			delta = math.Clamp(delta, 0, 1)
 
@@ -98,13 +94,13 @@ att.UBGL_Fire = function(wep, ubgl)
 			dmg:SetDamage(amt)
 		end
 	})
-    wep:EmitSound("weapons/arccw_mifl/fas2/mp5/mp5k_fire1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
+    wep:EmitSound("weapons/arccw_mifl/fas2/ragingbull/ragingbull_fire1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
                             -- This is kinda important
                                             -- Wep volume
                                                     -- Weapon pitch (along with the pitch randomizer)
     wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/mp5/mp5_distance_fire1.wav",			t = 0},
-	})													
+            {s = "weapons/arccw_mifl/fas2/ragingbull/ragingbull_distance_fire1.wav",			t = 0},
+	})														
     wep:SetClip2(wep:Clip2() - 1)
     
     if wep:Clip2() > 0 then
@@ -117,7 +113,7 @@ end
 att.UBGL_Reload = function(wep, ubgl)
     wep:Reload()
 
-    local clip = 30-- + 1
+    local clip = 5
 
     if wep:Clip2() >= clip then return end -- att.UBGL_Capacity
 
@@ -127,17 +123,20 @@ att.UBGL_Reload = function(wep, ubgl)
         wep:DoLHIKAnimation("dry", 150/60)
         wep:SetNextSecondaryFire(CurTime() + 150/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magout_empty.wav", 	t = 11/60},
-            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magin.wav", 	    	t = 65/60},
-            {s = "weapons/arccw_mifl/fas2/mp5/mp5_boltpull.wav", 	t = 85/60},		
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_open_chamber.wav", 			t = 15/60},			
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_dump_rounds_01.wav", 	t = 49/60},
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_speed_loader_insert_01.wav", 	t = 80/60},
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_close_chamber.wav", 	t = 116/60},			
         })
-    else
-        wep:DoLHIKAnimation("wet", 130/60)
-        wep:SetNextSecondaryFire(CurTime() + 130/60)
+	else 
+        wep:DoLHIKAnimation("dry", 150/60)
+        wep:SetNextSecondaryFire(CurTime() + 150/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magout_empty.wav", 	t = 11/60},
-            {s = "weapons/arccw_mifl/fas2/mp5/mp5_magin.wav", 	    	t = 65/60},
-        })
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_open_chamber.wav", 			t = 15/60},			
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_dump_rounds_01.wav", 	t = 49/60},
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_speed_loader_insert_01.wav", 	t = 80/60},
+            {s = "weapons/arccw_mifl/fas2_custom/revolver/revolver_close_chamber.wav", 	t = 116/60},			
+        })	
     end
 
     local reserve = Ammo(wep)

@@ -31,7 +31,7 @@ $surfaceprop "default"
 
 $contents "solid"
 
-$illumposition 0.04 -19.693 -2.589
+$illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\ragingbull\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
