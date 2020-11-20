@@ -16,6 +16,7 @@ att.Mult_AccuracyMOA = 2.2
 att.Mult_RPM = 1.35
 
 att.Add_BarrelLength = -7
+att.Mult_ReloadTime = 0.8
 
 att.ModelOffset = Vector(-5, -4.5, 1.2)
 

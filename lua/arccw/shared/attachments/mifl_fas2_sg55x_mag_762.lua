@@ -14,16 +14,15 @@ att.ActivateElements = {"30"}
 
 att.Mult_Recoil = 1.2
 att.Mult_RecoilSide = 1.4
---att.Mult_VisualRecoilMult = 1.3
+att.Mult_VisualRecoilMult = 1.3
 
 att.Mult_RPM = 0.85
 --att.Mult_MoveSpeed = 0.9
 att.Mult_Damage = 1.2
---att.Mult_DamageMin = 0.9
---att.Mult_Range = 2
+att.Mult_DamageMin = 1.1
+att.Mult_Range = 1.2
 att.Mult_Penetration = 2
---att.Mult_MuzzleVelocity = 1.3
---att.Mult_SightTime = 0.95
+att.Mult_MuzzleVelocity = 1.3
 att.Override_ClipSize = 30
 att.Mult_ReloadTime = 1.12
 
@@ -37,5 +36,6 @@ att.Hook_GetShootSound = function(wep, fsound)
 end
 
 att.Override_Trivia_Calibre = "7.62x39mm Soviet"
-att.Override_Ammo = "ar2"
+att.Override_Ammo = "ar2
+"
 att.AddSuffix = "/7"

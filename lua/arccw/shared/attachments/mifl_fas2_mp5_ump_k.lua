@@ -15,7 +15,7 @@ att.Mult_Range = 0.7
 --att.Mult_Recoil = 0.8
 att.Mult_SightTime = 0.8
 att.Mult_AccuracyMOA = 1.6
-
+att.Mult_ReloadTime = 0.95
 --att.Mult_Range = 1.3
 att.Mult_RPM = 1.1
 att.Mult_DamageMin = 0.9

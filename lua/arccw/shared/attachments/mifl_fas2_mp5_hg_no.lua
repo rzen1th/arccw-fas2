@@ -16,7 +16,7 @@ att.Mult_MoveSpeed = 1.175
 att.Mult_AccuracyMOA = 1.75
 att.Mult_Range = 0.7
 att.Add_BarrelLength = -6
-
+att.Mult_ReloadTime = 0.85
 att.Mult_ShootPitch = 0.8
 att.LHIK = true
 att.LHIK_Priority = -2
