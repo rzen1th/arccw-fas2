@@ -1,15 +1,16 @@
 att.PrintName = "No Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_stock_kurz.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_no_grip.png", "mips smooth")
+---att.Description = "Removing the stock decreases controllability but increases speed significantly."
 att.Description = "Curious stock. None."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "mifl_fas2_sg55x_stock"
+att.Slot = "mifl_fas2_uni_stock"
 
-att.Mult_Recoil = 2
-att.Mult_RecoilSide = 2
+att.Mult_Recoil = 1.8
+att.Mult_RecoilSide = 1.5
 att.Mult_SightTime = 0.75
 att.Mult_MoveDispersion = 0.75
 

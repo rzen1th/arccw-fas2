@@ -367,7 +367,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_sg55x_stock"},
+        Slot = {"go_stock", "mifl_fas2_sg55x_stock", "mifl_fas2_uni_stock" },
         DefaultAttName = "Standard Stock",
         Bone = "weapon_main",
         Offset = {
