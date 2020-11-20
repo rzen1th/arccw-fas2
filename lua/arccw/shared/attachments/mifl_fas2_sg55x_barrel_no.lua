@@ -9,16 +9,16 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_sg55x_hg"
 
-att.Mult_Range = 0.4
-att.Mult_Recoil = 1.4
+att.Mult_Range = 0.5
+att.Mult_Recoil = 1.35
 att.Mult_SightTime = 0.5
 att.Mult_AccuracyMOA = 2
 att.Mult_RPM = 1.2
-att.Mult_ReloadTime = 0.8
+att.Mult_ReloadTime = 0.6
 
 att.Add_BarrelLength = -7
 
-att.ModelOffset = Vector(-5, -4.5, 1.2)
+att.ModelOffset = Vector(-5, -4.2, 1.2)
 
 att.LHIK = true
 att.LHIK_Priority = -2

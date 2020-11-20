@@ -123,9 +123,14 @@ SWEP.BarrelLength = 24
 SWEP.AttachmentElements = {
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 4},					
+            {ind = 1, bg = 2},					
         },
     },	
+    ["mifl_fas2_sg55x_stock_sd"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 3},					
+        },
+    },		
     ["mifl_fas2_g36_barrel_sd"] = {
         NameChange = "Gewehr-S",	
 		TrueNameChange = "G36S",		
@@ -300,7 +305,7 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(10, -2, 0.5),
+            vpos = Vector(10, -1, 0.5),
             vang = Angle(0, 0, 180),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -313,11 +318,11 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_m4a1_stock"},
+        Slot = {"go_stock", "mifl_fas2_uni_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(-2, -1.3, 0),
+            vpos = Vector(-0.5, 0.1, 0),
             vang = Angle(0, 0, -90),
         },
         VMScale = Vector(1, 1, 1)
