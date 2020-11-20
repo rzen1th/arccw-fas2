@@ -124,7 +124,7 @@ SWEP.BarrelLength = 12
 
 SWEP.AttachmentElements = {
     ["akimbo"] = {
-		Override_ActivePos = Vector(2, 0, 0),
+		Override_ActivePos = Vector(2, 5, 0),
 	},
     ["shield"] = {
 		Override_ActivePos = Vector(8, 0, 0),
@@ -281,11 +281,11 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Left Hand",
-        Slot = {"gso_extra_pistol_akimbo"},
+        Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
         Bone = "Akimbo_Base",		
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(5.3, -2.5, 0.8),
+            vpos = Vector(2, -3, 0.8),
             vang = Angle(0, 0, 0),
         },		
         InstalledEles = {"akimbo"},		
@@ -457,30 +457,20 @@ SWEP.Animations = {
     ["reload_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 60/30
+		Time = 65/30
     },
-    ["reload_empty_akimbo"] = {
-        Source = "reload_akimbo_empty",
+    ["Reload_Empty_Akimbo"] = {
+        Source = "Reload_Empty_Akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 65/30	
+		Time = 70/30	
     },
-    ["reload_akimbo_33"] = {
-        Source = "reload_akimbo",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 72/30
-    },
-    ["reload_akimbo_empty_33"] = {
-        Source = "reload_akimbo_empty",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 77/30	
-    },	
     ["reload_nomen_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
 		Time = 52/30		
     },
     ["reload_nomen_empty_akimbo"] = {
-        Source = "reload_akimbo_empty",
+        Source = "Reload_Empty_Akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
 		Time = 57/30		
     },	

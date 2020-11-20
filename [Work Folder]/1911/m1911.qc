@@ -375,3 +375,45 @@ $sequence "Reload_Empty_Nomen_50" {
 	fadeout 0.2
 	fps 45
 }
+
+
+$sequence "Reload_Akimbo" {
+	"anims\Reload_Akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 40 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 25
+}
+
+$sequence "Reload_Empty_Akimbo" {
+	"anims\Reload_Empty_Akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOutEmpty" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 43 "Arccw_FAS2_Weapon_1911.SlideStop" }
+	{ event 3018 46 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 25
+}
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
+}
