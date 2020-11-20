@@ -20,7 +20,7 @@ att.ModelScale = Vector(1, 1, 1)
 
 att.SortOrder = 700 + 6
 
-att.AddSuffix = " + USP"
+att.AddSuffix = " + Raging Bull"
 
 att.MountPositionOverride = 0
 
