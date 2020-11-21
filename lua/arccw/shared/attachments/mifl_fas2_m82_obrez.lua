@@ -19,6 +19,7 @@ att.Mult_AccuracyMOA = 2.5
 att.Mult_Range = 0.8
 
 att.Mult_SightTime = 0.5
+att.Mult_DrawTime = 0.5
 att.Mult_SpeedMult = 1.2
 att.Mult_SightedSpeedMult = 1.5
 
