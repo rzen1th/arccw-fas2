@@ -1,6 +1,6 @@
 att.PrintName = "32-Round .45"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_45.png", "mips smooth")
-att.Description = ""
+att.Description = "Conversion to .45 lowers power and range but increases firerate."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

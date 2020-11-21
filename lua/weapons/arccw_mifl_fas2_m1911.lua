@@ -189,10 +189,10 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                vpos = Vector(13, -0.2, -0.15),
+                vpos = Vector(4.5, 0, -0.15),
             },
             [2] = {
-                vpos = Vector(7.5, -1.2, -0.18),
+                vpos = Vector(7.5, 0.2, -0.18),
             }			
         }
     },	
@@ -224,7 +224,7 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.WorldModelOffset = {
-    pos = Vector(-12.5, 4, -2.5),
+    pos = Vector(-15, 5, -2.5),
     ang = Angle(-10, 0, 180)
 }
 

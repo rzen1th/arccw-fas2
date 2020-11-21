@@ -1,6 +1,6 @@
 att.PrintName = "No Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_no.png", "mips smooth")
-att.Description = "One hand nigga."
+att.Description = "Shorten the already short barrel of the short MP5 with shortening magic. Makes MP5 very short now. Yes. Also one-handed"
 att.SortOrder = -2
 att.Desc_Pros = {
 }

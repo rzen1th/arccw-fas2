@@ -26,6 +26,10 @@ SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_minimi.mdl"
 SWEP.ViewModelFOV = 60
+SWEP.WorldModelOffset = {
+    pos = Vector(-20, 8, -6),
+    ang = Angle(-10, 0, 180)
+}
 
 SWEP.MirrorVMWM = true
 

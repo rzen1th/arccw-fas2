@@ -1,6 +1,6 @@
 att.PrintName = "Overlord Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_ar2.png", "mips smooth")
-att.Description = "Technoblade REAL."
+att.Description = "Strange Combine technology imbues bullets with some sort of pulse round."
 att.SortOrder = 7
 att.Desc_Pros = {
 }

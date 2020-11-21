@@ -13,4 +13,5 @@ VertexLitGeneric
 	"$phongfresnelranges"	"[0.5 1.5 3.0]"
 //	"$phongfresnelranges"	"[0.1 0.4 .8]"
 	"$halflambert"		"1"
+	"$nocull" "1"		
 }

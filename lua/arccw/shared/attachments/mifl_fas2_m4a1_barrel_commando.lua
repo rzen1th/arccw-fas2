@@ -1,6 +1,6 @@
 att.PrintName = "Commando Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_cmd.png", "mips smooth")
-att.Description = "Shorten length combat barrel."
+att.Description = "Shorter handguard meant for use by action heroes or commando units."
 att.SortOrder = 5.5
 att.Desc_Pros = {
 }

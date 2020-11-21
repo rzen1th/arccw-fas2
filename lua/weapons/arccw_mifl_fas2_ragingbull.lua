@@ -26,6 +26,11 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_ragingbull.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_ragingbull.mdl"
 SWEP.ViewModelFOV = 57
 
+SWEP.WorldModelOffset = {
+    pos = Vector(-17, 5.5, -5),
+    ang = Angle(-10, 0, 180)
+}
+
 SWEP.Damage = 120
 SWEP.DamageMin = 49 -- damage done at maximum range
 SWEP.Range = 30 -- in METRES
