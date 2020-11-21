@@ -159,7 +159,7 @@ SWEP.AttachmentElements = {
 		TrueNameChange = "SG-551",
         AttPosMods = {
             [3] = {
-                vpos = Vector(0, 30, 0.6),
+                vpos = Vector(0, 37.5, 0.6),
             },		
 		},			
     },
@@ -328,7 +328,7 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_sg55x_barrel_sd"}		
+        ExcludeFlags = {"mifl_fas2_sg55x_barrel_sd"},		
     },	
     {
         PrintName = "Underbarrel",

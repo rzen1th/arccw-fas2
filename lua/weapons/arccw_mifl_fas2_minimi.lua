@@ -229,12 +229,13 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
         Bone = "Base",
+        ExcludeFlags = {"mifl_fas2_m249_barrel_sd"},		
         Offset = {
             vpos = Vector(24, -3.2, 0),
             vang = Angle(0, 0, -90),
             wpos = Vector(27, 0.5, -9.1),
             wang = Angle(-9.79, 0, 180)
-        },
+        },		
     },
     {
         PrintName = "Underbarrel",
@@ -256,8 +257,8 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "Base",
         Offset = {
-            vpos = Vector(-1, -3, 10), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, 180),
+            vpos = Vector(10, -3, 1.8), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, 180),
             wpos = Vector(15.625, -0.253, -6.298),
             wang = Angle(-8.829, -0.556, 90)
         },
