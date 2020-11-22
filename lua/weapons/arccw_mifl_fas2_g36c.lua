@@ -125,10 +125,15 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 1, bg = 2},					
         },
-    },	
-    ["mifl_fas2_sg55x_stock_sd"] = {
+    },
+    ["buftube"] = {
         VMBodygroups = {
-            {ind = 1, bg = 3},					
+            {ind = 1, bg = 2},					
+        },
+    },	
+    ["mifl_fas2_g36_stock_mp5"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 1},					
         },
     },		
     ["mifl_fas2_g36_barrel_sd"] = {
@@ -318,7 +323,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_uni_stock"},
+        Slot = {"go_stock", "mifl_fas2_uni_stock", "mifl_fas2_g36_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {

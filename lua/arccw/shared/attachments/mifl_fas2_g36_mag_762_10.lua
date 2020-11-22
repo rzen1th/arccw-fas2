@@ -1,4 +1,4 @@
-att.PrintName = "10-Round 7.62"
+att.PrintName = "10-Round 7.62mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g36_ammo_10.png", "mips smooth")
 att.Description = "Curious conversion to 7.62 increases damage and range but decreases mag capacity and controllability."
 att.Desc_Pros = {

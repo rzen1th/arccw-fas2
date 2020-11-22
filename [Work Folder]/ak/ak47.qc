@@ -59,6 +59,7 @@ $bodygroup "Stock"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\akm\"
+$cdmaterials "models\weapons\arccw_fas2\ak_extra\"
 $cdmaterials "models\weapons\arccw_fas2\hands\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
@@ -120,6 +121,14 @@ $definebone "Right Lower Arm" "Right Upper Arm" -9.996876 0 0 -0.054718 -3.96326
 
 
 $sectionframes 30 130
+
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
 
 $sequence "idle" {
 	"ak47_anims\idle.smd"
@@ -244,6 +253,39 @@ $sequence "reload_empty_nomen" {
 $sequence "reload_empty_2" {
 	"anims\reload_empty_2.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 21 "Arccw_FAS2_Weapon_AK47.Bolt1" }	
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 46 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_AK47.MagOutEmpty" }
+	{ event 5004 67 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 86 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 86 "Arccw_FAS2_Weapon_AK47.MagIn" }
+	{ event 5004 110 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 110 "Arccw_FAS2_Weapon_AK47.Bolt2" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 40
+}
+
+$sequence "reload_pp19" {
+	"anims\reload_pp19.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_AK47.MagOut" }
+	{ event 5004 55 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 67 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 67 "Arccw_FAS2_Weapon_AK47.MagIn" }
+	{ event 3018 77 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 36
+}
+
+$sequence "reload_empty_pp19" {
+	"anims\reload_empty_pp19.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 24 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 24 "Arccw_FAS2_Weapon_AK47.MagOutEmpty" }
@@ -251,10 +293,20 @@ $sequence "reload_empty_2" {
 	{ event 5004 67 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 67 "Arccw_FAS2_Weapon_AK47.MagIn" }
 	{ event 5004 102 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event 5004 102 "Arccw_FAS2_Weapon_AK47.BoltPull" }
-	{ event 3018 112 "" }
+	{ event 5004 102 "Arccw_FAS2_Weapon_AK47.Bolt1" }
+	{ event 5004 112 "Arccw_FAS2_Weapon_AK47.Bolt2" }
 	fadein 0.2
 	fadeout 0.2
 	snap
-	fps 40
+	fps 36
+}
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }

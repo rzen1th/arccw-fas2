@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"models\weapons\arccw_fas2\ak_extra\ar23b_a"
+	"$bumpmap" 			"models\weapons\arccw_fas2\ak_extra\ar23b_a_n"
+	"$PhongExponentTexture"         	"models\weapons\arccw_fas2\ak_extra\ar23b_a_e"
+	"$envmap" 			"env_cubemap"
+	"$normalmapalphaenvmapmask" 	"1"
+        	"$envmapfresnel" 			"1"
+        	"$envmapFresnelMinMaxExp"		"[0 .4 1]"
+        	"$envmaptint" 			"[.005 .005 .0075]"
+        	"$phong" 			"1"
+        	"$phongboost" 			"1"
+        	"$phongalbedotint"			"1"
+        	"$phongalbedoboost"		"33"
+        	"$phongfresnelranges" 		"[1.6 3.3 6.7]"
+        	"$nocull" 				"1"
+}
