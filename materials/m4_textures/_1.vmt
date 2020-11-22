@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Scope/flashlight_glass"
+	"$bumpmap" "Scope/flashlight_glass_n"
+	"$phongexponenttexture" "Scope/flashlight_glass_exponent"
+	"$normalmapalphaenvmapmask" "1"
+	"$nocull" 1
+	"$translucent" 1
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .075 .075 .075 ]"
+	"$envmapfresnel" ".5"
+
+	"$phong" "1"
+	"$phongboost" "15"
+	"$phongexponent" "12"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[1 5 22.5]"
+}

@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Scope_dovetail/scope_dovetail_belomo_pso_1_4x24_marks_0"
+	"$bumpmap" "Scope_dovetail/scope_dovetail_belomo_pso_1_4x24_marks_0_nrm"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .075 .075 .075 ]"
+	"$envmapfresnel" ".5"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$phong" "1"
+	"$phongalbedotint" "1"
+
+	"$phongboost" "15"
+	"$phongexponent" "12"
+	"$phongfresnelranges" "[1 5 22.5]"
+	"$phongexponenttexture" "Scope_dovetail/scope_dovetail_belomo_pso_1_4x24_marks_0_exponent"
+}
