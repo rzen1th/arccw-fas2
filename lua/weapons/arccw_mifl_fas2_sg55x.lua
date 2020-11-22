@@ -123,7 +123,7 @@ SWEP.BarrelLength = 24
 SWEP.AttachmentElements = {
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 4},					
+            {ind = 5, bg = 3},					
         },
     },
     ["mifl_fas2_sg55x_stock_sniper"] = {
