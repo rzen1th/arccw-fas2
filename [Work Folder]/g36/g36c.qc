@@ -61,6 +61,7 @@ $bodygroup "Ammo"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\g36c\"
+$cdmaterials "models\weapons\arccw_fas2\g36c_extra\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
@@ -68,9 +69,9 @@ $cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "muzzle" "Dummy01" 11.25 0 0 rotate 0 0 0
 $attachment "ejector" "Dummy01" 2.62 0 0 rotate -70 30 -30
+$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
-$cbox 0 0 0 0 0 0
-
+$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Dummy01" "" -2.323339 -7.870985 -3.402039 0.000019 -90.000016 90.000016 0 0 0 0 0 0
 $definebone "Dummy05" "Dummy01" -1.428614 -0.371249 0.557884 0 0 0 0 0 0 0 0 0
 $definebone "Bone07" "Dummy05" -0.570424 0.101755 -0.556206 88.794249 -179.999978 89.999982 0 0 0 0 0 0
@@ -362,4 +363,14 @@ $sequence "fire_last_scoped" {
 	fadeout 0.2
 	snap
 	fps 0.01
+}
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }

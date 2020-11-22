@@ -176,6 +176,11 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 1},
         },
     },
+    ["mifl_fas2_g20_mag8"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 2},
+        },
+    },	
     ["mifl_fas2_g20_slide_17c"] = {
 		TrueNameChange = "Glock 17c",	
         NameChange = "HKP 17c",

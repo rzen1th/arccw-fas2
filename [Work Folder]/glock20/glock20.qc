@@ -22,6 +22,7 @@ $bodygroup "Mag"
 {
 	studio "Mag.smd"
 	studio "Mag_33.smd"	
+	studio "Mag_8.smd"		
 	blank	
 }
 $bodygroup "Stock"
@@ -389,4 +390,16 @@ $sequence "reload_empty_nomen_33" {
 	fadein 0.2
 	fadeout 0.2
 	fps 37
+}
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }

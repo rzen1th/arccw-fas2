@@ -15,6 +15,7 @@ $bodygroup "Frame"
 	studio "Frame_SD.smd"
 	studio "Frame_Felin.smd"	
 	studio "Frame_Kurz.smd"	
+	studio "Frame_No.smd"		
 }
 $bodygroup "Rail"
 {
@@ -22,6 +23,7 @@ $bodygroup "Rail"
 	studio "Rail.smd"
 	studio "Rail_SD.smd"
 	studio "Rail_Felin.smd"	
+	studio "Frame_No_Rail.smd"		
 }
 $bodygroup "Mag"
 {
@@ -37,7 +39,11 @@ $bodygroup "Felin"
 	studio "Felin_LHIK.smd"		
 	studio "Felin_Grip.smd"	
 }
-
+$bodygroup "H"
+{
+	blank
+	studio "Frame_No_Iron.smd"		
+}
 
 $surfaceprop "default"
 
