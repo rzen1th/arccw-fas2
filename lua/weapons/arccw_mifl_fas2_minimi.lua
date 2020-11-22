@@ -270,7 +270,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_m249_mag"},
-        DefaultAttName = "Standard Belt-Fed 5.56"
+        DefaultAttName = "30-Round 5.56mm"
     },	
     {
         PrintName = "Ammo Type",

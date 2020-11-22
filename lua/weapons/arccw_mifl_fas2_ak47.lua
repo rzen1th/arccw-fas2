@@ -41,6 +41,8 @@ SWEP.PhysBulletMuzzleVelocity = 900
 SWEP.Recoil = 0.6
 SWEP.RecoilSide = 0.42
 SWEP.RecoilRise = 1.2
+SWEP.MaxRecoilBlowback = 0.5
+SWEP.VisualRecoilMult = 0.7
 
 SWEP.Delay = 60 / 600
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -121,6 +123,11 @@ SWEP.CustomizeAng = Angle(10, 10, 5)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["mount"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 1},					
+        },
+    },
     ["buftube"] = {
         VMBodygroups = {
             {ind = 5, bg = 4},					
@@ -309,12 +316,13 @@ SWEP.Attachments = {
         Bone = "ak_frame",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, 2, 2.7),
+            vpos = Vector(0, 3, 4.5),
             vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
 		ExtraSightDist = 5,
+        InstalledEles = {"mount"},		
 		CorrectiveAng = Angle(0, 180, 0)			
     },
     {
@@ -378,7 +386,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_ak_mag"},
-        DefaultAttName = "Standard 5.56"
+        DefaultAttName = "30-Round 7.62mm"
     },
     {
         PrintName = "Stock",

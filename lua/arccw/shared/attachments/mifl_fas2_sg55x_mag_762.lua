@@ -1,4 +1,4 @@
-att.PrintName = "30-Round 7.62"
+att.PrintName = "30-Round 7.62mm"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
 att.Description = "Conversion to 7.62 effectiveley turns the weapon into a battle rifle, with increased recoil and reach."
 att.Desc_Pros = {

@@ -16,7 +16,7 @@ att.Mult_Recoil = 1
 att.Mult_RecoilSide = 1
 att.Mult_VisualRecoilMult = 1
 
-att.Mult_RPM = 1.5
+att.Mult_RPM = 1.35
 att.Mult_MoveSpeed = 1
 att.Mult_Damage =1
 att.Mult_DamageMin = 1
