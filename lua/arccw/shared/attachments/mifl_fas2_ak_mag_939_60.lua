@@ -1,4 +1,4 @@
-att.PrintName = "60-Round 7.62mm"
+att.PrintName = "60-Round 9x39mm"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
 att.Description = ""
 att.Desc_Pros = {
@@ -10,13 +10,13 @@ att.SortOrder = 60
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_mag"
 
-att.ActivateElements = {"60_762"}
+att.ActivateElements = {"60_939"}
 
 att.Mult_Recoil = 1
 att.Mult_RecoilSide = 1
 att.Mult_VisualRecoilMult = 1
 
-att.Mult_RPM = 1
+att.Mult_RPM = 1.4
 att.Mult_MoveSpeed = 1
 att.Mult_Damage =1
 att.Mult_DamageMin = 1

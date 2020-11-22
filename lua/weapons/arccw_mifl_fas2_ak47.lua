@@ -68,9 +68,9 @@ SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/sg55x/sg552_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/sg55x/sg552_suppressed_fire1.wav"
-SWEP.DistantShootSound = ")weapons/arccw_mifl/fas2/sg55x/sg550_distance_fire1.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/ak47/ak47_suppressed_fire1.wav"
+SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/ak47/ak47_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
@@ -90,8 +90,8 @@ SWEP.SightedSpeedMult = 0.725
 SWEP.SightTime = 0.375
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.293, -5, 1.08),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-4.401, -10, 1.417),
+    Ang = Angle(0.203, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
@@ -123,22 +123,22 @@ SWEP.BarrelLength = 24
 SWEP.AttachmentElements = {
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 3},					
+            {ind = 5, bg = 4},					
         },
     },
-    ["mifl_fas2_sg55x_stock_sniper"] = {
+    ["mifl_fas2_ak_stock_rpk"] = {
         VMBodygroups = {
-            {ind = 5, bg = 1},					
+            {ind = 5, bg = 2},					
         },
     },
-    ["mifl_fas2_sg55x_stock_sd"] = {
+    ["mifl_fas2_ak_stock_ske"] = {
         VMBodygroups = {
             {ind = 5, bg = 3},					
         },
     },	
-    ["mifl_fas2_sg55x_stock_soviet"] = {
+    ["mifl_fas2_ak_stock_no"] = {
         VMBodygroups = {
-            {ind = 5, bg = 2},					
+            {ind = 5, bg = 1},					
         },
     },
     ["mifl_fas2_ak_hg_svd"] = {
@@ -149,7 +149,7 @@ SWEP.AttachmentElements = {
         },		
         AttPosMods = {
             [3] = {
-                vpos = Vector(0, 30, 0.6),
+                vpos = Vector(0, 36, 1.8),
             },		
 		},			
     },
@@ -161,7 +161,7 @@ SWEP.AttachmentElements = {
         },		
         AttPosMods = {
             [3] = {
-                vpos = Vector(0, 30, 0.6),
+                vpos = Vector(0, 19.5, 1.8),
             },		
 		},			
     },	
@@ -172,15 +172,25 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 5},	
             {ind = 3, bg = 1},				
         },			
+        Override_IronSightStruct = {
+			Pos = Vector(-4.401, -10, 1),
+			Ang = Angle(1.5, 0, 0),
+            Magnification = 1.1,
+        },				
         AttPosMods = {
             [3] = {
-                vpos = Vector(0, 37.5, 0.6),
+                vpos = Vector(0, 15, 1.8),
             },		
 		},			
     },
     ["mifl_fas2_ak_hg_sd"] = {
         NameChange = "AS VAL",	
 		TrueNameChange = "AS VAL",
+        Override_IronSightStruct = {
+			Pos = Vector(-4.401, -10, 1.3),
+			Ang = Angle(0.4, 0, 0),
+            Magnification = 1.1,
+        },						
         VMBodygroups = {
             {ind = 2, bg = 1},	
             {ind = 3, bg = 1},				
@@ -189,6 +199,11 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_ak_hg_sdk"] = {
         NameChange = "AS VAL",	
 		TrueNameChange = "AS VAL",
+        Override_IronSightStruct = {
+			Pos = Vector(-4.401, -10, 1.3),
+			Ang = Angle(0.4, 0, 0),
+            Magnification = 1.1,
+        },			
         VMBodygroups = {
             {ind = 2, bg = 2},	
             {ind = 3, bg = 1},				
@@ -202,23 +217,33 @@ SWEP.AttachmentElements = {
         },			
         AttPosMods = {
             [3] = {
-                vpos = Vector(0, 9.8, 0.6),
+                vpos = Vector(0, 38, 1.8),
             },		
 		},			
     },	
     ["mifl_fas2_ak_hg_overlord"] = {
-        NameChange = "HOW",	
-		TrueNameChange = "HOW",
+        NameChange = "VOLK",	
+		TrueNameChange = "VOLK",
+        Override_IronSightStruct = {
+			Pos = Vector(-4.401, -10, -0.5),
+			Ang = Angle(0.4, 0, 0),
+            Magnification = 1.1,
+        },			
         VMBodygroups = {
             {ind = 2, bg = 4},	
             {ind = 3, bg = 1},				
         },			
         AttPosMods = {
             [3] = {
-                vpos = Vector(0, 15.5, 0.6),
+                vpos = Vector(0, 30.8, 1.8),
             },		
 		},			
     },
+    ["30_545"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 5},					
+        },
+    },	
     ["15_762"] = {
         VMBodygroups = {
             {ind = 1, bg = 1},					
@@ -241,10 +266,15 @@ SWEP.AttachmentElements = {
     },
     ["20_939"] = {
         VMBodygroups = {
+            {ind = 1, bg = 4},					
+        },
+    },	
+    ["40_939"] = {
+        VMBodygroups = {
             {ind = 1, bg = 7},					
         },
     },
-    ["40_939"] = {
+    ["60_939"] = {
         VMBodygroups = {
             {ind = 1, bg = 8},					
         },
@@ -276,7 +306,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = {"optic", "optic_lp"},
-        Bone = "weapon_main",
+        Bone = "ak_frame",
         DefaultAttName = "Iron Sights",
         Offset = {
             vpos = Vector(0, 2, 2.7),
@@ -290,10 +320,10 @@ SWEP.Attachments = {
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_ak_hg",
-        Bone = "weapon_main",	
-        DefaultAttName = "552",
+        Bone = "ak_frame",	
+        DefaultAttName = "Default Handguard",
         Offset = {
-            vpos = Vector(0.5, 8, -1),
+            vpos = Vector(0.3, 11, 1.5),
             vang = Angle(90, -90, -90),
 		}			
     },
@@ -301,19 +331,19 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "weapon_main",
+        Bone = "ak_frame",
         Offset = {
-            vpos = Vector(0, 17.5, 0.6),
+            vpos = Vector(0, 31, 1.8),
             vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_sg55x_barrel_sd"},		
+        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk"},		
     },	
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
-        Bone = "weapon_main",
+        Bone = "ak_frame",
         Offset = {
             vpos = Vector(0, 10, -1),
             vang = Angle(90, -90, -90),
@@ -326,7 +356,7 @@ SWEP.Attachments = {
         PrintName = "INTEG-UBGL",
         Hidden = true,
         Slot = "ubgl",
-        Bone = "weapon_main",
+        Bone = "ak_frame",
         Offset = {
             vpos = Vector(0, 7, -1),
             vang = Angle(90, -90, -90),
@@ -337,7 +367,7 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "weapon_main",
+        Bone = "ak_frame",
         Offset = {
             vpos = Vector(-1, 8, 0.5),
             vang = Angle(0, -90, -90),
@@ -352,11 +382,11 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_sg55x_stock", "mifl_fas2_uni_stock" },
+        Slot = {"go_stock", "mifl_fas2_ak47_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "weapon_main",
+        Bone = "ak_frame",
         Offset = {
-            vpos = Vector(-0.2, -1.8, -0.2),
+            vpos = Vector(-0.2, 0, 1),
             vang = Angle(0, -90, 0),
         },
         VMScale = Vector(1, 1, 1)
@@ -374,7 +404,7 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "weapon_main", -- relevant bone any attachments will be mostly referring to
+        Bone = "ak_frame", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.8, 2, 0.8), -- offset that the attachment will be relative to the bone
             vang = Angle(0, -90, 0),
@@ -384,10 +414,14 @@ SWEP.Attachments = {
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
     local installed = wep.Attachments[7].Installed
-	if installed == "mifl_fas2_sg55x_mag_45" then
-		return anim .. "_45"
-    elseif installed == "mifl_fas2_sg55x_mag_762" then
-		return anim .. "_762"
+	if not installed or installed == "mifl_fas2_ak_mag_545" then
+		        if anim == "reload_nomen_empty" then
+            return "reload_nomen_empty_2"
+				end
+    end		
+	
+	if installed == "mifl_fas2_ak_mag_919_30" or installed == "mifl_fas2_ak_mag_919_50" then
+		return anim .. "_pp19"
     end		
 end
 
@@ -395,40 +429,22 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle" .. "_iron",
     },
-    ["idle_empty"] = {
-        Source = "idle_empty" .. "_iron",
-    },	
-    ["idle_sights"] = {
-        Source = "idle_iron",
-    },
-    ["idle_sights_empty"] = {
-        Source = "idle_empty_iron",
-    },	
     ["draw"] = {
         Source = "deploy",
+		Time = 1,		
     },
-    ["draw_empty"] = {
-        Source = "deploy_empty",
-    },	
     ["ready"] = {
-        Source = "deploy_1st",
+        Source = "deploy",
+		Time = 1,
     },
     ["fire"] = {
         Source = {"fire"},
         ShellEjectAt = 0,
     },
-    ["fire_empty"] = {
-        Source = {"fire_last"},
-        ShellEjectAt = 0,
-    },	
     ["fire_iron"] = {
         Source = "fire_scoped",
         ShellEjectAt = 0,
     },
-    ["fire_iron_empty"] = {
-        Source = "fire_scoped_last",
-        ShellEjectAt = 0,
-    },	
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -451,10 +467,46 @@ SWEP.Animations = {
         LHIKOut = 0.8,		
     },
     ["reload_nomen_empty"] = {
+        Source = "reload_empty_2",		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.6,
+    },	
+    ["reload_nomen_empty_2"] = {
         Source = "reload_empty_nomen",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.6,
-    },			
+    },		
+	
+    ["reload_pp19"] = {
+        Source = "reload_pp19",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 1,
+    },
+    ["reload_empty_pp19"] = {
+        Source = "reload_empty_pp19",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 1,
+    },	
+    ["reload_nomen_pp19"] = {
+        Source = "reload_pp19",		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.8,		
+    },
+    ["reload_nomen_empty_pp19"] = {
+        Source = "reload_empty_pp19",		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.6,
+    },	
 }

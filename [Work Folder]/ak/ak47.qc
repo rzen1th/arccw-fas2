@@ -15,7 +15,7 @@ $bodygroup "Mag"
 	studio "762_10.smd"
 	studio "762_45.smd"	
 	studio "762_60.smd"	
-	studio "762.smd"
+	studio "939.smd"
 	studio "545.smd"
 	studio "939_10.smd"	
 	studio "939_40.smd"	
@@ -58,6 +58,8 @@ $bodygroup "Stock"
 
 $illumposition 0 0 0
 
+$cdmaterials "models\weapons\arccw_fas2\sterling\"
+$cdmaterials "models\weapons\arccw_fas2\sterling\"
 $cdmaterials "models\weapons\arccw_fas2\akm\"
 $cdmaterials "models\weapons\arccw_fas2\ak_extra\"
 $cdmaterials "models\weapons\arccw_fas2\hands\"
@@ -136,6 +138,7 @@ $sequence "idle" {
 	fadein 0.2
 	fadeout 0.2
 	fps 30
+	snap
 }
 
 $sequence "idle_scoped" {

@@ -567,3 +567,49 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/mp5/mp5_selectorswitch.wav"}
 })
+
+
+
+
+
+
+
+
+
+//AK
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_AK47.Bolt1",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_cock1.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_AK47.Bolt2",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_cock2.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_AK47.BoltPull",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_cock.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_AK47.MagOut",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_AK47.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_magout_empty.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_AK47.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_magin.wav"}
+})
