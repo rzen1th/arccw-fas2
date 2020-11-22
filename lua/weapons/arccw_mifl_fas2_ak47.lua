@@ -353,7 +353,7 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "ak_frame",
         Offset = {
-            vpos = Vector(0, 10, -1),
+            vpos = Vector(0, 12, 0),
             vang = Angle(90, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -366,7 +366,7 @@ SWEP.Attachments = {
         Slot = "ubgl",
         Bone = "ak_frame",
         Offset = {
-            vpos = Vector(0, 7, -1),
+            vpos = Vector(0, 10.5, 0),
             vang = Angle(90, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -377,11 +377,11 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "ak_frame",
         Offset = {
-            vpos = Vector(-1, 8, 0.5),
+            vpos = Vector(-1, 12, 2),
             vang = Angle(0, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
-        },
+        },		
     },
     {
         PrintName = "Magazine",

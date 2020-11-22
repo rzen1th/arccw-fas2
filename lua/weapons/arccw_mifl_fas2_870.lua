@@ -129,6 +129,8 @@ SWEP.WorldModelOffset = {
     ang = Angle(-10, 0, 180)
 }
 
+SWEP.ShellRotateAngle = Angle(5, 90, 0)
+
 SWEP.MirrorVMWM = true
 
 SWEP.Attachments = {

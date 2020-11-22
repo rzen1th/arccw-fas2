@@ -58,7 +58,7 @@ $bodygroup "Stock"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\arccw_fas2\sterling\"
+$cdmaterials "models\weapons\arccw_fas2\svd\"
 $cdmaterials "models\weapons\arccw_fas2\sterling\"
 $cdmaterials "models\weapons\arccw_fas2\akm\"
 $cdmaterials "models\weapons\arccw_fas2\ak_extra\"
