@@ -144,6 +144,28 @@ SWEP.AttachmentElements = {
             },				
 		},			
     },
+    ["mifl_fas2_famas_barrel_xs"] = {
+        NameChange = "Fusile XS",	
+		TrueNameChange = "Famas XS",		
+        VMBodygroups = {
+            {ind = 1, bg = 4},	
+            {ind = 5, bg = 1},				
+        },
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(-3.3, 14, -2),
+            },			
+            [3] = {
+                vpos = Vector(-3.3, 22.8, -4.4),
+            },	
+            [4] = {
+				vpos = Vector(-3.4, 22, -6),
+            },	
+            [6] = {
+				vpos = Vector(-2.5, 20, -4.4),
+            },				
+		},		
+    },		
     ["mifl_fas2_famas_barrel_commando"] = {
         NameChange = "Fusile Kurz",	
 		TrueNameChange = "Famas PDW",		
@@ -212,6 +234,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if optic then
 		if		type == "mifl_fas2_famas_barrel_felin" then
 			vm:SetBodygroup(2, 0)
+		elseif	type == "mifl_fas2_famas_barrel_xs" then
+			vm:SetBodygroup(2, 4)
+			vm:SetBodygroup(5, 0)			
 		elseif	type == "mifl_fas2_famas_barrel_commando" then
 			vm:SetBodygroup(2, 1)
 		elseif	type == "mifl_fas2_famas_barrel_sd" then

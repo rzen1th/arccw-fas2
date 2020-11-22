@@ -250,10 +250,15 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 1, bg = 5},					
         },
-    },	
-    ["15_762"] = {
+    },
+    ["30_545"] = {
         VMBodygroups = {
-            {ind = 1, bg = 1},					
+            {ind = 1, bg = 5},					
+        },
+    },	
+    ["10_953"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 11},					
         },
     },
     ["45_762"] = {
@@ -266,6 +271,11 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 3},					
         },
     },
+    ["15_762"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 1},					
+        },
+    },	
     ["10_939"] = {
         VMBodygroups = {
             {ind = 1, bg = 6},					
