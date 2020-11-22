@@ -1,7 +1,7 @@
 att.PrintName = "Left Shield"
 att.Icon = Material("entities/arccw_mifl_lhand_shield.png", "smooth")
 att.Description = "SHOE"
-att.Hidden = false
+att.Hidden = true
 att.Desc_Pros = {
     "may or may not block bullets",
 }
