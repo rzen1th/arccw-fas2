@@ -391,6 +391,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,		
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -398,21 +399,22 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
+        LHIKEaseOut = 0.7,		
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.7,		
+        LHIKOut = 0.7,			
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.4,
-        LHIKEaseOut = 1,			
+        LHIKOut = 0.5,
+        LHIKEaseOut = 1.2,			
     },	
 	
 	

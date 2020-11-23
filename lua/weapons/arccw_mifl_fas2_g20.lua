@@ -365,18 +365,12 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["holster"] = {
         Source = "holster",
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["ready"] = {
         Source = "draw",
