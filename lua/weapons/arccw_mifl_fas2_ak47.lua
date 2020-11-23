@@ -326,7 +326,7 @@ SWEP.Attachments = {
         Bone = "ak_frame",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, 3, 4.5),
+            vpos = Vector(0, 3, 4.2),
             vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -467,8 +467,18 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 1,
+        LHIKIn = 0.5,		
+		LHIKTimeline = {
+			{
+				t = 0.5,
+				lhik = 0,
+			},
+			{
+				t = 0.5,
+				lhik = 1,
+			},
+		},		
+        LHIKOut = 0.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",

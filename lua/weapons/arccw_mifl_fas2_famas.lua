@@ -368,7 +368,8 @@ SWEP.Animations = {
         Source = "deploy_1",
         LHIK = true,
         LHIKIn = 0,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,		
         SoundTable = {
             {
             s = "weapons/arccw_mifl/fas2/famas/famas_cock.wav",
@@ -410,7 +411,8 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKOut = 0.4,
+        LHIKEaseOut = 1,			
     },	
 	
 	
