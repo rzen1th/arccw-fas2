@@ -308,8 +308,6 @@ SWEP.AttachmentElements = {
     },	
 }
 
-SWEP.ExtraSightDist = 10
-
 SWEP.WorldModelOffset = {
     pos = Vector(-13, 5.5, -5),
     ang = Angle(0, 0, 180)
@@ -331,7 +329,7 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-		ExtraSightDist = 5,
+		ExtraSightDist = 7,
         InstalledEles = {"mount"},		
 		CorrectiveAng = Angle(0, 180, 0)			
     },
@@ -513,28 +511,38 @@ SWEP.Animations = {
         Source = "reload_pp19",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 1,
+        LHIKEaseIn = 0.5,			
+        LHIKIn = 0.8,				
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
     },
     ["reload_empty_pp19"] = {
         Source = "reload_empty_pp19",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 1,
+        LHIKEaseIn = 0.5,			
+        LHIKIn = 0.8,				
+        LHIKOut = 1.4,
+        LHIKEaseOut = 0.4,	
     },	
     ["reload_nomen_pp19"] = {
         Source = "reload_pp19",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.8,		
+		Mult = 0.8,
+        LHIKEaseIn = 0.5,			
+        LHIKIn = 0.8,				
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
     },
     ["reload_nomen_empty_pp19"] = {
         Source = "reload_empty_pp19",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		Mult = 0.8,		
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.6,
+        LHIKEaseIn = 0.5,			
+        LHIKIn = 0.8,				
+        LHIKOut = 1.4,
+        LHIKEaseOut = 0.4,
     },	
 }
