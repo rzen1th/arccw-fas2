@@ -230,7 +230,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.MirrorVMWM = true
-
+--[[]
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local type = wep.Attachments[2].Installed
@@ -270,7 +270,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         vm:SetBodygroup(3, 3)
     end
 end
-
+]]
 SWEP.Attachments = {
     {
         PrintName = "Optic",
