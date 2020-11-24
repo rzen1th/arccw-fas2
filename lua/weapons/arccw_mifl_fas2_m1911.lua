@@ -279,7 +279,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = "mifl_fas2_m1911_mag",
-        DefaultAttName = "7-Round 9mm"
+        DefaultAttName = "7-Round .45ACP"
     },
     {
         PrintName = "Left Hand",

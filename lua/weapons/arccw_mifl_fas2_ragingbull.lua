@@ -202,11 +202,11 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "RagingBullBase",
         Offset = {
-            vpos = Vector(8, -2, 0), -- offset that the attachment will be relative to the bone
+            vpos = Vector(8, -2, 0), 
             vang = Angle(0, 0, -90),
-            wpos = Vector(6, -0.253, -3.75),
-            wang = Angle(-8.829, -0.556, 90)
         },
+		ExtraSightDist = 15,
+		CorrectivePos = Vector(0.4, -2, -0.25),			
     },
     {
         PrintName = "Ammo Type",

@@ -262,6 +262,8 @@ SWEP.Attachments = {
             vang = Angle(0, -90, 0),
         },
         InstalledEles = {"rail_2"},
+		ExtraSightDist = 20,
+		CorrectivePos = Vector(1, -2, 0.5),				
     },
     {
         PrintName = "Slide",
