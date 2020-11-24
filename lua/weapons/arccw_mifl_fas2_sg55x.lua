@@ -77,7 +77,7 @@ SWEP.SightedSpeedMult = 0.775
 SWEP.SightTime = 0.32
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.293, -5, 1.08),
+    Pos = Vector(-3.293, -5, 1.125),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -115,7 +115,11 @@ SWEP.AttachmentElements = {
     },
     ["whisperer"] = {
         NameChange = "Gevär-552S",
-        TrueNameChange = "SG-552S"
+        TrueNameChange = "SG-552S",
+        VMBodygroups = {
+            {ind = 2, bg = 4},
+            {ind = 3, bg = 2},
+        },
     },
     ["mifl_fas2_sg55x_barrel_550"] = {
         NameChange = "Gevär-550",
@@ -124,7 +128,11 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(0, 30, 0.6)
             }
-        }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 2},
+            {ind = 3, bg = 1},
+        },
     },
     ["mifl_fas2_sg55x_barrel_551"] = {
         NameChange = "Gevär-551",
@@ -133,7 +141,12 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(0, 37.5, 0.6)
             }
-        }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 1},
+            {ind = 3, bg = 7},
+        },
+        VMSkin = 1,
     },
     ["mifl_fas2_sg55x_barrel_kompact"] = {
         NameChange = "Gevär-762",
@@ -142,7 +155,11 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(0, 21.8, 0.6)
             }
-        }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 3},
+            {ind = 3, bg = 2},
+        },
     },
     ["mifl_fas2_sg55x_barrel_kompact2"] = {
         NameChange = "Gevär-552C",
@@ -151,7 +168,11 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(0, 13.5, 0.6)
             }
-        }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 4},
+            {ind = 3, bg = 2},
+        },
     },
     ["mifl_fas2_sg55x_barrel_no"] = {
         NameChange = "Gevär-XS",
@@ -160,7 +181,11 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(0, 9.8, 0.6)
             }
-        }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 6},
+            {ind = 3, bg = 5},
+        },
     },
     ["mifl_fas2_sg55x_barrel_saf"] = {
         NameChange = "Gevär-SAF",
@@ -169,7 +194,11 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(0, 15.5, 0.6)
             }
-        }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 7},
+            {ind = 3, bg = 6},
+        },
     },
     ["mifl_fas2_sg55x_barrel_saf2"] = {
         NameChange = "Gevär-SAF M.0",
@@ -191,7 +220,11 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(0, 23, 1.8)
             }
-        }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 6},
+            {ind = 3, bg = 3},
+        },
     },
     ["32"] = {
         VMBodygroups = {{ind = 1, bg = 3}}
@@ -230,47 +263,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.MirrorVMWM = true
---[[]
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local vm = data.vm
-    local type = wep.Attachments[2].Installed
 
-    -- SNIPER 551
-    if type == "mifl_fas2_sg55x_barrel_551" then
-        vm:SetBodygroup(2, 1)
-        vm:SetBodygroup(3, 7)
-        vm:SetSkin(1)
-    elseif type == "mifl_fas2_sg55x_barrel_550" then
-        -- FULL LENGTH 550
-        vm:SetBodygroup(2, 2)
-        vm:SetBodygroup(3, 1)
-    elseif type == "mifl_fas2_sg55x_barrel_kompact" then
-        -- 762
-        vm:SetBodygroup(2, 3)
-        vm:SetBodygroup(3, 2)
-    elseif type == "mifl_fas2_sg55x_barrel_sd" then
-        -- 552S
-        vm:SetBodygroup(2, 4)
-        vm:SetBodygroup(3, 2)
-    elseif type == "mifl_fas2_sg55x_barrel_kompact2" then
-        -- 552C
-        vm:SetBodygroup(2, 5)
-        vm:SetBodygroup(3, 4)
-    elseif type == "mifl_fas2_sg55x_barrel_no" then
-        -- XS
-        vm:SetBodygroup(2, 6)
-        vm:SetBodygroup(3, 5)
-    elseif type == "mifl_fas2_sg55x_barrel_saf" then
-        -- SAF
-        vm:SetBodygroup(2, 7)
-        vm:SetBodygroup(3, 6)
-    elseif type == "mifl_fas2_sg55x_barrel_saf2" then
-        -- SAF MOD 0
-        vm:SetBodygroup(2, 6)
-        vm:SetBodygroup(3, 3)
-    end
-end
-]]
 SWEP.Attachments = {
     {
         PrintName = "Optic",
