@@ -398,14 +398,16 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.7,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.6,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
@@ -413,13 +415,15 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.6,
+        LHIKEaseOut = 0.4,	
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.7,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
 ---------------------------------------------------------
     ["reload_33"] = {
@@ -427,14 +431,16 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.7,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_empty_33"] = {
         Source = "reload_empty_33",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.6,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_nomen_33"] = {
         Source = "reload_nomen_33",
@@ -442,13 +448,15 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.6,
+        LHIKEaseOut = 0.4,	
     },
     ["reload_nomen_empty_33"] = {
         Source = "reload_empty_nomen_33",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.7,
+        LHIKOut = 1,
+        LHIKEaseOut = 0.4,	
     },	
 	
 --------------------------------------------------------
