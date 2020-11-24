@@ -112,8 +112,8 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
-SWEP.HolsterPos = Vector(1, 0, 2)
-SWEP.HolsterAng = Angle(-5, 5, 0)
+SWEP.HolsterPos = Vector(1, -2, 2)
+SWEP.HolsterAng = Angle(-15, 5, -10)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -153,7 +153,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [1] = {
-                vpos = Vector(-3.3, 14, -2),
+                vpos = Vector(-3.3, 13, -2),
             },			
             [3] = {
                 vpos = Vector(-3.3, 22.8, -4.4),
@@ -319,7 +319,8 @@ SWEP.Attachments = {
             vpos = Vector(-2.5, 25, -4.4),
             vang = Angle(90, -90, 0),
         },
-        ExcludeFlags = {"go_m4_barrel_stub"}
+		ExtraSightDist = 15,
+		CorrectivePos = Vector(0.4, -2, -0.25),			
     },
     {
         PrintName = "Magazine",
@@ -368,7 +369,8 @@ SWEP.Animations = {
         Source = "deploy_1",
         LHIK = true,
         LHIKIn = 0,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,		
         SoundTable = {
             {
             s = "weapons/arccw_mifl/fas2/famas/famas_cock.wav",
@@ -388,29 +390,35 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
+        LHIKEaseIn = 0.4,		
         LHIKIn = 0.5,
         LHIKOut = 0.7,
+        LHIKEaseOut = 0.5,		
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
+        LHIKEaseIn = 0.4,			
         LHIKIn = 0.5,
-        LHIKOut = 0.7,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,		
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
+        LHIK = true,		
         LHIKIn = 0.5,
-        LHIKOut = 0.7,		
+        LHIKOut = 0.7,	
+        LHIKEaseOut = 0.4,			
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
+        LHIK = true,		
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        LHIKEaseOut = 0.4,			
     },	
 	
 	
@@ -419,28 +427,34 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
+        LHIKEaseIn = 0.4,		
         LHIKIn = 0.5,
         LHIKOut = 0.7,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_empty_felin"] = {
         Source = "reload_empty_felin",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
+        LHIKEaseIn = 0.4,			
         LHIKIn = 0.5,
-        LHIKOut = 0.7,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_nomen_felin"] = {
         Source = "reload_nomen",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
+        LHIK = true,		
         LHIKIn = 0.5,
-        LHIKOut = 0.7,		
+        LHIKOut = 0.7,	
+        LHIKEaseOut = 0.4,		
     },
     ["reload_nomen_empty_felin"] = {
         Source = "reload_empty_nomen_felin",			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
+        LHIK = true,		
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        LHIKEaseOut = 0.4,	
     },			
 }

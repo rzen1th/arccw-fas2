@@ -110,7 +110,7 @@ SWEP.CrouchPos = Vector(-0.45, 0, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.HolsterPos = Vector(1, 0, 2)
-SWEP.HolsterAng = Angle(-5, 5, 0)
+SWEP.HolsterAng = Angle(-15, 5, -10)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -417,7 +417,8 @@ SWEP.Attachments = {
             vpos = Vector(10, -2, 0.5),
             vang = Angle(0, 0, 180),
         },
-        ExcludeFlags = {"go_m4_barrel_stub"},
+		ExtraSightDist = 18,
+		CorrectivePos = Vector(0, -2, 1.5),			
     },	
     {
         PrintName = "Magazine",

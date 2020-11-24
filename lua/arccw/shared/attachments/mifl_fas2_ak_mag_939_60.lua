@@ -34,3 +34,8 @@ att.Hook_GetShootSound = function(wep, fsound)
 		return "weapons/arccw_mifl/fas2/m249/m249_suppressed_fire1.wav"
     end
 end
+
+att.Override_Trivia_Calibre = "9x39mm"
+att.Override_Ammo = "smg1"
+
+att.AddSuffix = "/9"

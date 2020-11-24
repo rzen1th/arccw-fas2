@@ -177,6 +177,7 @@ $sequence "holster" {
 	activity "ACT_VM_HOLSTER" 1
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 30
 }
 
@@ -185,6 +186,7 @@ $sequence "holster_empty" {
 	activity "ACT_VM_HOLSTER_EMPTY" 1
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 30
 }
 

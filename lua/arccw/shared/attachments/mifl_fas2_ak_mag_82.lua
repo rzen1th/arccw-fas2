@@ -25,6 +25,8 @@ att.Mult_Penetration = 2
 att.Mult_MuzzleVelocity = 1.2
 att.Override_ClipSize = 10
 
+att.Mult_AccuracyMOA = 0.7
+
 att.Hook_GetShootSound = function(wep, fsound)
 	if fsound == "weapons/arccw_mifl/fas2/sg55x/sg552_fire1.wav" then 
 		return "weapons/arccw_mifl/fas2/m249/m249_fire1.wav"

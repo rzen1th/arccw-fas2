@@ -17,6 +17,10 @@ att.Mult_MoveSpeed = 0.8
 att.Add_BarrelLength = 14
 att.Mult_ShootPitch = 0.9
 
+att.Mult_AccuracyMOA = 0.5
+att.Mult_HipDispersion = 1.4
+att.Mult_SightsDispersion = 0.7
+
 att.Override_Firemodes_Priority = 12
 att.Override_Firemodes = {
     {

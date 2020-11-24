@@ -190,11 +190,11 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "M82_Body",
         Offset = {
-            vpos = Vector(-1, -2.2, 15), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, 180),
-            wpos = Vector(15.625, -0.253, -6.298),
-            wang = Angle(-8.829, -0.556, 90)
+            vpos = Vector(-0.8, 2, -1.2), -- offset that the attachment will be relative to the bone
+            vang = Angle(180, -90, 90),
         },
+		ExtraSightDist = 22,
+		CorrectivePos = Vector(-1, -1, -2),			
     },
     {
         PrintName = "Ammo Type",
@@ -265,16 +265,20 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		MinProgress = 3.5,
         LHIK = true,
-        LHIKIn = 0.75,
-        LHIKOut = 0.75,
+        LHIKEaseIn = 0.5,			
+        LHIKIn = 1,
+        LHIKOut = 1,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_empty"] = {
         Source = "reload_empty",	
 		MinProgress = 3.5,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKIn = 0.75,
-        LHIKOut = 0.75,
+        LHIKEaseIn = 0.5,			
+        LHIKIn = 1,
+        LHIKOut = 2.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",

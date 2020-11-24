@@ -252,6 +252,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         InstalledEles = {"rail_2"},
+		ExtraSightDist = 13,
+		CorrectivePos = Vector(0.4, -2, -0.25),	
     },
     {
         PrintName = "Slide",
@@ -277,7 +279,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = "mifl_fas2_m1911_mag",
-        DefaultAttName = "7-Round 9mm"
+        DefaultAttName = "7-Round .45ACP"
     },
     {
         PrintName = "Left Hand",
@@ -355,18 +357,12 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["holster"] = {
-        Source = "holster",
+        Source = "Holster",
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["ready"] = {
         Source = "draw",
@@ -393,7 +389,8 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,		
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.3,	
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -401,7 +398,8 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,			
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
@@ -409,7 +407,8 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,			
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.4,	
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
@@ -417,7 +416,8 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,			
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.5,	
     },
 ---------------------------------------------------------
     ["reload_50"] = {
@@ -426,7 +426,8 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,		
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.3,	
     },
     ["reload_empty_50"] = {
         Source = "reload_empty_50",
@@ -434,7 +435,8 @@ SWEP.Animations = {
 		LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,	
     },
     ["reload_nomen_50"] = {
         Source = "reload_nomen_50",
@@ -442,7 +444,8 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.4,
     },
     ["reload_nomen_empty_50"] = {
         Source = "reload_empty_nomen_50",
@@ -450,7 +453,8 @@ SWEP.Animations = {
 		LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3,	
     },	
 	
 --------------------------------------------------------
