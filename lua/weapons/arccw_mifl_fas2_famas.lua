@@ -319,7 +319,8 @@ SWEP.Attachments = {
             vpos = Vector(-2.5, 25, -4.4),
             vang = Angle(90, -90, 0),
         },
-        ExcludeFlags = {"go_m4_barrel_stub"}
+		ExtraSightDist = 15,
+		CorrectivePos = Vector(0.4, -2, -0.25),			
     },
     {
         PrintName = "Magazine",
