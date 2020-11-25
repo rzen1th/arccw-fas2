@@ -9,6 +9,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 
 att.ActivateElements = {"whisperer"}
+att.GivesFlags = {"mifl_fas2_m249_barrel_sd"}
 
 att.Slot = "mifl_fas2_m249_hg"
 
