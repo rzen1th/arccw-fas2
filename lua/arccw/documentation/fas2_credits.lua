@@ -21,9 +21,12 @@ With the aim of
 --- please dont fucking make cheaty attachment or anything like that
 --- thank you very much
 
+
+[short credits]
 /*
 [blank slot] - [insert thing]
 Fesiug - QCI, anything related to coding and other stuff
+TheOnly8Z - Various tweaks and good shit
 oranchepopsicle - Bottom Text 
 FA:S 2.0 - Assets
 
@@ -73,6 +76,10 @@ Fesiug
 -spawnicon
 -other stuff i forgot idk
 
+TheOnly8Z
+-clean up crew
+-stuff
+
 oranchepopsicle
 -funi descriptions and names [weapon/attachment]
 
@@ -92,7 +99,7 @@ Infinity Ward / Beenox / CoD dev in general
 -Raptor Kit (MW2CR)
 -Suppressed sound and firing sound for calibre conversion (Mostly MW19)
 
-Saber Interactive (World War Z) -- quite ebic assets doe
+Saber Interactive (World War Z) -- quite ebin assets ngl
 -Felin (+big ass scope)
 
 Crytek (Warface)

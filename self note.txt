@@ -1,11 +1,10 @@
-THE FUCKING M249 BELT
-- mammal
+STOCK ICON
+M1911 SD WEHN
+tritium sight
+mp5 non navy stonk
 
-when the sd handguard
-- also mammal 
 
-
-worldmodel and "tpp_idle"(m4 done)
+worldmodel and "tpp_idle"(g20 still missing)
 - who even read this lmayo
 
 THE FUCKING STATS (STOCK)
