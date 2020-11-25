@@ -365,11 +365,18 @@ function SWEP:Hook_NameChange(name)
                 post = "953"
             end
         end
-        if (pre != "PP-19") and stock == "mifl_fas2_ak_stock_ske" then
+        if (pre == "AK" or pre == "RPK") and stock == "mifl_fas2_ak_stock_ske" then
+            if post == "M" then pre = "AKM" post = "" end
             pre = pre .. "S"
         end
         if (pre != "PP-19") and handguard == "mifl_fas2_ak_hg_k" then
             post = post .. "U"
+        elseif handguard == "mifl_fas2_ak_hg_xs" then
+            post = post .. " Kurz"
+        elseif handguard == "mifl_fas2_ak_hg_svd" then
+            post = post .. " DMR"
+        elseif handguard == "mifl_fas2_ak_hg_overlord" then
+            pre = "OVERLORD"
         end
     end
 
@@ -501,8 +508,8 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local installed = wep.Attachments[7].Installed
 
-    if not installed or installed == "mifl_fas2_ak_mag_545" then
-        if anim == "reload_nomen_empty" then return "reload_nomen_empty_2" end
+    if !installed or installed == "mifl_fas2_ak_mag_545" and anim == "reload_nomen_empty" then
+        return "reload_nomen_empty_2"
     end
 
     if installed == "mifl_fas2_ak_mag_919_30" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_pp19" end

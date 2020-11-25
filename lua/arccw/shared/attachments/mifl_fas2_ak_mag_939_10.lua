@@ -24,7 +24,6 @@ att.Mult_ShootVol = 0.85
 att.Mult_RPM = 1.2
 att.Mult_Range = 0.9
 
-att.Override_Trivia_Calibre = "9x39mm"
 att.Override_Ammo = "smg1"
 att.Override_PhysTracerProfile = 5
 att.Override_TracerNum = 0
