@@ -139,10 +139,6 @@ SWEP.AttachmentElements = {
     },		
 }
 
-SWEP.RejectAttachments = {
-    ["perk_fastreload"] = true	
-}
-
 SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
@@ -258,7 +254,7 @@ SWEP.Animations = {
     ["fire_iron"] = {
         Source = "iron",
         ShellEjectAt = 0,
-		Time = 0,
+		Time = 0.4,
     },
     ["reload"] = {
         Source = "reload",
