@@ -8,10 +8,10 @@ att.Desc_Cons = {
 att.SortOrder = 10
 att.AutoStats = true
 att.Slot = {"mifl_fas2_m4a1_mag", "mifl_fas2_m249_mag", "mifl_fas2_famas_mag"}
-
+--[[]
 att.Mult_SightTime = 1.1
 att.Mult_ReloadTime = 1.175
-
+]]
 att.Override_ClipSize = 10
 att.Mult_Damage = 2.3
 att.Mult_DamageMin = 1.6
@@ -35,8 +35,8 @@ att.Mult_RPM = 0.7
 att.Override_Ammo = "357"
 att.Override_Trivia_Calibre = ".50 Beowulf"
 att.Override_Trivia_Class = "Desginated Marksman Rifle"
-att.ActivateElements = {"60"}
-
+--att.ActivateElements = {"60"}
+--[[]
 att.Override_Firemodes_Priority = 10
 att.Override_Firemodes = {
     {
@@ -46,5 +46,5 @@ att.Override_Firemodes = {
         Mode = 0
     }
 }
-
+]]
 att.AddSuffix = " C50"

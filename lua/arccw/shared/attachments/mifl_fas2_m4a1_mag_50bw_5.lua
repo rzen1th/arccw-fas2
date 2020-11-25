@@ -11,7 +11,7 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_m4a1_mag"
 
 att.Mult_SightTime = 0.9
-att.Mult_ReloadTime = 1.1
+att.Mult_ReloadTime = 0.9
 
 att.Override_ClipSize = 5
 att.Mult_Damage = 2.3
@@ -35,7 +35,7 @@ att.Override_Ammo = "357"
 att.Override_Trivia_Calibre = ".50 Beowulf"
 att.Override_Trivia_Class = "Desginated Marksman Rifle"
 att.ActivateElements = {"20"}
-
+--[[]
 att.Override_Firemodes_Priority = 10
 att.Override_Firemodes = {
     {
@@ -45,5 +45,5 @@ att.Override_Firemodes = {
         Mode = 0
     }
 }
-
+]]
 att.AddSuffix = " C50"
