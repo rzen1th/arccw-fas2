@@ -190,7 +190,7 @@ SWEP.Attachments = {
             vang = Angle(180, -90, 90),
         },
 		ExtraSightDist = 22,
-		CorrectivePos = Vector(-1, -1, -2),			
+		CorrectivePos = Vector(2, -2, 0),		
     },
     {
         PrintName = "Ammo Type",
