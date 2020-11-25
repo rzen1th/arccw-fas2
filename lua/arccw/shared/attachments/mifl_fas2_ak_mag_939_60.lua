@@ -11,7 +11,7 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_ak_mag"
 
 -- 60rnd
-att.ActivateElements = {"60_939"}
+att.ActivateElements = {"60_939", "9x39mm"}
 att.Override_ClipSize = 60
 att.Mult_MoveSpeed = 0.85
 att.Mult_SightTime = 1.25
@@ -19,11 +19,13 @@ att.Override_ClipSize = 60
 att.Mult_ReloadTime = 1.25
 
 -- 7.62x39 -> 9x39mm stats
-att.Mult_Damage = 0.8
+att.Mult_Damage = 0.75
 att.Mult_DamageMin = 0.9
 att.Mult_Recoil = 0.7
 att.Mult_ShootVol = 0.85
 att.Mult_RPM = 1.2
+att.Mult_Range = 0.9
 
 att.Override_Trivia_Calibre = "9x39mm"
 att.Override_Ammo = "smg1"
+att.Override_PhysTracerProfile = 5

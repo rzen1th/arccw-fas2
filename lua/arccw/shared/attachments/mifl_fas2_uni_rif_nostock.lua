@@ -9,6 +9,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_uni_stock"
 att.ActivateElements = {"mifl_fas2_sg55x_stock_sd"}
+
 att.Mult_Recoil = 1.8
 att.Mult_RecoilSide = 1.5
 att.Mult_SightTime = 0.75

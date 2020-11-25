@@ -1,6 +1,6 @@
 att.PrintName = "Shaft Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
-att.Description = ""
+att.Description = "Snub nosed AS Val. The short barrel and suppressor is insufficient for fully dampening the weapon sound, but it handles better."
 att.SortOrder = 1
 att.Desc_Pros = {
 }
@@ -9,20 +9,19 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_hg"
 
-att.Mult_MoveSpeed = 1.2
+att.Mult_MoveSpeed = 1.15
+att.Mult_SightedMoveSpeed = 1.25
 
 att.Silencer = true
 att.Override_MuzzleEffect = "muzzleflash_suppressed"
 
-att.Mult_ShootPitch = 1.6
-att.Mult_ShootVol = 0.8
-att.Mult_Range = 0.9
-
+att.Mult_ShootPitch = 1.5
+att.Mult_ShootVol = 0.85
+att.Mult_Range = 0.7
 att.Mult_SightTime = 0.7
-
-att.Mult_HipDispersion = 1.5
-
-att.Override_PhysTracerProfile = 5
+att.Mult_RPM = 1.3
+att.Mult_Recoil = 1.3
+att.Mult_AccuracyMOA = 1.5
 
 att.LHIK = true
 att.LHIK_Priority = -2

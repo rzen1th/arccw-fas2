@@ -9,7 +9,7 @@ att.SortOrder = 30
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_mag"
 
-att.ActivateElements = {"30_545"}
+att.ActivateElements = {"30_545", "5.45x39mm"}
 
 att.Mult_Damage = 0.9
 att.Mult_DamageMin = 0.9
