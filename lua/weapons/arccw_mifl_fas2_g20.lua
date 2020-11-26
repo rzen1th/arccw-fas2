@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
-SWEP.Spawnable = true 
-SWEP.Category = "ArcCW - FA:S2" 
+SWEP.Spawnable = true
+SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "HKP20"
@@ -121,56 +121,56 @@ SWEP.BarrelLength = 24
 SWEP.AttachmentElements = {
     ["mifl_fas2_g20_stock_g18"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1},			
+            {ind = 3, bg = 1},
         },
     },
     ["mifl_fas2_g20_stock_raptor"] = {
         VMBodygroups = {
-            {ind = 3, bg = 2},			
+            {ind = 3, bg = 2},
         },
-    },	
+    },
     ["akimbo"] = {
-		Override_ActivePos = Vector(2, 0, 0),
-	},
+        Override_ActivePos = Vector(2, 0, 0),
+    },
     ["shield"] = {
-		Override_ActivePos = Vector(8, 0, 0),
-	},
+        Override_ActivePos = Vector(8, 0, 0),
+    },
     ["roni"] = {
-		TrueNameChange = "Glock Carbine",
-        NameChange = "HKP-C",	
+        TrueNameChange = "Glock Carbine",
+        NameChange = "HKP-C",
         VMBodygroups = {
-            {ind = 1, bg = 1},	
-            {ind = 4, bg = 0},	
-            {ind = 5, bg = 0},			
+            {ind = 1, bg = 1},
+            {ind = 4, bg = 0},
+            {ind = 5, bg = 0},
         },
-		Override_ActivePos = Vector(0, -2, -2),
+        Override_ActivePos = Vector(0, -2, -2),
         AttPosMods = {
             [1] = {
                 vpos = Vector(0, 0, 3.5),
-				  },			  
+                  },
             [2] = {
-				vpos = Vector(0, 9.5, 0.1),
-				  },			  				
+                vpos = Vector(0, 9.5, 0.1),
+                  },
             [4] = {
                 vpos = Vector(0, 8, 0.78),
-				  },	
-			},				  
+                  },
+            },
         Override_IronSightStruct = {
             Pos = Vector(-2.856, -5, -1.1),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1,
-        },				
+        },
     },
     ["rail"] = {
         VMBodygroups = {
-            {ind = 4, bg = 1},			
+            {ind = 4, bg = 1},
         },
     },
     ["rail_2"] = {
         VMBodygroups = {
-            {ind = 5, bg = 1},			
+            {ind = 5, bg = 1},
         },
-    },	
+    },
     ["mifl_fas2_g20_mag33"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
@@ -180,9 +180,9 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 2, bg = 2},
         },
-    },	
+    },
     ["mifl_fas2_g20_slide_17c"] = {
-		TrueNameChange = "Glock 17c",	
+        TrueNameChange = "Glock 17c",
         NameChange = "HKP 17c",
         VMBodygroups = {
             {ind = 1, bg = 2},
@@ -194,7 +194,7 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_g20_slide_raptor"] = {
-		TrueNameChange = "Glock Raptor",		
+        TrueNameChange = "Glock Raptor",
         NameChange = "HKP Raptor",
         VMBodygroups = {
             {ind = 1, bg = 4},
@@ -204,9 +204,9 @@ SWEP.AttachmentElements = {
                 vpos = Vector(0, 5, 0.78),
             }
         }
-    },	
+    },
     ["mifl_fas2_g20_slide_whisper"] = {
-		TrueNameChange = "Glock SD",		
+        TrueNameChange = "Glock SD",
         NameChange = "HKP SD",
         VMBodygroups = {
             {ind = 1, bg = 3},
@@ -216,9 +216,9 @@ SWEP.AttachmentElements = {
                 vpos = Vector(0, 7, 0.78),
             }
         }
-    },	
+    },
     ["mifl_fas2_g20_slide_18"] = {
-		TrueNameChange = "Glock 18",	
+        TrueNameChange = "Glock 18",
         NameChange = "HKP 18",
         VMBodygroups = {
             {ind = 1, bg = 1}
@@ -262,18 +262,18 @@ SWEP.Attachments = {
             vang = Angle(0, -90, 0),
         },
         InstalledEles = {"rail_2"},
-		ExtraSightDist = 20,
-		CorrectivePos = Vector(1, -2, 0.5),				
+        ExtraSightDist = 20,
+        CorrectivePos = Vector(1, -2, 0.5),
     },
     {
         PrintName = "Slide",
         Slot = "mifl_fas2_g20_slide",
-        Bone = "glock_main",		
+        Bone = "glock_main",
         DefaultAttName = "G20 Slide",
         Offset = {
             vpos = Vector(0, 2, 0.5),
             vang = Angle(0, -90, 0),
-        },		
+        },
     },
     {
         PrintName = "Muzzle",
@@ -284,7 +284,7 @@ SWEP.Attachments = {
             vpos = Vector(0, 4.2, 0.78),
             vang = Angle(0, -90, 0),
         },
-		ExcludeFlags = {"mifl_fas2_g20_slide_whisper"}				
+        ExcludeFlags = {"mifl_fas2_g20_slide_whisper"}
     },
     {
         PrintName = "Magazine",
@@ -294,26 +294,26 @@ SWEP.Attachments = {
     {
         PrintName = "Left Hand",
         Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
-        Bone = "Akimbo_Base",		
+        Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
             vpos = Vector(5.3, -2.5, 0.8),
             vang = Angle(0, 0, 0),
-        },		
-        InstalledEles = {"akimbo"},		
-		MergeSlots = {7},
-    },	
+        },
+        InstalledEles = {"akimbo"},
+        MergeSlots = {7},
+    },
     {
         Hidden = true,
         Slot = {"mifl_fas2_lhand_shield"},
-        Bone = "Akimbo_Base",		
+        Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
             vpos = Vector(3, -1.2, 0.8),
             vang = Angle(0, 0, 0),
-        },		
-        InstalledEles = {"shield"},		
-    },	
+        },
+        InstalledEles = {"shield"},
+    },
     {
         PrintName = "Stock",
         Slot = {"mifl_fas2_g20_stock"},
@@ -323,7 +323,7 @@ SWEP.Attachments = {
             vpos = Vector(-0.2, -1.8, -0.2),
             vang = Angle(0, -90, 0),
         },
-    },		
+    },
     {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
@@ -347,12 +347,12 @@ SWEP.Attachments = {
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
     if wep.Attachments[6].Installed or wep.Attachments[7].Installed  then
-		return anim .. "_akimbo"
-    end	
-	
+        return anim .. "_akimbo"
+    end
+
     if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" then
-		return anim .. "_33"
-    end		
+        return anim .. "_33"
+    end
 end
 
 SWEP.Animations = {
@@ -399,7 +399,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -407,7 +407,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
@@ -415,7 +415,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.6,
-        LHIKEaseOut = 0.4,	
+        LHIKEaseOut = 0.4,
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
@@ -423,7 +423,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
 ---------------------------------------------------------
     ["reload_33"] = {
@@ -432,7 +432,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_empty_33"] = {
         Source = "reload_empty_33",
@@ -440,7 +440,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_nomen_33"] = {
         Source = "reload_nomen_33",
@@ -448,7 +448,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.6,
-        LHIKEaseOut = 0.4,	
+        LHIKEaseOut = 0.4,
     },
     ["reload_nomen_empty_33"] = {
         Source = "reload_empty_nomen_33",
@@ -456,38 +456,38 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 1,
-        LHIKEaseOut = 0.4,	
-    },	
-	
+        LHIKEaseOut = 0.4,
+    },
+
 --------------------------------------------------------
     ["reload_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 60/30
+        Time = 60 / 30
     },
     ["reload_empty_akimbo"] = {
         Source = "reload_akimbo_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 65/30	
+        Time = 65 / 30
     },
     ["reload_akimbo_33"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 72/30
+        Time = 72 / 30
     },
     ["reload_akimbo_empty_33"] = {
         Source = "reload_akimbo_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 77/30	
-    },	
+        Time = 77 / 30
+    },
     ["reload_nomen_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 52/30		
+        Time = 52 / 30
     },
     ["reload_nomen_empty_akimbo"] = {
         Source = "reload_akimbo_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-		Time = 57/30		
-    },	
+        Time = 57 / 30
+    },
 }

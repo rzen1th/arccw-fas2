@@ -105,19 +105,19 @@ SWEP.SightedSpeedMult = 0.55
 SWEP.SightTime = 0.5
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    [100] = "AmmoBeltStarter",	
-    [12] = "Bullet12",	
+    [100] = "AmmoBeltStarter",
+    [12] = "Bullet12",
     [11] = "Bullet11",
     [10] = "Bullet10",
-    [9] = "Bullet09",	
-	[8] = "Bullet08",
+    [9] = "Bullet09",
+    [8] = "Bullet08",
     [7] = "Bullet07",
     [6] = "Bullet06",
     [5] = "Bullet05",
     [4] = "Bullet04",
     [3] = "Bullet03",
-    [2] = "Bullet02",	
-    [1] = "Bullet01",	
+    [2] = "Bullet02",
+    [1] = "Bullet01",
 }
 
 SWEP.CaseBones = {}
@@ -147,59 +147,59 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
-    ["whisperer"] = {	
+    ["whisperer"] = {
         VMBodygroups = {
-            {ind = 7, bg = 1},				
+            {ind = 7, bg = 1},
         },
     },
     ["23"] = {
-		TrueNameChange = "M223",	
-        NameChange = "BEMG 23",		
+        TrueNameChange = "M223",
+        NameChange = "BEMG 23",
         VMBodygroups = {
-            {ind = 1, bg = 1},	
-            {ind = 3, bg = 1},				
+            {ind = 1, bg = 1},
+            {ind = 3, bg = 1},
         },
     },
-    ["200"] = {	
+    ["200"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1},				
+            {ind = 3, bg = 1},
         },
-    },	
-    ["60"] = {	
-		Mult_SightTime = (1/0.85)*0.8,
-		Mult_ReloadTime = (1/1.2)*1.1,
+    },
+    ["60"] = {
+        Mult_SightTime = (1 / 0.85) * 0.8,
+        Mult_ReloadTime = (1 / 1.2) * 1.1,
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-            {ind = 3, bg = 2},	
+            {ind = 1, bg = 2},
+            {ind = 3, bg = 2},
             {ind = 4, bg = 1},
-            {ind = 5, bg = 2},	
-            {ind = 6, bg = 1},				
+            {ind = 5, bg = 2},
+            {ind = 6, bg = 1},
         },
-    },	
-    ["30"] = {	
+    },
+    ["30"] = {
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-            {ind = 3, bg = 2},	
+            {ind = 1, bg = 2},
+            {ind = 3, bg = 2},
             {ind = 4, bg = 1},
-            {ind = 5, bg = 1},	
-            {ind = 6, bg = 1},				
+            {ind = 5, bg = 1},
+            {ind = 6, bg = 1},
         },
-    },		
+    },
     ["32"] = { --- bodging time ---
-		Mult_RPM = (1/1.3)*1.2,
-		Mult_ReloadTime = (1/0.9)*0.8,
+        Mult_RPM = (1 / 1.3) * 1.2,
+        Mult_ReloadTime = (1 / 0.9) * 0.8,
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-            {ind = 3, bg = 2},	
+            {ind = 1, bg = 2},
+            {ind = 3, bg = 2},
             {ind = 4, bg = 1},
-            {ind = 5, bg = 3},	
-            {ind = 6, bg = 1},				
+            {ind = 5, bg = 3},
+            {ind = 6, bg = 1},
         },
-    },		
+    },
     ["noch"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
-    },		
+    },
 }
 
 SWEP.Attachments = {
@@ -215,31 +215,31 @@ SWEP.Attachments = {
             wang = Angle(-10, 0, 180)
         },
         InstalledEles = {"noch"},
-        CorrectivePos = Vector(0, 2, 0),	
-		ExtraSightDist = 4		
+        CorrectivePos = Vector(0, 2, 0),
+        ExtraSightDist = 4
     },
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_m249_hg",
-        Bone = "Base",	
+        Bone = "Base",
         DefaultAttName = "Standard Handguard",
         Offset = {
             vpos = Vector(10, 1, 0),
             vang = Angle(0, 0, -90),
-		}			
-    },	
+        }
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
         Bone = "Base",
-        ExcludeFlags = {"mifl_fas2_m249_barrel_sd"},		
+        ExcludeFlags = {"mifl_fas2_m249_barrel_sd"},
         Offset = {
             vpos = Vector(24, -3.2, 0),
             vang = Angle(0, 0, -90),
             wpos = Vector(27, 0.5, -9.1),
             wang = Angle(-9.79, 0, 180)
-        },		
+        },
     },
     {
         PrintName = "Underbarrel",
@@ -254,24 +254,24 @@ SWEP.Attachments = {
             vmax = Vector(12, 1, 0),
             wmin = Vector(20, 0.832, -8),
             wmax = Vector(20, 0.832, -8),
-        },				
+        },
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
         Bone = "Base",
         Offset = {
-            vpos = Vector(10, -3, 1.8), 
+            vpos = Vector(10, -3, 1.8),
             vang = Angle(0, 0, 180),
         },
-		ExtraSightDist = 22,
-		CorrectivePos = Vector(0.4, -2, -0.25),			
+        ExtraSightDist = 22,
+        CorrectivePos = Vector(0.4, -2, -0.25),
     },
     {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_m249_mag"},
         DefaultAttName = "30-Round 5.56mm"
-    },	
+    },
     {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
@@ -292,33 +292,33 @@ SWEP.Attachments = {
             wpos = Vector(5, 1, -3),
             wang = Angle(-9, 0, 180)
         },
-		FreeSlot = true,
-    },	
+        FreeSlot = true,
+    },
 }
 
 
 SWEP.Hook_SelectFireAnimation = function(wep, anim)
     if wep.Attachments[6].Installed == "mifl_fas2_m249_mag_23" then
-		return anim .. "_23"
-    end	
+        return anim .. "_23"
+    end
 end
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if wep.Attachments[6].Installed == "mifl_fas2_m249_mag_23" then
-		return anim .. "_23"
-    end	
+        return anim .. "_23"
+    end
 
 
-	local fuckyou = wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or 
-	   wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or
-	   wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30" or
-	   wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_50bw_10"	   
+    local fuckyou = wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or
+       wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or
+       wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30" or
+       wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_50bw_10"
 
-	local reload_stanag = (fuckyou and "_stanag") or ""
-	local reload_nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
-	local reload_empty = (wep:Clip1() == 0 and "_empty") or ""
-	
-    return "reload" .. reload_stanag .. reload_nomen .. reload_empty		
+    local reload_stanag = (fuckyou and "_stanag") or ""
+    local reload_nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
+    local reload_empty = (wep:Clip1() == 0 and "_empty") or ""
+
+    return "reload" .. reload_stanag .. reload_nomen .. reload_empty
 end
 
 SWEP.Animations = {
@@ -340,12 +340,12 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire1",
-        Time = 30/60,
+        Time = 30 / 60,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "fire1_scoped",
-        Time = 30/60,
+        Time = 30 / 60,
         ShellEjectAt = 0,
     },
     ["reload"] = {
@@ -358,16 +358,16 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        LastClip1OutTime = 3.5,		
+        LastClip1OutTime = 3.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },	
+    },
     ["reload_nomen"] = {
         Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 2,		
+        LastClip1OutTime = 2,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
@@ -379,44 +379,44 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },		
+    },
     ["reload_stanag"] = {
         Source = "reload_stanag",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 180/40,		
+        LastClip1OutTime = 180 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },
     ["reload_stanag_empty"] = {
         Source = "reload_stanag_empty",
-        LastClip1OutTime = 200/40,
+        LastClip1OutTime = 200 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },					
+    },
     ["reload_stanag_nomen"] = {
         Source = "reload_stanag_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 180/40,		
+        LastClip1OutTime = 180 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },
     ["reload_stanag_nomen_empty"] = {
         Source = "reload_stanag_empty_nomen",
-        LastClip1OutTime = 200/40,
+        LastClip1OutTime = 200 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },	
-	
+    },
+
     ["fire_23"] = {
         Source = "fire1_23",
-        Time = 30/60,
+        Time = 30 / 60,
         ShellEjectAt = 0,
-    },	
-	
+    },
+
 
     ["reload_23"] = {
         Source = "reload_23",
@@ -428,16 +428,16 @@ SWEP.Animations = {
     },
     ["reload_empty_23"] = {
         Source = "reload_empty_23",
-        LastClip1OutTime = 3.5,		
+        LastClip1OutTime = 3.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },	
+    },
     ["reload_nomen_23"] = {
         Source = "reload_nomen_23",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 2,		
+        LastClip1OutTime = 2,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
@@ -449,5 +449,5 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.5,
-    },		
+    },
 }

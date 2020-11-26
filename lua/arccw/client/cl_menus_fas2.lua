@@ -4,13 +4,13 @@ hook.Add( "PopulateToolMenu", "ArcCW_FAS2_Options", function()
     spawnmenu.AddToolMenuOption( "Options", "ArcCW", "ArcCW_FAS2_Options", "FAS:2", "", "", ArcCW_FAS2_Options)
 end )
 
-ArcCW.ClientConVars = {
+local fas2cvars = {
     ["arccw_fas2_tri_clr_r"]         = { def = 255 },
     ["arccw_fas2_tri_clr_g"]         = { def = 255 },
     ["arccw_fas2_tri_clr_b"]         = { def = 255 },
 }
 
-for name, data in pairs(ArcCW.ClientConVars) do
+for name, data in pairs(fas2cvars) do
     CreateClientConVar(name, data.def, true, data.usri or false, data.desc, data.min, data.max)
 end
 

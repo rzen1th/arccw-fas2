@@ -126,91 +126,91 @@ SWEP.BarrelLength = 24
 SWEP.AttachmentElements = {
     ["grip_none"] = {
         VMBodygroups = {
-            {ind = 4, bg = 2},					
+            {ind = 4, bg = 2},
         },
     },
     ["mifl_fas2_famas_barrel_sd"] = {
-        NameChange = "Fusile-SD",	
-		TrueNameChange = "FAMAS-SD",	
+        NameChange = "Fusile-SD",
+        TrueNameChange = "FAMAS-SD",
         VMBodygroups = {
-            {ind = 1, bg = 1},				
+            {ind = 1, bg = 1},
         },
         AttPosMods = {
             [1] = {
                 vpos = Vector(-3.3, 20, -1),
-            },	
+            },
             [4] = {
-				vpos = Vector(-3.4, 27, -6.3),
-            },				
-		},			
+                vpos = Vector(-3.4, 27, -6.3),
+            },
+        },
     },
     ["mifl_fas2_famas_barrel_xs"] = {
-        NameChange = "Fusile XS",	
-		TrueNameChange = "Famas XS",		
+        NameChange = "Fusile XS",
+        TrueNameChange = "Famas XS",
         VMBodygroups = {
-            {ind = 1, bg = 4},	
-            {ind = 5, bg = 1},				
+            {ind = 1, bg = 4},
+            {ind = 5, bg = 1},
         },
         AttPosMods = {
             [1] = {
                 vpos = Vector(-3.3, 13, -2),
-            },			
+            },
             [3] = {
                 vpos = Vector(-3.3, 22.8, -4.4),
-            },	
+            },
             [4] = {
-				vpos = Vector(-3.4, 22, -6),
-            },	
+                vpos = Vector(-3.4, 22, -6),
+            },
             [6] = {
-				vpos = Vector(-2.5, 20, -4.4),
-            },				
-		},		
-    },		
+                vpos = Vector(-2.5, 20, -4.4),
+            },
+        },
+    },
     ["mifl_fas2_famas_barrel_commando"] = {
-        NameChange = "Fusile Kurz",	
-		TrueNameChange = "Famas PDW",		
+        NameChange = "Fusile Kurz",
+        TrueNameChange = "Famas PDW",
         VMBodygroups = {
-            {ind = 1, bg = 3},				
+            {ind = 1, bg = 3},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(-3.3, 26, -4.4),
-            },	
+            },
             [4] = {
-				vpos = Vector(-3.4, 24, -6),
-            },				
-		},		
-    },	
+                vpos = Vector(-3.4, 24, -6),
+            },
+        },
+    },
     ["mifl_fas2_famas_barrel_felin"] = {
-        NameChange = "Fusile Valorisé",	
-		TrueNameChange = "FAMAS Félin",		
+        NameChange = "Fusile Valorisé",
+        TrueNameChange = "FAMAS Félin",
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-            {ind = 2, bg = 3},				
-            {ind = 4, bg = 1},				
+            {ind = 1, bg = 2},
+            {ind = 2, bg = 3},
+            {ind = 4, bg = 1},
         },
         AttPosMods = {
             [1] = {
                 vpos = Vector(-3.3, 19, -1.3),
-            },			
+            },
             [3] = {
                 vpos = Vector(-3.3, 34, -4.1),
-            },		
-		},			
-    },	
+            },
+        },
+    },
     ["60"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1},					
+            {ind = 3, bg = 1},
         },
     },
     ["50"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1},					
+            {ind = 3, bg = 1},
         },
-    },	
+    },
     ["mifl_fas2_famas_mag_9mm_25"] = {
         VMBodygroups = {
-            {ind = 3, bg = 2},		
+            {ind = 3, bg = 2},
         },
     },
 }
@@ -230,29 +230,29 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local optic = wep.Attachments[1].Installed
     local grip = wep.Attachments[4].Installed or wep.Attachments[5].Installed
     local type = wep.Attachments[2].Installed
-	
-	if optic then
-		if		type == "mifl_fas2_famas_barrel_felin" then
-			vm:SetBodygroup(2, 0)
-		elseif	type == "mifl_fas2_famas_barrel_xs" then
-			vm:SetBodygroup(2, 4)
-			vm:SetBodygroup(5, 0)			
-		elseif	type == "mifl_fas2_famas_barrel_commando" then
-			vm:SetBodygroup(2, 1)
-		elseif	type == "mifl_fas2_famas_barrel_sd" then
-			vm:SetBodygroup(2, 2)
-		else
-			vm:SetBodygroup(2, 1)
-		end
-	end
 
-	if grip then
-		if		type == "mifl_fas2_famas_barrel_felin" then
-			vm:SetBodygroup(4, 2)
-		else
-			vm:SetBodygroup(4, 0)
-		end
-	end	
+    if optic then
+        if		type == "mifl_fas2_famas_barrel_felin" then
+            vm:SetBodygroup(2, 0)
+        elseif	type == "mifl_fas2_famas_barrel_xs" then
+            vm:SetBodygroup(2, 4)
+            vm:SetBodygroup(5, 0)
+        elseif	type == "mifl_fas2_famas_barrel_commando" then
+            vm:SetBodygroup(2, 1)
+        elseif	type == "mifl_fas2_famas_barrel_sd" then
+            vm:SetBodygroup(2, 2)
+        else
+            vm:SetBodygroup(2, 1)
+        end
+    end
+
+    if grip then
+        if		type == "mifl_fas2_famas_barrel_felin" then
+            vm:SetBodygroup(4, 2)
+        else
+            vm:SetBodygroup(4, 0)
+        end
+    end
 end
 
 SWEP.Attachments = {
@@ -266,18 +266,18 @@ SWEP.Attachments = {
             vang = Angle(0, -90, 0),
         },
         InstalledEles = {"iron_none"},
-		ExtraSightDist = 3,
-		CorrectiveAng = Angle(0, 180, 0)		
+        ExtraSightDist = 3,
+        CorrectiveAng = Angle(0, 180, 0)
     },
     {
         PrintName = "Frame",
         Slot = "mifl_fas2_famas_hg",
-        Bone = "famas",	
+        Bone = "famas",
         DefaultAttName = "Standard Frame",
         Offset = {
             vpos = Vector(-2.8, 23, -6),
             vang = Angle(0, -90, 0),
-		}			
+        }
     },
     {
         PrintName = "Muzzle",
@@ -288,8 +288,8 @@ SWEP.Attachments = {
             vpos = Vector(-3.3, 32.5, -4.4),
             vang = Angle(0, -90, 0),
         },
-        ExcludeFlags = {"mifl_fas2_famas_barrel_sd"}		
-    },	
+        ExcludeFlags = {"mifl_fas2_famas_barrel_sd"}
+    },
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
@@ -297,10 +297,10 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(-3.4, 25, -6),
             vang = Angle(0, -90, 0),
-		},
-        InstalledEles = {"grip_none"},		
+        },
+        InstalledEles = {"grip_none"},
         MergeSlots = {5},
-    },	
+    },
     {
         PrintName = "INTEG-UBGL",
         Hidden = true,
@@ -319,8 +319,8 @@ SWEP.Attachments = {
             vpos = Vector(-2.5, 25, -4.4),
             vang = Angle(90, -90, 0),
         },
-		ExtraSightDist = 15,
-		CorrectivePos = Vector(0.4, -2, -0.25),			
+        ExtraSightDist = 15,
+        CorrectivePos = Vector(0.4, -2, -0.25),
     },
     {
         PrintName = "Magazine",
@@ -350,8 +350,8 @@ SWEP.Attachments = {
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
     if wep.Attachments[2].Installed == "mifl_fas2_famas_barrel_felin" then
-		return anim .. "_felin"
-    end		
+        return anim .. "_felin"
+    end
 end
 
 SWEP.Animations = {
@@ -360,7 +360,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-		Time = 1,
+        Time = 1,
     },
     ["holster"] = {
         Source = "holster",
@@ -370,13 +370,13 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.7,
-        LHIKEaseOut = 0.4,		
+        LHIKEaseOut = 0.4,
         SoundTable = {
             {
             s = "weapons/arccw_mifl/fas2/famas/famas_cock.wav",
-            t = 13/30
+            t = 13 / 30
             }
-        },		
+        },
     },
     ["fire"] = {
         Source = {"shoot1"},
@@ -390,71 +390,71 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.4,		
+        LHIKEaseIn = 0.4,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
-        LHIKEaseOut = 0.5,		
+        LHIKEaseOut = 0.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.4,			
+        LHIKEaseIn = 0.4,
         LHIKIn = 0.5,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,		
+        LHIKEaseOut = 0.5,
     },
     ["reload_nomen"] = {
-        Source = "reload_nomen",			
+        Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,		
+        LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.7,	
-        LHIKEaseOut = 0.4,			
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
     },
     ["reload_nomen_empty"] = {
-        Source = "reload_empty_nomen",		
+        Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,		
+        LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-        LHIKEaseOut = 0.4,			
-    },	
-	
-	
+        LHIKEaseOut = 0.4,
+    },
+
+
 
     ["reload_felin"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.4,		
+        LHIKEaseIn = 0.4,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_empty_felin"] = {
         Source = "reload_empty_felin",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.4,			
+        LHIKEaseIn = 0.4,
         LHIKIn = 0.5,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_nomen_felin"] = {
-        Source = "reload_nomen",			
+        Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,		
+        LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.7,	
-        LHIKEaseOut = 0.4,		
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
     },
     ["reload_nomen_empty_felin"] = {
-        Source = "reload_empty_nomen_felin",			
+        Source = "reload_empty_nomen_felin",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,		
+        LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-        LHIKEaseOut = 0.4,	
-    },			
+        LHIKEaseOut = 0.4,
+    },
 }

@@ -3,7 +3,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 SWEP.PrintName = "11GI"
-SWEP.TrueName = "M1911"
+SWEP.TrueName = "M1911A1"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Venerable, popular, and reliable pistol over a century old."
 SWEP.Trivia_Manufacturer = "Colt"
@@ -122,7 +122,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 1}}
     },
     ["mifl_fas2_m1911_slide_2x"] = {
-        TrueNameChange = "AF1911",
+        TrueNameChange = "AF-2011",
         NameChange = "22GI",
         VMBodygroups = {
             {ind = 0, bg = 1},
@@ -177,7 +177,7 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_m1911_slide_compact"] = {
-        TrueNameChange = "M1911-C",
+        TrueNameChange = "Colt Defender",
         NameChange = "11GI-K",
         VMBodygroups = {{ind = 1, bg = 2}},
         AttPosMods = {

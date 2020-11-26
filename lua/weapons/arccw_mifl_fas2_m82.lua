@@ -122,21 +122,21 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0)
 
 SWEP.AttachmentElements = {
     ["whisperer"] = {
-		TrueNameChange = "M82S",	
-        NameChange = "AM-R50SA-SSD",	
+        TrueNameChange = "M82S",
+        NameChange = "AM-R50SA-SSD",
         VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
     },
     ["obrez"] = {
-		TrueNameChange = "M28",	
-        NameChange = "AM-R50 Kurz",		
+        TrueNameChange = "M28",
+        NameChange = "AM-R50 Kurz",
         VMBodygroups = {
-		{ind = 0, bg = 1},
-		{ind = 1, bg = 1},
-		{ind = 2, bg = 2},
-		},	
-		Bipod_Integral = false,
-    },		
+        {ind = 0, bg = 1},
+        {ind = 1, bg = 1},
+        {ind = 2, bg = 2},
+        },
+        Bipod_Integral = false,
+    },
 }
 
 SWEP.Attachments = {
@@ -151,10 +151,10 @@ SWEP.Attachments = {
             wpos = Vector(9, 0.739, -6.801),
             wang = Angle(-10, 0, 180)
         },
-		CorrectiveAng = Angle(180, 0, 0),		
+        CorrectiveAng = Angle(180, 0, 0),
         InstalledEles = {"noch"},
-		ExtraSightDist = 3
-    },	
+        ExtraSightDist = 3
+    },
     {
         PrintName = "Handguard",
         DefaultAttName = "Standard Barrel",
@@ -163,7 +163,7 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(0.5, 6, -1),
             vang = Angle(90, -90, -90),
-        },	
+        },
     },
     {
         PrintName = "Underbarrel",
@@ -179,7 +179,7 @@ SWEP.Attachments = {
             vmax = Vector(0, 15, 0),
             wmin = Vector(19, 0.832, -6),
             wmax = Vector(19, 0.832, -6),
-        }		
+        }
     },
     {
         PrintName = "Tactical",
@@ -189,8 +189,8 @@ SWEP.Attachments = {
             vpos = Vector(-0.8, 2, -1.2), -- offset that the attachment will be relative to the bone
             vang = Angle(180, -90, 90),
         },
-		ExtraSightDist = 22,
-		CorrectivePos = Vector(2, -2, 0),		
+        ExtraSightDist = 22,
+        CorrectivePos = Vector(2, -2, 0),
     },
     {
         PrintName = "Ammo Type",
@@ -212,15 +212,15 @@ SWEP.Attachments = {
             wpos = Vector(8, 1, -3),
             wang = Angle(-9, 0, 180)
         },
-		FreeSlot = true,
-    },	
+        FreeSlot = true,
+    },
 }
 
 function SWEP:SelectReloadAnimation()
     local ret
-	local inbipod = (self:InBipod()) and "_bipod" or ""
-	local nomen = self:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen" or ""
-	local empty = (self:Clip1() == 0) and "_empty" or ""
+    local inbipod = (self:InBipod()) and "_bipod" or ""
+    local nomen = self:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen" or ""
+    local empty = (self:Clip1() == 0) and "_empty" or ""
 
     ret = "reload" .. inbipod .. nomen .. empty
 
@@ -230,7 +230,7 @@ end
 SWEP.Animations = {
     ["draw"] = {
         Source = "deploy",
-		MinProgress = 30/35,		
+        MinProgress = 30 / 35,
         LHIK = false,
         LHIKIn = 0,
         LHIKOut = 0.25,
@@ -254,55 +254,55 @@ SWEP.Animations = {
     ["fire_iron"] = {
         Source = "iron",
         ShellEjectAt = 0,
-		Time = 0.4,
+        Time = 0.4,
     },
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		MinProgress = 3.5,
+        MinProgress = 3.5,
         LHIK = true,
-        LHIKEaseIn = 0.5,			
+        LHIKEaseIn = 0.5,
         LHIKIn = 1,
         LHIKOut = 1,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_empty"] = {
-        Source = "reload_empty",	
-		MinProgress = 3.5,		
+        Source = "reload_empty",
+        MinProgress = 3.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.5,			
+        LHIKEaseIn = 0.5,
         LHIKIn = 1,
         LHIKOut = 2.8,
-        LHIKEaseOut = 0.5,	
+        LHIKEaseOut = 0.5,
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
-        Time = 117/35,	
-		MinProgress = 2,		
+        Time = 117 / 35,
+        MinProgress = 2,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
-		MinProgress = 2,		
-        Time = 150/35,		
+        MinProgress = 2,
+        Time = 150 / 35,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-    },	
+    },
     ["fire_bipod"] = {
         Source = "bipod_fire",
-        Time = 31/35,
+        Time = 31 / 35,
         ShellEjectAt = 0,
     },
     ["enter_bipod"] = {
         Source = "bipod_dn",
-        Time = 110/35,
+        Time = 110 / 35,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0,
     },
     ["exit_bipod"] = {
         Source = "bipod_up",
-        Time = 102/35,
+        Time = 102 / 35,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.4,
@@ -310,7 +310,7 @@ SWEP.Animations = {
     ["reload_bipod"] = {
         Source = "bipod_reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		MinProgress = 2.5,
+        MinProgress = 2.5,
         LastClip1OutTime = 3,
         LHIK = true,
         LHIKIn = 0.5,
@@ -318,17 +318,17 @@ SWEP.Animations = {
     },
     ["reload_bipod_empty"] = {
         Source = "bipod_reload_empty",
-		MinProgress = 2.5,
+        MinProgress = 2.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5
-    },	
+    },
     ["reload_bipod_nomen"] = {
         Source = "bipod_reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		MinProgress = 1.5,
+        MinProgress = 1.5,
         LastClip1OutTime = 3,
         LHIK = true,
         LHIKIn = 0.5,
@@ -337,12 +337,12 @@ SWEP.Animations = {
     ["reload_bipod_nomen_empty"] = {
         Source = "bipod_reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		MinProgress = 1.5,
+        MinProgress = 1.5,
         LastClip1OutTime = 2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5
-    },	
+    },
 }
 
 SWEP.Bipod_Integral = true

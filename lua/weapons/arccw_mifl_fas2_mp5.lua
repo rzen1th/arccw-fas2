@@ -122,217 +122,223 @@ SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
     ["akimbo"] = {
-		Override_ActivePos = Vector(2.5, 4, 0),
-	},
+        Override_ActivePos = Vector(2.5, 4, 0),
+    },
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 4},					
+            {ind = 5, bg = 4},
         },
     },
     ["mifl_fas2_mp5_stock_none"] = {
         VMBodygroups = {
-            {ind = 5, bg = 2},					
-        },
-    },	
-    ["mifl_fas2_mp5_stock_g3"] = {
-        VMBodygroups = {
-            {ind = 5, bg = 5},					
-        },
-    },	
-    ["mifl_fas2_mp5_hg_sd"] = {
-        NameChange = "Pissed",	
-		TrueNameChange = "MP5SD",		
-        VMBodygroups = {
-	        {ind = 3, bg = 2},				
+            {ind = 5, bg = 2},
         },
     },
+    ["mifl_fas2_mp5_stock_g3"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 5},
+        },
+    },
+    ["mifl_fas2_mp5_hg_sd"] = {
+        NameChange = "Pissed",
+        TrueNameChange = "MP5SD",
+        VMBodygroups = {
+            {ind = 3, bg = 2},
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(11, 0.2, 0),
+                vang = Angle(0, 0, -90),
+            }
+        }
+    },
     ["mifl_fas2_mp5_hg_grip"] = {
-        NameChange = "Peta Griffin",	
-		TrueNameChange = "MP5",		
+        NameChange = "Peta Griffin",
+        TrueNameChange = "MP5",
         VMBodygroups = {
-	        {ind = 3, bg = 1},				
+            {ind = 3, bg = 1},
         },
-    },	
-    ["mifl_fas2_mp5_stock_pdw"] = {		
+    },
+    ["mifl_fas2_mp5_stock_pdw"] = {
         VMBodygroups = {
-            {ind = 5, bg = 1},			
+            {ind = 5, bg = 1},
         },
-	},
-    ["mifl_fas2_mp5_stock_ump"] = {		
+    },
+    ["mifl_fas2_mp5_stock_ump"] = {
         VMBodygroups = {
-            {ind = 5, bg = 3},			
+            {ind = 5, bg = 3},
         },
-	},	
+    },
     ["mifl_fas2_mp5_hg_eod"] = {
-        NameChange = "EOD",	
-		TrueNameChange = "MP5-EOD",	
+        NameChange = "EOD",
+        TrueNameChange = "MP5-EOD",
         VMBodygroups = {
-	        {ind = 3, bg = 3},				
+            {ind = 3, bg = 3},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(21.2, -1, 0),
-            },		
-		},			
-    },		
+            },
+        },
+    },
     ["mifl_fas2_mp5_hg_k"] = {
-        NameChange = "Kurz",		
-        TrueNameChange = "MP5K",		
+        NameChange = "Kurz",
+        TrueNameChange = "MP5K",
         VMBodygroups = {
-            {ind = 1, bg = 1},	
-	        {ind = 3, bg = 4},			
+            {ind = 1, bg = 1},
+            {ind = 3, bg = 4},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(12.5, -1, 0),
-            },		
-		},			
-    },	
+            },
+        },
+    },
     ["mifl_fas2_mp5_hg_no"] = {
-        NameChange = "Kurz",		
-        TrueNameChange = "MP5K",		
+        NameChange = "Kurz",
+        TrueNameChange = "MP5K",
         VMBodygroups = {
-            {ind = 1, bg = 5},	
-	        {ind = 3, bg = 4},			
+            {ind = 1, bg = 5},
+            {ind = 3, bg = 4},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(11.5, -1, 0),
-            },				
-		},			
-    },		
+            },
+        },
+    },
     ["mifl_fas2_mp5_hg_mw2"] = {
-        NameChange = "Kurz",		
-        TrueNameChange = "MP5K",		
+        NameChange = "Kurz",
+        TrueNameChange = "MP5K",
         VMBodygroups = {
-            {ind = 1, bg = 3},	
-            {ind = 2, bg = 4},				
-	        {ind = 3, bg = 4},			
+            {ind = 1, bg = 3},
+            {ind = 2, bg = 4},
+            {ind = 3, bg = 4},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(14, -1, 0),
-            },		
-		},			
-    },		
+            },
+        },
+    },
     ["mifl_fas2_mp5_hg_g3"] = {
-        NameChange = "Long",		
-        TrueNameChange = "MP5L",		
+        NameChange = "Long",
+        TrueNameChange = "MP5L",
         VMBodygroups = {
-            {ind = 1, bg = 4},	
-	        {ind = 3, bg = 4},				
+            {ind = 1, bg = 4},
+            {ind = 3, bg = 4},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(29, -1, 0),
-            },		
+            },
             [4] = {
                 vpos = Vector(11, 0, 0),
-            },					
-		},			
-    },		
+            },
+        },
+    },
     ["mifl_fas2_mp5_ump_k"] = {
-        NameChange = "Kurz",		
-        TrueNameChange = "UMP-K",		
+        NameChange = "Kurz",
+        TrueNameChange = "UMP-K",
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-	        {ind = 3, bg = 4},	
-	        {ind = 2, bg = 2},				
+            {ind = 1, bg = 2},
+            {ind = 3, bg = 4},
+            {ind = 2, bg = 2},
         },
         Override_IronSightStruct = {
-			Pos = Vector(-3.945, -7, 1.552),
-			Ang = Angle(0, 0, 0),
+            Pos = Vector(-3.945, -7, 1.552),
+            Ang = Angle(0, 0, 0),
             Magnification = 1.1,
-        },			
+        },
         AttPosMods = {
             [1] = {
                 vpos = Vector(2, -3.4, 0),
-            },	
+            },
             [3] = {
                 vpos = Vector(12, -1, 0),
-            },				
-		},	
+            },
+        },
     },
     ["mifl_fas2_mp5_ump_usc"] = {
-        NameChange = "Carbine",		
-        TrueNameChange = "USC",		
+        NameChange = "Carbine",
+        TrueNameChange = "USC",
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-	        {ind = 3, bg = 4},	
-	        {ind = 2, bg = 3},				
+            {ind = 1, bg = 2},
+            {ind = 3, bg = 4},
+            {ind = 2, bg = 3},
         },
         Override_IronSightStruct = {
-			Pos = Vector(-3.945, -7, 1.552),
-			Ang = Angle(0, 0, 0),
+            Pos = Vector(-3.945, -7, 1.552),
+            Ang = Angle(0, 0, 0),
             Magnification = 1.1,
-        },			
+        },
         AttPosMods = {
             [1] = {
                 vpos = Vector(2, -3.4, 0),
-            },	
+            },
             [3] = {
                 vpos = Vector(28, -1, 0),
-            },		
+            },
             [4] = {
                 vpos = Vector(11, 0, 0),
-            },					
-		},	
-    },	
+            },
+        },
+    },
     ["mifl_fas2_mp5_ump_nor"] = {
-        NameChange = "Piss2",		
-        TrueNameChange = "UMP",		
+        NameChange = "Piss2",
+        TrueNameChange = "UMP",
         VMBodygroups = {
-            {ind = 1, bg = 2},	
-	        {ind = 3, bg = 4},	
-	        {ind = 2, bg = 1},				
+            {ind = 1, bg = 2},
+            {ind = 3, bg = 4},
+            {ind = 2, bg = 1},
         },
         Override_IronSightStruct = {
-			Pos = Vector(-3.945, -7, 1.552),
-			Ang = Angle(0, 0, 0),
+            Pos = Vector(-3.945, -7, 1.552),
+            Ang = Angle(0, 0, 0),
             Magnification = 1.1,
-        },			
+        },
         AttPosMods = {
             [1] = {
                 vpos = Vector(2, -3.4, 0),
-            },	
+            },
             [3] = {
                 vpos = Vector(16.5, -1, 0),
             },
             [4] = {
                 vpos = Vector(11, 0, 0),
-            },				
-		},	
-    },		
+            },
+        },
+    },
     ["mifl_fas2_mp5_mag_20"] = {
         VMBodygroups = {
-            {ind = 4, bg = 2},			
+            {ind = 4, bg = 2},
         },
     },
     ["mifl_fas2_mp5_mag_30"] = {
         VMBodygroups = {
-            {ind = 4, bg = 3},			
+            {ind = 4, bg = 3},
         },
     },
     ["mifl_fas2_mp5_mag_50"] = {
         VMBodygroups = {
-            {ind = 4, bg = 6},			
+            {ind = 4, bg = 6},
         },
-    },	
+    },
     ["mifl_fas2_mp5_mag_waffle"] = {
         VMBodygroups = {
-            {ind = 4, bg = 7},			
+            {ind = 4, bg = 7},
         },
-    },		
+    },
     ["mifl_fas2_mp5_mag_15"] = {
         VMBodygroups = {
-            {ind = 4, bg = 1},			
+            {ind = 4, bg = 1},
         },
-    },		
+    },
     ["mifl_fas2_mp5_mag_80"] = {
         VMBodygroups = {
-            {ind = 4, bg = 4},			
+            {ind = 4, bg = 4},
         },
-    },		
+    },
     ["bitchbasic9mm"] = {
         AddSuffix = "/9"
     },
@@ -359,18 +365,18 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-		ExtraSightDist = 8,
-        VMScale = Vector(1.2, 1.2, 1.2)		
+        ExtraSightDist = 8,
+        VMScale = Vector(1.2, 1.2, 1.2)
     },
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_mp5_hg",
-        Bone = "Dummy01",	
+        Bone = "Dummy01",
         DefaultAttName = "Standard Handguard",
         Offset = {
             vpos = Vector(8.5, 0, 0),
             vang = Angle(0, 0, -90),
-		}			
+        }
     },
     {
         PrintName = "Muzzle",
@@ -383,8 +389,8 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_mp5_hg_sd"}		
-    },	
+        ExcludeFlags = {"mifl_fas2_mp5_hg_sd"}
+    },
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
@@ -394,14 +400,14 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         MergeSlots = {5},
-        ExcludeFlags = {"mifl_fas2_mp5_hg_k", "mifl_fas2_mp5_ump_k", "mifl_fas2_mp5_hg_grip", "mifl_fas2_mp5_hg_no"},	
+        ExcludeFlags = {"mifl_fas2_mp5_hg_k", "mifl_fas2_mp5_ump_k", "mifl_fas2_mp5_hg_grip", "mifl_fas2_mp5_hg_no"},
     },
     {
         PrintName = "INTEG-UBGL",
         Hidden = true,
         Slot = "ubgl",
         Bone = "Dummy01",
-        RequireFlags = {"mifl_fas2_mp5_hg_eod"},		
+        RequireFlags = {"mifl_fas2_mp5_hg_eod"},
         Offset = {
             vpos = Vector(8, 0, 0),
             vang = Angle(0, 0, -90),
@@ -415,9 +421,9 @@ SWEP.Attachments = {
             vpos = Vector(8, -1, 1),
             vang = Angle(0, 0, 180),
         },
-		ExtraSightDist = 25,
-		CorrectivePos = Vector(0.4, -2, -0.25),			
-    },	
+        ExtraSightDist = 25,
+        CorrectivePos = Vector(0.4, -2, -0.25),
+    },
     {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_mp5_mag"},
@@ -426,15 +432,15 @@ SWEP.Attachments = {
     {
         PrintName = "Left Hand",
         Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
-        Bone = "Akimbo_Base",		
+        Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
             vpos = Vector(4, -3, -0.5),
             vang = Angle(0, 0, 0),
-        },			
-        InstalledEles = {"akimbo"},		
-        RequireFlags = {"Akimbo_Yes"},			
-    },		
+        },
+        InstalledEles = {"akimbo"},
+        RequireFlags = {"Akimbo_Yes"},
+    },
     {
         PrintName = "Stock",
         Slot = {"go_stock", "mifl_fas2_mp5_stock"},
@@ -468,21 +474,21 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-	local onehand = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"
-	local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
+    local onehand = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"
+    local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
     local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
-	
+
     if wep.Attachments[8].Installed  then
-		return anim .. "_akimbo"	
+        return anim .. "_akimbo"
     elseif (kurz or onehand) and eighty then
-		return anim .. "_k_80"
-	elseif kurz then
-		return anim .. "_k"		
-	elseif onehand then
-		return anim .. "_one"		
+        return anim .. "_k_80"
+    elseif kurz then
+        return anim .. "_k"
+    elseif onehand then
+        return anim .. "_one"
     elseif eighty then
-		return anim .. "_80"
-    end		
+        return anim .. "_80"
+    end
 end
 
 SWEP.Animations = {
@@ -518,16 +524,16 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["reload_nomen"] = {
-        Source = "reload_nomen",			
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+        Source = "reload_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
     },
     ["reload_nomen_empty"] = {
-        Source = "reload_empty_nomen",		
+        Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-    },	
+    },
 
 
     ["reload_80"] = {
@@ -550,16 +556,16 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.35,
         LHIKOut = 0.35,
-    },	
+    },
     ["reload_nomen_80"] = {
-        Source = "reload_nomen_80",			
+        Source = "reload_nomen_80",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.35,
-        LHIKOut = 0.35,		
+        LHIKOut = 0.35,
     },
     ["reload_nomen_empty_80"] = {
-        Source = "reload_empty_nomen_80",		
+        Source = "reload_empty_nomen_80",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.35,
@@ -571,21 +577,21 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.35,
         LHIKOut = 0.35,
-    },	
+    },
     ["reload_nomen_k_80"] = {
-        Source = "reload_nomen_80",			
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
-        LHIKIn = 0.35,
-        LHIKOut = 0.35,		
-    },	
-    ["reload_nomen_empty_k_80"] = {
-        Source = "reload_empty_nomen_k_80",		
+        Source = "reload_nomen_80",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.35,
         LHIKOut = 0.35,
-    },	
+    },
+    ["reload_nomen_empty_k_80"] = {
+        Source = "reload_empty_nomen_k_80",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.35,
+        LHIKOut = 0.35,
+    },
 
     ["reload_k"] = {
         Source = "reload",
@@ -602,17 +608,17 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["reload_nomen_k"] = {
-        Source = "reload_nomen",			
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+        Source = "reload_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
     },
     ["reload_nomen_empty_k"] = {
-        Source = "reload_empty_nomen_k",		
+        Source = "reload_empty_nomen_k",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-    },	
-	
+    },
+
     ["reload_one"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -626,40 +632,40 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-    },	
+    },
     ["reload_nomen_one"] = {
-        Source = "reload_nomen",			
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
+        Source = "reload_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.35,
-        LHIKOut = 0.35,		
-    },		
+        LHIKOut = 0.35,
+    },
     ["reload_nomen_empty_one"] = {
-        Source = "reload_empty_nomen_k",		
+        Source = "reload_empty_nomen_k",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-    },	
+    },
 
     ["reload_akimbo"] = {
-        Source = "reload_akimbo",			
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
-		Time = (80/30)*1,		
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = (80 / 30) * 1,
     },
     ["reload_nomen_akimbo"] = {
-        Source = "reload_akimbo",			
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
-		Time = (80/30)*0.8,	
-    },	
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = (80 / 30) * 0.8,
+    },
     ["reload_empty_akimbo"] = {
-        Source = "reload_empty_akimbo",			
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
-		Time = (90/30)*1,		
+        Source = "reload_empty_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = (90 / 30) * 1,
     },
     ["reload_nomen_empty_akimbo"] = {
-        Source = "reload_empty_akimbo",		
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,	
-		Time = (90/30)*0.8,
-    },	
+        Source = "reload_empty_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = (90 / 30) * 0.8,
+    },
 }

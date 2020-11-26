@@ -105,50 +105,32 @@ SWEP.BarrelLength = 24
 SWEP.AttachmentElements = {
     ["mount"] = {
         VMBodygroups = {
-            {
-                ind = 4,
-                bg = 1
-            }
+            {ind = 4, bg = 1}
         }
     },
     ["buftube"] = {
         VMBodygroups = {
-            {
-                ind = 5,
-                bg = 4
-            }
+            {ind = 5, bg = 4}
         }
     },
     ["mifl_fas2_ak_stock_rpk"] = {
         VMBodygroups = {
-            {
-                ind = 5,
-                bg = 2
-            }
+            {ind = 5, bg = 2}
         }
     },
     ["mifl_fas2_ak_stock_ske"] = {
         VMBodygroups = {
-            {
-                ind = 5,
-                bg = 3
-            }
+            {ind = 5, bg = 3}
         }
     },
     ["mifl_fas2_ak_stock_no"] = {
         VMBodygroups = {
-            {
-                ind = 5,
-                bg = 1
-            }
+            {ind = 5, bg = 1}
         }
     },
     ["mifl_fas2_ak_hg_svd"] = {
         VMBodygroups = {
-            {
-                ind = 2,
-                bg = 7
-            }
+            {ind = 2, bg = 7}
         },
         AttPosMods = {
             [3] = {
@@ -158,10 +140,7 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_ak_hg_k"] = {
         VMBodygroups = {
-            {
-                ind = 2,
-                bg = 3
-            }
+            {ind = 2, bg = 3}
         },
         AttPosMods = {
             [3] = {
@@ -171,14 +150,8 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_ak_hg_xs"] = {
         VMBodygroups = {
-            {
-                ind = 2,
-                bg = 5
-            },
-            {
-                ind = 3,
-                bg = 1
-            }
+            {ind = 2, bg = 5},
+            {ind = 3, bg = 1}
         },
         Override_IronSightStruct = {
             Pos = Vector(-4.401, -10, 1),
@@ -198,14 +171,8 @@ SWEP.AttachmentElements = {
             Magnification = 1.1
         },
         VMBodygroups = {
-            {
-                ind = 2,
-                bg = 1
-            },
-            {
-                ind = 3,
-                bg = 1
-            }
+            {ind = 2, bg = 1},
+            {ind = 3, bg = 1}
         }
     },
     ["mifl_fas2_ak_hg_sdk"] = {
@@ -215,22 +182,13 @@ SWEP.AttachmentElements = {
             Magnification = 1.1
         },
         VMBodygroups = {
-            {
-                ind = 2,
-                bg = 2
-            },
-            {
-                ind = 3,
-                bg = 1
-            }
+            {ind = 2, bg = 2},
+            {ind = 3, bg = 1}
         }
     },
     ["mifl_fas2_ak_hg_rpk"] = {
         VMBodygroups = {
-            {
-                ind = 2,
-                bg = 6
-            }
+            {ind = 2, bg = 6}
         },
         AttPosMods = {
             [3] = {
@@ -245,14 +203,8 @@ SWEP.AttachmentElements = {
             Magnification = 1.1
         },
         VMBodygroups = {
-            {
-                ind = 2,
-                bg = 4
-            },
-            {
-                ind = 3,
-                bg = 1
-            }
+            {ind = 2, bg = 4},
+            {ind = 3, bg = 1}
         },
         AttPosMods = {
             [3] = {
@@ -265,10 +217,7 @@ SWEP.AttachmentElements = {
     },
     ["30_545"] = {
         VMBodygroups = {
-            {
-                ind = 1,
-                bg = 5
-            }
+            {ind = 1, bg = 5}
         }
     },
     ["10_953"] = {
