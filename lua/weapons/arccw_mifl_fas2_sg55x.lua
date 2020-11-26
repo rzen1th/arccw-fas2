@@ -254,6 +254,13 @@ SWEP.AttachmentElements = {
 
 SWEP.ExtraSightDist = 10
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    if wep.Attachments[1].Installed then
+		vm:SetBodygroup(3, 7)	
+    end
+end
+
 SWEP.WorldModelOffset = {
     pos = Vector(-13, 5.5, -5),
     ang = Angle(0, 0, 180)
@@ -268,7 +275,7 @@ SWEP.Attachments = {
         Bone = "weapon_main",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, 2, 2.7),
+            vpos = Vector(0.035, 2, 2.7),
             vang = Angle(0, -90, 0),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
