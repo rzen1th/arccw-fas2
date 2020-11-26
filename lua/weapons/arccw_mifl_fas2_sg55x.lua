@@ -229,6 +229,9 @@ SWEP.AttachmentElements = {
     ["32"] = {
         VMBodygroups = {{ind = 1, bg = 3}}
     },
+    ["58"] = {
+        VMBodygroups = {{ind = 1, bg = 5}}
+    },	
     ["30"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
     },
@@ -329,7 +332,9 @@ SWEP.Attachments = {
             vang = Angle(0, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
-        }
+        },
+        ExtraSightDist = 20,
+        CorrectivePos = Vector(2, -2, 3)		
     },
     {
         PrintName = "Magazine",
@@ -372,7 +377,7 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local installed = wep.Attachments[7].Installed
 
-    if installed == "mifl_fas2_sg55x_mag_45" then
+    if installed == "mifl_fas2_sg55x_mag_45" or installed == "mifl_fas2_sg55x_mag_45_64" then
         return anim .. "_45"
     elseif installed == "mifl_fas2_sg55x_mag_762" then
         return anim .. "_762"
@@ -435,7 +440,6 @@ SWEP.Animations = {
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
-        Time = 68 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
@@ -444,11 +448,10 @@ SWEP.Animations = {
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
-        Time = 68 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.6,
+        LHIKOut = 0.8,
         LHIKEaseOut = 0.35,
     },
     ["reload_45"] = {
@@ -480,7 +483,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.6,
+        LHIKOut = 0.9,
         LHIKEaseOut = 0.35,
     },
     ["reload_762"] = {
@@ -512,7 +515,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.6,
+        LHIKOut = 0.8,
         LHIKEaseOut = 0.35,
     },
 }

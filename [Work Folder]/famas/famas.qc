@@ -31,6 +31,7 @@ $bodygroup "Mag"
 	studio "Mag_556_50.smd"	
 	studio "Mag_9mm.smd"	
 	blank
+	studio "Mag_9mm_50.smd"	
 }
 
 $bodygroup "Felin"
