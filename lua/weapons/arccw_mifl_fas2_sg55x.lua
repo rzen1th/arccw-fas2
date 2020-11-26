@@ -170,8 +170,8 @@ SWEP.AttachmentElements = {
             }
         },
         VMBodygroups = {
-            {ind = 2, bg = 4},
-            {ind = 3, bg = 2},
+            {ind = 2, bg = 5},
+            {ind = 3, bg = 4},
         },
     },
     ["mifl_fas2_sg55x_barrel_no"] = {
