@@ -57,8 +57,8 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 140
 
-SWEP.AccuracyMOA = 60 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 550 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 450 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 250
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
@@ -257,6 +257,7 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "pump",
         ShellEjectAt = 10/60,
+		MinProgress = 32/60,	
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },	
     ["fire"] = {
