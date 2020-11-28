@@ -10,9 +10,6 @@ att.AutoStats = true
 
 att.Slot = "mifl_fas2_m249_hg"
 
-att.Silencer = true
-att.Override_MuzzleEffect = "muzzleflash_suppressed"
-
 att.Add_BarrelLength = -10
 
 att.Mult_Range = 0.6
@@ -20,7 +17,7 @@ att.Mult_Recoil = 1.6
 att.Mult_RecoilSide = 1.5
 att.Mult_SightTime = 0.5
 att.Mult_AccuracyMOA = 2
-att.Mult_RPM = 1.2
+att.Mult_RPM = 1.35
 att.Mult_ReloadTime = 0.8
 
 att.LHIK = true
