@@ -57,7 +57,7 @@ SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 190
 SWEP.AccuracyMOA = 7 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 270
+SWEP.MoveDispersion = 200
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -286,8 +286,8 @@ function SWEP:Hook_NameChange(name)
     local stock = self.Attachments[8].Installed
     local eles = self:GetActiveElements()
 
-    -- AS Val and variants
     if handguard == "mifl_fas2_ak_hg_sd" or handguard == "mifl_fas2_ak_hg_sdk" then
+        -- AS Val and variants
         pre = "AS Val"
         mid = "/"
         post = "762"
@@ -312,7 +312,26 @@ function SWEP:Hook_NameChange(name)
                 post = "953"
             end
         end
+    elseif handguard == "mifl_fas2_ak_hg_saiga" then
+        pre = "Saiga"
+        mid = "-"
+        post = "762"
+        -- Saiga and variants
+        for _, v in pairs(eles) do
+            if v == "9x39mm" then
+                post = "939"
+            elseif v == "5.45x39mm" then
+                post = "545"
+            elseif v == "9x19mm" then
+                post = "9"
+            elseif v == "10_953" then
+                post = "953"
+            elseif v == "12_20g" then
+                post = "20"
+            end
+        end
     else
+        -- Regular AK variants
         if handguard == "mifl_fas2_ak_hg_rpk" then
             pre = "RPK"
             post = ""
@@ -331,6 +350,9 @@ function SWEP:Hook_NameChange(name)
             elseif v == "10_953" then
                 mid = "/"
                 post = "953"
+            elseif v == "12_20g" then
+                mid = "/"
+                post = "20"
             end
         end
         if (pre == "AK" or pre == "RPK") and stock == "mifl_fas2_ak_stock_ske" then

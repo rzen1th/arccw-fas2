@@ -61,7 +61,7 @@ SWEP.NPCWeight = 155
 
 SWEP.AccuracyMOA = 4.2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 210
+SWEP.MoveDispersion = 160
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 

@@ -3,12 +3,12 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 SWEP.PrintName = "ASs2"
-SWEP.TrueName = "M26"
+SWEP.TrueName = "MASS-26"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "Compact shotgun feeds from a small box fed magazine."
+SWEP.Trivia_Desc = "Compact multipurpose shotgun that can be mounted on weapons but also fired independently. Only effective short range due to its very short barrel."
 SWEP.Trivia_Manufacturer = "C-More Competition"
-SWEP.Trivia_Calibre = "12 gauge"
-SWEP.Trivia_Mechanism = "Straight-pull bolt action"
+SWEP.Trivia_Calibre = "12 Gauge"
+SWEP.Trivia_Mechanism = "Straight-pull Bolt Action"
 SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 2003
 
@@ -22,32 +22,32 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2_custom/c_m26.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2_custom/c_m26.mdl"
 SWEP.ViewModelFOV = 54
 
-SWEP.Damage = 17
-SWEP.DamageMin = 0 
-SWEP.Range = 80 
+SWEP.Damage = 14
+SWEP.DamageMin = 6
+SWEP.Range = 20
 SWEP.Penetration = 2
 SWEP.DamageType = DMG_BUCKSHOT
-SWEP.MuzzleVelocity = 1050 
+SWEP.MuzzleVelocity = 1050
 SWEP.PhysBulletMuzzleVelocity = 900
 
-SWEP.TracerNum = 1 
+SWEP.TracerNum = 1
 SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
-SWEP.ChamberSize = 1 
-SWEP.Primary.ClipSize = 5 
+SWEP.ChamberSize = 1
+SWEP.Primary.ClipSize = 5
 
 SWEP.Recoil = 2.4
 SWEP.RecoilSide = 1.3
 SWEP.MaxRecoilBlowback = 1.2
 
 SWEP.Delay = 60 / 520
-SWEP.Num = 16
+SWEP.Num = 8
 SWEP.ManualAction = true
 SWEP.Firemodes = {
     {
-        Mode = 2,
-        PrintName = "PUMP"
+        Mode = 1,
+        PrintName = "FIRE"
     },
     {
         Mode = 0
@@ -55,11 +55,11 @@ SWEP.Firemodes = {
 }
 
 SWEP.NPCWeaponType = "weapon_shotgun"
-SWEP.NPCWeight = 140
+SWEP.NPCWeight = 40
 
-SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 450 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 250
+SWEP.AccuracyMOA = 60 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 75
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
@@ -84,9 +84,9 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.665
-SWEP.SightTime = 0.3
+SWEP.SpeedMult = 1
+SWEP.SightedSpeedMult = 0.8
+SWEP.SightTime = 0.27
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
@@ -130,26 +130,29 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 1},{ind = 1, bg = 1}},
         AttPosMods = {
             [3] = {
-				vpos = Vector(0, -2.2, 19.2),
+                vpos = Vector(0, -2.2, 19.2),
             }
-        }		
-    },	
+        }
+    },
     ["mifl_fas2_mass_hg_sd"] = {
-        VMBodygroups = {{ind = 2, bg = 2}},	
-    },	
+        VMBodygroups = {{ind = 2, bg = 2}},
+    },
     ["mifl_fas2_mass_hg_xs"] = {
-        VMBodygroups = {{ind = 2, bg = 3}},	
+        VMBodygroups = {{ind = 2, bg = 3}},
         AttPosMods = {
             [3] = {
-				vpos = Vector(0, -2.2, 13),
+                vpos = Vector(0, -2.2, 13),
             }
-        }			
-    },		
+        }
+    },
+    ["nostock"] = {
+        VMBodygroups = {{ind = 4, bg = 2}},
+    },
 }
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if wep.Attachments[1].Installed then
-		vm:SetBodygroup(1, 2)	
+        vm:SetBodygroup(1, 2)
     end
 end
 
@@ -171,10 +174,10 @@ SWEP.Attachments = {
         ExtraSightDist = 7,
     },
     {
-        PrintName = "Handguard",
+        PrintName = "Barrel",
         Slot = "mifl_fas2_mass_hg",
         Bone = "UBGL_Frame",
-        DefaultAttName = "Default Handguard",
+        DefaultAttName = "Factory Barrel",
     },
     {
         PrintName = "Muzzle",
@@ -209,14 +212,15 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_mass_stock"},
+        Slot = {"go_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "UBGL_Frame",
         Offset = {
-            vpos = Vector(-0.2, 0, 1),
-            vang = Angle(0, -90, 0)
+            vpos = Vector(0, -2.39, 2),
+            vang = Angle(90, 0, -90)
         },
-        VMScale = Vector(1, 1, 1)
+        VMScale = Vector(1.1, 1.1, 1.1),
+        InstalledEles = {"nostock"}
     },
     {
         PrintName = "Ammo Type",
@@ -257,11 +261,11 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "pump",
         ShellEjectAt = 10/60,
-		MinProgress = 32/60,	
+        MinProgress = 32/60,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
-    },	
+    },
     ["fire"] = {
-        Source = "fire",	
+        Source = "fire",
     },
     ["reload"] = {
         Source = "wet",
@@ -272,13 +276,13 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "dry",
-        ShellEjectAt = 10/60,		
+        ShellEjectAt = 10/60,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.4,
     },
-	
+
     ["reload_drum"] = {
         Source = "wet_drum",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -288,10 +292,10 @@ SWEP.Animations = {
     },
     ["reload_empty_drum"] = {
         Source = "dry_drum",
-        ShellEjectAt = 10/60,		
+        ShellEjectAt = 10/60,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.4,
-    },	
+    },
 }

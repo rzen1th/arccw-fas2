@@ -1,11 +1,10 @@
-att.PrintName = "25-Round 12G"
+att.PrintName = "25-Round 12 Gauge"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
-att.Description = "Incase you want a lot of bullet."
+att.Description = "A heavy shotgun drum magazine that lets you keep racking that slide all day long."
 att.Desc_Pros = {
-    "pro.invistracers"
+    "pro.magcap"
 }
 att.Desc_Cons = {
-    "con.magcap"
 }
 att.SortOrder = 25
 att.AutoStats = true
