@@ -9,6 +9,30 @@ $bodygroup "Main"
 $bodygroup "Iron"
 {
 	studio "Iron.smd"	
+	studio "Iron_Long.smd"		
+	blank		
+}
+
+$bodygroup "Barrel"
+{
+	studio "Barrel.smd"
+	studio "Barrel_Extend.smd"	
+	studio "Barrel_SD.smd"
+	studio "Barrel_XS.smd"	
+	blank
+}
+
+$bodygroup "Mag"
+{
+	studio "Mag.smd"	
+	studio "Mag_25.smd"		
+	blank		
+}
+
+$bodygroup "Stock"
+{
+	studio "Stock.smd"	
+	studio "Stock_Fold.smd"		
 	blank		
 }
 
@@ -35,29 +59,16 @@ $sequence "pump" {
 	{ event 5004 8 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 26 "Arccw_FAS2_Weapon_SG550.BoltForward" }
 	{ event 5004 33 "Arccw_FAS2_Generic.Cloth_Movement" }	
-	fadein 0.2
-	fadeout 0.2
-	snap	
+	fadein 0.1
+	fadeout 0.1
 	fps 60
 }
 
 $sequence "fire" {
 	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event 5001 0 "1" }
 	fadein 0.2
 	fadeout 0.2
-	snap
-	fps 60
-}
-
-$sequence "iron" {
-	"anims\iron.smd"
-	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event 5001 0 "1" }
-	fadein 0.2
-	fadeout 0.2
-	snap
 	fps 60
 }
 
@@ -131,17 +142,8 @@ $sequence "dry_drum" {
 $sequence "draw" {
 	"anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
-	fadein 0.2
-	fadeout 0.2
-	snap	
-	fps 60
-}
-
-$sequence "deploy" {
-	"anims\deploy.smd"
-	activity "ACT_VM_DRAW" 1
-	{ event 5004 12 "ArcCW_MiFl_416c.Bolt1" }		
-	{ event 5004 26 "ArcCW_MiFl_416c.Bolt2" }		
+	{ event 5004 0 "Weapon.Deploy" }	
+	{ event 5004 10 "Arccw_FAS2_Generic.Cloth_Movement" }	
 	fadein 0.2
 	fadeout 0.2
 	snap	

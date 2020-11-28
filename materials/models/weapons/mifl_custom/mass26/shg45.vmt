@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\mifl_custom\mass26\shg45_DIFFout"
+	"$bumpmap" "models\weapons\mifl_custom\mass26\shg45_DDNout"
+	"$normalmapalphaphongmask"    "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.03 .07 .02]"
+	"$nocull" "1"
+	"$phong"     "1"
+	"$phongboost"   "7"
+	"$phongexponenttexture" "models\weapons\mifl_custom\mass26\shg45_SPECout"
+	"$phongalbedotint"		"1"
+	"$phongalbedoboost" 	"1"
+	"$halflambert" 		"1"
+	
+	$color2 "[18.1 17.0 17.4]"		
+}

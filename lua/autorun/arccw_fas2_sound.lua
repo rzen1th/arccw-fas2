@@ -453,7 +453,12 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/sg55x/sg550_magin.wav"}
 })
-
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SG550.MagIn2",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sg55x/sg550_stock.wav"}
+})
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_SG550.BoltForward",
 	channel = 		CHAN_ITEM1,
