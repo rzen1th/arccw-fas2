@@ -46,7 +46,7 @@ SWEP.Num = 16
 SWEP.ManualAction = true
 SWEP.Firemodes = {
     {
-        Mode = 1,
+        Mode = 2,
         PrintName = "PUMP"
     },
     {
@@ -191,16 +191,16 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac",
+        Slot = "tac_pistol",
         Bone = "UBGL_Frame",
         Offset = {
-            vpos = Vector(-0.5, 10, 1),
-            vang = Angle(0, -90, -90),
+            vpos = Vector(0.5, -2.5, 8),
+            vang = Angle(90, 0, 30),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExtraSightDist = 20,
-        CorrectivePos = Vector(2, -2, 3)
+        ExtraSightDist = 15,
+        CorrectivePos = Vector(1.2, -2, -5)
     },
     {
         PrintName = "Magazine",
@@ -209,7 +209,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_ak47_stock"},
+        Slot = {"go_stock", "mifl_fas2_mass_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "UBGL_Frame",
         Offset = {
@@ -233,8 +233,8 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "UBGL_Frame", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.8, 2, 0.8), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, -90, 0)
+            vpos = Vector(0.7, -2, 2), -- offset that the attachment will be relative to the bone
+            vang = Angle(90, 0, -90)
         }
     }
 }
