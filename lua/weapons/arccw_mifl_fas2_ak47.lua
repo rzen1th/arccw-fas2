@@ -148,6 +148,22 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_ak_hg_saiga"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 9},
+            {ind = 3, bg = 1}			
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.35, -10, 1.3),
+            Ang = Angle(-0.1, 0, 0),
+            Magnification = 1.1
+        },		
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 24.5, 1.8)
+            }
+        }
+    },	
     ["mifl_fas2_ak_hg_xs"] = {
         VMBodygroups = {
             {ind = 2, bg = 5},
@@ -256,7 +272,10 @@ SWEP.AttachmentElements = {
     },
     ["50_919"] = {
         VMBodygroups = {{ind = 1, bg = 10}}
-    }
+    },
+    ["12_20g"] = {
+        VMBodygroups = {{ind = 1, bg = 13}}
+    }	
 }
 
 function SWEP:Hook_NameChange(name)
@@ -325,7 +344,7 @@ function SWEP:Hook_NameChange(name)
         elseif handguard == "mifl_fas2_ak_hg_svd" then
             post = post .. " DMR"
         elseif handguard == "mifl_fas2_ak_hg_overlord" then
-            pre = "OVERLORD"
+            pre = "Volk"
         end
     end
 

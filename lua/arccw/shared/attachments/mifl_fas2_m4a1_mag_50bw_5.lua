@@ -25,9 +25,6 @@ att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_suppressed_fire1.wav" end
 end
 
-att.ExcludeFlags = {"3bst"}
-att.GivesFlags = {"a1"}
-
 att.Mult_RPM = 0.7
 
 att.Override_Ammo = "357"
@@ -35,7 +32,7 @@ att.Override_Ammo = "357"
 att.Override_Trivia_Calibre = ".50 Beowulf"
 att.Override_Trivia_Class = "Desginated Marksman Rifle"
 att.ActivateElements = {"20"}
---[[]
+
 att.Override_Firemodes_Priority = 10
 att.Override_Firemodes = {
     {
@@ -45,5 +42,5 @@ att.Override_Firemodes = {
         Mode = 0
     }
 }
-]]
+
 att.AddSuffix = " C50"

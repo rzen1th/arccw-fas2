@@ -1,18 +1,17 @@
-att.PrintName = "10-Round .50 Beowulf"
+att.PrintName = "15-Round .50 Beowulf"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_60.png", "mips smooth")
-att.Description = "Conversion to .50 Beowolf allows for higher damage and range, but you cant stuff many bullets into a magazine of one."
+att.Description = "Conversion to .50 Beowolf allows for higher damage and range, incase you need even more ammo."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.SortOrder = 10
+att.SortOrder = 15
 att.AutoStats = true
 att.Slot = {"mifl_fas2_m4a1_mag", "mifl_fas2_m249_mag", "mifl_fas2_famas_mag"}
---[[]
+
 att.Mult_SightTime = 1.1
-att.Mult_ReloadTime = 1.175
-]]
-att.Override_ClipSize = 10
+att.Mult_ReloadTime = 1.2
+att.Override_ClipSize = 15
 att.Mult_Damage = 2.3
 att.Mult_DamageMin = 1.6
 att.Mult_Range = 0.9
@@ -32,7 +31,7 @@ att.Mult_RPM = 0.7
 att.Override_Ammo = "357"
 att.Override_Trivia_Calibre = ".50 Beowulf"
 att.Override_Trivia_Class = "Desginated Marksman Rifle"
---att.ActivateElements = {"60"}
+att.ActivateElements = {"60"}
 
 att.Override_Firemodes_Priority = 10
 att.Override_Firemodes = {

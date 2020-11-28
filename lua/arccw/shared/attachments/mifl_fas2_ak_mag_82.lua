@@ -25,3 +25,13 @@ att.Mult_MuzzleVelocity = 1.2
 att.Override_ClipSize = 10
 
 att.Mult_AccuracyMOA = 0.7
+
+att.Override_Firemodes_Priority = 10
+att.Override_Firemodes = {
+    {
+        Mode = 1,
+    },	
+    {
+        Mode = 0
+    }
+}

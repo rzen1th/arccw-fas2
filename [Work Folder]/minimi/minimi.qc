@@ -20,6 +20,7 @@ $bodygroup "Iron"
 {
 	studio "Iron.smd"
 	studio "Rail.smd"
+	studio "Iron_2.smd"	
 	studio "Rail_Out.smd"
 	blank	
 }
