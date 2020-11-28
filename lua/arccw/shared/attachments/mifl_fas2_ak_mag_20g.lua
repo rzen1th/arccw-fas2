@@ -15,7 +15,7 @@ att.Mult_ReloadTime = 0.95
 att.Mult_MuzzleVelocity = 0.8
 att.Mult_Range = 0.5
 att.Mult_Penetration = 0
-att.Mult_Damage = 0.6
+att.Mult_Damage = 2.5
 
 att.Override_Num = 14
 att.Override_Ammo = "buckshot"
