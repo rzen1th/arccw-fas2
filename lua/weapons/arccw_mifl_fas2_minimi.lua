@@ -157,9 +157,8 @@ SWEP.AttachmentElements = {
 			{ind = 2, bg = 2},		
         },
         AttPosMods = {
-            [3] = {
-            vpos = Vector(14.5, -1.7, 0),
-            }
+            [3] = {vpos = Vector(14.5, -1.7, 0)},
+            [4] = {vpos = Vector(10, -1, 0)},			
         },		
     },	
     ["23"] = {
@@ -248,7 +247,7 @@ SWEP.Attachments = {
         Bone = "Base",
         DefaultAttName = "Standard Handguard",
         Offset = {
-            vpos = Vector(10, 1, 0),
+            vpos = Vector(8, 1, 0),
             vang = Angle(0, 0, -90),
         }
     },
@@ -268,14 +267,9 @@ SWEP.Attachments = {
         Slot = {"foregrip", "ubgl", "bipod"},
         Bone = "Base",
         Offset = {
+			vpos = Vector(12, 1, 0),
             vang = Angle(0,0, -90),
             wang = Angle(-10.216, 0, 180)
-        },
-        SlideAmount = {
-            vmin = Vector(12, 1, 0),
-            vmax = Vector(12, 1, 0),
-            wmin = Vector(20, 0.832, -8),
-            wmax = Vector(20, 0.832, -8),
         },
     },
     {
@@ -309,8 +303,8 @@ SWEP.Attachments = {
         Slot = {"charm"},
         Bone = "Base",
         Offset = {
-            vpos = Vector(1, -3, 5),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(1, -3, -1),
+            vang = Angle(0, 0, -90),
             wpos = Vector(5, 1, -3),
             wang = Angle(-9, 0, 180)
         },
