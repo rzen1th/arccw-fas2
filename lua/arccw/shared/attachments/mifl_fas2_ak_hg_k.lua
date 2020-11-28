@@ -19,5 +19,4 @@ att.Mult_ReloadTime = 0.95
 
 att.Add_BarrelLength = -4
 
-att.Mult_MoveDispersion = 0.9
-att.Mult_HipDispersion = 1.1
+att.Mult_HipDispersion = 0.8
