@@ -9,7 +9,7 @@ att.Slot = "mifl_fas2_ak_mag"
 att.ActivateElements = {"12_20g"}
 att.Override_ClipSize = 12
 
-att.Mult_Recoil = 1.3
+att.Mult_Recoil = 1.5
 att.Mult_SightTime = 0.85
 att.Mult_ReloadTime = 0.95
 att.Mult_MuzzleVelocity = 0.8
@@ -23,7 +23,7 @@ att.Override_Trivia_Calibre = "20G"
 att.Override_Trivia_Class = "Shotgun"
 att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
 
-att.Mult_AccuracyMOA = 17
+att.Mult_AccuracyMOA = 12
 att.Mult_HipDispersion = 0.6
 att.Mult_RPM = 0.7
 
