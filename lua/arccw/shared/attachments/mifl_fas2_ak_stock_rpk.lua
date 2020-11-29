@@ -1,6 +1,7 @@
 att.PrintName = "Heavy Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_stock_a2.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_stock_heavy.png", "mips smooth")
 att.Description = "Lengthened and solid wood stock used by the RPK. Reduces recoil considerably, but more difficult to manuver."
+att.SortOrder = 12
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

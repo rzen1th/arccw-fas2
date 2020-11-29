@@ -1,5 +1,5 @@
 att.PrintName = "30-Round 5.45mm"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_545.png", "mips smooth")
 att.Description = "Convert the weapon into the modern AK-74, firing an intermediate cartridge."
 att.Desc_Pros = {
 }

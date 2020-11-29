@@ -1,5 +1,5 @@
 att.PrintName = "45-Round 7.62mm"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_762l.png", "mips smooth")
 att.Description = "Extended magazine used by the RPK in a support weapon role."
 att.Desc_Pros = {
 	"pro.magcap"

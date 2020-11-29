@@ -58,6 +58,7 @@ $bodygroup "Stock"
 	studio "Stock_AK.smd"	
 	studio "Stock_Grip.smd"
 	blank
+	studio "Stock_Buff.smd"
 }
 
 $texturegroup "fgd"

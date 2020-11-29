@@ -1,5 +1,5 @@
 att.PrintName = "12-Round 20G"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_12g.png", "mips smooth")
 att.Description = "Small box magazine loaded with 20 Gauge shells, turning the weapon into a semi-automatic shotgun."
 att.Desc_Pros = {}
 att.Desc_Cons = {"con.magcap"}

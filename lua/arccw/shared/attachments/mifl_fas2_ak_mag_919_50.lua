@@ -1,5 +1,5 @@
 att.PrintName = "50-Round 9x19mm"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_9mm.png", "mips smooth")
 att.Description = "Extended magazine for the 9x19mm conversion. Heavy, but may be worth the extra ammo."
 att.Desc_Pros = {
     "pro.magcap"

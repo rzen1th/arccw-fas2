@@ -1,7 +1,7 @@
 att.PrintName = "No Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_xs.png", "mips smooth")
 att.Description = "The most compact comrade around."
-att.SortOrder = 1
+att.SortOrder = -10
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -54,7 +54,8 @@ $bodygroup "Stock"
 	studio "Stock_Non.smd"
 	studio "Stock_UMP.smd"		
 	blank
-	studio "Stock_G3.smd"			
+	studio "Stock_G3.smd"	
+	studio "stock_adaptor.smd"		
 }
 
 $illumposition 0 0 0

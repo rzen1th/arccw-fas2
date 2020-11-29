@@ -1,5 +1,5 @@
 att.PrintName = "15-Round 7.62mm"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "Small magazine with lighter load. Improves handling."
 att.Desc_Pros = {}
 att.Desc_Cons = {"con.magcap"}

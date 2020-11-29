@@ -1,7 +1,7 @@
 att.PrintName = "Glushitel Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_sd.png", "mips smooth")
 att.Description = "Integrated suppressor and handguard of the AS Val and VSS Vintorez. Fast firing and accurate. While it is designed to be used with subsonic 9x39mm ammunition, it can fit any caliber with some Russian ingenuity."
-att.SortOrder = 1
+att.SortOrder = 3
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

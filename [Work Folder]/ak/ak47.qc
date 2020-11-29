@@ -24,7 +24,8 @@ $bodygroup "Mag"
 	studio "919_40.smd"	
 	studio "82.smd"		
 	blank
-	studio "12G.smd"		
+	studio "12G.smd"	
+	studio "545_45.smd"		
 }
 $bodygroup "HG"
 {
@@ -57,6 +58,7 @@ $bodygroup "Stock"
 	studio "Stock_Ske2.smd"	
 	blank	
 	studio "Stock_Ske3.smd"		
+	studio "Stock_Adaptor.smd"			
 }
 
 $illumposition 0 0 0

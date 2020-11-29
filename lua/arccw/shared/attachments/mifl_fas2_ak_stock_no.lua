@@ -1,6 +1,7 @@
 att.PrintName = "Stub Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_stock_a2.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_stock_stub.png", "mips smooth")
 att.Description = "A pitiful chub of a stock that is entirely useless in recoil reduction."
+att.SortOrder = 10
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

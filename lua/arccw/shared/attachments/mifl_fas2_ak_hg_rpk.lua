@@ -1,7 +1,7 @@
 att.PrintName = "Pulemyot Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_rpk.png", "mips smooth")
 att.Description = "Long barrel with integrated bipod used in the RPK. More stable and shootes further, but somewhat unwieldy."
-att.SortOrder = 1
+att.SortOrder = 5
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

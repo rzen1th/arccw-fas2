@@ -1,6 +1,7 @@
 att.PrintName = "Skeleton Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_stock_a2.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_stock_ske.png", "mips smooth")
 att.Description = "A lightweight foldable stock used in many paratrooper and compact variants of the AK."
+att.SortOrder = 11
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

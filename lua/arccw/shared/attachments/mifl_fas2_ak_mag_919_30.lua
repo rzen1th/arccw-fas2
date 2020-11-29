@@ -1,5 +1,5 @@
 att.PrintName = "30-Round 9x19mm"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_9mm.png", "mips smooth")
 att.Description = "Magwell and receiver conversion that uses 9x19mm, turning the weapon into a submachine gun. Great rate of fire and recoil, unimpressive damage."
 att.Desc_Pros = {}
 att.Desc_Cons = {}

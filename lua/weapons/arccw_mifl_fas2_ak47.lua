@@ -110,7 +110,7 @@ SWEP.AttachmentElements = {
     },
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 4}
+            {ind = 5, bg = 6}
         }
     },
     ["mifl_fas2_ak_stock_rpk"] = {
@@ -232,10 +232,11 @@ SWEP.AttachmentElements = {
         Override_Trivia_Calibre = "5.45x39mm Soviet"
     },
     ["30_545"] = {
-        VMBodygroups = {
-            {ind = 1, bg = 5}
-        }
+        VMBodygroups = {{ind = 1, bg = 5}}
     },
+    ["45_545"] = {
+        VMBodygroups = {{ind = 1, bg = 14}}
+    },	
     ["10_953"] = {
         VMBodygroups = {{ind = 1, bg = 11}},
         Override_Trivia_Calibre = "9x53mm"
@@ -468,7 +469,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "ak_frame",
         Offset = {
-            vpos = Vector(-0.2, 0, 1),
+            vpos = Vector(0.1, -2, 1.2),
             vang = Angle(0, -90, 0)
         },
         VMScale = Vector(1, 1, 1)
@@ -498,7 +499,7 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local installed = wep.Attachments[7].Installed
 
-    if !installed or installed == "mifl_fas2_ak_mag_545" and anim == "reload_nomen_empty" then
+    if !installed or installed == "mifl_fas2_ak_mag_545" or installed == "mifl_fas2_ak_mag_545_45" and anim == "reload_nomen_empty" then
         return "reload_nomen_empty_2"
     end
 

@@ -1,7 +1,7 @@
 att.PrintName = "Snayper Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_svd.png", "mips smooth")
 att.Description = "Very long barrel and handguard ripped from a Dragunov sniper rifle, allowing the AK to perform a DMR role."
-att.SortOrder = 1
+att.SortOrder = 12
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

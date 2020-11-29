@@ -1,5 +1,5 @@
 att.PrintName = "60-Round 9x39mm"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_asval2.png", "mips smooth")
 att.Description = "Load 9x39mm cartridges, designed for subsonic velocities in suppressed weapons. Heavy magazine increases load, but gives extra ammo."
 att.Desc_Pros = {
     "pro.invistracers"

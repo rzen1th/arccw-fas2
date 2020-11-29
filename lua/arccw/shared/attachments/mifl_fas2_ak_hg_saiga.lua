@@ -1,7 +1,7 @@
 att.PrintName = "Saiga Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_saiga.png", "mips smooth")
 att.Description = "Modern handguard configuration with shorter barrel. Better handling and hip-firing, but worse range."
-att.SortOrder = 1
+att.SortOrder = -0.5
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
