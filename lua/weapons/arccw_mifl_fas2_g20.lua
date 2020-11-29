@@ -3,7 +3,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "HKP20"
+SWEP.PrintName = "NPP20"
 SWEP.TrueName = "Glock 20"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Polymer handgun firing 10mm Auto, a far cry from its usual 9x19mm cousins, making it capable of having more range and damage."
@@ -25,22 +25,22 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 24
-SWEP.DamageMin = 17 -- damage done at maximum range
-SWEP.Range = 35-- in METRES
+SWEP.Damage = 30
+SWEP.DamageMin = 24 -- damage done at maximum range
+SWEP.Range = 35 -- in METRES
 SWEP.Penetration = 6
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 17 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 15 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 700
 
-SWEP.Recoil = 0.6
-SWEP.RecoilSide = 0.3
+SWEP.Recoil = 0.65
+SWEP.RecoilSide = 0.4
 SWEP.RecoilRise = 0.8
-SWEP.VisualRecoilMult = 0.7
+SWEP.VisualRecoilMult = 1
 SWEP.MaxRecoilBlowback = 2
 
 SWEP.Delay = 60 / 700 -- 60 / RPM.
@@ -56,7 +56,7 @@ SWEP.NPCWeight = 220
 
 SWEP.AccuracyMOA = 12 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200
+SWEP.MoveDispersion = 100
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "glock" -- the magazine pool this gun draws from
@@ -136,8 +136,6 @@ SWEP.AttachmentElements = {
         Override_ActivePos = Vector(8, 0, 0),
     },
     ["roni"] = {
-        TrueNameChange = "Glock Carbine",
-        NameChange = "HKP-C",
         VMBodygroups = {
             {ind = 1, bg = 1},
             {ind = 4, bg = 0},
@@ -147,14 +145,15 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [1] = {
                 vpos = Vector(0, 0, 3.5),
-                  },
+            },
             [2] = {
                 vpos = Vector(0, 9.5, 0.1),
-                  },
+                --vang = Angle(90, -90, 0)
+            },
             [4] = {
                 vpos = Vector(0, 8, 0.78),
-                  },
             },
+        },
         Override_IronSightStruct = {
             Pos = Vector(-2.856, -5, -1.1),
             Ang = Angle(0, 0, 0),
@@ -171,19 +170,17 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 1},
         },
     },
-    ["mifl_fas2_g20_mag33"] = {
+    ["mag_33"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
         },
     },
-    ["mifl_fas2_g20_mag8"] = {
+    ["mag_8"] = {
         VMBodygroups = {
             {ind = 2, bg = 2},
         },
     },
     ["mifl_fas2_g20_slide_17c"] = {
-        TrueNameChange = "Glock 17c",
-        NameChange = "HKP 17c",
         VMBodygroups = {
             {ind = 1, bg = 2},
         },
@@ -194,8 +191,6 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_g20_slide_raptor"] = {
-        TrueNameChange = "Glock Raptor",
-        NameChange = "HKP Raptor",
         VMBodygroups = {
             {ind = 1, bg = 4},
         },
@@ -206,8 +201,6 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_g20_slide_whisper"] = {
-        TrueNameChange = "Glock SD",
-        NameChange = "HKP SD",
         VMBodygroups = {
             {ind = 1, bg = 3},
         },
@@ -218,8 +211,6 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_g20_slide_18"] = {
-        TrueNameChange = "Glock 18",
-        NameChange = "HKP 18",
         VMBodygroups = {
             {ind = 1, bg = 1}
         },
@@ -239,6 +230,44 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.MirrorVMWM = true
+
+function SWEP:Hook_ClassChange(class)
+    local slide = self.Attachments[3].Installed
+    if slide == "mifl_fas2_roni" then
+        return "Carbine"
+    elseif slide == "mifl_fas2_g20_slide_18" then
+        return "Machine Pistol"
+    end
+    return "Pistol"
+end
+
+function SWEP:Hook_NameChange(name)
+    local pre = GetConVar("arccw_truenames"):GetBool() and "Glock " or "NPP"
+    local cal = "20"
+    local post = ""
+    local slide = self.Attachments[3].Installed
+    local mag = self.Attachments[5].Installed
+
+    if mag == "mifl_fas2_g20_mag_17_9" or mag == "mifl_fas2_g20_mag_33_9" then
+        cal = "17"
+    elseif mag == "mifl_fas2_g20_mag_8_50" then
+        cal = "20/50"
+    end
+
+    if slide == "mifl_fas2_g20_slide_whisper" then
+        post = " SD"
+    elseif slide == "mifl_fas2_g20_slide_17c" then
+        post = "L"
+    elseif slide == "mifl_fas2_g20_slide_raptor" then
+        post = " Raptor"
+    elseif slide == "mifl_fas2_roni" then
+        post = " Carbine"
+    elseif slide == "mifl_fas2_g20_slide_18" then
+        if cal == "17" then cal = "18" else post = " Auto" end
+    end
+
+    return pre .. cal .. post
+end
 
 SWEP.Attachments = {
     {
@@ -264,6 +293,7 @@ SWEP.Attachments = {
         InstalledEles = {"rail_2"},
         ExtraSightDist = 20,
         CorrectivePos = Vector(1, -2, 0.5),
+        ExcludeFlags = {"mifl_fas2_g20_slide_raptor"}
     },
     {
         PrintName = "Slide",
@@ -350,7 +380,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
         return anim .. "_akimbo"
     end
 
-    if wep.Attachments[5].Installed == "mifl_fas2_g20_mag33" then
+    if table.HasValue(wep:GetActiveElements(), "mag_33") then
         return anim .. "_33"
     end
 end
