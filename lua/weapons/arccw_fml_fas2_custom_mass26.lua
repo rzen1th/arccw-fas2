@@ -253,7 +253,6 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        Time = 0.6,
     },
     ["ready"] = {
         Source = "draw",
