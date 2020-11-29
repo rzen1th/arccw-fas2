@@ -315,11 +315,15 @@ function SWEP:Hook_NameChange(name)
                 post = "20"
             end
         end
-    elseif handguard == "mifl_fas2_ak_hg_saiga" then
-        pre = "Saiga"
+    elseif handguard == "mifl_fas2_ak_hg_saiga" or handguard == "mifl_fas2_ak_hg_overlord" then
+        -- Saiga and Volk
+        if handguard == "mifl_fas2_ak_hg_overlord" then
+            pre = "Volk"
+        else
+            pre = "Saiga"
+        end
         mid = "-"
         post = "762"
-        -- Saiga and variants
         for _, v in pairs(eles) do
             if v == "9x39mm" then
                 post = "939"
@@ -368,8 +372,6 @@ function SWEP:Hook_NameChange(name)
             post = post .. " Kurz"
         elseif handguard == "mifl_fas2_ak_hg_svd" then
             post = post .. " DMR"
-        elseif handguard == "mifl_fas2_ak_hg_overlord" then
-            pre = "Volk"
         end
     end
 
