@@ -21,8 +21,6 @@ att.Mult_SightedMoveSpeed = 1.3
 
 att.Mult_ShootPitch = 1.5
 
-att.Mult_MoveDispersion = 0.7
-att.Mult_HipDispersion = 1.25
 att.Add_BarrelLength = -8
 att.Mult_SightTime = 0.5
 att.Mult_Recoil = 2
