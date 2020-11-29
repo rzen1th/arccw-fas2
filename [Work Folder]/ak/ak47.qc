@@ -70,6 +70,7 @@ $cdmaterials "models\weapons\arccw_fas2\ak_extra\"
 $cdmaterials "models\weapons\arccw_fas2\hands\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1\"
 
 $attachment "muzzle" "FLASH" 0 0 0 rotate 0 0 0
 $attachment "ejector" "EJECT" 0 0 0 rotate 0 0 0

@@ -126,7 +126,7 @@ SWEP.AttachmentElements = {
     },
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 4},
+            {ind = 5, bg = 6},
         },
     },
     ["mifl_fas2_mp5_stock_none"] = {
@@ -447,7 +447,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(-1.4, -1.3, 0),
+            vpos = Vector(-7, -1.3, 0),
             vang = Angle(0, 0, -90),
         },
         VMScale = Vector(1, 1, 1)

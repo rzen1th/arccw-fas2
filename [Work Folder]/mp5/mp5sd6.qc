@@ -66,6 +66,7 @@ $cdmaterials "models\weapons\arccw_fas2\minimi\"
 $cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1\"
 
 $attachment "Muzzle" "Dummy01" 11.81 0.38 0 rotate 0 0 0
 $attachment "Ejector" "Dummy01" 1.65 0.75 0.08 rotate -60 50 -50

@@ -102,7 +102,7 @@ SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
     ["buftube"] = {
-        VMBodygroups = {{ind = 5, bg = 3}}
+        VMBodygroups = {{ind = 5, bg = 5}}
     },
     ["mifl_fas2_sg55x_stock_sniper"] = {
         VMBodygroups = {{ind = 5, bg = 1}}
@@ -354,7 +354,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(-0.2, -1.8, -0.2),
+            vpos = Vector(0.05, -4, 0.1),
             vang = Angle(0, -90, 0)
         },
         VMScale = Vector(1, 1, 1)
