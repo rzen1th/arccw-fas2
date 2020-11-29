@@ -135,6 +135,7 @@ $sequence "idle_tpp" {
 	activity "ACT_VM_IDLE" 1
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 30
 }
 
@@ -161,6 +162,7 @@ $sequence "deploy" {
 	{ event 5004 0 "Weapon.Deploy" }
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 70
 }
 
@@ -170,6 +172,7 @@ $sequence "holster" {
 	{ event 5004 0 "Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 90
 }
 
@@ -204,6 +207,7 @@ $sequence "reload" {
 	fadein 0.2
 	fadeout 0.2
 	fps 36
+	snap	
 }
 
 $sequence "reload_empty" {
@@ -289,6 +293,7 @@ $sequence "reload_pp19" {
 	{ event 3018 77 "" }
 	fadein 0.2
 	fadeout 0.2
+	snap	
 	fps 36
 }
 

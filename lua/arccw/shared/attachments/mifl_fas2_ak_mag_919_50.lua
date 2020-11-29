@@ -21,7 +21,6 @@ att.Mult_VisualRecoilMult = 0.8
 att.Mult_Penetration = 0.4
 att.Mult_MuzzleVelocity = 0.7
 att.Mult_ReloadTime = 0.9
-att.Override_ClipSize = 30
 
 -- 7.62mm -> 9x19mm
 att.Mult_Recoil = 0.5
