@@ -268,15 +268,14 @@ SWEP.Attachments = {
     },
 }
 
---[[SWEP.Hook_SelectInsertAnimation = function( wep, anim )
-	--local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
+SWEP.Hook_SelectInsertAnimation = function(wep, data)
+    --local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
 
-	local reloadtime = math.min( (wep.Primary.ClipSize - wep:Clip1()), 4 )
+    local insertAmt = math.min(wep.Primary.ClipSize + wep:GetChamberSize() - wep:Clip1(), wep:GetOwner():GetAmmoCount(wep.Primary.Ammo), 4)
+    local anim = "sgreload_insert" .. insertAmt
 
-    print("sgreload_insert" .. reloadtime)
-
-    return {1, "sgreload_insert" .. reloadtime}
-end]]
+    return {count = insertAmt, anim = anim, empty = false}
+end
 
 SWEP.Animations = {
     ["idle"] = {
