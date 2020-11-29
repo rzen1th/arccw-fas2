@@ -1,3 +1,4 @@
+att.PrintName = "Overlord Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_volk.png", "mips smooth")
 att.Description = "A makeshift but futuristic handguard that electrifies the bullet as it leaves the chamber, shocking targets near the point of impact. It is quite bulky and unreliable, however."
 att.SortOrder = 0
