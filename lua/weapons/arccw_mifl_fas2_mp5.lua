@@ -84,8 +84,8 @@ SWEP.ShellScale = 1.25
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SpeedMult = 0.975
-SWEP.SightedSpeedMult = 0.875
+SWEP.SpeedMult = 0.95
+SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.275
 
 SWEP.IronSightStruct = {
@@ -477,7 +477,7 @@ function SWEP:Hook_NameChange(name)
     elseif hg == "mifl_fas2_mp5_ump_k" then
         pre = "UMP"
         mid = "9"
-        post = "K"
+        post = "-K"
         ump = true
     elseif hg == "mifl_fas2_mp5_ump_nor" then
         pre = "UMP"
