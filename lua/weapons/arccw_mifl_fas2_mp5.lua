@@ -4,9 +4,9 @@ SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Piss5"
-SWEP.TrueName = "MP5"
+SWEP.TrueName = "MP5A3"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = "Classic submachinegun for the \"good guys\", used by police, military, and special forces worldwide, coming in a wide variety of variants."
+SWEP.Trivia_Desc = "Arguably the best submachine gun to ever exist, the MP5 is accurate, stable and compact. Police and military forces all over the world make extensive use of it and its many variants."
 SWEP.Trivia_Manufacturer = "Heckler and Koch"
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -25,9 +25,9 @@ SWEP.ViewModelFOV = 54
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 21
-SWEP.DamageMin = 12 -- damage done at maximum range
-SWEP.Range = 40 -- in METRES
+SWEP.Damage = 25
+SWEP.DamageMin = 17 -- damage done at maximum range
+SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 6
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -38,9 +38,8 @@ SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 900
 
-SWEP.Recoil = 0.6
-SWEP.RecoilSide = 0.5
-SWEP.RecoilRise = 0.4
+SWEP.Recoil = 0.3
+SWEP.RecoilSide = 0.15
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -59,11 +58,11 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 170
 
-SWEP.AccuracyMOA = 7 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 390 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 205
+SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 100
 
-SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
+SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -101,7 +100,7 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
 SWEP.ActivePos = Vector(1, -1.5, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -129,7 +128,7 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 6},
         },
     },
-    ["mifl_fas2_mp5_stock_none"] = {
+    ["mifl_fas2_uni_rif_nostock"] = {
         VMBodygroups = {
             {ind = 5, bg = 2},
         },
@@ -140,8 +139,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_hg_sd"] = {
-        NameChange = "Pissed",
-        TrueNameChange = "MP5SD",
         VMBodygroups = {
             {ind = 3, bg = 2},
         },
@@ -153,8 +150,6 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_mp5_hg_grip"] = {
-        NameChange = "Peta Griffin",
-        TrueNameChange = "MP5",
         VMBodygroups = {
             {ind = 3, bg = 1},
         },
@@ -170,8 +165,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_hg_eod"] = {
-        NameChange = "EOD",
-        TrueNameChange = "MP5-EOD",
         VMBodygroups = {
             {ind = 3, bg = 3},
         },
@@ -182,8 +175,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_hg_k"] = {
-        NameChange = "Kurz",
-        TrueNameChange = "MP5K",
         VMBodygroups = {
             {ind = 1, bg = 1},
             {ind = 3, bg = 4},
@@ -195,8 +186,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_hg_no"] = {
-        NameChange = "Kurz",
-        TrueNameChange = "MP5K",
         VMBodygroups = {
             {ind = 1, bg = 5},
             {ind = 3, bg = 4},
@@ -208,8 +197,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_hg_mw2"] = {
-        NameChange = "Kurz",
-        TrueNameChange = "MP5K",
         VMBodygroups = {
             {ind = 1, bg = 3},
             {ind = 2, bg = 4},
@@ -222,8 +209,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_hg_g3"] = {
-        NameChange = "Long",
-        TrueNameChange = "MP5L",
         VMBodygroups = {
             {ind = 1, bg = 4},
             {ind = 3, bg = 4},
@@ -238,8 +223,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_ump_k"] = {
-        NameChange = "Kurz",
-        TrueNameChange = "UMP-K",
         VMBodygroups = {
             {ind = 1, bg = 2},
             {ind = 3, bg = 4},
@@ -260,8 +243,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_ump_usc"] = {
-        NameChange = "Carbine",
-        TrueNameChange = "USC",
         VMBodygroups = {
             {ind = 1, bg = 2},
             {ind = 3, bg = 4},
@@ -285,8 +266,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_mp5_ump_nor"] = {
-        NameChange = "Piss2",
-        TrueNameChange = "UMP",
         VMBodygroups = {
             {ind = 1, bg = 2},
             {ind = 3, bg = 4},
@@ -338,9 +317,6 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 4, bg = 4},
         },
-    },
-    ["bitchbasic9mm"] = {
-        AddSuffix = "/9"
     },
 }
 
@@ -443,7 +419,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_mp5_stock"},
+        Slot = {"go_stock", "mifl_fas2_mp5_stock", "mifl_fas2_uni_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
@@ -472,6 +448,83 @@ SWEP.Attachments = {
         },
     },
 }
+
+function SWEP:Hook_NameChange(name)
+    local pre = "MP5"
+    local post = "A3"
+    local mid = ""
+    local ump = false
+    local hg = self.Attachments[2].Installed
+    local mag = self.Attachments[7].Installed
+    local stock = self.Attachments[9].Installed
+
+    if hg == "mifl_fas2_mp5_hg_eod" then
+        post = " EOD"
+    elseif hg == "mifl_fas2_mp5_hg_g3" then
+        post = "-C"
+    elseif hg == "mifl_fas2_mp5_hg_grip" then
+        post = "-G"
+    elseif hg == "mifl_fas2_mp5_hg_k" then
+        mid = "K"
+        post = ""
+    elseif hg == "mifl_fas2_mp5_hg_mw2" then
+        mid = "K"
+        post = " SOP"
+    elseif hg == "mifl_fas2_mp5_hg_no" then
+        post = " Kurz"
+    elseif hg == "mifl_fas2_mp5_hg_sd" then
+        post = "SD"
+    elseif hg == "mifl_fas2_mp5_ump_k" then
+        pre = "UMP"
+        mid = "9"
+        post = "K"
+        ump = true
+    elseif hg == "mifl_fas2_mp5_ump_nor" then
+        pre = "UMP"
+        mid = "9"
+        post = ""
+        ump = true
+    elseif hg == "mifl_fas2_mp5_ump_usc" then
+        pre = "USC"
+        mid = "-9"
+        post = ""
+        ump = true
+    end
+
+    if post == "A3" then
+        if stock == "mifl_fas2_uni_rif_nostock" then
+            post = "A1"
+        elseif stock == "mifl_fas2_mp5_stock_g3w" then
+            post = "A2"
+        elseif stock == "mifl_fas2_mp5_stock_pdw" then
+            post = "-PDW"
+        elseif stock then
+            post = ""
+        end
+    end
+
+    if mag == "mifl_fas2_mp5_mag_20" then
+        if ump then
+            mid = "45"
+        else
+            post = post .. "/45"
+        end
+    elseif mag == "mifl_fas2_mp5_mag_30" then
+        if ump then
+            mid = "40"
+        else
+            post = post .. "/40"
+        end
+    elseif mag == "mifl_fas2_mp5_mag_waffle" then
+        if ump then
+            mid = "223"
+        else
+            post = post .. "/223"
+        end
+    end
+
+    return pre .. mid .. post
+end
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
     local onehand = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"

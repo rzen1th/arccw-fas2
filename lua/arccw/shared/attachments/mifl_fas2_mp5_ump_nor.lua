@@ -1,7 +1,7 @@
 att.PrintName = "UMP Kit"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_ump.png", "mips smooth")
-att.Description = "UMP conversion. Increases accuracy somewhat. Adds cool rails."
-att.SortOrder = 1
+att.Description = "Aftermarket kit allowing your MP5 to pretend it is its cheaper cousin. It is slightly heavier and has more range."
+att.SortOrder = -40
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -9,14 +9,12 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_hg"
 
-att.Mult_MoveSpeed = 0.9
-
-att.Mult_Range = 1.2
+att.Mult_MoveSpeed = 0.95
+att.Mult_Range = 1.25
 att.Mult_RPM = 0.9
-att.Mult_DamageMin = 1.5
-att.Mult_Recoil = 1.1
-att.Mult_SightTime = 1.05
-att.Mult_AccuracyMOA = 0.9
+att.Mult_Recoil = 0.95
+att.Mult_SightTime = 1.1
+att.Mult_AccuracyMOA = 0.8
 
 att.Add_BarrelLength = 2
 

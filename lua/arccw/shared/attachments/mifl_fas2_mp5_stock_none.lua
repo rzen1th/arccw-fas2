@@ -7,6 +7,7 @@ att.Desc_Cons = {
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_stock"
+att.Ignore = true
 
 att.Mult_Recoil = 1.8
 att.Mult_RecoilSide = 1.5
