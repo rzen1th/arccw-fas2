@@ -1,6 +1,6 @@
-att.PrintName = "Glock Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_s_762.png", "mips smooth")
-att.Description = "Not so folding stock"
+att.PrintName = "Compact Stock"
+att.Icon = Material("entities/arccw_mifl_fas2_g20_stock.png", "mips smooth")
+att.Description = "Compact polymer stock offers decent weapon control exchange for handling"
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

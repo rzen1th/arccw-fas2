@@ -1,5 +1,5 @@
 att.PrintName = "Raptor Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_s_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g20_stock_raptor.png", "mips smooth")
 att.Description = "Folding stock"
 att.Desc_Pros = {
 }
