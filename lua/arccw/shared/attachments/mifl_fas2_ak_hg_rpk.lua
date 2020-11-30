@@ -12,6 +12,7 @@ att.Slot = "mifl_fas2_ak_hg"
 att.Mult_Range = 1.4
 att.Mult_SightTime = 1.1
 att.Mult_HipDispersion = 1.25
+att.Mult_MoveDispersion = 1.5
 
 att.Mult_MoveSpeed = 0.95
 att.Mult_Recoil = 0.7

@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "AM-R50SA"
 SWEP.TrueName = "M82"
 SWEP.Trivia_Class = "Antimateriel Rifle"
-SWEP.Trivia_Desc = "Huge anti-material rifle firing a huge round. Meant for use against light vehicles and communication equipment. Extreme long range capabilities, but is very heavy."
+SWEP.Trivia_Desc = "Huge anti-material rifle firing a huge round, meant for use against light vehicles and communications equipment. Extremely heavy, as it is meant to be used with its integrated bipod, but nobody is stopping you from lugging it around."
 SWEP.Trivia_Manufacturer = "Barrett Firearms Manufacturing"
 SWEP.Trivia_Calibre = ".50 BMG"
 SWEP.Trivia_Country = "United States"
@@ -22,11 +22,11 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
 SWEP.ViewModelFOV = 57
 
-SWEP.Damage = 160
-SWEP.DamageMin = 35 -- damage done at maximum range
-SWEP.Range = 270 -- in METRES
+SWEP.Damage = 250
+SWEP.DamageMin = 90 -- damage done at maximum range
+SWEP.Range = 250 -- in METRES
 SWEP.Penetration = 45
-SWEP.DamageType = DMG_BLAST
+SWEP.DamageType = DMG_BULLET + DMG_BLAST
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 6000 -- projectile or phys bullet muzzle velocity
 -- IN M/S
@@ -37,10 +37,10 @@ SWEP.TracerWidth = 3
 
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 8 -- DefaultClip is automatically set.
-SWEP.ExtendedClipSize = 12
-SWEP.ReducedClipSize = 4
+--SWEP.ExtendedClipSize = 12
+--SWEP.ReducedClipSize = 4
 
-SWEP.Recoil = 2.2
+SWEP.Recoil = 2.5
 SWEP.RecoilSide = 1.5
 SWEP.RecoilRise = 0.2
 SWEP.VisualRecoilMult = 1.2
@@ -60,8 +60,8 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_crossbow"}
 SWEP.NPCWeight = 80
 
-SWEP.AccuracyMOA = 1.2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 1000 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 1 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
 
 SWEP.Primary.Ammo = "SniperPenetratedRound" -- what ammo type the gun uses
 SWEP.MagID = "bfg" -- the magazine pool this gun draws from
@@ -156,7 +156,7 @@ SWEP.Attachments = {
         ExtraSightDist = 3
     },
     {
-        PrintName = "Handguard",
+        PrintName = "Barrel",
         DefaultAttName = "Standard Barrel",
         Slot = "mifl_fas2_m82_hg",
         Bone = "M82_Body",
@@ -167,7 +167,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip", "ubgl", "bipod"},
+        Slot = {"foregrip", "ubgl"},
         Bone = "M82_Body",
         Offset = {
             vang = Angle(90, -90, -90),

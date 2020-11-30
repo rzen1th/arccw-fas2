@@ -25,7 +25,7 @@ att.Mult_AccuracyMOA = 2
 att.Mult_DrawSpeeed = 1.5
 att.Mult_HolsterSpeed = 1.5
 
-att.Mult_HipDispersion = 0.8
+att.Mult_HipDispersion = 0.9
 
 att.LHIK = true
 att.LHIK_Priority = -2
