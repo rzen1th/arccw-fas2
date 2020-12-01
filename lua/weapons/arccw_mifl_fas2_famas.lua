@@ -25,9 +25,9 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 41
-SWEP.DamageMin = 17 -- damage done at maximum range
-SWEP.Range = 60 -- in METRES
+SWEP.Damage = 35
+SWEP.DamageMin = 24 -- damage done at maximum range
+SWEP.Range = 75 -- in METRES
 SWEP.Penetration = 8
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -62,9 +62,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 160
 
-SWEP.AccuracyMOA = 4.2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 3.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 380 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.MoveDispersion = 75
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 
