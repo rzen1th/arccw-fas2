@@ -211,11 +211,11 @@ SWEP.AttachmentElements = {
                     pos = Vector(4.822, -24.784, 6.864),
                     ang = Angle(0, -90, 0)
                 },
-                ModelBodygroups = "123220101",
+                ModelBodygroups = "124220101",
                 Scale = Vector(1, 0.8, 0.8)
             }
         },
-        --{[0] = 1, [1] = 2, [2] = 3, [3] = 2, [4] = 2, [6] = 1, [8] = 1} }
+        --{[0] = 1, [1] = 2, [2] = 4, [3] = 2, [4] = 2, [6] = 1, [8] = 1} }
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 23, 1.8)
