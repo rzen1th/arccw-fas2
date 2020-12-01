@@ -2,13 +2,13 @@
 {
 	"$basetexture"			"models\weapons\arccw_fas2\mp5_extra\wep_hk_ump_d"
 	"$bumpmap" 			"models\weapons\arccw_fas2\mp5_extra\wep_hk_ump_n"
-    "$color2"			"[0.7 0.7 0.7]"
+    "$color2"			"[0.7 0.69 0.67]"
 
-	"$envmaptint" "[.01 .01 .01]"
+	"$envmaptint" "[.1 .1 .1]"
 	"$basemapalphaphongmask" 	"1"
 	"$phong" 			"1"
 	"$phongboost"			"1"
-	"$phongexponent" 		"50"
-	"$phongfresnelranges"		"[0.8 1.9 5]"
+	"$phongexponent" 		"20"
+	"$phongfresnelranges"		"[1 1 1]"
 	"$halflambert"			"1"
 }
