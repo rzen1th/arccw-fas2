@@ -118,6 +118,15 @@ $definebone "muzzle_flash_sup" "Gemtech" 0.005452 -1.926493 0.020311 -0.000036 -
 
 $sectionframes 30 120
 
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fps 20
+	fadein 0.00002
+	fadeout 0.00002	
+	snap
+}
+
 $sequence "idle" {
 	"glock20_anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
