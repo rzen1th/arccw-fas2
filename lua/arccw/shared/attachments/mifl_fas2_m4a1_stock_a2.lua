@@ -1,4 +1,4 @@
-att.PrintName = "A2 Stock"
+att.PrintName = "Solid Stock"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_stock_a2.png", "mips smooth")
 att.Description = "Solid stock increases weight and aim time but decreases recoil. Essential for that ‘vintage’ look."
 att.Desc_Pros = {

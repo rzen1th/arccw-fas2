@@ -204,6 +204,39 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_m4a1_barrel_a4"] = {
+        NameChange = "AR-A1C",
+        TrueNameChange = "M16A1",
+        VMBodygroups = {
+            {ind = 1, bg = 13},
+            {ind = 2, bg = 12},
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(35, -1.3, 0)
+            }
+        }
+    },
+    ["mifl_fas2_m4a1_barrel_famas"] = {
+        NameChange = "AR-CF",
+        TrueNameChange = "M4-F",
+        VMBodygroups = {
+            {ind = 1, bg = 12},
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(21, -1.3, 0)
+            },
+            [1] = {
+					vpos = Vector(8, -6.5, 0),
+            }			
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.086, -9, 0.45),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1
+        },		
+    },	
     ["mifl_fas2_m4a1_barrel_commando"] = {
         NameChange = "AR-C",
         TrueNameChange = "M4C",
@@ -214,7 +247,7 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [3] = {
                 vpos = Vector(17, -1.3, 0)
-            }
+            }			
         }
     },
     ["mifl_fas2_m4a1_barrel_ar2"] = {
@@ -282,11 +315,13 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.MirrorVMWM = true
-
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local eles = data.eles
     for i, k in pairs(eles or {}) do
+        if k == "mifl_fas2_m4a1_barrel_famas" and wep.Attachments[1].Installed then
+            vm:SetBodygroup(2, 11)
+        end	
         if k == "iron_none" then
             vm:SetBodygroup(2, 8)
         end

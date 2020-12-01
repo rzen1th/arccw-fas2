@@ -24,10 +24,10 @@ With the aim of
 
 [short credits]
 /*
-[blank slot] - [insert thing]
-Fesiug - QCI, anything related to coding and other stuff
-TheOnly8Z - Various tweaks and good shit
+Fesiug - QCI, some refining
+TheOnly8Z - Major refining
 oranchepopsicle - Bottom Text 
+Fluffy Mammal - take a wild guess
 FA:S 2.0 - Assets
 
 - Extra -
@@ -74,10 +74,10 @@ Fesiug
 -rewriting nomen, reloading code
 -sexy damped burst
 -spawnicon
--other stuff i forgot idk
 
 TheOnly8Z
 -clean up crew
+-rebalance 
 -stuff
 
 oranchepopsicle
@@ -105,6 +105,7 @@ Saber Interactive (World War Z) -- quite ebin assets ngl
 Crytek (Warface)
 -Roni Frame
 -AS Val 
+-FO12
 
 DICE (BF4)
 -M26
@@ -123,7 +124,7 @@ Google Images
 -Stefano (mw2cr rip)
 -Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
 -HK G41/empty (wwz,warface rip, pretty fucking sure these two are the same)
-- ClearSkyC (warface rip)
+-ClearSkyC (warface rip)
 */
 
 

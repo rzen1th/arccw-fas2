@@ -1,5 +1,5 @@
 att.PrintName = "Para Trooper Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a1.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a1k.png", "mips smooth")
 att.Description = "Shorter and lighter version of the old M16A1 handguard and barrel, intended for paratroopers."
 att.SortOrder = 6.5
 att.Desc_Pros = {
