@@ -20,3 +20,5 @@ att.Mult_AccuracyMOA = 5
 att.Mult_HipDispersion = 2
 
 att.Mult_ShootPitch = 1.1
+
+att.Mult_RPM = 2

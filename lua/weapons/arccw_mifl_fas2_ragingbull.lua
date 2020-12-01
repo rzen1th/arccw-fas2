@@ -6,11 +6,11 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Pissed Bovine"
 SWEP.TrueName = "Raging Bull"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "Powerful revolver, lacking a speed loader."
-SWEP.Trivia_Manufacturer = ""
-SWEP.Trivia_Calibre = "454 Casull"
-SWEP.Trivia_Mechanism = ""
-SWEP.Trivia_Country = "United States"
+SWEP.Trivia_Desc = "Big revolver firing a big cartridge, useful for sending people straight to Brazil (coincidentally the country of origin). Because of the uncommon cartridge and size, there is no speedloader."
+SWEP.Trivia_Manufacturer = "Taurus International"
+SWEP.Trivia_Calibre = ".454 Casull"
+SWEP.Trivia_Mechanism = "Double Action"
+SWEP.Trivia_Country = "Brazil"
 SWEP.Trivia_Year = "1982"
 
 SWEP.Slot = 1
@@ -31,10 +31,10 @@ SWEP.WorldModelOffset = {
     ang = Angle(-10, 0, 180)
 }
 
-SWEP.Damage = 120
+SWEP.Damage = 85
 SWEP.DamageMin = 49 -- damage done at maximum range
-SWEP.Range = 30 -- in METRES
-SWEP.Penetration = 12
+SWEP.Range = 50 -- in METRES
+SWEP.Penetration = 20
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 900 -- projectile or phys bullet muzzle velocity
@@ -58,7 +58,7 @@ SWEP.RecoilSide = 1.75
 SWEP.RecoilRise = 1.3
 SWEP.MaxRecoilBlowback = 3
 
-SWEP.Delay = 60 / 320 -- 60 / RPM.
+SWEP.Delay = 60 / 120 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -93,7 +93,7 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.SightTime = 0.325
 
 SWEP.SpeedMult = 0.975
-SWEP.SightedSpeedMult = 0.65
+SWEP.SightedSpeedMult = 0.75
 
 SWEP.BarrelLength = 18
 
@@ -136,28 +136,28 @@ SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
     ["whisperer"] = {
-        NameChange = "Quiet Bovine",		
-		TrueNameChange = "Quiet Bull",		
+        NameChange = "Quiet Bovine",
+        TrueNameChange = "Quiet Bull",
         VMBodygroups = {{ind = 2, bg = 1}},
     },
     ["b_long"] = {
         VMBodygroups = {{ind = 2, bg = 2}},
-    },	
+    },
     ["b_short"] = {
         VMBodygroups = {{ind = 2, bg = 3}},
-    },		
+    },
     ["b_no"] = {
-        NameChange = "Infant Bovine",		
-		TrueNameChange = "Baby Bull",	
+        NameChange = "Infant Bovine",
+        TrueNameChange = "Baby Bull",
         VMBodygroups = {{ind = 2, bg = 4}},
-    },		
+    },
     ["rail"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
-    },	
+    },
 }
 
 SWEP.RejectAttachments = {
-    ["perk_fastreload"] = true	
+    ["perk_fastreload"] = true
 }
 
 SWEP.Attachments = {
@@ -172,7 +172,8 @@ SWEP.Attachments = {
             wpos = Vector(5, 0.739, -3.8),
             wang = Angle(-10, 0, 180)
         },
-        InstalledEles = {"rail"},		
+        VMScale = Vector(1.2, 1.2, 1.2),
+        InstalledEles = {"rail"},
     },
     {
         PrintName = "Barrel",
@@ -184,8 +185,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
             wpos = Vector(12, 0.782, -3.75),
             wang = Angle(-9.79, 0, 180)
-        },	
-    },	
+        },
+    },
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip_pistol", "style_pistol"},
@@ -195,18 +196,18 @@ SWEP.Attachments = {
             vang = Angle(0,0, -90),
             wpos = Vector(8, 0.602, -2),
             wang = Angle(-10.216, 0, 180)
-        },	
+        },
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
         Bone = "RagingBullBase",
         Offset = {
-            vpos = Vector(8, -2, 0), 
+            vpos = Vector(8, -2, 0),
             vang = Angle(0, 0, -90),
         },
-		ExtraSightDist = 15,
-		CorrectivePos = Vector(0.4, -2, -0.25),			
+        ExtraSightDist = 15,
+        CorrectivePos = Vector(0.4, -2, -0.25),
     },
     {
         PrintName = "Ammo Type",
@@ -228,14 +229,14 @@ SWEP.Attachments = {
             wpos = Vector(10, 1, -3.5),
             wang = Angle(-9, 0, 180)
         },
-		FreeSlot = true,
-    },		
+        FreeSlot = true,
+    },
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-	local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
+    local nomen = (wep:GetBuff_Override("Override_FAS2NomenBackup") and "_nomen") or ""
 
-	local reloadtime = (wep.Primary.ClipSize - wep:Clip1())
+    local reloadtime = (wep.Primary.ClipSize - wep:Clip1())
 
     return "Reload" .. reloadtime .. nomen
 end
@@ -245,7 +246,7 @@ SWEP.Animations = {
         Source = "draw",
     },
     ["draw"] = {
-        Source = "draw",	
+        Source = "draw",
     },
     ["fire"] = {
         Source = {"Fire01","fire02","fire03"},
@@ -261,27 +262,27 @@ SWEP.Animations = {
     },
     ["Reload2"] = {
         Source = "Reload2",
-		Time = 105/30,		
+        Time = 105/30,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
-    },	
+    },
     ["Reload3"] = {
         Source = "Reload3",
-		Time = 120/30,	
+        Time = 120/30,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
-    },	
+    },
     ["Reload4"] = {
         Source = "Reload4",
-		Time = 135/30,	
+        Time = 135/30,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
-    },	
+    },
     ["Reload5"] = {
-        Source = "Reload5",		
+        Source = "Reload5",
         LHIK = true,
         LHIKIn = 0.1,
         LHIKOut = 0.25,
@@ -293,26 +294,26 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.3,
     },
-    ["Reload2_nomen"] = {	
+    ["Reload2_nomen"] = {
         Source = "Reload2_nomen",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
-    },	
+    },
     ["Reload3_nomen"] = {
         Source = "Reload3_nomen",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
-    },	
+    },
     ["Reload4_nomen"] = {
         Source = "Reload4_nomen",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
-    },	
+    },
     ["Reload5_nomen"] = {
-        Source = "Reload5_nomen",	
+        Source = "Reload5_nomen",
         LHIK = true,
         LHIKIn = 0.1,
         LHIKOut = 0.25,
