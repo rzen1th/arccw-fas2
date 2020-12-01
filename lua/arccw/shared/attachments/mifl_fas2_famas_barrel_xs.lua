@@ -10,7 +10,7 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_famas_hg"
 
 att.Mult_Range = 0.5
-att.Mult_Recoil = 1.2
+att.Mult_Recoil = 1.35
 att.Mult_SightTime = 0.75
 att.Mult_DrawTime = 0.75
 att.Mult_AccuracyMOA = 1.8
@@ -20,6 +20,9 @@ att.Add_BarrelLength = -12
 
 att.Mult_MoveDispersion = 1.2
 att.Mult_HipDispersion = 1.2
+
+att.Mult_SpeedMult = 1.2
+att.Mult_SightedSpeedMult = 1.2
 
 att.Mult_ShootPitch = 1.3
 

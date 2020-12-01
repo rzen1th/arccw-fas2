@@ -19,6 +19,8 @@ att.Mult_SightTime = 0.5
 att.Mult_AccuracyMOA = 2
 att.Mult_RPM = 1.35
 att.Mult_ReloadTime = 0.8
+att.Mult_SpeedMult = 1.2
+att.Mult_SightedSpeedMult = 1.2
 
 att.LHIK = true
 att.LHIK_Priority = -2
