@@ -20,17 +20,3 @@ att.Mult_RPM = 1.2
 att.Mult_ShootPitch = 0.8
 
 att.Add_BarrelLength = 12
-
-att.Override_Firemodes = {
-    {
-        Mode = -3,
-        RunawayBurst = true,
-        PostBurstDelay = 0.2
-    },
-    {
-        Mode = 1,
-    },	
-    {
-        Mode = 0
-    }
-}

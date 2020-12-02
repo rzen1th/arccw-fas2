@@ -8,6 +8,7 @@ att.Desc_Cons = {
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_m4a1_hg"
+att.GivesFlags = {"allowubgl"}
 
 att.Mult_MoveSpeed = 0.95
 
