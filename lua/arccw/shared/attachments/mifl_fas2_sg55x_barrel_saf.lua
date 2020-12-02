@@ -1,6 +1,6 @@
 att.PrintName = "SAF Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_saf.png", "mips smooth")
-att.Description = "Shorter barrel with more maneuverability meant for paratroopers.\nSwiss engineering traps recoil until the last shot."
+att.Description = "Compact paratrooper handguard with recoil-trapping hyper-burst mechanism, allowing for low recoil burst fire."
 att.SortOrder = 3
 att.Desc_Pros = {
     "Halves recoil until the last shot"
@@ -11,24 +11,28 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_sg55x_hg"
 
-att.Mult_MoveSpeed = 1.1
-att.Mult_Range = 0.9
+att.Mult_Range = 0.8
 att.Mult_Recoil = 1.2
 att.Mult_SightTime = 0.8
-att.Mult_RPM = 1.5
-
-att.Mult_ShootPitch = 0.9
-
 att.Mult_AccuracyMOA = 1.5
+
+att.Mult_HipDispersion = 0.8
+
+att.Add_BarrelLength = -5
+att.Mult_ShootPitch = 0.9
 
 att.Override_Firemodes = {
     {
         Mode = -3,
+        Mult_RPM = 1.5,
         PostBurstDelay = 0.2,
     },
     {
+        Mode = 2,
+    },
+    {
         Mode = 1,
-    },	
+    },
     {
         Mode = 0
     }

@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 SWEP.PrintName = "Gevär-552"
-SWEP.TrueName = "SG-552"
+SWEP.TrueName = "SG552"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Swiss rifle with a compact, comfortable, ergonomic build that allows it to be modified to fit many purposes."
 SWEP.Trivia_Manufacturer = "Schweizerische Industrie Gesellschaft"
@@ -23,8 +23,8 @@ SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_sg552.mdl"
 SWEP.ViewModelFOV = 57
 SWEP.DefaultBodygroups = "000000000000"
 SWEP.Damage = 36
-SWEP.DamageMin = 18 -- damage done at maximum range
-SWEP.Range = 50 -- in METRES
+SWEP.DamageMin = 22 -- damage done at maximum range
+SWEP.Range = 80 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -40,22 +40,17 @@ SWEP.Delay = 60 / 721 -- LOL
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Firemodes = {
-    {
-        Mode = 2
-    },
-    {
-        Mode = 1
-    },
-    {
-        Mode = 0
-    }
+    { Mode = 2 },
+    { Mode = -3, Mult_RPM = 1.25 },
+    { Mode = 1 },
+    { Mode = 0 },
 }
 
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 175
-SWEP.AccuracyMOA = 4.2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 380 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200
+SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 350 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 100
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -101,6 +96,9 @@ SWEP.CustomizeAng = Angle(10, 10, 5)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["noirons"] = {
+        VMBodygroups = {{ind = 3, bg = 7}}
+    },
     ["buftube"] = {
         VMBodygroups = {{ind = 5, bg = 5}}
     },
@@ -114,29 +112,12 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 5, bg = 2}}
     },
     ["whisperer"] = {
-        NameChange = "Gevär-552S",
-        TrueNameChange = "SG-552S",
         VMBodygroups = {
             {ind = 2, bg = 4},
             {ind = 3, bg = 2},
         },
     },
     ["mifl_fas2_sg55x_barrel_550"] = {
-        NameChange = "Gevär-550",
-        TrueNameChange = "SG-550",
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(0, 30, 0.6)
-            }
-        },
-        VMBodygroups = {
-            {ind = 2, bg = 2},
-            {ind = 3, bg = 1},
-        },
-    },
-    ["mifl_fas2_sg55x_barrel_551"] = {
-        NameChange = "Gevär-551",
-        TrueNameChange = "SG-551",
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 37.5, 0.6)
@@ -146,11 +127,20 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 1},
             {ind = 3, bg = 7},
         },
+    },
+    ["mifl_fas2_sg55x_barrel_551"] = {
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 30, 0.6)
+            }
+        },
+        VMBodygroups = {
+            {ind = 2, bg = 2},
+            {ind = 3, bg = 1},
+        },
         VMSkin = 1,
     },
     ["mifl_fas2_sg55x_barrel_kompact"] = {
-        NameChange = "Gevär-762",
-        TrueNameChange = "SG-762",
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 21.8, 0.6)
@@ -162,8 +152,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_sg55x_barrel_kompact2"] = {
-        NameChange = "Gevär-552C",
-        TrueNameChange = "SG-552C",
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 13.5, 0.6)
@@ -175,8 +163,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_sg55x_barrel_no"] = {
-        NameChange = "Gevär-XS",
-        TrueNameChange = "SG-XS",
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 9.8, 0.6)
@@ -188,8 +174,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_sg55x_barrel_saf"] = {
-        NameChange = "Gevär-SAF",
-        TrueNameChange = "SG-SAF",
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 15.5, 0.6)
@@ -201,8 +185,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_sg55x_barrel_saf2"] = {
-        NameChange = "Gevär-SAF M.0",
-        TrueNameChange = "SG-SAF M.0",
         VMElements = {
             {
                 Model = "models/weapons/arccw/mifl/fas2/c_minimi.mdl",
@@ -231,7 +213,7 @@ SWEP.AttachmentElements = {
     },
     ["58"] = {
         VMBodygroups = {{ind = 1, bg = 5}}
-    },	
+    },
     ["30"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
     },
@@ -256,9 +238,7 @@ SWEP.ExtraSightDist = 10
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    if wep.Attachments[1].Installed then
-		vm:SetBodygroup(3, 7)	
-    end
+    if wep.Attachments[1].Installed then vm:SetBodygroup(3, 7) end
 end
 
 SWEP.WorldModelOffset = {
@@ -281,13 +261,14 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         ExtraSightDist = 5,
-        CorrectiveAng = Angle(0, 180, 0)
+        CorrectiveAng = Angle(0, 180, 0),
+        InstalledEles = {"noirons"}
     },
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_sg55x_hg",
         Bone = "weapon_main",
-        DefaultAttName = "552",
+        DefaultAttName = "552 Handguard",
         Offset = {
             vpos = Vector(0.5, 8, -1),
             vang = Angle(90, -90, -90)
@@ -341,7 +322,7 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         ExtraSightDist = 20,
-        CorrectivePos = Vector(2, -2, 3)		
+        CorrectivePos = Vector(2, -2, 3)
     },
     {
         PrintName = "Magazine",
@@ -379,6 +360,44 @@ SWEP.Attachments = {
         }
     }
 }
+
+
+function SWEP:Hook_NameChange(name)
+    local pre = "SG"
+    if !GetConVar("arccw_truenames"):GetBool() then pre = "Gevär-" end
+    local post = ""
+    local mid = "552"
+    local hg = self.Attachments[2].Installed
+    local mag = self.Attachments[7].Installed
+
+    if hg == "mifl_fas2_sg55x_barrel_550" then
+        mid = self.Attachments[8].Installed == "mifl_fas2_sg55x_stock_sniper"
+                and "550-1" or "550"
+    elseif hg == "mifl_fas2_sg55x_barrel_551" then
+        mid = "551"
+    elseif hg == "mifl_fas2_sg55x_barrel_saf" then
+        mid = GetConVar("arccw_truenames"):GetBool() and "-SAF" or "SAF"
+    elseif hg == "mifl_fas2_sg55x_barrel_saf2" then
+        mid = GetConVar("arccw_truenames"):GetBool() and "-SAF" or "SAF"
+        post = " Mod. 0"
+    elseif hg == "mifl_fas2_sg55x_barrel_kompact" then
+        pre = GetConVar("arccw_truenames"):GetBool() and "RU" or "Nikov-"
+    elseif hg == "mifl_fas2_sg55x_barrel_kompact2" then
+        mid = "552C"
+    elseif hg == "mifl_fas2_sg55x_barrel_no" then
+        post = " Kurz"
+    elseif hg == "mifl_fas2_sg55x_barrel_sd" then
+        post = " SD"
+    end
+
+    if mag == "mifl_fas2_sg55x_mag_45" or mag == "mifl_fas2_sg55x_mag_45_64" then
+        mid = mid .. "/45"
+    elseif mag == "mifl_fas2_sg55x_mag_762" then
+        mid = mid .. "R"
+    end
+
+    return pre .. mid .. post
+end
 
 --- hierarchy ---
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
