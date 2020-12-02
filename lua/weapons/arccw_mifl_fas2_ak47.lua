@@ -113,6 +113,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 6}
         }
     },
+    ["mifl_fas2_ak_stock_fold"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 7}
+        }
+    },	
     ["mifl_fas2_ak_stock_rpk"] = {
         VMBodygroups = {
             {ind = 5, bg = 2}
@@ -164,6 +169,33 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_ak_hg_12"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 10},
+            {ind = 3, bg = 1}
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 29, 1.5)
+            }
+        }
+    },	
+    ["mifl_fas2_ak_hg_12u"] = {
+        Override_IronSightStruct = {
+    Pos = Vector(-4.401, -10, 1.8),
+    Ang = Angle(-1.1, 0, 0),
+            Magnification = 1.1
+        },	
+        VMBodygroups = {
+            {ind = 2, bg = 11},
+            {ind = 3, bg = 1}
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 21.5, 1.5)
+            }
+        }
+    },		
     ["mifl_fas2_ak_hg_xs"] = {
         VMBodygroups = {
             {ind = 2, bg = 5},
@@ -231,6 +263,9 @@ SWEP.AttachmentElements = {
     ["5.45x39mm"] = {
         Override_Trivia_Calibre = "5.45x39mm Soviet"
     },
+    ["30_556"] = {
+        VMBodygroups = {{ind = 1, bg = 15}}
+    },	
     ["30_545"] = {
         VMBodygroups = {{ind = 1, bg = 5}}
     },

@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\arccw_fas2\ak_extra\wep_ak12_d"
+	"$bumpmap" 			"models\weapons\arccw_fas2\ak_extra\wep_ak12_n"
+    "$color2"			"[.34 .34 .34]"	
+
+	"$envmaptint" "[.1 .1 .1]"
+	"$basemapalphaphongmask" 	"1"
+	"$phong" 			"1"
+	"$phongexponent"                "16"	
+	"$phongboost"                   "15"
+	"$phongfresnelranges"           "[0.75 1.5 3]"
+	"$halflambert"			"1"
+    $nocull  1	
+
+	"$basetexturealphaenvmapmask"	"1"
+        	"$envmapfresnel" 			"1"
+        	"$envmapFresnelMinMaxExp"		"[0 .4 1]"
+        	"$envmaptint" 			"[.005 .005 .0075]"	
+		
+		
+}
