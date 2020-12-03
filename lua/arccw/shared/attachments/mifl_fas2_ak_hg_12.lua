@@ -12,6 +12,7 @@ att.Slot = "mifl_fas2_ak_hg"
 att.Mult_Range = 1.2
 att.Mult_HipDispersion = 1.1
 att.Mult_Recoil = 0.95
+att.Mult_RPM = 1.1
 
 att.Add_BarrelLength = 2
 att.Mult_ShootPitch = 1.05

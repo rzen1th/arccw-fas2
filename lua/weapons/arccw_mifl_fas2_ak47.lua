@@ -334,6 +334,12 @@ function SWEP:Hook_NameChange(name)
     local stock = self.Attachments[8].Installed
     local eles = self:GetActiveElements()
 
+    if handguard == "mifl_fas2_ak_hg_12" or handguard == "mifl_fas2_ak_hg_12u" then
+        pre = "AK12"
+        mid = ""
+        post = ""
+	end	
+
     if handguard == "mifl_fas2_ak_hg_sd" or handguard == "mifl_fas2_ak_hg_sdk" then
         -- AS Val and variants
         pre = "AS Val"
@@ -551,7 +557,7 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local installed = wep.Attachments[7].Installed
 
-    if !installed or installed == "mifl_fas2_ak_mag_545" or installed == "mifl_fas2_ak_mag_545_45" and anim == "reload_nomen_empty" then
+    if ( !installed or installed == "mifl_fas2_ak_mag_545" or installed == "mifl_fas2_ak_mag_545_45" ) and anim == "reload_nomen_empty" then
         return "reload_nomen_empty_2"
     end
 
