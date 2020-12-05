@@ -22,8 +22,8 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2_custom/c_m26.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2_custom/c_m26.mdl"
 SWEP.ViewModelFOV = 54
 
-SWEP.Damage = 14
-SWEP.DamageMin = 6
+SWEP.Damage = 16
+SWEP.DamageMin = 5
 SWEP.Range = 20
 SWEP.Penetration = 2
 SWEP.DamageType = DMG_BUCKSHOT
@@ -57,9 +57,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 40
 
-SWEP.AccuracyMOA = 60 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 50 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 75
+SWEP.MoveDispersion = 90
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
@@ -112,7 +112,7 @@ SWEP.HoldtypeSights = "rpg"
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.ActivePos = Vector(0, 4, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
-SWEP.CrouchPos = Vector(-2, 0, -0.2)
+SWEP.CrouchPos = Vector(-2, 3, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
 SWEP.HolsterPos = Vector(1, 3, 2)
 SWEP.HolsterAng = Angle(-5, 5, 0)

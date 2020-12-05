@@ -12,10 +12,10 @@ att.Slot = "mifl_fas2_ak_mag"
 att.ActivateElements = {"30_556", "5.56x45mm"}
 
 att.Mult_Damage = 0.9
-att.Mult_DamageMin = 0.9
+att.Mult_DamageMin = 0.7
 att.Mult_Penetration = 0.8
 att.Mult_Range = 0.8
-att.Mult_Recoil = 0.8
+att.Mult_Recoil = 0.925
 att.Mult_RPM = 1.1
 
 att.Override_Trivia_Calibre = "5.56x45mm"

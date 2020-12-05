@@ -1,13 +1,14 @@
-STOCK ICON
+MASS ATT ICON
 M1911 SD WEHN
 tritium sight
 mp5 non navy guard
-THE FUCKING RAIL
+
+*THE FUCKING RAIL*
 
 worldmodel and "tpp_idle"(g20 still missing)
 - who even read this lmayo
 
-THE FUCKING STATS (STOCK)
+
 
 
 

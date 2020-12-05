@@ -33,11 +33,11 @@ SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 900
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.65
 SWEP.RecoilSide = 0.42
-SWEP.RecoilRise = 1.2
+SWEP.RecoilRise = 1.3
 SWEP.MaxRecoilBlowback = 0.5
-SWEP.VisualRecoilMult = 0.7
+SWEP.VisualRecoilMult = 0.9
 SWEP.Delay = 60 / 600
 SWEP.Num = 1 -- number of shots per trigger pull.
 
