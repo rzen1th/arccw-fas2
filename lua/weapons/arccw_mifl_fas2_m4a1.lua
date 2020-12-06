@@ -230,6 +230,7 @@ SWEP.AttachmentElements = {
         TrueNameChange = "M4-F",
         VMBodygroups = {
             {ind = 1, bg = 12},
+            {ind = 2, bg = 8},			
         },
         AttPosMods = {
             [3] = {
