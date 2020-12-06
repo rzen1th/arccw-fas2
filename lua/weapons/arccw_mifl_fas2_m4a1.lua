@@ -191,6 +191,14 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_m4a1_barrel_jungle"] = {
+        NameChange = "AR-A1",
+        TrueNameChange = "M16A1",
+        VMBodygroups = {
+            {ind = 1, bg = 14},
+            {ind = 2, bg = 4},
+        },
+    },	
     ["mifl_fas2_m4a1_barrel_para_a1"] = {
         NameChange = "AR-A1C",
         TrueNameChange = "M16A1",

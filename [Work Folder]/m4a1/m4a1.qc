@@ -24,7 +24,8 @@ $bodygroup "HG"
 	studio "Handguard_Commando.smd"	
 	studio "Handguard_AR2.smd"		
 	studio "Handguard_Famas.smd"	
-	studio "Handguard_A4.smd"		
+	studio "Handguard_A4.smd"	
+	studio "Handguard_M16_Camo.smd"		
 }
 $bodygroup "Sights"
 {
