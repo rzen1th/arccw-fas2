@@ -14,7 +14,7 @@ att.Mult_Recoil = 1.2
 att.Mult_SightTime = 0.9
 att.Mult_DrawTime = 0.9
 att.Mult_AccuracyMOA = 1.3
-att.Mult_RPM = 1.15
+att.Mult_RPM = 1.3
 att.Mult_ReloadTime = 0.95
 
 att.Add_BarrelLength = -4
