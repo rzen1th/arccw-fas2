@@ -156,10 +156,6 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.RejectAttachments = {
-    ["perk_fastreload"] = true
-}
-
 SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
