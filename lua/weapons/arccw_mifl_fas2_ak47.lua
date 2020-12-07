@@ -117,7 +117,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 5, bg = 7}
         }
-    },	
+    },
     ["mifl_fas2_ak_stock_rpk"] = {
         VMBodygroups = {
             {ind = 5, bg = 2}
@@ -179,16 +179,16 @@ SWEP.AttachmentElements = {
                 vpos = Vector(0, 29, 1.5)
             },
             [1] = {
-				vpos = Vector(0, 3, 4.05)
-            }				
+                vpos = Vector(0, 3, 4.05)
+            }
         }
-    },	
+    },
     ["mifl_fas2_ak_hg_12u"] = {
         Override_IronSightStruct = {
     Pos = Vector(-4.401, -10, 1.8),
     Ang = Angle(-1.1, 0, 0),
             Magnification = 1.1
-        },	
+        },
         VMBodygroups = {
             {ind = 2, bg = 11},
             {ind = 3, bg = 1}
@@ -198,10 +198,10 @@ SWEP.AttachmentElements = {
                 vpos = Vector(0, 21.5, 1.5)
             },
             [1] = {
-				vpos = Vector(0, 3, 4.05)
-            }			
+                vpos = Vector(0, 3, 4.05)
+            }
         }
-    },		
+    },
     ["mifl_fas2_ak_hg_xs"] = {
         VMBodygroups = {
             {ind = 2, bg = 5},
@@ -269,18 +269,21 @@ SWEP.AttachmentElements = {
     ["5.45x39mm"] = {
         Override_Trivia_Calibre = "5.45x39mm Soviet"
     },
+    ["5.56x45mm"] = {
+        Override_Trivia_Calibre = "5.46x45mm NATO"
+    },
     ["30_556"] = {
         VMBodygroups = {{ind = 1, bg = 15}}
-    },	
+    },
     ["30_545"] = {
         VMBodygroups = {{ind = 1, bg = 5}}
     },
     ["45_545"] = {
         VMBodygroups = {{ind = 1, bg = 14}}
-    },	
+    },
     ["10_953"] = {
         VMBodygroups = {{ind = 1, bg = 11}},
-        Override_Trivia_Calibre = "9x53mm"
+        Override_Trivia_Calibre = "9x53mm Soviet"
     },
     ["45_762"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
@@ -334,12 +337,6 @@ function SWEP:Hook_NameChange(name)
     local stock = self.Attachments[8].Installed
     local eles = self:GetActiveElements()
 
-    if handguard == "mifl_fas2_ak_hg_12" or handguard == "mifl_fas2_ak_hg_12u" then
-        pre = "AK12"
-        mid = ""
-        post = ""
-	end	
-
     if handguard == "mifl_fas2_ak_hg_sd" or handguard == "mifl_fas2_ak_hg_sdk" then
         -- AS Val and variants
         pre = "AS Val"
@@ -383,6 +380,8 @@ function SWEP:Hook_NameChange(name)
                 post = "939"
             elseif v == "5.45x39mm" then
                 post = "545"
+            elseif v == "5.56x45mm" then
+                post = "556"
             elseif v == "9x19mm" then
                 post = "9"
             elseif v == "10_953" then
@@ -390,6 +389,33 @@ function SWEP:Hook_NameChange(name)
             elseif v == "12_20g" then
                 post = "20"
             end
+        end
+    elseif handguard == "mifl_fas2_ak_hg_12" or handguard == "mifl_fas2_ak_hg_12u" then
+        -- AK-12, AK-15 and variants
+        pre = "AK"
+        mid = "-"
+        post = "15"
+        for _, v in pairs(eles) do
+            if v == "9x39mm" then
+                mid = "/"
+                post = "939"
+            elseif v == "5.45x39mm" then
+                post = "12"
+            elseif v == "5.56x45mm" then
+                post = "19"
+            elseif v == "9x19mm" then
+                mid = "/"
+                post = "919"
+            elseif v == "10_953" then
+                mid = "/"
+                post = "953"
+            elseif v == "12_20g" then
+                mid = "/"
+                post = "20"
+            end
+        end
+        if handguard == "mifl_fas2_ak_hg_12u" then
+            post = post .. "K"
         end
     else
         -- Regular AK variants
@@ -404,6 +430,9 @@ function SWEP:Hook_NameChange(name)
             elseif v == "5.45x39mm" then
                 mid = "-"
                 post = "74"
+            elseif v == "5.56x45mm" then
+                mid = "-"
+                post = "101"
             elseif v == "9x19mm" then
                 pre = "PP-19"
                 mid = " "
