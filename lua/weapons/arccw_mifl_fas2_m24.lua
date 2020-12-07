@@ -8,7 +8,7 @@ SWEP.TrueName = "M24"
 SWEP.Trivia_Class = "Sniper Rifle"
 SWEP.Trivia_Desc = "Percision rifle for long range combat."
 SWEP.Trivia_Manufacturer = "Remington Arms"
-SWEP.Trivia_Calibre = "7.62×51mm"
+SWEP.Trivia_Calibre = "7.62×51mm NATO"
 SWEP.Trivia_Mechanism = "Bolt-Action"
 SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 1988
@@ -53,14 +53,14 @@ SWEP.Firemodes = {
     }
 }
 
-SWEP.NPCWeaponType = "weapon_shotgun"
+SWEP.NPCWeaponType = "weapon_crossbow"
 SWEP.NPCWeight = 180
 
-SWEP.AccuracyMOA = 1.2 
+SWEP.AccuracyMOA = 0.75
 SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 220
 
-SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
+SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -83,8 +83,8 @@ SWEP.ShellRotateAngle = Angle(0, 180, 0)
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.65
+SWEP.SpeedMult = 0.88
+SWEP.SightedSpeedMult = 0.5
 SWEP.SightTime = 0.35
 
 SWEP.IronSightStruct = {
@@ -137,28 +137,28 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m24_hg_valk"] = {
         VMBodygroups = {	{ind = 1, bg = 6}, {ind = 2, bg = 4},	},
-    },	
+    },
     ["mifl_fas2_m24_hg_sd"] = {
         VMBodygroups = {	{ind = 1, bg = 1}, {ind = 2, bg = 0},	},
-    },	
+    },
     ["mifl_fas2_m24_hg_82"] = {
         VMBodygroups = {	{ind = 1, bg = 3}, {ind = 2, bg = 0},	},
-    },	
+    },
     ["mifl_fas2_m24_hg_obrez"] = {
         VMBodygroups = {	{ind = 1, bg = 4}, {ind = 2, bg = 2}, {ind = 3, bg = 1},	},
-    },		
+    },
     ["mifl_fas2_m24_mag_50"] = {
         VMBodygroups = {	{ind = 4, bg = 3},	},
     },
     ["mifl_fas2_m24_mag_23mm"] = {
         VMBodygroups = {	{ind = 4, bg = 2},	},
-    },	
+    },
     ["mifl_fas2_m24_mag_9mm"] = {
         VMBodygroups = {	{ind = 4, bg = 4},	},
-    },		
+    },
     ["mifl_fas2_m24_mag_300"] = {
         VMBodygroups = {	{ind = 4, bg = 1},	},
-    },	
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -179,7 +179,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         CorrectiveAng = Angle(0, 0, 0),
-        CorrectivePos = Vector(-0.095, 0, 0.49),		
+        CorrectivePos = Vector(-0.095, 0, 0.49),
         InstalledEles = {"rail", "nors"},
     },
     {
@@ -191,7 +191,7 @@ SWEP.Attachments = {
             vpos = Vector(0.3, 11, 1.5),
             vang = Angle(90, -90, -90)
         }
-    },	
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -201,7 +201,8 @@ SWEP.Attachments = {
             vpos = Vector(0, -1.7, 28),
             vang = Angle(90, 0, -90),
         },
-    },	
+        ExcludeFlags = {"no_muzzle"},
+    },
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
@@ -224,13 +225,13 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Magazine",
-		Slot = "mifl_fas2_m24_mag",
+        Slot = "mifl_fas2_m24_mag",
         DefaultAttName = "7.62×51mm"
     },
     {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
-        DefaultAttName = "Buckshot Shells"
+        DefaultAttName = "7.62x51mm NATO"
     },
     {
         PrintName = "Perk",
