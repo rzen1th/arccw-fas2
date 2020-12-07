@@ -25,7 +25,8 @@ $bodygroup "Barrel"
 	studio "Barrel_Jungle.smd"	
 	studio "Barrel_Marksman.smd"	
 	studio "Barrel_Obrez.smd"		
-	blank	
+	blank
+	studio "Barrel_Valk.smd"	
 }
 $bodygroup "Sights"
 {
@@ -33,6 +34,7 @@ $bodygroup "Sights"
 	studio "Iron_Jungle.smd"	
 	studio "Iron_Obrez.smd"		
 	blank	
+	studio "Iron_Valk.smd"			
 }
 $bodygroup "Frame"
 {
@@ -46,6 +48,7 @@ $bodygroup "Bullet"
 	studio "Bullet_300.smd"
 	studio "Bullet_23mm.smd"
 	studio "Bullet_50.smd"
+	studio "Bullet_9mm.smd"	
 	blank	
 }
 

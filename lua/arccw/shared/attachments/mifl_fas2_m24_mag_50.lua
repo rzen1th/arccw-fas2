@@ -1,5 +1,5 @@
 att.PrintName = ".50 BMG"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_12.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m24_ammo_50.png", "mips smooth")
 att.Description = "B I G"
 att.SortOrder = 0.2
 att.Desc_Pros = {

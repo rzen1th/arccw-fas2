@@ -136,6 +136,9 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m24_hg_jungle"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 1},	},
     },
+    ["mifl_fas2_m24_hg_valk"] = {
+        VMBodygroups = {	{ind = 1, bg = 6}, {ind = 2, bg = 4},	},
+    },	
     ["mifl_fas2_m24_hg_sd"] = {
         VMBodygroups = {	{ind = 1, bg = 1}, {ind = 2, bg = 0},	},
     },	
@@ -151,6 +154,9 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m24_mag_23mm"] = {
         VMBodygroups = {	{ind = 4, bg = 2},	},
     },	
+    ["mifl_fas2_m24_mag_9mm"] = {
+        VMBodygroups = {	{ind = 4, bg = 4},	},
+    },		
     ["mifl_fas2_m24_mag_300"] = {
         VMBodygroups = {	{ind = 4, bg = 1},	},
     },	
@@ -269,7 +275,7 @@ SWEP.Animations = {
         Source = "holster",
     },
     ["ready"] = {
-        Source = "deploy_first",
+        Source = "draw_first1",
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.5,

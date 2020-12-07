@@ -1,5 +1,5 @@
 att.PrintName = "Jungle Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_12.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m24_br_jungle.png", "mips smooth")
 att.Description = ""
 att.SortOrder = 1
 att.Desc_Pros = {
