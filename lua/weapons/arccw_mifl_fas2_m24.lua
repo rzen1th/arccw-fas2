@@ -56,40 +56,39 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 180
 
-SWEP.AccuracyMOA = 30 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 350 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.AccuracyMOA = 1.2 
+SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 220
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/rem870/rem870_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rem870/sd_fire.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/rem870/rem870_distance_fire1.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/m24/m24_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/m24/m24_suppressed_fire1.wav"
+SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m24/m24_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
 SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
 SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 
-SWEP.MuzzleEffect = "muzzleflash_shotgun"
-SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.MuzzleEffect = "muzzleflash_3"
+SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 100
-SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
-SWEP.ShellScale = 1.5
+SWEP.ShellScale = 1
 SWEP.ShellRotateAngle = Angle(0, 180, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.75
-SWEP.SightTime = 0.25
+SWEP.SightedSpeedMult = 0.65
+SWEP.SightTime = 0.35
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.859, -9, 1.391),
+    Pos = Vector(-5.52, -7, 1.279),
     Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -176,10 +175,11 @@ SWEP.Attachments = {
         Bone = "Dummy04",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, -2.6, 8),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(-5, -2.5, 0),
+            vang = Angle(0, 0, -90),
         },
         CorrectiveAng = Angle(0, 0, 0),
+        CorrectivePos = Vector(-0.095, 0, 0.49),		
         InstalledEles = {"rail", "nors"},
     },
     {
@@ -228,16 +228,6 @@ SWEP.Attachments = {
         DefaultAttName = "7.62×51mm"
     },
     {
-        PrintName = "Stock",
-        Slot = {"go_nova_stock", "go_stock"},
-        DefaultAttName = "Standard Stock",
-        Bone = "v_weapon.NOVA_PARENT",
-        Offset = {
-            vpos = Vector(0, -0.25, 1),
-            vang = Angle(90, 0, -90),
-        },
-    },
-    {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
         DefaultAttName = "Buckshot Shells"
@@ -275,7 +265,7 @@ SWEP.Animations = {
         Source = "holster",
     },
     ["ready"] = {
-        Source = "draw_first1",
+        Source = "draw_first2",
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.5,

@@ -618,3 +618,100 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_magin.wav"}
 })
+
+
+
+
+
+//M24
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Butt",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_butt.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Safety",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_safety.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltup_Nomen",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltup_nomen.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltback_Nomen",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltback_nomen.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltforward_Nomen",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltforward_nomen.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltdown",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltdown.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltup",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltup.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltback",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltback.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltforward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltforward.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Boltdown",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_boltdown.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Back",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_back.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Forward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_forward.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Eject",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m24/m24_eject.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M24.Insert",
+	channel = 		CHAN_ITEM2,
+	volume = 		1.0,
+	sound = {
+			"weapons/arccw_mifl/fas2/m24/m24_insert1.wav",
+			"weapons/arccw_mifl/fas2/m24/m24_insert2.wav",
+			"weapons/arccw_mifl/fas2/m24/m24_insert3.wav",
+			"weapons/arccw_mifl/fas2/m24/m24_insert4.wav",
+			"weapons/arccw_mifl/fas2/m24/m24_insert5.wav",			
+}
+})
+
