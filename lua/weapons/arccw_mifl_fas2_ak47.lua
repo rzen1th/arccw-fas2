@@ -355,6 +355,9 @@ function SWEP:Hook_NameChange(name)
             elseif v == "5.45x39mm" then
                 mid = "/"
                 post = "545"
+            elseif v == "5.56x45mm" then
+                mid = "/"
+                post = "556"
             elseif v == "9x19mm" then
                 mid = "/"
                 post = "9"
