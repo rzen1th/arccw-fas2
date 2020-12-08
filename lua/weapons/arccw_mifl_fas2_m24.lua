@@ -221,7 +221,7 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "Dummy04",
         Offset = {
-            vpos = Vector(12, -1, 0.8),
+            vpos = Vector(4, -1, 0.8),
             vang = Angle(0, 0, 180),
         },
         InstalledEles = {"tacms"},
