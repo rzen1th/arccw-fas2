@@ -136,7 +136,10 @@ SWEP.AttachmentElements = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 1},	},
     },
     ["mifl_fas2_m24_hg_valk"] = {
-        VMBodygroups = {	{ind = 1, bg = 6}, {ind = 2, bg = 4},	},
+        VMBodygroups = {	{ind = 1, bg = 6}, {ind = 2, bg = 4}, {ind = 3, bg = 1}	},
+        AttPosMods = {
+            [4] = {vpos = Vector(2, 0.5, 0)},		
+        }		
     },
     ["mifl_fas2_m24_hg_sd"] = {
         VMBodygroups = {	{ind = 1, bg = 1}, {ind = 2, bg = 0},	},
@@ -147,7 +150,8 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m24_hg_obrez"] = {
         VMBodygroups = {{ind = 1, bg = 4}, {ind = 2, bg = 2}, {ind = 3, bg = 1}},
         AttPosMods = {
-            [3] = {vpos = Vector(9, -1.4, -0)}
+            [3] = {vpos = Vector(9, -1.4, -0)},
+            [4] = {vpos = Vector(2, 0.5, 0)},		
         }
     },
     ["mifl_fas2_m24_mag_50"] = {
@@ -210,10 +214,6 @@ SWEP.Attachments = {
             vpos = Vector(4, 0.5, 0),
             vang = Angle(0, 0, -90),
         },
-        SlideAmount = {
-            vmin = Vector(6, 0.6, 0),
-            vmax = Vector(12, 0.5, 0),
-        },
         InstalledEles = {"ubrms"},
     },
     {
@@ -270,10 +270,7 @@ SWEP.Animations = {
         Source = "holster",
     },
     ["ready"] = {
-        Source = "draw_first2",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
+        Source = "draw_first3",
     },
     ["fire"] = {
         Source = "fire",
@@ -285,85 +282,62 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "cock01",
-        ShellEjectAt = 0.17,
+        ShellEjectAt = 0.35,
+        MinProgress = 0.9,		
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron"] = {
         Source = "cock01_scoped",
-        ShellEjectAt = 0.17,
+        ShellEjectAt = 0.35,
+        MinProgress = 0.9,	
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_nomen"] = {
         Source = "pump01_nomen",
-        ShellEjectAt = 0.17,
+        ShellEjectAt = 0.35,
+        MinProgress = 0.9,	
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron_nomen"] = {
         Source = "pump01_nomen_scoped",
-        ShellEjectAt = 0.17,
+        ShellEjectAt = 0.35,
+        MinProgress = 0.9,	
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
 
 
     ["Reload1"] = {
         Source = "reload_1",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload2"] = {
         Source = "reload_2",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload3"] = {
         Source = "reload_3",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload4"] = {
         Source = "reload_4",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload5"] = {
         Source = "reload_empty",
-        LHIK = true,
-        LHIKIn = 0.1,
-        LHIKOut = 0.25,
+        ShellEjectAt = 0.35,
     },
 -- Nomen
     ["Reload1_nomen"] = {
         Source = "Reload_1_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload2_nomen"] = {
         Source = "Reload_2_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload3_nomen"] = {
         Source = "Reload_3_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload4_nomen"] = {
         Source = "reload_4_nomen",
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.3,
     },
     ["Reload5_nomen"] = {
         Source = "reload_empty_nomen",
-        LHIK = true,
-        LHIKIn = 0.1,
-        LHIKOut = 0.25,
+        ShellEjectAt = 0.35,
+        MinProgress = 0.9,	
     },
 }
