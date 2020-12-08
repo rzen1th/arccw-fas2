@@ -120,7 +120,7 @@ SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {}
 
-SWEP.ExtraSightDist = 10
+SWEP.ExtraSightDist = 20
 
 SWEP.WorldModelOffset = {
     pos = Vector(-11.5, 6, -4),
@@ -145,7 +145,10 @@ SWEP.AttachmentElements = {
         VMBodygroups = {	{ind = 1, bg = 3}, {ind = 2, bg = 0},	},
     },
     ["mifl_fas2_m24_hg_obrez"] = {
-        VMBodygroups = {	{ind = 1, bg = 4}, {ind = 2, bg = 2}, {ind = 3, bg = 1},	},
+        VMBodygroups = {{ind = 1, bg = 4}, {ind = 2, bg = 2}, {ind = 3, bg = 1}},
+        AttPosMods = {
+            [3] = {vpos = Vector(9, -1.4, -0)}
+        }
     },
     ["mifl_fas2_m24_mag_50"] = {
         VMBodygroups = {	{ind = 4, bg = 3},	},
@@ -185,41 +188,41 @@ SWEP.Attachments = {
     {
         PrintName = "Barrel",
         Slot = "mifl_fas2_m24_hg",
-        Bone = "ak_frame",
         DefaultAttName = "Default Barrel",
-        Offset = {
-            vpos = Vector(0.3, 11, 1.5),
-            vang = Angle(90, -90, -90)
-        }
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "v_weapon.NOVA_PARENT",
+        Bone = "Dummy04",
         Offset = {
-            vpos = Vector(0, -1.7, 28),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(36, -1.4, -0),
+            vang = Angle(0, 0, -90),
         },
+        VMScale = Vector(1.5, 1.5, 1.5),
         ExcludeFlags = {"no_muzzle"},
     },
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
-        Bone = "v_weapon.NOVA_PUMP",
+        Bone = "Dummy04",
         Offset = {
-            vpos = Vector(0, 1.3, 1.75),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(4, 0.5, 0),
+            vang = Angle(0, 0, -90),
+        },
+        SlideAmount = {
+            vmin = Vector(6, 0.6, 0),
+            vmax = Vector(12, 0.5, 0),
         },
         InstalledEles = {"ubrms"},
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "v_weapon.NOVA_PUMP",
+        Bone = "Dummy04",
         Offset = {
-            vpos = Vector(0.75, -0.65, 7.5),
-            vang = Angle(90, 0, 0),
+            vpos = Vector(12, -1, 0.8),
+            vang = Angle(0, 0, 180),
         },
         InstalledEles = {"tacms"},
     },
@@ -241,11 +244,12 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "v_weapon.NOVA_PARENT", -- relevant bone any attachments will be mostly referring to
+        Bone = "Dummy04", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.5, -0.5, 4), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
+            vpos = Vector(-4, 0, -1), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, -90),
         },
+        VMScale = Vector(1.5, 1.5, 1.5),
     },
 }
 
