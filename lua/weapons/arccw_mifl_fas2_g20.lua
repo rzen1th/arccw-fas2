@@ -190,6 +190,23 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_g20_slide_17"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 7},
+        },
+    },
+    ["mifl_fas2_g20_slide_18c"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 8},
+            {ind = 0, bg = 1},			
+        },
+    },	
+    ["mifl_fas2_g20_slide_c"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 6},
+            {ind = 0, bg = 1},			
+        },
+    },		
     ["mifl_fas2_g20_slide_raptor"] = {
         VMBodygroups = {
             {ind = 1, bg = 4},

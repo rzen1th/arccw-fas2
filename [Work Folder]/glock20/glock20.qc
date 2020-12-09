@@ -7,6 +7,7 @@ $scale 2
 $bodygroup "weapon"
 {
 	studio "Main.smd"
+	studio "Frame_C.smd"
 	blank
 }
 $bodygroup "slide"
@@ -17,6 +18,9 @@ $bodygroup "slide"
 	studio "Slide_Whisper.smd"	
 	studio "Slide_Raptor.smd"		
 	blank
+	studio "Slide_C.smd"	
+	studio "Slide_17.smd"
+	studio "Slide_18K.smd"		
 }
 $bodygroup "Mag"
 {
