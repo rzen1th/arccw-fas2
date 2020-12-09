@@ -200,12 +200,22 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 8},
             {ind = 0, bg = 1},			
         },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, 2.7, 0.78),
+            }
+        }		
     },	
     ["mifl_fas2_g20_slide_c"] = {
         VMBodygroups = {
             {ind = 1, bg = 6},
             {ind = 0, bg = 1},			
         },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, 2.3, 0.78),
+            }
+        }		
     },		
     ["mifl_fas2_g20_slide_raptor"] = {
         VMBodygroups = {
