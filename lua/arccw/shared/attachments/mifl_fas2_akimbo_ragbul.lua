@@ -1,6 +1,6 @@
 att.PrintName = "Left Raging Bull"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_ragbul.png", "smooth")
-att.Description = "ambidestrous yes."
+att.Description = "wrist go bye bye."
 att.Hidden = false
 att.Desc_Pros = {
     "+100% more gun",
@@ -69,7 +69,7 @@ att.UBGL_Fire = function(wep, ubgl)
     if wep:Clip2() <= 0 then return end
 
     -- this bitch
-    local fixedcone = wep:GetDispersion() / 140 / 60
+    local fixedcone = wep:GetDispersion() / 180 / 60
 
     wep.Owner:FireBullets({
 		Src = wep.Owner:EyePos(),

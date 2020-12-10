@@ -2,7 +2,7 @@
 {
 	"$basetexture"			"models\weapons\arccw_fas2\ak_extra\wep_ak12_d"
 	"$bumpmap" 			"models\weapons\arccw_fas2\ak_extra\wep_ak12_n"
-    "$color2"			"[.34 .34 .34]"	
+    "$color2"			"[.5 .5 .5]"	
 
 	"$envmaptint" "[.1 .1 .1]"
 	"$basemapalphaphongmask" 	"1"

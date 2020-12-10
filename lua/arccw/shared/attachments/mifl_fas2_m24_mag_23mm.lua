@@ -15,7 +15,7 @@ att.Mult_Range = 0.5
 att.Mult_Penetration = 0.1
 att.Mult_Damage = 2
 att.Mult_DamageMin = 0.5
-att.Mult_AccuracyMOA = 40
+att.Mult_AccuracyMOA = 42
 
 att.Override_Num = 12
 att.Override_Ammo = "buckshot"
@@ -24,5 +24,5 @@ att.Override_Trivia_Class = "Shotgun"
 att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
 att.AddSuffix = " 23mm"
 
-att.Mult_ReloadTime = 1.25
-att.Mult_CycleTime = 1.25
+att.Mult_ReloadTime = 1.15
+att.Mult_CycleTime = 1.2
