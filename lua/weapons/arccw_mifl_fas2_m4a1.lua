@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "AR-C4"
 SWEP.TrueName = "M4A1"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Modern carbine, standard issue to the United States Army. Despite its relatively short barrel, it can put out rounds to a decent range."
+SWEP.Trivia_Desc = "Standard issue carbine of the US military. Short barrel offers superior mobility at the cost of range compared to other full-length rifles."
 SWEP.Trivia_Manufacturer = "Colt"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -53,9 +53,9 @@ SWEP.Firemodes = {
 
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 165
-SWEP.AccuracyMOA = 4.2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 420 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 170
+SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 350 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 70
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -73,8 +73,8 @@ SWEP.ShellScale = 1.25
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.775
-SWEP.SightTime = 0.32
+SWEP.SightedSpeedMult = 0.8
+SWEP.SightTime = 0.3
 
 SWEP.IronSightStruct = {
     Pos = Vector(-4.086, -9, 0.898),
@@ -128,7 +128,7 @@ SWEP.AttachmentElements = {
     },
     ["whisperer"] = {
         NameChange = "AR-C4S",
-        TrueNameChange = "M4A1S",
+        TrueNameChange = "M4A1-S",
         VMBodygroups = {
             {ind = 1, bg = 3},
             {ind = 2, bg = 3},
@@ -136,7 +136,7 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m4a1_barrel_kompact"] = {
         NameChange = "AR-G6c",
-        TrueNameChange = "MG36",
+        TrueNameChange = "M436",
         VMBodygroups = {
             {ind = 1, bg = 2},
             {ind = 2, bg = 2},
@@ -193,15 +193,15 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m4a1_barrel_jungle"] = {
         NameChange = "AR-A1",
-        TrueNameChange = "M16A1",
+        TrueNameChange = "M16-S",
         VMBodygroups = {
             {ind = 1, bg = 14},
             {ind = 2, bg = 4},
         },
-    },	
+    },
     ["mifl_fas2_m4a1_barrel_para_a1"] = {
         NameChange = "AR-A1C",
-        TrueNameChange = "M16A1",
+        TrueNameChange = "M16 Para",
         VMBodygroups = {
             {ind = 1, bg = 8},
             {ind = 2, bg = 7},
@@ -227,10 +227,10 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m4a1_barrel_famas"] = {
         NameChange = "AR-CF",
-        TrueNameChange = "M4-F",
+        TrueNameChange = "M4FA",
         VMBodygroups = {
             {ind = 1, bg = 12},
-            {ind = 2, bg = 8},			
+            {ind = 2, bg = 8},
         },
         AttPosMods = {
             [3] = {
@@ -261,7 +261,7 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m4a1_barrel_ar2"] = {
         NameChange = "AR-Overlord",
-        TrueNameChange = "AR2",
+        TrueNameChange = "ARM4",
         VMBodygroups = {
             {ind = 1, bg = 11},
             {ind = 2, bg = 10},
@@ -281,8 +281,6 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_m4a1_barrel_ribs"] = {
-        NameChange = "AR-C41",
-        TrueNameChange = "M4 Carbine",
         VMBodygroups = {
             {ind = 1, bg = 7},
         },

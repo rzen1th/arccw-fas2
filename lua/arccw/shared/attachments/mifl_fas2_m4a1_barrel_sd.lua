@@ -1,7 +1,7 @@
 att.PrintName = "Whisper Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_sd.png", "mips smooth")
 att.Description = "Integrated suppressor."
-att.SortOrder = 8
+att.SortOrder = -1
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -22,14 +22,8 @@ att.Add_BarrelLength = 6
 att.Mult_ShootPitch = 1.5
 att.Mult_ShootVol = 0.75
 att.Mult_AccuracyMOA = 0.75
-att.Mult_Range = 1.2
+att.Mult_Range = 1.25
 
-att.Mult_SightTime = 1.075
-
-att.Mult_HipDispersion = 1.12
-
-att.Add_BarrelLength = 16
-
-att.Override_PhysTracerProfile = 5
+att.Mult_SightTime = 1.25
 
 att.Mult_RPM = 0.9

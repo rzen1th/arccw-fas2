@@ -1,6 +1,6 @@
-att.PrintName = "15-Round .50 Beowulf"
+att.PrintName = "20-Round .50 Beowulf"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_60.png", "mips smooth")
-att.Description = "Conversion to .50 Beowolf allows for higher damage and range, incase you need even more ammo."
+att.Description = "Heavy caliber conversion for 5.56 rifles. Its shorter cartridge length but bigger bullet means this ammunition is very lethal up close, but loses energy quickly. Double-stack magazine increases capacity at the cost of weight."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -11,12 +11,21 @@ att.Slot = {"mifl_fas2_m4a1_mag", "mifl_fas2_m249_mag", "mifl_fas2_famas_mag"}
 
 att.Mult_SightTime = 1.1
 att.Mult_ReloadTime = 1.2
-att.Override_ClipSize = 15
-att.Mult_Damage = 2.3
-att.Mult_DamageMin = 1.6
-att.Mult_Range = 0.9
-att.Mult_Recoil = 2.1
-att.Mult_ShootPitch = 0.875
+att.Override_ClipSize = 20
+att.ActivateElements = {"60"}
+
+att.Mult_Damage = 1.75
+att.Mult_DamageMin = 0.75
+att.Mult_Range = 0.75
+att.Mult_Recoil = 2.5
+att.Mult_RecoilSide = 1.5
+att.Mult_ShootPitch = 0.8
+att.Mult_RPM = 0.5
+att.Mult_AccuracyMOA = 2
+
+att.Override_Ammo = "357"
+att.Override_Trivia_Calibre = ".50 Beowulf"
+att.AddSuffix = " .50"
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_fire1.wav" end
@@ -25,21 +34,3 @@ att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/famas/famas_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/famas/50.wav" end
     if fsound == "weapons/arccw_mifl/fas2/famas/famas_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/famas/50_s.wav" end	
 end
-
-att.Mult_RPM = 0.7
-
-att.Override_Ammo = "357"
-att.Override_Trivia_Calibre = ".50 Beowulf"
-att.Override_Trivia_Class = "Desginated Marksman Rifle"
-att.ActivateElements = {"60"}
-
-att.Override_Firemodes_Priority = 10
-att.Override_Firemodes = {
-    {
-        Mode = 1,
-    },	
-    {
-        Mode = 0
-    }
-}
-att.AddSuffix = " C50"
