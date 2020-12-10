@@ -26,7 +26,7 @@ SWEP.Damage = 250
 SWEP.DamageMin = 90 -- damage done at maximum range
 SWEP.Range = 250 -- in METRES
 SWEP.Penetration = 45
-SWEP.DamageType = DMG_BULLET + DMG_BLAST
+SWEP.DamageType = DMG_BULLET + DMG_BLAST + DMG_AIRBOAT -- Airboat damages hurts the combine helicopter
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 6000 -- projectile or phys bullet muzzle velocity
 -- IN M/S

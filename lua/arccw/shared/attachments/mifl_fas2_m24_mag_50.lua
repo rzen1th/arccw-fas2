@@ -9,9 +9,9 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_m24_mag"
 
-att.Mult_Damage = 2.5
-att.Mult_DamageMin = 0.75
-att.Mult_Range = 0.75
+att.Mult_Damage = 3.5
+att.Mult_DamageMin = 0.5
+att.Mult_Range = 1.25
 att.Mult_Recoil = 5
 att.Mult_RecoilSide = 1.5
 att.Mult_ReloadTime = 1.25
@@ -22,6 +22,7 @@ att.Mult_ShootVol = 1.2
 
 att.Override_Ammo = "SniperPenetratedRound"
 att.Override_Trivia_Calibre = ".50 BMG"
+att.AddSuffix = " .50"
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/m24/m24_fire1.wav" then return "weapons/arccw_mifl/fas2/m82/m82_fire1.wav" end

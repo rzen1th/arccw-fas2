@@ -9,8 +9,9 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_m24_mag"
 
-att.Mult_Damage = 0.9
+att.Mult_Damage = 0.8
 att.Mult_DamageMin = 1.3
 att.Mult_Recoil = 1.5
 
 att.Override_Trivia_Calibre = ".300 Winchester Magnum"
+att.AddSuffix = " .300"

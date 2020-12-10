@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Pelly 420"
 SWEP.TrueName = "M24"
 SWEP.Trivia_Class = "Sniper Rifle"
-SWEP.Trivia_Desc = "Percision rifle for long range combat."
+SWEP.Trivia_Desc = "Bolt action sniper rifle adopted by the US military. Excels in long range combat."
 SWEP.Trivia_Manufacturer = "Remington Arms"
 SWEP.Trivia_Calibre = "7.62×51mm NATO"
 SWEP.Trivia_Mechanism = "Bolt-Action"
@@ -25,12 +25,12 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 86
+SWEP.Damage = 55
 SWEP.DamageMin = 120 -- damage done at maximum range
 SWEP.Num = 1
 SWEP.Range = 60
 SWEP.Penetration = 12
-SWEP.DamageType = DMG_BULLET + DMG_BLAST
+SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 5 -- DefaultClip is automatically set.
@@ -42,7 +42,7 @@ SWEP.RecoilSide = 1.2
 SWEP.RecoilRise = 1.6
 
 SWEP.ManualAction = true
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 120 -- 60 / RPM.
 SWEP.Firemodes = {
     {
         Mode = 1,
@@ -56,8 +56,8 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_crossbow"
 SWEP.NPCWeight = 180
 
-SWEP.AccuracyMOA = 0.75
-SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 0.5
+SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 220
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
@@ -77,7 +77,7 @@ SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 SWEP.MuzzleEffect = "muzzleflash_3"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 100
-SWEP.ShellScale = 1
+SWEP.ShellScale = 3
 SWEP.ShellRotateAngle = Angle(0, 180, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
@@ -138,8 +138,8 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m24_hg_valk"] = {
         VMBodygroups = {	{ind = 1, bg = 6}, {ind = 2, bg = 4}, {ind = 3, bg = 1}	},
         AttPosMods = {
-            [4] = {vpos = Vector(2, 0.5, 0)},		
-        }		
+            [4] = {vpos = Vector(2, 0.5, 0)},
+        }
     },
     ["mifl_fas2_m24_hg_sd"] = {
         VMBodygroups = {	{ind = 1, bg = 1}, {ind = 2, bg = 0},	},
@@ -151,7 +151,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 4}, {ind = 2, bg = 2}, {ind = 3, bg = 1}},
         AttPosMods = {
             [3] = {vpos = Vector(9, -1.4, -0)},
-            [4] = {vpos = Vector(2, 0.5, 0)},		
+            [4] = {vpos = Vector(2, 0.5, 0)},
         }
     },
     ["mifl_fas2_m24_mag_50"] = {
@@ -229,12 +229,12 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = "mifl_fas2_m24_mag",
-        DefaultAttName = "7.62×51mm"
+        DefaultAttName = "7.62×51mm NATO"
     },
     {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
-        DefaultAttName = "7.62x51mm NATO"
+        DefaultAttName = "Standard Ammo"
     },
     {
         PrintName = "Perk",
@@ -283,25 +283,25 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "cock01",
         ShellEjectAt = 0.35,
-        MinProgress = 0.9,		
+        MinProgress = 0.9,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron"] = {
         Source = "cock01_scoped",
         ShellEjectAt = 0.35,
-        MinProgress = 0.9,	
+        MinProgress = 0.9,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_nomen"] = {
         Source = "pump01_nomen",
         ShellEjectAt = 0.35,
-        MinProgress = 0.9,	
+        MinProgress = 0.9,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron_nomen"] = {
         Source = "pump01_nomen_scoped",
         ShellEjectAt = 0.35,
-        MinProgress = 0.9,	
+        MinProgress = 0.9,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
 
@@ -338,6 +338,6 @@ SWEP.Animations = {
     ["Reload5_nomen"] = {
         Source = "reload_empty_nomen",
         ShellEjectAt = 0.35,
-        MinProgress = 0.9,	
+        MinProgress = 0.9,
     },
 }
