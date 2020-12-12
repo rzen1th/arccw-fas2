@@ -306,6 +306,12 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 1},
         },
     },
+    ["mifl_fas2_m4a1_mag_9mm_50"] = {
+        VMBodygroups = {
+            {ind = 3, bg = 6},
+            {ind = 4, bg = 1},
+        },
+    },	
     ["mifl_fas2_m4a1_mag_9mm_32"] = {
         VMBodygroups = {
             {ind = 3, bg = 3},
@@ -445,6 +451,10 @@ SWEP.Attachments = {
     }
 }
 
+SWEP.Hook_SelectReloadAnimation = function(wep, anim)
+    if wep.Attachments[7].Installed == "mifl_fas2_m4a1_mag_9mm_50" then return anim .. "_50" end
+end
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
@@ -495,5 +505,37 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5
-    }
+    },
+    --------------------------------------------------------
+    ["reload_50"] = {
+        Source = "reload_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.6,
+		LHIKEaseOut = 0.4,
+    },
+    ["reload_empty_50"] = {
+        Source = "Reload_Empty_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5		
+    },
+    ["reload_nomen_50"] = {
+        Source = "reload_nomen_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5	
+    },
+    ["reload_nomen_empty_50"] = {
+        Source = "reload_empty_nomen_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5
+    }	
 }

@@ -51,6 +51,7 @@ $bodygroup "Mag"
 	studio "Mag_9mm_32.smd"
 	studio "Mag_9mm_21.smd"
 	blank	
+	studio "Mag_9mm_50.smd"	
 }
 $bodygroup "Ammo"
 {
@@ -301,6 +302,75 @@ $sequence "blend_gear" {
 	delta
 }
 
+
+$sequence "reload_50" {
+	"anims\reload_50.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Weapon_M4A1.Magout" }
+	{ event 5004 16 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 39 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 44 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_M4A1.Magin" }
+	{ event 5004 61 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 71 "" }
+	fadein 1
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_empty_50" {
+	"anims\reload_empty_50.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_M4A1.MagoutEmpty" }
+	{ event 5004 14 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 29 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_M4A1.Magin" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 63 "Arccw_FAS2_Weapon_M4A1.Boltcatch" }
+	{ event 5004 63 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 73 "" }
+	fadein 1
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_nomen_50" {
+	"anims\reload_nomen_50.smd"
+	activity "ACT_VM_RELOAD_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_M4A1.MagoutEmpty" }
+	{ event 5004 14 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 29 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_M4A1.Magin" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 63 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 1
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_empty_nomen_50" {
+	"anims\reload_empty_nomen_50.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_M4A1.MagoutEmpty" }
+	{ event 5004 14 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 29 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_M4A1.Magin" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 63 "Arccw_FAS2_Weapon_M4A1.Boltcatch" }
+	{ event 5004 63 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 73 "" }
+	fadein 1
+	fadeout 0.2
+	snap
+	fps 30
+}
 
 
 
