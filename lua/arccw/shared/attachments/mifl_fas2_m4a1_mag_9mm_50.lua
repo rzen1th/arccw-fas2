@@ -1,5 +1,5 @@
 att.PrintName = "50-Round 9mm"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_32.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_50.png", "mips smooth")
 att.Description = "Conversion to a pistol caliber, offering lots of bullet really quickly. Drum magazine is bulkier than standard stick magss."
 att.Desc_Pros = {
 }
@@ -8,8 +8,6 @@ att.Desc_Cons = {
 att.SortOrder = 50
 att.AutoStats = true
 att.Slot = {"mifl_fas2_m4a1_mag"}
-
-att.ActivateElements = {"32"}
 
 att.Mult_ReloadTime = 1
 att.Mult_SightTime = 0.9
