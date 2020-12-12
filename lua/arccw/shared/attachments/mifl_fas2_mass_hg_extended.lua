@@ -1,5 +1,5 @@
 att.PrintName = "Extended Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_mass26_ext.png", "mips smooth")
 att.Description = "Long, shrouded barrel for the MASS-26. Debatably defeats the point of the weapon system, but it does make for accurate shooting."
 att.SortOrder = 4
 att.Desc_Pros = {

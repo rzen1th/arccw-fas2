@@ -3,15 +3,18 @@
 	"$basetexture" "models\weapons\mifl_custom\mass26\m26mass_d"
 	"$bumpmap"	"models\weapons\mifl_custom\mass26\m26mass_n" //small
 
-
 	"$envmap" "env_cubemap"
-	"$envmaptint" "[.2 .2 .2]"
+	"$envmaptint"			"[0.1 0.1 0.1]"
+	"$envmapfresnel"			"0.8"	
 	"$basemapalphaphongmask" 	"1"
 	"$phong" 			"1"
 	"$phongexponent"                                   "15"
 	"$phongboost" 			"2"
 	"$phongfresnelranges"		"[0.5 1.5 3.0]"//"[0.1 0.4 .8]"
 	"$halflambert"			"1"
+
+	$color2 "[0.8 0.8 0.8]"	
+	"$nocull" "1"			
 }
 
 

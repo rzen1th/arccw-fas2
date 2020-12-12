@@ -32,12 +32,21 @@ $bodygroup "Mag"
 $bodygroup "Stock"
 {
 	studio "Stock.smd"	
-	studio "Stock_Fold.smd"		
+	studio "Stock_Fold.smd"	
+	studio "Stock_Adaptor.smd"		
 	blank		
+}
+
+$bodygroup "Muzzle"
+{
+	studio "Muzzle.smd"
+	studio "Muzzle_XS.smd"	
+	blank
 }
 
 $cdmaterials "models\weapons\mifl_custom\mass26\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "1" "Weapon_Muzzle" 0 0 0 rotate -90 0 0

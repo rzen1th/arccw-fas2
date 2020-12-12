@@ -1,5 +1,5 @@
 att.PrintName = "Whisper Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_mass26_sd.png", "mips smooth")
 att.Description = "Integrated suppressor for the MASS-26."
 att.SortOrder = 1
 att.Desc_Pros = {

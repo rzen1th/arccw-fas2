@@ -42,7 +42,7 @@ SWEP.RecoilSide = 1.3
 SWEP.MaxRecoilBlowback = 1.2
 
 SWEP.Delay = 60 / 520
-SWEP.Num = 8
+SWEP.Num = 10
 SWEP.ManualAction = true
 SWEP.Firemodes = {
     {
@@ -55,11 +55,11 @@ SWEP.Firemodes = {
 }
 
 SWEP.NPCWeaponType = "weapon_shotgun"
-SWEP.NPCWeight = 40
+SWEP.NPCWeight = 120
 
-SWEP.AccuracyMOA = 50 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 90
+SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 220 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 110
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
@@ -127,7 +127,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 3, bg = 1}},
     },
     ["mifl_fas2_mass_hg_extended"] = {
-        VMBodygroups = {{ind = 2, bg = 1},{ind = 1, bg = 1}},
+        VMBodygroups = {{ind = 2, bg = 1},{ind = 1, bg = 1}, {ind = 5, bg = 0}},
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, -2.2, 19.2),
@@ -135,25 +135,34 @@ SWEP.AttachmentElements = {
         }
     },
     ["mifl_fas2_mass_hg_sd"] = {
-        VMBodygroups = {{ind = 2, bg = 2}},
+        VMBodygroups = {{ind = 2, bg = 2}, {ind = 5, bg = 2}},
     },
     ["mifl_fas2_mass_hg_xs"] = {
-        VMBodygroups = {{ind = 2, bg = 3}},
+        VMBodygroups = {{ind = 2, bg = 3}, {ind = 5, bg = 1}},
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, -2.2, 13),
             }
         }
     },
-    ["nostock"] = {
+    ["buftube"] = {
         VMBodygroups = {{ind = 4, bg = 2}},
     },
+    ["mifl_fas2_mass26_stock_fold"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },	
+    ["mifl_fas2_sg55x_stock_sd"] = {
+        VMBodygroups = {{ind = 4, bg = 2}},
+    },	
 }
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if wep.Attachments[1].Installed then
         vm:SetBodygroup(1, 2)
     end
+    if wep.Attachments[3].Installed then
+        vm:SetBodygroup(5, 2)
+    end	
 end
 
 
@@ -212,15 +221,14 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock"},
+        Slot = {"go_stock", "mifl_fas2_mass_stock", "mifl_fas2_uni_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "UBGL_Frame",
         Offset = {
-            vpos = Vector(0, -2.39, 2),
+            vpos = Vector(0, -2.39, 1),
             vang = Angle(90, 0, -90)
         },
         VMScale = Vector(1.1, 1.1, 1.1),
-        InstalledEles = {"nostock"}
     },
     {
         PrintName = "Ammo Type",

@@ -1,5 +1,5 @@
 att.PrintName = "Obrez Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_eod.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_mass26_xs.png", "mips smooth")
 att.Description = "Cut the barrel down to being as short as possible. Makes the weapon more manuverable, but really hurts spread and recoil."
 att.SortOrder = 1
 att.Desc_Pros = {

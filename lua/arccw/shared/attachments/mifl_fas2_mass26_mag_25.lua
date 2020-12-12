@@ -1,5 +1,5 @@
 att.PrintName = "25-Round 12 Gauge"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_mass26_mag_25.png", "mips smooth")
 att.Description = "A heavy shotgun drum magazine that lets you keep racking that slide all day long."
 att.Desc_Pros = {
     "pro.magcap"
