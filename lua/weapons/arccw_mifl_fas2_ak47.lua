@@ -733,14 +733,14 @@ SWEP.Animations = {
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4
     },
-    ["reload_nomen_empty_pp19"] = {
+    ["reload_nomen_empty_infinite"] = {
         Source = "reload_empty_nomen_infinite",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Mult = 0.8,
         LHIK = true,
         LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 1.4,
+        LHIKIn = 1.2,
+        LHIKOut = 1,
         LHIKEaseOut = 0.4
     }	
 }
