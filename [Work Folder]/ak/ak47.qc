@@ -26,7 +26,8 @@ $bodygroup "Mag"
 	blank
 	studio "12G.smd"	
 	studio "545_45.smd"	
-	studio "556_30.smd"		
+	studio "556_30.smd"	
+	studio "762_Inf.smd"		
 }
 $bodygroup "HG"
 {
@@ -318,6 +319,80 @@ $sequence "reload_empty_pp19" {
 	snap
 	fps 36
 }
+
+
+$sequence "reload_empty_infinite" {
+	"anims\reload_empty_infinite.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 24 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_AK47.MagOutEmpty" }
+	{ event 5004 44 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 67 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 67 "Arccw_FAS2_Weapon_AK47.MagIn" }
+	{ event 5004 102 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 102 "Arccw_FAS2_Weapon_AK47.Bolt1" }
+	{ event 5004 112 "Arccw_FAS2_Weapon_AK47.Bolt2" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 36
+}
+
+
+$sequence "reload_empty_nomen_infinite" {
+	"anims\reload_empty_nomen_infinite.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 21 "Arccw_FAS2_Weapon_AK47.Bolt1" }	
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 46 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 46 "Arccw_FAS2_Weapon_AK47.MagOutEmpty" }
+	{ event 5004 67 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 86 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 86 "Arccw_FAS2_Weapon_AK47.MagIn" }
+	{ event 5004 110 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 110 "Arccw_FAS2_Weapon_AK47.Bolt2" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 40
+}
+
+
+$sequence "reload_infinite" {
+	"anims\reload_infinite.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_AK47.MagOut" }
+	{ event 5004 55 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 67 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 67 "Arccw_FAS2_Weapon_AK47.MagIn" }
+	{ event 3018 77 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 36
+	snap	
+}
+
+
+$sequence "reload_nomen_infinite" {
+	"anims\reload_infinite.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_AK47.MagOut" }
+	{ event 5004 55 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 67 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 67 "Arccw_FAS2_Weapon_AK47.MagIn" }
+	{ event 3018 77 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 41
+	snap	
+}
+
+
 
 $collisionmodel "Phys.smd"
 {

@@ -285,6 +285,9 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 11}},
         Override_Trivia_Calibre = "9x53mm Soviet"
     },
+    ["200_762"] = {
+        VMBodygroups = {{ind = 1, bg = 16}}
+    },		
     ["45_762"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
     },
@@ -594,6 +597,8 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     end
 
     if installed == "mifl_fas2_ak_mag_919_30" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_pp19" end
+
+    if installed == "mifl_fas2_ak_mag_762_Inf" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_infinite" end	
 end
 
 SWEP.Animations = {
@@ -698,5 +703,44 @@ SWEP.Animations = {
         LHIKIn = 0.8,
         LHIKOut = 1.4,
         LHIKEaseOut = 0.4
-    }
+    },
+----------------------------------------------
+    ["reload_infinite"] = {
+        Source = "reload_infinite",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_empty_infinite"] = {
+        Source = "reload_empty_infinite",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 1.4,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_nomen_infinite"] = {
+        Source = "reload_nomen_infinite",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        Mult = 0.8,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_nomen_empty_pp19"] = {
+        Source = "reload_empty_nomen_infinite",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Mult = 0.8,
+        LHIK = true,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 1.4,
+        LHIKEaseOut = 0.4
+    }	
 }
