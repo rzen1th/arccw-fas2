@@ -104,10 +104,26 @@ SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
     ["mount"] = {
-        VMBodygroups = {
-            {ind = 4, bg = 1}
-        }
+        VMBodygroups = {	{ind = 5, bg = 1}	},
     },
+    ["mifl_fas2_g3_hg_sd"] = {
+        VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 2},	},
+    },	
+    ["mifl_fas2_g3_hg_vollmer"] = {
+        VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 1},	},		
+    },	
+    ["mifl_fas2_g3_hg_eod"] = {
+        VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 3},	},
+    },		
+    ["mifl_fas2_g3_hg_navy"] = {
+        VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 4},	},
+    },	
+    ["mifl_fas2_g3_hg_para"] = {
+        VMBodygroups = {	{ind = 1, bg = 1}	},
+    },
+    ["mifl_fas2_g3_hg_k"] = {
+        VMBodygroups = {	{ind = 1, bg = 3}	},
+    },	
 }
 
 SWEP.WorldModelOffset = {
@@ -122,7 +138,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = {"optic", "optic_lp"},
-        Bone = "ak_frame",
+        Bone = "stock",
         DefaultAttName = "Iron Sights",
         Offset = {
             vpos = Vector(0, 3, 4.425),
@@ -136,8 +152,8 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Handguard",
-        Slot = "mifl_fas2_ak_hg",
-        Bone = "ak_frame",
+        Slot = "mifl_fas2_g3_hg",
+        Bone = "stock",
         DefaultAttName = "Default Handguard",
         Offset = {
             vpos = Vector(0.3, 11, 1.5),
@@ -234,15 +250,13 @@ SWEP.Attachments = {
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle" .. "_iron"
+        Source = "idle"
     },
     ["draw"] = {
-        Source = "deploy",
-        Time = 1
+        Source = "draw",
     },
     ["ready"] = {
-        Source = "deploy",
-        Time = 1
+        Source = "deploy_first2",
     },
     ["fire"] = {
         Source = {"fire"},
@@ -280,7 +294,7 @@ SWEP.Animations = {
         LHIKEaseOut = 0.5
     },
     ["reload_nomen_empty"] = {
-        Source = "reload_empty_2",
+        Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKEaseIn = 0.35,
