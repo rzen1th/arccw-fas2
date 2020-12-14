@@ -59,6 +59,7 @@ $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1_extra\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1\"
 
 $attachment "muzzle" "frame" -14.62 0.52 0.26 rotate 0 180 -90
 $attachment "muzzle_suppressor" "frame" -14.62 0.52 0.26 rotate 0 180 -90
@@ -137,15 +138,15 @@ $sequence "idle" {
 $sequence "deploy_first" {
 	"g3_anims\deploy_first.smd"
 	activity "ACT_VM_DRAW_FIRST" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 17 "Weapon_G3.Handle" }
-	{ event 5004 22 "Weapon_G3.BoltBack" }
-	{ event 5004 22 "Generic.Cloth_Movement" }
-	{ event 5004 73 "Generic.Magpouch" }
-	{ event 5004 89 "Weapon_G3.MagIn" }
-	{ event 5004 89 "Generic.Cloth_Movement" }
-	{ event 5004 125 "Weapon_G3.BoltForward" }
-	{ event 5004 125 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 17 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 22 "Arccw_FAS2_Weapon_G3.BoltBack" }
+	{ event 5004 22 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 73 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 89 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 89 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 125 "Arccw_FAS2_Weapon_G3.BoltForward" }
+	{ event 5004 125 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"
@@ -156,10 +157,10 @@ $sequence "deploy_first" {
 $sequence "deploy_first2" {
 	"g3_anims\deploy_first2.smd"
 	activity "ACT_VM_DRAW_FIRST" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 24 "Weapon_MP5.SelectorSwitch" }
-	{ event 5004 40 "Generic.Cloth_Movement" }
-	{ event 5004 47 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_MP5.SelectorSwitch" }
+	{ event 5004 40 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"
@@ -170,7 +171,7 @@ $sequence "deploy_first2" {
 $sequence "draw" {
 	"g3_anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
-	{ event 5004 0 "Weapon.Deploy" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"
@@ -181,7 +182,7 @@ $sequence "draw" {
 $sequence "holster" {
 	"g3_anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
-	{ event 5004 0 "Weapon.Holster" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"
@@ -203,12 +204,12 @@ $sequence "idle_scoped" {
 $sequence "reload" {
 	"g3_anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 19 "Weapon_G3.MagOut" }
-	{ event 5004 19 "Generic.Cloth_Movement" }
-	{ event 5004 35 "Generic.Magpouch" }
-	{ event 5004 49 "Weapon_G3.MagIn" }
-	{ event 5004 49 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_G3.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 49 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 49 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 59 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -218,12 +219,12 @@ $sequence "reload" {
 $sequence "reload_nomen" {
 	"g3_anims\reload_nomen.smd"
 	activity "ACT_VM_RELOAD_NOMEN" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 19 "Weapon_G3.MagOut" }
-	{ event 5004 12 "Generic.Cloth_Movement" }
-	{ event 5004 37 "Generic.Magpouch" }
-	{ event 5004 53 "Weapon_G3.MagIn" }
-	{ event 5004 73 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_G3.MagOut" }
+	{ event 5004 12 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 37 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 53 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 73 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 55 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -233,17 +234,17 @@ $sequence "reload_nomen" {
 $sequence "reload_empty" {
 	"g3_anims\reload_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 8 "Weapon_G3.Handle" }
-	{ event 5004 18 "Weapon_G3.BoltBack" }
-	{ event 5004 18 "Generic.Cloth_Movement" }
-	{ event 5004 61 "Weapon_G3.MagOutEmpty" }
-	{ event 5004 61 "Generic.Cloth_Movement" }
-	{ event 5004 79 "Generic.Magpouch" }
-	{ event 5004 91 "Weapon_G3.MagIn" }
-	{ event 5004 91 "Generic.Cloth_Movement" }
-	{ event 5004 118 "Weapon_G3.BoltForward" }
-	{ event 5004 118 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_G3.BoltBack" }
+	{ event 5004 18 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 61 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 79 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 91 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 91 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 118 "Arccw_FAS2_Weapon_G3.BoltForward" }
+	{ event 5004 118 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 128 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -253,15 +254,15 @@ $sequence "reload_empty" {
 $sequence "reload_empty_nomen" {
 	"g3_anims\reload_empty_nomen.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 21 "Weapon_G3.MagOutEmpty" }
-	{ event 5004 21 "Generic.Cloth_Movement" }
-	{ event 5004 42 "Generic.Magpouch" }
-	{ event 5004 62 "Weapon_G3.MagIn" }
-	{ event 5004 62 "Generic.Cloth_Movement" }
-	{ event 5004 80 "Weapon_G3.Handle" }
-	{ event 5004 82 "Weapon_G3.BoltPullNomen" }
-	{ event 5004 82 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 42 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 62 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 62 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 80 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_G3.BoltPullNomen" }
+	{ event 5004 82 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 90 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -331,12 +332,12 @@ $sequence "fire_scoped" {
 $sequence "reload_50" {
 	"anims\reload_50.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 19 "Weapon_G3.MagOut" }
-	{ event 5004 19 "Generic.Cloth_Movement" }
-	{ event 5004 35 "Generic.Magpouch" }
-	{ event 5004 49 "Weapon_G3.MagIn" }
-	{ event 5004 49 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_G3.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 49 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 49 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 59 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -344,19 +345,39 @@ $sequence "reload_50" {
 }
 
 $sequence "reload_empty_50" {
-	"g3_anims\reload_empty_50.smd"
+	"anims\reload_empty_50.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 8 "Weapon_G3.Handle" }
-	{ event 5004 18 "Weapon_G3.BoltBack" }
-	{ event 5004 18 "Generic.Cloth_Movement" }
-	{ event 5004 61 "Weapon_G3.MagOutEmpty" }
-	{ event 5004 61 "Generic.Cloth_Movement" }
-	{ event 5004 79 "Generic.Magpouch" }
-	{ event 5004 91 "Weapon_G3.MagIn" }
-	{ event 5004 91 "Generic.Cloth_Movement" }
-	{ event 5004 118 "Weapon_G3.BoltForward" }
-	{ event 5004 118 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_G3.BoltBack" }
+	{ event 5004 18 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 61 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 79 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 91 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 91 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 118 "Arccw_FAS2_Weapon_G3.BoltForward" }
+	{ event 5004 118 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 128 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_50_k" {
+	"anims\reload_empty_50_k.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_G3.BoltBack" }
+	{ event 5004 18 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 61 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 79 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 91 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 91 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 118 "Arccw_FAS2_Weapon_G3.BoltForward" }
+	{ event 5004 118 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 128 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -364,19 +385,19 @@ $sequence "reload_empty_50" {
 }
 
 $sequence "reload_empty_k" {
-	"g3_anims\reload_empty_k.smd"
+	"anims\reload_empty_k.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 8 "Weapon_G3.Handle" }
-	{ event 5004 18 "Weapon_G3.BoltBack" }
-	{ event 5004 18 "Generic.Cloth_Movement" }
-	{ event 5004 61 "Weapon_G3.MagOutEmpty" }
-	{ event 5004 61 "Generic.Cloth_Movement" }
-	{ event 5004 79 "Generic.Magpouch" }
-	{ event 5004 91 "Weapon_G3.MagIn" }
-	{ event 5004 91 "Generic.Cloth_Movement" }
-	{ event 5004 118 "Weapon_G3.BoltForward" }
-	{ event 5004 118 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_G3.BoltBack" }
+	{ event 5004 18 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 61 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 61 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 79 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 91 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 91 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 118 "Arccw_FAS2_Weapon_G3.BoltForward" }
+	{ event 5004 118 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 128 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -384,18 +405,68 @@ $sequence "reload_empty_k" {
 }
 
 $sequence "reload_empty_nomen_k" {
-	"g3_anims\reload_empty_nomen.smd"
+	"anims\reload_empty_nomen_k.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 21 "Weapon_G3.MagOutEmpty" }
-	{ event 5004 21 "Generic.Cloth_Movement" }
-	{ event 5004 42 "Generic.Magpouch" }
-	{ event 5004 62 "Weapon_G3.MagIn" }
-	{ event 5004 62 "Generic.Cloth_Movement" }
-	{ event 5004 80 "Weapon_G3.Handle" }
-	{ event 5004 82 "Weapon_G3.BoltPullNomen" }
-	{ event 5004 82 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 42 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 62 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 62 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 80 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_G3.BoltPullNomen" }
+	{ event 5004 82 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 90 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 32
+}
+
+$sequence "reload_empty_nomen_50" {
+	"anims\reload_empty_nomen_50.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 42 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 62 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 62 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 80 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_G3.BoltPullNomen" }
+	{ event 5004 82 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 90 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 32
+}
+
+$sequence "reload_empty_nomen_50_k" {
+	"anims\reload_empty_nomen_50_k.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 42 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 62 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 62 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 80 "Arccw_FAS2_Weapon_G3.Handle" }
+	{ event 5004 82 "Arccw_FAS2_Weapon_G3.BoltPullNomen" }
+	{ event 5004 82 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 90 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 32
+}
+
+$sequence "reload_nomen_50" {
+	"anims\reload_nomen_50.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_G3.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 42 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 62 "Arccw_FAS2_Weapon_G3.MagIn" }
+	{ event 5004 62 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	fps 32

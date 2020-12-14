@@ -715,3 +715,49 @@ sound.Add({
 }
 })
 
+
+
+
+//G3
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G3.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g3/g3_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G3.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g3/g3_magout_empty.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G3.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g3/g3_magin.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G3.BoltPullNomen",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g3/g3_boltpull_nomen.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G3.Handle",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g3/g3_handle.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G3.BoltBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g3/g3_boltback.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_G3.BoltForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/g3/g3_boltforward.wav"}
+})
