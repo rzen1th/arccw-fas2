@@ -54,6 +54,7 @@ $bodygroup "Rail"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
+$cdmaterials "models\weapons\arccw_fas2\mc51b\"
 $cdmaterials "models\weapons\arccw_fas2\g3\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
