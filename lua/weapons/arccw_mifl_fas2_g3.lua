@@ -133,7 +133,19 @@ SWEP.AttachmentElements = {
     },		
     ["mifl_fas2_g3_mag_762_20"] = {
         VMBodygroups = {	{ind = 3, bg = 0}	},
-    },			
+    },	
+    ["mifl_fas2_g3_mag_556_20"] = {
+        VMBodygroups = {	{ind = 3, bg = 4}	},
+    },
+    ["mifl_fas2_g3_mag_556_30"] = {
+        VMBodygroups = {	{ind = 3, bg = 5}	},
+    },	
+    ["mifl_fas2_g3_mag_45_25"] = {
+        VMBodygroups = {	{ind = 3, bg = 6}	},
+    },
+    ["mifl_fas2_g3_mag_10_32"] = {
+        VMBodygroups = {	{ind = 3, bg = 7}	},
+    },	
 }
 
 SWEP.WorldModelOffset = {
