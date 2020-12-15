@@ -43,12 +43,21 @@ $bodygroup "Stock"
 	studio "Stock_PDW.smd"
 	studio "Stock_Slide.smd"
 	studio "Stock_Non.smd"		
+	studio "Stock_Adaptor.smd"			
 	blank	
 }
 $bodygroup "Rail"
 {
 	blank
 	studio "Rail.smd"
+}
+
+$bodygroup "Ammo"
+{
+	studio "Ammo_762.smd"
+	studio "Ammo_556.smd"	
+	studio "Ammo_9mm.smd"	
+	blank	
 }
 
 $illumposition 0 0 0
@@ -61,6 +70,7 @@ $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1_extra\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1\"
+$cdmaterials "models\weapons\arccw_fas2\sg55x\"
 
 $attachment "muzzle" "frame" -14.62 0.52 0.26 rotate 0 180 -90
 $attachment "muzzle_suppressor" "frame" -14.62 0.52 0.26 rotate 0 180 -90
@@ -471,4 +481,27 @@ $sequence "reload_nomen_50" {
 	fadein 0.2
 	fadeout 0.2
 	fps 32
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }
