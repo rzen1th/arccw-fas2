@@ -10,7 +10,7 @@ att.SortOrder = 25
 att.AutoStats = true
 att.Slot = "mifl_fas2_mass_mag"
 
--- 60rnd
+att.Mult_SightedSpeedMult = 0.7
 att.Override_ClipSize = 25
 att.Mult_MoveSpeed = 0.85
 att.Mult_SightTime = 1.25

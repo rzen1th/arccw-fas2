@@ -9,8 +9,8 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_mass_hg"
 
-att.Mult_SpeedMult = 1.05
-att.Mult_SightedSpeedMult = 1.1
+att.Mult_SpeedMult = 1.15
+att.Mult_SightedSpeedMult = 1.3
 att.Mult_Range = 0.75
 att.Mult_SightTime = 0.75
 att.Mult_AccuracyMOA = 1.25

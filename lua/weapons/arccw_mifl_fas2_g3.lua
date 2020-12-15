@@ -2,13 +2,13 @@ SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
-SWEP.PrintName = "GAY3"
+SWEP.PrintName = "R3"
 SWEP.TrueName = "G3A3"
 SWEP.Trivia_Class = "Battle Rifle"
-SWEP.Trivia_Desc = "Germ gun."
-SWEP.Trivia_Manufacturer = "kock"
-SWEP.Trivia_Calibre = "7.62x39mm NATO"
-SWEP.Trivia_Mechanism = "Gas-Operated"
+SWEP.Trivia_Desc = "German battle rifle. Large caliber, small capacity and good precision makes this an excellent long range weapon."
+SWEP.Trivia_Manufacturer = "Heckler & Koch"
+SWEP.Trivia_Calibre = "7.62x51mm NATO"
+SWEP.Trivia_Mechanism = "Roller-delayed blowback"
 SWEP.Trivia_Country = "Germany"
 SWEP.Trivia_Year = 1950
 
@@ -21,24 +21,24 @@ SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_g3.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_g3.mdl"
 SWEP.ViewModelFOV = 54
-SWEP.DefaultBodygroups = "000000000000"
-SWEP.Damage = 42
-SWEP.DamageMin = 34 -- damage done at maximum range
-SWEP.Range = 120 -- in METRES
-SWEP.Penetration = 10
+SWEP.DefaultBodygroups = "000100000000"
+SWEP.Damage = 60
+SWEP.DamageMin = 45 -- damage done at maximum range
+SWEP.Range = 200 -- in METRES
+SWEP.Penetration = 20
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 1120 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 20 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 1200
-SWEP.Recoil = 0.8
+SWEP.Recoil = 0.9
 SWEP.RecoilSide = 0.6
-SWEP.RecoilRise = 1.8
-SWEP.MaxRecoilBlowback = 0.7
+SWEP.RecoilRise = 0.8
+SWEP.MaxRecoilBlowback = 1
 SWEP.VisualRecoilMult = 0.9
-SWEP.Delay = 60 / 500
+SWEP.Delay = 60 / 550
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Firemodes = {
@@ -53,11 +53,11 @@ SWEP.Firemodes = {
     }
 }
 
-SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
+SWEP.NPCWeaponType = {"weapon_ar2"}
 SWEP.NPCWeight = 170
-SWEP.AccuracyMOA = 3.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 100
+SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 150
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -71,16 +71,17 @@ SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 SWEP.MuzzleEffect = "muzzleflash_3"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 95
-SWEP.ShellScale = 1.25
+SWEP.ShellScale = 1.75
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
-SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
+SWEP.CaseEffectAttachment = 3 -- which attachment to put the case effect on
+SWEP.ShellRotateAngle = Angle(0, 180, -20)
 SWEP.SpeedMult = 0.9
 SWEP.SightedSpeedMult = 0.725
 SWEP.SightTime = 0.375
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.401, -10, 1.417),
-    Ang = Angle(0.203, 0, 0),
+    Pos = Vector(-4, -8, 0.479),
+    Ang = Angle(0.699, 0.05, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
@@ -132,7 +133,6 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.MirrorVMWM = true
-SWEP.ShellRotateAngle = Angle(5, 90, 20)
 
 SWEP.Attachments = {
     {
@@ -141,45 +141,41 @@ SWEP.Attachments = {
         Bone = "stock",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, 3, 4.425),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(8, -4, 0.7),
+            vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
         ExtraSightDist = 7,
         InstalledEles = {"mount"},
-        CorrectiveAng = Angle(0, 180, 0)
+        CorrectiveAng = Angle(0, 0, 0)
     },
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_g3_hg",
-        Bone = "stock",
         DefaultAttName = "Default Handguard",
-        Offset = {
-            vpos = Vector(0.3, 11, 1.5),
-            vang = Angle(90, -90, -90)
-        }
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "ak_frame",
+        Bone = "stock",
         Offset = {
-            vpos = Vector(0, 31, 1.8),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(35, -1.35, 0.7),
+            vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk"}
+        VMScale = Vector(1.5, 1.5, 1.5),
+        ExcludeFlags = {"mifl_fas2_g3_hg_sd", "mifl_fas2_g3_hg_sdk"}
     },
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
-        Bone = "ak_frame",
+        Bone = "stock",
         Offset = {
-            vpos = Vector(0, 12, 0),
-            vang = Angle(90, -90, -90),
+            vpos = Vector(20, -0.5, 0.7),
+            vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
@@ -189,10 +185,10 @@ SWEP.Attachments = {
         PrintName = "INTEG-UBGL",
         Hidden = true,
         Slot = "ubgl",
-        Bone = "ak_frame",
+        Bone = "stock",
         Offset = {
-            vpos = Vector(0, 10.5, 0),
-            vang = Angle(90, -90, -90),
+            vpos = Vector(15, -0.5, 0.7),
+            vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         }
@@ -200,7 +196,7 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "ak_frame",
+        Bone = "stock",
         Offset = {
             vpos = Vector(-0.5, 10, 1),
             vang = Angle(0, -90, -90),
@@ -212,14 +208,14 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Magazine",
-        Slot = {"mifl_fas2_ak_mag"},
-        DefaultAttName = "30-Round 7.62mm"
+        Slot = {"mifl_fas2_g3_mag"},
+        DefaultAttName = "20-Round 7.62mm"
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_ak47_stock"},
+        Slot = {"go_stock", "mifl_fas2_g347_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "ak_frame",
+        Bone = "stock",
         Offset = {
             vpos = Vector(0.1, -2, 1.2),
             vang = Angle(0, -90, 0)
@@ -239,7 +235,7 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "ak_frame", -- relevant bone any attachments will be mostly referring to
+        Bone = "stock", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.8, 2, 0.8), -- offset that the attachment will be relative to the bone
             vang = Angle(0, -90, 0)
@@ -279,27 +275,27 @@ SWEP.Animations = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 1.4,
-        LHIKEaseOut = 0.4
+        LHIKEaseIn = 0.7,
+        LHIKIn = 0.6,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.7
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
+        LHIK = false, -- Left hand would clip with UBGL/grips
         LHIKEaseIn = 0.25,
         LHIKIn = 0.4,
-        LHIKOut = 1,
+        LHIKOut = 0.5,
         LHIKEaseOut = 0.5
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.35,
-        LHIKIn = 1.15,
-        LHIKOut = 1,
-        LHIKEaseOut = 0.55
+        LHIKEaseIn = 0.7,
+        LHIKIn = 0.6,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.7
     },
 }

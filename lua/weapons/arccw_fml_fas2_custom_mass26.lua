@@ -24,7 +24,7 @@ SWEP.ViewModelFOV = 54
 
 SWEP.Damage = 16
 SWEP.DamageMin = 5
-SWEP.Range = 20
+SWEP.Range = 30
 SWEP.Penetration = 2
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.MuzzleVelocity = 1050
