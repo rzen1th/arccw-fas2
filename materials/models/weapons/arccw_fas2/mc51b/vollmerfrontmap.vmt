@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\weapons\arccw_fas2\mc51bvollmerfrontmap"
+	"$basetexture" "models\weapons\arccw_fas2\mc51b\vollmerfrontmap"
 	"$bumpmap"	"models\weapons\arccw_fas2\default_normal" //small
 
 	"$envmap" "env_cubemap"

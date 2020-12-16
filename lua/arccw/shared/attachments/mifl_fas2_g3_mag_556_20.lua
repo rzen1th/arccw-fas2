@@ -1,5 +1,5 @@
 att.PrintName = "20-Round 5.56mm"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_saiga.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_20.png", "mips smooth")
 att.Description = ""
 att.SortOrder = 1
 att.Desc_Pros = {

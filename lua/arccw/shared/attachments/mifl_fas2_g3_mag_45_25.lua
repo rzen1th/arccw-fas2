@@ -1,5 +1,5 @@
 att.PrintName = "25-Round .45ACP"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_saiga.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_mp5_mag_20.png", "mips smooth")
 att.Description = ""
 att.SortOrder = 1
 att.Desc_Pros = {

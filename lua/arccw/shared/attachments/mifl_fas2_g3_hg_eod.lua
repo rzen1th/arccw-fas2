@@ -1,5 +1,5 @@
 att.PrintName = "EOD Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_saiga.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g3_hg_eod.png", "mips smooth")
 att.Description = "Short barrel shroud taken from specialized EOD MP5s. Offers superior hipfire capabilities."
 att.SortOrder = -4
 att.Desc_Pros = {

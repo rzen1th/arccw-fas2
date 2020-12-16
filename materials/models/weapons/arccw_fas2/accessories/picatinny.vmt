@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\weapons\v_models\accessories\picatinny"
-	"$bumpmap"	"models\weapons\v_models\default_normal" //small
+	"$basetexture" "models\weapons\arccw_fas2\accessories\picatinny"
+	"$bumpmap"	"models\weapons\arccw_fas2\accessories\picatinny_normal"
 	"$phong" 			"1"
 	"$phongexponent" 		"50"
 	"$phongboost" 			"0.5"

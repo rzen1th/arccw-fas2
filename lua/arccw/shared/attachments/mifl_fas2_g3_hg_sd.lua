@@ -1,5 +1,5 @@
 att.PrintName = "SD Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_saiga.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g3_hg_sd.png", "mips smooth")
 att.Description = "Integrated suppressor for the G3."
 att.SortOrder = 0
 att.Desc_Pros = {

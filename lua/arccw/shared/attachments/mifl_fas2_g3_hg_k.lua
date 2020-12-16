@@ -1,5 +1,5 @@
 att.PrintName = "Kurz Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_saiga.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g3_hg_k.png", "mips smooth")
 att.Description = "Yes, that is indeed a MP5K handguard on a G3. When people talk about how the two guns are mechanically similar, I don't think this is what they meant."
 att.SortOrder = -8
 att.Desc_Pros = {

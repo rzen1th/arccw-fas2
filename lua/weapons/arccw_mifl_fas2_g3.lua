@@ -103,6 +103,10 @@ SWEP.CustomizePos = Vector(3, 3, -1)
 SWEP.CustomizeAng = Angle(10, 10, 5)
 SWEP.BarrelLength = 24
 
+SWEP.BulletBones = {
+    [1] = "rounds"
+}
+
 SWEP.AttachmentElements = {
     ["mount"] = {
         VMBodygroups = {	{ind = 5, bg = 1}	},
@@ -124,6 +128,27 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_g3_hg_k"] = {
         VMBodygroups = {	{ind = 1, bg = 3}	},
+    },	
+    ["mifl_fas2_g3_mag_762_50"] = {
+        VMBodygroups = {	{ind = 3, bg = 3}	},
+    },	
+    ["mifl_fas2_g3_mag_762_10"] = {
+        VMBodygroups = {	{ind = 3, bg = 2}	},
+    },		
+    ["mifl_fas2_g3_mag_762_20"] = {
+        VMBodygroups = {	{ind = 3, bg = 0}	},
+    },	
+    ["mifl_fas2_g3_mag_556_20"] = {
+        VMBodygroups = {	{ind = 3, bg = 4}, {ind = 6, bg = 1}	},
+    },
+    ["mifl_fas2_g3_mag_556_30"] = {
+        VMBodygroups = {	{ind = 3, bg = 5}, {ind = 6, bg = 1}	},
+    },	
+    ["mifl_fas2_g3_mag_45_25"] = {
+        VMBodygroups = {	{ind = 3, bg = 6}, {ind = 6, bg = 2}	},
+    },
+    ["mifl_fas2_g3_mag_10_32"] = {
+        VMBodygroups = {	{ind = 3, bg = 7}, {ind = 6, bg = 2}	},
     },	
 }
 
@@ -159,6 +184,11 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         DefaultAttName = "Default Handguard",
+        Bone = "stock",		
+        Offset = {
+            vpos = Vector(16, -0.25, 0.8),
+            vang = Angle(0, 0, -90)
+        }		
     },
     {
         PrintName = "Muzzle",
@@ -248,6 +278,19 @@ SWEP.Attachments = {
     }
 }
 
+SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
+    local kurz = wep.Attachments[2].Installed == "mifl_fas2_g3_hg_k"
+    local fifty = wep.Attachments[7].Installed == "mifl_fas2_g3_mag_762_50"
+
+    if	kurz and fifty then
+        return anim .. "_k_50"
+    elseif kurz then
+        return anim .. "_k"
+    elseif fifty then
+        return anim .. "_50"
+    end
+end
+
 
 SWEP.Animations = {
     ["idle"] = {
@@ -258,6 +301,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "deploy_first2",
+		Time = 1.2
     },
     ["fire"] = {
         Source = {"fire"},
@@ -271,8 +315,7 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
+        LHIKIn = 0.4,
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4
     },
@@ -280,7 +323,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.7,
+        LastClip1OutTime = 2.3,		
         LHIKIn = 0.6,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.7
@@ -288,19 +331,115 @@ SWEP.Animations = {
     ["reload_nomen"] = {
         Source = "reload_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = false, -- Left hand would clip with UBGL/grips
-        LHIKEaseIn = 0.25,
-        LHIKIn = 0.4,
-        LHIKOut = 0.5,
-        LHIKEaseOut = 0.5
     },
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 1.5,		
         LHIK = true,
-        LHIKEaseIn = 0.7,
+        LHIKIn = 0.5,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+------------------------------------------------------------------
+    ["reload_k"] = {
+        Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_empty_k"] = {
+        Source = "reload_empty_k",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2.3,			
+        LHIK = true,
         LHIKIn = 0.6,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.7
     },
+    ["reload_nomen_k"] = {
+        Source = "reload_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+    },
+    ["reload_nomen_empty_k"] = {
+        Source = "reload_empty_nomen_k",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 1.5,			
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+------------------------------------------------------------------
+    ["reload_50"] = {
+        Source = "reload_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_empty_50"] = {
+        Source = "reload_empty_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2.3,			
+        LHIK = true,
+        LHIKIn = 0.6,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.7
+    },
+    ["reload_nomen_50"] = {
+        Source = "reload_nomen_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3		
+    },
+    ["reload_nomen_empty_50"] = {
+        Source = "reload_empty_nomen_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LastClip1OutTime = 1.5,			
+        LHIKIn = 0.5,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },	
+------------------------------------------------------------------
+    ["reload_k_50"] = {
+        Source = "reload_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_empty_k_50"] = {
+        Source = "reload_empty_50_k",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2.3,			
+        LHIK = true,
+        LHIKIn = 0.6,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.7
+    },
+    ["reload_nomen_k_50"] = {
+        Source = "reload_nomen_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3		
+    },
+    ["reload_nomen_empty_k_50"] = {
+        Source = "reload_empty_nomen_50_k",
+        LastClip1OutTime = 1.5,			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },		
 }

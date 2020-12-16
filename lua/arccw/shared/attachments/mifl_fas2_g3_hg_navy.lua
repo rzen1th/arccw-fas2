@@ -1,5 +1,5 @@
 att.PrintName = "Navy Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_saiga.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g3_hg_navy.png", "mips smooth")
 att.Description = "Short handguard with flashlight that came off a MP5 Navy. Has a noticably faster firerate."
 att.SortOrder = -3
 att.Desc_Pros = {
