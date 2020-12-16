@@ -1,7 +1,7 @@
 att.PrintName = "30-Round 5.56mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g3_mag_556_30.png", "mips smooth")
 att.Description = "Convert the weapon into a HK33, firing a less powerful intermediate cartridge."
-att.SortOrder = 1
+att.SortOrder = 5.3
 att.Desc_Pros = {
     "pro.magcap"
 }
@@ -23,3 +23,8 @@ att.Mult_RPM = 1.1
 att.Override_Ammo = "smg1"
 att.Override_Trivia_Class = "Assault Rifle"
 att.Override_Trivia_Calibre = "5.56x45mm NATO"
+
+att.Hook_GetShootSound = function(wep, fsound)
+    if fsound == "weapons/arccw_mifl/fas2/g3/g3_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_fire1.wav" end
+    if fsound == "weapons/arccw_mifl/fas2/g3/g3_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_suppressed_fire1.wav" end
+end

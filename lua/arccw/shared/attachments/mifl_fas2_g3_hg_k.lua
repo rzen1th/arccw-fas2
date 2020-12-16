@@ -17,6 +17,8 @@ att.Mult_SpeedMult = 1.15
 att.Mult_Recoil = 1.5
 att.Mult_RecoilSide = 1.5
 att.Mult_RPM = 1.4
+att.Mult_MoveDispersion = 2
+att.Mult_HipDispersion = 0.5
 
 att.Add_BarrelLength = -4
 

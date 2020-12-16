@@ -1,7 +1,7 @@
-att.PrintName = "25-Round .45 ACP"
+att.PrintName = "30-Round .45 ACP"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_mag_20.png", "mips smooth")
-att.Description = ""
-att.SortOrder = 1
+att.Description = "Pistol caliber conversion for the G3. .45 ACP rounds are slightly more powerful up close than 10mm."
+att.SortOrder = 2
 att.Desc_Pros = {
     "pro.magcap"
 }
@@ -10,11 +10,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_g3_mag"
 
-att.Override_ClipSize = 25
-
-att.Mult_MoveSpeed = 1.1
-att.Mult_SightTime = 0.85
-att.Mult_ReloadTime = 0.9
+att.Override_ClipSize = 30
 
 -- .45
 att.Mult_Damage = 0.6

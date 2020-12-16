@@ -1,7 +1,7 @@
 att.PrintName = "10-Round 7.62mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g3_mag_762_10.png", "mips smooth")
 att.Description = "Reduced capacity magazine used in marksman roles."
-att.SortOrder = 1
+att.SortOrder = 7.1
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

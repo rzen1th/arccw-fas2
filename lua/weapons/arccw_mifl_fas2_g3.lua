@@ -57,7 +57,7 @@ SWEP.NPCWeaponType = {"weapon_ar2"}
 SWEP.NPCWeight = 170
 SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.MoveDispersion = 60
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -80,10 +80,9 @@ SWEP.SightedSpeedMult = 0.725
 SWEP.SightTime = 0.375
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4, -8, 0.479),
-    Ang = Angle(0.699, 0.05, 0),
+    Pos = Vector(-4, -4, 0.35),
+    Ang = Angle(0.85, 0.05, 0),
     Magnification = 1.05,
-    SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
 }
 
@@ -113,21 +112,51 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_g3_hg_sd"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 2},	},
+        Override_IronSightStruct = {
+            Pos = Vector(-4, -4, 0.25),
+            Ang = Angle(1.1, 0.05, 0),
+            Magnification = 1.05,
+        }
     },
     ["mifl_fas2_g3_hg_vollmer"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 1},	},
+        Override_IronSightStruct = {
+            Pos = Vector(-4, -4, 0.3),
+            Ang = Angle(1, 0.05, 0),
+            Magnification = 1.05,
+        }
     },
     ["mifl_fas2_g3_hg_eod"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 3},	},
+        Override_IronSightStruct = {
+            Pos = Vector(-4, -4, 0.25),
+            Ang = Angle(1.1, 0.05, 0),
+            Magnification = 1.05,
+        }
     },
     ["mifl_fas2_g3_hg_navy"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 4},	},
+        Override_IronSightStruct = {
+            Pos = Vector(-4, -4, 0.25),
+            Ang = Angle(1.1, 0.05, 0),
+            Magnification = 1.05,
+        }
     },
     ["mifl_fas2_g3_hg_para"] = {
         VMBodygroups = {	{ind = 1, bg = 1}	},
+        Override_IronSightStruct = {
+            Pos = Vector(-4, -4, 0.3),
+            Ang = Angle(1, 0.05, 0),
+            Magnification = 1.05,
+        }
     },
     ["mifl_fas2_g3_hg_k"] = {
         VMBodygroups = {	{ind = 1, bg = 3}	},
+        Override_IronSightStruct = {
+            Pos = Vector(-4, -4, 0.25),
+            Ang = Angle(1.5, 0.05, 0),
+            Magnification = 1.05,
+        }
     },
     ["mifl_fas2_g3_mag_762_50"] = {
         VMBodygroups = {	{ind = 3, bg = 3}	},
@@ -158,6 +187,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.MirrorVMWM = true
+SWEP.GuaranteeLaser = true
 
 SWEP.Attachments = {
     {
@@ -166,23 +196,19 @@ SWEP.Attachments = {
         Bone = "stock",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(8, -4, 0.7),
+            vpos = Vector(8, -3.8, 0.7),
             vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
         ExtraSightDist = 7,
         InstalledEles = {"mount"},
+        VMScale = Vector(1.25, 1.25, 1.25),
         CorrectiveAng = Angle(0, 0, 0)
     },
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_g3_hg",
-        Bone = "stock",
-        Offset = {
-            vpos = Vector(20, 0, 0.7),
-            vang = Angle(0, 0, -90),
-        },
         DefaultAttName = "Default Handguard",
         Bone = "stock",
         Offset = {
@@ -235,13 +261,13 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "stock",
         Offset = {
-            vpos = Vector(-0.5, 10, 1),
-            vang = Angle(0, -90, -90),
+            vpos = Vector(14, -2, 1.5),
+            vang = Angle(0, 0, 180),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
         ExtraSightDist = 20,
-        CorrectivePos = Vector(2, -2, 3)
+        CorrectivePos = Vector(0, 0, 0)
     },
     {
         PrintName = "Magazine",
@@ -303,7 +329,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "deploy_first2",
-		Time = 1.2
+        Time = 1.2
     },
     ["fire"] = {
         Source = {"fire"},

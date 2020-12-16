@@ -1,7 +1,7 @@
 att.PrintName = "32-Round 10mm"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_mag_10mm.png", "mips smooth")
-att.Description = ""
-att.SortOrder = 1
+att.Description = "Pistol caliber conversion for the G3. 10mm rounds have balanced damage at range compared to .45."
+att.SortOrder = 2.5
 att.Desc_Pros = {
     "pro.magcap"
 }

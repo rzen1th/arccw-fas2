@@ -1,7 +1,7 @@
 att.PrintName = "50-Round 7.62mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g3_mag_762_50.png", "mips smooth")
 att.Description = "Small drum magazine for the G3. Lots of bullets weighs the weapon down noticably."
-att.SortOrder = 1
+att.SortOrder = 7.5
 att.Desc_Pros = {
     "pro.magcap"
 }
