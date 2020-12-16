@@ -113,43 +113,43 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_g3_hg_sd"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 2},	},
-    },	
+    },
     ["mifl_fas2_g3_hg_vollmer"] = {
-        VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 1},	},		
-    },	
+        VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 1},	},
+    },
     ["mifl_fas2_g3_hg_eod"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 3},	},
-    },		
+    },
     ["mifl_fas2_g3_hg_navy"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 4},	},
-    },	
+    },
     ["mifl_fas2_g3_hg_para"] = {
         VMBodygroups = {	{ind = 1, bg = 1}	},
     },
     ["mifl_fas2_g3_hg_k"] = {
         VMBodygroups = {	{ind = 1, bg = 3}	},
-    },	
+    },
     ["mifl_fas2_g3_mag_762_50"] = {
         VMBodygroups = {	{ind = 3, bg = 3}	},
-    },	
+    },
     ["mifl_fas2_g3_mag_762_10"] = {
         VMBodygroups = {	{ind = 3, bg = 2}	},
-    },		
-    ["mifl_fas2_g3_mag_762_20"] = {
+    },
+    ["mifl_fas2_g3_mag_762_30"] = {
         VMBodygroups = {	{ind = 3, bg = 0}	},
-    },	
+    },
     ["mifl_fas2_g3_mag_556_20"] = {
         VMBodygroups = {	{ind = 3, bg = 4}, {ind = 6, bg = 1}	},
     },
     ["mifl_fas2_g3_mag_556_30"] = {
         VMBodygroups = {	{ind = 3, bg = 5}, {ind = 6, bg = 1}	},
-    },	
+    },
     ["mifl_fas2_g3_mag_45_25"] = {
         VMBodygroups = {	{ind = 3, bg = 6}, {ind = 6, bg = 2}	},
     },
     ["mifl_fas2_g3_mag_10_32"] = {
         VMBodygroups = {	{ind = 3, bg = 7}, {ind = 6, bg = 2}	},
-    },	
+    },
 }
 
 SWEP.WorldModelOffset = {
@@ -184,11 +184,11 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
         DefaultAttName = "Default Handguard",
-        Bone = "stock",		
+        Bone = "stock",
         Offset = {
             vpos = Vector(16, -0.25, 0.8),
             vang = Angle(0, 0, -90)
-        }		
+        }
     },
     {
         PrintName = "Muzzle",
@@ -202,7 +202,7 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         VMScale = Vector(1.5, 1.5, 1.5),
-        ExcludeFlags = {"mifl_fas2_g3_hg_sd", "mifl_fas2_g3_hg_sdk"}
+        ExcludeFlags = {"mifl_fas2_g3_hg_sd"}
     },
     {
         PrintName = "Underbarrel",
@@ -214,7 +214,8 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        MergeSlots = {5}
+        MergeSlots = {5},
+        ExcludeFlags = {"mifl_fas2_g3_hg_k"},
     },
     {
         PrintName = "INTEG-UBGL",
@@ -226,7 +227,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
-        }
+        },
+        ExcludeFlags = {"mifl_fas2_g3_hg_k"},
     },
     {
         PrintName = "Tactical",
@@ -323,7 +325,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LastClip1OutTime = 2.3,		
+        LastClip1OutTime = 2.3,
         LHIKIn = 0.6,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.7
@@ -335,7 +337,7 @@ SWEP.Animations = {
     ["reload_nomen_empty"] = {
         Source = "reload_empty_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 1.5,		
+        LastClip1OutTime = 1.5,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
@@ -353,7 +355,7 @@ SWEP.Animations = {
     ["reload_empty_k"] = {
         Source = "reload_empty_k",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 2.3,			
+        LastClip1OutTime = 2.3,
         LHIK = true,
         LHIKIn = 0.6,
         LHIKOut = 0.6,
@@ -366,7 +368,7 @@ SWEP.Animations = {
     ["reload_nomen_empty_k"] = {
         Source = "reload_empty_nomen_k",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 1.5,			
+        LastClip1OutTime = 1.5,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
@@ -384,7 +386,7 @@ SWEP.Animations = {
     ["reload_empty_50"] = {
         Source = "reload_empty_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 2.3,			
+        LastClip1OutTime = 2.3,
         LHIK = true,
         LHIKIn = 0.6,
         LHIKOut = 0.6,
@@ -396,17 +398,17 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-        LHIKEaseOut = 0.3		
+        LHIKEaseOut = 0.3
     },
     ["reload_nomen_empty_50"] = {
         Source = "reload_empty_nomen_50",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LastClip1OutTime = 1.5,			
+        LastClip1OutTime = 1.5,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4
-    },	
+    },
 ------------------------------------------------------------------
     ["reload_k_50"] = {
         Source = "reload_50",
@@ -419,7 +421,7 @@ SWEP.Animations = {
     ["reload_empty_k_50"] = {
         Source = "reload_empty_50_k",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 2.3,			
+        LastClip1OutTime = 2.3,
         LHIK = true,
         LHIKIn = 0.6,
         LHIKOut = 0.6,
@@ -431,15 +433,15 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-        LHIKEaseOut = 0.3		
+        LHIKEaseOut = 0.3
     },
     ["reload_nomen_empty_k_50"] = {
         Source = "reload_empty_nomen_50_k",
-        LastClip1OutTime = 1.5,			
+        LastClip1OutTime = 1.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4
-    },		
+    },
 }

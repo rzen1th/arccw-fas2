@@ -17,3 +17,8 @@ att.Mult_Recoil = 1.3
 att.Mult_RPM = 1.15
 
 att.Add_BarrelLength = -2
+
+att.LHIK = true
+att.LHIK_Priority = -2
+att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
+att.ModelOffset = Vector(0, -0.5, -0.5)
