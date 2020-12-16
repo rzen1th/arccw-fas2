@@ -153,6 +153,11 @@ SWEP.Attachments = {
     {
         PrintName = "Handguard",
         Slot = "mifl_fas2_g3_hg",
+        Bone = "stock",
+        Offset = {
+            vpos = Vector(20, 0, 0.7),
+            vang = Angle(0, 0, -90),
+        },
         DefaultAttName = "Default Handguard",
     },
     {
