@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
     "con.magcap"
 }
-att.SortOrder = 20
+att.SortOrder = 20 + 100
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_mag"
 
