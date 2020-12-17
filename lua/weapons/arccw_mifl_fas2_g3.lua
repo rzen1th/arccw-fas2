@@ -107,6 +107,18 @@ SWEP.BulletBones = {
 }
 
 SWEP.AttachmentElements = {
+    ["buftube"] = {
+        VMBodygroups = {{ind = 4, bg = 4}}
+    },
+    ["mifl_fas2_sg55x_stock_sd"] = {
+        VMBodygroups = {{ind = 4, bg = 3}}
+    },
+    ["mifl_fas2_g36_stock_mp5"] = {
+        VMBodygroups = {{ind = 4, bg = 2}}
+    },
+    ["mifl_fas2_mp5_stock_pdw"] = {
+        VMBodygroups = {{ind = 4, bg = 1}}
+    },	
     ["mount"] = {
         VMBodygroups = {	{ind = 5, bg = 1}	},
     },
@@ -124,7 +136,9 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4, -4, 0.3),
             Ang = Angle(1, 0.05, 0),
             Magnification = 1.05,
-        }
+        },
+        AttPosMods = {
+            [3] = {	vpos = Vector(29.5, -1, 0.8) } 	},		
     },
     ["mifl_fas2_g3_hg_eod"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 3},	},
@@ -132,7 +146,9 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4, -4, 0.25),
             Ang = Angle(1.1, 0.05, 0),
             Magnification = 1.05,
-        }
+        },
+        AttPosMods = {
+            [3] = {	vpos = Vector(31, -1.3, 0.8) } 	},		
     },
     ["mifl_fas2_g3_hg_navy"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 2, bg = 4},	},
@@ -140,7 +156,9 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4, -4, 0.25),
             Ang = Angle(1.1, 0.05, 0),
             Magnification = 1.05,
-        }
+        },
+        AttPosMods = {
+            [3] = {	vpos = Vector(28, -1.3, 0.8) } 	},		
     },
     ["mifl_fas2_g3_hg_para"] = {
         VMBodygroups = {	{ind = 1, bg = 1}	},
@@ -148,7 +166,9 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4, -4, 0.3),
             Ang = Angle(1, 0.05, 0),
             Magnification = 1.05,
-        }
+        },
+        AttPosMods = {
+            [3] = {	vpos = Vector(29.5, -1.3, 0.8) } 	},		
     },
     ["mifl_fas2_g3_hg_k"] = {
         VMBodygroups = {	{ind = 1, bg = 3}	},
@@ -156,7 +176,9 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4, -4, 0.25),
             Ang = Angle(1.5, 0.05, 0),
             Magnification = 1.05,
-        }
+        },
+        AttPosMods = {
+            [3] = {	vpos = Vector(20, -1.3, 0.8) } 	},		
     },
     ["mifl_fas2_g3_mag_762_50"] = {
         VMBodygroups = {	{ind = 3, bg = 3}	},
@@ -222,7 +244,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "stock",
         Offset = {
-            vpos = Vector(35, -1.35, 0.7),
+            vpos = Vector(35, -1.3, 0.8),
             vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
@@ -276,14 +298,14 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_g347_stock"},
+        Slot = {"go_stock", "mifl_fas2_g3_stock", "mifl_fas2_uni_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "stock",
         Offset = {
-            vpos = Vector(0.1, -2, 1.2),
-            vang = Angle(0, -90, 0)
+            vpos = Vector(-2, -1.2, 0.8),
+            vang = Angle(0, 0, -90),
         },
-        VMScale = Vector(1, 1, 1)
+        VMScale = Vector(1.2, 1.2, 1.2)
     },
     {
         PrintName = "Ammo Type",

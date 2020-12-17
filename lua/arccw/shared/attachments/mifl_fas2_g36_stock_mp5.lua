@@ -6,7 +6,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "mifl_fas2_g36_stock"
+att.Slot = {"mifl_fas2_g36_stock", "mifl_fas2_g3_stock"}
 
 att.Mult_Recoil = 1.075
 att.Mult_RecoilSide = 0.7

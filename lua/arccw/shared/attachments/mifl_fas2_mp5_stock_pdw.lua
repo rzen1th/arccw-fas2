@@ -6,7 +6,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "mifl_fas2_mp5_stock"
+att.Slot = {"mifl_fas2_mp5_stock", "mifl_fas2_g3_stock"}
 att.SortOrder = 2
 
 att.Mult_SightTime = 0.9
