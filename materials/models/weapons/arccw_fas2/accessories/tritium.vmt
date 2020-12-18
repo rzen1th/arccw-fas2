@@ -10,4 +10,6 @@
 			"resultVar"	"$color2"
 		}
 	}
+
+	"$nocull" "1"			
 }
