@@ -14,8 +14,8 @@ att.Mult_DamageMin = 0.5
 att.Mult_Range = 1.25
 att.Mult_Recoil = 5
 att.Mult_RecoilSide = 1.5
-att.Mult_ReloadTime = 1.25
-att.Mult_CycleTime = 1.25
+att.Mult_ReloadTime = 1.2
+att.Mult_CycleTime = 1.2
 
 att.Mult_ShootPitch = 1.25
 att.Mult_ShootVol = 1.2

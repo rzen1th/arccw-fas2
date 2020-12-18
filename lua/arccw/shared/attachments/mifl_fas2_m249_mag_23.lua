@@ -25,6 +25,7 @@ att.Override_Num = 17
 att.Override_Ammo = "buckshot"
 att.Override_Trivia_Calibre = "23mm"
 att.Override_Trivia_Class = "Shotgun"
+att.Override_IsShotgun = true
 
 att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
 

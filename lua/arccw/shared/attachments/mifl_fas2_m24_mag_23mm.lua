@@ -11,7 +11,7 @@ att.Slot = "mifl_fas2_m24_mag"
 
 att.Mult_Recoil = 2.5
 att.Mult_RecoilSide = 1.5
-att.Mult_Range = 0.5
+--att.Mult_Range = 0.5
 att.Mult_Penetration = 0.1
 att.Mult_Damage = 2
 att.Mult_DamageMin = 0.5
@@ -23,6 +23,7 @@ att.Override_Trivia_Calibre = "23mm"
 att.Override_Trivia_Class = "Shotgun"
 att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
 att.AddSuffix = " 23mm"
+att.Override_IsShotgun = true
 
-att.Mult_ReloadTime = 1.15
-att.Mult_CycleTime = 1.2
+att.Mult_ReloadTime = 1.1
+att.Mult_CycleTime = 1.1
