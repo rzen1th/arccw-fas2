@@ -11,6 +11,9 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_m249_mag"
 
 att.ActivateElements = {"200"}
-att.Mult_MoveSpeed = 0.8
-att.Mult_SightTime = 1.2
+
+att.Mult_MoveSpeed = 0.9
+att.Mult_SightTime = 1.25
+att.Mult_ReloadTime = 1.25
+
 att.Override_ClipSize = 200
