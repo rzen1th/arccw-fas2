@@ -141,7 +141,9 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 0},
             {ind = 5, bg = 0},
         },
-        Override_ActivePos = Vector(0, -2, -2),
+        Override_ActivePos = Vector(2, -2, -2),
+        Override_HolsterPos = Vector(6, -6, 0),
+        Override_HolsterAng = Angle(-15, 25, 0),
         AttPosMods = {
             [1] = {
                 vpos = Vector(0, 0, 3.7),
@@ -364,6 +366,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"akimbo"},
+        ExcludeFlags = {"roni"},
         MergeSlots = {7},
     },
     {
@@ -386,6 +389,7 @@ SWEP.Attachments = {
             vpos = Vector(-0.2, -1.8, -0.2),
             vang = Angle(0, -90, 0),
         },
+        ExcludeFlags = {"roni"},
     },
     {
         PrintName = "Ammo Type",
