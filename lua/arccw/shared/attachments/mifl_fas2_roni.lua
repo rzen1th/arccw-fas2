@@ -1,6 +1,6 @@
 att.PrintName = "Roni Kit"
 att.Icon = Material("entities/arccw_mifl_roni_frame.png")
-att.Description = "Aftermarket modification kit turning a pistol into some sort of short barrel carbine. Bump slide allows for pseudo-automatic fire at the cost of recoil."
+att.Description = "Aftermarket modification kit turning a pistol into some sort of short barrel carbine. Bump slide allows for pseudo-automatic fire."
 att.SortOrder = 8
 att.Slot = {"mifl_roni_conv", "mifl_fas2_g20_slide"}
 
@@ -19,12 +19,13 @@ att.ActivateElements = {"roni"}
 
 att.Add_BarrelLength = 4
 
-att.Mult_Recoil = 0.7
+att.Mult_Recoil = 0.5
+att.Mult_RecoilSide = 0.75
 att.Mult_SightTime = 1.5
 att.Mult_Range = 1.5
-att.Mult_AccuracyMOA = 0.5
-att.Mult_MoveDispersion = 0.5
-att.Mult_HipDispersion = 1.5
+att.Mult_AccuracyMOA = 0.25
+att.Mult_MoveDispersion = 0.25
+att.Mult_HipDispersion = 1.75
 att.Mult_SpeedMult = 0.9
 att.Mult_SightedSpeedMult = 0.75
 att.Mult_DrawTime = 1.5
@@ -32,13 +33,12 @@ att.Mult_HolsterTime = 1.5
 
 att.Override_Firemodes = {
     {
-        Mode = 1
-    },
-    {
         Mode = 2,
         PrintName = "BUMP",
-        Mult_Recoil = 1.5,
-        Mult_RecoilSide = 1.5
+        Mult_RecoilSide = 2
+    },
+    {
+        Mode = 1
     },
     {
         Mode = 0

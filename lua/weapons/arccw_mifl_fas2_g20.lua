@@ -43,7 +43,7 @@ SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 1
 SWEP.MaxRecoilBlowback = 2
 
-SWEP.Delay = 60 / 700 -- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -144,7 +144,7 @@ SWEP.AttachmentElements = {
         Override_ActivePos = Vector(0, -2, -2),
         AttPosMods = {
             [1] = {
-                vpos = Vector(0, 0, 3.5),
+                vpos = Vector(0, 0, 3.7),
             },
             [2] = {
                 vpos = Vector(0, 9.5, 0.1),
@@ -198,25 +198,25 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_g20_slide_18c"] = {
         VMBodygroups = {
             {ind = 1, bg = 8},
-            {ind = 0, bg = 1},			
+            {ind = 0, bg = 1},
         },
         AttPosMods = {
             [4] = {
                 vpos = Vector(0, 2.7, 0.78),
             }
-        }		
-    },	
+        }
+    },
     ["mifl_fas2_g20_slide_c"] = {
         VMBodygroups = {
             {ind = 1, bg = 6},
-            {ind = 0, bg = 1},			
+            {ind = 0, bg = 1},
         },
         AttPosMods = {
             [4] = {
                 vpos = Vector(0, 2.3, 0.78),
             }
-        }		
-    },		
+        }
+    },
     ["mifl_fas2_g20_slide_raptor"] = {
         VMBodygroups = {
             {ind = 1, bg = 4},
@@ -289,11 +289,15 @@ function SWEP:Hook_NameChange(name)
         post = " Raptor"
     elseif slide == "mifl_fas2_roni" then
         post = " Carbine"
+    elseif slide == "mifl_fas2_g20_slide_c" then
+        post = " Compact"
     elseif slide == "mifl_fas2_g20_slide_18" then
         if cal == "17" then cal = "18" else post = " Auto" end
+    elseif slide == "mifl_fas2_g20_slide_18c" then
+        if cal == "17" then cal = "18-K" else post = "-K Auto" end
     end
 
-    return pre .. cal .. post
+    return pre .. cal .. post .. (self:GetBuff_Override("AddSuffix") or "")
 end
 
 SWEP.Attachments = {
@@ -307,6 +311,8 @@ SWEP.Attachments = {
             vang = Angle(0, -90,0),
         },
         InstalledEles = {"rail"},
+        MergeSlots = {12},
+        VMScale = Vector(1.25, 1.25, 1.25),
         CorrectiveAng = Angle(0, 180, 0)
     },
     {
@@ -399,6 +405,19 @@ SWEP.Attachments = {
             vpos = Vector(0.5, 3, -0.2), -- offset that the attachment will be relative to the bone
             vang = Angle(0, -90, 0),
         },
+    },
+    { -- New feature just for this
+        Slot = "optic",
+        Bone = "glock_main",
+        Offset = {
+            vpos = Vector(0, 0, 3.5),
+            vang = Angle(0, -90, 0),
+        },
+        Hidden = true,
+        HideIfBlocked = true,
+        RequireFlags = {"roni"},
+        VMScale = Vector(1.25, 1.25, 1.25),
+        CorrectiveAng = Angle(0, 180, 0)
     },
 }
 

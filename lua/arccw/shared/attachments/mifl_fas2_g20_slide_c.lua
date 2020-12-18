@@ -1,6 +1,6 @@
 att.PrintName = "G26 Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slidec.png", "mips smooth")
-att.Description = "shorter than your cock"
+att.Description = "A homemade short slide for the Glock. Not really equivalent to the compact G26, but does make the gun more manuverable."
 att.SortOrder = -2
 att.Desc_Pros = {
 }

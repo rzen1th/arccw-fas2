@@ -1,4 +1,4 @@
-att.PrintName = "G18C Slide"
+att.PrintName = "G18 Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slide18.png", "mips smooth")
 att.Description = "Vented and compensated slide allows for full-auto fire, effectively turning the weapon into a machine-pistol. Watch that ammo count!"
 att.SortOrder = 4

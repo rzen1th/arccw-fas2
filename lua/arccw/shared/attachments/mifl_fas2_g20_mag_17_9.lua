@@ -15,5 +15,6 @@ att.Override_ClipSize = 17
 att.Mult_Recoil = 0.7
 att.Mult_Damage = 0.85
 att.Mult_DamageMin = 0.85
+att.Mult_RPM = 1.15
 
 att.Override_Trivia_Calibre = "9x19mm Parabellum"
