@@ -1,6 +1,6 @@
 att.PrintName = "Whisper Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slidesd.png", "mips smooth")
-att.Description = "Integrated suppressor made for the Glock by some hobbyist. It is significantly more quiet than mounted suppressors, and can reduce bullets to subsonic velocities.."
+att.Description = "Integrated suppressor made for the Glock by some hobbyist. It is significantly more quiet than mounted suppressors, and can reduce bullets to subsonic velocities."
 att.SortOrder = 11
 att.Desc_Pros = {
     "pro.invistracers"
