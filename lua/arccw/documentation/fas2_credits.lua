@@ -46,6 +46,9 @@ https://gamebanana.com/skins/19381
 MP7 (ironsight for the roni) - Shumung/The_tub
 https://gamebanana.com/skins/19741
 
+PSG-1 - fallschirmjager/Sproily
+https://gamebanana.com/skins/105609
+
 SAF KIT - ???
 --- i dont even remember where i got it from ---
 
@@ -82,16 +85,19 @@ Tripwire (Killing Floor 2)
 -HEAT Barrel (M4)
 -EOD Barrel (MP5) 
 -10mm Mag (MP5) 
+-Thompson M1911 thing
 -UMP45 (MP5) 
 -Rail extender thing 
 -M3 Stock
 -G18c/G17 Slide
 -Gluke Slide
 
-Infinity Ward / Beenox / CoD dev in general 
+Infinity Ward / Beenox / Treyarch
 -9mm Adaptor (MW19)
 -Pistol Rail(MW2)
 -Raptor Kit (MW2CR)
+-AN94 (BO3)
+-Single Drum Mag (MW19)
 -Suppressed sound and firing sound for calibre conversion (Mostly MW19)
 
 Saber Interactive (World War Z) -- quite ebin assets ngl
@@ -117,6 +123,7 @@ Google Images
 [Assets Ripper] -- everyone deserves a place 
 -Fesiug (mw2 rip)
 -Stefano (mw2cr rip)
+-Dr Gordon Freeman (MW19 rip)
 -Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
 -HK G41/empty (wwz,warface rip, pretty fucking sure these two are the same)
 -ClearSkyC (warface rip)
