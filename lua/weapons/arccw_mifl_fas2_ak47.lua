@@ -176,7 +176,7 @@ SWEP.AttachmentElements = {
             Ang = Angle(0, 0, 0),
             Magnification = 1.1
         },
-        AttPosMods = {	[3] = {	vpos = Vector(0, 24.5, 1.8)	}	}
+        AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }	}
     },	
     ["mifl_fas2_ak_hg_12"] = {
         VMBodygroups = {
@@ -338,6 +338,8 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if wep.Attachments[1].Installed and (wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12u" or wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" ) then vm:SetBodygroup(4, 0) end
+
+    if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end	
 end
 
 
