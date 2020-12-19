@@ -613,6 +613,12 @@ sound.Add({
 	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_magout_empty.wav"}
 })
 sound.Add({
+	name = 			"Arccw_FAS2_Weapon_AK47.MagOutEmptyNomen",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ak47/ak47_magout_empty_nomen.wav"}
+})
+sound.Add({
 	name = 			"Arccw_FAS2_Weapon_AK47.MagIn",
 	channel = 		CHAN_ITEM1,
 	volume = 		1.0,

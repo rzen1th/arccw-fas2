@@ -172,8 +172,8 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_ak_hg_an94"] = {
         VMBodygroups = {	{ind = 2, bg = 12}, {ind = 3, bg = 2}, {ind = 4, bg = 1}	},
         Override_IronSightStruct = {
-            Pos = Vector(-4.35, -10, 0.85),
-            Ang = Angle(-0.1, 0, 0),
+            Pos = Vector(-4.38, -10, 0.775),
+            Ang = Angle(0, 0, 0),
             Magnification = 1.1
         },
         AttPosMods = {	[3] = {	vpos = Vector(0, 24.5, 1.8)	}	}
