@@ -9,6 +9,8 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_hg"
 
+att.ActivateElements = {"sputnik_br"}
+
 att.Mult_Range = 1.4
 att.Mult_SightTime = 1.1
 att.Mult_HipDispersion = 1.25

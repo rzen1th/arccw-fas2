@@ -523,7 +523,8 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk"}
+        MergeSlots = {12},		
+        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk", "mifl_fas2_ak_hg_an94"},	
     },
     {
         PrintName = "Underbarrel",
@@ -596,7 +597,19 @@ SWEP.Attachments = {
             vpos = Vector(0.8, 2, 0.8), -- offset that the attachment will be relative to the bone
             vang = Angle(0, -90, 0)
         }
-    }
+    },
+	-- Sputnik Bodge
+    {
+        Slot = "muzzle",
+        Bone = "ak_bolt",
+        Offset = {
+            vpos = Vector(0, 34, 3.1),
+            vang = Angle(0, -90, 0),
+        },
+        Hidden = true,
+        HideIfBlocked = true,
+        RequireFlags = {"sputnik_br"},
+    },	
 }
 
 --- hierarchy ---
