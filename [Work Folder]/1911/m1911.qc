@@ -17,8 +17,9 @@ $bodygroup "Slide"
 	studio "Slide_Auto.smd"
 	studio "Slide_C.smd"	
 	studio "Slide_R.smd"	
-	studio "Slide_Alyx.smd"
-	blank	
+	studio "Slide_Alyx.smd"	
+	blank
+	studio "Slide_Whisper.smd"		
 }
 
 $bodygroup "Mag"
@@ -38,6 +39,7 @@ $bodygroup "Stonk"
 {
 	blank
 	studio "Stock.smd"
+	studio "Glock_Stock.smd"	
 }
 
 $bodygroup "Rail"
@@ -48,7 +50,9 @@ $bodygroup "Rail"
 
 $illumposition 0 0 0
 
+$cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\M1911\"
+$cdmaterials "models\weapons\arccw_fas2\kf2_g18\"
 $cdmaterials "models\weapons\arccw_fas2\mw2\"
 $cdmaterials "models\weapons\arccw_fas2\m1911_extra\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
