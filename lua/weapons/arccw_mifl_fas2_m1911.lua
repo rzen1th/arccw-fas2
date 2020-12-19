@@ -36,7 +36,7 @@ SWEP.Recoil = 0.8
 SWEP.RecoilSide = 0.35
 SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 0.7
-SWEP.MaxRecoilBlowback = 2
+SWEP.MaxRecoilBlowback = 0.2
 SWEP.Delay = 60 / 400 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
@@ -118,6 +118,9 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m1911_stock"] = {
         VMBodygroups = {{ind = 4, bg = 1}}
     },
+    ["mifl_fas2_g20_stock_g18"] = {
+        VMBodygroups = {{ind = 4, bg = 2}}
+    },	
     ["mifl_fas2_m1911_mag50"] = {
         VMBodygroups = {{ind = 2, bg = 1}}
     },
@@ -185,7 +188,12 @@ SWEP.AttachmentElements = {
                 vpos = Vector(1.2, -0.2, -0.15)
             }
         }
-    }
+    },
+    ["mifl_fas2_g20_slide_whisper"] = {
+        TrueNameChange = "M1911-SD",
+        NameChange = "11GI-SD",
+        VMBodygroups = {{ind = 1, bg = 6}},
+    }	
 }
 
 SWEP.WorldModelOffset = {

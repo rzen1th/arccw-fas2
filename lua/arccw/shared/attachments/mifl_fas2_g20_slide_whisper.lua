@@ -8,7 +8,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "mifl_fas2_g20_slide"
+att.Slot = {"mifl_fas2_g20_slide", "mifl_fas2_m1911_slide"}
 
 att.Mult_Recoil = 0.9
 att.Mult_SightTime = 1.3

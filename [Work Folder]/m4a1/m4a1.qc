@@ -66,11 +66,13 @@ $bodygroup "Stock"
 	studio "Stock_Kurz.smd"	
 	studio "Stock_SD.smd"		
 	blank	
+	studio "Stock_Glock.smd"		
 }
 
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\m4a1\"
+$cdmaterials "models\weapons\arccw_fas2\kf2_g18\"
 $cdmaterials "models\weapons\arccw_fas2\g36c\"
 $cdmaterials "models\weapons\arccw_fas2\m16a2\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
