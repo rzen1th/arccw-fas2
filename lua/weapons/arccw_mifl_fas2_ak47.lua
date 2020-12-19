@@ -670,10 +670,10 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 1.2,
         LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 0.7,
-        LHIKEaseOut = 0.4
+        LHIKEaseOut = 0.9
     },
     ["reload_empty"] = {
         Source = "reload_empty",
