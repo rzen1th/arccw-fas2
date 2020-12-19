@@ -92,8 +92,8 @@ SWEP.ActivePos = Vector(1, 1, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-0.45, 0, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
-SWEP.HolsterPos = Vector(1, 0, 2)
-SWEP.HolsterAng = Angle(-15, 5, -10)
+SWEP.HolsterPos = Vector(1, -2, 1)
+SWEP.HolsterAng = Angle(-15, 25, -10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.CustomizePos = Vector(6, -1, -1)
@@ -142,8 +142,8 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 2},
         },
         Override_IronSightStruct = {
-            Pos = Vector(-4.086, -9, 1.7),
-            Ang = Angle(0, 0, 0),
+            Pos = Vector(-4.07, -9, 1.67),
+            Ang = Angle(0.1, 0, 0.1),
             Magnification = 1.1
         },
         AttPosMods = {
