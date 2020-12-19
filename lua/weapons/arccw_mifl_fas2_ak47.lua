@@ -177,7 +177,7 @@ SWEP.AttachmentElements = {
             Magnification = 1.1
         },
         AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }	}
-    },	
+    },
     ["mifl_fas2_ak_hg_12"] = {
         VMBodygroups = {
             {ind = 2, bg = 10},
@@ -296,7 +296,7 @@ SWEP.AttachmentElements = {
     },
     ["200_762"] = {
         VMBodygroups = {{ind = 1, bg = 16}}
-    },		
+    },
     ["45_762"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
     },
@@ -339,7 +339,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if wep.Attachments[1].Installed and (wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12u" or wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" ) then vm:SetBodygroup(4, 0) end
 
-    if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end	
+    if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end
 end
 
 
@@ -434,6 +434,27 @@ function SWEP:Hook_NameChange(name)
         if handguard == "mifl_fas2_ak_hg_12u" then
             post = post .. "K"
         end
+    elseif handguard == "mifl_fas2_ak_hg_an94" then
+        -- AN-94
+        pre = "AN"
+        mid = "/"
+        post = "762"
+        for _, v in pairs(eles) do
+            if v == "9x39mm" then
+                post = "939"
+            elseif v == "5.45x39mm" then
+                mid = "-"
+                post = "94"
+            elseif v == "5.56x45mm" then
+                post = "556"
+            elseif v == "9x19mm" then
+                post = "9"
+            elseif v == "10_953" then
+                post = "953"
+            elseif v == "12_20g" then
+                post = "20"
+            end
+        end
     else
         -- Regular AK variants
         if handguard == "mifl_fas2_ak_hg_rpk" then
@@ -523,8 +544,8 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        MergeSlots = {12},		
-        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk", "mifl_fas2_ak_hg_an94"},	
+        MergeSlots = {12},
+        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk", "mifl_fas2_ak_hg_an94"},
     },
     {
         PrintName = "Underbarrel",
@@ -598,7 +619,7 @@ SWEP.Attachments = {
             vang = Angle(0, -90, 0)
         }
     },
-	-- Sputnik Bodge
+    -- Sputnik Bodge
     {
         Slot = "muzzle",
         Bone = "ak_bolt",
@@ -609,7 +630,7 @@ SWEP.Attachments = {
         Hidden = true,
         HideIfBlocked = true,
         RequireFlags = {"sputnik_br"},
-    },	
+    },
 }
 
 --- hierarchy ---
@@ -622,7 +643,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 
     if installed == "mifl_fas2_ak_mag_919_30" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_pp19" end
 
-    if installed == "mifl_fas2_ak_mag_762_Inf" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_infinite" end	
+    if installed == "mifl_fas2_ak_mag_762_Inf" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_infinite" end
 end
 
 SWEP.Animations = {
@@ -766,5 +787,5 @@ SWEP.Animations = {
         LHIKIn = 1.2,
         LHIKOut = 1,
         LHIKEaseOut = 0.4
-    }	
+    }
 }

@@ -1,7 +1,7 @@
 att.PrintName = "Sputnik Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_spuk.png", "mips smooth")
-att.Description = "hyperburst how."
-att.SortOrder = 4
+att.Description = "Floating barrel and handguard of the experimental hyper-burst AN-94, capable of dampening the first two shots fired. How it still functions without half its mechanisms is a mystery."
+att.SortOrder = 0.5
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -11,37 +11,38 @@ att.Slot = "mifl_fas2_ak_hg"
 
 att.ActivateElements = {"sputnik_br"}
 
-att.Mult_Range = 1.4
-att.Mult_SightTime = 1.1
-att.Mult_HipDispersion = 1.25
-att.Mult_MoveDispersion = 1.5
+att.Mult_Range = 1.3
+att.Mult_SightTime = 1.15
+att.Mult_HipDispersion = 1.15
+att.Mult_AccuracyMOA = 0.75
+att.Mult_Recoil = 0.95
 
-att.Mult_MoveSpeed = 0.95
-att.Mult_Recoil = 0.7
-att.Mult_AccuracyMOA = 0.7
-
-att.Add_BarrelLength = 6
+att.Add_BarrelLength = 4
 att.Mult_ShootPitch = 1
+att.Mult_RPM = 1 / 1.1
 
-att.Firemodes = {
+att.Override_Firemodes = {
+    {
+        Mode = -2,
+        RunawayBurst = true,
+        PostBurstDelay = 0.12,
+        Mult_RPM = 3,
+        Override_ShotRecoilTable = {
+            [0] = 0.1,
+            [1] = 1.5
+        }
+    },
     {
         Mode = 2,
         Override_ShotRecoilTable = {
-            [1] = 0.5
-        }		
+            [0] = 0.7,
+            [1] = 0.9
+        }
     },
     {
-        Mode = -2,
-        Override_ShotRecoilTable = {
-            [1] = 0.5
-        }		
+        Mode = 1,
     },
+    {
+        Mode = 0,
+    }
 }
-
-att.Hook_ModifyRPM = function(wep, delay)
-    if wep.BurstCount == 0 then
-        return 60 / 1800
-    else
-        return
-    end
-end
