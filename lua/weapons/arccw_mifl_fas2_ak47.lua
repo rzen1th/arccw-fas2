@@ -178,6 +178,14 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }	}
     },
+    ["mifl_fas2_ak_hg_ansd"] = {
+        VMBodygroups = {	{ind = 2, bg = 13}, {ind = 3, bg = 2}, {ind = 4, bg = 1}	},
+        Override_IronSightStruct = {
+            Pos = Vector(-4.38, -10, 0.775),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1
+        },
+    },	
     ["mifl_fas2_ak_hg_12"] = {
         VMBodygroups = {
             {ind = 2, bg = 10},
@@ -545,7 +553,7 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         MergeSlots = {12},
-        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk", "mifl_fas2_ak_hg_an94"},
+        ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk", "mifl_fas2_ak_hg_an94", "mifl_fas2_ak_hg_ansd"},
     },
     {
         PrintName = "Underbarrel",
@@ -670,10 +678,10 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKIn = 0.3,
-        LHIKOut = 1.2,
+        LHIKIn = 0.7,
+        LHIKOut = 0.7,
         LHIKEaseIn = 0.5,
-        LHIKEaseOut = 0.9
+        LHIKEaseOut = 0.5
     },
     ["reload_empty"] = {
         Source = "reload_empty",
