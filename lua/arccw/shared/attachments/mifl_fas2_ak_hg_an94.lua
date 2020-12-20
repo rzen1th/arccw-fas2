@@ -36,7 +36,7 @@ att.Override_Firemodes = {
 
 ---- first shot hyperburst ----
 att.Hook_ModifyRPM = function(wep, delay)
-    if wep.BurstCount == 0 then
+    if wep:GetBurstCount() == 0 then
         return 60 / 1800
     else
         return
