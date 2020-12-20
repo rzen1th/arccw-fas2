@@ -141,7 +141,7 @@ SWEP.AttachmentElements = {
         TrueNameChange = "M82-L",
         NameChange = "AM-R500-SA",
         VMBodygroups = {
-        {ind = 2, bg = 3},
+        {ind = 2, bg = 2},
         },
     },	
 }

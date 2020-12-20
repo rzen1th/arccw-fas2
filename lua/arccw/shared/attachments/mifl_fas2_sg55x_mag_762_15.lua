@@ -1,5 +1,5 @@
 att.PrintName = "15-Round 7.62mm"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "Reduced 7.62x39mm round magazine. It's hard to imagine what the geniuses in Switzerland were thinking when they made this possible, but it does make for a more potent cartridge."
 att.Desc_Pros = {
 }
