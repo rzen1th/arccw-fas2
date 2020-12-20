@@ -94,8 +94,8 @@ SWEP.ActivePos = Vector(0, 1, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-2, 0, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
-SWEP.HolsterPos = Vector(1, 3, 2)
-SWEP.HolsterAng = Angle(-5, 5, 0)
+SWEP.HolsterPos = Vector(1, -2, 1)
+SWEP.HolsterAng = Angle(-15, 25, -10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.CustomizePos = Vector(3, 3, -1)
@@ -344,7 +344,8 @@ end
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle"
+        Source = "idle",
+		Time = 0
     },
     ["draw"] = {
         Source = "draw",

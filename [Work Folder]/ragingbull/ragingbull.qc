@@ -26,6 +26,11 @@ $bodygroup "Barrel"
 	blank
 }
 
+$bodygroup "Ammo"
+{
+	studio "Ammo_454.smd"
+	blank
+}
 
 $surfaceprop "default"
 
