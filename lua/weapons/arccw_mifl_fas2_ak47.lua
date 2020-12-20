@@ -723,10 +723,10 @@ SWEP.Animations = {
         Source = "reload_pp19",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 0.7,
-        LHIKEaseOut = 0.4
+        LHIKEaseIn = 0.3,
+        LHIKIn = 0.6,
+        LHIKOut = 0.9,
+        LHIKEaseOut = 0.7
     },
     ["reload_empty_pp19"] = {
         Source = "reload_empty_pp19",
@@ -741,21 +741,21 @@ SWEP.Animations = {
         Source = "reload_pp19",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        Mult = 0.8,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 0.7,
-        LHIKEaseOut = 0.4
+        Time = (112/30)*0.8,
+        LHIKEaseIn = 0.6,
+        LHIKIn = 0.7,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.6
     },
     ["reload_nomen_empty_pp19"] = {
         Source = "reload_empty_pp19",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Mult = 0.8,
+        Time = (130/30)*0.8,
         LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 1.4,
-        LHIKEaseOut = 0.4
+        LHIKEaseIn = 0.6,
+        LHIKIn = 0.7,
+        LHIKOut = 1.5,
+        LHIKEaseOut = 0.5
     },
 ----------------------------------------------
     ["reload_infinite"] = {
