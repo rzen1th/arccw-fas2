@@ -17,7 +17,8 @@ $bodygroup "Magazine"
 	studio "Mag_762.smd"
 	studio "Mag_45.smd"	
 	blank
-	studio "Mag_45_50.smd"		
+	studio "Mag_45_50.smd"	
+	studio "Mag_762_15.smd"		
 }
 
 $bodygroup "Guard"

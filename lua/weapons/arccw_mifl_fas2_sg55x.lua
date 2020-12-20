@@ -223,6 +223,9 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 1}
         }
     },
+    ["mifl_fas2_sg55x_mag_762_15"] = {
+        VMBodygroups = {{ind = 1, bg = 6}}
+    },	
     ["20"] = {
         VMBodygroups = {{ind = 1, bg = 1}}
     },
@@ -405,7 +408,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 
     if installed == "mifl_fas2_sg55x_mag_45" or installed == "mifl_fas2_sg55x_mag_45_64" then
         return anim .. "_45"
-    elseif installed == "mifl_fas2_sg55x_mag_762" then
+    elseif installed == "mifl_fas2_sg55x_mag_762" or installed == "mifl_fas2_sg55x_mag_762_15" then
         return anim .. "_762"
     end
 end

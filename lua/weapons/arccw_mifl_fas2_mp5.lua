@@ -308,6 +308,16 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 7},
         },
     },
+    ["mifl_fas2_mp5_mag_45_30"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 9},
+        },
+    },	
+    ["mifl_fas2_mp5_mag_10_20"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 8},
+        },
+    },		
     ["mifl_fas2_mp5_mag_15"] = {
         VMBodygroups = {
             {ind = 4, bg = 1},

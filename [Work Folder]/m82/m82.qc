@@ -21,6 +21,7 @@ $bodygroup "Handguard"
 {
 	studio "Frame_HG.smd"
 	studio "HG_SD.smd"	
+	studio "Frame_Long.smd"		
 	blank
 }
 
@@ -385,7 +386,7 @@ $sequence "bipod_up" {
 	fps 33
 }
 
-$collisionmodel "Frame.smd"
+$collisionmodel "Phys.smd"
 {
 	$mass 10
 	$inertia 1

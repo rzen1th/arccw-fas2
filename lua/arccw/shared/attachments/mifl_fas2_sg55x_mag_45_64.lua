@@ -21,7 +21,7 @@ att.Mult_Penetration = 0.7
 
 att.Override_ClipSize = 58
 att.Mult_SightTime = 1.25
-att.Mult_ReloadTime = 1.25
+att.Mult_ReloadTime = 1.15
 att.Mult_SpeedMult = 0.95
 
 att.Override_Ammo = "pistol"

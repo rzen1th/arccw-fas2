@@ -133,10 +133,17 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
         {ind = 0, bg = 1},
         {ind = 1, bg = 1},
-        {ind = 2, bg = 2},
+        {ind = 2, bg = 3},
         },
         Bipod_Integral = false,
     },
+    ["long"] = {
+        TrueNameChange = "M82-L",
+        NameChange = "AM-R500-SA",
+        VMBodygroups = {
+        {ind = 2, bg = 3},
+        },
+    },	
 }
 
 SWEP.Attachments = {
