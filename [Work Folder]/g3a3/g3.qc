@@ -16,6 +16,7 @@ $bodygroup "Frame"
 	studio "Frame_MP5.smd"
 	studio "Frame_K.smd"	
 	blank	
+	studio "HG_PSG1.smd"
 }
 $bodygroup "HG"
 {
@@ -45,6 +46,7 @@ $bodygroup "Stock"
 	studio "Stock_Non.smd"		
 	studio "Stock_Adaptor.smd"			
 	blank	
+	studio "Stock_PSG1.smd"		
 }
 $bodygroup "Rail"
 {

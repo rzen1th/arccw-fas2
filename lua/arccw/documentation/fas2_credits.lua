@@ -100,7 +100,7 @@ Infinity Ward / Beenox / Treyarch
 -Single Drum Mag (MW19)
 -Suppressed sound and firing sound for calibre conversion (Mostly MW19)
 
-Saber Interactive (World War Z) -- quite ebin assets ngl
+Saber Interactive (AVA) -- quite ebin assets ngl
 -Felin (+big ass scope)
 
 Crytek (Warface)
@@ -125,7 +125,7 @@ Google Images
 -Stefano (mw2cr rip)
 -Dr Gordon Freeman (MW19 rip)
 -Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
--HK G41/empty (wwz,warface rip, pretty fucking sure these two are the same)
+-HK G41/empty (ava, warface rip, pretty fucking sure these two are the same)
 -ClearSkyC (warface rip)
 */
 
