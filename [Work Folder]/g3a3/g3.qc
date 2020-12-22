@@ -17,6 +17,7 @@ $bodygroup "Frame"
 	studio "Frame_K.smd"	
 	blank	
 	studio "HG_PSG1.smd"
+	studio "Frame_Port.smd"	
 }
 $bodygroup "HG"
 {

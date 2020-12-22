@@ -1,5 +1,5 @@
 att.PrintName = "Heavy Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_stock_folding.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g3_stock_heavy.png", "mips smooth")
 att.Description = "BIG."
 att.SortOrder = 11
 att.Desc_Pros = {
