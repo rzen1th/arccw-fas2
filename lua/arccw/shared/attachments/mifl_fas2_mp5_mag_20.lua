@@ -10,7 +10,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_mag"
 
-att.Override_ClipSize = 20
+att.Override_ClipSize = 20 + 170
 
 att.Mult_Damage = 1.35
 att.Mult_DamageMin = 1.15

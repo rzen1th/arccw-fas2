@@ -513,13 +513,13 @@ function SWEP:Hook_NameChange(name)
         end
     end
 
-    if mag == "mifl_fas2_mp5_mag_20" then
+    if mag == "mifl_fas2_mp5_mag_20" or mag == "mifl_fas2_mp5_mag_45_30" then
         if ump then
             mid = "45"
         else
             post = post .. "/45"
         end
-    elseif mag == "mifl_fas2_mp5_mag_30" then
+    elseif mag == "mifl_fas2_mp5_mag_30" or mag == "mifl_fas2_mp5_mag_10_20" then
         if ump then
             mid = "40"
         else
