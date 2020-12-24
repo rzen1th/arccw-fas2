@@ -32,6 +32,7 @@ $bodygroup "Optic"
 {
 	studio "Bolt.smd"
 	studio "Bolt_Mount.smd"
+	studio "Bolt_Grip.smd"	
 	blank
 }
 
@@ -579,4 +580,16 @@ $sequence "reload_empty_drum_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	fps 45
+}
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }
