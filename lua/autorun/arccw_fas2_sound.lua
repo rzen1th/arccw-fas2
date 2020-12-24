@@ -763,3 +763,36 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/g3/g3_boltforward.wav"}
 })
+
+
+//M11
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Mac11.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/mac11/mac11_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Mac11.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/mac11/mac11_magout_empty.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Mac11.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/mac11/mac11_magin.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Mac11.BoltBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/mac11/mac11_boltback.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_Mac11.BoltForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/mac11/mac11_boltforward.wav"}
+})

@@ -4,25 +4,58 @@ $modelname "weapons/arccw/mifl/fas2/c_mac11.mdl"
 $include fesiug.qci
 $scale 2
 
-$bodygroup "studio"
+$bodygroup "Frame"
 {
-	studio "mac11.smd"
+	studio "Main.smd"
+	blank
 }
-$bodygroup "Hands"
+$bodygroup "Mag"
 {
-	studio "ref_hand_red.smd"
-	studio "ref_hand_blue.smd"
+	studio "Mag_32.smd"
+	studio "Mag_16.smd"
+	studio "Mag_40.smd"
+	studio "Mag_56.smd"
+	blank
 }
-$bodygroup "Barrel"
+
+$bodygroup "Muzzle"
+{
+	studio "Muz.smd"
+	studio "Muz_Kurz.smd"
+	studio "Muz_Long.smd"
+	studio "Muz_SD.smd"	
+	studio "Muz_Thomp.smd"
+	blank	
+}
+
+$bodygroup "Optic"
+{
+	studio "Bolt.smd"
+	studio "Bolt_Mount.smd"
+	blank
+}
+
+$bodygroup "Bottom"
 {
 	blank
-	studio "ref_suppressor.smd"
+	studio "Rail_Bottom_Sight.smd"
+	studio "Rail_Bottom_Thomp.smd"
 }
 
+$bodygroup "Side"
+{
+	blank
+	studio "Mount_Side.smd"
+}
 
-$surfaceprop "default"
-
-$contents "solid"
+$bodygroup "Stock"
+{
+	studio "Stock.smd"
+	studio "Stock_Non.smd"
+	studio "Stock_Heavy.smd"	
+	studio "stock_adaptor.smd"		
+	blank	
+}
 
 $illumposition 0 0 0
 
@@ -34,6 +67,7 @@ $cdmaterials "models\weapons\arccw_fas2\m4a1_extra\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1\"
 $cdmaterials "models\weapons\arccw_fas2\m1911_extra\"
 $cdmaterials "models\weapons\arccw_fas2\kf2_g18\"
+$cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
 
 $attachment "muzzle" "muzzle_flash" 0 0 0 rotate 0 0 0
 $attachment "ejector" "shell_ejection" 0 0 0 rotate 0 0 0
@@ -426,8 +460,8 @@ $sequence "reload_empty_flush_optic_nomen" {
 }
 
 
-$sequence "reload_empty_nomen" {
-	"anims\reload_empty.smd"
+$sequence "reload_empty_flush_nomen" {
+	"anims\reload_empty_flush.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 25 "Arccw_FAS2_Weapon_Mac11.MagOutEmpty" }
@@ -442,6 +476,8 @@ $sequence "reload_empty_nomen" {
 	fadeout 0.2
 	fps 45
 }
+
+
 
 
 
@@ -528,8 +564,8 @@ $sequence "reload_empty_drum_optic_nomen" {
 }
 
 
-$sequence "reload_empty_nomen" {
-	"anims\reload_empty.smd"
+$sequence "reload_empty_drum_nomen" {
+	"anims\reload_empty_drum.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 25 "Arccw_FAS2_Weapon_Mac11.MagOutEmpty" }
