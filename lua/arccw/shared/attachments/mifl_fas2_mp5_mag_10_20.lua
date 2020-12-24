@@ -1,7 +1,7 @@
 att.PrintName = "20-Round 10mm Auto"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_mag_10mm.png", "mips smooth")
 att.Description = "Convert weapon to fire the more powerful 10mm Auto with increased damage. The straight magazine is ever so slightly heavier."
-att.SortOrder = 20
+att.SortOrder = 20 + 150
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -9,7 +9,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_mag"
 
-att.Override_ClipSize = 20 + 150
+att.Override_ClipSize = 20
 
 att.Mult_Damage = 1.15
 att.Mult_DamageMin = 1.15
