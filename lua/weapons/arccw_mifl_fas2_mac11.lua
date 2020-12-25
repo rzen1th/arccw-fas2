@@ -233,8 +233,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 90),
         },
         InstalledEles = {"rail_s"},			
-        ExtraSightDist = 25,
-        CorrectivePos = Vector(0.4, -2, -0.25),
+        ExtraSightDist = 12,
+        CorrectivePos = Vector(1, -2, -5),
     },
     {
         PrintName = "Magazine",
