@@ -152,11 +152,12 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local optic = wep.Attachments[1].Installed
-    local barrel = wep.Attachments[3].Installed	
+    local barrel = wep.Attachments[2].Installed	
     local fg = wep.Attachments[4].Installed	
 
-	if optic and barrel == "mifl_fas2_m11_muz_thomp" then vm:SetBodygroup(4, 1) end
+	if fg and barrel == "mifl_fas2_m11_muz_thomp" then vm:SetBodygroup(4, 1) end	
 	if optic and fg then vm:SetBodygroup(4, 1) end			
+	if optic and barrel == "mifl_fas2_m11_muz_thomp" then vm:SetBodygroup(4, 1) end
     if optic then vm:SetBodygroup(3, 1) end
 end
 
