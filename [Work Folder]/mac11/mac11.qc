@@ -60,6 +60,7 @@ $bodygroup "Stock"
 
 $illumposition 0 0 0
 
+$cdmaterials "models\weapons\arccw_fas2\sg55x\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\mac11\"

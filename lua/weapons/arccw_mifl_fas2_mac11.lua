@@ -123,6 +123,9 @@ SWEP.AttachmentElements = {
     ["rail"] = {
         VMBodygroups = {{ind = 3, bg = 1}}
     },	
+    ["bottom"] = {
+        VMBodygroups = {{ind = 3, bg = 2}}
+    },		
     ["mifl_fas2_m11_mag_16"] = {
         VMBodygroups = {{ind = 1, bg = 1}}
     },
@@ -145,6 +148,18 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 4}, {ind = 4, bg = 2}}
     },		
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    local optic = wep.Attachments[1].Installed
+    local barrel = wep.Attachments[3].Installed	
+    local fg = wep.Attachments[4].Installed	
+
+	if optic and barrel == "mifl_fas2_m11_muz_thomp" then vm:SetBodygroup(4, 1) end
+	if optic and fg then vm:SetBodygroup(4, 1) end			
+    if optic then vm:SetBodygroup(3, 1) end
+end
+
 
 SWEP.ExtraSightDist = 10
 
@@ -187,8 +202,6 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(17, -1, 0),
             vang = Angle(0, 0, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
         },
         ExcludeFlags = {"mifl_fas2_m11_muz_sd"}
     },
@@ -197,9 +210,10 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(11, 1, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(7, 0, -0.75),
+            vang = Angle(0, 0, 0),
         },
+        InstalledEles = {"bottom"},			
     },
     {
         PrintName = "Tactical",
@@ -352,8 +366,8 @@ SWEP.Animations = {
         LHIK = true,
 		LHIKEaseIn = 0.3,
         LHIKIn = 0.5,
-        LHIKOut = 0.4,
-        LHIKEaseOut = 0.2,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.3,
     },
     ["reload_empty_optic"] = {
         Source = "reload_empty_optic",
@@ -380,7 +394,7 @@ SWEP.Animations = {
 		LHIKEaseIn = 0.3,
         LHIKIn = 0.4,
         LHIKOut = 0.45,
-        LHIKEaseOut = 0.3,	
+        LHIKEaseOut = 0.3,
     },
     ["reload_empty_nomen_optic"] = {
         Source = "reload_empty_optic_nomen",
