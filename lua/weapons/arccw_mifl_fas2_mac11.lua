@@ -121,7 +121,11 @@ SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
     ["rail"] = {
-        VMBodygroups = {{ind = 3, bg = 1}}
+        VMBodygroups = {{ind = 3, bg = 1}},
+        AttPosMods = { [5] = { vpos = Vector(6, -1.8, 1.2) },		},
+	},
+    ["rail_s"] = {
+        VMBodygroups = {{ind = 5, bg = 1}}
     },	
     ["bottom"] = {
         VMBodygroups = {{ind = 3, bg = 2}}
@@ -136,16 +140,19 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 2}}
     },	
     ["mifl_fas2_m11_muz_k"] = {
-        VMBodygroups = {{ind = 2, bg = 1}}
+        VMBodygroups = {{ind = 2, bg = 1}},
+        AttPosMods = { [3] = { vpos = Vector(7.4, 0, 1.5) },		},		
     },	
     ["mifl_fas2_m11_muz_long"] = {
-        VMBodygroups = {{ind = 2, bg = 2}}
+        VMBodygroups = {{ind = 2, bg = 2}},
+        AttPosMods = { [3] = { vpos = Vector(17.2, 0, 1.5) },		},	
     },	
     ["mifl_fas2_m11_muz_sd"] = {
         VMBodygroups = {{ind = 2, bg = 3}}
     },		
     ["mifl_fas2_m11_muz_thomp"] = {
-        VMBodygroups = {{ind = 2, bg = 4}, {ind = 4, bg = 2}}
+        VMBodygroups = {{ind = 2, bg = 4}, {ind = 4, bg = 2}},
+        AttPosMods = { [3] = { vpos = Vector(22, 0, 1.5) },		},	
     },		
 }
 
@@ -154,10 +161,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local optic = wep.Attachments[1].Installed
     local barrel = wep.Attachments[2].Installed	
     local fg = wep.Attachments[4].Installed	
+    local ls = wep.Attachments[5].Installed		
 
+	if optic and ls then vm:SetBodygroup(5, 0) end
 	if fg and barrel == "mifl_fas2_m11_muz_thomp" then vm:SetBodygroup(4, 1) end	
 	if optic and fg then vm:SetBodygroup(4, 1) end			
-	if optic and barrel == "mifl_fas2_m11_muz_thomp" then vm:SetBodygroup(4, 1) end
     if optic then vm:SetBodygroup(3, 1) end
 end
 
@@ -201,7 +209,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(17, -1, 0),
+            vpos = Vector(8, 0, 1.5),
             vang = Angle(0, 0, -90),
         },
         ExcludeFlags = {"mifl_fas2_m11_muz_sd"}
@@ -221,9 +229,10 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(8, -1, 1),
-            vang = Angle(0, 0, 180),
+            vpos = Vector(0.8, -1.2, 0.9),
+            vang = Angle(0, 0, 90),
         },
+        InstalledEles = {"rail_s"},			
         ExtraSightDist = 25,
         CorrectivePos = Vector(0.4, -2, -0.25),
     },
