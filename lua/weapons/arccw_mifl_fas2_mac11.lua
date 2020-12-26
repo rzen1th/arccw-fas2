@@ -26,7 +26,7 @@ SWEP.ViewModelFOV = 54
 SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.Damage = 21
-SWEP.DamageMin = 12 -- damage done at maximum range
+SWEP.DamageMin = 14 -- damage done at maximum range
 SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 4
 SWEP.DamageType = DMG_BULLET
@@ -34,7 +34,7 @@ SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 32 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 1050
 
