@@ -1,5 +1,5 @@
 att.PrintName = "64-Round 9mm"
-att.Icon = Material("entities/acwatt_fas2_generic.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_50.png", "smooth")
 att.Description = ""
 att.Desc_Pros = {
 }

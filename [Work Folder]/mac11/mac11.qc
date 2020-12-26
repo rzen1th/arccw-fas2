@@ -25,6 +25,9 @@ $bodygroup "Muzzle"
 	studio "Muz_Long.smd"
 	studio "Muz_SD.smd"	
 	studio "Muz_Thomp.smd"
+	studio "Shroud_A1.smd"	
+	studio "Shroud_A2.smd"	
+	studio "Shroud_M4.smd"		
 	blank	
 }
 
@@ -55,7 +58,14 @@ $bodygroup "Stock"
 	studio "Stock_Non.smd"
 	studio "Stock_Heavy.smd"	
 	studio "stock_adaptor.smd"		
+	studio "stock_Ske.smd"			
 	blank	
+}
+
+$bodygroup "Iron"
+{
+	blank
+	studio "Iron_Rail.smd"
 }
 
 $illumposition 0 0 0
@@ -70,6 +80,9 @@ $cdmaterials "models\weapons\arccw_fas2\m4a1\"
 $cdmaterials "models\weapons\arccw_fas2\m1911_extra\"
 $cdmaterials "models\weapons\arccw_fas2\kf2_g18\"
 $cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
+$cdmaterials "models\weapons\arccw_fas2\akm\"
+$cdmaterials "models\weapons\arccw_fas2\ak_extra\"
+$cdmaterials "models\weapons\arccw_fas2\m16a2\"
 
 $attachment "muzzle" "muzzle_flash" 0 0 0 rotate 0 0 0
 $attachment "ejector" "shell_ejection" 0 0 0 rotate 0 0 0

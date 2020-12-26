@@ -120,12 +120,29 @@ SWEP.CustomizeAng = Angle(10, 15, 15)
 SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
+    ["mifl_fas2_ak_stock_rpk"] = {
+        VMBodygroups = {{ind = 6, bg = 2}}
+    },
+    ["mifl_fas2_ak_stock_ske"] = {
+        VMBodygroups = {{ind = 6, bg = 4}}
+    },	
+    ["mifl_fas2_uni_rif_nostock"] = {
+        VMBodygroups = {{ind = 6, bg = 1}}
+    },		
     ["rail"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
         AttPosMods = { [5] = { vpos = Vector(6, -1.8, 1.2) },		},
 	},
     ["rail_s"] = {
         VMBodygroups = {{ind = 5, bg = 1}}
+    },
+    ["mifl_fas2_m11_rail"] = {
+        VMBodygroups = {{ind = 7, bg = 1}},
+        Override_IronSightStruct = {
+            Pos = Vector(-4.054, -8, 0.2),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1
+        },		
     },	
     ["bottom"] = {
         VMBodygroups = {{ind = 3, bg = 2}}
@@ -146,6 +163,18 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m11_muz_long"] = {
         VMBodygroups = {{ind = 2, bg = 2}},
         AttPosMods = { [3] = { vpos = Vector(17.2, 0, 1.5) },		},	
+    },	
+    ["mifl_fas2_m11_muz_m4"] = {
+        VMBodygroups = {{ind = 2, bg = 7}},
+        AttPosMods = { [3] = { vpos = Vector(17, 0, 1.5) },		},	
+    },	
+    ["mifl_fas2_m11_muz_a1"] = {
+        VMBodygroups = {{ind = 2, bg = 5}},
+        AttPosMods = { [3] = { vpos = Vector(21, 0, 1.5) },		},	
+    },
+    ["mifl_fas2_m11_muz_a2"] = {
+        VMBodygroups = {{ind = 2, bg = 6}},
+        AttPosMods = { [3] = { vpos = Vector(21, 0, 1.5) },		},	
     },	
     ["mifl_fas2_m11_muz_sd"] = {
         VMBodygroups = {{ind = 2, bg = 3}}
@@ -182,7 +211,7 @@ SWEP.MirrorVMWM = true
 SWEP.Attachments = {
     {
         PrintName = "Optic",
-        Slot = {"optic", "optic_lp"},
+        Slot = {"optic", "optic_lp", "mifl_fas2_m11_optic"},
         Bone = "weapon_main",
         DefaultAttName = "Iron Sights",
         Offset = {
@@ -210,7 +239,7 @@ SWEP.Attachments = {
         Bone = "weapon_main",
         Offset = {
             vpos = Vector(8, 0, 1.5),
-            vang = Angle(0, 0, -90),
+            vang = Angle(0, 0, 0),
         },
         ExcludeFlags = {"mifl_fas2_m11_muz_sd"}
     },
