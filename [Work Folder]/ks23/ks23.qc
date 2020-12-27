@@ -117,6 +117,16 @@ $definebone "Right shoulder" "" -5.758168 7.237389 -3.577589 0.431323 -1.66851 1
 $definebone "Right Upper Arm" "Right shoulder" 0 0 0 -1.190663 -89.788103 0.003667 0 0 0 0 0 0
 $definebone "Right Lower Arm" "Right Upper Arm" -9.996876 0 0 -0.054718 -3.963264 -0.000172 0 0 0 0 0 0
 
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+	loop
+}
+
 $sequence "idle" {
 	"ks23_anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
@@ -127,6 +137,21 @@ $sequence "idle" {
 	fps 30
 	loop
 }
+
+$sequence "deploy_first" {
+	"anims\deploy_first.smd"
+	activity "ACT_SHOTGUN_RELOAD_FINISH" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_KS23.PumpBack" }
+	{ event 5004 17 "Arccw_FAS2_Weapon_KS23.PumpForward" }
+	{ event 5004 20 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	node "0"
+	snap
+	fps 30
+}
+
 
 $sequence "draw" {
 	"ks23_anims\draw.smd"
@@ -376,4 +401,16 @@ $sequence "end_nopump_nomen" {
 	node "0"
 	snap
 	fps 40
+}
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }
