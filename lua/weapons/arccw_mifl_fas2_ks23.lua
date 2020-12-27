@@ -151,9 +151,21 @@ SWEP.AttachmentElements = {
             [4] = {vpos = Vector(2, 0.5, 0)},
         }
     },
-    ["mifl_fas2_ks23_tube_50bmg"] = {
+    ["mifl_fas2_ks23_tube_xx"] = {
+        VMBodygroups = {	{ind = 6, bg = 2},	},
+    },
+    ["mifl_fas2_ks23_tube_x"] = {
+        VMBodygroups = {	{ind = 6, bg = 1},	},
+    },		
+    ["mifl_fas2_ks23_tube_xx_50"] = {
         VMBodygroups = {	{ind = 5, bg = 1}, {ind = 6, bg = 2},	},
     },
+    ["mifl_fas2_ks23_tube_x_50"] = {
+        VMBodygroups = {	{ind = 5, bg = 1}, {ind = 6, bg = 1},	},
+    },	
+    ["mifl_fas2_ks23_tube_50"] = {
+        VMBodygroups = {	{ind = 5, bg = 1},	},
+    },		
     ["mifl_fas2_ks23_tube_x"] = {
         VMBodygroups = {	{ind = 6, bg = 1},	},
     },	

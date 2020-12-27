@@ -1,6 +1,6 @@
 "Top text, bottom text"
 
-17 Weapons, 189 Attachments. It's a lot of stuff 
+18 Weapons, 194 Attachments. It's a lot of stuff 
 
 The most customisable weapon pack on the workshop with ludicrous amount of fictional customisations for your heart's content
 
@@ -10,6 +10,8 @@ If GSO is quantity. FS2R is quality
 Barrels, handguard, stocks, mag conversions, everything you expect, handcrafted for each and every firearms
 
 Unlike the stubborn cunt who made GSO. This features full on ~~slightly wonky~~ AKIMBO system for all pistols* and SMGs
+
+*The main focus of this mod is not realism so don't complain about that*
 
 -Credits-
 TheOnly8Z - Major helping, Coding, General things.
