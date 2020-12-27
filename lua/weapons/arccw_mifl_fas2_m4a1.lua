@@ -414,7 +414,7 @@ SWEP.Attachments = {
             vpos = Vector(10, -2, 0.5),
             vang = Angle(0, 0, 180)
         },
-        ExtraSightDist = 18,
+        ExtraSightDist = 12,
         CorrectivePos = Vector(0, -2, 1.5)
     },
     {
