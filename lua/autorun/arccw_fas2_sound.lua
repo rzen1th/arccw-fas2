@@ -796,3 +796,30 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/mac11/mac11_boltforward.wav"}
 })
+
+
+//KS23
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_KS23.PumpBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ks23/ks23_pump_back.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_KS23.PumpForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ks23/ks23_pump_forward.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_KS23.Insert",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ks23/ks23_insert1.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_KS23.InsertPort",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/ks23/ks23_insert_port.wav"}
+})
