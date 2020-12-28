@@ -120,6 +120,9 @@ SWEP.CustomizeAng = Angle(10, 15, 15)
 SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
+    ["akimbo"] = {
+        Override_ActivePos = Vector(4, 0, 0),
+    },
     ["mifl_fas2_mp5_stock_pdw"] = {
         VMBodygroups = {{ind = 6, bg = 5}}
     },
@@ -279,7 +282,7 @@ SWEP.Attachments = {
         Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(8, -3, -0.5),
+            vpos = Vector(8, -5.8, -0.5),
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"akimbo"},
@@ -375,7 +378,10 @@ SWEP.Animations = {
         Source = "holster_empty",
     },
     ["ready"] = {
-        Source = "draw",
+        Source = "draw_first",
+        LHIK = true,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,			
     },
     ["fire"] = {
         Source = {"fire"},
@@ -558,5 +564,23 @@ SWEP.Animations = {
         LHIKIn = 0.4,
         LHIKOut = 0.45,
         LHIKEaseOut = 0.3,	
+    },	
+
+
+    ["reload_akimbo"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+    },
+    ["reload_empty_akimbo"] = {
+        Source = "reload_empty_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+    },
+    ["reload_nomen_akimbo"] = {
+        Source = "reload_akimbo_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+    },
+    ["reload_nomen_empty_akimbo"] = {
+        Source = "reload_empty_akimbo_nomen",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
     },	
 }

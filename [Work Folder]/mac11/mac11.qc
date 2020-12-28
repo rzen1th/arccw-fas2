@@ -154,6 +154,19 @@ $sequence "idle_iron" {
 	loop
 }
 
+
+$sequence "draw_first" {
+	"anims\draw_first.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_Mac11.BoltBack" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+
 $sequence "draw" {
 	"mac11_anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
@@ -592,6 +605,74 @@ $sequence "reload_empty_drum_nomen" {
 	{ event 5004 94 "Arccw_FAS2_Weapon_Mac11.BoltBack" }
 	{ event 5004 97 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 110 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 45
+}
+
+
+
+
+
+
+
+
+
+$sequence "reload_akimbo" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 15 "Arccw_FAS2_Weapon_Mac11.MagOut" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Magpouch_SMG" }
+	{ event 5004 55 "Arccw_FAS2_Weapon_Mac11.MagIn" }
+	{ event 5004 60 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_akimbo_nomen" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 15 "Arccw_FAS2_Weapon_Mac11.MagOut" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Magpouch_SMG" }
+	{ event 5004 55 "Arccw_FAS2_Weapon_Mac11.MagIn" }
+	{ event 5004 60 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 80 "Arccw_FAS2_Weapon_Mac11.BoltBack" }
+	{ event 5004 90 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 45
+}
+
+$sequence "reload_empty_akimbo" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 15 "Arccw_FAS2_Weapon_Mac11.MagOut" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Magpouch_SMG" }
+	{ event 5004 55 "Arccw_FAS2_Weapon_Mac11.MagIn" }
+	{ event 5004 60 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 80 "Arccw_FAS2_Weapon_Mac11.BoltBack" }
+	{ event 5004 90 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_akimbo_nomen" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 15 "Arccw_FAS2_Weapon_Mac11.MagOut" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Magpouch_SMG" }
+	{ event 5004 55 "Arccw_FAS2_Weapon_Mac11.MagIn" }
+	{ event 5004 60 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	fps 45

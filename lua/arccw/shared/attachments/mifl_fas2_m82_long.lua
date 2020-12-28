@@ -1,5 +1,5 @@
-att.PrintName = "Extended Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_m82_obrez.png")
+att.PrintName = "Marksman Barrel"
+att.Icon = Material("entities/arccw_mifl_fas2_m82_long.png")
 att.Description = "Longer barrel with even bigger muzzle brake. Damped recoil by at lot at a cost of handling"
 att.Desc_Pros = {
 }
