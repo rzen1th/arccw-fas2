@@ -7,7 +7,9 @@ The most customisable weapon pack on the workshop with ludicrous amount of ficti
 -Overview-
 
 Featuring nearly every weapon from Firearms Source 2 (and some custom one) packed with kitbashed attachments
+
 If GSO is quantity. FS2R is quality
+
 Barrels, handguard, stocks, mag conversions, everything you expect, handcrafted for each and every firearms
 
 Unlike the stubborn cunt who made GSO. This features full on ~~slightly wonky~~ AKIMBO system for all pistols* and SMGs
@@ -16,9 +18,9 @@ Unlike the stubborn cunt who made GSO. This features full on ~~slightly wonky~~ 
 
 -Credits-
 
-TheOnly8Z - Major helping, Coding, General things.
+TheOnly8Z - Major helping, Coding, General Things.
 
-Fesiug - QCI, Akimbo System, Spawnicons.
+Fesiug - QCI, Akimbo System, Coding, Spawnicons.
 
 FAS2 Team - Assets
 
@@ -34,5 +36,7 @@ DICE - Assets
 more on them in the credits file of the mod
 
 -Extra-
+
+
 
 feedbacks and bugs report are appreciated, request and suggestions are not
