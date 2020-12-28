@@ -120,6 +120,9 @@ SWEP.CustomizeAng = Angle(10, 15, 15)
 SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
+    ["mifl_fas2_mp5_stock_pdw"] = {
+        VMBodygroups = {{ind = 6, bg = 5}}
+    },
     ["mifl_fas2_ak_stock_rpk"] = {
         VMBodygroups = {{ind = 6, bg = 2}}
     },

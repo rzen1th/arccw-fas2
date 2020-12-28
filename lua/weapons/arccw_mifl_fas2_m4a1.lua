@@ -101,6 +101,8 @@ SWEP.CustomizeAng = Angle(10, 15, 15)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["mifl_fas2_g36_stock_mp5"] = {
+        VMBodygroups = { {ind = 5, bg = 6}, }, },
     ["buftube"] = {
         VMBodygroups = {
             {ind = 5, bg = 4},

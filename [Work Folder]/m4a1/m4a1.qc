@@ -66,7 +66,8 @@ $bodygroup "Stock"
 	studio "Stock_Kurz.smd"	
 	studio "Stock_SD.smd"		
 	blank	
-	studio "Stock_Glock.smd"		
+	studio "Stock_Glock.smd"	
+	studio "Stock_Slide.smd"		
 }
 
 $illumposition 0 0 0

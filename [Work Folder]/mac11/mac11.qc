@@ -58,7 +58,8 @@ $bodygroup "Stock"
 	studio "Stock_Non.smd"
 	studio "Stock_Heavy.smd"	
 	studio "stock_adaptor.smd"		
-	studio "stock_Ske.smd"			
+	studio "stock_Ske.smd"	
+	studio "stock_PDW.smd"		
 	blank	
 }
 
