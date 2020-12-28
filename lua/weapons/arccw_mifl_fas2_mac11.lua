@@ -33,7 +33,7 @@ SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
 -- IN M/S
-SWEP.ChamberSize = 1 -- how many rounds can be chambered.
+SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 32 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 1050
@@ -134,6 +134,9 @@ SWEP.AttachmentElements = {
     },	
     ["mifl_fas2_uni_rif_nostock"] = {
         VMBodygroups = {{ind = 6, bg = 1}}
+    },	
+    ["buftube"] = {
+        VMBodygroups = {{ind = 6, bg = 3}}
     },		
     ["rail"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
@@ -293,10 +296,10 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "weapon_main",
         Offset = {
-            vpos = Vector(-7, -1.3, 0),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(-5, 0, 1.7),
+            vang = Angle(0, 0, 0),
         },
-        VMScale = Vector(1, 1, 1)
+        VMScale = Vector(1.2, 1.2, 1.2)
     },
     {
         PrintName = "Ammo Type",
