@@ -218,7 +218,7 @@ SWEP.Attachments = {
     {
         PrintName = "Barrel",
         Slot = "mifl_fas2_ks23_barrel",
-        DefaultAttName = "450mm Standard Barrel"
+        DefaultAttName = "Standard Barrel"
     },
     {
         PrintName = "Muzzle",
@@ -238,7 +238,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"mifl_fas2_ks23_stock", "go_stock"},
+        Slot = {"mifl_fas2_ks23_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "ks23",
         Offset = {
@@ -273,21 +273,12 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["holster"] = {
         Source = "holster",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["ready"] = {
         Source = "deploy_first",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
     },
     ["fire"] = {
         Source = "fire01",
@@ -305,7 +296,7 @@ SWEP.Animations = {
     ["cycle_iron"] = {
         Source = "pump_iron",
         ShellEjectAt = 0.08,
-        MinProgress = 0.3,	
+        MinProgress = 0.55,	
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_nomen"] = {
