@@ -30,12 +30,12 @@ att.AdditionalSights = {
         ZoomLevels = 2,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",		
         IgnoreExtra = true,
-		HolosightModelOffset = Vector(0, 0, 0)		
+		HolosightModelOffset = Vector(0, 0, 8)		
     }
 }
 
 att.KeepBaseIrons = true
-att.Holosight = false
+att.Holosight = true
 att.HolosightReticle = Material("mifl_tarkov_reticle/tac30.png")
 att.HolosightNoFlare = true
 att.HolosightSize = 7.2

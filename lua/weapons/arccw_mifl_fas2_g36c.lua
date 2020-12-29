@@ -145,7 +145,7 @@ SWEP.AttachmentElements = {
             {ind = 3, bg = 4}, {ind = 2, bg = 3}, {ind = 7, bg = 2},
         },
         Override_IronSightStruct = {
-            Pos = Vector(-4.95, -8, 3.1),
+            Pos = Vector(-4.95, -8, 1),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1,
         },
