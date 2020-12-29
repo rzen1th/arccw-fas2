@@ -5,7 +5,7 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.SortOrder = 30
+att.SortOrder = 30 - 100
 att.AutoStats = true
 att.Slot = {"mifl_fas2_g36_mag"}
 
