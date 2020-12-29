@@ -22,6 +22,8 @@ $bodygroup "Iron"
 	studio "Iron_Long.smd"	
 	studio "Iron_No.smd"		
 	blank	
+	studio "Iron_Compact1.smd"
+	studio "Iron_Compact2.smd"	
 }
 
 $bodygroup "HG"
@@ -29,7 +31,9 @@ $bodygroup "HG"
 	studio "HG_Frame.smd"
 	studio "HG_SD.smd"
 	studio "HG_Long.smd"	
-	studio "HG_No.smd"		
+	studio "HG_No.smd"	
+	studio "HG_Scoped.smd"	
+	studio "HG_Compact.smd"		
 	blank	
 }
 
@@ -56,6 +60,13 @@ $bodygroup "Ammo"
 	studio "Ammo_556.smd"		
 	studio "Ammo_9.smd"		
 	blank	
+}
+
+$bodygroup "Top"
+{
+	blank
+	studio "HG_Scoped_Rail.smd"		
+	studio "HG_Scoped_Top.smd"			
 }
 
 $illumposition 0 0 0

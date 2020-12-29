@@ -126,11 +126,6 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 2},
         },
     },
-    ["buftube"] = {
-        VMBodygroups = {
-            {ind = 1, bg = 2},
-        },
-    },
     ["mifl_fas2_g36_stock_mp5"] = {
         VMBodygroups = {
             {ind = 1, bg = 1},
@@ -143,11 +138,51 @@ SWEP.AttachmentElements = {
             {ind = 3, bg = 1},
         },
     },
+    ["mifl_fas2_g36_barrel_scope"] = {
+        NameChange = "Gewehr-Kurz",
+        TrueNameChange = "G-Kurz",
+        VMBodygroups = {
+            {ind = 3, bg = 4}, {ind = 2, bg = 3}, {ind = 7, bg = 2},
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.95, -8, 3.1),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(0, -2.7, 0),
+            },
+            [3] = {
+                vpos = Vector(26, -0.15, 0),
+            },
+        },
+    },		
+    ["mifl_fas2_g36_barrel_kurz"] = {
+        NameChange = "Gewehr-Kurz",
+        TrueNameChange = "G-Kurz",
+        VMBodygroups = {
+            {ind = 3, bg = 5}, {ind = 2, bg = 5},
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.95, -8, 3.1),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(0, -2.7, 0),
+            },
+            [3] = {
+                vpos = Vector(19, -0.15, 0),
+            },
+        },
+    },	
     ["mifl_fas2_g36_barrel_no"] = {
         NameChange = "Gewehr-Kurz",
         TrueNameChange = "G-Kurz",
         VMBodygroups = {
-            {ind = 3, bg = 3},
+            {ind = 3, bg = 3}, {ind = 2, bg = 2}
         },
         Override_IronSightStruct = {
             Pos = Vector(-4.95, -8, 3.099),
@@ -167,7 +202,7 @@ SWEP.AttachmentElements = {
         NameChange = "Gewehr-36",
         TrueNameChange = "G36",
         VMBodygroups = {
-            {ind = 3, bg = 2},
+            {ind = 3, bg = 2}, {ind = 2, bg = 1}
         },
         AttPosMods = {
             [3] = {
@@ -222,30 +257,9 @@ SWEP.MirrorVMWM = true
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    local eles = data.eles
-
-    local barrel = 0
-    local lp = false
-
-    for i, k in pairs(eles or {}) do
-        if k == "mifl_fas2_g36_barrel_long" then
-            barrel = 1
-        elseif k == "mifl_fas2_g36_barrel_no" then
-            barrel = 2
-        elseif k == "mifl_fas2_m4a1_barrel_no" then
-            barrel = 6
-        elseif k == "iron_none" then
-            lp = true
-        end
-    end
-
-    local fs = barrel
-    if lp then
-        fs = 3
-    end
-
-    vm:SetBodygroup(2, fs)
+    if wep.Attachments[1].Installed then vm:SetBodygroup(2, 3) end
 end
+
 
 SWEP.Attachments = {
     {

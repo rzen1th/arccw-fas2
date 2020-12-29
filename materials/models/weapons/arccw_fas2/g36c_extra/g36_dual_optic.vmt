@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models\weapons\arccw_fas2\g36c_extra\G36_Dual_Optic_d"
+	"$bumpmap"					"models\weapons\arccw_fas2\g36c_extra\G36_Dual_Optic_n"
+	"$model"						"1"
+	$halflambert					1
+   	// "$color"						"[1 1 1]"
+
+//SELFILLUM (subtle to avoid complete occlusion)
+	//"$selfillum"					"1"
+	//"$selfillumtint"				"[.5 .5 .5]"
+	//"$selfillummask"				"models\weapons\arccw_fas2\g36c_extra\G36_body_e"
+
+//PHONG
+	"$phong"                        "1"
+	//"$phongtint"                    "[1 .9 .9 ]"
+	"$phongboost"                   "2"
+	//"$phongexponent"				"50"
+	"$phongexponenttexture"			"models\weapons\arccw_fas2\g36c_extra\G36_Dual_Optic_G"
+	"$phongfresnelranges"          "[1 2 3]"
+	$phongalbedotint		1
+
+//ENVMAP
+	"$envmap"						"env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"
+	"$envmaptint" "[ 0.04 0.04 0.04 ]"
+	//$envmapfresnel 1
+
+	$lightwarptexture					"models\weapons\arccw_fas2\g36c_extra\G36_LW"
+}
