@@ -1,7 +1,7 @@
 att.PrintName = "Kurz Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_mgsl8.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_k.png", "mips smooth")
 att.Description = "Shorter handguard with no rails offer great handling."
-att.SortOrder = 10
+att.SortOrder = 1.5
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

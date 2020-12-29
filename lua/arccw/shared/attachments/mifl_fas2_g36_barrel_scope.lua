@@ -1,7 +1,7 @@
 att.PrintName = "Combat Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_mgsl8.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_scoped.png", "mips smooth")
 att.Description = "Medium barrel fitted with an optic."
-att.SortOrder = 10
+att.SortOrder = 9.5
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
