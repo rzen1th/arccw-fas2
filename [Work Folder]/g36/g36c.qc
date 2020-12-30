@@ -34,6 +34,7 @@ $bodygroup "HG"
 	studio "HG_No.smd"	
 	studio "HG_Scoped.smd"	
 	studio "HG_Compact.smd"		
+	studio "XM_Frame.smd"			
 	blank	
 }
 
@@ -66,7 +67,9 @@ $bodygroup "Top"
 {
 	blank
 	studio "HG_Scoped_Rail.smd"		
-	studio "HG_Scoped_Top.smd"			
+	studio "HG_Scoped_Top.smd"		
+	studio "XM_Rail.smd"		
+	studio "XM_Scope.smd"			
 }
 
 $illumposition 0 0 0
