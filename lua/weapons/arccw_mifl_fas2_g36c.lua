@@ -151,7 +151,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [1] = {
-                vpos = Vector(0, -2.7, 0),
+                vpos = Vector(6, -5, 0),
             },
             [3] = {
                 vpos = Vector(26, -0.15, 0),
@@ -258,6 +258,7 @@ SWEP.MirrorVMWM = true
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if wep.Attachments[1].Installed then vm:SetBodygroup(2, 3) end
+    if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_g36_barrel_scope" then vm:SetBodygroup(7, 1) end	
 end
 
 

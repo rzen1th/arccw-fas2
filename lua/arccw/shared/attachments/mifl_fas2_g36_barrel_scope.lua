@@ -23,22 +23,24 @@ att.Add_BarrelLength = 15
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 14, -1.78),
+        Pos = Vector(-0.25, 20, -6.05),
         Ang = Angle(0, 0, 0),
         Magnification = 2,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 2,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",		
-        IgnoreExtra = true,
-		HolosightModelOffset = Vector(0, 0, 8)		
+        IgnoreExtra = true,	
     }
 }
+
+att.Model = "models/weapons/arccw/mifl_atts/tarkov/tac30.mdl"
 
 att.KeepBaseIrons = true
 att.Holosight = true
 att.HolosightReticle = Material("mifl_tarkov_reticle/tac30.png")
 att.HolosightNoFlare = true
 att.HolosightSize = 7.2
-att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/mifl_atts/tarkov/tac30_hsp.mdl"
 att.Colorable = true
+
+att.ModelOffset = Vector(-8, 0.2, 4.5)
