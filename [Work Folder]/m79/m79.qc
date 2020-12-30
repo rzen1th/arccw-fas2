@@ -7,6 +7,7 @@ $scale 2
 $bodygroup "Main"
 {
 	studio "Main.smd"
+	studio "Main_2.smd"	
 	blank
 }
 $bodygroup "Stock"
@@ -15,12 +16,14 @@ $bodygroup "Stock"
 	studio "Stock_K.smd"	
 	blank
 }
+
 $bodygroup "Barrel"
 {
 	studio "Barrel.smd"
 	studio "Barrel_Long.smd"
 	studio "Barrel_Short.smd"	
-	studio "Barrel_Quad.smd"	
+	studio "Barrel_Quad.smd"
+	studio "Barrel_K.smd"	
 	blank
 }
 $bodygroup "Sight"

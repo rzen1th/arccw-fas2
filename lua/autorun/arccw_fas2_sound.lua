@@ -823,3 +823,37 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/ks23/ks23_insert_port.wav"}
 })
+
+
+
+//M79
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M79.Open",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/explosive_m79/m79_open.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M79.Close",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/explosive_m79/m79_close.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M79.ShellIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/explosive_m79/m79_insert.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M79.Projectile",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/explosive_m79/m79_projectile.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M79.ShellOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/explosive_m79/m79_remove.wav"}
+})

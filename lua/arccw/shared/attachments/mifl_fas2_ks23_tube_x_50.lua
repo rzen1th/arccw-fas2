@@ -11,7 +11,7 @@ att.Slot = "mifl_fas2_ks23_mag"
 att.AutoStats = true
 
 att.Override_ClipSize = 4
-att.Mult_ReloadTime = 1.1
+att.Mult_ReloadTime = 1.05
 att.Mult_SightTime = 1.05
 
 -- 23mm -> .50 BMG
