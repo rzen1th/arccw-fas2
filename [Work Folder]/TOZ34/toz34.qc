@@ -36,10 +36,9 @@ $bodygroup "Stock"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\view\shotguns\toz34\"
-$cdmaterials "models\weapons\view\accessories\"
-$cdmaterials "models\weapons\view\hands\"
-$cdmaterials "models\weapons\shells\"
+$cdmaterials "models\weapons\arccw_fas2\toz34\"
+$cdmaterials "models\weapons\arccw_fas2\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "muzzle" "Box03" 12.67 0.34 1.09 rotate 0 0 0
 
@@ -94,11 +93,22 @@ $definebone "Right Lower Arm" "Right Upper Arm" -9.996876 0.000001 0 -0.054717 -
 
 $sectionframes 30 150
 
+$sequence "idle" {
+	"toz34_anims\idle.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	node "0"
+	snap
+	fps 30
+	loop
+}
+
 $sequence "draw" {
 	"toz34_anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
-	{ event 5004 0 "Weapon.Deploy" }
-	{ event 5004 13 "Weapon_M79.Close" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_M79.Close" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"
@@ -109,23 +119,12 @@ $sequence "draw" {
 $sequence "holster" {
 	"toz34_anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
-	{ event 5004 0 "Weapon.Holster" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	node "0"
 	snap
 	fps 30
-}
-
-$sequence "idle" {
-	"toz34_anims\idle.smd"
-	activity "ACT_VM_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	node "0"
-	snap
-	fps 30
-	loop
 }
 
 $sequence "idle_iron" {
@@ -142,7 +141,6 @@ $sequence "idle_iron" {
 $sequence "fire01" {
 	"toz34_anims\fire01.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_KS23_View" }
 	fadein 0.2
 	fadeout 0.2
 	node "2"
@@ -153,7 +151,6 @@ $sequence "fire01" {
 $sequence "fire_iron" {
 	"toz34_anims\fire_iron.smd"
 	activity "ACT_VM_PRIMARYATTACK_SCOPED" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_KS23_View" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -163,15 +160,15 @@ $sequence "fire_iron" {
 $sequence "reload" {
 	"toz34_anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 19 "Weapon_M79.Open" }
-	{ event 5004 47 "Weapon_REM870.Insert" }
-	{ event 5004 50 "Weapon_Misc.Switch" }
-	{ event 5004 72 "Generic.Magpouch" }
-	{ event 5004 105 "Weapon_REM870.Insert" }
-	{ event 5004 121 "Generic.Cloth_Movement" }
-	{ event 5004 143 "Weapon_M79.Close" }
-	{ event 5004 157 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_M79.Open" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 50 "Arccw_FAS2_Weapon_Misc.Switch" }
+	{ event 5004 72 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 105 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 121 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 143 "Arccw_FAS2_Weapon_M79.Close" }
+	{ event 5004 157 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -181,17 +178,30 @@ $sequence "reload" {
 $sequence "reload_empty" {
 	"toz34_anims\reload_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 19 "Weapon_M79.Open" }
-	{ event 5004 23 "Weapon_REM870.Insert" }
-	{ event 5004 37 "Generic.Magpouch" }
-	{ event 5004 71 "Weapon_REM870.Insert" }
-	{ event 5004 85 "Weapon_REM870.Insert" }
-	{ event 5004 88 "Generic.Cloth_Movement" }
-	{ event 5004 112 "Weapon_M79.Close" }
-	{ event 5004 127 "Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_M79.Open" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 37 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 71 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 85 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 88 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 112 "Arccw_FAS2_Weapon_M79.Close" }
+	{ event 5004 127 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	snap
 	fps 30
+}
+
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }

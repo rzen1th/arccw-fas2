@@ -31,10 +31,11 @@ $bodygroup "Bottom"
 	blank
 	studio "Rail_Bottom.smd"
 }
-$bodygroup "Bottom"
+$bodygroup "Shell"
 {
 	studio "Ammo_23mm.smd"
 	studio "Ammo_50BMG.smd"	
+	studio "Ammo_12G.smd"		
 	blank	
 }
 $bodygroup "Tube"
@@ -58,6 +59,7 @@ $cdmaterials "models\weapons\arccw_fas2\sg55x\"
 $cdmaterials "models\weapons\arccw_fas2\ks23\"
 $cdmaterials "models\weapons\arccw_fas2\m3s90\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\870\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\kf2_m3\"
 
