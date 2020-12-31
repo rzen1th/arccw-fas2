@@ -1,0 +1,115 @@
+AddCSLuaFile()
+
+ENT.Type 				= "anim"
+ENT.Base 				= "base_entity"
+ENT.PrintName 			= "M79 Grenade"
+ENT.Author 				= ""
+ENT.Information 		= ""
+
+ENT.Spawnable 			= false
+
+
+AddCSLuaFile()
+
+ENT.Model = "models/Items/AR2_Grenade.mdl"
+ENT.Ticks = 0
+ENT.FuseTime = 10
+
+if SERVER then
+
+function ENT:Initialize()
+    local pb_vert = 1
+    local pb_hor = 1
+    self:SetModel(self.Model)
+    self:PhysicsInitBox( Vector(-pb_vert,-pb_hor,-pb_hor), Vector(pb_vert,pb_hor,pb_hor) )
+
+    local phys = self:GetPhysicsObject()
+    if phys:IsValid() then
+        phys:Wake()
+        phys:SetDamping(0, 0)
+        phys:SetBuoyancyRatio(0.25)
+        phys:SetMass(5)
+    end
+
+    self.SpawnTime = CurTime()
+
+    timer.Simple(0.1, function()
+        if !IsValid(self) then return end
+        self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
+    end)
+end
+
+function ENT:Think()
+    if SERVER and CurTime() - self.SpawnTime >= self.FuseTime then
+        self:Detonate()
+    end
+end
+
+else
+
+function ENT:Think()
+    if SERVER then
+        local phys = self:GetPhysicsObject()
+        phys:ApplyForceCenter( self:GetAngles():Forward() * 500 )
+    else
+        if self.Ticks % 4 == 0 then
+            local emitter = ParticleEmitter(self:GetPos())
+
+            if !self:IsValid() or self:WaterLevel() > 2 then return end
+            if !IsValid(emitter) then return end
+
+            local smoke = emitter:Add("particle/particle_smokegrenade", self:GetPos())
+            smoke:SetVelocity( VectorRand() * 25 )
+            smoke:SetGravity( Vector(math.Rand(-5, 5), math.Rand(-5, 5), math.Rand(-20, -25)) )
+            smoke:SetDieTime( math.Rand(1.5, 2.0) )
+            smoke:SetStartAlpha( 100 )
+            smoke:SetEndAlpha( 0 )
+            smoke:SetStartSize( 0 )
+            smoke:SetEndSize( 100 )
+            smoke:SetRoll( math.Rand(-180, 180) )
+            smoke:SetRollDelta( math.Rand(-0.2,0.2) )
+            smoke:SetColor( 100, 100, 100 )
+            smoke:SetAirResistance( 5 )
+            smoke:SetPos( self:GetPos() )
+            smoke:SetLighting( false )
+            emitter:Finish()
+        end
+        self.Ticks = self.Ticks + 1
+    end
+
+end
+
+end
+
+function ENT:Detonate(dir)
+    if !self:IsValid() then return end
+    local effectdata = EffectData()
+        effectdata:SetOrigin( self:GetPos() )
+
+    if self:WaterLevel() >= 1 then
+        util.Effect( "WaterSurfaceExplosion", effectdata )
+        self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO)
+    else
+        util.Effect( "Explosion", effectdata)
+        self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
+    end
+
+    local attacker = self
+
+    if self.Owner:IsValid() then
+        attacker = self.Owner
+    end
+
+    util.BlastDamage(self, attacker, self:GetPos(), 400, 150)
+    if SERVER then util.Decal("Scorch", self:GetPos(), dir, self) end
+
+    self:Remove()
+end
+
+function ENT:PhysicsCollide(colData, collider)
+    self:Detonate(colData.OurOldVelocity)
+end
+
+function ENT:Draw()
+    self:DrawModel()
+end

@@ -10,7 +10,7 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_m24_mag"
 
 --att.Mult_Damage = 0.9
-att.Mult_DamageMin = 1.3
+att.Mult_DamageMin = 1.4
 att.Mult_Range = 0.75
 att.Mult_Recoil = 1.5
 

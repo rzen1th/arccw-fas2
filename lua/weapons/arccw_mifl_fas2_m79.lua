@@ -6,10 +6,10 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Wombat Thumper"
 SWEP.TrueName = "M79"
 SWEP.Trivia_Class = "Grenade Launcher"
-SWEP.Trivia_Desc = "A very angry tube."
+SWEP.Trivia_Desc = "Single shot grenade launcher known for its accuracy and ease of use."
 SWEP.Trivia_Manufacturer = "Springfield Armory"
-SWEP.Trivia_Calibre = "	40×46mm grenade"
-SWEP.Trivia_Mechanism = "Pump-Action"
+SWEP.Trivia_Calibre = "40×46mm Grenade"
+SWEP.Trivia_Mechanism = "Break-Action"
 SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 1961
 
@@ -31,11 +31,10 @@ SWEP.Num = 1
 SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
-SWEP.ShootEntity = nil -- entity to fire, if any
+SWEP.ShootEntity = "arccw_gl_m79_he" -- entity to fire, if any
+SWEP.MuzzleVelocity = 3000
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 1 -- DefaultClip is automatically set.
-
-SWEP.PhysBulletMuzzleVelocity = 700
 
 SWEP.Recoil = 4
 SWEP.RecoilSide = 1.5
@@ -51,14 +50,14 @@ SWEP.Firemodes = {
     }
 }
 
-SWEP.NPCWeaponType = "weapon_shotgun"
+SWEP.NPCWeaponType = "weapon_rpg"
 SWEP.NPCWeight = 180
 
 SWEP.AccuracyMOA = 50 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 200
 
-SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
+SWEP.Primary.Ammo = "smg1_grenade" -- what ammo type the gun uses
 
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -87,8 +86,8 @@ SWEP.SightedSpeedMult = 0.5
 SWEP.SightTime = 0.42
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.8, -8, 2.473),
-    Ang = Angle(0.773, 0, 0),
+    Pos = Vector(-6.841, -15.478, 2),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
@@ -140,13 +139,13 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m79_tube_quad"] = {
         VMBodygroups = {{ind = 2, bg = 3}},
-    },	
+    },
     ["mifl_fas2_m79_tube_c"] = {
         VMBodygroups = {{ind = 2, bg = 2}},
     },
     ["mifl_fas2_m79_stock"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
-    },	
+    },
 }
 
 SWEP.Attachments = {
@@ -170,7 +169,7 @@ SWEP.Attachments = {
             vpos = Vector(0, 0.5, -5),
             vang = Angle(-90, 0, -90),
         },
-        ExcludeFlags = {"mifl_fas2_m79_tube_k"},		
+        ExcludeFlags = {"mifl_fas2_m79_tube_k"},
     },
     {
         PrintName = "Tactical",
@@ -192,7 +191,7 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(0, 0, 0),
             vang = Angle(90, 0, -90),
-        },		
+        },
     },
     {
         PrintName = "Stock",
@@ -233,19 +232,19 @@ SWEP.Animations = {
         Source = "deploy",
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,			
+        LHIKOut = 0.4,
     },
     ["holster"] = {
         Source = "holster",
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,	
+        LHIKOut = 0.4,
     },
     ["ready"] = {
         Source = "deploy",
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,			
+        LHIKOut = 0.4,
     },
     ["fire"] = {
         Source = "fire01",
@@ -258,18 +257,10 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.3,
-        LHIKIn = 0.5,
-        LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,
+        LHIKEaseIn = 0.1,
+        LHIKIn = 0.3,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
     },
-    ["reload_empty"] = {
-        Source = "reload",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
-        LHIKEaseIn = 0.3,
-        LHIKIn = 0.5,
-        LHIKOut = 0.8,
-        LHIKEaseOut = 0.3,
-    },
+    ["reload_empty"] = nil,
 }
