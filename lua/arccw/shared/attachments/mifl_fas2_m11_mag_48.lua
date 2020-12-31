@@ -10,7 +10,7 @@ att.SortOrder = 2
 
 att.Override_ClipSize = 48
 
-att.Mult_ReloadTime = 1.15
+att.Mult_ReloadTime = 1.1
 att.Mult_SightTime = 1.15
 att.Mult_SpeedMult = 0.9
 

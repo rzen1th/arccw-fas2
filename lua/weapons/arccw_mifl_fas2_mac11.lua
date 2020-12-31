@@ -11,7 +11,7 @@ SWEP.Trivia_Manufacturer = "Military Armament Corporation"
 SWEP.Trivia_Calibre = ".380 ACP"
 SWEP.Trivia_Mechanism = "Straight Blowback"
 SWEP.Trivia_Country = "United States"
-SWEP.Trivia_Year = 1993
+SWEP.Trivia_Year = 1972
 
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
@@ -162,7 +162,7 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m11_mag_64"] = {
         VMBodygroups = {{ind = 1, bg = 3}}
     },
-    ["mifl_fas2_m11_mag_40"] = {
+    ["mifl_fas2_m11_mag_48"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
     },
     ["mifl_fas2_m11_muz_k"] = {
