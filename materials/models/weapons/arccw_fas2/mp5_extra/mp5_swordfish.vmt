@@ -1,0 +1,19 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\arccw_fas2\mp5_extra\mp5_swordfish_d"
+	"$bumpmap"	"models\weapons\arccw_fas2\mp5_extra\mp5_swordfish_n"
+	"$phongexponenttexture" "models\weapons\arccw_fas2\mp5_extra\smp5_swordfish_m"	
+
+	"$envmap" "env_cubemap"
+	"$envmaptint"			"[0.01 0.01 0.01]"
+	"$envmapfresnel"			"0.8"	
+	"$basemapalphaphongmask" 	"1"
+	"$phong" 			"1"
+	"$phongexponent"                                   "8"
+	"$phongboost" 			"1.5"
+	"$phongfresnelranges"		"[0.25 0.75 2.0]"
+	"$halflambert"			"1"
+
+    "$color2"			"[0.3 0.28 0.27]"
+	"$nocull" "1"			
+}

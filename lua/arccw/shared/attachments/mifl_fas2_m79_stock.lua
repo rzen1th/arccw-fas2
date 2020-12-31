@@ -1,5 +1,5 @@
 att.PrintName = "Obrez Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_ks23_tube_23xx.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_stock.png", "smooth")
 att.Description = "Saw off the wooden stock, leaving only a handle. Greatly increases recoil, but handles faster."
 att.Desc_Pros = {
 }

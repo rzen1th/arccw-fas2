@@ -1,5 +1,5 @@
 att.PrintName = "Compact Tube"
-att.Icon = Material("entities/arccw_mifl_fas2_ks23_tube_23xx.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_tube_c.png", "smooth")
 att.Description = "Shortened tube for the M79. Somewhat more agile, but velocity is reduced."
 att.Desc_Pros = {
 }

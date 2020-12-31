@@ -164,6 +164,15 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 3},
         },
     },
+    ["mifl_fas2_mp5_hg_fish"] = {
+        VMBodygroups = {{ind = 1, bg = 6},{ind = 2, bg = 4},{ind = 3, bg = 4},{ind = 6, bg = 1}},
+        AttPosMods = { [3] = { vpos = Vector(21.2, -1, 0), },},	
+        Override_IronSightStruct = {
+            Pos = Vector(-3.945, -5, 0),
+            Ang = Angle(0.25, 0, 0),
+            Magnification = 1.1,
+        },		
+	},		
     ["mifl_fas2_mp5_hg_eod"] = {
         VMBodygroups = {
             {ind = 3, bg = 3},
@@ -329,6 +338,11 @@ SWEP.AttachmentElements = {
         },
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    if wep.Attachments[1].Installed then vm:SetBodygroup(6, 0) end
+end
 
 SWEP.ExtraSightDist = 10
 

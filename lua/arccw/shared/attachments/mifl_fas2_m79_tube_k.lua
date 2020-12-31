@@ -1,5 +1,5 @@
 att.PrintName = "Obrez Tube"
-att.Icon = Material("entities/arccw_mifl_fas2_ks23_tube_23xx.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_tube_k.png", "smooth")
 att.Description = "Cut down \"Pirate Gun\" tube for the M79. Agile, but does not shoot very far."
 att.Desc_Pros = {
 }

@@ -16,6 +16,7 @@ $bodygroup "Frame"
 	studio "MP5_MW2.smd"
 	studio "MP5_G3.smd"	
 	studio "MP5_K2.smd"	
+	studio "HG_Sword.smd"		
 }
 $bodygroup "Kit"
 {
@@ -57,7 +58,14 @@ $bodygroup "Stock"
 	studio "Stock_UMP.smd"		
 	blank
 	studio "Stock_G3.smd"	
-	studio "stock_adaptor.smd"		
+	studio "stock_adaptor.smd"	
+	studio "Stock_Sword.smd"		
+}
+
+$bodygroup "SWIron"
+{
+	blank
+	studio "Iron_Sword.smd"
 }
 
 $illumposition 0 0 0
