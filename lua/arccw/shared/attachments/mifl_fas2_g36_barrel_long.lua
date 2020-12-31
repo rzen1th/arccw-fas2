@@ -1,4 +1,4 @@
-att.PrintName = "Extended Barrel"
+att.PrintName = "Marksman Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_mgsl8.png", "mips smooth")
 att.Description = "Longer barrel extending the weapons range at the cost of weight and maneuverability."
 att.SortOrder = 10

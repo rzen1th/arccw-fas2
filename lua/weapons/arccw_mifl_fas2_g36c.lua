@@ -157,6 +157,26 @@ SWEP.AttachmentElements = {
                 vpos = Vector(26, -0.15, 0),
             },
         },
+    },	
+    ["mifl_fas2_g36_barrel_oicw"] = {
+        NameChange = "Gewehr-Kurz",
+        TrueNameChange = "G-Kurz",
+        VMBodygroups = {
+            {ind = 3, bg = 6}, {ind = 2, bg = 3}, {ind = 7, bg = 3},
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.95, -8, 1),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(6, -5, 0),
+            },
+            [3] = {
+                vpos = Vector(23.5, -0.15, 0),
+            },
+        },
     },		
     ["mifl_fas2_g36_barrel_kurz"] = {
         NameChange = "Gewehr-Kurz",
@@ -448,4 +468,31 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
 
+
+
+
+    ["enter_ubgl"] = {
+        Source = "idle",
+        Time = 0,	
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+    },		
+    ["exit_ubgl"] = {
+        Source = "idle",
+        Time = 0,	
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+    },			
+    ["oicw_wet"] = {
+        Source = "oicw_wet",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },
+    ["oicw_dry"] = {
+        Source = "oicw_dry",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5,
+    },	
 }
