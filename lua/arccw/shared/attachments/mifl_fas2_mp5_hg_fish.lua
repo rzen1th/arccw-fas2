@@ -24,3 +24,5 @@ att.LHIK = true
 att.LHIK_Priority = -2
 att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
 att.ModelOffset = Vector(1, 0.2, 0)
+
+att.GivesFlags = {"mifl_fas2_mp5_hg_eod"}
