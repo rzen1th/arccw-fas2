@@ -256,7 +256,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Left Hand",
-        Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo"},
+        Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo", "akimbotest"},
         Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
