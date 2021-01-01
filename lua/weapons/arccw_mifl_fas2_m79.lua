@@ -137,7 +137,7 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m79_tube_k"] = {
         VMBodygroups = {{ind = 2, bg = 4}, {ind = 0, bg = 1}, {ind = 3, bg = 1}},
     },
-    ["mifl_fas2_m79_tube_quad"] = {
+    ["mifl_fas2_m79_tube_q"] = {
         VMBodygroups = {{ind = 2, bg = 3}},
     },
     ["mifl_fas2_m79_tube_c"] = {
@@ -262,5 +262,13 @@ SWEP.Animations = {
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4,
     },
-    ["reload_empty"] = nil,
+    ["reload_empty"] = {
+        Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKEaseIn = 0.1,
+        LHIKIn = 0.3,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
+    },
 }

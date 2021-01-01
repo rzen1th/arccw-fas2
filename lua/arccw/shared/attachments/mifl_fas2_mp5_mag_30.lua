@@ -17,7 +17,7 @@ att.Mult_DamageMin = 1.15
 att.Mult_Recoil = 1.1
 att.Mult_RPM = 0.9
 
-att.Mult_ReloadTime = 1.05
+att.Mult_ReloadTime = 1.1
 att.Mult_SightTime = 1.1
 
 att.Hook_GetShootSound = function(wep, fsound)

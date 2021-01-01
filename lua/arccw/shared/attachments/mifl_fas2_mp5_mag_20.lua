@@ -18,6 +18,7 @@ att.Mult_DamageMin = 1.15
 att.Mult_RPM = 0.8
 att.Mult_Recoil = 1.2
 att.Mult_ShootPitch = 0.9
+att.Mult_ReloadTime = 0.95
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav" then return "weapons/arccw_mifl/fas2/mp5/mp5_40cal_fire1.wav" end
