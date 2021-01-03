@@ -11,6 +11,7 @@ att.SortOrder = 3
 att.Slot = "mifl_fas2_m79_ammo"
 att.Override_ShootEntity = "arccw_gl_m79_airburst"
 
+att.Override_Firemodes_Priority = 1000
 att.Override_Firemodes = {
     {
         Mode = 1,

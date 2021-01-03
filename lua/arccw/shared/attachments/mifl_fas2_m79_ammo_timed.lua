@@ -13,6 +13,7 @@ att.Override_ShootEntity = "arccw_gl_m79_timed"
 
 att.Mult_MuzzleVelocity = 0.8
 
+att.Override_Firemodes_Priority = 1000
 att.Override_Firemodes = {
     {
         Mode = 1,
