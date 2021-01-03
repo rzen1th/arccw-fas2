@@ -30,6 +30,7 @@ att.Mult_SpeedMult = 0.9
 att.Mult_SightedSpeedMult = 0.75
 att.Mult_DrawTime = 1.5
 att.Mult_HolsterTime = 1.5
+att.Mult_RPM = 1.2
 
 att.Override_Firemodes = {
     {

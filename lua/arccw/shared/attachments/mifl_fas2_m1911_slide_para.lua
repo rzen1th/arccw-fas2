@@ -22,11 +22,11 @@ att.Mult_DrawTime = 1.3
 
 att.Add_BarrelLength = 10
 
-att.Mult_RPM = 1.8
+att.Mult_RPM = 1.5
 
 att.Mult_ShootPitch = 0.95
 
-att.ModelOffset = Vector(0.5, -0.3, -1.8)
+att.ModelOffset = Vector(2.5, 0, -1.5)
 
 att.Override_Firemodes = {
     {
