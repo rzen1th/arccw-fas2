@@ -77,7 +77,7 @@ SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 SWEP.MuzzleEffect = "muzzleflash_3"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 100
-SWEP.ShellScale = 3
+SWEP.ShellScale = 1.5
 SWEP.ShellRotateAngle = Angle(0, 180, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on

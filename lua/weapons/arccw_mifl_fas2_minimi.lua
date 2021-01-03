@@ -95,7 +95,7 @@ SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m249/m249_distance_fire1.wav"
 SWEP.MuzzleEffect = "muzzleflash_1"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 95
-SWEP.ShellScale = 1.5
+SWEP.ShellScale = 1
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
@@ -430,6 +430,11 @@ SWEP.Animations = {
         Time = 30 / 60,
         ShellEjectAt = 0,
     },
+    ["fire_iron_23"] = {
+        Source = "fire1_scoped",
+        Time = 30 / 60,
+        ShellEjectAt = 0,
+    },	
 
 
     ["reload_23"] = {

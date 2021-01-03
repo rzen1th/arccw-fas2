@@ -29,5 +29,5 @@ att.Override_Trivia_Calibre = "23mm"
 att.Override_Trivia_Class = "Shotgun"
 att.Override_IsShotgun = true
 
-att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
+att.Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/23mm.mdl"
 att.Mult_ShellScale = 2
