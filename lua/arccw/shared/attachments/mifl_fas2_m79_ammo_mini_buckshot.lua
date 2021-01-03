@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 
-att.Slot = "mifl_fas2_m79_ammo"
+att.Slot = {"mifl_fas2_m79_ammo"}
 att.Override_ShootEntity = false
 att.Override_Num = 10
 att.Mult_Damage = 75 / 150
@@ -15,7 +15,7 @@ att.Mult_AccuracyMOA = 0.5
 att.Mult_ShootPitch = 1.1
 
 att.Hook_Compatible = function(wep, data)
-    return wep:GetBuff_Override("Override_ClipSize") == 4
+    if (wep:GetBuff_Override("Override_ClipSize") or 1) ~= 4 then return false end
 end
 
 att.Hook_GetShootSound = function(wep, fsound)
