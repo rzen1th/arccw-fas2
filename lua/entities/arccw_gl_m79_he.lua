@@ -158,7 +158,7 @@ end
 -- Grenades do no impact damage
 hook.Add("EntityTakeDamage", "ArcCW_FAS2_Grenade", function(ent, dmginfo)
     local nade = dmginfo:GetInflictor()
-    if nade:IsScripted() and (scripted_ents.IsBasedOn(nade:GetClass(), "arccw_gl_m79_he") or nade:GetClass() == "arccw_gl_m79_he")
+    if IsValid(nade) and nade:IsScripted() and (scripted_ents.IsBasedOn(nade:GetClass(), "arccw_gl_m79_he") or nade:GetClass() == "arccw_gl_m79_he")
             and dmginfo:GetDamageType() == DMG_CRUSH then
         return true
     end

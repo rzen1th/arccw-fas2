@@ -45,8 +45,8 @@ att.Override_Firemodes = {
     },
     {
         Mode = 1,
-        PrintName = "0.1s",
-        DetonationDelay = 0.1
+        PrintName = "0.15s",
+        DetonationDelay = 0.15
     },
     {
         Mode = 0
