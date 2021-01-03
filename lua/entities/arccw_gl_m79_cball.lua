@@ -19,6 +19,12 @@ if SERVER then
                 for _, v in pairs(ents.FindInSphere(ent:GetPos(), 64)) do
                     if v:GetClass() == "point_combine_ball_launcher" then
                         ent:SetOwner(v:GetOwner())
+                        ent:AddCallback("PhysicsCollide", function(e, data)
+                            -- The sound doesn't play somehow so we do it manually
+                            if IsValid(data.HitEntity) and (data.HitEntity:IsNPC() or data.HitEntity:IsPlayer()) then
+                                data.HitEntity:EmitSound("NPC_CombineBall.KillImpact")
+                            end
+                        end)
                         hook.Remove("OnEntityCreated", "ArcCW_FAS2_CBall_" .. v:EntIndex())
                     end
                 end
