@@ -25,14 +25,16 @@ SWEP.ViewModelFOV = 54
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 16
-SWEP.DamageMin = 7 -- damage done at maximum range
+SWEP.Damage = 150
+SWEP.DamageMin = 80
+SWEP.DamageRand = 0
+SWEP.BlastRadius = 400
+SWEP.BlastRadiusRand = 0
+SWEP.Range = 30
 SWEP.Num = 1
-SWEP.Range = 50 -- in METRES
-SWEP.Penetration = 1
-SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = "arccw_gl_m79_he" -- entity to fire, if any
 SWEP.MuzzleVelocity = 3000
+
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 1 -- DefaultClip is automatically set.
 
@@ -40,7 +42,7 @@ SWEP.Recoil = 4
 SWEP.RecoilSide = 1.5
 SWEP.RecoilRise = 1.2
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 300 -- 60 / RPM.
 SWEP.Firemodes = {
     {
         Mode = 1,
@@ -59,7 +61,7 @@ SWEP.MoveDispersion = 200
 
 SWEP.Primary.Ammo = "smg1_grenade" -- what ammo type the gun uses
 
-SWEP.ShootVol = 120 -- volume of shoot sound
+SWEP.ShootVol = 75 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_mifl/fas2/explosive_m79/m79_fire1.wav"
@@ -205,8 +207,8 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Ammo Type",
-        Slot = "go_ammo",
-        DefaultAttName = "Buckshot Shells"
+        Slot = "mifl_fas2_m79_ammo",
+        DefaultAttName = "40mm HE"
     },
     {
         PrintName = "Perk",
