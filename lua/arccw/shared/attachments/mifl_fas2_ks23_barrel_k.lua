@@ -14,3 +14,4 @@ att.Mult_AccuracyMOA = 1.25
 att.Mult_SpeedMult = 1.1
 att.Mult_SightTime = 0.75
 att.Mult_MoveDispersion = 0.75
+att.Mult_ReloadTime = 0.8

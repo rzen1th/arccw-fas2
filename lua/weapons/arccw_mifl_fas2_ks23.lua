@@ -133,7 +133,7 @@ SWEP.WorldModelOffset = {
 SWEP.ShellRotateAngle = Angle(5, 0, 0)
 
 SWEP.MirrorVMWM = true
-
+            
 SWEP.AttachmentElements = {
     ["rail"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
@@ -143,13 +143,6 @@ SWEP.AttachmentElements = {
     },
     ["rail_side"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
-    },
-    ["mifl_fas2_m24_hg_obrez"] = {
-        VMBodygroups = {{ind = 1, bg = 4}, {ind = 2, bg = 2}, {ind = 3, bg = 1}},
-        AttPosMods = {
-            [3] = {vpos = Vector(9, -1.4, -0)},
-            [4] = {vpos = Vector(2, 0.5, 0)},
-        }
     },
     ["mifl_fas2_ks23_tube_xx"] = {
         VMBodygroups = {	{ind = 6, bg = 2},	},
@@ -170,13 +163,22 @@ SWEP.AttachmentElements = {
         VMBodygroups = {	{ind = 6, bg = 1},	},
     },
     ["mifl_fas2_ks23_stock_k"] = {
-        VMBodygroups = {	{ind = 1, bg = 1},	},
+        VMBodygroups = {	{ind = 1, bg = 1},	},		
     },
     ["mifl_fas2_ks23_barrel_l"] = {
         VMBodygroups = {	{ind = 7, bg = 1},	},
+        AttPosMods = {
+            [5] = {vpos = Vector(33, -0.7, 2.2),},
+        }		
     },
+    ["mifl_fas2_ks23_barrel_b"] = {
+        VMBodygroups = {	{ind = 7, bg = 3}, {ind = 8, bg = 1},	},
+    },	
     ["mifl_fas2_ks23_barrel_k"] = {
         VMBodygroups = {	{ind = 7, bg = 2},	},
+        AttPosMods = {
+            [5] = {vpos = Vector(17, -0.7, 2.2),},
+        }		
     },
 }
 
@@ -227,8 +229,8 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "ks23",
         Offset = {
-            vpos = Vector(0, -1.7, 28),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(25.2, -0.7, 2.2),
+            vang = Angle(0, 0, -90),
         },
         InstalledEles = {"no_fh"}
     },

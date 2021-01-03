@@ -8,7 +8,7 @@ The most customisable weapon pack on the workshop with ludicrous amount of ficti
 
 Featuring nearly every weapon from Firearms Source 2 (and some custom one) packed with kitbashed attachments
 
-If GSO is quantity. FS2R is quality
+If GSO is Bootleg Modern Warfare. [Insert name] is Bootleg Cold War
 
 Barrels, handguard, stocks, mag conversions, everything you expect, handcrafted for each and every firearms
 

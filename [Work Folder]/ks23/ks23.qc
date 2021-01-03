@@ -50,6 +50,13 @@ $bodygroup "Barrel"
 	studio "Barrel.smd"
 	studio "Barrel_Long.smd"
 	studio "Barrel_S.smd"	
+	studio "Barrel_Big.smd"		
+	blank	
+}
+$bodygroup "Adaptor"
+{
+	studio "Adaptor.smd"
+	studio "Adaptor_Big.smd"
 	blank	
 }
 
