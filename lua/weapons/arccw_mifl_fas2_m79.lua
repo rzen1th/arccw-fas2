@@ -176,10 +176,10 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "pump",
+        Bone = "m79_tube",
         Offset = {
-            vpos = Vector(10, 1, 1.2),
-            vang = Angle(0, 0, 0),
+            vpos = Vector(-1.5, -2.5, 4),
+            vang = Angle(-90, 0, 0),
         },
         InstalledEles = {"rail_side"},
         ExtraSightDist = 16,

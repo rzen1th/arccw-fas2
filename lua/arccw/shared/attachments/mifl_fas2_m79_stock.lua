@@ -12,7 +12,8 @@ att.AutoStats = true
 
 att.Mult_SightTime = 0.75
 att.Mult_SpeedMult = 1.1
-att.Mult_Recoil = 1.5
+att.Mult_Recoil = 1.75
 att.Mult_RecoilSide = 1.5
 att.Mult_DrawTime = 0.75
 att.Mult_HolsterTime = 0.75
+att.Mult_ReloadTime = 0.95
