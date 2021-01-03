@@ -16,6 +16,8 @@ att.Mult_DamageMin = 20 / 60
 att.Mult_AccuracyMOA = 0.5
 att.Mult_ShootPitch = 1.1
 
+att.InvAtt = "mifl_fas2_m79_ammo_buckshot"
+
 att.Hook_Compatible = function(wep, data)
     if (wep:GetBuff_Override("Override_ClipSize") or 1) ~= 4 then return false end
 end

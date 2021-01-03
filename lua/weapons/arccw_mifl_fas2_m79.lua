@@ -208,7 +208,7 @@ SWEP.Attachments = {
     {
         PrintName = "Ammo Type",
         Slot = "mifl_fas2_m79_ammo",
-        DefaultAttName = "40mm HE"
+        DefaultAttName = "M79 Impact HE"
     },
     {
         PrintName = "Perk",

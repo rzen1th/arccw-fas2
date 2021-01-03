@@ -20,3 +20,5 @@ att.Mult_ShootPitch = 1.25
 att.Mult_Recoil = 0.5
 
 att.Override_ClipSize = 4
+
+att.Override_Trivia_Calibre = "18×46mm Mini-Grenade"
