@@ -76,11 +76,11 @@ SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
 SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_shotgun"
-SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellModel = "models/weapons/arccw/mifl/fas2/shell/23mm.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
-SWEP.ShellScale = 1.5
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
+SWEP.ShellScale = 1
+SWEP.ShellRotateAngle = Angle(-20, 0, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
@@ -129,8 +129,6 @@ SWEP.WorldModelOffset = {
     pos = Vector(-11.5, 6, -4),
     ang = Angle(-10, 0, 180)
 }
-
-SWEP.ShellRotateAngle = Angle(5, 0, 0)
 
 SWEP.MirrorVMWM = true
             
@@ -293,13 +291,13 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "pump",
         Time = 1.2,
-        ShellEjectAt = 0.25,
+        ShellEjectAt = 0.4,
         MinProgress = 1,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron"] = {
         Source = "pump_iron",
-        ShellEjectAt = 0.08,
+        ShellEjectAt = 0.1,
         MinProgress = 1,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
