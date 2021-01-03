@@ -13,7 +13,8 @@ att.Slot = "mifl_fas2_m79_tube"
 att.AutoStats = true
 
 att.Mult_AccuracyMOA = 3
-att.Mult_MuzzleVelocity = 0.5
+att.Mult_MuzzleVelocity = 0.75
+att.Mult_SightTime = 1.25
 att.Mult_ReloadTime = 1.2
 att.Mult_ShootPitch = 1.25
 att.Mult_Recoil = 0.5

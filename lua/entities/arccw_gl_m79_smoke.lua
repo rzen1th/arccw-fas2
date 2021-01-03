@@ -3,11 +3,10 @@ AddCSLuaFile()
 ENT.Base 				= "arccw_gl_m79_he"
 ENT.PrintName 			= "M79 Smoke Grenade"
 
-
 if SERVER then
     function ENT:Detonate(dir)
         if !self:IsValid() then return end
-        self:EmitSound("weapons/arccw/smokegrenade/smoke_emit.wav", 90, 100, 1, CHAN_AUTO)
+        --self:EmitSound("weapons/arccw/smokegrenade/smoke_emit.wav", 90, 100, 1)
 
         local attacker = self
         if self:GetOwner():IsValid() then

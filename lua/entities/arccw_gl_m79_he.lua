@@ -25,17 +25,21 @@ end
 if SERVER then
 
     function ENT:Initialize()
-        local pb_vert = 1
-        local pb_hor = 1
         self:SetModel(self.Model)
+        self:PhysicsInit(SOLID_VPHYSICS)
 
         local wep = self.Inflictor
         if IsValid(wep) and wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q" then
             self:SetMini(true)
-            self:SetModelScale(0.3, 0)
+            --self:SetModelScale(0.5, 0)
+        else
+            self:SetModelScale(2, 0)
         end
 
-        self:PhysicsInitBox( Vector(-pb_vert,-pb_hor,-pb_hor), Vector(pb_vert,pb_hor,pb_hor) )
+        --local pb_vert = self:GetMini() and 1 or 2
+        --local pb_hor = self:GetMini() and 1 or 2
+        --self:PhysicsInitBox( Vector(-pb_vert,-pb_hor,-pb_hor), Vector(pb_vert,pb_hor,pb_hor) )
+
         local phys = self:GetPhysicsObject()
         if phys:IsValid() then
             phys:Wake()
@@ -60,10 +64,10 @@ if SERVER then
 
         if self:WaterLevel() >= 1 then
             util.Effect( "WaterSurfaceExplosion", effectdata )
-            self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO)
+            self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1)
         else
             util.Effect( "Explosion", effectdata)
-            self:EmitSound("weapons/arccw_mifl/fas2/explosive_m79/m79_explode1.wav", 125, 100, 0.75, CHAN_AUTO)
+            self:EmitSound("weapons/arccw_mifl/fas2/explosive_m79/m79_explode1.wav", self:GetMini() and 90 or 125, self:GetMini() and 150 or 100, 0.75)
         end
 
         local attacker = self
@@ -77,10 +81,19 @@ if SERVER then
 
         self:Remove()
     end
-
 else
+    function ENT:Initialize()
+        self.LoopSound = CreateSound(self, "weapons/arccw_mifl/fas2/explosive_m79/m79_projectile.wav")
+        self.LoopSound:SetSoundLevel(60)
+        self.LoopSound:PlayEx(0.6, self:GetMini() and 150 or 100)
+    end
+
+    function ENT:OnRemove()
+        if self.LoopSound then self.LoopSound:Stop() end
+    end
+
     function ENT:Think()
-        if self.Ticks % 4 == 0 then
+        if self.Ticks % (self:GetMini() and 2 or 4) == 0 then
             local emitter = ParticleEmitter(self:GetPos())
 
             if !self:IsValid() or self:WaterLevel() > 2 then return end
@@ -93,7 +106,7 @@ else
             smoke:SetStartAlpha( 255 )
             smoke:SetEndAlpha( 0 )
             smoke:SetStartSize( 0 )
-            smoke:SetEndSize( 50 )
+            smoke:SetEndSize( self:GetMini() and 20 or 50 )
             smoke:SetRoll( math.Rand(-180, 180) )
             smoke:SetRollDelta( math.Rand(-0.2,0.2) )
             smoke:SetColor( 100, 100, 100 )
@@ -108,7 +121,18 @@ else
 end
 
 function ENT:PhysicsCollide(colData, collider)
-    self:Detonate(colData.OurOldVelocity)
+    if self.SpawnTime + 0.15 > CurTime() then
+        local effectdata = EffectData()
+        effectdata:SetOrigin(self:GetPos())
+        effectdata:SetScale(0.5)
+        effectdata:SetMagnitude(4)
+        effectdata:SetRadius(16)
+        util.Effect("Sparks", effectdata)
+        self:EmitSound("weapons/rpg/shotdown.wav", 90, self:GetMini() and 150 or 100, 0.5)
+        self:Remove()
+    else
+        self:Detonate(colData.OurOldVelocity)
+    end
 end
 
 function ENT:Draw()

@@ -7,6 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
     "Minimal damage"
 }
+att.SortOrder = 1
 
 att.Slot = "mifl_fas2_m79_ammo"
 att.Override_ShootEntity = "arccw_gl_m79_smoke"
