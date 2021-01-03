@@ -36,7 +36,8 @@ if SERVER then
         util.BlastDamage(self.Inflictor or self, attacker, self:GetPos(), 400 * (self:GetMini() and 0.5 or 1), 200 * (self:GetMini() and 0.5 or 1))
         self:Remove()
     end
+end
 
-    function ENT:PhysicsCollide(colData, collider)
-    end
+function ENT:PhysicsCollide(colData, collider)
+    self:ImpactDamage(colData.HitEntity, colData.OurOldVelocity)
 end

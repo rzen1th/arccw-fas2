@@ -118,10 +118,25 @@ else
         end
         self.Ticks = self.Ticks + 1
     end
+end
 
+
+function ENT:ImpactDamage(ent, vel)
+    if !IsValid(ent) or vel:Length() <= 500 or (self.NextImpact or 0) > CurTime() then return end
+    self.NextImpact = CurTime() + 0.1
+    local dmg = DamageInfo()
+    dmg:SetAttacker(self:GetOwner() or self)
+    dmg:SetInflictor(self.Inflictor or self)
+    dmg:SetDamageType(DMG_CLUB)
+    dmg:SetDamageForce(vel)
+    dmg:SetDamagePosition(self:GetPos())
+    dmg:SetDamage(math.Clamp(vel:Length() * 0.05 * (self:GetMini() and 0.5 or 1), 1, 200))
+    ent:TakeDamageInfo(dmg)
 end
 
 function ENT:PhysicsCollide(colData, collider)
+    self:ImpactDamage(colData.HitEntity, colData.OurOldVelocity)
+    print(self.SpawnTime + (self.FuzeTime or 0) > CurTime())
     if self.SpawnTime + (self.FuzeTime or 0) > CurTime() then
         local effectdata = EffectData()
         effectdata:SetOrigin(self:GetPos())
@@ -139,3 +154,12 @@ end
 function ENT:Draw()
     self:DrawModel()
 end
+
+-- Grenades do no impact damage
+hook.Add("EntityTakeDamage", "ArcCW_FAS2_Grenade", function(ent, dmginfo)
+    local nade = dmginfo:GetInflictor()
+    if nade:IsScripted() and (scripted_ents.IsBasedOn(nade:GetClass(), "arccw_gl_m79_he") or nade:GetClass() == "arccw_gl_m79_he")
+            and dmginfo:GetDamageType() == DMG_CRUSH then
+        return true
+    end
+end)

@@ -42,15 +42,16 @@ if SERVER then
         util.BlastDamage(self.Inflictor or self, attacker, self:GetPos(), 500 * (self:GetMini() and 0.6 or 1), 150 * (self:GetMini() and 0.5 or 1))
         self:Remove()
     end
+end
 
-    function ENT:PhysicsCollide(colData, collider)
-        local effectdata = EffectData()
-        effectdata:SetOrigin(self:GetPos())
-        effectdata:SetScale(0.5)
-        effectdata:SetMagnitude(4)
-        effectdata:SetRadius(64)
-        util.Effect("Sparks", effectdata)
-        self:EmitSound("weapons/rpg/shotdown.wav", 90, self:GetMini() and 150 or 100, 0.5)
-        self:Remove()
-    end
+function ENT:PhysicsCollide(colData, collider)
+    self:ImpactDamage(colData.HitEntity, colData.OurOldVelocity)
+    local effectdata = EffectData()
+    effectdata:SetOrigin(self:GetPos())
+    effectdata:SetScale(0.5)
+    effectdata:SetMagnitude(4)
+    effectdata:SetRadius(64)
+    util.Effect("Sparks", effectdata)
+    self:EmitSound("weapons/rpg/shotdown.wav", 90, self:GetMini() and 150 or 100, 0.5)
+    self:Remove()
 end
