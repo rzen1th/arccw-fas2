@@ -27,6 +27,7 @@ att.Mult_ReloadTime = 1.25
 att.Override_Ammo = "buckshot"
 att.Override_Trivia_Calibre = "23mm"
 att.Override_Trivia_Class = "Shotgun"
+att.Override_ShellScale = 0.8
 att.Override_IsShotgun = true
 
 att.Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/23mm.mdl"
