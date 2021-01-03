@@ -37,7 +37,7 @@ SWEP.RecoilSide = 0.35
 SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 0.7
 SWEP.MaxRecoilBlowback = 0.2
-SWEP.Delay = 60 / 400 -- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Firemodes = {
@@ -103,6 +103,32 @@ SWEP.CustomizeAng = Angle(4, 20, 10)
 SWEP.BarrelLength = 12
 
 SWEP.AttachmentElements = {
+    ["roni"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 5},
+        },
+        Override_ActivePos = Vector(0, 0, -1),
+        Override_HolsterPos = Vector(6, -6, 0),
+        Override_HolsterAng = Angle(-15, 25, 0),
+        AttPosMods = {
+            [1] = {
+				bone = "Frame_BONE",		--- y dis no work :(((((((	
+                vpos = Vector(0, -2, -0.18),
+            },
+            [2] = {
+                vpos = Vector(9, -1.8, -0.18),
+                --vang = Angle(90, -90, 0)
+            },
+            [4] = {
+                vpos = Vector(5.5, -0.2, -0.15),
+            },
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-3.56, -2, -0.35),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1,
+        },
+    },
     ["akimbo"] = {
         Override_ActivePos = Vector(2, 5, 0)
     },
@@ -214,6 +240,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90)
         },
         InstalledEles = {"rail"},
+        MergeSlots = {12},		
         ExtraSightDist = 13
     },
     {
@@ -230,11 +257,11 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Slide",
-        Slot = "mifl_fas2_m1911_slide",
+        Slot = {"mifl_fas2_m1911_slide", "mifl_roni_conv"},
         Bone = "Frame_BONE",
         DefaultAttName = "Default Slide",
         Offset = {
-            vpos = Vector(4.5, -3.5, 0.2),
+            vpos = Vector(2.5, -2.2, -0.18),
             vang = Angle(0, 0, -90)
         }
     },
@@ -300,12 +327,25 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "glock_slide", -- relevant bone any attachments will be mostly referring to
+        Bone = "glock_slide", 
         Offset = {
-            vpos = Vector(0.5, 3, -0.2), -- offset that the attachment will be relative to the bone
+            vpos = Vector(0.5, 3, -0.2),
             vang = Angle(0, -90, 0)
         }
-    }
+    },
+    { 
+        Slot = "optic",
+        Bone = "Frame_BONE",
+        Offset = {
+            vpos = Vector(0, -0.2, -0.18),
+            vang = Angle(0, -90, 0),
+        },
+        Hidden = true,
+        HideIfBlocked = true,
+        RequireFlags = {"roni"},
+        VMScale = Vector(1.25, 1.25, 1.25),
+        CorrectiveAng = Angle(0, 180, 0)
+    },	
 }
 
 --- hierarchy ---
