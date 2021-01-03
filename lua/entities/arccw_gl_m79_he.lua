@@ -29,8 +29,9 @@ if SERVER then
         self:PhysicsInit(SOLID_VPHYSICS)
 
         local wep = self.Inflictor
-        if IsValid(wep) and wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q" then
-            self:SetMini(true)
+        if IsValid(wep) then
+            self:SetMini(wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q")
+            self.FuzeTime = 1 / wep:GetBuff("MuzzleVelocity") * 150
             --self:SetModelScale(0.5, 0)
         else
             self:SetModelScale(2, 0)
@@ -121,7 +122,7 @@ else
 end
 
 function ENT:PhysicsCollide(colData, collider)
-    if self.SpawnTime + 0.15 > CurTime() then
+    if self.SpawnTime + (self.FuzeTime or 0) > CurTime() then
         local effectdata = EffectData()
         effectdata:SetOrigin(self:GetPos())
         effectdata:SetScale(0.5)

@@ -1,6 +1,6 @@
 att.PrintName = "M79 Mini-Buckshot"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
-att.Description = "Small buckshot-loaded shells for the quad-barrel M79. Does much less damage even compared to regular shotguns, but it's a shotgun I guess."
+att.Description = "Small buckshot-loaded shells for the quad-barrel M79, using uses shotgun ammo. Does much less damage even compared to regular shotguns, but it's a shotgun I guess."
 att.Desc_Pros = {
     "Fires buckshot"
 }
@@ -16,10 +16,12 @@ att.Mult_DamageMin = 20 / 60
 att.Mult_AccuracyMOA = 0.5
 att.Mult_ShootPitch = 1.1
 
+att.Override_Ammo = "buckshot"
+
 att.InvAtt = "mifl_fas2_m79_ammo_buckshot"
 
 att.Hook_Compatible = function(wep, data)
-    if (wep:GetBuff_Override("Override_ClipSize") or 1) ~= 4 then return false end
+    if wep.Attachments[4].Installed ~= "mifl_fas2_m79_tube_q" then return false end
 end
 
 att.Hook_GetShootSound = function(wep, fsound)
