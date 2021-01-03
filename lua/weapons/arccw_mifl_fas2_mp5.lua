@@ -138,6 +138,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 5},
         },
     },
+    ["mifl_fas2_mp5_stock_fish"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 7},
+        },
+    },	
     ["mifl_fas2_mp5_hg_sd"] = {
         VMBodygroups = {
             {ind = 3, bg = 2},
@@ -166,7 +171,7 @@ SWEP.AttachmentElements = {
     },	
     ["mifl_fas2_mp5_hg_fish"] = {
         VMBodygroups = {{ind = 1, bg = 6},{ind = 2, bg = 4},{ind = 3, bg = 4},{ind = 6, bg = 1}},
-        AttPosMods = { [3] = { vpos = Vector(22.5, -1.5, 0), }, [1] = { vpos = Vector(3.5, -3.6, 0), }, [4] = { vpos = Vector(11, 0.8, 0), },},	
+        AttPosMods = { [3] = { vpos = Vector(22.5, -1.5, 0), }, [1] = { vpos = Vector(3.5, -3.6, 0), }, [4] = { vpos = Vector(11, 0.6, 0), },},	
         Override_IronSightStruct = {
             Pos = Vector(-3.945, -5, 0),
             Ang = Angle(0.25, 0, 0),
