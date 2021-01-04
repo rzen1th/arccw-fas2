@@ -31,6 +31,16 @@ $bodygroup "Sight"
 	studio "Sight.smd"
 	blank
 }
+$bodygroup "Rail_Top"
+{
+	blank
+	studio "Rail_Top.smd"
+}
+$bodygroup "Rail_Side"
+{
+	blank
+	studio "Rail_Side.smd"
+}
 
 $surfaceprop "default"
 
@@ -38,6 +48,7 @@ $contents "solid"
 
 $illumposition 0 0 0
 
+$cdmaterials "models\weapons\arccw_fas2\sg55x\"
 $cdmaterials "models\weapons\arccw_fas2\explosives\"
 
 $attachment "1" "muzzle_flash" 0 0 0 rotate 0 0 0

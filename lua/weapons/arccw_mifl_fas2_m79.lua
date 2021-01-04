@@ -133,6 +133,12 @@ SWEP.ShellRotateAngle = Angle(5, 0, 0)
 SWEP.MirrorVMWM = true
 
 SWEP.AttachmentElements = {
+    ["rail_top"] = {
+        VMBodygroups = {{ind = 4, bg = 1}, {ind = 3, bg = 1}},
+    },
+    ["rail_side"] = {
+        VMBodygroups = {{ind = 5, bg = 1}},
+    },	
     ["mifl_fas2_m79_tube_l"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
     },
@@ -162,6 +168,7 @@ SWEP.Attachments = {
         },
         CorrectiveAng = Angle(0, 0, 0),
         VMScale = Vector(1.25, 1.25, 1.25),
+        InstalledEles = {"rail_top"},		
     },
     {
         PrintName = "Underbarrel",
