@@ -130,7 +130,7 @@ function ENT:ImpactDamage(ent, vel)
     dmg:SetDamageType(DMG_CLUB)
     dmg:SetDamageForce(vel)
     dmg:SetDamagePosition(self:GetPos())
-    dmg:SetDamage(math.Clamp(vel:Length() * 0.05 * (self:GetMini() and 0.5 or 1), 1, 200))
+    dmg:SetDamage(math.Clamp(vel:Length() * 0.025 * (self:GetMini() and 0.5 or 1), 1, 100))
     ent:TakeDamageInfo(dmg)
 end
 

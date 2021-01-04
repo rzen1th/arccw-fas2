@@ -39,7 +39,7 @@ if SERVER then
             attacker = self:GetOwner()
         end
 
-        util.BlastDamage(self.Inflictor or self, attacker, self:GetPos(), 500 * (self:GetMini() and 0.6 or 1), 150 * (self:GetMini() and 0.5 or 1))
+        util.BlastDamage(self.Inflictor or self, attacker, self:GetPos(), 600 * (self:GetMini() and 0.5 or 1), 200 * (self:GetMini() and 0.5 or 1))
         self:Remove()
     end
 end
