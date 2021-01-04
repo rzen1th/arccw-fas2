@@ -136,7 +136,6 @@ end
 
 function ENT:PhysicsCollide(colData, collider)
     self:ImpactDamage(colData.HitEntity, colData.OurOldVelocity)
-    print(self.SpawnTime + (self.FuzeTime or 0) > CurTime())
     if self.SpawnTime + (self.FuzeTime or 0) > CurTime() then
         local effectdata = EffectData()
         effectdata:SetOrigin(self:GetPos())
