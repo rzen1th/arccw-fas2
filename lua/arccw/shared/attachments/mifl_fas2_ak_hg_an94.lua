@@ -30,15 +30,22 @@ att.Override_Firemodes = {
         }
     },
     {
+        Mode = -2,
+        Override_ShotRecoilTable = {
+            [0] = 0.1
+        },
+        Mult_RPM = 3,
+        RunawayBurst = true,
+        PostBurstDelay = 0.15
+    },
+    {
         Mode = 0,
     }
 }
 
 ---- first shot hyperburst ----
 att.Hook_ModifyRPM = function(wep, delay)
-    if wep:GetBurstCount() == 0 then
+    if wep:GetCurrentFiremode().Mode == 2 and wep:GetBurstCount() == 0 then
         return 60 / 1800
-    else
-        return
     end
 end
