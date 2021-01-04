@@ -15,7 +15,7 @@ if SERVER then
 
     local function ball_handle(ent)
         if ent:GetClass() == "prop_combine_ball" then
-            timer.Simple(0, function()
+            timer.Simple(0, function() -- It spawns at 0 0 0 for a tick
                 for _, v in pairs(ents.FindInSphere(ent:GetPos(), 64)) do
                     if v:GetClass() == "point_combine_ball_launcher" then
                         ent:SetOwner(v:GetOwner())
@@ -26,6 +26,7 @@ if SERVER then
                             end
                         end)
                         hook.Remove("OnEntityCreated", "ArcCW_FAS2_CBall_" .. v:EntIndex())
+                        return
                     end
                 end
             end)
@@ -33,25 +34,10 @@ if SERVER then
     end
 
     function ENT:Initialize()
-        --[[]
-        local cball = ents.Create("prop_combine_ball")
-        cball:SetPos(self:GetPos())
-        cball:SetAngles(self:GetAngles())
-        cball:Spawn()
-        cball:SetOwner(self:GetOwner())
-        cball:SetSaveValue("m_flRadius", 12)
-        cball:SetSaveValue("m_nState", 3)
-        cball:SetSaveValue("m_nMaxBounces", 3)
-        cball:SetSaveValue("m_bLaunched", true)
-        local phys = cball:GetPhysicsObject()
-        if phys:IsValid() then
-            phys:SetVelocity( self:GetForward() * (IsValid(self.Inflictor) and (self.Inflictor:GetBuff("MuzzleVelocity")) or 1000) )
-        end
-        cball:Activate()
-        ]]
         local mini = IsValid(self.Inflictor) and self.Inflictor.Attachments[4].Installed == "mifl_fas2_m79_tube_q"
         local hBallGen = ents.Create("point_combine_ball_launcher")
         local pos = self:GetPos() + self:GetForward() * 32
+        local s = IsValid(self.Inflictor) and (self.Inflictor:GetBuff("MuzzleVelocity")) or 1000
         hBallGen:SetPos(pos)
         hBallGen:Spawn()
         hBallGen:Activate()
@@ -59,7 +45,6 @@ if SERVER then
         hBallGen:SetKeyValue("ballcount", "1")
         hBallGen:SetKeyValue("ballrespawntime", "-1")
         hBallGen:SetKeyValue("maxballbounces", mini and "1" or "5")
-        local s = IsValid(self.Inflictor) and (self.Inflictor:GetBuff("MuzzleVelocity")) or 1000
         hBallGen:SetKeyValue("maxspeed", tostring(s))
         hBallGen:SetKeyValue("minspeed", tostring(s))
         hBallGen:SetKeyValue("angles", tostring(self:GetAngles()))
