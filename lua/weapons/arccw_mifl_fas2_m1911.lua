@@ -291,6 +291,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0)
         },
         InstalledEles = {"akimbo"},
+        ExcludeFlags = {"roni"},		
         MergeSlots = {7}
     },
     {
@@ -312,7 +313,8 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(-0.2, -1.8, -0.2),
             vang = Angle(0, -90, 0)
-        }
+        },
+        ExcludeFlags = {"roni"},		
     },
     {
         PrintName = "Ammo Type",
