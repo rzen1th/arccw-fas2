@@ -226,6 +226,21 @@ SWEP.Attachments = {
     },
 }
 
+function SWEP:Hook_NameChange(name)
+    local truename = GetConVar("arccw_truenames"):GetBool()
+    local barrel = self.Attachments[4].Installed
+    if barrel == "mifl_fas2_m79_tube_q" then
+        return truename and "M79 Quad" or "Quad Thumper"
+    elseif barrel == "mifl_fas2_m79_tube_l" then
+        return truename and "M79-L" or "Longbat Thumper"
+    elseif barrel == "mifl_fas2_m79_tube_c" then
+        return truename and "M79-C" or "Fruitbat Thumper"
+    elseif barrel == "mifl_fas2_m79_tube_k" then
+        return truename and "M79 Pirate Gun" or "Pirate Thumper"
+    end
+    return self.PrintName
+end
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"

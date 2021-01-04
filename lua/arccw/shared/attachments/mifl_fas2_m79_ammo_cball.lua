@@ -2,9 +2,12 @@ att.PrintName = "M79 Energy Orb"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "Grenade containing a combine dark energy device, which deploys an energy ball when fired."
 att.Desc_Pros = {
-    "Fires an energy ball"
+    "pro.fas2.m79.cball"
 }
 att.Desc_Cons = {
+}
+att.Desc_Neutrals = {
+    "info.fas2.m79.cball"
 }
 att.SortOrder = -10
 

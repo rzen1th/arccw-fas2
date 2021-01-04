@@ -5,7 +5,7 @@ att.Desc_Pros = {
     "pro.magcap"
 }
 att.Desc_Cons = {
-    "Reduced blast radius and damage"
+    "con.fas2.m79.quad"
 }
 att.SortOrder = 2.5
 

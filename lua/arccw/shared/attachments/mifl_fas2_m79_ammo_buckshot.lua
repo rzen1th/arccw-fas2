@@ -2,9 +2,12 @@ att.PrintName = "M79 Buckshot"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "A grenade loaded with buckshot pellets and uses shotgun ammo. Because of the low grenade pressure, damage isn't as spectacular as one would expect."
 att.Desc_Pros = {
-    "Fires buckshot"
+    "pro.fas2.m79.buck"
 }
 att.Desc_Cons = {
+}
+att.Desc_Neutrals = {
+    "info.fas2.m79.buck"
 }
 att.SortOrder = 2
 

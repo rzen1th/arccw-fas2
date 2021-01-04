@@ -2,10 +2,10 @@ att.PrintName = "M79 Smoke"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "A grenade that deploys smoke."
 att.Desc_Pros = {
-    "Deploys smoke on detonation"
+    "pro.fas2.m79.smoke"
 }
 att.Desc_Cons = {
-    "Minimal damage"
+    "con.fas2.m79.min"
 }
 att.SortOrder = 1
 

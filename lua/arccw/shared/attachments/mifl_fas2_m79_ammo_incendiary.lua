@@ -2,10 +2,10 @@ att.PrintName = "M79 Incendiary"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "A grenade loaded with flammable fuel, spreading fire on impact."
 att.Desc_Pros = {
-    "Creates fire on detonation"
+    "pro.fas2.m79.incendiary"
 }
 att.Desc_Cons = {
-    "Minimal damage"
+    "con.fas2.m79.min"
 }
 att.SortOrder = 0
 

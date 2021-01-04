@@ -2,9 +2,12 @@ att.PrintName = "M79 Hornet's Nest"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "A grenade loaded with 18 .22LR rounds, and thus uses pistol ammo. It is much more accurate and has more range than buckshot, but doesn't do as much damage."
 att.Desc_Pros = {
-    "Fires bullets"
+    "pro.fas2.m79.hornet"
 }
 att.Desc_Cons = {
+}
+att.Desc_Neutrals = {
+    "info.fas2.m79.hornet"
 }
 att.SortOrder = 2.5
 

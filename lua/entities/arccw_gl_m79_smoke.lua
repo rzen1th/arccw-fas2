@@ -5,8 +5,8 @@ ENT.PrintName 			= "M79 Smoke Grenade"
 
 if SERVER then
     function ENT:Detonate(dir)
-        if !self:IsValid() then return end
-        --self:EmitSound("weapons/arccw/smokegrenade/smoke_emit.wav", 90, 100, 1)
+        if !self:IsValid() or self:WaterLevel() >= 2 then return end
+        self:EmitSound("arccw_go/smokegrenade/smoke_emit.wav", 90, self:GetMini() and 150 or 100, 0.75)
 
         local attacker = self
         if self:GetOwner():IsValid() then

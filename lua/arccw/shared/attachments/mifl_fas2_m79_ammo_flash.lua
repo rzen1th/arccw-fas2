@@ -2,10 +2,10 @@ att.PrintName = "M79 Flash"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "A grenade that creates a blinding flash."
 att.Desc_Pros = {
-    "Creates flash on detonation"
+    "pro.fas2.m79.flash"
 }
 att.Desc_Cons = {
-    "Minimal damage"
+    "con.fas2.m79.min"
 }
 att.SortOrder = 1.5
 

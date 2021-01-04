@@ -2,9 +2,12 @@ att.PrintName = "M79 Mini-Buckshot"
 att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
 att.Description = "Small buckshot-loaded shells for the quad-barrel M79, using uses shotgun ammo. Does much less damage even compared to regular shotguns, but it's a shotgun I guess."
 att.Desc_Pros = {
-    "Fires buckshot"
+    "pro.fas2.m79.buck"
 }
 att.Desc_Cons = {
+}
+att.Desc_Neutrals = {
+    "info.fas2.m79.buck"
 }
 att.SortOrder = 2
 
