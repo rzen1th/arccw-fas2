@@ -138,7 +138,7 @@ SWEP.AttachmentElements = {
     },
     ["rail_side"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
-    },	
+    },
     ["mifl_fas2_m79_tube_l"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
     },
@@ -168,7 +168,7 @@ SWEP.Attachments = {
         },
         CorrectiveAng = Angle(0, 0, 0),
         VMScale = Vector(1.25, 1.25, 1.25),
-        InstalledEles = {"rail_top"},		
+        InstalledEles = {"rail_top"},
     },
     {
         PrintName = "Underbarrel",
@@ -288,6 +288,26 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKEaseIn = 0.1,
+        LHIKIn = 0.3,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
+    },
+    ["reload_nomen"] = {
+        Source = "reload",
+        Time = 3.5,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKEaseIn = 0.1,
+        LHIKIn = 0.3,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
+    },
+    ["reload_nomen_empty"] = {
+        Source = "reload",
+        Time = 3.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKEaseIn = 0.1,

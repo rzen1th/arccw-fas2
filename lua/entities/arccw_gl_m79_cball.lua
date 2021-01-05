@@ -44,7 +44,7 @@ if SERVER then
         hBallGen:SetOwner(self:GetOwner())
         hBallGen:SetKeyValue("ballcount", "1")
         hBallGen:SetKeyValue("ballrespawntime", "-1")
-        hBallGen:SetKeyValue("maxballbounces", mini and "1" or "5")
+        hBallGen:SetKeyValue("maxballbounces", mini and "3" or "10")
         hBallGen:SetKeyValue("maxspeed", tostring(s))
         hBallGen:SetKeyValue("minspeed", tostring(s))
         hBallGen:SetKeyValue("angles", tostring(self:GetAngles()))
