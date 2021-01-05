@@ -121,7 +121,7 @@ SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
     ["akimbo"] = {
-        Override_ActivePos = Vector(8, 0, 0),
+        Override_ActivePos = Vector(4, 0, 0),
     },
     ["mifl_fas2_mp5_stock_pdw"] = {
         VMBodygroups = {{ind = 6, bg = 5}}
