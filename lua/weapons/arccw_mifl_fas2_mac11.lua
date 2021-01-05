@@ -328,7 +328,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local drm = wep.Attachments[6].Installed == "mifl_fas2_m11_mag_64"
 
     if wep.Attachments[7].Installed then
-        return anim .. "akimbo"
+        return anim .. "_akimbo"
     end
 
     if optic and wep:Clip1() == 0 then
