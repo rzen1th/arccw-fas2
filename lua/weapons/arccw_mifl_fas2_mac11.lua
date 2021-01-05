@@ -322,42 +322,26 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
+SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local optic = wep.Attachments[1].Installed
     local fls = wep.Attachments[6].Installed == "mifl_fas2_m11_mag_16"
     local drm = wep.Attachments[6].Installed == "mifl_fas2_m11_mag_64"
 
     if wep.Attachments[7].Installed then
-        return anim .. "_akimbo"
-    elseif fls then
-        return anim .. "_flush"
+        return anim .. "akimbo"
+    end
+
+    if optic and wep:Clip1() == 0 then
+        anim = anim .. "_optic"
+    end
+
+    if fls then
+        anim = anim .. "_flush"
     elseif drm then
-        return anim .. "_drum"
+        anim = anim .. "_drum"
     end
 
-    if fls and optic then
-        if anim == "reload_empty_flush" then
-            return "reload_empty_optic_flush"
-        elseif anim == "reload_nomen_empty_flush" then
-            return "reload_empty_optic_nomen_flush"
-        end
-    end
-
-    if drm and optic then
-        if anim == "reload_empty_drum" then
-            return "reload_empty_optic_drum"
-        elseif anim == "reload_nomen_empty_drum" then
-            return "reload_empty_optic_nomen_drum"
-        end
-    end
-
-    if optic then
-        if anim == "reload_empty" then
-            return "reload_empty_optic"
-        elseif anim == "reload_empty_nomen" then
-            return "reload_empty_nomen_optic"
-        end
-    end
+    return anim
 end
 
 SWEP.Animations = {
@@ -447,7 +431,7 @@ SWEP.Animations = {
         LHIKOut = 0.45,
         LHIKEaseOut = 0.3,
     },
-    ["reload_empty_nomen_optic"] = {
+    ["reload_nomen_empty_optic"] = {
         Source = "reload_empty_optic_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
@@ -503,7 +487,7 @@ SWEP.Animations = {
         LHIKOut = 0.45,
         LHIKEaseOut = 0.3,
     },
-    ["reload_empty_optic_nomen_flush"] = {
+    ["reload_nomen_empty_optic_flush"] = {
         Source = "reload_empty_flush_optic_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
@@ -512,7 +496,6 @@ SWEP.Animations = {
         LHIKOut = 0.45,
         LHIKEaseOut = 0.3,
     },
-
 
     ["reload_drum"] = {
         Source = "reload_drum",
@@ -559,7 +542,7 @@ SWEP.Animations = {
         LHIKOut = 0.45,
         LHIKEaseOut = 0.3,
     },
-    ["reload_empty_optic_nomen_drum"] = {
+    ["reload_nomen_empty_optic_drum"] = {
         Source = "reload_empty_drum_optic_nomen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
