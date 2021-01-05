@@ -17,7 +17,7 @@ att.Override_Ammo = "AR2AltFire"
 att.Mult_MuzzleVelocity = 0.5
 
 att.Hook_Compatible = function(wep, data)
-    if wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q" then return false end
+    if wep.Attachments[4] and wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q" then return false end
 end
 
 att.Hook_GetShootSound = function(wep, fsound)
