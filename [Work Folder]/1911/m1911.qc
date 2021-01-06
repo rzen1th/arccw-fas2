@@ -488,6 +488,31 @@ $sequence "Reload_Empty_Nomen_Roni" {
 
 
 
+
+$sequence "Fire_Iron_Roni" {
+	"anims\Fire_Iron_Roni.smd"
+	activity "ACT_VM_PRIMARYATTACK_SCOPED" 1
+	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_M1911_View" }
+	{ event AE_FAS_EJECT_BRASS 1 "" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+
+$sequence "Fire1_Roni" {
+	"anims\Fire1_Roni.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_M1911_View" }
+	{ event AE_FAS_EJECT_BRASS 1 "" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+
 $collisionmodel "Phys.smd"
 {
 	$mass 10

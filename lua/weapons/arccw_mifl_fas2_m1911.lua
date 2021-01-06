@@ -352,9 +352,42 @@ SWEP.Attachments = {
 
 --- hierarchy ---
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[6].Installed or wep.Attachments[7].Installed then return anim .. "_akimbo" end
-    if wep.Attachments[5].Installed == "mifl_fas2_m1911_mag50" then return anim .. "_50" end
+    if wep.Attachments[6].Installed or wep.Attachments[7].Installed then 
+		return anim .. "_akimbo" 
+	end
+	
+    if wep.Attachments[3].Installed == "mifl_fas2_roni" and wep:Clip1() == 0 then
+        anim = anim .. "_roni"
+    end
+	
+    if wep.Attachments[5].Installed == "mifl_fas2_m1911_mag50" then 
+		anim = anim .. "_50" 
+	end
+
+    return anim	
 end
+
+--- i hate this shit ---
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep.Attachments[3].Installed == "mifl_fas2_roni" then
+        if anim == "idle_empty" then
+            return "idle"
+        elseif anim == "draw_empty" then
+            return "draw"
+        elseif anim == "holster_empty" then
+            return "holster"
+        elseif anim == "fire" then
+            return "fire_roni"
+        elseif anim == "fire_iron" then
+            return "fire_iron_roni"
+        elseif anim == "fire_empty" then
+            return "fire_roni"	
+        elseif anim == "fire_iron_empty" then
+            return "fire_iron_empty_roni"				
+        end
+    end
+end
+
 
 SWEP.Animations = {
     ["idle"] = {
@@ -489,5 +522,59 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LastClip1OutTime = 0.5,
         Time = 57 / 30
-    }
+    },
+    --------------------------------------------------------
+    ["reload_empty_roni"] = {
+        Source = "Reload_Empty_Roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5
+    },
+    ["reload_nomen_empty_roni"] = {
+        Source = "Reload_Empty_Nomen_Roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.4
+    },	
+    ["reload_empty_roni_50"] = {
+        Source = "Reload_Empty_50_Roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5
+    },
+    ["reload_nomen_empty_roni_50"] = {
+        Source = "Reload_Empty_Nomen_50_Roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3
+    },	
+    --------------------------------------------------------	
+    ["fire_roni"] = {
+        Source = "Fire1_Roni",
+        ShellEjectAt = 0
+    },		
+    ["fire_iron_roni"] = {
+        Source = "Fire_Iron_Roni",
+        ShellEjectAt = 0
+    },
+    ["fire_empty_roni"] = {
+        Source = "Fire1_Roni",
+        ShellEjectAt = 0
+    },
+    ["fire_iron_empty_roni"] = {
+        Source = "Fire1_Roni",
+        ShellEjectAt = 0
+    },	
 }
