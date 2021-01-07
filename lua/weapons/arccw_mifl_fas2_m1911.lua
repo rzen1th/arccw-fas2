@@ -111,8 +111,7 @@ SWEP.AttachmentElements = {
         Override_HolsterPos = Vector(6, -6, 0),
         Override_HolsterAng = Angle(-15, 25, 0),
         AttPosMods = {
-            [1] = {
-				bone = "Frame_BONE",		--- y dis no work :(((((((	
+            [1] = {	
                 vpos = Vector(0, -2, -0.18),
             },
             [2] = {
@@ -337,16 +336,15 @@ SWEP.Attachments = {
     },
     { 
         Slot = "optic",
-        Bone = "Frame_BONE",
+        Bone = "Slide_BONE",
         Offset = {
-            vpos = Vector(0, -0.2, -0.18),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(0, -2, -0.18),
+            vang = Angle(0, 0, -90)
         },
         Hidden = true,
         HideIfBlocked = true,
         RequireFlags = {"roni"},
         VMScale = Vector(1.25, 1.25, 1.25),
-        CorrectiveAng = Angle(0, 180, 0)
     },	
 }
 
