@@ -2,10 +2,6 @@
 {
 	"$baseTexture" "models\weapons\arccw_fas2\explosives\m79_grenade_diffuse"
 
-
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[.2 .2 .2]"
-	"$basemapalphaphongmask" 	"1"
 	"$phong" 			"1"
 	"$phongexponent" 		"50"
 	"$phongboost" 			"1"
