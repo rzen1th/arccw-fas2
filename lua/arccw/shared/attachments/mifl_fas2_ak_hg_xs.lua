@@ -33,3 +33,5 @@ att.Mult_DrawSpeeed = 1.5
 att.Mult_HolsterSpeed = 1.5
 
 att.Mult_HipDispersion = 0.6
+
+att.GivesFlags = {"ubgl_no"}

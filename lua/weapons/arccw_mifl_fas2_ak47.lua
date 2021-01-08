@@ -103,6 +103,11 @@ SWEP.CustomizeAng = Angle(10, 10, 5)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["rail_b"] = {
+        VMBodygroups = {
+            {ind = 6, bg = 1}
+        }
+    },
     ["mount"] = {
         VMBodygroups = {
             {ind = 4, bg = 1}
@@ -197,7 +202,10 @@ SWEP.AttachmentElements = {
             },
             [1] = {
                 vpos = Vector(0, 3, 4.05)
-            }
+            },
+            [4] = {
+                vpos = Vector(0, 15, 0.5)
+            }				
         }
     },
     ["mifl_fas2_ak_hg_12u"] = {
@@ -216,7 +224,10 @@ SWEP.AttachmentElements = {
             },
             [1] = {
                 vpos = Vector(0, 3, 4.05)
-            }
+            },
+            [4] = {
+                vpos = Vector(0, 15, 0.5)
+            }			
         }
     },
     ["mifl_fas2_ak_hg_xs"] = {
@@ -348,6 +359,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep.Attachments[1].Installed and (wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12u" or wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" ) then vm:SetBodygroup(4, 0) end
 
     if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end
+
+    if wep.Attachments[4].Installed and (wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12u" or wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" ) then vm:SetBodygroup(6, 0) end	
 end
 
 
@@ -560,11 +573,12 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "ak_frame",
         Offset = {
-            vpos = Vector(0, 12, 0),
+            vpos = Vector(0, 13, -0.6),
             vang = Angle(90, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
+        InstalledEles = {"rail_b"},		
         MergeSlots = {5}
     },
     {
@@ -573,11 +587,13 @@ SWEP.Attachments = {
         Slot = "ubgl",
         Bone = "ak_frame",
         Offset = {
-            vpos = Vector(0, 10.5, 0),
+            vpos = Vector(0, 10.5, -0.6),
             vang = Angle(90, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
-        }
+        },
+        ExcludeFlags = {"ubgl_no"},		
+        InstalledEles = {"rail_b"},			
     },
     {
         PrintName = "Tactical",

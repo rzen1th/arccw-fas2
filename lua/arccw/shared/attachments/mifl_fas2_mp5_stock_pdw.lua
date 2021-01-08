@@ -9,6 +9,6 @@ att.AutoStats = true
 att.Slot = {"mifl_fas2_mp5_stock", "mifl_fas2_g3_stock", "mifl_fas2_m11_stock"}
 att.SortOrder = 2
 
-att.Mult_SightTime = 0.9
+att.Mult_SightTime = 0.85
 att.Mult_SightedSpeedMult = 1.2
-att.Mult_Recoil = 1.1
+att.Mult_Recoil = 1.15

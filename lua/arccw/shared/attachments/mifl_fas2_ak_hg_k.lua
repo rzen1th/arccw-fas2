@@ -20,3 +20,5 @@ att.Mult_ReloadTime = 0.95
 att.Add_BarrelLength = -4
 
 att.Mult_HipDispersion = 0.8
+
+att.GivesFlags = {"ubgl_no"}

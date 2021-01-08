@@ -18,3 +18,5 @@ att.Mult_RPM = 1.2
 
 att.Add_BarrelLength = -4
 att.Mult_ShootPitch = 1.05
+
+att.GivesFlags = {"ubgl_no"}

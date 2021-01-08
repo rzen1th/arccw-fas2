@@ -68,6 +68,12 @@ $bodygroup "Stock"
 	studio "Stock_Fold.smd"			
 }
 
+$bodygroup "Bottom"
+{
+	blank
+	studio "Rail_Bottom.smd"	
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\svd\"
@@ -78,6 +84,7 @@ $cdmaterials "models\weapons\arccw_fas2\hands\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1\"
+$cdmaterials "models\weapons\arccw_fas2\sg55x\"
 
 $attachment "muzzle" "FLASH" 0 0 0 rotate 0 0 0
 $attachment "ejector" "EJECT" 0 0 0 rotate 0 0 0

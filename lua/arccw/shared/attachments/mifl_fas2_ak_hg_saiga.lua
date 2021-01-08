@@ -17,3 +17,5 @@ att.Mult_MoveSpeed = 0.95
 
 att.Add_BarrelLength = -2
 att.Mult_ShootPitch = 1.05
+
+att.GivesFlags = {"ubgl_no"}
