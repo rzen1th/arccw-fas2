@@ -859,13 +859,18 @@ sound.Add({
 })
 
 
-
 //P226
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_p226.MagOut",
 	channel = 		CHAN_ITEM1,
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/p226/p226_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_p226.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/p226/p226_magout_empty.wav"}
 })
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_p226.MagIn",

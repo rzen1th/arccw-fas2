@@ -135,6 +135,9 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
+    ["mifl_fas2_r454_stock"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },
     ["whisperer"] = {
         NameChange = "Quiet Bovine",
         TrueNameChange = "Quiet Bull",
@@ -146,6 +149,9 @@ SWEP.AttachmentElements = {
     ["b_short"] = {
         VMBodygroups = {{ind = 2, bg = 3}},
     },
+    ["b_snip"] = {
+        VMBodygroups = {{ind = 2, bg = 5}},
+    },	
     ["b_no"] = {
         NameChange = "Infant Bovine",
         TrueNameChange = "Baby Bull",
@@ -158,15 +164,13 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Optic", -- print name
+        PrintName = "Optic",
         DefaultAttName = "Iron Sights",
-        Slot = { "optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "RagingBullBase", -- relevant bone any attachments will be mostly referring to
+        Slot = { "optic_lp", "optic", "optic_sniper"},
+        Bone = "RagingBullBase",
         Offset = {
-            vpos = Vector(5, -4.155, 0), -- offset that the attachment will be relative to the bone
+            vpos = Vector(5, -4.155, 0),
             vang = Angle(0, 0, -90),
-            wpos = Vector(5, 0.739, -3.8),
-            wang = Angle(-10, 0, 180)
         },
         VMScale = Vector(1.2, 1.2, 1.2),
         InstalledEles = {"rail"},
@@ -177,21 +181,8 @@ SWEP.Attachments = {
         Slot = "mifl_fas2_r454_barrel",
         Bone = "RagingBullBase",
         Offset = {
-            vpos = Vector(9.5, -1.8, 0),
+            vpos = Vector(8, -0.2, 0),
             vang = Angle(0, 0, -90),
-            wpos = Vector(12, 0.782, -3.75),
-            wang = Angle(-9.79, 0, 180)
-        },
-    },
-    {
-        PrintName = "Underbarrel",
-        Slot = {"foregrip_pistol", "style_pistol"},
-        Bone = "RagingBullBase",
-        Offset = {
-            vpos = Vector(4.2, -2, 0),
-            vang = Angle(0,0, -90),
-            wpos = Vector(8, 0.602, -2),
-            wang = Angle(-10.216, 0, 180)
         },
     },
     {
@@ -205,6 +196,26 @@ SWEP.Attachments = {
         ExtraSightDist = 15,
         CorrectivePos = Vector(0.4, -2, -0.25),
     },
+    {
+        PrintName = "Calibre",
+        Slot = "mifl_fas2_r454_cal",
+        Bone = "RagingBullBase",
+        Offset = {
+            vpos = Vector(4.2, -2, 0),
+            vang = Angle(0,0, -90),
+        },
+    },	
+    {
+        PrintName = "Stock",
+        Slot = {"mifl_fas2_r454_stock"},
+        DefaultAttName = "Standard Stock",
+        Bone = "weapon_main",
+        Offset = {
+            vpos = Vector(-0.2, -1.8, -0.2),
+            vang = Angle(0, -90, 0),
+        },
+        ExcludeFlags = {"roni"},
+    },	
     {
         PrintName = "Ammo Type",
         Slot = "go_ammo",
@@ -222,8 +233,6 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(2, -3, -0.5),
             vang = Angle(0, 0, -90),
-            wpos = Vector(10, 1, -3.5),
-            wang = Angle(-9, 0, 180)
         },
         FreeSlot = true,
     },

@@ -23,6 +23,7 @@ $bodygroup "Barrel"
 	studio "Barrel_L.smd"
 	studio "Barrel_S.smd"	
 	studio "Barrel_X.smd"	
+	studio "Barrel_Snipe.smd"		
 	blank
 }
 
@@ -32,6 +33,12 @@ $bodygroup "Ammo"
 	blank
 }
 
+$bodygroup "Stock"
+{
+	blank
+	studio "Stock.smd"
+}
+
 $surfaceprop "default"
 
 $contents "solid"
@@ -39,6 +46,7 @@ $contents "solid"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\ragingbull\"
+$cdmaterials "models\weapons\arccw_fas2\ragbul_extra\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
