@@ -308,14 +308,24 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
-    if wep.Attachments[6].Installed or wep.Attachments[7].Installed  then
-        return anim .. "_akimbo"
+SWEP.Hook_SelectReloadAnimation = function(wep, anim)
+    if wep.Attachments[6].Installed or wep.Attachments[7].Installed then 
+		return anim .. "_akimbo" 
+	end
+	
+    if wep.Attachments[3].Installed == "mifl_fas2_p226_roni" then
+        anim = anim .. "_roni"
     end
 
-    if table.HasValue(wep:GetActiveElements(), "mag_33") then
-        return anim .. "_33"
-    end
+    if wep.Attachments[5].Installed == "mifl_fas2_p226_magx3" and wep.Attachments[3].Installed == "mifl_fas2_p226_roni" and wep:Clip1() == 0 then
+        anim = anim .. "_roni_dry"
+    end	
+	
+    if wep.Attachments[5].Installed == "mifl_fas2_p226_magx3" then 
+		anim = anim .. "_50" 
+	end
+
+    return anim	
 end
 
 SWEP.Animations = {
@@ -389,68 +399,53 @@ SWEP.Animations = {
         LHIKEaseOut = 0.5,
     },
 ---------------------------------------------------------
-    ["reload_33"] = {
-        Source = "reload_33",
+    ["reload_roni"] = {
+        Source = "reload_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.8,
         LHIKEaseOut = 0.5,
     },
-    ["reload_empty_33"] = {
-        Source = "reload_empty_33",
+    ["reload_empty_roni"] = {
+        Source = "reload_empty_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.4,
     },
-    ["reload_nomen_33"] = {
-        Source = "reload_nomen_33",
+    ["reload_nomen_roni"] = {
+        Source = "reload_nomen_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.4,
     },
-    ["reload_nomen_empty_33"] = {
-        Source = "reload_empty_nomen_33",
+    ["reload_nomen_empty_roni"] = {
+        Source = "reload_empty_nomen_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 1,
-        LHIKEaseOut = 0.4,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,
     },
-
 --------------------------------------------------------
     ["reload_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 60 / 30
     },
     ["reload_empty_akimbo"] = {
         Source = "reload_akimbo_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 65 / 30
-    },
-    ["reload_akimbo_33"] = {
-        Source = "reload_akimbo",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 72 / 30
-    },
-    ["reload_akimbo_empty_33"] = {
-        Source = "reload_akimbo_empty",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 77 / 30
     },
     ["reload_nomen_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 52 / 30
     },
     ["reload_nomen_empty_akimbo"] = {
         Source = "reload_akimbo_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 57 / 30
     },
 }
