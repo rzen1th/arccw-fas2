@@ -857,3 +857,43 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/explosive_m79/m79_remove.wav"}
 })
+
+
+
+//P226
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_p226.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/p226/p226_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_p226.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/p226/p226_magin.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_p226.MagInPartial",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/p226/p226_magin_partial.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_p226.SlideBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/p226/p226_slidepull.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_p226.SlideForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/p226/p226_sliderelease.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_p226.SlideStop",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/p226/p226_slidestop.wav"}
+})

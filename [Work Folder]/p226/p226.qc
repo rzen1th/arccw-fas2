@@ -1,20 +1,70 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons\view\pistols\p226.mdl"
+$modelname "weapons/arccw/mifl/fas2/c_p226.mdl"
+$include fesiug.qci
+$scale 2
 
 $bodygroup "p226"
 {
-	studio "ref.smd"
+	studio "Main.smd"
+	blank
 }
-$bodygroup "Hands"
+
+$bodygroup "Frame"
 {
-	studio "ref_hand_red.smd"
-	studio "ref_hand_blue.smd"
+	studio "Frame.smd"
+	studio "Frame_Smol.smd"
+	blank
 }
-$bodygroup "Barrel"
+
+$bodygroup "Slide"
+{
+	studio "Slide.smd"
+	studio "Slide_Long.smd"
+	studio "Slide_LongX.smd"
+	studio "Slide_Smol.smd"
+	blank
+}
+
+$bodygroup "UMP"
 {
 	blank
-	studio "suppressor.smd"
+	studio "UMP.smd"
+}
+
+$bodygroup "UMP_Sight"
+{
+	blank
+	studio "UMP_Sight.smd"
+}
+
+$bodygroup "Mag"
+{
+	studio "Mag.smd"
+	studio "Mag_X.smd"
+	studio "Mag_X2.smd"
+	studio "Mag_X3.smd"	
+	blank
+}
+
+$bodygroup "Rail_Top"
+{
+	blank
+	studio "Rail_Top.smd"
+}
+
+$bodygroup "Rail_Bottom"
+{
+	blank
+	studio "Rail_Bottom.smd"
+	studio "Rail_Bottom2.smd"	
+}
+
+$bodygroup "Stock"
+{
+	blank
+	studio "Stock_Raptor.smd"
+	studio "Stock.smd"	
 }
 
 
@@ -24,20 +74,21 @@ $contents "solid"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\view\pistols\P226\"
-$cdmaterials "models\weapons\view\hands\"
-$cdmaterials "models\weapons\view\accessories\"
-$cdmaterials "models\weapons\shells\"
+$cdmaterials "models\weapons\arccw_fas2\P226\"
+$cdmaterials "models\weapons\arccw_fas2\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\shells\"
+$cdmaterials "models\weapons\arccw_fas2\P226_Extra\"
+$cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
+$cdmaterials "models\weapons\arccw_fas2\kf2_g18\"
+$cdmaterials "models\weapons\arccw_fas2\mw2\"
 
 $attachment "muzzle" "Frame" -4.05 -1.57 0 rotate 0 -180 0
 $attachment "ejector" "Frame" -1.65 -1.61 0.22 rotate -30 -90 180
 $attachment "muzzle_suppressor" "Frame" -4.05 -1.57 0 rotate 0 -180 0
 $attachment "Sight1" "Frame" 0.98 -1.9 0.91 rotate 0 0 0
+$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
-$cbox 0 0 0 0 0 0
-
-$bbox -8.934 -6.374 -7.299 17.676 7.237 -0.827
-
+$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Frame" "" -2.318561 -9.400087 -2.795653 0 89.999982 -89.999982 0 0 0 0 0 0
 $definebone "Slide" "" -2.320715 -9.381457 -2.800651 0.000019 90.000016 -90.000016 0 0 0 0 0 0
 $definebone "Trigger" "" -2.331338 -9.102321 -1.788354 -35.000215 89.999927 -90.000037 0 0 0 0 0 0
@@ -126,7 +177,7 @@ $sequence "idle_empty_iron" {
 $sequence "draw" {
 	"p226_anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
-	{ event 5004 0 "Weapon.Deploy" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -136,7 +187,7 @@ $sequence "draw" {
 $sequence "holster" {
 	"p226_anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
-	{ event 5004 0 "Weapon.Holster" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -146,7 +197,7 @@ $sequence "holster" {
 $sequence "draw_empty" {
 	"p226_anims\draw_empty.smd"
 	activity "ACT_VM_DRAW_EMPTY" 1
-	{ event 5004 0 "Weapon.Deploy" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -156,7 +207,7 @@ $sequence "draw_empty" {
 $sequence "holster_empty" {
 	"p226_anims\holster_empty.smd"
 	activity "ACT_VM_HOLSTER_EMPTY" 1
-	{ event 5004 0 "Weapon.Holster" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -221,12 +272,12 @@ $sequence "fire_last_iron" {
 $sequence "reload" {
 	"p226_anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 10 "Weapon_p226.MagOut" }
-	{ event 5004 31 "Generic.Magpouch_Pistol" }
-	{ event 5004 39 "Generic.Cloth_Movement" }
-	{ event 5004 40 "Weapon_p226.MagInPartial" }
-	{ event 5004 45 "Weapon_p226.MagIn" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_p226.MagOut" }
+	{ event 5004 31 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 39 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 40 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 45 "Arccw_FAS2_Weapon_p226.MagIn" }
 	{ event 3018 50 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -236,15 +287,15 @@ $sequence "reload" {
 $sequence "reload_empty" {
 	"p226_anims\reload_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 8 "Weapon_p226.MagOutEmpty" }
-	{ event 5004 18 "Generic.Magpouch_Pistol" }
-	{ event 5004 26 "Generic.Cloth_Movement" }
-	{ event 5004 27 "Weapon_p226.MagInPartial" }
-	{ event 5004 34 "Weapon_p226.MagIn" }
-	{ event 5004 65 "Generic.Cloth_Movement" }
-	{ event 5004 66 "Weapon_p226.SlideBack" }
-	{ event 5004 70 "Weapon_p226.SlideForward" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_p226.MagOutEmpty" }
+	{ event 5004 18 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 26 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 27 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 34 "Arccw_FAS2_Weapon_p226.MagIn" }
+	{ event 5004 65 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_p226.SlideBack" }
+	{ event 5004 70 "Arccw_FAS2_Weapon_p226.SlideForward" }
 	{ event 3018 75 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -254,12 +305,12 @@ $sequence "reload_empty" {
 $sequence "reload_nomen" {
 	"p226_anims\reload_nomen.smd"
 	activity "ACT_VM_RELOAD_NOMEN" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 10 "Weapon_p226.MagOut" }
-	{ event 5004 21 "Generic.Magpouch_Pistol" }
-	{ event 5004 27 "Generic.Cloth_Movement" }
-	{ event 5004 28 "Weapon_p226.MagInPartial" }
-	{ event 5004 38 "Weapon_p226.MagIn" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_p226.MagOut" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 28 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 38 "Arccw_FAS2_Weapon_p226.MagIn" }
 	{ event 3018 38 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -269,15 +320,26 @@ $sequence "reload_nomen" {
 $sequence "reload_empty_nomen" {
 	"p226_anims\reload_empty_nomen.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
-	{ event 5004 0 "Generic.Cloth_Movement" }
-	{ event 5004 10 "Weapon_p226.MagOutEmpty" }
-	{ event 5004 21 "Generic.Magpouch_Pistol" }
-	{ event 5004 27 "Generic.Cloth_Movement" }
-	{ event 5004 28 "Weapon_p226.MagInPartial" }
-	{ event 5004 38 "Weapon_p226.MagIn" }
-	{ event 5004 47 "Weapon_p226.SlideStop" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_p226.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 28 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 38 "Arccw_FAS2_Weapon_p226.MagIn" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_p226.SlideStop" }
 	{ event 3018 48 "" }
 	fadein 0.2
 	fadeout 0.2
 	fps 30
+}
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }
