@@ -318,7 +318,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     end
 
     if wep.Attachments[5].Installed == "mifl_fas2_p226_magx3" and wep.Attachments[3].Installed == "mifl_fas2_p226_roni" and wep:Clip1() == 0 then
-        anim = anim .. "_roni_dry"
+        anim = anim .. "_dry"
     end	
 	
     if wep.Attachments[5].Installed == "mifl_fas2_p226_magx3" then 

@@ -2,7 +2,7 @@ SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
-SWEP.PrintName = "ASs2"
+SWEP.PrintName = "AUX-26"
 SWEP.TrueName = "MASS-26"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "Compact multipurpose shotgun that can be mounted on weapons but also fired independently. Only effective short range due to its very short barrel."
@@ -22,9 +22,9 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2_custom/c_m26.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2_custom/c_m26.mdl"
 SWEP.ViewModelFOV = 54
 
-SWEP.Damage = 16
+SWEP.Damage = 18
 SWEP.DamageMin = 5
-SWEP.Range = 30
+SWEP.Range = 40
 SWEP.Penetration = 2
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.MuzzleVelocity = 1050
@@ -57,8 +57,8 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 120
 
-SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 220 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 30 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 110
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses

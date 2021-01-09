@@ -36,15 +36,6 @@ local function Ammo(wep)
     return wep.Owner:GetAmmoCount("buckshot")
 end
 
----- fuck did i do wrong ?
---[[att.Hook_Think  = function(wep, ubgl)
-	if wep:GetInUBGL() then
-		return wep:DoLHIKAnimation("out", 30/60)
-	else	
-		return wep:DoLHIKAnimation("in", 30/60)
-	end
-end]]
-
 att.Hook_LHIK_TranslateAnimation = function(wep, key)
     if key == "idle" then
         if wep:GetInUBGL() then

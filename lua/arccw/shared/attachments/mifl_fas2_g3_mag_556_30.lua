@@ -14,11 +14,11 @@ att.Override_ClipSize = 30
 
 -- 5.56
 att.Mult_Damage = 0.6
-att.Mult_DamageMin = 0.6
+att.Mult_DamageMin = 0.4
 att.Mult_Recoil = 0.5
 att.Mult_RecoilSide = 0.5
 att.Mult_Penetration = 0.6
-att.Mult_Range = 0.75
+att.Mult_Range = 0.5
 att.Mult_RPM = 1.1
 att.Override_Ammo = "smg1"
 att.Override_Trivia_Class = "Assault Rifle"
