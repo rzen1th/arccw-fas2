@@ -119,6 +119,16 @@ SWEP.CustomizeAng = Angle(4, 20, 10)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["mifl_fas2_g20_stock_g18"] = {
+        VMBodygroups = {
+            {ind = 8, bg = 2},
+        },
+    },
+    ["mifl_fas2_g20_stock_raptor"] = {
+        VMBodygroups = {
+            {ind = 8, bg = 1},
+        },
+    },
     ["mifl_fas2_p226_slide_c"] = {
         VMBodygroups = {	{ind = 2, bg = 3}, {ind = 1, bg = 1}	},	},
     ["mifl_fas2_p226_slide_carbine"] = {
