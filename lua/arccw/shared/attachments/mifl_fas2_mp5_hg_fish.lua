@@ -1,6 +1,6 @@
 att.PrintName = "Swordfish Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_fish.png", "mips smooth")
-att.Description = ""
+att.Description = "Handguard with lots of rail and a cool looking ironsight. Improves performace but also increases weight due to the amount of rails."
 att.SortOrder = 4
 att.Desc_Pros = {
 }

@@ -1,6 +1,6 @@
 att.PrintName = "Whisper Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_sd.png", "mips smooth")
-att.Description = "Integrated suppressor."
+att.Icon = Material("entities/arccw_mifl_fas2_m249_hg_sd.png", "mips smooth")
+att.Description = "Incase you really want to be undetected while laying suppressive fire."
 att.SortOrder = 8
 att.Desc_Pros = {
 }

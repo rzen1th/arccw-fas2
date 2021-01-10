@@ -1,5 +1,5 @@
 att.PrintName = "No Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_sd.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m246_hg_xs.png", "mips smooth")
 att.Description = "Shorten the gun by half at the cost of everything, including your humanity."
 att.SortOrder = 8
 att.Desc_Pros = {

@@ -1,6 +1,6 @@
 att.PrintName = "Swordfish Stock"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_stock_fish.png", "mips smooth")
-att.Description = ""
+att.Description = "Heavy polymer stock. Not as heavy as those wooden ones."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

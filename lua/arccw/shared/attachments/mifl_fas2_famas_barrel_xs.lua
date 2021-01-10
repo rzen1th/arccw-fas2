@@ -1,6 +1,6 @@
 att.PrintName = "Obrez Frame"
 att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_no.png", "mips smooth")
-att.Description = "baguette groza."
+att.Description = "Reduced the length by half. Very manuverous but exchange for very poor performace."
 att.SortOrder = 2
 att.Desc_Pros = {
 }

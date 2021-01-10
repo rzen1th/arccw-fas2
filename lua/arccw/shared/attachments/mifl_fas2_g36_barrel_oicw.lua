@@ -1,7 +1,7 @@
 att.PrintName = "Grenadier Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_mgsl8.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_oicw.png", "mips smooth")
 att.Description = "Makeshift top mount XM25 Kit."
-att.SortOrder = 10
+att.SortOrder = 8
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

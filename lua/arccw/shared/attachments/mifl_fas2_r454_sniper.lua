@@ -1,5 +1,5 @@
 att.PrintName = "Sniper Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_r454_b_long.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_r454_b_long2.png", "mips smooth")
 att.Description = "Extended barrel for the most extreme of range."
 att.SortOrder = 12
 att.Desc_Pros = {

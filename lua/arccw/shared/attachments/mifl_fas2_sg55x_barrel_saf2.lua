@@ -1,5 +1,5 @@
 att.PrintName = "SAF Mod. 0 Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_sg55x_saf.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m249.png", "mips smooth")
 att.Description = "Full-length handguard making full use of the recoil-trappping hyper-burst mechanism, extending burst duration to 5 rounds instead of 3."
 att.SortOrder = 3
 att.Desc_Pros = {

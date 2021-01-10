@@ -1,5 +1,5 @@
 att.PrintName = "Compact Stock"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_stock.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_r454_stock.png", "mips smooth")
 att.Description = "Small wooden stock that dampen recoil slightly."
 att.Desc_Pros = {
 }
