@@ -100,7 +100,7 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(0, 2, 0)
+SWEP.ActivePos = Vector(0, -2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-4, -1, -2)
@@ -245,8 +245,8 @@ SWEP.Attachments = {
             vang = Angle(180,0,90),
         },
         InstalledEles = {"rail_2"},
-        ExtraSightDist = 12,
-        CorrectivePos = Vector(0.5, -2, -1),
+        ExtraSightDist = 8,
+        CorrectivePos = Vector(1, -2, -1),
         ExcludeFlags = {"mifl_fas2_g20_slide_raptor"}
     },
     {
