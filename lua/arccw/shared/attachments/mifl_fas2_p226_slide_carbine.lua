@@ -1,4 +1,4 @@
-att.PrintName = "Carbine Slide"
+att.PrintName = "Extended Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_slide17c.png", "mips smooth")
 att.Description = "Unusually long slide and barrel for unusually long range."
 att.SortOrder = 10

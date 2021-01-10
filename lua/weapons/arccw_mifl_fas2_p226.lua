@@ -43,7 +43,7 @@ SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 1
 SWEP.MaxRecoilBlowback = 0.5
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 500 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -87,7 +87,7 @@ SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.200
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.856, -1, 1.164),
+    Pos = Vector(-3.8, -2.5, 1.881),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -118,7 +118,26 @@ SWEP.CustomizeAng = Angle(4, 20, 10)
 
 SWEP.BarrelLength = 24
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    local optic = wep.Attachments[1].Installed or wep.Attachments[12].Installed
+    local slide = wep.Attachments[3].Installed
+    local laser = wep.Attachments[2].Installed	
+
+    if laser and slide == "mifl_fas2_p226_slide_c" then vm:SetBodygroup(7, 2) end
+    if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(4, 0) end
+    if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(6, 0) end	
+    if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(7, 0) end		
+end
+
+
 SWEP.AttachmentElements = {
+    ["mifl_fas2_p226_mag_45"] = {
+        VMBodygroups = {{ind = 5, bg = 3},},},
+    ["mifl_fas2_p226_mag_40"] = {
+        VMBodygroups = {{ind = 5, bg = 1},},},	
+    ["mifl_fas2_p226_mag_357"] = {
+        VMBodygroups = {{ind = 5, bg = 2},},},		
     ["mifl_fas2_g20_stock_g18"] = {
         VMBodygroups = {
             {ind = 8, bg = 2},
@@ -130,11 +149,29 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_p226_slide_c"] = {
-        VMBodygroups = {	{ind = 2, bg = 3}, {ind = 1, bg = 1}	},	},
+        VMBodygroups = {	{ind = 2, bg = 3}, {ind = 1, bg = 1}	},	
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(-6.5, 3, 0.15),
+            },
+        },		
+	},		
     ["mifl_fas2_p226_slide_carbine"] = {
-        VMBodygroups = {{ind = 2, bg = 1},},},
-    ["mifl_fas2_p226_slide_combat"] = {
-        VMBodygroups = {{ind = 2, bg = 2},},},	
+        VMBodygroups = {{ind = 2, bg = 1},},
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(-9.45, 3, 0.15),
+            },
+        },			
+	},		
+    ["mifl_fas2_p226_slide_long"] = {
+        VMBodygroups = {{ind = 2, bg = 2},},
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(-15, 3, 0.15),
+            },
+        },			
+},			
     ["akimbo"] = {
         Override_ActivePos = Vector(2, 0, 0),
     },
@@ -148,18 +185,18 @@ SWEP.AttachmentElements = {
         Override_HolsterAng = Angle(-15, 25, 0),
         AttPosMods = {
             [1] = {
-                vpos = Vector(0, 0, 3.7),
+                vpos = Vector(-3.5, 4.8, 0.15),
             },
             [2] = {
-                vpos = Vector(0, 9.5, 0.1),
+                vpos = Vector(-10, 1.6, 0.15),
                 --vang = Angle(90, -90, 0)
             },
             [4] = {
-                vpos = Vector(0, 8, 0.78),
+                vpos = Vector(-13.75, 2.8, 0.15),
             },
         },
         Override_IronSightStruct = {
-            Pos = Vector(-2.856, -5, -1.1),
+            Pos = Vector(-3.8, -10, 0.3),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1,
         },
@@ -197,20 +234,19 @@ SWEP.Attachments = {
         },
         InstalledEles = {"rail"},
         MergeSlots = {12},
-        VMScale = Vector(1.25, 1.25, 1.25),
-        CorrectiveAng = Angle(0, 0, 0)		
+        VMScale = Vector(1.25, 1.25, 1.25),	
     },
     {
         PrintName = "Tactical",
         Slot = {"tac"},
         Bone = "frame",
         Offset = {
-            vpos = Vector(0, 4.5, 0),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-6, 1.6, 0.15),
+            vang = Angle(180,0,90),
         },
         InstalledEles = {"rail_2"},
-        ExtraSightDist = 20,
-        CorrectivePos = Vector(1, -2, 0.5),
+        ExtraSightDist = 12,
+        CorrectivePos = Vector(0.5, -2, -1),
         ExcludeFlags = {"mifl_fas2_g20_slide_raptor"}
     },
     {
@@ -227,17 +263,17 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "glock_barrel",
+        Bone = "frame",
         Offset = {
-            vpos = Vector(0, 4.2, 0.78),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-8, 3, 0.15),
+            vang = Angle(180,0,90),
         },
         ExcludeFlags = {"mifl_fas2_g20_slide_whisper"}
     },
     {
         PrintName = "Magazine",
-        Slot = "mifl_fas2_g20_mag",
-        DefaultAttName = "17-Round 10mm"
+        Slot = "mifl_fas2_p226_mag",
+        DefaultAttName = "13-Round 9mm"
     },
     {
         PrintName = "Left Hand",
@@ -249,7 +285,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"akimbo"},
-        ExcludeFlags = {"roni"},
+        ExcludeFlags = {"ump_roni"},
         MergeSlots = {7},
     },
     {
@@ -272,7 +308,7 @@ SWEP.Attachments = {
             vpos = Vector(-0.2, -1.8, -0.2),
             vang = Angle(0, -90, 0),
         },
-        ExcludeFlags = {"roni"},
+        ExcludeFlags = {"ump_roni"},
     },
     {
         PrintName = "Ammo Type",
@@ -293,18 +329,17 @@ SWEP.Attachments = {
             vang = Angle(0, -90, 0),
         },
     },
-    { -- New feature just for this
+    { 
         Slot = "optic",
         Bone = "frame",
         Offset = {
-            vpos = Vector(0, 0, 3.5),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-3.5, 4.8, 0.15),
+            vang = Angle(180,0,90),
         },
         Hidden = true,
         HideIfBlocked = true,
-        RequireFlags = {"roni"},
+        RequireFlags = {"ump_roni"},
         VMScale = Vector(1.25, 1.25, 1.25),
-        CorrectiveAng = Angle(0, 180, 0)
     },
 }
 
@@ -316,13 +351,9 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if wep.Attachments[3].Installed == "mifl_fas2_p226_roni" then
         anim = anim .. "_roni"
     end
-
-    if wep.Attachments[5].Installed == "mifl_fas2_p226_magx3" and wep.Attachments[3].Installed == "mifl_fas2_p226_roni" and wep:Clip1() == 0 then
-        anim = anim .. "_dry"
-    end	
 	
-    if wep.Attachments[5].Installed == "mifl_fas2_p226_magx3" then 
-		anim = anim .. "_50" 
+    if wep.Attachments[5].Installed == "mifl_fas2_p226_mag_45" then 
+		anim = anim .. "_stick" 
 	end
 
     return anim	
@@ -405,7 +436,6 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,
     },
     ["reload_empty_roni"] = {
         Source = "reload_empty_roni",
@@ -413,24 +443,83 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.5,
-        LHIKEaseOut = 0.4,
     },
     ["reload_nomen_roni"] = {
         Source = "reload_nomen_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
-        LHIKOut = 0.6,
-        LHIKEaseOut = 0.4,
+        LHIKOut = 0.5,
     },
     ["reload_nomen_empty_roni"] = {
         Source = "reload_empty_nomen_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.4,
+        LHIKOut = 0.5,
+    },
+--------------------------------------------------------
+    ["reload_stick"] = {
+        Source = "reload_stick",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
         LHIKOut = 0.8,
         LHIKEaseOut = 0.5,
     },
+    ["reload_empty_stick"] = {
+        Source = "reload_empty_stick",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.4,
+    },
+    ["reload_nomen_stick"] = {
+        Source = "reload_nomen_stick",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.4,
+    },
+    ["reload_nomen_empty_stick"] = {
+        Source = "reload_empty_nomen_stick",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,
+    },
+--------------------------------------------------------
+    ["reload_roni_stick"] = {
+        Source = "reload_stick",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.3,
+    },
+    ["reload_nomen_roni_stick"] = {
+        Source = "reload_nomen_stick",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.3,
+    },	
+    ["reload_nomen_empty_roni_stick"] = {
+        Source = "reload_empty_nomen_stick_roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.3,
+    },
+    ["reload_empty_roni_stick"] = {
+        Source = "reload_empty_stick_roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKOut = 0.3,
+    },	
 --------------------------------------------------------
     ["reload_akimbo"] = {
         Source = "reload_akimbo",
