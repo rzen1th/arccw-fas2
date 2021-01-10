@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Pelly 240"
+SWEP.PrintName = "Pelly 24"
 SWEP.TrueName = "M24"
 SWEP.Trivia_Class = "Sniper Rifle"
 SWEP.Trivia_Desc = "Bolt action sniper rifle adopted by the US military. Excels in long range combat."

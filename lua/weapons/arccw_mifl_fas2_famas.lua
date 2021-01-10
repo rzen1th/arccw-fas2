@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Fusile"
+SWEP.PrintName = "FSL 556"
 SWEP.TrueName = "FAMAS"  --- its a fucking hybrid model ---
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "French bullpup assault rifle with exponentially high firerate. Good for longer range accuracy."

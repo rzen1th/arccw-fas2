@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Piss5"
+SWEP.PrintName = "PXC-9"
 SWEP.TrueName = "MP5A3"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "Arguably the best submachine gun to ever exist, the MP5 is accurate, stable and compact. Police and military forces all over the world make extensive use of it and its many variants."

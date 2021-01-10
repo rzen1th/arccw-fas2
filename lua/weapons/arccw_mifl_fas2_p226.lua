@@ -3,8 +3,8 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "P226"
-SWEP.TrueName = "[insert name]"
+SWEP.PrintName = "hohwohwohoowooowo"
+SWEP.TrueName = "P226"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "wowo"
 SWEP.Trivia_Manufacturer = "SIG Sauer"
@@ -25,10 +25,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 30
-SWEP.DamageMin = 24 -- damage done at maximum range
-SWEP.Range = 35 -- in METRES
-SWEP.Penetration = 6
+SWEP.Damage = 32
+SWEP.DamageMin = 18 -- damage done at maximum range
+SWEP.Range = 40 -- in METRES
+SWEP.Penetration = 3
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 -- IN M/S
