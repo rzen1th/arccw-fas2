@@ -1,5 +1,5 @@
 att.PrintName = "25-Round .45ACP"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_8.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_p226_mag_45.png", "mips smooth")
 att.Description = "Conversion offers more fire power. Long sticks mag allows for more rounds to be loaded."
 att.Desc_Pros = {
     "pro.magcap"

@@ -1,7 +1,7 @@
 att.PrintName = "Carbine Slide"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_slidec.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_p226_slide_x2.png", "mips smooth")
 att.Description = ""
-att.SortOrder = 4
+att.SortOrder = 8
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

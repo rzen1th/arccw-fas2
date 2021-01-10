@@ -1,5 +1,5 @@
 att.PrintName = "10-Round .40 S&W"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_8.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_p226_mag_40.png", "mips smooth")
 att.Description = "Conversion to a more beefy calibre type. A bit weaker than 10mm but sure packs a punch. The curve magazine allows for faster swapping."
 att.Desc_Pros = {
     "pro.magcap"
