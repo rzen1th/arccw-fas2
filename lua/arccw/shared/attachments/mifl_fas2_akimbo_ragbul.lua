@@ -1,6 +1,6 @@
 att.PrintName = "Left Raging Bull"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_ragbul.png", "smooth")
-att.Description = "wrist go bye bye."
+att.Description = "Strong grip you got there mate. Only for the most ambidestrous of desperados."
 att.Hidden = false
 att.Desc_Pros = {
     "+100% more gun",

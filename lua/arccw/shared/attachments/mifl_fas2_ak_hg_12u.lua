@@ -1,4 +1,4 @@
-att.PrintName = "Ratnik Kurz Handguard"
+att.PrintName = "Ratnukz Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_12u.png", "mips smooth")
 att.Description = "Modern fifth-generation handguard with shorter barrel. Better handling and hip-firing, but worse range."
 att.SortOrder = -0.5

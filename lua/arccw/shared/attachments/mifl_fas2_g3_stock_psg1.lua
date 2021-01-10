@@ -1,6 +1,6 @@
 att.PrintName = "Heavy Stock"
 att.Icon = Material("entities/arccw_mifl_fas2_g3_stock_heavy.png", "mips smooth")
-att.Description = "BIG."
+att.Description = "Even heavier stock offers great recoil management."
 att.SortOrder = 11
 att.Desc_Pros = {
 }

@@ -1,6 +1,6 @@
-att.PrintName = "[insertname2] Handguard"
+att.PrintName = "Marksman Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_g3_hg_lont.png", "mips smooth")
-att.Description = "Short barrel"
+att.Description = "Shorten PSG-1 barrel. Still retains its longer brother capability but with greater handling. It is however not as long as the default G3 barrel."
 att.SortOrder = 2
 att.Desc_Pros = {
 }

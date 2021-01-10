@@ -1,6 +1,6 @@
 att.PrintName = "UMP Kit"
 att.Icon = Material("entities/arccw_mifl_fas2_p226_ump.png")
-att.Description = "Aftermarket modification kit turning a pistol into some sort of short barrel carbine. Longer top rail allows the attachment of regular sized optics, and bump slide enables the use of unstable pseudo-automatic fire."
+att.Description = "Aftermarket modification kit ripped straight from a UMP. Longer top rail allows the attachment of regular sized optics."
 att.SortOrder = 8
 att.Slot = {"mifl_fas2_p226_slide"}
 
