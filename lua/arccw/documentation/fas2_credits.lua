@@ -1,3 +1,4 @@
+/*
 --- to the 5 people that decompiled this mod for whatever reason and read this
 --- please dont fucking make cheaty attachment or anything like that
 --- thank you very much
@@ -52,7 +53,7 @@ TheOnly8Z
 -m79 grenades 
 -stuff
 
-Tripwire (Killing Floor 2)
+Tripwire (Killing Floor 2) --- very naisu
 -HEAT Barrel (M4)
 -EOD Barrel (MP5) 
 -10mm Mag (MP5) 
@@ -104,3 +105,6 @@ Google Images
 -Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
 -HK G41/empty (ava, warface rip, pretty fucking sure these two are the same)
 -ClearSkyC (warface rip)
+
+
+*/
