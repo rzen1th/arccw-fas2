@@ -45,3 +45,5 @@ att.Override_Firemodes = {
         Mode = 0
     }
 }
+
+att.AddSuffix = " Roni"

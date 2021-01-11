@@ -195,6 +195,7 @@ SWEP.Attachments = {
         },
         ExtraSightDist = 15,
         CorrectivePos = Vector(0.4, -2, -0.25),
+        ExcludeFlags = {"b_snip"}
     },
     {
         PrintName = "Calibre",
@@ -244,6 +245,12 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local reloadtime = (wep.Primary.ClipSize - wep:Clip1())
 
     return "Reload" .. reloadtime .. nomen
+end
+
+SWEP.Hook_SelectFireAnimation = function(wep, anim)
+    if anim == "fire_iron" and wep:GetBuff("Recoil") > 2 then
+        return "fire"
+    end
 end
 
 SWEP.Animations = {

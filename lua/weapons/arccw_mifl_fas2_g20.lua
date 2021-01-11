@@ -289,8 +289,6 @@ function SWEP:Hook_NameChange(name)
         post = "L"
     elseif slide == "mifl_fas2_g20_slide_raptor" then
         post = " Raptor"
-    elseif slide == "mifl_fas2_roni" then
-        post = " Carbine"
     elseif slide == "mifl_fas2_g20_slide_c" then
         post = " Compact"
     elseif slide == "mifl_fas2_g20_slide_18" then
@@ -299,7 +297,7 @@ function SWEP:Hook_NameChange(name)
         if cal == "17" then cal = "18-K" else post = "-K Auto" end
     end
 
-    return pre .. cal .. post .. (self:GetBuff_Override("AddSuffix") or "")
+    return pre .. cal .. post
 end
 
 SWEP.Attachments = {

@@ -1,6 +1,6 @@
 att.PrintName = "Whisper Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_r454_b_sd.png")
-att.Description = "Some gun nerds may claim \"revolvers can't be suppressed\", but three satanic rituals complete with blood sacrfices and a pact with the devil will make this revolver quieter than the fart you attempted to hide during class. And just like this revolver, everyone heard it."
+att.Description = "Some gun nerds may claim \"revolvers can't be suppressed\", but three satanic rituals complete with blood sacrfices and a pact with the devil will make this revolver quieter than the fart you attempted to hide during class. And just like this revolver, everyone heard it anyways."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -1,6 +1,6 @@
 att.PrintName = "Sniper Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_r454_b_long2.png", "mips smooth")
-att.Description = "Extended barrel for the most extreme of range."
+att.Description = "Extremely long barrel complete with wooden foregrip. For real long range hunting."
 att.SortOrder = 12
 att.Desc_Pros = {
 }
@@ -11,17 +11,19 @@ att.Slot = "mifl_fas2_r454_barrel"
 
 att.ActivateElements = {"b_snip"}
 
-att.Mult_MoveSpeed = 0.95
+att.Mult_MoveSpeed = 0.9
 
-att.Mult_Range = 2.2
-att.Mult_Recoil = 0.6
-att.Mult_SightTime = 1.6
-att.Mult_AccuracyMOA = 0.45
-att.Mult_RPM = 0.7
+att.Mult_Range = 3
+att.Mult_Recoil = 0.5
+att.Mult_RecoilSide = 0.5
+att.Mult_SightTime = 1.75
+att.Mult_AccuracyMOA = 0.2
+att.Mult_RPM = 0.65
+att.Mult_HipDispersion = 1.5
 
-att.Add_BarrelLength = 9
+att.Add_BarrelLength = 10
 
-att.Mult_ShootPitch = 0.6
+att.Mult_ShootPitch = 0.7
 
 att.LHIK = true
 att.LHIK_Priority = -2
