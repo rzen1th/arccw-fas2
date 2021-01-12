@@ -211,8 +211,8 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExtraSightDist = 15,
-        CorrectivePos = Vector(1.2, -2, -5)
+        ExtraSightDist = 6,
+        CorrectivePos = Vector(1.6, -1, -2)
     },
     {
         PrintName = "Magazine",

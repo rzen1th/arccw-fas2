@@ -141,12 +141,12 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 0},
             {ind = 5, bg = 0},
         },
-        Override_ActivePos = Vector(2, -2, -2),
+        Override_ActivePos = Vector(1.5, -4, -1.5),
         Override_HolsterPos = Vector(6, -6, 0),
         Override_HolsterAng = Angle(-15, 25, 0),
         AttPosMods = {
             [1] = {
-                vpos = Vector(0, 0, 3.7),
+                vpos = Vector(0, 0, 3.9),
             },
             [2] = {
                 vpos = Vector(0, 9.5, 0.1),
@@ -324,8 +324,8 @@ SWEP.Attachments = {
             vang = Angle(0, -90, 0),
         },
         InstalledEles = {"rail_2"},
-        ExtraSightDist = 8,
-        CorrectivePos = Vector(1, 2, -0.5),
+        ExtraSightDist = 10,
+        CorrectivePos = Vector(0.5, 2, -0.5),
         ExcludeFlags = {"mifl_fas2_g20_slide_raptor"}
     },
     {
@@ -412,7 +412,7 @@ SWEP.Attachments = {
         Slot = "optic",
         Bone = "glock_main",
         Offset = {
-            vpos = Vector(0, 0, 3.5),
+            vpos = Vector(0, 0, 3.8),
             vang = Angle(0, -90, 0),
         },
         Hidden = true,

@@ -350,8 +350,8 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExtraSightDist = 15,
-        CorrectivePos = Vector(-2, -5, 5),
+        ExtraSightDist = 12,
+        CorrectivePos = Vector(-1.5, -5, 3),
     },
     {
         PrintName = "Magazine",
@@ -436,7 +436,7 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
-        Source = "idle",
+        Source = "fire1_scoped",
         ShellEjectAt = 0,
     },
     ["reload"] = {
