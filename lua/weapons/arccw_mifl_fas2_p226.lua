@@ -245,8 +245,8 @@ SWEP.Attachments = {
             vang = Angle(180,0,90),
         },
         InstalledEles = {"rail_2"},
-        ExtraSightDist = 8,
-        CorrectivePos = Vector(1, -2, -1),
+        ExtraSightDist = 9,
+        CorrectivePos = Vector(1, 0, -1),
         ExcludeFlags = {"mifl_fas2_g20_slide_raptor"}
     },
     {
