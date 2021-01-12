@@ -8,7 +8,7 @@ att.Desc_Cons = {
 }
 att.Slot = "perk_fas2"
 
-att.InvAtt = "perk_fastreload"
+att.InvAtt = {"perk_fastreload", "go_perk_fastreload"}
 
 att.Mult_DrawTime = 0.8
 att.Mult_SightTime = 0.95

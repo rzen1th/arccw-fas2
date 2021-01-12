@@ -39,3 +39,6 @@ att.Hook_GetShootSound = function(wep, fsound)
 end
 
 att.AddSuffix = " A9"
+
+
+att.InvAtt = {"mifl_fas2_g36_mag_9mm_15", "mifl_fas2_g20_mag_17_9", "mifl_fas2_m4a1_mag_9mm_21", "mifl_fas2_m11_mag_16", "mifl_fas2_m24_mag_9mm", "mifl_fas2_mp5_mag_15", "mifl_fas2_sg55x_mag_45"}
