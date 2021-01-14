@@ -22,7 +22,7 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m1911.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m1911.mdl"
 SWEP.ViewModelFOV = 60
 SWEP.DefaultBodygroups = "000000000000"
-SWEP.Damage = 29
+SWEP.Damage = 35
 SWEP.DamageMin = 17 -- damage done at maximum range
 SWEP.Range = 30 -- in METRES
 SWEP.Penetration = 3
@@ -52,7 +52,7 @@ SWEP.BulletBones = {
 
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 230
-SWEP.AccuracyMOA = 12 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 8 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 310 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 220
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
@@ -111,7 +111,7 @@ SWEP.AttachmentElements = {
         Override_HolsterPos = Vector(6, -6, 0),
         Override_HolsterAng = Angle(-15, 25, 0),
         AttPosMods = {
-            [1] = {	
+            [1] = {
                 vpos = Vector(0, -2, -0.18),
             },
             [2] = {
@@ -145,7 +145,7 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_g20_stock_g18"] = {
         VMBodygroups = {{ind = 4, bg = 2}}
-    },	
+    },
     ["mifl_fas2_m1911_mag50"] = {
         VMBodygroups = {{ind = 2, bg = 1}}
     },
@@ -218,7 +218,7 @@ SWEP.AttachmentElements = {
         TrueNameChange = "M1911-SD",
         NameChange = "11GI-SD",
         VMBodygroups = {{ind = 1, bg = 6}},
-    }	
+    }
 }
 
 SWEP.WorldModelOffset = {
@@ -239,7 +239,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90)
         },
         InstalledEles = {"rail"},
-        MergeSlots = {12},		
+        MergeSlots = {12},
         ExtraSightDist = 13
     },
     {
@@ -273,7 +273,7 @@ SWEP.Attachments = {
             vpos = Vector(2.5, -0.2, -0.15),
             vang = Angle(0, 0, -90)
         },
-        ExcludeFlags = {"mifl_fas2_m1911_slide_whisper", "mifl_fas2_m1911_slide_2x"}
+        ExcludeFlags = {"mifl_fas2_g20_slide_whisper", "mifl_fas2_m1911_slide_2x"}
     },
     {
         PrintName = "Magazine",
@@ -290,7 +290,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0)
         },
         InstalledEles = {"akimbo"},
-        ExcludeFlags = {"roni"},		
+        ExcludeFlags = {"roni"},
         MergeSlots = {7}
     },
     {
@@ -313,7 +313,7 @@ SWEP.Attachments = {
             vpos = Vector(-0.2, -1.8, -0.2),
             vang = Angle(0, -90, 0)
         },
-        ExcludeFlags = {"roni"},		
+        ExcludeFlags = {"roni"},
     },
     {
         PrintName = "Ammo Type",
@@ -328,13 +328,13 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "glock_slide", 
+        Bone = "glock_slide",
         Offset = {
             vpos = Vector(0.5, 3, -0.2),
             vang = Angle(0, -90, 0)
         }
     },
-    { 
+    {
         Slot = "optic",
         Bone = "Slide_BONE",
         Offset = {
@@ -345,24 +345,24 @@ SWEP.Attachments = {
         HideIfBlocked = true,
         RequireFlags = {"roni"},
         VMScale = Vector(1.25, 1.25, 1.25),
-    },	
+    },
 }
 
 --- hierarchy ---
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[6].Installed or wep.Attachments[7].Installed then 
-		return anim .. "_akimbo" 
-	end
-	
+    if wep.Attachments[6].Installed or wep.Attachments[7].Installed then
+        return anim .. "_akimbo"
+    end
+
     if wep.Attachments[3].Installed == "mifl_fas2_roni" and wep:Clip1() == 0 then
         anim = anim .. "_roni"
     end
-	
-    if wep.Attachments[5].Installed == "mifl_fas2_m1911_mag50" then 
-		anim = anim .. "_50" 
-	end
 
-    return anim	
+    if wep.Attachments[5].Installed == "mifl_fas2_m1911_mag50" then
+        anim = anim .. "_50"
+    end
+
+    return anim
 end
 
 --- i hate this shit ---
@@ -379,9 +379,9 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
         elseif anim == "fire_iron" then
             return "fire_iron_roni"
         elseif anim == "fire_empty" then
-            return "fire_roni"	
+            return "fire_roni"
         elseif anim == "fire_iron_empty" then
-            return "fire_iron_empty_roni"				
+            return "fire_iron_empty_roni"
         end
     end
 end
@@ -539,7 +539,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.4
-    },	
+    },
     ["reload_empty_roni_50"] = {
         Source = "Reload_Empty_50_Roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
@@ -557,12 +557,12 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.3
-    },	
-    --------------------------------------------------------	
+    },
+    --------------------------------------------------------
     ["fire_roni"] = {
         Source = "Fire1_Roni",
         ShellEjectAt = 0
-    },		
+    },
     ["fire_iron_roni"] = {
         Source = "Fire_Iron_Roni",
         ShellEjectAt = 0
@@ -574,5 +574,5 @@ SWEP.Animations = {
     ["fire_iron_empty_roni"] = {
         Source = "Fire1_Roni",
         ShellEjectAt = 0
-    },	
+    },
 }

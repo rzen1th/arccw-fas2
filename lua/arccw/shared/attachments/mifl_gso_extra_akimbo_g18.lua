@@ -12,6 +12,8 @@ att.AutoStats = true
 att.Mult_HipDispersion = 2
 att.Slot = "gso_extra_pistol_akimbo"
 
+att.Ignore = true
+
 att.ModelOffset = Vector(-1, -0.2, 0.5)
 
 att.GivesFlags = {"handlocked"}

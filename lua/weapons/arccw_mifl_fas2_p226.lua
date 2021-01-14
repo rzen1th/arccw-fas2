@@ -25,7 +25,7 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 32
+SWEP.Damage = 25
 SWEP.DamageMin = 18 -- damage done at maximum range
 SWEP.Range = 40 -- in METRES
 SWEP.Penetration = 3
@@ -54,7 +54,7 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 220
 
-SWEP.AccuracyMOA = 12 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 7 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 100
 
@@ -122,12 +122,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local optic = wep.Attachments[1].Installed or wep.Attachments[12].Installed
     local slide = wep.Attachments[3].Installed
-    local laser = wep.Attachments[2].Installed	
+    local laser = wep.Attachments[2].Installed
 
     if laser and slide == "mifl_fas2_p226_slide_c" then vm:SetBodygroup(7, 2) end
     if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(4, 0) end
-    if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(6, 0) end	
-    if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(7, 0) end		
+    if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(6, 0) end
+    if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(7, 0) end
 end
 
 
@@ -135,9 +135,9 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_p226_mag_45"] = {
         VMBodygroups = {{ind = 5, bg = 3},},},
     ["mifl_fas2_p226_mag_40"] = {
-        VMBodygroups = {{ind = 5, bg = 1},},},	
+        VMBodygroups = {{ind = 5, bg = 1},},},
     ["mifl_fas2_p226_mag_357"] = {
-        VMBodygroups = {{ind = 5, bg = 2},},},		
+        VMBodygroups = {{ind = 5, bg = 2},},},
     ["mifl_fas2_g20_stock_g18"] = {
         VMBodygroups = {
             {ind = 8, bg = 2},
@@ -149,29 +149,29 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_p226_slide_c"] = {
-        VMBodygroups = {	{ind = 2, bg = 3}, {ind = 1, bg = 1}	},	
+        VMBodygroups = {	{ind = 2, bg = 3}, {ind = 1, bg = 1}	},
         AttPosMods = {
             [4] = {
                 vpos = Vector(-6.5, 3, 0.15),
             },
-        },		
-	},		
-    ["mifl_fas2_p226_slide_carbine"] = {
+        },
+    },
+    ["mifl_fas2_p226_slide_long"] = {
         VMBodygroups = {{ind = 2, bg = 1},},
         AttPosMods = {
             [4] = {
                 vpos = Vector(-9.45, 3, 0.15),
             },
-        },			
-	},		
-    ["mifl_fas2_p226_slide_long"] = {
+        },
+    },
+    ["mifl_fas2_p226_slide_carbine"] = {
         VMBodygroups = {{ind = 2, bg = 2},},
         AttPosMods = {
             [4] = {
                 vpos = Vector(-15, 3, 0.15),
             },
-        },			
-},			
+        },
+},
     ["akimbo"] = {
         Override_ActivePos = Vector(2, 0, 0),
     },
@@ -234,7 +234,7 @@ SWEP.Attachments = {
         },
         InstalledEles = {"rail"},
         MergeSlots = {12},
-        VMScale = Vector(1.25, 1.25, 1.25),	
+        VMScale = Vector(1.25, 1.25, 1.25),
     },
     {
         PrintName = "Tactical",
@@ -329,7 +329,7 @@ SWEP.Attachments = {
             vang = Angle(0, -90, 0),
         },
     },
-    { 
+    {
         Slot = "optic",
         Bone = "frame",
         Offset = {
@@ -344,19 +344,19 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[6].Installed or wep.Attachments[7].Installed then 
-		return anim .. "_akimbo" 
-	end
-	
+    if wep.Attachments[6].Installed or wep.Attachments[7].Installed then
+        return anim .. "_akimbo"
+    end
+
     if wep.Attachments[3].Installed == "mifl_fas2_p226_roni" then
         anim = anim .. "_roni"
     end
-	
-    if wep.Attachments[5].Installed == "mifl_fas2_p226_mag_45" then 
-		anim = anim .. "_stick" 
-	end
 
-    return anim	
+    if wep.Attachments[5].Installed == "mifl_fas2_p226_mag_45" then
+        anim = anim .. "_stick"
+    end
+
+    return anim
 end
 
 SWEP.Animations = {
@@ -505,7 +505,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.3,
-    },	
+    },
     ["reload_nomen_empty_roni_stick"] = {
         Source = "reload_empty_nomen_stick_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
@@ -519,7 +519,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.4,
         LHIKOut = 0.3,
-    },	
+    },
 --------------------------------------------------------
     ["reload_akimbo"] = {
         Source = "reload_akimbo",
