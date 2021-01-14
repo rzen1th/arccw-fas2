@@ -2,24 +2,62 @@
 
 $modelname "weapons\view\support\rpk.mdl"
 
-$bodygroup "studio"
+$bodygroup "1"
 {
-	studio "ref_rpk.smd"
+	studio "Main.smd"
+	blank
 }
-$bodygroup "Hands"
+$bodygroup "Mag"
 {
-	studio "ref_hand_red.smd"
-	studio "ref_hand_blue.smd"
+	studio "Mag.smd"
+	studio "Mag_Drum.smd"	
+	studio "Mag_Bizon.smd"	
+	studio "762md"	
+	studio "545.smd"	
+	studio "556_30.smd"
+	studio "939_40.smd"	
+	studio "12G.smd"
+	blank
 }
-$bodygroup "Barrel"
+$bodygroup "HG"
+{
+	studio "HG.smd"
+	studio "HG_K.smd"
+	studio "HG_Obrez.smd"
+	studio "HG_Elys.smd"
+	studio "HG_Spuk.smd"
+	studio "HG_ASVAL.smd"
+	studio "HG_12.smd"	
+	blank	
+}
+$bodygroup "Iron"
 {
 	blank
-	studio "ref_suppressor.smd"
+	studio "Rail_Optic.smd"
 }
-$bodygroup "Sights"
+$bodygroup "Iron2"
 {
 	blank
-	studio "ref_PSO.smd"
+	studio "Iron_Spuk.smd"
+}
+$bodygroup "Rail_Bottom"
+{
+	blank
+	studio "Rail_Bottom.smd"
+}
+$bodygroup "Stock"
+{
+	studio "Stock.smd"
+	studio "Stock_Ske2.smd"	
+	studio "Stock_Adaptor.smd"		
+	studio "Stock_Fold.smd"		
+	blank
+}
+$bodygroup "Grip"
+{
+	studio "Grip.smd"
+	studio "Grip_Heavy.smd"		
+	blank
 }
 
 
