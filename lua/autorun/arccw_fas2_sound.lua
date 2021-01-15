@@ -902,3 +902,46 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/p226/p226_slidestop.wav"}
 })
+
+
+
+
+
+
+//DE
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_DEagle.MagOut",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/deserteagle/de_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_DEagle.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/deserteagle/de_magout_empty.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_DEagle.MagInNomen",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/deserteagle/de_magin_nomen.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_DEagle.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/deserteagle/de_magin.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_DEagle.MagInPartial",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/deserteagle/de_magin_partial.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_DEagle.SlideStop",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/deserteagle/de_sliderelease.wav"}
+})

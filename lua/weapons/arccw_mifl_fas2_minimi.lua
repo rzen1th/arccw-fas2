@@ -67,15 +67,6 @@ SWEP.Firemodes = {
     {
         Mode = 2,
     },
-    {
-        Mode = -3,
-    },
-    {
-        Mode = 1,
-    },
-    {
-        Mode = 0
-    }
 }
 
 SWEP.AccuracyMOA = 3.75 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
