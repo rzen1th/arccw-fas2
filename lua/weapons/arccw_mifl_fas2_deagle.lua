@@ -37,7 +37,7 @@ SWEP.RecoilSide = 0.8
 SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 0.7
 SWEP.MaxRecoilBlowback = 0.5
-SWEP.Delay = 60 / 500 -- 60 / RPM.
+SWEP.Delay = 60 / 400 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Firemodes = {
@@ -98,6 +98,18 @@ SWEP.CustomizePos = Vector(6, -3, -0.5)
 SWEP.CustomizeAng = Angle(4, 20, 10)
 SWEP.BarrelLength = 12
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    local optic = wep.Attachments[1].Installed or wep.Attachments[12].Installed
+    local slide = wep.Attachments[3].Installed
+
+    if optic and slide == "mifl_fas2_deagle_slide_2x" then vm:SetBodygroup(5, 2) end
+    if optic and slide == "mifl_fas2_g20_slide_whisper" then vm:SetBodygroup(5, 3) end	
+    if optic and slide == "mifl_fas2_g20_slide_whisper" then vm:SetBodygroup(6, 2) end		
+    if optic and slide == "mifl_fas2_roni_marksman" then vm:SetBodygroup(5, 0) end
+    if optic and slide == "mifl_fas2_roni_marksman" then vm:SetBodygroup(6, 0) end
+end
+
 SWEP.AttachmentElements = {
     ["mifl_fas2_g20_stock_g18"] = {
         VMBodygroups = {
@@ -118,7 +130,7 @@ SWEP.AttachmentElements = {
         Override_HolsterAng = Angle(-15, 25, 0),
         AttPosMods = {
             [1] = {
-                vpos = Vector(0, -2, -0.18),
+            vpos = Vector(-3, -0.7, 2.625),
             },
             [2] = {
                 vpos = Vector(9, -1.8, -0.18),
@@ -150,14 +162,14 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 2}},
     },
     ["mifl_fas2_deagle_slide_c"] = {
-        NameChange = "Infant Talon",
+        NameChange = "Talon Hatchling",
         TrueNameChange = "Deagle-C",
         VMBodygroups = {{ind = 2, bg = 4}, {ind = 1, bg = 1}},
     },	
     ["mifl_fas2_deagle_slide_r"] = {
-        NameChange = "Talon Hatchling",
+        NameChange = "Scav Talon",
         TrueNameChange = "Deagle-R",
-        VMBodygroups = {{ind = 2, bg = 4}, {ind = 1, bg = 1}},
+        VMBodygroups = {{ind = 2, bg = 3}, {ind = 1, bg = 1}},
     },		
     ["mifl_fas2_deagle_slide_2x"] = {
         NameChange = "Orthus Talon",
@@ -220,7 +232,7 @@ SWEP.Attachments = {
         Bone = "frame",
         DefaultAttName = "Default Slide",
         Offset = {
-            vpos = Vector(-3, -0.7, 2.625),
+            vpos = Vector(-1.5, 2, 2.625),
             vang = Angle(0, 0, -90)
         }
     },
@@ -250,7 +262,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0)
         },
         InstalledEles = {"akimbo"},
-        ExcludeFlags = {"roni"},
+        ExcludeFlags = {"roni_dmr"},
         MergeSlots = {7}
     },
     {
@@ -266,7 +278,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"mifl_fas2_m1911_stock"},
+        Slot = {"mifl_fas2_g20_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "weapon_main",
         Offset = {
@@ -298,12 +310,12 @@ SWEP.Attachments = {
         Slot = "optic",
         Bone = "Slide_BONE",
         Offset = {
-            vpos = Vector(0, -2, -0.18),
+            vpos = Vector(-3, -0.7, 2.625),
             vang = Angle(0, 0, -90)
         },
         Hidden = true,
         HideIfBlocked = true,
-        RequireFlags = {"roni"},
+        RequireFlags = {"roni_dmr"},
         VMScale = Vector(1.25, 1.25, 1.25),
     },
 }
