@@ -74,6 +74,13 @@ $bodygroup "Bottom"
 	studio "Rail_Bottom.smd"	
 }
 
+$bodygroup "Grip"
+{
+	studio "Grip.smd"
+	studio "Grip_Heavy.smd"	
+	blank
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\svd\"
