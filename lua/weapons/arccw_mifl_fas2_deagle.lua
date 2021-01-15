@@ -109,9 +109,9 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 2},
         },
     },
-    ["roni"] = {
+    ["roni_dmr"] = {
         VMBodygroups = {
-            {ind = 1, bg = 5},
+            --- {ind = 1, bg = 5},
         },
         Override_ActivePos = Vector(0, 0, -1),
         Override_HolsterPos = Vector(6, -6, 0),
