@@ -125,12 +125,12 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             --- {ind = 1, bg = 5},
         },
-        Override_ActivePos = Vector(0, 0, -1),
+        Override_ActivePos = Vector(-1, -4, -1),
         Override_HolsterPos = Vector(6, -6, 0),
         Override_HolsterAng = Angle(-15, 25, 0),
         AttPosMods = {
             [1] = {
-            vpos = Vector(-3, -0.7, 2.625),
+            vpos = Vector(-3, -1.85, 2.625),
             },
             [2] = {
                 vpos = Vector(9, -1.8, -0.18),
@@ -141,8 +141,8 @@ SWEP.AttachmentElements = {
             },
         },
         Override_IronSightStruct = {
-            Pos = Vector(-3.56, -2, -0.35),
-            Ang = Angle(0, 0, 0),
+			Pos = Vector(-4.875, -8, -0.08),
+            Ang = Angle(0.2, 0, 0),
             Magnification = 1.1,
         },
     },
@@ -212,7 +212,7 @@ SWEP.Attachments = {
         },
         InstalledEles = {"rail"},
         MergeSlots = {12},
-        ExtraSightDist = 13
+        ExtraSightDist = 8
     },
     {
         PrintName = "Tactical",
@@ -310,7 +310,7 @@ SWEP.Attachments = {
         Slot = "optic",
         Bone = "Slide_BONE",
         Offset = {
-            vpos = Vector(-3, -0.7, 2.625),
+            vpos = Vector(-3, -1.85, 2.625),
             vang = Angle(0, 0, -90)
         },
         Hidden = true,
@@ -447,7 +447,7 @@ SWEP.Animations = {
         LHIKEaseOut = 0.25
     },
     ["reload_nomen_empty_roni"] = {
-        Source = "reload_empty_nomen",
+        Source = "reload_nomen_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.3,
