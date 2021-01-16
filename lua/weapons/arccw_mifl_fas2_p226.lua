@@ -188,8 +188,8 @@ SWEP.AttachmentElements = {
     ["ump_roni"] = {
         VMBodygroups = {	{ind = 2, bg = 4}, {ind = 3, bg = 1}, {ind = 4, bg = 1}	},
         Override_ActivePos = Vector(0, -5, 0),
-        Override_HolsterPos = Vector(6, -6, 0),
-        Override_HolsterAng = Angle(-15, 25, 0),
+        Override_HolsterPos = Vector(1,-5,-4),
+        Override_HolsterAng = Angle(7.036, 30.016, -30),
         AttPosMods = {
             [1] = {
                 vpos = Vector(-3.5, 4.8, 0.15),

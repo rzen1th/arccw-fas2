@@ -142,8 +142,8 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 0},
         },
         Override_ActivePos = Vector(1.5, -4, -1.5),
-        Override_HolsterPos = Vector(6, -6, 0),
-        Override_HolsterAng = Angle(-15, 25, 0),
+        Override_HolsterPos = Vector(1,-5,-4),
+        Override_HolsterAng = Angle(7.036, 30.016, -30),
         AttPosMods = {
             [1] = {
                 vpos = Vector(0, 0, 3.9),
