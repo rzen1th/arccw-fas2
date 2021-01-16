@@ -133,14 +133,14 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_g36_barrel_sd"] = {
         NameChange = "Gewehr-S",
-        TrueNameChange = "G36S",
+        TrueNameChange = "G36-S",
         VMBodygroups = {
             {ind = 3, bg = 1},
         },
     },
     ["mifl_fas2_g36_barrel_scope"] = {
-        NameChange = "Gewehr-Kurz",
-        TrueNameChange = "G-Kurz",
+        NameChange = "Gewehr",
+        TrueNameChange = "G36",
         VMBodygroups = {
             {ind = 3, bg = 4}, {ind = 2, bg = 3}, {ind = 7, bg = 2},
         },
@@ -159,28 +159,28 @@ SWEP.AttachmentElements = {
         },
     },	
     ["mifl_fas2_g36_barrel_oicw"] = {
-        NameChange = "Gewehr-Kurz",
-        TrueNameChange = "G-Kurz",
+        NameChange = "Gewehr-OICW",
+        TrueNameChange = "G36 OICW",
         VMBodygroups = {
             {ind = 3, bg = 6}, {ind = 2, bg = 3}, {ind = 7, bg = 3},
         },
         Override_IronSightStruct = {
-            Pos = Vector(-4.95, -8, 1),
+            Pos = Vector(-4.95, -8, 0),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1,
         },
         AttPosMods = {
             [1] = {
-                vpos = Vector(6, -5, 0),
+                vpos = Vector(10, -6, 0),
             },
             [3] = {
                 vpos = Vector(23.5, -0.15, 0),
             },
         },
-    },		
+    },
     ["mifl_fas2_g36_barrel_kurz"] = {
         NameChange = "Gewehr-Kurz",
-        TrueNameChange = "G-Kurz",
+        TrueNameChange = "G36KK",
         VMBodygroups = {
             {ind = 3, bg = 5}, {ind = 2, bg = 5},
         },
@@ -295,7 +295,8 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         InstalledEles = {"iron_none"},
-        ExtraSightDist = 3
+        VMScale = Vector(1.2, 1.2, 1.2),
+        ExtraSightDist = 10
     },
     {
         PrintName = "Handguard",
