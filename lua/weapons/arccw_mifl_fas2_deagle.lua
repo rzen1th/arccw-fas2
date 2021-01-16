@@ -3,9 +3,9 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 SWEP.PrintName = "Black Talon"
-SWEP.TrueName = "Deagle"
+SWEP.TrueName = "Desert Eagle"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "big gun with big shell"
+SWEP.Trivia_Desc = "Large caliber magnum pistol with an imposing look. Intended for hunting, but there is no prey more dangerous than men..."
 SWEP.Trivia_Manufacturer = "Magnum Research"
 SWEP.Trivia_Calibre = ".50 AE"
 SWEP.Trivia_Mechanism = "Gas-operated"
@@ -23,7 +23,7 @@ SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_deagle.mdl"
 SWEP.ViewModelFOV = 60
 SWEP.DefaultBodygroups = "000000000000"
 SWEP.Damage = 82
-SWEP.DamageMin = 30 -- damage done at maximum range
+SWEP.DamageMin = 40 -- damage done at maximum range
 SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 12
 SWEP.DamageType = DMG_BULLET
@@ -32,12 +32,12 @@ SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 7 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 650
-SWEP.Recoil = 1.2
+SWEP.Recoil = 1.5
 SWEP.RecoilSide = 0.8
 SWEP.RecoilRise = 0.8
 SWEP.VisualRecoilMult = 0.7
 SWEP.MaxRecoilBlowback = 0.5
-SWEP.Delay = 60 / 400 -- 60 / RPM.
+SWEP.Delay = 60 / 300 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Firemodes = {
@@ -49,11 +49,11 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 230
 SWEP.AccuracyMOA = 8 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 310 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 220
-SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
-SWEP.MagID = "glock" -- the magazine pool this gun draws from
-SWEP.ShootVol = 110 -- volume of shoot sound
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 250
+SWEP.Primary.Ammo = "357" -- what ammo type the gun uses
+SWEP.MagID = "deagle" -- the magazine pool this gun draws from
+SWEP.ShootVol = 130 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 SWEP.ShootSound = "weapons/arccw_mifl/fas2/deserteagle/de_fire1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/deserteagle/de_suppressed_fire1.wav"
@@ -104,8 +104,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local slide = wep.Attachments[3].Installed
 
     if optic and slide == "mifl_fas2_deagle_slide_2x" then vm:SetBodygroup(5, 2) end
-    if optic and slide == "mifl_fas2_g20_slide_whisper" then vm:SetBodygroup(5, 3) end	
-    if optic and slide == "mifl_fas2_g20_slide_whisper" then vm:SetBodygroup(6, 2) end		
+    if optic and slide == "mifl_fas2_g20_slide_whisper" then vm:SetBodygroup(5, 3) end
+    if optic and slide == "mifl_fas2_g20_slide_whisper" then vm:SetBodygroup(6, 2) end
     if optic and slide == "mifl_fas2_roni_marksman" then vm:SetBodygroup(5, 0) end
     if optic and slide == "mifl_fas2_roni_marksman" then vm:SetBodygroup(6, 0) end
 end
@@ -141,7 +141,7 @@ SWEP.AttachmentElements = {
             },
         },
         Override_IronSightStruct = {
-			Pos = Vector(-4.875, -8, -0.08),
+            Pos = Vector(-4.875, -8, -0.08),
             Ang = Angle(0.2, 0, 0),
             Magnification = 1.1,
         },
@@ -155,42 +155,42 @@ SWEP.AttachmentElements = {
     ["rail_2"] = {
         VMBodygroups = {{ind = 6, bg = 1}}
     },
- 
+
     ["mifl_fas2_g20_slide_whisper"] = {
         NameChange = "Nocturnal Talon",
-        TrueNameChange = "Deagle-SD",
+        TrueNameChange = "Desert Eagle SD",
         VMBodygroups = {{ind = 2, bg = 2}},
     },
     ["mifl_fas2_deagle_slide_c"] = {
         NameChange = "Talon Hatchling",
-        TrueNameChange = "Deagle-C",
+        TrueNameChange = "Desert Eagle Compact",
         VMBodygroups = {{ind = 2, bg = 4}, {ind = 1, bg = 1}},
-    },	
+    },
     ["mifl_fas2_deagle_slide_r"] = {
         NameChange = "Scav Talon",
-        TrueNameChange = "Deagle-R",
+        TrueNameChange = "Desert Raptor",
         VMBodygroups = {{ind = 2, bg = 3}, {ind = 1, bg = 2}},
-    },		
+    },
     ["mifl_fas2_deagle_slide_2x"] = {
         NameChange = "Orthus Talon",
-        TrueNameChange = "Deagle-D",
+        TrueNameChange = "Double Eagle",
         VMBodygroups = {{ind = 2, bg = 1}},
     },
     ["mifl_fas2_deagle_slide_l"] = {
         NameChange = "Obelisk Talon",
-        TrueNameChange = "Deagle-L",
+        TrueNameChange = "Deadeye Eagle",
         VMBodygroups = {{ind = 2, bg = 5}},
-    },	
+    },
 
     ["mifl_fas2_deagle_mag_357"] = {
         VMBodygroups = {{ind = 3, bg = 3}},
-    },	
+    },
     ["mifl_fas2_deagle_mag_44"] = {
         VMBodygroups = {{ind = 3, bg = 2}},
-    },		
+    },
     ["mifl_fas2_deagle_mag_9"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
-    },		
+    },
 }
 
 SWEP.WorldModelOffset = {
@@ -245,7 +245,7 @@ SWEP.Attachments = {
             vpos = Vector(5, 0.1, 2.625),
             vang = Angle(0, 0, -90)
         },
-        ExcludeFlags = {"mifl_fas2_g20_slide_whisper", "mifl_fas2_deagle_slide_2x"}
+        ExcludeFlags = {"mifl_fas2_g20_slide_whisper", "mifl_fas2_deagle_slide_2x", "roni_dmr"}
     },
     {
         PrintName = "Magazine",
@@ -285,7 +285,7 @@ SWEP.Attachments = {
             vpos = Vector(-0.2, -1.8, -0.2),
             vang = Angle(0, -90, 0)
         },
-        ExcludeFlags = {"roni"},
+        ExcludeFlags = {"roni_dmr"},
     },
     {
         PrintName = "Ammo Type",
@@ -334,7 +334,7 @@ end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
     if wep.Attachments[3].Installed == "mifl_fas2_roni_marksman" then
-		if anim == "fire" then
+        if anim == "fire" then
             return "fire_roni"
         end
     end
@@ -370,8 +370,8 @@ SWEP.Animations = {
     ["fire_roni"] = {
         Source = "fire_roni",
         ShellEjectAt = 0,
-		Time = 0.4
-    },	
+        Time = 0.4
+    },
     ["fire_iron"] = {
         Source = "Fire_Iron",
         ShellEjectAt = 0
@@ -428,7 +428,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.7,
         LHIKEaseOut = 0.6
-    },	
+    },
     ["reload_empty_roni"] = {
         Source = "reload_empty_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
@@ -452,5 +452,5 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.4
-    },	
+    },
 }

@@ -2,12 +2,12 @@ att.PrintName = "Double Slide"
 att.Icon = Material("entities/arccw_mifl_fas2_deagle_slide_2x.png", "mips smooth")
 att.Description = "Twice the barrel for twice the fun. Tremendously harm the gun's performace."
 att.Desc_Pros = {
-"pro.fas2.double_barrel"
+    "pro.fas2.double_barrel"
 }
 att.Desc_Cons = {
 }
 att.SortOrder = 1
-
+att.AutoStats = true
 att.Slot = {"mifl_fas2_deagle_slide"}
 
 att.Mult_Damage = 2
