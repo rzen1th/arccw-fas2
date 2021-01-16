@@ -130,7 +130,7 @@ SWEP.AttachmentElements = {
         Override_HolsterAng = Angle(7.036, 30.016, -30),
         AttPosMods = {
             [1] = {
-            vpos = Vector(-3, -1.85, 2.625),
+            vpos = Vector(-3, -1.75, 2.625),
             },
             [2] = {
                 vpos = Vector(9, -1.8, -0.18),
@@ -308,15 +308,14 @@ SWEP.Attachments = {
     },
     {
         Slot = "optic",
-        Bone = "Slide_BONE",
+        Bone = "frame",
         Offset = {
-            vpos = Vector(-3, -1.85, 2.625),
+            vpos = Vector(-3, -1.75, 2.625),
             vang = Angle(0, 0, -90)
         },
         Hidden = true,
         HideIfBlocked = true,
         RequireFlags = {"roni_dmr"},
-        VMScale = Vector(1.25, 1.25, 1.25),
     },
 }
 
