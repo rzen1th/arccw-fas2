@@ -1,5 +1,5 @@
 att.PrintName = "Raptor Slide"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_slideraptor.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_deagle_slide_r.png", "mips smooth")
 att.Description = "Vented slide and barrel for cooling offers great burst of fire."
 att.SortOrder = 5
 att.AutoStats = true

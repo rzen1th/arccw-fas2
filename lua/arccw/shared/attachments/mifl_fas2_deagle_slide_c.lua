@@ -1,5 +1,5 @@
 att.PrintName = "Compact Slide"
-att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_deagle_slide_s.png", "mips smooth")
 att.Description = ""
 att.Desc_Pros = {
 }

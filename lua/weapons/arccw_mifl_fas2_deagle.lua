@@ -66,7 +66,7 @@ SWEP.MuzzleEffect = "muzzleflash_pistol"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellScale = 1.25
-SWEP.ShellRotateAngle = Angle(0, 90, 0)
+SWEP.ShellRotateAngle = Angle(0, 0, -40)
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.SpeedMult = 0.99
@@ -74,8 +74,8 @@ SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.200
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.56, 2, 1.96),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-4.875, -5, 1.65),
+    Ang = Angle(0.3, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
@@ -169,12 +169,12 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_deagle_slide_r"] = {
         NameChange = "Scav Talon",
         TrueNameChange = "Deagle-R",
-        VMBodygroups = {{ind = 2, bg = 3}, {ind = 1, bg = 1}},
+        VMBodygroups = {{ind = 2, bg = 3}, {ind = 1, bg = 2}},
     },		
     ["mifl_fas2_deagle_slide_2x"] = {
         NameChange = "Orthus Talon",
         TrueNameChange = "Deagle-D",
-        VMBodygroups = {{ind = 2, bg = 1}, {ind = 1, bg = 2}},
+        VMBodygroups = {{ind = 2, bg = 1}},
     },
     ["mifl_fas2_deagle_slide_l"] = {
         NameChange = "Obelisk Talon",
@@ -228,11 +228,11 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Slide",
-        Slot = {"mifl_fas2_deagle_slide", "mifl_roni_conv"},
+        Slot = {"mifl_fas2_deagle_slide"},
         Bone = "frame",
         DefaultAttName = "Default Slide",
         Offset = {
-            vpos = Vector(-1.5, 2, 2.625),
+            vpos = Vector(-1.5, 1.5, 2.625),
             vang = Angle(0, 0, -90)
         }
     },
