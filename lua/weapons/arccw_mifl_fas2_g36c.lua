@@ -25,7 +25,7 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000000000000000"
 
-SWEP.Damage = 32
+SWEP.Damage = 33
 SWEP.DamageMin = 22 -- damage done at maximum range
 SWEP.Range = 55 -- in METRES
 SWEP.Penetration = 10
@@ -38,9 +38,9 @@ SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 900
 
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.5
 SWEP.RecoilSide = 0.3
-SWEP.RecoilRise = 1.2
+SWEP.RecoilRise = 1
 
 SWEP.Delay = 60 / 700 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -60,8 +60,8 @@ SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 155
 
 SWEP.AccuracyMOA = 4 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 330 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 90
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 50
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 
@@ -87,7 +87,7 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SpeedMult = 0.975
 SWEP.SightedSpeedMult = 0.85
-SWEP.SightTime = 0.34
+SWEP.SightTime = 0.28
 
 SWEP.IronSightStruct = {
     Pos = Vector(-4.95, -8, 2.273),

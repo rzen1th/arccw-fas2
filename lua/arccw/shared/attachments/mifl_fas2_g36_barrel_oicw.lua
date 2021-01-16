@@ -39,7 +39,7 @@ local function Ammo(wep)
 end
 
 att.UBGL_Fire = function(wep, ubgl)
-    if (wep:Clip2() <= 0 or wep:Clip1() <= 0) then return end
+    if (wep:Clip2() <= 0) then return end
 
     wep:PlayAnimation("fire")
 
@@ -48,7 +48,6 @@ att.UBGL_Fire = function(wep, ubgl)
     wep:EmitSound("weapons/grenade_launcher1.wav", 100)
 
     wep:SetClip2(wep:Clip2() - 1)
-    wep:SetClip1(wep:Clip1() - 1)
 
     wep:SetNextPrimaryFire(CurTime() + 0.5)
 

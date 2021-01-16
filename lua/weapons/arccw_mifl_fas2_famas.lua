@@ -38,7 +38,7 @@ SWEP.Primary.ClipSize = 25 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 1050
 
-SWEP.Recoil = 0.7
+SWEP.Recoil = 0.45
 SWEP.RecoilSide = 0.25
 SWEP.RecoilRise = 0.25
 
@@ -63,8 +63,8 @@ SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 160
 
 SWEP.AccuracyMOA = 3.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 380 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 75
+SWEP.HipDispersion = 350 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 90
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 
@@ -265,17 +265,17 @@ end
 
 function SWEP:Hook_NameChange(name)
     local pre = GetConVar("arccw_truenames"):GetBool() and "FAMAS " or "FSL"
-    local cal = " 556"
+    local cal = ""
     local post = ""
     local frame = self.Attachments[2].Installed
     local mag = self.Attachments[7].Installed
 
     if mag == "mifl_fas2_famas_mag_9mm_25" or mag == "mifl_fas2_famas_mag_9mm_50" then
-        cal = "-A9"
+        cal = " A9"
     elseif mag == "mifl_fas2_m4a1_mag_50bw_10" or mag == "mifl_fas2_m4a1_mag_50bw_15" then
-        cal = "-C50"
+        cal = " C50"
     end
-	
+
     return pre .. cal .. post
 end
 
