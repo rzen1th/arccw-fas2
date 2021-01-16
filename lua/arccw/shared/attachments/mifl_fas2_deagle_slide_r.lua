@@ -15,7 +15,7 @@ att.Mult_Recoil = 1.1
 att.Mult_RecoilSide = 0.8
 att.Mult_VisualRecoilMult = 1.2
 
-att.ModelOffset = Vector(0.5, -0.3, -1.8)
+att.ModelOffset = Vector(0.2, -0.1, -2.2)
 
 att.LHIK = true
 att.LHIK_Priority = -2

@@ -133,12 +133,8 @@ SWEP.AttachmentElements = {
             vpos = Vector(-3, -1.75, 2.625),
             },
             [2] = {
-                vpos = Vector(9, -1.8, -0.18),
-                --vang = Angle(90, -90, 0)
-            },
-            [4] = {
-                vpos = Vector(5.5, -0.2, -0.15),
-            },
+                vpos = Vector(6, 2.5, 2.625),
+            },				
         },
         Override_IronSightStruct = {
             Pos = Vector(-4.875, -8, -0.08),
@@ -160,16 +156,34 @@ SWEP.AttachmentElements = {
         NameChange = "Nocturnal Talon",
         TrueNameChange = "Desert Eagle SD",
         VMBodygroups = {{ind = 2, bg = 2}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(1, 1.8, 2.625),
+            },
+        },		
     },
     ["mifl_fas2_deagle_slide_c"] = {
         NameChange = "Talon Hatchling",
         TrueNameChange = "Desert Eagle Compact",
         VMBodygroups = {{ind = 2, bg = 4}, {ind = 1, bg = 1}},
+        AttPosMods = {
+            [4] = {
+				vpos = Vector(2.2, 0.1, 2.625),
+            },
+        },			
     },
     ["mifl_fas2_deagle_slide_r"] = {
         NameChange = "Scav Talon",
         TrueNameChange = "Desert Raptor",
         VMBodygroups = {{ind = 2, bg = 3}, {ind = 1, bg = 2}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(3, 1.5, 2.625),
+            },		
+            [4] = {
+				vpos = Vector(6.2, 0.35, 2.625),
+            },
+        },					
     },
     ["mifl_fas2_deagle_slide_2x"] = {
         NameChange = "Orthus Talon",
@@ -180,6 +194,11 @@ SWEP.AttachmentElements = {
         NameChange = "Obelisk Talon",
         TrueNameChange = "Deadeye Eagle",
         VMBodygroups = {{ind = 2, bg = 5}},
+        AttPosMods = {	
+            [4] = {
+				vpos = Vector(9.8, 0.35, 2.625),
+            },
+        },		
     },
 
     ["mifl_fas2_deagle_mag_357"] = {
@@ -223,8 +242,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90)
         },
         InstalledEles = {"rail_2"},
-        ExtraSightDist = 10,
-        CorrectivePos = Vector(0.5, -2, -1),
+        ExtraSightDist = 15,
+        CorrectivePos = Vector(0.75, -2, -1),
     },
     {
         PrintName = "Slide",
