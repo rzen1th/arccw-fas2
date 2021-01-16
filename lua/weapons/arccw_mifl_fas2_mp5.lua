@@ -479,8 +479,8 @@ SWEP.Attachments = {
 }
 
 function SWEP:Hook_NameChange(name)
-    local pre = "MP5"
-    local post = "A3"
+    local pre = GetConVar("arccw_truenames"):GetBool() and "MP5 " or "PXC"
+    local post = GetConVar("arccw_truenames"):GetBool() and "A3" or "-9"
     local mid = ""
     local ump = false
     local hg = self.Attachments[2].Installed
@@ -504,17 +504,17 @@ function SWEP:Hook_NameChange(name)
     elseif hg == "mifl_fas2_mp5_hg_sd" then
         post = "SD"
     elseif hg == "mifl_fas2_mp5_ump_k" then
-        pre = "UMP"
+        pre = GetConVar("arccw_truenames"):GetBool() and "UMP" or "UXP"
         mid = "9"
         post = "-K"
         ump = true
     elseif hg == "mifl_fas2_mp5_ump_nor" then
-        pre = "UMP"
+        pre = GetConVar("arccw_truenames"):GetBool() and "UMP" or "UXP"
         mid = "9"
         post = ""
         ump = true
     elseif hg == "mifl_fas2_mp5_ump_usc" then
-        pre = "USC"
+        pre = GetConVar("arccw_truenames"):GetBool() and "UMP" or "UXC"
         mid = "-9"
         post = ""
         ump = true

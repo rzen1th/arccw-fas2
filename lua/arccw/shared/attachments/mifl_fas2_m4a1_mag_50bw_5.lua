@@ -25,7 +25,6 @@ att.Mult_AccuracyMOA = 2
 
 att.Override_Ammo = "357"
 att.Override_Trivia_Calibre = ".50 Beowulf"
-att.AddSuffix = " .50"
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/m4a1/m4_fire1.wav" then return "weapons/arccw_mifl/fas2/m4a1/m16a2_fire1.wav" end
