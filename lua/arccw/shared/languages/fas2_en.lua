@@ -20,3 +20,5 @@ L["con.fas2.m79.impactdefuse"] = "Defuses on impact"
 L["con.fas2.m79.noimpact"] = "Does not explode on impact"
 L["info.fas2.m79.timer"] = "Switch firemodes to change fuse timer"
 L["con.fas2.m79.min"] = "Minimal direct damage"
+
+L["pro.fas2.double_barrel"] = "Extra shot per fire"

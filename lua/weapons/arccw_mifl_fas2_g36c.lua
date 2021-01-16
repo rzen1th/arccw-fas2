@@ -25,7 +25,7 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000000000000000"
 
-SWEP.Damage = 32
+SWEP.Damage = 33
 SWEP.DamageMin = 22 -- damage done at maximum range
 SWEP.Range = 55 -- in METRES
 SWEP.Penetration = 10
@@ -38,9 +38,9 @@ SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 900
 
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.5
 SWEP.RecoilSide = 0.3
-SWEP.RecoilRise = 1.2
+SWEP.RecoilRise = 1
 
 SWEP.Delay = 60 / 700 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -60,8 +60,8 @@ SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 155
 
 SWEP.AccuracyMOA = 4 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 330 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 90
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 50
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 
@@ -87,7 +87,7 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SpeedMult = 0.975
 SWEP.SightedSpeedMult = 0.85
-SWEP.SightTime = 0.34
+SWEP.SightTime = 0.28
 
 SWEP.IronSightStruct = {
     Pos = Vector(-4.95, -8, 2.273),
@@ -133,14 +133,14 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_g36_barrel_sd"] = {
         NameChange = "Gewehr-S",
-        TrueNameChange = "G36S",
+        TrueNameChange = "G36-S",
         VMBodygroups = {
             {ind = 3, bg = 1},
         },
     },
     ["mifl_fas2_g36_barrel_scope"] = {
-        NameChange = "Gewehr-Kurz",
-        TrueNameChange = "G-Kurz",
+        NameChange = "Gewehr",
+        TrueNameChange = "G36",
         VMBodygroups = {
             {ind = 3, bg = 4}, {ind = 2, bg = 3}, {ind = 7, bg = 2},
         },
@@ -159,28 +159,28 @@ SWEP.AttachmentElements = {
         },
     },	
     ["mifl_fas2_g36_barrel_oicw"] = {
-        NameChange = "Gewehr-Kurz",
-        TrueNameChange = "G-Kurz",
+        NameChange = "Gewehr-OICW",
+        TrueNameChange = "G36 OICW",
         VMBodygroups = {
             {ind = 3, bg = 6}, {ind = 2, bg = 3}, {ind = 7, bg = 3},
         },
         Override_IronSightStruct = {
-            Pos = Vector(-4.95, -8, 1),
+            Pos = Vector(-4.95, -8, 0),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1,
         },
         AttPosMods = {
             [1] = {
-                vpos = Vector(6, -5, 0),
+                vpos = Vector(10, -6, 0),
             },
             [3] = {
                 vpos = Vector(23.5, -0.15, 0),
             },
         },
-    },		
+    },
     ["mifl_fas2_g36_barrel_kurz"] = {
         NameChange = "Gewehr-Kurz",
-        TrueNameChange = "G-Kurz",
+        TrueNameChange = "G36KK",
         VMBodygroups = {
             {ind = 3, bg = 5}, {ind = 2, bg = 5},
         },
@@ -295,7 +295,8 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         InstalledEles = {"iron_none"},
-        ExtraSightDist = 3
+        VMScale = Vector(1.2, 1.2, 1.2),
+        ExtraSightDist = 10
     },
     {
         PrintName = "Handguard",

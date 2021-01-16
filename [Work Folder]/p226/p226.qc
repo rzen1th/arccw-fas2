@@ -152,6 +152,15 @@ $sequence "idle" {
 	loop
 }
 
+$sequence "fire_roni" {
+	"anims\fire_roni.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
 $sequence "idle_empty" {
 	"p226_anims\idle_empty.smd"
 	activity "ACT_VM_IDLE_EMPTY" 1

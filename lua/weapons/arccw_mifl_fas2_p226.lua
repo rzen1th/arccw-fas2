@@ -37,9 +37,9 @@ SWEP.Primary.ClipSize = 13 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 700
 
-SWEP.Recoil = 0.65
+SWEP.Recoil = 0.3
 SWEP.RecoilSide = 0.4
-SWEP.RecoilRise = 0.8
+SWEP.RecoilRise = 1.2
 SWEP.VisualRecoilMult = 1
 SWEP.MaxRecoilBlowback = 0.5
 
@@ -100,11 +100,11 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(-0.5, -1.5, 1)
+SWEP.ActivePos = Vector(-0.5, -2.5, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-4, -1, -2)
-SWEP.CrouchAng = Angle(0, 0, -20)
+SWEP.CrouchPos = Vector(-1.5, -5, -1)
+SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.HolsterPos = Vector(1, 2, 2)
 SWEP.HolsterAng = Angle(-15, 5, -10)
@@ -130,6 +130,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(7, 0) end
 end
 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep.Attachments[3].Installed == "mifl_fas2_p226_roni" then
+		if anim == "fire" then
+            return "fire_roni"
+        end
+    end
+end
 
 SWEP.AttachmentElements = {
     ["mifl_fas2_p226_mag_45"] = {
@@ -181,8 +188,8 @@ SWEP.AttachmentElements = {
     ["ump_roni"] = {
         VMBodygroups = {	{ind = 2, bg = 4}, {ind = 3, bg = 1}, {ind = 4, bg = 1}	},
         Override_ActivePos = Vector(0, -5, 0),
-        Override_HolsterPos = Vector(6, -6, 0),
-        Override_HolsterAng = Angle(-15, 25, 0),
+        Override_HolsterPos = Vector(1,-5,-4),
+        Override_HolsterAng = Angle(7.036, 30.016, -30),
         AttPosMods = {
             [1] = {
                 vpos = Vector(-3.5, 4.8, 0.15),
@@ -385,6 +392,10 @@ SWEP.Animations = {
         Source = "fire1",
         ShellEjectAt = 0,
     },
+    ["fire_roni"] = {
+        Source = "fire_roni",
+        ShellEjectAt = 0,
+    },	
     ["fire_iron"] = {
         Source = "fire_scoped2",
         ShellEjectAt = 0,

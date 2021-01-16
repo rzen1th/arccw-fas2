@@ -3,7 +3,7 @@ att.Icon = Material("entities/arccw_mifl_fas2_m1911_slide_af.png", "mips smooth"
 att.Description = "Twice the gun for twice the firepower."
 att.SortOrder = 12
 att.Desc_Pros = {
-"Thicc"
+"pro.fas2.double_barrel"
 }
 att.Desc_Cons = {
 }
