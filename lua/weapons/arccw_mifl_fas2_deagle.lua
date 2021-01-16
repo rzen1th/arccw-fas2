@@ -326,12 +326,21 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
         return anim .. "_akimbo"
     end
 
-    if wep.Attachments[3].Installed == "mifl_fas2_roni" then
+    if wep.Attachments[3].Installed == "mifl_fas2_roni_marksman" then
         anim = anim .. "_roni"
     end
 
     return anim
 end
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep.Attachments[3].Installed == "mifl_fas2_roni_marksman" then
+		if anim == "fire" then
+            return "fire_roni"
+        end
+    end
+end
+
 
 SWEP.Animations = {
     ["idle"] = {
@@ -359,6 +368,10 @@ SWEP.Animations = {
         Source = "Fire1",
         ShellEjectAt = 0
     },
+    ["fire_roni"] = {
+        Source = "fire_roni",
+        ShellEjectAt = 0
+    },	
     ["fire_iron"] = {
         Source = "Fire_Iron",
         ShellEjectAt = 0

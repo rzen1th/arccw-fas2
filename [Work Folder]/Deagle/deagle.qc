@@ -214,6 +214,15 @@ $sequence "fire1" {
 	fps 30
 }
 
+$sequence "fire_roni" {
+	"anims\fire_roni.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
 $sequence "fire2" {
 	"deagle_anims\fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
