@@ -1,6 +1,6 @@
 att.PrintName = "50-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_famas_mag_25.png", "mips smooth")
-att.Description = "Conversion to 9mm allows for faster firing rate and a few more rounds at the cost of range. quadstack doe"
+att.Description = "Conversion to 9mm allows for faster firing rate and a few more rounds at the cost of range. Quadstack gives it even greater capacity."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -37,5 +37,3 @@ att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/famas/famas_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/famas/9_s.wav" end
 	
 end
-
-att.AddSuffix = " A9"

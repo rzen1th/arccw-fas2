@@ -109,8 +109,8 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.ActivePos = Vector(1, -1, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-2, 0, -0.2)
-SWEP.CrouchAng = Angle(0, 0, -10)
+SWEP.CrouchPos = Vector(-0.5, -1, -0.5)
+SWEP.CrouchAng = Angle(0, 0, -5)
 
 SWEP.HolsterPos = Vector(1, -2, 2)
 SWEP.HolsterAng = Angle(-15, 5, -10)
@@ -130,7 +130,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_famas_barrel_sd"] = {
-        NameChange = "Fusile-SD",
+        NameChange = "FSL-SD",
         TrueNameChange = "FAMAS-SD",
         VMBodygroups = {
             {ind = 1, bg = 1},
@@ -145,8 +145,8 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_famas_barrel_xs"] = {
-        NameChange = "Fusile XS",
-        TrueNameChange = "Famas XS",
+        NameChange = "FSL-XS",
+        TrueNameChange = "Famas-XS",
         VMBodygroups = {
             {ind = 1, bg = 4},
             {ind = 5, bg = 1},
@@ -167,7 +167,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_famas_barrel_commando"] = {
-        NameChange = "Fusile Kurz",
+        NameChange = "FSL Kurz",
         TrueNameChange = "Famas PDW",
         VMBodygroups = {
             {ind = 1, bg = 3},
@@ -185,7 +185,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["mifl_fas2_famas_barrel_felin"] = {
-        NameChange = "Fusile Valorisé",
+        NameChange = "FSL Valorisé",
         TrueNameChange = "FAMAS Félin",
         VMBodygroups = {
             {ind = 1, bg = 2},
@@ -232,7 +232,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.MirrorVMWM = true
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
+SWEP.Hook_ModifyBodygroups = function(wep, data) --- GSO relic
     local vm = data.vm
 
     local optic = wep.Attachments[1].Installed
@@ -261,6 +261,22 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             vm:SetBodygroup(4, 0)
         end
     end
+end
+
+function SWEP:Hook_NameChange(name)
+    local pre = GetConVar("arccw_truenames"):GetBool() and "FAMAS " or "FSL"
+    local cal = " 556"
+    local post = ""
+    local frame = self.Attachments[2].Installed
+    local mag = self.Attachments[7].Installed
+
+    if mag == "mifl_fas2_famas_mag_9mm_25" or mag == "mifl_fas2_famas_mag_9mm_50" then
+        cal = "-A9"
+    elseif mag == "mifl_fas2_m4a1_mag_50bw_10" or mag == "mifl_fas2_m4a1_mag_50bw_15" then
+        cal = "-C50"
+    end
+	
+    return pre .. cal .. post
 end
 
 SWEP.Attachments = {
