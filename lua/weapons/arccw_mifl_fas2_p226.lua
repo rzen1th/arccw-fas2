@@ -130,6 +130,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if optic and slide == "mifl_fas2_p226_roni" then vm:SetBodygroup(7, 0) end
 end
 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep.Attachments[3].Installed == "mifl_fas2_p226_roni" then
+		if anim == "fire" then
+            return "fire_roni"
+        end
+    end
+end
 
 SWEP.AttachmentElements = {
     ["mifl_fas2_p226_mag_45"] = {
@@ -385,6 +392,10 @@ SWEP.Animations = {
         Source = "fire1",
         ShellEjectAt = 0,
     },
+    ["fire_roni"] = {
+        Source = "fire_roni",
+        ShellEjectAt = 0,
+    },	
     ["fire_iron"] = {
         Source = "fire_scoped2",
         ShellEjectAt = 0,
