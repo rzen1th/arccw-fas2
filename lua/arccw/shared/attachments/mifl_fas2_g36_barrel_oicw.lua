@@ -43,7 +43,7 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:PlayAnimation("fire")
 
-    wep:FireRocket("arccw_gl_m79_he", 2500)
+    wep:FireRocket("arccw_gl_m79_he", 3000 * ArcCW.HUToM)
 
     wep:EmitSound("weapons/grenade_launcher1.wav", 100)
 
@@ -56,7 +56,6 @@ att.UBGL_Fire = function(wep, ubgl)
 end
 
 att.UBGL_Reload = function(wep, ubgl)
-    print(ubgl)
     if wep:Clip2() >= 5 then return end
 
     if Ammo(wep) <= 0 then return end
