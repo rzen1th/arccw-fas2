@@ -46,6 +46,7 @@ Fesiug
 -damped burst
 -spawnicon
 -qci
+-tritium
 
 TheOnly8Z
 -clean up crew
