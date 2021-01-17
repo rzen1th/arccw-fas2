@@ -143,7 +143,9 @@ SWEP.AttachmentElements = {
         },
     },
     ["akimbo"] = {
-        Override_ActivePos = Vector(2, 5, 0)
+        Override_ActivePos = Vector(2, 2, 0),
+        Override_HolsterPos = Vector(2,2,2),
+        Override_HolsterAng = Angle(-20, 0, -5),			
     },
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}}
@@ -277,7 +279,7 @@ SWEP.Attachments = {
         Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(3, -3.5, 0),
+            vpos = Vector(3, -2.5, 0),
             vang = Angle(0, 0, 0)
         },
         InstalledEles = {"akimbo"},
@@ -472,4 +474,21 @@ SWEP.Animations = {
         LHIKOut = 0.5,
         LHIKEaseOut = 0.4
     },
+--------------------------------------------------------
+    ["reload_akimbo"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+    },
+    ["reload_empty_akimbo"] = {
+        Source = "reload_empty_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+    },
+    ["reload_nomen_akimbo"] = {
+        Source = "reload_nomen_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+    },
+    ["reload_nomen_empty_akimbo"] = {
+        Source = "reload_empty_nomen_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+    },	
 }
