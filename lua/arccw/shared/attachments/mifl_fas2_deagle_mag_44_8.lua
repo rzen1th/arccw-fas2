@@ -23,3 +23,7 @@ att.Mult_ShootPitch = 0.8
 
 att.Override_Trivia_Calibre = ".44 Magnum"
 att.AddSuffix = " .44"
+
+att.Hook_GetShootSound = function(wep, fsound)
+    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2_custom/deagle/44.wav" end
+end
