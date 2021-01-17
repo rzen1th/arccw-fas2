@@ -1,5 +1,5 @@
 att.PrintName = "Roni Marksman Kit"
-att.Icon = Material("entities/arccw_mifl_roni_frame.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_roni_frame_l.png", "mips smooth")
 att.Description = "Custom modification kit turning a pistol into some sort of marksman rifle. Longer top rail allows the attachment of regular sized optics, and compensated barrel allows for damped recoil."
 att.SortOrder = 8
 att.Slot = {"mifl_roni_conv_2", "mifl_fas2_deagle_slide"}

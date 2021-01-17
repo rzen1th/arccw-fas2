@@ -1,5 +1,5 @@
 att.PrintName = "Roni Foregrip"
-att.Icon = nil ---Material("entities/acwatt_milf_grip_side.png")
+att.Icon = Material("entities/arccw_mifl_roni_grip.png", "mips smooth")
 att.Description = "Folding foregrip from a RONI carbine kit. Provides limited recoil and hipfire control."
 att.Desc_Pros = {
 }
