@@ -1,5 +1,5 @@
 att.PrintName = "UMP Kit"
-att.Icon = Material("entities/arccw_mifl_fas2_p226_ump.png")
+att.Icon = Material("entities/arccw_mifl_fas2_p226_ump.png", "mips smooth")
 att.Description = "Aftermarket modification kit that looks like a down-sized UMP, capable of firing in full-auto. Longer top rail allows the attachment of regular sized optics."
 att.SortOrder = 12
 att.Slot = {"mifl_fas2_p226_slide"}

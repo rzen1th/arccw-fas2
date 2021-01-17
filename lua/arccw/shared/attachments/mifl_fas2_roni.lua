@@ -1,5 +1,5 @@
 att.PrintName = "Roni Kit"
-att.Icon = Material("entities/arccw_mifl_roni_frame.png")
+att.Icon = Material("entities/arccw_mifl_roni_frame.png", "mips smooth")
 att.Description = "Aftermarket modification kit turning a pistol into some sort of short barrel carbine. Longer top rail allows the attachment of regular sized optics, and bump slide enables the use of unstable pseudo-automatic fire."
 att.SortOrder = 8
 att.Slot = {"mifl_roni_conv", "mifl_fas2_g20_slide"}
