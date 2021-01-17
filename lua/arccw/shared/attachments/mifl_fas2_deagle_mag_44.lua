@@ -6,7 +6,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.SortOrder = 9
-
+att.AutoStats = true
 att.Slot = {"mifl_fas2_deagle_mag"}
 
 att.Mult_Range = 1.2
@@ -23,3 +23,8 @@ att.Mult_ReloadTime = 0.95
 --att.Override_ShellModel = "models/shells/shell_9mm.mdl"
 
 att.Override_Trivia_Calibre = ".44 Magnum"
+
+att.Hook_GetShootSound = function(wep, fsound)
+    if fsound == "weapons/arccw_mifl/fas2/deserteagle/de_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/deagle/44.wav" end
+    if fsound == "weapons/arccw_mifl/fas2/deserteagle/de_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/deserteagle/de_suppressed_fire1.wav" end
+end
