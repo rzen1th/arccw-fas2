@@ -38,8 +38,8 @@ SWEP.Primary.ClipSize = 32 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 1050
 
-SWEP.Recoil = 0.25
-SWEP.RecoilSide = 0.3
+SWEP.Recoil = 0.45
+SWEP.RecoilSide = 0.25
 
 SWEP.Delay = 60 / 1050 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -121,7 +121,9 @@ SWEP.BarrelLength = 18
 
 SWEP.AttachmentElements = {
     ["akimbo"] = {
-        Override_ActivePos = Vector(4, 0, 0),
+        Override_ActivePos = Vector(2, 1, 0),
+        Override_HolsterPos = Vector(2,2,2),
+        Override_HolsterAng = Angle(-20, 0, -5),			
     },
     ["mifl_fas2_mp5_stock_pdw"] = {
         VMBodygroups = {{ind = 6, bg = 5}}
@@ -261,6 +263,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"bottom"},
+		GivesFlags = {"Akimbo_No"},
+        ExcludeFlags = {"Akimbo_No1"},			
     },
     {
         PrintName = "Tactical",
@@ -285,10 +289,12 @@ SWEP.Attachments = {
         Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(8, -5.8, -0.5),
+            vpos = Vector(8, -2.5, -0.25),
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"akimbo"},
+        ExcludeFlags = {"Akimbo_No"},	
+		GivesFlags = {"Akimbo_No1"},		
     },
     {
         PrintName = "Stock",

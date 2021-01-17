@@ -122,6 +122,8 @@ SWEP.BarrelLength = 18
 SWEP.AttachmentElements = {
     ["akimbo"] = {
         Override_ActivePos = Vector(2.5, 4, 0),
+        Override_HolsterPos = Vector(2,2,3),
+        Override_HolsterAng = Angle(-20, 0, -5),	
     },
     ["buftube"] = {
         VMBodygroups = {

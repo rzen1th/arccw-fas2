@@ -36,14 +36,16 @@ In Depth Credits		(using steam names)
 Fluffy Mammal 
 -model hacks
 -anims edits
--MASS26
+-MASS26 anim
 -casing models
+-underbarrel stuff
 
 Fesiug
 -akimbo (barely works but ok)
 -rewriting nomen
 -damped burst
 -spawnicon
+-qci
 
 TheOnly8Z
 -clean up crew
