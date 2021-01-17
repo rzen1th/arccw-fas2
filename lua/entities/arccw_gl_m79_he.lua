@@ -8,7 +8,8 @@ ENT.Information 		= ""
 
 ENT.Spawnable 			= false
 
-ENT.Model = "models/Items/AR2_Grenade.mdl"
+ENT.Model = "models/weapons/arccw/mifl/fas2/shell/40mm.mdl"
+ENT.ModelMini = "models/weapons/arccw/mifl/fas2/shell/25mm.mdl"
 ENT.Ticks = 0
 ENT.FuseTime = 10
 ENT.ArcCW_Killable = true
@@ -25,16 +26,14 @@ end
 if SERVER then
 
     function ENT:Initialize()
-        self:SetModel(self.Model)
+        self:SetModel(self:GetMini() and self.ModelMini or self.Model)
         self:PhysicsInit(SOLID_VPHYSICS)
 
         local wep = self.Inflictor
         if IsValid(wep) then
             self:SetMini(wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q")
-            self.FuzeTime = 1 / wep:GetBuff("MuzzleVelocity") * 150
+            self.FuzeTime = 1 / wep:GetBuff("MuzzleVelocity") * 400
             --self:SetModelScale(0.5, 0)
-        else
-            self:SetModelScale(2, 0)
         end
 
         --local pb_vert = self:GetMini() and 1 or 2
@@ -45,7 +44,7 @@ if SERVER then
         if phys:IsValid() then
             phys:Wake()
             phys:SetDamping(0, 0)
-            phys:SetBuoyancyRatio(0.25)
+            phys:SetBuoyancyRatio(0.1)
             phys:SetMass(5)
         end
 
@@ -94,29 +93,31 @@ else
     end
 
     function ENT:Think()
-        if self.Ticks % (self:GetMini() and 2 or 4) == 0 then
-            local emitter = ParticleEmitter(self:GetPos())
+        if self:GetVelocity():Length() >= 150 then
+            if self.Ticks % (self:GetMini() and 3 or 2) == 0 then
+                local emitter = ParticleEmitter(self:GetPos())
 
-            if !self:IsValid() or self:WaterLevel() > 2 then return end
-            if !IsValid(emitter) then return end
+                if !self:IsValid() or self:WaterLevel() > 2 then return end
+                if !IsValid(emitter) then return end
 
-            local smoke = emitter:Add("particle/particle_smokegrenade", self:GetPos())
-            smoke:SetVelocity( VectorRand() * 25 )
-            smoke:SetGravity( Vector(math.Rand(-5, 5), math.Rand(-5, 5), math.Rand(-20, -25)) )
-            smoke:SetDieTime( math.Rand(1.5, 2.0) )
-            smoke:SetStartAlpha( 255 )
-            smoke:SetEndAlpha( 0 )
-            smoke:SetStartSize( 0 )
-            smoke:SetEndSize( self:GetMini() and 20 or 50 )
-            smoke:SetRoll( math.Rand(-180, 180) )
-            smoke:SetRollDelta( math.Rand(-0.2,0.2) )
-            smoke:SetColor( 100, 100, 100 )
-            smoke:SetAirResistance( 5 )
-            smoke:SetPos( self:GetPos() )
-            smoke:SetLighting( false )
-            emitter:Finish()
+                local smoke = emitter:Add("particle/particle_smokegrenade", self:GetPos())
+                smoke:SetVelocity( VectorRand() * 25 )
+                smoke:SetGravity( Vector(math.Rand(-5, 5), math.Rand(-5, 5), math.Rand(-20, -25)) )
+                smoke:SetDieTime( math.Rand(0.75, 2) )
+                smoke:SetStartAlpha( 255 )
+                smoke:SetEndAlpha( 0 )
+                smoke:SetStartSize( 5 )
+                smoke:SetEndSize( self:GetMini() and 20 or 40 )
+                smoke:SetRoll( math.Rand(-180, 180) )
+                smoke:SetRollDelta( math.Rand(-0.2,0.2) )
+                smoke:SetColor( 100, 100, 100 )
+                smoke:SetAirResistance( 5 )
+                smoke:SetPos( self:GetPos() )
+                smoke:SetLighting( false )
+                emitter:Finish()
+            end
+            self.Ticks = self.Ticks + 1
         end
-        self.Ticks = self.Ticks + 1
     end
 end
 
