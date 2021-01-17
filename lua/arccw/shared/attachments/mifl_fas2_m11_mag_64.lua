@@ -1,6 +1,6 @@
 att.PrintName = "64-Round .380 ACP"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_50.png", "smooth")
-att.Description = ""
+att.Description = "Big drum magazine that doubles the capacity. Has an drastic impact on handling."
 att.Desc_Pros = {
     "pro.magcap"
 }

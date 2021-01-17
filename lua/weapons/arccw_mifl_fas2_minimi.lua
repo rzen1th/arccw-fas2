@@ -303,8 +303,15 @@ SWEP.Attachments = {
     },
 }
 
-
 SWEP.Hook_SelectFireAnimation = function(wep, anim)
+    if 	wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_556_60" or
+        wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_9mm_32" or
+        wep.Attachments[6].Installed == "mifl_fas2_m249_mag_556_30" or
+        wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_50bw_10" or
+        wep.Attachments[6].Installed == "mifl_fas2_m4a1_mag_50bw_15" then
+        return anim .. "_stag"
+    end
+
     if wep.Attachments[6].Installed == "mifl_fas2_m249_mag_23" then
         return anim .. "_23"
     end
@@ -432,11 +439,23 @@ SWEP.Animations = {
         Source = "fire1_23",
         Time = 30 / 60,
         ShellEjectAt = 0,
+        SoundTable = {
+            {
+                t = 0,
+                e = "arccw_shell_fas2_m249link"
+            }
+		}
     },
     ["fire_iron_23"] = {
         Source = "fire1_scoped",
         Time = 30 / 60,
         ShellEjectAt = 0,
+        SoundTable = {
+            {
+                t = 0,
+                e = "arccw_shell_fas2_m249link"
+            }
+		}
     },
 
 
@@ -473,4 +492,17 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.5,
     },
+	
+
+
+    ["fire_stag"] = {
+        Source = "fire1",
+        Time = 30 / 60,
+        ShellEjectAt = 0,
+    },
+    ["fire_iron_stag"] = {
+        Source = "fire1_scoped",
+        Time = 30 / 60,
+        ShellEjectAt = 0,
+    },	
 }

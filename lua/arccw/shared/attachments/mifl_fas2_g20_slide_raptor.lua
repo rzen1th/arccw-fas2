@@ -32,10 +32,4 @@ att.Override_Firemodes = {
         RunawayBurst = true,
         PostBurstDelay = 0.2
     },
-    {
-        Mode = 1,
-    },
-    {
-        Mode = 0
-    }
 }

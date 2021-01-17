@@ -131,6 +131,10 @@ SWEP.AttachmentElements = {
     },
     ["akimbo"] = {
         Override_ActivePos = Vector(2, 0, 0),
+        Override_CrouchPos = Vector(0, -3, 0),	
+        Override_CrouchAng = Angle(0, 0, 0),	
+        Override_HolsterPos = Vector(2,2,2),
+        Override_HolsterAng = Angle(-20, 0, -5),			
     },
     ["shield"] = {
         Override_ActivePos = Vector(8, 0, 0),
@@ -142,8 +146,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 0},
         },
         Override_ActivePos = Vector(1.5, -4, -1.5),
+        Override_CrouchPos = Vector(0, -3, 0),	
+        Override_CrouchAng = Angle(0, 0, 0),		
         Override_HolsterPos = Vector(1,-5,-4),
         Override_HolsterAng = Angle(7.036, 30.016, -30),
+		
         AttPosMods = {
             [1] = {
                 vpos = Vector(0, 0, 3.9),
@@ -352,7 +359,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = "mifl_fas2_g20_mag",
-        DefaultAttName = "17-Round 10mm"
+        DefaultAttName = "15-Round 10mm"
     },
     {
         PrintName = "Left Hand",
