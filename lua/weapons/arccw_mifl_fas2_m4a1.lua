@@ -361,7 +361,7 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         InstalledEles = {"iron_none"},
-        ExtraSightDist = 3
+        ExtraSightDist = 10
     },
     {
         PrintName = "Handguard",

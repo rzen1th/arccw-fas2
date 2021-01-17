@@ -33,9 +33,11 @@ if SERVER then
                 local dist = k:EyePos():Distance(flashorigin)
                 local dp = (k:EyePos() - flashorigin):Dot(k:EyeAngles():Forward())
 
-                local time = Lerp( dp, 2.5, 0.25 )
+                local time = Lerp( dp, 5, 0.5 )
 
                 time = Lerp( dist / flashpower, time, 0 )
+
+                time = time * (self:GetMini() and 0.5 or 1)
 
                 if k:VisibleVec( flashorigin ) then
                     k:ScreenFade( SCREENFADE.IN, Color( 255, 255, 255, 255 ), 2.5, time )
