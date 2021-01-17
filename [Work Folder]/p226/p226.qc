@@ -516,6 +516,74 @@ $sequence "reload_empty_nomen_stick_roni" {
 }
 
 
+
+
+
+
+
+$sequence "reload_akimbo" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_p226.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 28 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 38 "Arccw_FAS2_Weapon_p226.MagIn" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Cloth_Movement" }	
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_akimbo" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_p226.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 28 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 38 "Arccw_FAS2_Weapon_p226.MagIn" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_p226.SlideStop" }
+	{ event 5004 72 "Arccw_FAS2_Generic.Cloth_Movement" }		
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_nomen_akimbo" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_p226.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 28 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 38 "Arccw_FAS2_Weapon_p226.MagIn" }
+	{ event 5004 45 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
+
+$sequence "reload_empty_nomen_akimbo" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_p226.MagOutEmpty" }
+	{ event 5004 21 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 28 "Arccw_FAS2_Weapon_p226.MagInPartial" }
+	{ event 5004 38 "Arccw_FAS2_Weapon_p226.MagIn" }
+	{ event 5004 66 "Arccw_FAS2_Weapon_p226.SlideStop" }
+	{ event 5004 72 "Arccw_FAS2_Generic.Cloth_Movement" }	
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
+
+
 $collisionmodel "Phys.smd"
 {
 	$mass 10

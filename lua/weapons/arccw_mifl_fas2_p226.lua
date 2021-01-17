@@ -537,15 +537,15 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
     },
     ["reload_empty_akimbo"] = {
-        Source = "reload_akimbo_empty",
+        Source = "reload_empty_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
     },
     ["reload_nomen_akimbo"] = {
-        Source = "reload_akimbo",
+        Source = "reload_nomen_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
     },
     ["reload_nomen_empty_akimbo"] = {
-        Source = "reload_akimbo_empty",
+        Source = "reload_empty_nomen_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
     },
 }
