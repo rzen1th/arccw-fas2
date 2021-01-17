@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Black Talon"
 SWEP.TrueName = "Desert Eagle"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "Large caliber magnum pistol with an imposing look. Intended for hunting, but there is no prey more dangerous than men..."
+SWEP.Trivia_Desc = "Large caliber magnum pistol with an imposing look. Intended for hunting, but there is no prey more dangerous than men."
 SWEP.Trivia_Manufacturer = "Magnum Research"
 SWEP.Trivia_Calibre = ".50 AE"
 SWEP.Trivia_Mechanism = "Gas-operated"
@@ -22,9 +22,9 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_deagle.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_deagle.mdl"
 SWEP.ViewModelFOV = 60
 SWEP.DefaultBodygroups = "000000000000"
-SWEP.Damage = 82
-SWEP.DamageMin = 40 -- damage done at maximum range
-SWEP.Range = 50 -- in METRES
+SWEP.Damage = 75
+SWEP.DamageMin = 30 -- damage done at maximum range
+SWEP.Range = 40 -- in METRES
 SWEP.Penetration = 12
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -134,7 +134,7 @@ SWEP.AttachmentElements = {
             },
             [2] = {
                 vpos = Vector(6, 2.5, 2.625),
-            },				
+            },
         },
         Override_IronSightStruct = {
             Pos = Vector(-4.875, -8, -0.08),
@@ -145,7 +145,7 @@ SWEP.AttachmentElements = {
     ["akimbo"] = {
         Override_ActivePos = Vector(2, 2, 0),
         Override_HolsterPos = Vector(2,2,2),
-        Override_HolsterAng = Angle(-20, 0, -5),			
+        Override_HolsterAng = Angle(-20, 0, -5),
     },
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}}
@@ -162,7 +162,7 @@ SWEP.AttachmentElements = {
             [2] = {
                 vpos = Vector(1, 1.8, 2.625),
             },
-        },		
+        },
     },
     ["mifl_fas2_deagle_slide_c"] = {
         NameChange = "Talon Hatchling",
@@ -170,9 +170,9 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 4}, {ind = 1, bg = 1}},
         AttPosMods = {
             [4] = {
-				vpos = Vector(2.2, 0.1, 2.625),
+                vpos = Vector(2.2, 0.1, 2.625),
             },
-        },			
+        },
     },
     ["mifl_fas2_deagle_slide_r"] = {
         NameChange = "Scav Talon",
@@ -181,11 +181,11 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [2] = {
                 vpos = Vector(3, 1.5, 2.625),
-            },		
-            [4] = {
-				vpos = Vector(6.2, 0.35, 2.625),
             },
-        },					
+            [4] = {
+                vpos = Vector(6.2, 0.35, 2.625),
+            },
+        },
     },
     ["mifl_fas2_deagle_slide_2x"] = {
         NameChange = "Orthus Talon",
@@ -196,17 +196,16 @@ SWEP.AttachmentElements = {
         NameChange = "Obelisk Talon",
         TrueNameChange = "Deadeye Eagle",
         VMBodygroups = {{ind = 2, bg = 5}},
-        AttPosMods = {	
+        AttPosMods = {
             [4] = {
-				vpos = Vector(9.8, 0.35, 2.625),
+                vpos = Vector(9.8, 0.35, 2.625),
             },
-        },		
+        },
     },
-
-    ["mifl_fas2_deagle_mag_357"] = {
+    ["mifl_fas2_deagle_mag_357_12"] = {
         VMBodygroups = {{ind = 3, bg = 3}},
     },
-    ["mifl_fas2_deagle_mag_44"] = {
+    ["mifl_fas2_deagle_mag_44_11"] = {
         VMBodygroups = {{ind = 3, bg = 2}},
     },
     ["mifl_fas2_deagle_mag_9"] = {
@@ -354,10 +353,8 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
-    if wep.Attachments[3].Installed == "mifl_fas2_roni_marksman" then
-        if anim == "fire" then
-            return "fire_roni"
-        end
+    if wep.Attachments[3].Installed == "mifl_fas2_roni_marksman" and anim == "fire" then
+        return "fire_roni"
     end
 end
 
@@ -392,7 +389,7 @@ SWEP.Animations = {
         Source = "fire_roni",
         ShellEjectAt = 0,
         Time = 0.45
-    },	
+    },
     ["fire_iron"] = {
         Source = "Fire_Iron",
         ShellEjectAt = 0
@@ -490,5 +487,5 @@ SWEP.Animations = {
     ["reload_nomen_empty_akimbo"] = {
         Source = "reload_empty_nomen_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-    },	
+    },
 }
