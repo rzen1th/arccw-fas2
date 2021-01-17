@@ -20,11 +20,11 @@ Unlike the stubborn cunt who made GSO. This features full on ~~slightly wonky~~ 
 
 -Credits-
 
-Fluffy Mammal - Model Hacking, Animation Tweaking.
+Fluffy Mammal - The Art Side
 
-TheOnly8Z - Major helping, Coding, General Things.
+TheOnly8Z - The Technical Side
 
-Fesiug - QCI, Akimbo System, Coding, Spawnicons.
+Fesiug - The Technical Side
 
 FAS2 Team - Original Assets.
 

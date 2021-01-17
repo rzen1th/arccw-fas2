@@ -135,8 +135,8 @@ $sequence "idle" {
 $sequence "Drawst" {
 	"anims\Drawst.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event AE_CL_PLAYSOUND 18 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
-	{ event AE_CL_PLAYSOUND 18 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 18 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
+	{ event 5004 18 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -170,7 +170,7 @@ $sequence "idle_empty_iron" {
 $sequence "deploy" {
 	"deagle_anims\deploy.smd"
 	activity "ACT_VM_DRAW" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Weapon.Deploy" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
 	fadein 0.2
 	fadeout 0.2
 	fps 45
@@ -179,7 +179,7 @@ $sequence "deploy" {
 $sequence "deploy_empty" {
 	"deagle_anims\deploy_empty.smd"
 	activity "ACT_VM_DRAW_EMPTY" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Weapon.Deploy" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
 	fadein 0.2
 	fadeout 0.2
 	fps 45
@@ -188,7 +188,7 @@ $sequence "deploy_empty" {
 $sequence "holster" {
 	"deagle_anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Weapon.Holster" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	fps 40
@@ -197,7 +197,7 @@ $sequence "holster" {
 $sequence "holster_empty" {
 	"deagle_anims\holster_empty.smd"
 	activity "ACT_VM_HOLSTER_EMPTY" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Weapon.Holster" }
+	{ event 5004 0 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	fps 40
@@ -292,12 +292,12 @@ $sequence "fire_iron_last" {
 $sequence "reload" {
 	"deagle_anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 19 "Arccw_FAS2_Weapon_DEagle.MagOut" }
-	{ event AE_CL_PLAYSOUND 19 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 33 "Arccw_FAS2_Generic.Magpouch_Pistol" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_DEagle.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 33 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 49 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -307,14 +307,14 @@ $sequence "reload" {
 $sequence "reload_empty" {
 	"deagle_anims\reload_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 23 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
-	{ event AE_CL_PLAYSOUND 23 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 35 "Arccw_FAS2_Generic.Magpouch_Pistol" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 69 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
-	{ event AE_CL_PLAYSOUND 69 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
+	{ event 5004 23 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
+	{ event 5004 69 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 75 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -324,14 +324,14 @@ $sequence "reload_empty" {
 $sequence "reload_nomen" {
 	"deagle_anims\reload_nomen.smd"
 	activity "ACT_VM_RELOAD_NOMEN" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 5 "Arccw_FAS2_Weapon_DEagle.MagOut" }
-	{ event AE_CL_PLAYSOUND 5 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
-	{ event AE_CL_PLAYSOUND 23 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
-	{ event AE_CL_PLAYSOUND 23 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 31 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
-	{ event AE_CL_PLAYSOUND 31 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 5 "Arccw_FAS2_Weapon_DEagle.MagOut" }
+	{ event 5004 5 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
+	{ event 5004 23 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
+	{ event 5004 31 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 35 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -341,16 +341,16 @@ $sequence "reload_nomen" {
 $sequence "reload_nomen_empty" {
 	"anims\reload_nomen_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 8 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
-	{ event AE_CL_PLAYSOUND 8 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
-	{ event AE_CL_PLAYSOUND 27 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
-	{ event AE_CL_PLAYSOUND 27 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 35 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
-	{ event AE_CL_PLAYSOUND 35 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
+	{ event 5004 8 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 48 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -363,12 +363,12 @@ $sequence "reload_nomen_empty" {
 $sequence "reload_roni" {
 	"anims\reload_roni.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 19 "Arccw_FAS2_Weapon_DEagle.MagOut" }
-	{ event AE_CL_PLAYSOUND 19 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 33 "Arccw_FAS2_Generic.Magpouch_Pistol" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_DEagle.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 33 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 49 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -378,16 +378,88 @@ $sequence "reload_roni" {
 $sequence "reload_empty_roni" {
 	"anims\reload_empty_roni.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
-	{ event AE_CL_PLAYSOUND 0 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 23 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
-	{ event AE_CL_PLAYSOUND 23 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 35 "Arccw_FAS2_Generic.Magpouch_Pistol" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
-	{ event AE_CL_PLAYSOUND 47 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event AE_CL_PLAYSOUND 69 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
-	{ event AE_CL_PLAYSOUND 69 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
+	{ event 5004 23 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 47 "Arccw_FAS2_Weapon_DEagle.MagIn" }
+	{ event 5004 47 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
+	{ event 5004 69 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 3018 75 "" }
 	fadein 0.2
 	fadeout 0.2
 	fps 30
+}
+
+
+
+
+
+$sequence "reload_akimbo" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
+	{ event 5004 8 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_akimbo" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
+	{ event 5004 8 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
+	{ event 5004 69 "Arccw_FAS2_Generic.Cloth_Movement" }	
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_nomen_akimbo" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
+	{ event 5004 8 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
+
+$sequence "reload_empty_nomen_akimbo" {
+	"anims\reload_empty_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_DEagle.MagOutEmpty" }
+	{ event 5004 8 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 16 "Arccw_FAS2_Generic.Magpouch_Pistol" }
+	{ event 5004 27 "Arccw_FAS2_Weapon_DEagle.MagInPartial" }
+	{ event 5004 27 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Weapon_DEagle.MagInNomen" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_DEagle.SlideStop" }
+	{ event 5004 69 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 40
 }
