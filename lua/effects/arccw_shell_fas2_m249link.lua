@@ -1,8 +1,8 @@
 
 EFFECT.Sounds = {}
 EFFECT.Pitch = 90
-EFFECT.Scale = 0.5
-EFFECT.PhysScale = 0.5
+EFFECT.Scale = 1
+EFFECT.PhysScale = 1
 EFFECT.Model = "models/weapons/arccw/mifl/fas2/shell/m249_link.mdl"
 EFFECT.Material = nil
 EFFECT.JustOnce = true
@@ -11,7 +11,7 @@ EFFECT.ShellTime = 1
 
 EFFECT.SpawnTime = 0
 
-EFFECT.ShellScale = 1.5
+EFFECT.ShellScale = 1.25
 EFFECT.ShellRotate = 180
 EFFECT.ShellRotateAngle = Angle(0, 0, 180)
 
