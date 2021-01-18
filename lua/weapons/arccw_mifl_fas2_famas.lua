@@ -181,7 +181,7 @@ SWEP.AttachmentElements = {
             },
             [6] = {
                 vpos = Vector(-2.5, 20, -4.4),
-            },			
+            },
         },
     },
     ["mifl_fas2_famas_barrel_felin"] = {
@@ -220,7 +220,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 3, bg = 4},
         },
-    },	
+    },
 }
 
 SWEP.ExtraSightDist = 10
@@ -264,11 +264,22 @@ SWEP.Hook_ModifyBodygroups = function(wep, data) --- GSO relic
 end
 
 function SWEP:Hook_NameChange(name)
-    local pre = GetConVar("arccw_truenames"):GetBool() and "FAMAS " or "FSL"
+    local truename = GetConVar("arccw_truenames"):GetBool()
+    local pre = truename and "FAMAS" or "FSL"
     local cal = ""
     local post = ""
     local frame = self.Attachments[2].Installed
     local mag = self.Attachments[7].Installed
+
+    if frame == "mifl_fas2_famas_barrel_sd" then
+        post = "-SD"
+    elseif frame == "mifl_fas2_famas_barrel_felin" then
+        post = truename and " Valorisé" or " Félin"
+    elseif frame == "mifl_fas2_famas_barrel_commando" then
+        post = truename and " Kurz" or " PDW"
+    elseif frame == "mifl_fas2_famas_barrel_xs" then
+        post = "-XS"
+    end
 
     if mag == "mifl_fas2_famas_mag_9mm_25" or mag == "mifl_fas2_famas_mag_9mm_50" then
         cal = " A9"
@@ -276,7 +287,7 @@ function SWEP:Hook_NameChange(name)
         cal = " C50"
     end
 
-    return pre .. cal .. post
+    return pre .. post .. cal
 end
 
 SWEP.Attachments = {

@@ -3,7 +3,6 @@ att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_felin.png", "mips smooth"
 att.Description = "Compact frame but longer barrel for the FAMAS, promptly ruining the point of a bullpup but adding more range."
 att.SortOrder = 10
 att.Desc_Pros = {
-"3 Firemode"
 }
 att.Desc_Cons = {
 }
@@ -12,12 +11,10 @@ att.Slot = "mifl_fas2_famas_hg"
 
 att.Mult_MoveSpeed = 0.9
 
-att.Mult_Range = 1.3
-att.Mult_DamageMin = 1.2
-att.Mult_Recoil = 0.95
-att.Mult_SightTime = 0.9
-att.Mult_AccuracyMOA = 0.8
-att.Mult_RPM = 0.9
+att.Mult_Range = 1.75
+att.Mult_Recoil = 0.75
+att.Mult_SightTime = 1.5
+att.Mult_AccuracyMOA = 0.75
 
 att.Mult_ShootPitch = 0.95
 
@@ -30,9 +27,9 @@ att.Override_Firemodes = {
     {
         Mode = -3,
         RunawayBurst = true,
-		Mult_Recoil = 0.95,
+        Mult_Recoil = 0.95,
         PostBurstDelay = 0.08,
-		Mult_RPM = 2,
+        Mult_RPM = 2,
     },
     {
         Mode = 0

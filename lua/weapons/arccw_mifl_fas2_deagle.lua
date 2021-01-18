@@ -265,7 +265,7 @@ SWEP.Attachments = {
             vpos = Vector(5, 0.1, 2.625),
             vang = Angle(0, 0, -90)
         },
-        ExcludeFlags = {"mifl_fas2_g20_slide_whisper", "mifl_fas2_deagle_slide_2x", "roni_dmr"}
+        ExcludeFlags = {"mifl_fas2_g20_slide_whisper", "mifl_fas2_deagle_slide_r", "mifl_fas2_deagle_slide_2x", "roni_dmr"}
     },
     {
         PrintName = "Magazine",
