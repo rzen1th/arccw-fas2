@@ -74,7 +74,7 @@ SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.SpeedMult = 0.95
 SWEP.SightedSpeedMult = 0.8
-SWEP.SightTime = 0.3
+SWEP.SightTime = 0.27
 
 SWEP.IronSightStruct = {
     Pos = Vector(-4.086, -9, 0.898),
@@ -162,6 +162,19 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m4a1_barrel_a2"] = {
         NameChange = "AR-A2",
         TrueNameChange = "M16A2",
+        VMBodygroups = {
+            {ind = 1, bg = 1},
+            {ind = 2, bg = 1},
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(31, -1.3, 0)
+            }
+        }
+    },
+    ["mifl_fas2_m4a1_barrel_a3"] = {
+        NameChange = "AR-A3",
+        TrueNameChange = "M16A3",
         VMBodygroups = {
             {ind = 1, bg = 1},
             {ind = 2, bg = 1},
@@ -268,7 +281,7 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m4a1_barrel_ar2"] = {
         NameChange = "AR-Overlord",
-        TrueNameChange = "ARM4",
+        TrueNameChange = "AR4",
         VMBodygroups = {
             {ind = 1, bg = 11},
             {ind = 2, bg = 10},

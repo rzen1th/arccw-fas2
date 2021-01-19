@@ -9,13 +9,13 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_m4a1_hg"
 
-att.Mult_MoveSpeed = 0.9
+att.Mult_MoveSpeed = 0.925
 
 att.Mult_Range = 1.5
 att.Mult_Recoil = 0.8
 att.Mult_AccuracyMOA = 0.7
-att.Mult_SightTime = 1.2
-att.Mult_HipDispersion = 1.2
+att.Mult_SightTime = 1.15
+att.Mult_HipDispersion = 1.15
 
 att.Add_BarrelLength = 7
 
