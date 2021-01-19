@@ -1,5 +1,5 @@
 att.PrintName = "Leupold Compact (5x)"
-att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_optic_lmk4s.png", "smooth")
 att.Description = "Custom made adjustable compact scope for medium range use. It retains the same sight picture as the Mk 4, but has only two zoom options."
 
 att.SortOrder = 5

@@ -1,5 +1,5 @@
 att.PrintName = "PSO-1 (4x)"
-att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_optic_pso1.png", "smooth")
 att.Description = "Russian combat optic on a picatinny rail adapter. It is slightly heavier than scopes of the same zoom level."
 
 att.SortOrder = 4
