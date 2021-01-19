@@ -208,7 +208,7 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_deagle_mag_44_11"] = {
         VMBodygroups = {{ind = 3, bg = 2}},
     },
-    ["mifl_fas2_deagle_mag_9"] = {
+    ["mifl_fas2_deagle_mag_9_18"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
     },
 }
