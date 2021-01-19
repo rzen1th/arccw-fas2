@@ -17,6 +17,7 @@ att.Mult_RPM = 2
 att.Mult_Damage = 0.3
 att.Mult_DamageMin = 0.5
 att.Mult_ShootPitch = 1.2
+att.Mult_ShootVol = 0.8
 
 att.Override_ShellModel = "models/shells/shell_9mm.mdl"
 

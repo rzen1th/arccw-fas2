@@ -71,7 +71,7 @@ SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.SpeedMult = 0.99
 SWEP.SightedSpeedMult = 0.75
-SWEP.SightTime = 0.200
+SWEP.SightTime = 0.34
 
 SWEP.IronSightStruct = {
     Pos = Vector(-4.875, -5, 1.65),
