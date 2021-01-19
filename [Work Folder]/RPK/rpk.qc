@@ -148,6 +148,14 @@ $definebone "PSO1_Eyepiece1" "PSO-1Main Dummy" 0.000666 0.014168 -3.948097 89.99
 
 $sectionframes 30 120
 
+$sequence "idle" {
+	"rpk_anims\idle.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 $sequence "deploy_first" {
 	"rpk_anims\deploy_first.smd"
 	activity "ACT_VM_DRAW_FIRST" 1
@@ -184,14 +192,6 @@ $sequence "holster" {
 	fadein 0.2
 	fadeout 0.2
 	fps 60
-}
-
-$sequence "idle" {
-	"rpk_anims\idle.smd"
-	activity "ACT_VM_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
 }
 
 $sequence "idle_scoped" {

@@ -30,6 +30,6 @@ att.Mult_SpeedMult = 0.9
 att.Mult_SightedSpeedMult = 0.75
 att.Mult_DrawTime = 2
 att.Mult_HolsterTime = 2
-att.Mult_RPM = 0.5
+att.Mult_RPM = 0.75
 
 att.AddSuffix = " Roni"
