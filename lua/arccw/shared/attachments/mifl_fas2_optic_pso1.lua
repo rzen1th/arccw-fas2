@@ -1,6 +1,6 @@
 att.PrintName = "PSO-1 (4x)"
 att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
-att.Description = "Medium range optic slated for use in the modern M110 semi-automatic rifle."
+att.Description = "Russian combat optic on a picatinny rail adapter. It is slightly heavier than scopes of the same zoom level."
 
 att.SortOrder = 4
 
@@ -26,7 +26,7 @@ att.AdditionalSights = {
     },
 }
 att.Holosight = true
-att.HolosightMagnification = 1.5
+att.HolosightMagnification = 4
 att.HolosightMagnificationMin = 4
 att.HolosightMagnificationMax = 4
 att.HolosightReticle = Material("mifl_fas2_reticle/pso1.png", "mips smooth")
@@ -36,6 +36,6 @@ att.HolosightBone = "holosight"
 att.Colorable = false
 att.HolosightBlackbox = false --- for now
 
-att.Mult_SightTime = 1.25
-att.Mult_SpeedMult = 0.9
+att.Mult_SightTime = 1.08
+att.Mult_SpeedMult = 0.94
 

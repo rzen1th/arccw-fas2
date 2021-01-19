@@ -2,7 +2,7 @@ att.PrintName = "Leupold Mk. 4 (8x)"
 att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
 att.Description = "Adjustable medium to long range optic, used on a variety of US military marksman and sniper rifles."
 
-att.SortOrder = 7.9
+att.SortOrder = 8
 
 att.Desc_Pros = {
     "autostat.holosight",
