@@ -25,9 +25,9 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 16
-SWEP.DamageMin = 7 -- damage done at maximum range
-SWEP.Num = 20
+SWEP.Damage = 15
+SWEP.DamageMin = 6 -- damage done at maximum range
+SWEP.Num = 25
 SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
@@ -43,7 +43,7 @@ SWEP.RecoilRise = 1.2
 
 SWEP.ShotgunReload = true
 SWEP.ManualAction = true
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 180 -- 60 / RPM.
 SWEP.Firemodes = {
     {
         Mode = 1,
