@@ -1,4 +1,4 @@
-att.PrintName = "14-Round 9mm"
+att.PrintName = "18-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g20_8.png", "mips smooth")
 att.Description = "What if you want the intimidating look of the .50 pistol but the reliability and ease of use of a double-stack 9mm pistol? Well... this. It ain't pretty."
 att.Desc_Pros = {
@@ -9,7 +9,7 @@ att.SortOrder = 1
 att.AutoStats = true
 att.Slot = {"mifl_fas2_deagle_mag"}
 
-att.Override_ClipSize = 14
+att.Override_ClipSize = 18
 
 att.Mult_Penetration = 0.5
 att.Mult_Recoil = 0.2
