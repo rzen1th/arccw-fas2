@@ -21,7 +21,8 @@ att.Mult_Damage = 0.95
 att.Mult_DamageMin = 3.5
 att.Mult_Recoil = 1.2
 att.Mult_ShootVol = 0.85
-att.Mult_Range = 0.9
+att.Mult_Range = 3
+att.Mult_RPM = 0.8
 
 att.Override_Ammo = "smg1"
 att.Override_PhysTracerProfile = 5

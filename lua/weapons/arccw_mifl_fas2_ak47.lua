@@ -383,7 +383,7 @@ function SWEP:Hook_NameChange(name)
         mid = "/"
         post = "762"
         -- VSS Vintorez has the same barrel, we can tell by stock
-        if handguard == "mifl_fas2_ak_hg_sd" and (stock == "mifl_fas2_ak_stock_rpk" or !stock) then
+        if handguard == "mifl_fas2_ak_hg_sd" and (stock == "mifl_fas2_ak_stock_rpk" or stock == "mifl_fas2_ak_stock_svd" or !stock) then
             pre = "VSS Vintorez"
         elseif handguard == "mifl_fas2_ak_hg_sdk" then
             pre = "AS Val-K"
