@@ -42,7 +42,7 @@ SWEP.RecoilSide = 1.2
 SWEP.RecoilRise = 1.6
 
 SWEP.ManualAction = true
-SWEP.Delay = 60 / 120 -- 60 / RPM.
+SWEP.Delay = 60 / 300 -- 60 / RPM.
 SWEP.Firemodes = {
     {
         Mode = 1,
@@ -283,70 +283,70 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "cock01",
         ShellEjectAt = 0.35,
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron"] = {
         Source = "cock01_scoped",
         ShellEjectAt = 0.35,
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_nomen"] = {
         Source = "pump01_nomen",
         ShellEjectAt = 0.35,
-        MinProgress = 0.7,
+        MinProgress = 0.8,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["cycle_iron_nomen"] = {
         Source = "pump01_nomen_scoped",
         ShellEjectAt = 0.35,
-        MinProgress = 0.7,
+        MinProgress = 0.8,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
 
 
     ["Reload1"] = {
         Source = "reload_1",
-        MinProgress = 3.5,		
+        --MinProgress = 3.5,
     },
     ["Reload2"] = {
         Source = "reload_2",
-        MinProgress = 3.8,			
+        --MinProgress = 3.8,
     },
     ["Reload3"] = {
         Source = "reload_3",
-        MinProgress = 4.2,			
+        --MinProgress = 4.2,
     },
     ["Reload4"] = {
         Source = "reload_4",
-        MinProgress = 4.6,			
+        --MinProgress = 4.6,
     },
     ["Reload5"] = {
         Source = "reload_empty",
         ShellEjectAt = 0.35,
-        MinProgress = 3.8,			
+        --MinProgress = 3.8,
     },
 -- Nomen
     ["Reload1_nomen"] = {
         Source = "Reload_1_nomen",
-        MinProgress = 3.5*0.8,			
+        --MinProgress = 3.5*0.8,
     },
     ["Reload2_nomen"] = {
         Source = "Reload_2_nomen",
-        MinProgress = 3.8*0.8,			
+        --MinProgress = 3.8*0.8,
     },
     ["Reload3_nomen"] = {
         Source = "Reload_3_nomen",
-        MinProgress = 4.2*0.8,			
+        --MinProgress = 4.2*0.8,
     },
     ["Reload4_nomen"] = {
         Source = "reload_4_nomen",
-        MinProgress = 4.6*0.8,				
+        --MinProgress = 4.6*0.8,
     },
     ["Reload5_nomen"] = {
         Source = "reload_empty_nomen",
         ShellEjectAt = 0.35,
-        MinProgress = 3.8*0.8,	
+        --MinProgress = 3.8*0.8,
     },
 }
