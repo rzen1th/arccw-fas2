@@ -1,8 +1,8 @@
-att.PrintName = "Leupold Mk. 4 (3.5-10x)"
+att.PrintName = "Leupold Mk. 4 (8x)"
 att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
 att.Description = "Medium range optic slated for use in the modern M110 semi-automatic rifle."
 
-att.SortOrder = 6.75
+att.SortOrder = 7.9
 
 att.Desc_Pros = {
     "autostat.holosight",
@@ -18,7 +18,7 @@ att.HolosightPiece = "models/weapons/arccw/mifl_atts/fas2_optic_lmk4_hsp.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 20, -1.6),
+        Pos = Vector(0, 12, -1.6),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -30,10 +30,10 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightMagnification = 3.5
 att.HolosightMagnificationMin = 3.5
-att.HolosightMagnificationMax = 10
+att.HolosightMagnificationMax = 8
 att.HolosightReticle = Material("mifl_fas2_reticle/mildot.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 4.5
+att.HolosightSize = 5.25
 att.HolosightBone = "holosight"
 att.Colorable = false
 att.HolosightBlackbox = true
