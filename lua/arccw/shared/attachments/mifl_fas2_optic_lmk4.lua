@@ -1,6 +1,6 @@
 att.PrintName = "Leupold Mk. 4 (8x)"
 att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
-att.Description = "Medium range optic slated for use in the modern M110 semi-automatic rifle."
+att.Description = "Adjustable medium to long range optic, used on a variety of US military marksman and sniper rifles."
 
 att.SortOrder = 7.9
 
@@ -22,7 +22,7 @@ att.AdditionalSights = {
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
-        ZoomLevels = 4,
+        ZoomLevels = 3,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true,
     },
@@ -33,7 +33,7 @@ att.HolosightMagnificationMin = 3.5
 att.HolosightMagnificationMax = 8
 att.HolosightReticle = Material("mifl_fas2_reticle/mildot.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 5.25
+att.HolosightSize = 5.5
 att.HolosightBone = "holosight"
 att.Colorable = false
 att.HolosightBlackbox = true

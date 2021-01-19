@@ -25,9 +25,9 @@ att.AdditionalSights = {
         HolosightBone = "scope",
         HolosightData = {
             Holosight = true,
-			HolosightMagnification = 3,
-			HolosightMagnificationMin = 3,
-			HolosightMagnificationMax = 12,
+            HolosightMagnification = 3,
+            HolosightMagnificationMin = 3,
+            HolosightMagnificationMax = 12,
             HolosightReticle = Material("mifl_fas2_reticle/frf3.png"),
             HolosightNoFlare = true,
             HolosightSize = 5,
@@ -37,10 +37,9 @@ att.AdditionalSights = {
         },
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 8,
-        ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",		
+        ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true,
     },
-	
     {
         Pos = Vector(0, 17, -1.2),
         Ang = Angle(0, 0, 0),
@@ -49,25 +48,24 @@ att.AdditionalSights = {
         HolosightBone = "scope",
         Thermal = true,
         ThermalScopeColor = Color(0, 255, 0),
-        ThermalHighlightColor = Color(255, 255, 0),		
+        ThermalHighlightColor = Color(255, 255, 0),
         HolosightData = {
             Holosight = true,
-			HolosightMagnification = 3,
-			HolosightMagnificationMin = 1.5,
-			HolosightMagnificationMax = 6,
+            HolosightMagnification = 3,
+            HolosightMagnificationMin = 1.5,
+            HolosightMagnificationMax = 6,
             HolosightReticle = Material("mifl_fas2_reticle/frf2.png"),
             HolosightNoFlare = true,
             HolosightSize = 4,
             HolosightBlackbox = false,
             Colorable = true,
-            HolosightPiece = "weapons/arccw/mifl_atts/fas2/felin_scope_hsp.mdl"			
+            HolosightPiece = "weapons/arccw/mifl_atts/fas2/felin_scope_hsp.mdl"
         },
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 8,
-        ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",		
+        ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true,
-    },	
-	
+    },
     {
         Pos = Vector(0, 10, -5.7),
         Ang = Angle(0, 0, 0),
@@ -76,12 +74,12 @@ att.AdditionalSights = {
         HolosightData = {
             Holosight = true,
             HolosightReticle = Material("mifl_fas2_reticle/frf4.png"),
-			HolosightNoFlare = true,
+            HolosightNoFlare = true,
             HolosightSize = 1,
             Colorable = true,
             HolosightNoHSP = true
         },
-        IgnoreExtra = true,		
+        IgnoreExtra = true,
     },
 }
 
