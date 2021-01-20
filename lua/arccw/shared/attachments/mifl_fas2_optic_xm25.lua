@@ -26,32 +26,26 @@ att.AdditionalSights = {
         ThermalHighlightColor = Color(212, 13, 13),
         HolosightData = {
             Holosight = true,
-            HolosightMagnification = 3,
-            HolosightMagnificationMin = 1.5,
-            HolosightMagnificationMax = 6,
             HolosightReticle = Material("mifl_fas2_reticle/frf2.png"),
-            HolosightNoFlare = true,
             HolosightSize = 4,
-            HolosightBlackbox = false,
-            Colorable = true,
+            HolosightBlackbox = false,	
         },
         ScrollFunc = ArcCW.SCROLL_ZOOM,
-        ZoomLevels = 4,
+        ZoomLevels = 1,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true,
 	},
 }
 att.Holosight = true
 att.HolosightMagnification = 4
-att.HolosightMagnificationMin = 4
-att.HolosightMagnificationMax = 4
+att.HolosightMagnificationMin = 6
+att.HolosightMagnificationMax = 6
 att.HolosightReticle = Material("mifl_fas2_reticle/acog2.png", "mips smooth")
 att.HolosightNoFlare = true
 att.HolosightSize = 4
 att.HolosightBone = "holosight"
 att.Colorable = true
-att.HolosightBlackbox = true
+att.HolosightBlackbox = false
 
-att.Mult_SightTime = 1.08
-att.Mult_SpeedMult = 0.94
-
+att.Mult_SightTime = 1.12
+att.Mult_SpeedMult = 0.9
