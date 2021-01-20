@@ -1,3 +1,8 @@
+[Created by slogkot, TheOnly8Z and Fesiug]
+[Ask me(slogkot) if you want to reuse some of these custom assets)
+
+
+
 /*
 --- to the 5 people that decompiled this mod for whatever reason and read this
 --- please dont fucking make cheaty attachment or anything like that
@@ -33,7 +38,7 @@ https://gamebanana.com/skins/41834
 
 ---------------------------------------------------------------
 In Depth Credits		(using steam names)
-Fluffy Mammal 
+slogkot (Fluffy Mammal)
 -model hacks
 -anims edits
 -MASS26 anim
@@ -149,6 +154,8 @@ FS2R was designed on these pillar in order
 -Functionality
 -Brainless Fun
 -"Im the best fucker in the world"
+
+in addition to that this was made to hone my skill in editing of animation, models and topology 
 
 The ART side of things:
 this is how you get people to use your shit in the first place, fucking visual, be it animation (which i do not have controls over in this one) and how it looks      
