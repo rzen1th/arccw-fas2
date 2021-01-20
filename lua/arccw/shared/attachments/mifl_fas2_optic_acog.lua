@@ -1,6 +1,6 @@
 att.PrintName = "ACOG (4x)"
-att.Icon = Material("entities/arccw_mifl_fas2_optic_pso1.png", "smooth")
-att.Description = "Russian combat optic on a picatinny rail adapter. It is slightly heavier than scopes of the same zoom level."
+att.Icon = Material("entities/arccw_mifl_fas2_optic_acog.png", "smooth")
+att.Description = "ooooooow."
 
 att.SortOrder = 4
 
