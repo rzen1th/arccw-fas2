@@ -1,6 +1,6 @@
 att.PrintName = "ACOG (4x)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_acog.png", "smooth")
-att.Description = "ooooooow."
+att.Description = "Adaptive mid range combat scope fitted with an backup ironsight."
 
 att.SortOrder = 4
 

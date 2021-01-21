@@ -1,6 +1,6 @@
 att.PrintName = "Xleris Scope(6x)"
-att.Icon = Material("entities/arccw_mifl_fas2_optic_acog.png", "smooth")
-att.Description = "Compact thermal scope ripped straight from an XM25. Bulky"
+att.Icon = Material("entities/arccw_mifl_fas2_optic_xm25.png", "smooth")
+att.Description = "Compact thermal scope. Still bulkier than normal scope."
 
 att.SortOrder = 6
 
@@ -40,7 +40,7 @@ att.HolosightSize = 6.5
 att.HolosightBone = "holosight"
 att.HolosightBlackbox = true
 att.Colorable = true
-att.HolosightReticle = Material("mifl_fas2_reticle/xm25.png")
+att.HolosightReticle = Material("mifl_fas2_reticle/xm25.png", "mips smooth")
 
-att.Mult_SightTime = 1.12
+att.Mult_SightTime = 1.115
 att.Mult_SpeedMult = 0.9
