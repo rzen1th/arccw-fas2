@@ -24,7 +24,8 @@ SWEP.ViewModelFOV = 54
 
 SWEP.Damage = 18
 SWEP.DamageMin = 5
-SWEP.Range = 40
+SWEP.Range = 45
+SWEP.RangeMin = 10
 SWEP.Penetration = 2
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.MuzzleVelocity = 1050
@@ -57,7 +58,7 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 120
 
-SWEP.AccuracyMOA = 30 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 25 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 110
 
