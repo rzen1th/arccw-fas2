@@ -31,8 +31,8 @@ att.AdditionalSights = {
             HolosightReticle = Material("mifl_fas2_reticle/frf3.png"),
             HolosightNoFlare = true,
             HolosightSize = 5,
-            HolosightBlackbox = false,
-            Colorable = false,
+            HolosightBlackbox = true,
+            Colorable = true,
             HolosightPiece = "weapons/arccw/mifl_atts/fas2/felin_scope_hsp.mdl"
         },
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -57,7 +57,7 @@ att.AdditionalSights = {
             HolosightReticle = Material("mifl_fas2_reticle/frf2.png"),
             HolosightNoFlare = true,
             HolosightSize = 4,
-            HolosightBlackbox = false,
+            HolosightBlackbox = true,
             Colorable = true,
             HolosightPiece = "weapons/arccw/mifl_atts/fas2/felin_scope_hsp.mdl"
         },

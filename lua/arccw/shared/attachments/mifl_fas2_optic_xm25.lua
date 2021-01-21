@@ -36,11 +36,11 @@ att.HolosightMagnification = 4
 att.HolosightMagnificationMin = 6
 att.HolosightMagnificationMax = 6
 att.HolosightNoFlare = true
-att.HolosightSize = 5.2
+att.HolosightSize = 6.5
 att.HolosightBone = "holosight"
-att.HolosightBlackbox = false
+att.HolosightBlackbox = true
 att.Colorable = true
-att.HolosightReticle = Material("mifl_fas2_reticle/frf2.png")
+att.HolosightReticle = Material("mifl_fas2_reticle/xm25.png")
 
 att.Mult_SightTime = 1.12
 att.Mult_SpeedMult = 0.9
