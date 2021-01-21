@@ -57,6 +57,20 @@ sound.Add({
 })
 
 sound.Add({
+	name = 			"Arccw_FAS2_Generic.Magpouch_Pistol",
+	channel = 		CHAN_ITEM3,
+	volume = 		1.0,
+	sound = "weapons/arccw_mifl/fas2/handling/generic_magpouch_pistol1.wav"
+})
+
+sound.Add({
+	name = 			"Arccw_FAS2_Generic.Magpouch_Shotgun",
+	channel = 		CHAN_ITEM3,
+	volume = 		1.0,
+	sound = "weapons/arccw_mifl/fas2/handling/generic_magpouch_shotgun1.wav"
+})
+
+sound.Add({
 	name = 			"Arccw_FAS2_Generic.Magpouch",
 	channel = 		CHAN_ITEM3,
 	volume = 		1.0,
@@ -69,6 +83,8 @@ sound.Add({
 	volume = 		1.0,
 	sound = "weapons/arccw_mifl/fas2/handling/switch.wav"
 })
+
+
 
 //M82
 sound.Add({
