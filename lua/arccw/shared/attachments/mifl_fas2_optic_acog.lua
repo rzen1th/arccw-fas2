@@ -32,7 +32,7 @@ att.AdditionalSights = {
         HolosightData = {
             Holosight = true,
 			HolosightReticle = Material("mifl_fas2_reticle/blank.png"),
-            HolosightPiece = "models/weapons/arccw/mifl_atts/fas2_optic_acog_hsp.mdl"
+            HolosightPiece = "models/weapons/arccw/mifl_atts/fas2_optic_acog_hsp.mdl",
             HolosightBlackbox = true,			
         },	
         IgnoreExtra = true,		
