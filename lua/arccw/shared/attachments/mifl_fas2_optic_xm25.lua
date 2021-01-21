@@ -18,34 +18,29 @@ att.HolosightPiece = "models/weapons/arccw/mifl_atts/fas2_optic_xm25_hsp.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 10, -1.5),
+        Pos = Vector(0, 10, -2.5),
         Ang = Angle(0, 0, 0),
         Magnification = 1.2,
         Thermal = true,
-        ThermalScopeColor = Color(172, 189, 176),
-        ThermalHighlightColor = Color(212, 13, 13),
-        HolosightData = {
-            Holosight = true,
-            HolosightReticle = Material("mifl_fas2_reticle/frf2.png"),
-            HolosightSize = 4,
-            HolosightBlackbox = false,	
-        },
+        ThermalScopeColor = Color(255, 255, 255),
+        ThermalHighlightColor = Color(0, 255, 255),
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 1,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true,
 	},
 }
+
 att.Holosight = true
 att.HolosightMagnification = 4
 att.HolosightMagnificationMin = 6
 att.HolosightMagnificationMax = 6
-att.HolosightReticle = Material("mifl_fas2_reticle/acog2.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 4
+att.HolosightSize = 5.2
 att.HolosightBone = "holosight"
-att.Colorable = true
 att.HolosightBlackbox = false
+att.Colorable = true
+att.HolosightReticle = Material("mifl_fas2_reticle/frf2.png")
 
 att.Mult_SightTime = 1.12
 att.Mult_SpeedMult = 0.9
