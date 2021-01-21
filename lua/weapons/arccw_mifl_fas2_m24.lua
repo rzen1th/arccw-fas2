@@ -113,8 +113,8 @@ SWEP.HolsterAng = Angle(-5, 5, 0)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.CustomizePos = Vector(8, 0, 1)
-SWEP.CustomizeAng = Angle(5, 30, 30)
+SWEP.CustomizePos = Vector(6, -1, -1)
+SWEP.CustomizeAng = Angle(10, 15, 15)
 
 SWEP.BarrelLength = 24
 
@@ -123,7 +123,7 @@ SWEP.AttachmentElements = {}
 SWEP.ExtraSightDist = 20
 
 SWEP.WorldModelOffset = {
-    pos = Vector(-11.5, 6, -4),
+    pos = Vector(-15, 7, -6),
     ang = Angle(-10, 0, 180)
 }
 
