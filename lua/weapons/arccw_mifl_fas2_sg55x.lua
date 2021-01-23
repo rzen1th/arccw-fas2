@@ -245,8 +245,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.WorldModelOffset = {
-    pos = Vector(-13, 5.5, -5),
-    ang = Angle(0, 0, 180)
+    pos = Vector(-8.2, 5, -6),
+    ang = Angle(-10, 0, 180)
 }
 
 SWEP.MirrorVMWM = true

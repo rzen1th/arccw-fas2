@@ -213,7 +213,7 @@ end
 SWEP.ExtraSightDist = 10
 
 SWEP.WorldModelOffset = {
-    pos = Vector(-14, 5.5, -6),
+    pos = Vector(-20, 6, -3),
     ang = Angle(-10, 0, 180)
 }
 

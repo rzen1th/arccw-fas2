@@ -226,7 +226,7 @@ SWEP.AttachmentElements = {
 SWEP.ExtraSightDist = 10
 
 SWEP.WorldModelOffset = {
-    pos = Vector(-13, 5.5, -5),
+    pos = Vector(-17, 5.5, -4.5),
     ang = Angle(-10, 0, 180)
 }
 

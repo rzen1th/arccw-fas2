@@ -526,8 +526,8 @@ function SWEP:Hook_NameChange(name)
 end
 
 SWEP.WorldModelOffset = {
-    pos = Vector(-13, 5.5, -5),
-    ang = Angle(0, 0, 180)
+    pos = Vector(-14, 6, -5),
+    ang = Angle(-10, 0, 180)
 }
 
 SWEP.MirrorVMWM = true

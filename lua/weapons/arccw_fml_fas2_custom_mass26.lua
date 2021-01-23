@@ -120,6 +120,11 @@ SWEP.HolsterAng = Angle(7.036, 30.016, -30)
 SWEP.CustomizePos = Vector(3, 3, -1)
 SWEP.CustomizeAng = Angle(10, 10, 5)
 SWEP.ShellRotateAngle = Angle(5, 0, 40)
+SWEP.WorldModelOffset = {
+    pos = Vector(-8, 5, -5.5),
+    ang = Angle(-10, 0, 185)
+}
+SWEP.MirrorVMWM = true
 
 SWEP.AttachmentElements = {
     ["mifl_fas2_mass26_mag_25"] = {

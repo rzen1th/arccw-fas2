@@ -463,3 +463,13 @@ $sequence "reload_empty_nomen_akimbo" {
 	fadeout 0.2
 	fps 40
 }
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
+}
