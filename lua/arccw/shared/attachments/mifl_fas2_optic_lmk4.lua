@@ -1,4 +1,4 @@
-att.PrintName = "Leupold Mk. 4 (8x)"
+att.PrintName = "Leupold Mk. 4 (3.5-8x)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_lmk4.png", "smooth")
 att.Description = "Adjustable medium to long range optic, used on a variety of US military marksman and sniper rifles."
 

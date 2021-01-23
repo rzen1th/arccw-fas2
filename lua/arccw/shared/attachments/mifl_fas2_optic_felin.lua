@@ -1,6 +1,6 @@
 att.PrintName = "FRF2 (3-12x)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_felin.png", "mips smooth")
-att.Description = "Heavy advance optic system. Comes with a Thermal option. As well as a backup EO553."
+att.Description = "Heavy advance optic system. Comes with a Thermal option with lower zoom, as well as a backup EO553."
 
 att.SortOrder = 12
 
