@@ -30,7 +30,7 @@ SWEP.WorldModelOffset = {
     pos = Vector(-17, 5.5, -5),
     ang = Angle(-10, 0, 180)
 }
-
+SWEP.MirrorVMWM = true
 SWEP.Damage = 85
 SWEP.DamageMin = 49 -- damage done at maximum range
 SWEP.Range = 50 -- in METRES
