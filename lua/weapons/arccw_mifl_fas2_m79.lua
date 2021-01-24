@@ -206,7 +206,7 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Slot = {"mifl_fas2_m79_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "ks23",
+        Bone = "m79_frame",
         Offset = {
             vpos = Vector(0, -0.25, 1),
             vang = Angle(90, 0, -90),
@@ -225,13 +225,23 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "ks23", -- relevant bone any attachments will be mostly referring to
+        Bone = "m79_frame",
         Offset = {
             vpos = Vector(0.5, -0.5, 4), -- offset that the attachment will be relative to the bone
             vang = Angle(90, 0, -90),
         },
     },
 }
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep.Attachments[1].Installed or wep.Attachments[4].Installed == "mifl_fas2_m79_tube_k" then
+        if anim == "draw" then
+            return "draw_optic"
+        elseif anim == "holster" then
+            return "holster_optic"
+        end
+    end
+end
 
 function SWEP:Hook_NameChange(name)
     local truename = GetConVar("arccw_truenames"):GetBool()
@@ -262,10 +272,24 @@ SWEP.Animations = {
         Source = "holster",
         LHIK = true,
         LHIKIn = 0.3,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
+    },
+    ["draw_optic"] = {
+        Source = "draw_optic",
+        LHIK = true,
+        LHIKIn = 0.3,
         LHIKOut = 0.4,
     },
+    ["holster_optic"] = {
+        Source = "holster_optic",
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
+    },	
     ["ready"] = {
-        Source = "deploy",
+        Source = "deploy1st",
         LHIK = true,
         LHIKIn = 0.3,
         LHIKOut = 0.4,

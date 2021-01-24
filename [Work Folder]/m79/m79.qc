@@ -130,12 +130,42 @@ $sequence "deploy" {
 	fps 33
 }
 
+$sequence "deploy1st" {
+	"anims\deploy1st.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 12 "Arccw_FAS2_Weapon_M79.Close" }
+	{ event 5004 20 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 $sequence "holster" {
 	"m79_anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
 	{ event 5004 1 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 19 "Arccw_FAS2_Weapon_Misc.Switch" }
 	{ event 5004 29 "Arccw_FAS2_Weapon.Holster" }
+	fadein 0.2
+	fadeout 0.2
+	fps 33
+}
+
+$sequence "draw_optic" {
+	"anims\draw_optic.smd"
+	activity "ACT_VM_DRAW" 1
+	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
+	{ event 5004 22 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 33
+}
+
+$sequence "holster_optic" {
+	"anims\holster_optic.smd"
+	activity "ACT_VM_HOLSTER" 1
+	{ event 5004 1 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 5 "Arccw_FAS2_Weapon.Holster" }
 	fadein 0.2
 	fadeout 0.2
 	fps 33
@@ -213,4 +243,16 @@ $sequence "shoot_iron2" {
 	fadeout 0.2
 	snap
 	fps 30
+}
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }
