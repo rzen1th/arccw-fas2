@@ -48,6 +48,7 @@ $cdmaterials "models\weapons\mifl_custom\mass26\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
+$cdmaterials "models\weapons\arccw_fas2\accessories\"
 
 $attachment "1" "Weapon_Muzzle" 0 0 0 rotate -90 0 0
 $attachment "2" "Weapon_Shell" 0 0 0 rotate 0 -135 0
