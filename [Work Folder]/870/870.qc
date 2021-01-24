@@ -14,7 +14,7 @@ $surfaceprop "default"
 
 $contents "solid"
 
-$illumposition -2.422 -16.436 3.009
+$illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\870\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
