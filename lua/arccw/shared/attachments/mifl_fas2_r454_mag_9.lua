@@ -1,6 +1,6 @@
 att.PrintName = "45.ACP Cylinder"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_8.png", "mips smooth")
-att.Description = "why"
+att.Icon = Material("entities/arccw_mifl_fas2_r454_mag_9.png", "mips smooth")
+att.Description = "why would you do this"
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

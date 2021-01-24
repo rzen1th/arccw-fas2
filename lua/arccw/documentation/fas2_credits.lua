@@ -9,11 +9,6 @@
 --- thank you very much
 
 
-
-
-
-
-
 --- look ight these nibbas dont really give specific credits ---
 M16A1 - ???
 https://gamebanana.com/skins/19381
@@ -42,7 +37,7 @@ slogkot (Fluffy Mammal)
 -model hacks
 -anims edits
 -MASS26 anim
--casing models
+-new casing models
 -underbarrel stuff
 
 Fesiug
@@ -67,7 +62,7 @@ Tripwire (Killing Floor 2) --- very naisu
 -10mm Mag (MP5) 
 -Thompson Kit
 -UMP45 (MP5) 
--RIS Mount (M11)
+-RIS Mount (Mac11)
 -M3 Stock
 -G18c/G17 Slide
 -Glock Stock
@@ -83,7 +78,7 @@ Infinity Ward / Beenox / Treyarch
 -Suppressed sound and firing sound for calibre conversion (Mostly MW19)
 
 Saber Interactive (AVA) -- quite ebin assets ngl
--Felin (+big ass scope)
+-Felin (+big ass scope) -- look i dont fucking know if this is from ava or wwz, the fucker doesnt really specify but if i have to guess its ava cuz the poo texture
 
 Crytek (Warface)
 -Roni Frame
@@ -100,6 +95,9 @@ DICE
 They Hunger 
 -TOZ34
 
+Magmacow
+-alot of sounds 
+
 FA:S2 
 -your guess is as good as mine
 
@@ -108,14 +106,14 @@ Google Images
 
 
 [Assets Ripper] -- everyone deserves a place 
--Fesiug (mw2 rip)
--Stefano (mw2cr rip)
--Dr Gordon Freeman (MW19 rip)
+-Fesiug (MW2 rip)
+-Stefano (MW2CR rip)
+-Dr Gordon Freeman (MW19,MWR rip)
 -Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
--HK G41/empty (ava, warface rip, pretty fucking sure these two are the same)
+-HK G41/empty (ava, warface, wwz rip, pretty fucking sure these two are the same)
 -ClearSkyC (warface rip)
 -Moon (BF4 rip)
-
+---probably miss someone
 
 */
 
@@ -201,8 +199,7 @@ it is quite funny you know
 we both use others people assets
 he uses CSGO and INS2
 i use FAS2 and KF2 (and alot of other stuff)
-he makes quanity (lotsa gun but very meh)
-i make quality (not much gun but very vary)
+he only makes quanity (lotsa gun but very meh)
 he is bounded by the context of the mod (i think) of modern era/standardisation,
 i use kitbash/makeshift/prototype freely cuz it makes sense in the context of the mod (cold war/prototype theme), hence it explain the jungle shroud, conversion kit and so on. therefore alot of creative freedom
 [end]
@@ -221,5 +218,67 @@ if youre a coder then learn to art
 if youre an artist then to code 
 those are the two end of the spectrum that you must master in order to achive "perfection"
 
+meanwhile i cant code a single thing so im just gonna suck datae and 8z whenever i could
+
 this guy sums it up best
 https://youtu.be/sVntwsrjNe4?t=1603
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+slogkot is a referance to rainworld dumbass 

@@ -1,6 +1,6 @@
 att.PrintName = ".410 Cylinder"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_8.png", "mips smooth")
-att.Description = "shotgun shell"
+att.Icon = Material("entities/arccw_mifl_fas2_r454_mag_23.png", "mips smooth")
+att.Description = "scarewee stuff"
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

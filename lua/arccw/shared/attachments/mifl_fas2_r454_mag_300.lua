@@ -1,6 +1,6 @@
 att.PrintName = ".300 Winchester Cylinder"
-att.Icon = Material("entities/arccw_mifl_fas2_g20_8.png", "mips smooth")
-att.Description = "how"
+att.Icon = Material("entities/arccw_mifl_fas2_r454_mag_300.png", "mips smooth")
+att.Description = "Specialised cartidge that excel at long ranges."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
