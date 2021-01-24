@@ -15,17 +15,17 @@ att.Mult_SightTime = 0.9
 att.Mult_ReloadTime = 0.95
 att.Mult_Range = 0.5
 att.Mult_Penetration = 0.1
-att.Mult_Damage = 2
-att.Mult_DamageMin = 1.25
+att.Mult_Damage = 2.2
+att.Mult_DamageMin = 1.375
 
-att.Override_Num = 8
+att.Override_Num = 9
 att.Override_Ammo = "buckshot"
 att.Override_Trivia_Calibre = "20 Gauge"
 att.Override_Trivia_Class = "Shotgun"
 att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
 att.Override_IsShotgun = true
 
-att.Mult_AccuracyMOA = 9
+att.Mult_AccuracyMOA = 10
 att.Mult_RPM = 0.5
 
 att.Override_Firemodes_Priority = 1

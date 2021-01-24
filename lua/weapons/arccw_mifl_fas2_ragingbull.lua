@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Pissed Bovine"
+SWEP.PrintName = "Bailiff"
 SWEP.TrueName = "Raging Bull"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Big revolver firing a big cartridge, useful for sending people straight to Brazil (coincidentally the country of origin). Because of the uncommon cartridge and size, there is no speedloader."
@@ -138,22 +138,30 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_r454_stock"] = {
         VMBodygroups = {{ind = 4, bg = 1}},
     },
+    ["mifl_fas2_r454_mag_410"] = {
+        VMBodygroups = {{ind = 3, bg = 1}},
+    },	
+    ["mifl_fas2_r454_mag_300"] = {
+        VMBodygroups = {{ind = 3, bg = 2}},
+    },		
+    ["mifl_fas2_r454_mag_9"] = {
+        VMBodygroups = {{ind = 3, bg = 3}},
+    },		
     ["whisperer"] = {
-        NameChange = "Quiet Bovine",
-        TrueNameChange = "Quiet Bull",
         VMBodygroups = {{ind = 2, bg = 1}},
     },
     ["b_long"] = {
+        NameChange = "Judge",	
         VMBodygroups = {{ind = 2, bg = 2}},
     },
     ["b_short"] = {
+        NameChange = "Executor",	
         VMBodygroups = {{ind = 2, bg = 3}},
     },
     ["b_snip"] = {
         VMBodygroups = {{ind = 2, bg = 5}},
     },	
     ["b_no"] = {
-        NameChange = "Infant Bovine",
         TrueNameChange = "Baby Bull",
         VMBodygroups = {{ind = 2, bg = 4}},
     },
@@ -199,7 +207,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Calibre",
-        Slot = "mifl_fas2_r454_cal",
+        Slot = "mifl_fas2_r454_mag",
         Bone = "RagingBullBase",
         Offset = {
             vpos = Vector(4.2, -2, 0),
@@ -271,6 +279,9 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 1, e = "arccw_shell_fas2_r454" },			
+        },			
     },
     ["Reload2"] = {
         Source = "Reload2",
@@ -278,6 +289,10 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 0.8, e = "arccw_shell_fas2_r454" },	
+            {t = 0.8, e = "arccw_shell_fas2_r454" },				
+        },			
     },
     ["Reload3"] = {
         Source = "Reload3",
@@ -285,6 +300,11 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 0.8, e = "arccw_shell_fas2_r454" },
+            {t = 0.8, e = "arccw_shell_fas2_r454" },
+            {t = 0.8, e = "arccw_shell_fas2_r454" },		
+        },			
     },
     ["Reload4"] = {
         Source = "Reload4",
@@ -292,12 +312,25 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 0.8, e = "arccw_shell_fas2_r454" },
+            {t = 0.8, e = "arccw_shell_fas2_r454" },
+            {t = 0.8, e = "arccw_shell_fas2_r454" },	
+            {t = 0.8, e = "arccw_shell_fas2_r454" },				
+        },			
     },
     ["Reload5"] = {
         Source = "Reload5",
         LHIK = true,
         LHIKIn = 0.1,
         LHIKOut = 0.25,
+        SoundTable = {
+            {t = 0.8, e = "arccw_shell_fas2_r454" },
+            {t = 0.8, e = "arccw_shell_fas2_r454" },
+            {t = 0.8, e = "arccw_shell_fas2_r454" },
+            {t = 1.2, e = "arccw_shell_fas2_r454" },	
+            {t = 1.2, e = "arccw_shell_fas2_r454" },			
+        },	
     },
 -- Nomen
     ["Reload1_nomen"] = {
@@ -305,29 +338,54 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 0.75, e = "arccw_shell_fas2_r454" },		
+        },		
     },
     ["Reload2_nomen"] = {
         Source = "Reload2_nomen",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },			
+        },			
     },
     ["Reload3_nomen"] = {
         Source = "Reload3_nomen",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },			
+        },			
     },
     ["Reload4_nomen"] = {
         Source = "Reload4_nomen",
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.3,
+        SoundTable = {
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },			
+        },			
     },
     ["Reload5_nomen"] = {
         Source = "Reload5_nomen",
         LHIK = true,
         LHIKIn = 0.1,
         LHIKOut = 0.25,
+        SoundTable = {
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },
+            {t = 0.65, e = "arccw_shell_fas2_r454" },	
+            {t = 0.65, e = "arccw_shell_fas2_r454" },			
+        },			
     },
 }

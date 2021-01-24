@@ -30,6 +30,9 @@ $bodygroup "Barrel"
 $bodygroup "Ammo"
 {
 	studio "Ammo_454.smd"
+	studio "Ammo_23mm.smd"	
+	studio "Ammo_300.smd"	
+	studio "Ammo_9mm.smd"	
 	blank
 }
 
