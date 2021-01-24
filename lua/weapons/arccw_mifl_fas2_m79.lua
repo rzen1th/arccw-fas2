@@ -272,27 +272,20 @@ SWEP.Animations = {
         Source = "holster",
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.7,
-        LHIKEaseOut = 0.4,
     },
     ["draw_optic"] = {
         Source = "draw_optic",
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKOut = 0.4,
     },
     ["holster_optic"] = {
         Source = "holster_optic",
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKOut = 0.7,
-        LHIKEaseOut = 0.4,
+		Time = 1.05
     },	
     ["ready"] = {
         Source = "deploy1st",
         LHIK = true,
         LHIKIn = 0.3,
-        LHIKOut = 0.4,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
     },
     ["fire"] = {
         Source = "fire01",

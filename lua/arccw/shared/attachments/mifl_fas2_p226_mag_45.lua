@@ -16,7 +16,7 @@ att.Mult_Recoil = 1.2
 att.Mult_Damage = 1.05
 att.Mult_DamageMin = 0.95
 att.Mult_RPM = 1.05
-att.Mult_ReloadTime = 1.2
+att.Mult_ReloadTime = 1.15
 
 att.Mult_AccuracyMOA = 1.5
 att.Mult_HipDispersion = 1.35

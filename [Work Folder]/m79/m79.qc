@@ -124,7 +124,7 @@ $sequence "deploy" {
 	activity "ACT_VM_DRAW" 1
 	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
 	{ event 5004 22 "Arccw_FAS2_Weapon_Misc.Switch" }
-	{ event 5004 37 "Generic.Cloth_Movement" }
+	{ event 5004 37 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	fps 33
@@ -155,7 +155,7 @@ $sequence "draw_optic" {
 	"anims\draw_optic.smd"
 	activity "ACT_VM_DRAW" 1
 	{ event 5004 0 "Arccw_FAS2_Weapon.Deploy" }
-	{ event 5004 22 "Generic.Cloth_Movement" }
+	{ event 5004 22 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	fps 33

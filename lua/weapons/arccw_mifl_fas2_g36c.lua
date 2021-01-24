@@ -296,7 +296,7 @@ SWEP.Attachments = {
         },
         InstalledEles = {"iron_none"},
         VMScale = Vector(1.2, 1.2, 1.2),
-        ExtraSightDist = 10
+        ExtraSightDist = 3
     },
     {
         PrintName = "Handguard",
