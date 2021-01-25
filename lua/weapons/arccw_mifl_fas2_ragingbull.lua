@@ -207,6 +207,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Calibre",
+        DefaultAttName = ".454 Cylinder",		
         Slot = "mifl_fas2_r454_mag",
         Bone = "RagingBullBase",
         Offset = {
