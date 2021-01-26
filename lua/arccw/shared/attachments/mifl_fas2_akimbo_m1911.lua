@@ -1,5 +1,5 @@
 att.PrintName = "Left M1911"
-att.Icon = nil -- Material("entities/acwatt_mw2_akimbo.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_akimbo_1911.png", "smooth")
 att.Description = "text bottom"
 att.Hidden = false
 att.Desc_Pros = {
