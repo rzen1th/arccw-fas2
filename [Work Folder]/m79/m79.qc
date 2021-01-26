@@ -53,7 +53,6 @@ $cdmaterials "models\weapons\arccw_fas2\explosives\"
 
 $attachment "1" "muzzle_flash" 0 0 0 rotate 0 0 0
 $attachment "Sight1" "m79_frame" 4 -3.4 -2 rotate -4 0 0
-
 $attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
 $definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
@@ -200,6 +199,23 @@ $sequence "idle_iron_empty" {
 
 $sequence "reload" {
 	"m79_anims\reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 22 "Arccw_FAS2_Weapon_M79.Open" }
+	{ event 5004 22 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 44 "Arccw_FAS2_Weapon_M79.ShellOut" }
+	{ event 5004 44 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 79 "Arccw_FAS2_Weapon_M79.ShellIn" }
+	{ event 5004 79 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 105 "Arccw_FAS2_Weapon_M79.Close" }
+	{ event 3018 110 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_akimbo" {
+	"anims\reload_akimbo.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 22 "Arccw_FAS2_Weapon_M79.Open" }

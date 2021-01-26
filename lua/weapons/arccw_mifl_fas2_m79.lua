@@ -133,6 +133,11 @@ SWEP.ShellRotateAngle = Angle(5, 0, 0)
 SWEP.MirrorVMWM = true
 
 SWEP.AttachmentElements = {
+    ["akimbo"] = {
+        Override_ActivePos = Vector(1, 2.5, 0),
+        Override_HolsterPos = Vector(2,2,3),
+        Override_HolsterAng = Angle(-20, 0, -5),	
+    },
     ["rail_top"] = {
         VMBodygroups = {{ind = 4, bg = 1}, {ind = 3, bg = 1}},
     },
@@ -203,6 +208,17 @@ SWEP.Attachments = {
         },
     },
     {
+        PrintName = "Left Hand",
+        Slot = {"gso_extra_pistol_akimbo", "mifl_fas2_akimbo", "akimbotest"},
+        Bone = "Akimbo_Base",
+        DefaultAttName = "None",
+        Offset = {
+            vpos = Vector(4, -3, -0.5),
+            vang = Angle(0, 0, 0),
+        },
+        InstalledEles = {"akimbo"},
+    },	
+    {
         PrintName = "Stock",
         Slot = {"mifl_fas2_m79_stock"},
         DefaultAttName = "Standard Stock",
@@ -240,6 +256,12 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
         elseif anim == "holster" then
             return "holster_optic"
         end
+    end
+end
+
+SWEP.Hook_SelectReloadAnimation = function(wep, anim)
+    if wep.Attachments[5].Installed then
+        return anim .. "_akimbo"
     end
 end
 
@@ -332,4 +354,23 @@ SWEP.Animations = {
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4,
     },
+-----------------------------------------------
+    ["reload_akimbo"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+    },
+    ["reload_empty_akimbo"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+    },
+    ["reload_nomen_akimbo"] = {
+        Source = "reload_akimbo",
+        Time = 3.5,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+    },
+    ["reload_nomen_empty_akimbo"] = {
+        Source = "reload_akimbo",
+        Time = 3.5,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+    },	
 }

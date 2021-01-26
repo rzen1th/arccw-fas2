@@ -1,6 +1,6 @@
-att.PrintName = "Left M1911"
+att.PrintName = "Left Deagle"
 att.Icon = nil -- Material("entities/acwatt_mw2_akimbo.png", "smooth")
-att.Description = "text bottom"
+att.Description = "As if one deagle isn't impratical enough."
 att.Hidden = false
 att.Desc_Pros = {
     "+100% more gun",
@@ -24,7 +24,7 @@ att.AddSuffix = " + M1911"
 
 att.MountPositionOverride = 0
 
-att.Model = "models/weapons/arccw/mifl_atts/fas2/c_m1911.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/c_deagle.mdl"
 
 att.LHIK = true
 att.LHIK_Animation = true
@@ -37,10 +37,10 @@ att.UBGL_Automatic = false
 att.UBGL_MuzzleEffect = "muzzleflash_pistol"
 att.UBGL_ClipSize = 7
 att.UBGL_Ammo = "pistol"
-att.UBGL_RPM = 600
-att.UBGL_Recoil = .75
-att.UBGL_RecoilSide = .5
-att.UBGL_RecoilRise = .4
+att.UBGL_RPM = 300
+att.UBGL_Recoil = 3
+att.UBGL_RecoilSide = 1.5
+att.UBGL_RecoilRise = 1.2
 att.UBGL_Capacity = 7
 
 att.Hook_ShouldNotSight = function(wep)
@@ -80,7 +80,7 @@ att.UBGL_Fire = function(wep, ubgl)
     wep.Owner:FireBullets({
 		Src = wep.Owner:EyePos(),
 		Num = 1,
-		Damage = 35,
+		Damage = 70,
 		Force = 1,
 		Attacker = wep.Owner,
 		Dir = wep.Owner:EyeAngles():Forward(),
@@ -88,10 +88,10 @@ att.UBGL_Fire = function(wep, ubgl)
 		Callback = function(_, tr, dmg)
 			local dist = (tr.HitPos - tr.StartPos):Length() * ArcCW.HUToM
 
-			local dmgmax = 35
-			local dmgmin = 17
+			local dmgmax = 70
+			local dmgmin = 35
 
-			local delta = dist / 50
+			local delta = dist / 40
 
 			delta = math.Clamp(delta, 0, 1)
 
@@ -100,19 +100,19 @@ att.UBGL_Fire = function(wep, ubgl)
 			dmg:SetDamage(amt)
 		end
 	})
-    wep:EmitSound("weapons/arccw_mifl/fas2/1911/1911_fire1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
+    wep:EmitSound("weapons/arccw_mifl/fas2/deserteagle/de_fire1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
                             -- This is kinda important
                                             -- Wep volume
                                                     -- Weapon pitch (along with the pitch randomizer)
     wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/1911/1911_distance_fire1.wav",			t = 0},
+            {s = "weapons/arccw_mifl/fas2/deserteagle/de_distance_fire1.wav",			t = 0},
 	})													
     wep:SetClip2(wep:Clip2() - 1)
     
     if wep:Clip2() > 0 then
-        wep:DoLHIKAnimation("fire", 20/60)
+        wep:DoLHIKAnimation("fire", 25/60)
     else
-        wep:DoLHIKAnimation("last", 20/60)
+        wep:DoLHIKAnimation("last", 25/60)
     end
 
     wep:DoEffects()
@@ -128,19 +128,19 @@ att.UBGL_Reload = function(wep, ubgl)
     if Ammo(wep) <= 0 then return end
 
     if wep:Clip2() <= 0 then
-        wep:DoLHIKAnimation("dry", 112/60)
-        wep:SetNextSecondaryFire(CurTime() + 112/60)
+        wep:DoLHIKAnimation("dry", 155/60)
+        wep:SetNextSecondaryFire(CurTime() + 155/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/1911/1911_magout_empty.wav", 	t = 10/60},
-            {s = "weapons/arccw_mifl/fas2/1911/1911_magin.wav", 	    t = 55/60},
-            {s = "weapons/arccw_mifl/fas2/1911/1911_sliderelease.wav", 	t = 84/60},
+            {s = "weapons/arccw_mifl/fas2/deserteagle/de_magout_empty.wav", 	t = 10/60},
+            {s = "weapons/arccw_mifl/fas2/deserteagle/de_magin.wav", 	    t = 62/60},
+            {s = "weapons/arccw_mifl/fas2/1911/1911_sliderelease.wav", 	t = 108/60},
         })
     else
-        wep:DoLHIKAnimation("wet", 90/60)
-        wep:SetNextSecondaryFire(CurTime() + 90/60)
+        wep:DoLHIKAnimation("wet", 120/60)
+        wep:SetNextSecondaryFire(CurTime() + 120/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/1911/1911_magout_empty.wav", 	t = 10/60},
-            {s = "weapons/arccw_mifl/fas2/1911/1911_magin.wav", 	    t = 55/60},
+            {s = "weapons/arccw_mifl/fas2/deserteagle/de_magout_empty.wav", 	t = 10/60},
+            {s = "weapons/arccw_mifl/fas2/deserteagle/de_magin.wav", 	    t = 62/60},
         })
     end
 
