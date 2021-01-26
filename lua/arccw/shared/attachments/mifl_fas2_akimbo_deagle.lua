@@ -38,8 +38,8 @@ att.UBGL_MuzzleEffect = "muzzleflash_pistol"
 att.UBGL_ClipSize = 7
 att.UBGL_Ammo = "pistol"
 att.UBGL_RPM = 300
-att.UBGL_Recoil = 3
-att.UBGL_RecoilSide = 1.5
+att.UBGL_Recoil = 1.5
+att.UBGL_RecoilSide = 0.8
 att.UBGL_RecoilRise = 1.2
 att.UBGL_Capacity = 7
 
@@ -121,7 +121,7 @@ end
 att.UBGL_Reload = function(wep, ubgl)
     wep:Reload()
 
-    local clip = 7-- + 1
+    local clip = 7 + 1
 
     if wep:Clip2() >= clip then return end -- att.UBGL_Capacity
 
