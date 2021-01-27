@@ -143,7 +143,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["akimbo"] = {
-        Override_ActivePos = Vector(2, 2, 0),
+        Override_ActivePos = Vector(1, 2, 0),
         Override_HolsterPos = Vector(2,2,2),
         Override_HolsterAng = Angle(-20, 0, -5),
     },
@@ -278,7 +278,7 @@ SWEP.Attachments = {
         Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(3, -2.5, 0),
+            vpos = Vector(4, -1.5, -0.1),
             vang = Angle(0, 0, 0)
         },
         InstalledEles = {"akimbo"},

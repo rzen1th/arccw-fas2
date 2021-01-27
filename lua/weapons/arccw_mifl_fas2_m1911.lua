@@ -290,7 +290,7 @@ SWEP.Attachments = {
         Bone = "Akimbo_Base",
         DefaultAttName = "None",
         Offset = {
-            vpos = Vector(2, -3.5, -0.2),
+            vpos = Vector(2, -2.5, -0.2),
             vang = Angle(0, 0, 0)
         },
         InstalledEles = {"akimbo"},
