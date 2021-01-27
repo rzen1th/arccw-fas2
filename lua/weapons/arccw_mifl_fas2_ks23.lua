@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "бунт 23mm"
+SWEP.PrintName = "BhRa 23mm"
 SWEP.TrueName = "KS-23"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "Ludicrously large shotgun designed for suppressing prison riots. Its barrels were cut down 23mm aircraft gun barrels, and are almost double the diameter of common 12 Gauge shells."
+SWEP.Trivia_Desc = "Ludicrously large shotgun designed for suppressing prison riots. Its barrels were cut down 23mm aircraft gun barrels, and are almost double the diameter of common 12 Gauge shells. The largest-bore shotgun ever to exist."
 SWEP.Trivia_Manufacturer = "Tula Arms Plant"
 SWEP.Trivia_Calibre = "23×75mmR"
 SWEP.Trivia_Mechanism = "Pump-Action"

@@ -3,10 +3,10 @@ SWEP.Spawnable = true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "hohwohwohoowooowo"
+SWEP.PrintName = "NPX-9"
 SWEP.TrueName = "P226"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "wowo"
+SWEP.Trivia_Desc = "Compact pistol with multiple calibre options."
 SWEP.Trivia_Manufacturer = "SIG Sauer"
 SWEP.Trivia_Calibre = "9×19mm Parabellum"
 SWEP.Trivia_Mechanism = "Short Recoil"
