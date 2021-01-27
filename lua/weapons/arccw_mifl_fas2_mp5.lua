@@ -416,7 +416,7 @@ SWEP.Attachments = {
         Bone = "Dummy01",
         RequireFlags = {"mifl_fas2_mp5_hg_eod"},
         Offset = {
-            vpos = Vector(8, 0, 0),
+            vpos = Vector(9, 0, 0),
             vang = Angle(0, 0, -90),
         },
     },
