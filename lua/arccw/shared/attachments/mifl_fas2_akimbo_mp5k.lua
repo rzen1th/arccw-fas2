@@ -3,10 +3,10 @@ att.Icon = Material("entities/arccw_mifl_fas2_akimbo_mp5k.png", "smooth")
 att.Description = "Incase you need even more fire rate."
 att.Hidden = false
 att.Desc_Pros = {
-    "+100% more gun",
+    "pro.fas2.akimbo",
 }
 att.Desc_Cons = {
-    "- Cannot use ironsights"
+    "con.fas2.akimbo"
 }
 att.AutoStats = true
 att.Mult_HipDispersion = 2

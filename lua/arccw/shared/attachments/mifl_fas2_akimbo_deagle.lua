@@ -3,10 +3,10 @@ att.Icon = Material("entities/arccw_mifl_fas2_akimbo_deagle.png", "smooth")
 att.Description = "As if one deagle isn't impratical enough."
 att.Hidden = false
 att.Desc_Pros = {
-    "+100% more gun",
+    "pro.fas2.akimbo",
 }
 att.Desc_Cons = {
-    "- Cannot use ironsights"
+    "con.fas2.akimbo"
 }
 att.AutoStats = true
 att.Mult_HipDispersion = 2

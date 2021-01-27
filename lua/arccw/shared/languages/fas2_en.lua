@@ -23,3 +23,6 @@ L["con.fas2.m79.min"] = "Minimal direct damage"
 
 L["pro.fas2.double_barrel"] = "Extra shot per fire"
 L["pro.fas2.raptor_stock"] = "-30/40/50% Recoil on first 3 shots"
+
+L["pro.fas2.akimbo"] = "100% more guns"
+L["con.fas2.akimbo"] = "No point of aiming"

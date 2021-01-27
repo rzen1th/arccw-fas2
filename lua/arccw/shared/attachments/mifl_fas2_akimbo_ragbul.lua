@@ -3,10 +3,10 @@ att.Icon = Material("entities/arccw_mifl_fas2_akimbo_ragbul.png", "smooth")
 att.Description = "Strong grip you got there mate. Only for the most ambidestrous of desperados."
 att.Hidden = false
 att.Desc_Pros = {
-    "+100% more gun",
+    "pro.fas2.akimbo",
 }
 att.Desc_Cons = {
-    "- Cannot use ironsights"
+    "con.fas2.akimbo"
 }
 att.AutoStats = true
 att.Mult_HipDispersion = 2
