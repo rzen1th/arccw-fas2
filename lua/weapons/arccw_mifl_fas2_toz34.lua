@@ -3,15 +3,15 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Shrapnel 23"
-SWEP.TrueName = "KS-23"
+SWEP.PrintName = "Boar 12"
+SWEP.TrueName = "TOZ-34"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "Ludicrously large shotgun designed for suppressing prison riots. Its barrels were cut down 23mm aircraft gun barrels, and are almost double the diameter of common 12 Gauge shells. The largest-bore shotgun ever to exist."
-SWEP.Trivia_Manufacturer = "Tula Arms Plant"
-SWEP.Trivia_Calibre = "23×75mmR"
-SWEP.Trivia_Mechanism = "Pump-Action"
+SWEP.Trivia_Desc = "Over/Under double barrelled shotgun."
+SWEP.Trivia_Manufacturer = "TOZ"
+SWEP.Trivia_Calibre = "12 Gauge"
+SWEP.Trivia_Mechanism = "Break-Action"
 SWEP.Trivia_Country = "Russia"
-SWEP.Trivia_Year = 1971
+SWEP.Trivia_Year = 1964
 
 if GetConVar("arccw_truenames"):GetBool() then SWEP.PrintName = SWEP.TrueName end
 
@@ -19,35 +19,31 @@ SWEP.Slot = 2
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_ks23.mdl"
-SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_ks23.mdl"
+SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_toz34.mdl"
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_toz34.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 15
-SWEP.DamageMin = 6 -- damage done at maximum range
-SWEP.Num = 25
+SWEP.Damage = 18
+SWEP.DamageMin = 4 -- damage done at maximum range
+SWEP.Num = 20
 SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = nil -- entity to fire, if any
-SWEP.ChamberSize = 1
-SWEP.Primary.ClipSize = 3 -- DefaultClip is automatically set.
-
+SWEP.ChamberSize = 0
+SWEP.Primary.ClipSize = 2 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 700
 
-SWEP.Recoil = 5
-SWEP.RecoilSide = 3
+SWEP.Recoil = 3
+SWEP.RecoilSide = 1.5
 SWEP.RecoilRise = 1.2
 
-SWEP.ShotgunReload = true
-SWEP.ManualAction = true
-SWEP.Delay = 60 / 180 -- 60 / RPM.
+SWEP.Delay = 60 / 360 -- 60 / RPM.
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PUMP"
     },
     {
         Mode = 0
@@ -97,14 +93,13 @@ SWEP.IronSightStruct = {
     CrosshairInSights = false
 }
 
-SWEP.NoLastCycle = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "shotgun"
 SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_RPG
 
-SWEP.ActivePos = Vector(-0.2, -2, 1)
+SWEP.ActivePos = Vector(0, 2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-4, 0, -1)
@@ -136,48 +131,15 @@ SWEP.AttachmentElements = {
     ["rail"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
     },
-    ["rail_bottom"] = {
-        VMBodygroups = {{ind = 4, bg = 1}},
-    },
-    ["rail_side"] = {
-        VMBodygroups = {{ind = 3, bg = 1}},
-    },
-    ["mifl_fas2_ks23_tube_xx"] = {
-        VMBodygroups = {	{ind = 6, bg = 2},	},
-    },
-    ["mifl_fas2_ks23_tube_x"] = {
-        VMBodygroups = {	{ind = 6, bg = 1},	},
-    },
-    ["mifl_fas2_ks23_tube_xx_50"] = {
-        VMBodygroups = {	{ind = 5, bg = 1}, {ind = 6, bg = 2},	},
-    },
-    ["mifl_fas2_ks23_tube_x_50"] = {
-        VMBodygroups = {	{ind = 5, bg = 1}, {ind = 6, bg = 1},	},
-    },
-    ["mifl_fas2_ks23_tube_50"] = {
-        VMBodygroups = {	{ind = 5, bg = 1},	},
-    },
-    ["mifl_fas2_ks23_tube_x"] = {
-        VMBodygroups = {	{ind = 6, bg = 1},	},
-    },
-    ["mifl_fas2_ks23_stock_k"] = {
-        VMBodygroups = {	{ind = 1, bg = 1},	},		
-    },
-    ["mifl_fas2_ks23_barrel_l"] = {
-        VMBodygroups = {	{ind = 7, bg = 1},	},
-        AttPosMods = {
-            [5] = {vpos = Vector(33, -0.7, 2.2),},
-        }		
-    },
-    ["mifl_fas2_ks23_barrel_b"] = {
-        VMBodygroups = {	{ind = 7, bg = 3}, {ind = 8, bg = 1},	},
+    ["mifl_fas2_toz_bar_2x_s"] = {
+        VMBodygroups = {	{ind = 2, bg = 1},{ind = 1, bg = 1}	},
     },	
-    ["mifl_fas2_ks23_barrel_k"] = {
-        VMBodygroups = {	{ind = 7, bg = 2},	},
-        AttPosMods = {
-            [5] = {vpos = Vector(17, -0.7, 2.2),},
-        }		
+    ["mifl_fas2_toz_bar_1x_s"] = {
+        VMBodygroups = {	{ind = 2, bg = 3},{ind = 1, bg = 1}	},
     },
+    ["mifl_fas2_toz_bar_1x_l"] = {
+        VMBodygroups = {	{ind = 2, bg = 2}	},
+    },	
 }
 
 SWEP.Attachments = {
@@ -218,9 +180,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Barrel",
-        Slot = "mifl_fas2_ks23_barrel",
+        Slot = "mifl_fas2_toz34_bar",
         DefaultAttName = "Standard Barrel"
-    },
+    },		
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -254,7 +216,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Slot = {"go_perk", "perk_fas2"}
+        Slot = {"go_perk"}
     },
     {
         PrintName = "Charm",
@@ -268,6 +230,15 @@ SWEP.Attachments = {
     },
 }
 
+SWEP.Hook_SelectReloadAnimation = function(wep, anim)
+    local oneb = wep.Attachments[4].Installed == "mifl_fas2_toz_bar_1x_l" or wep.Attachments[4].Installed == "mifl_fas2_toz_bar_1x_s"
+
+    if oneb then
+        return anim .. "_1"
+    end
+	
+end
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"
@@ -279,7 +250,7 @@ SWEP.Animations = {
         Source = "holster",
     },
     ["ready"] = {
-        Source = "deploy_first",
+        Source = "draw",
     },
     ["fire"] = {
         Source = "fire01",
@@ -288,95 +259,35 @@ SWEP.Animations = {
         Source = "fire01_scoped",
         MinProgress = 0.15,
     },
-    ["cycle"] = {
-        Source = "pump",
-        Time = 1.2,
-        ShellEjectAt = 0.4,
-        MinProgress = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
-    },
-    ["cycle_iron"] = {
-        Source = "pump_iron",
-        ShellEjectAt = 0.1,
-        MinProgress = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
-    },
-    ["cycle_nomen"] = {
-        Source = "pump_nomen",
-        Time = 1.2,
-        ShellEjectAt = 0.25,
-        MinProgress = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
-    },
-    ["cycle_iron_nomen"] = {
-        Source = "pump_nomen_iron",
-        ShellEjectAt = 0.25,
-        MinProgress = 1,
-        TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
-    },
-    ["sgreload_start"] = {
-        Source = "start",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+    ["reload"] = {
+        Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		Time = 3,
         LHIK = true,
+        LHIKEaseIn = 0.3,
         LHIKIn = 0.5,
-        LHIKOut = 0,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5,
     },
-    ["sgreload_start_empty"] = {
-        Source = "start_empty",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        ShellEjectAt = 0.15,
+    ["reload_empty"] = {
+        Source = "reload_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		Time = 3,		
         LHIK = true,
+        LHIKEaseIn = 0.3,
         LHIKIn = 0.5,
-        LHIKOut = 0,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.3,
     },
-    ["sgreload_insert"] = {
-        Source = "insert",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
-    },
-    ["sgreload_finish"] = {
-        Source = "end_nopump",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
-    },
-    ["sgreload_start_nomen"] = {
-        Source = "start_nomen",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0,
-    },
-    ["sgreload_start_empty_nomen"] = {
-        Source = "start_empty_nomen",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0,
-    },
-    ["sgreload_insert_nomen"] = {
-        Source = "insert_nomen",
-        Time = 0.7,
-        MinProgress = 0.6,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
-    },
-    ["sgreload_finish_nomen"] = {
-        Source = "end_nopump_nomen",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 1,
-    },
-}
 
-SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Animations[anim .. "_nomen"] and wep:GetBuff_Override("Override_FAS2NomenBackup") then
-        return anim .. "_nomen"
-    end
-end
+    ["reload_empty_1"] = {
+        Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		Time = 3,		
+        LHIK = true,
+        LHIKEaseIn = 0.3,
+        LHIKIn = 0.5,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.3,
+    },	
+}
