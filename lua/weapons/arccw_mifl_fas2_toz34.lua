@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Boar 12"
 SWEP.TrueName = "TOZ-34"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "Over/Under double barrelled shotgun."
+SWEP.Trivia_Desc = "Over/Under double barrelled shotgun commonly used in East Europe. Its vertically aligned long barrels give it considerable precision."
 SWEP.Trivia_Manufacturer = "TOZ"
 SWEP.Trivia_Calibre = "12 Gauge"
 SWEP.Trivia_Mechanism = "Break-Action"
@@ -25,10 +25,11 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 18
-SWEP.DamageMin = 4 -- damage done at maximum range
-SWEP.Num = 14
-SWEP.Range = 50 -- in METRES
+SWEP.Damage = 15
+SWEP.DamageMin = 8 -- damage done at maximum range
+SWEP.Num = 8
+SWEP.RangeMin = 0
+SWEP.Range = 60 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -36,14 +37,14 @@ SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 2 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 700
 
-SWEP.Recoil = 3
-SWEP.RecoilSide = 1.5
-SWEP.RecoilRise = 1.2
+SWEP.Recoil = 2.5
+SWEP.RecoilSide = 1.2
+SWEP.RecoilRise = 1.5
 
-SWEP.Delay = 60 / 360 -- 60 / RPM.
+SWEP.Delay = 60 / 240 -- 60 / RPM.
 SWEP.Firemodes = {
     {
-        Mode = 1,
+        Mode = 1
     },
     {
         Mode = 0
@@ -53,9 +54,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 180
 
-SWEP.AccuracyMOA = 50 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.AccuracyMOA = 20 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 50
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
@@ -81,9 +82,9 @@ SWEP.ShellRotateAngle = Angle(-20, 0, 0)
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SpeedMult = 0.88
+SWEP.SpeedMult = 0.93
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.42
+SWEP.SightTime = 0.37
 
 SWEP.IronSightStruct = {
     Pos = Vector(-4, -7, 4.1),
@@ -126,23 +127,23 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.MirrorVMWM = true
-            
+
 SWEP.AttachmentElements = {
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
     },
     ["mifl_fas2_toz_bar_2x_s"] = {
         VMBodygroups = {	{ind = 2, bg = 1},{ind = 1, bg = 1}	},
-    },	
+    },
     ["mifl_fas2_toz_bar_1x_s"] = {
         VMBodygroups = {	{ind = 2, bg = 3},{ind = 1, bg = 1},{ind = 4, bg = 1}	},
     },
     ["mifl_fas2_toz_bar_1x_l"] = {
         VMBodygroups = {	{ind = 2, bg = 2},{ind = 4, bg = 1}	},
-    },	
+    },
     ["mifl_fas2_ks23_stock_k"] = {
-        VMBodygroups = {	{ind = 3, bg = 1},	},		
-    },	
+        VMBodygroups = {	{ind = 3, bg = 1},	},
+    },
 }
 
 SWEP.Attachments = {
@@ -178,17 +179,17 @@ SWEP.Attachments = {
             vang = Angle(90, 0, 0),
         },
         InstalledEles = {"rail_side"},
-        ExtraSightDist = 16,
+        ExtraSightDist = 4,
         CorrectivePos = Vector(2, -2, -5),
     },
     {
         PrintName = "Barrel",
         Slot = "mifl_fas2_toz34_bar",
         DefaultAttName = "Standard Barrel"
-    },		
+    },
     {
         PrintName = "Shell",
-        Slot = "mifl_fas2_ks23_mag",
+        Slot = "",
         DefaultAttName = "12 Gauge"
     },
     {
@@ -228,7 +229,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if oneb then
         return anim .. "_1"
     end
-	
+
 end
 
 SWEP.Animations = {
@@ -254,7 +255,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		Time = 3,
+        Time = 3,
         LHIK = true,
         LHIKEaseIn = 0.3,
         LHIKIn = 0.5,
@@ -264,7 +265,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		Time = 3,		
+        Time = 3,
         LHIK = true,
         LHIKEaseIn = 0.5,
         LHIKIn = 0.8,
@@ -275,11 +276,11 @@ SWEP.Animations = {
     ["reload_empty_1"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		Time = 3,		
+        Time = 3,
         LHIK = true,
         LHIKEaseIn = 0.3,
         LHIKIn = 0.5,
         LHIKOut = 0.8,
         LHIKEaseOut = 0.4,
-    },	
+    },
 }
