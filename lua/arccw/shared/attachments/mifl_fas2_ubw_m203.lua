@@ -19,7 +19,7 @@ att.MountPositionOverride = 0
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/ubgl_m203.mdl"
 
-att.ModelOffset = Vector(4, 0, -0.5)
+att.ModelOffset = Vector(5.5, 0, 0.25)
 
 att.UBGL = true
 
