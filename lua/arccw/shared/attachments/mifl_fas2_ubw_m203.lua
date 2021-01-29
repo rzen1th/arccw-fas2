@@ -1,5 +1,5 @@
 att.PrintName = "M203 (40mm)"
-att.Icon = Material("entities/arccw_mifl_fas2_ubw_mass26.png")
+att.Icon = Material("entities/arccw_mifl_fas2_ubw_m203.png")
 att.Description = "Explosive ordnance launcher."
 att.Desc_Pros = {
     "+ Selectable underbarrel shotgun",

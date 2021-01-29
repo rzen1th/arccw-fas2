@@ -33,6 +33,12 @@ $bodygroup "Stock"
 	blank
 }
 
+$bodygroup "Shell"
+{
+	studio "Shell.smd"
+	studio "Shell_1.smd"
+	blank
+}
 
 $illumposition 0 0 0
 

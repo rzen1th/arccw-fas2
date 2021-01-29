@@ -1,5 +1,5 @@
 att.PrintName = "Obrez Barrel"
-att.Icon = nil ---Material("entities/arccw_mifl_fas2_ak_hg_sd.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_toz_1s.png", "mips smooth")
 att.Description = "Cut down and shorten barrel."
 att.SortOrder = 3
 att.Desc_Pros = {

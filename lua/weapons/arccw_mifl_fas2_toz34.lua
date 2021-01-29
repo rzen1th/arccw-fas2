@@ -135,10 +135,10 @@ SWEP.AttachmentElements = {
         VMBodygroups = {	{ind = 2, bg = 1},{ind = 1, bg = 1}	},
     },	
     ["mifl_fas2_toz_bar_1x_s"] = {
-        VMBodygroups = {	{ind = 2, bg = 3},{ind = 1, bg = 1}	},
+        VMBodygroups = {	{ind = 2, bg = 3},{ind = 1, bg = 1},{ind = 4, bg = 1}	},
     },
     ["mifl_fas2_toz_bar_1x_l"] = {
-        VMBodygroups = {	{ind = 2, bg = 2}	},
+        VMBodygroups = {	{ind = 2, bg = 2},{ind = 4, bg = 1}	},
     },	
 }
 
