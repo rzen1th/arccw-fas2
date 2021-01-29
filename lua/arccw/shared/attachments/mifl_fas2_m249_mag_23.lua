@@ -31,4 +31,4 @@ att.Override_ShellScale = 0.8
 att.Override_IsShotgun = true
 
 att.Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/23mm.mdl"
-att.Mult_ShellScale = 2
+att.Mult_ShellScale = 1
