@@ -98,6 +98,9 @@ They Hunger
 Magmacow
 -alot of sounds 
 
+4A Games
+-Revolver Sniper (Metro 2033/or was it last light? idk)
+
 FA:S2 
 -your guess is as good as mine
 

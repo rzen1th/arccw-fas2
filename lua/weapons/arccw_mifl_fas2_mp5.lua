@@ -105,8 +105,8 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.ActivePos = Vector(1, -1.5, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-2, 0, -0.2)
-SWEP.CrouchAng = Angle(0, 0, -10)
+SWEP.CrouchPos = Vector(-0.5, -2, -0.2)
+SWEP.CrouchAng = Angle(0, 0, -7.5)
 
 SWEP.HolsterPos = Vector(1, 2, 2)
 SWEP.HolsterAng = Angle(-15, 5, -10)

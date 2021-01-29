@@ -16,6 +16,7 @@ att.Mult_Damage = 0.3
 att.Mult_DamageMin = 0.5
 att.Mult_ShootPitch = 1.2
 att.Mult_ShootVol = 0.8
+att.Mult_ReloadTime = 0.75
 
 att.Override_Ammo = "pistol"
 att.Override_Trivia_Calibre = "45. ACP"

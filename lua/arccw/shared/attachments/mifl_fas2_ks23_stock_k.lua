@@ -1,6 +1,6 @@
 att.PrintName = "Sawn-off Stock"
 att.Icon = Material("entities/arccw_mifl_fas2_ks23_frame_k.png", "smooth")
-att.Description = "Cut off the stock of the weapon leaving only a handle. As the KS23 kicks incredibly hard, this is a poor choice to make."
+att.Description = "Cut off the stock of the weapon leaving only a handle."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

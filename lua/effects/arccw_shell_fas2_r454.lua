@@ -11,7 +11,7 @@ EFFECT.ShellTime = 1
 
 EFFECT.SpawnTime = 0
 
-EFFECT.ShellScale = 1.25
+EFFECT.ShellScale = 2
 EFFECT.ShellRotate = 180
 EFFECT.ShellRotateAngle = Angle(0, 0, 180)
 

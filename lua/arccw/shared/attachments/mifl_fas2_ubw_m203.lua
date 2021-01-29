@@ -1,5 +1,5 @@
 att.PrintName = "M203 (40mm)"
-att.Icon = Material("entities/arccw_mifl_fas2_ubw_mass26.png")
+att.Icon = Material("entities/arccw_mifl_fas2_ubw_m203.png")
 att.Description = "Explosive ordnance launcher."
 att.Desc_Pros = {
     "+ Selectable underbarrel shotgun",
@@ -19,7 +19,7 @@ att.MountPositionOverride = 0
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/ubgl_m203.mdl"
 
-att.ModelOffset = Vector(4, 0, -0.5)
+att.ModelOffset = Vector(5.5, 0, 0.25)
 
 att.UBGL = true
 

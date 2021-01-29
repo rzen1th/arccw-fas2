@@ -38,8 +38,8 @@ att.UBGL_MuzzleEffect = "muzzleflash_mp5"
 att.UBGL_ClipSize = 30
 att.UBGL_Ammo = "pistol"
 att.UBGL_RPM = 900
-att.UBGL_Recoil = 1.5939*0.75
-att.UBGL_RecoilSide = 0.1035*0.75
+att.UBGL_Recoil = 1.5939*0.65
+att.UBGL_RecoilSide = 0.1035*0.5
 att.UBGL_RecoilRise = 0.92
 att.UBGL_Capacity = 30
 att.Mult_MoveDispersion = 0.8625*0.75
@@ -98,7 +98,7 @@ att.UBGL_Fire = function(wep, ubgl)
 			dmg:SetDamage(amt)
 		end
 	})
-    wep:EmitSound("weapons/arccw_mifl/fas2/mp5/mp5k_fire1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
+    wep:EmitSound("weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav", 110, 100 * math.Rand(1 - 0.05, 1 + 0.05))
                             -- This is kinda important
                                             -- Wep volume
                                                     -- Weapon pitch (along with the pitch randomizer)

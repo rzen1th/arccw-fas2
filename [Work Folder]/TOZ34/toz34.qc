@@ -33,6 +33,12 @@ $bodygroup "Stock"
 	blank
 }
 
+$bodygroup "Shell"
+{
+	studio "Shell.smd"
+	studio "Shell_1.smd"
+	blank
+}
 
 $illumposition 0 0 0
 
@@ -41,9 +47,9 @@ $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "muzzle" "Box03" 12.67 0.34 1.09 rotate 0 0 0
+$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
-$cbox 0 0 0 0 0 0
-
+$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Pointer Right Hand" "" -2.404157 -0.607652 -1.263551 -35.376825 82.823291 94.481945 0 0 0 0 0 0
 $definebone "Box03" "Pointer Right Hand" -1.256201 -0.440367 0.549409 -4.569091 144.248022 93.664829 0 0 0 0 0 0
 $definebone "Cylinder01" "Box03" 3.078101 -0.000059 1.154746 -0.000024 180.000005 90.000016 0 0 0 0 0 0
