@@ -1,6 +1,6 @@
 att.PrintName = "Left Deagle"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_deagle.png", "smooth")
-att.Description = "As if one deagle isn't impratical enough."
+att.Description = "Become the American Action Hero."
 att.Hidden = false
 att.Desc_Pros = {
     "pro.fas2.akimbo",

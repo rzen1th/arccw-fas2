@@ -1,6 +1,6 @@
 att.PrintName = "CompM4 (RDS)"
 att.Icon = Material("entities/fes_fas2_optic_compm4.png", "smooth")
-att.Description = "Provides a bright red reticle to ease aiming.\nSlightly increases aim zoom.\nNarrow scope might slightly reduce awareness."
+att.Description = "Large tube-style optic provides a bright red reticle to ease aiming."
 
 att.SortOrder = 1
 
@@ -16,7 +16,7 @@ att.Model = "models/weapons/arccw/mifl_atts/compm4.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 10, -2.04),
+        Pos = Vector(0, 5, -2.04),
         Ang = Angle(0, 0, 0),
         Magnification = 1.2,
         ScrollFunc = ArcCW.SCROLL_NONE,
