@@ -45,7 +45,7 @@ att.Akimbo_Capacity = 30
 att.Akimbo_AccuracyMOA = 15
 att.Akimbo_ShootSound = "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav"
 att.Akimbo_ShootSoundVol = 110
-att.Akimbo_ShootSoundDistant = "weapons/arccw_mifl/fas2/mp5/mp5_distance_fire1.wav"
+att.Akimbo_DistantShootSound = "weapons/arccw_mifl/fas2/mp5/mp5_distance_fire1.wav"
 
 att.Akimbo_Animations = {
     ["reload"] = {
