@@ -27,7 +27,7 @@ SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.Damage = 18
 SWEP.DamageMin = 4 -- damage done at maximum range
-SWEP.Num = 20
+SWEP.Num = 14
 SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
@@ -86,8 +86,8 @@ SWEP.SightedSpeedMult = 0.5
 SWEP.SightTime = 0.42
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.8, -8, 2.473),
-    Ang = Angle(0.773, 0, 0),
+    Pos = Vector(-4, -7, 4.1),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
@@ -102,11 +102,11 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_RPG
 SWEP.ActivePos = Vector(0, 2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-4, 0, -1)
+SWEP.CrouchPos = Vector(-1, 2, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
-SWEP.HolsterPos = Vector(1, 0, 2)
-SWEP.HolsterAng = Angle(-5, 5, 0)
+SWEP.HolsterPos = Vector(1, 0, 1)
+SWEP.HolsterAng = Angle(-5, 25, -10)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -129,7 +129,7 @@ SWEP.MirrorVMWM = true
             
 SWEP.AttachmentElements = {
     ["rail"] = {
-        VMBodygroups = {{ind = 2, bg = 1}},
+        VMBodygroups = {{ind = 5, bg = 1}},
     },
     ["mifl_fas2_toz_bar_2x_s"] = {
         VMBodygroups = {	{ind = 2, bg = 1},{ind = 1, bg = 1}	},
@@ -140,39 +140,42 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_toz_bar_1x_l"] = {
         VMBodygroups = {	{ind = 2, bg = 2},{ind = 4, bg = 1}	},
     },	
+    ["mifl_fas2_ks23_stock_k"] = {
+        VMBodygroups = {	{ind = 3, bg = 1},	},		
+    },	
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = "optic",
-        Bone = "ks23",
+        Bone = "Tube02",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(-5, -1.9, 2.23),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(0, -3.2, 1),
+            vang = Angle(90, 0, -90),
         },
         CorrectiveAng = Angle(0, 0, 0),
         VMScale = Vector(1.25, 1.25, 1.25),
-        InstalledEles = {"rail", "nors"},
+        InstalledEles = {"rail"},
     },
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
-        Bone = "pump",
+        Bone = "Tube02",
         Offset = {
-            vpos = Vector(5, 2, 2),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(0, 0.5, 8),
+            vang = Angle(90, 0, -90),
         },
         InstalledEles = {"rail_bottom"},
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "pump",
+        Bone = "Tube02",
         Offset = {
-            vpos = Vector(10, 1, 1.2),
-            vang = Angle(0, 0, 0),
+            vpos = Vector(1, -1.2, 5),
+            vang = Angle(90, 0, 0),
         },
         InstalledEles = {"rail_side"},
         ExtraSightDist = 16,
@@ -184,20 +187,9 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Barrel"
     },		
     {
-        PrintName = "Muzzle",
-        DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
-        Bone = "ks23",
-        Offset = {
-            vpos = Vector(25.2, -0.7, 2.2),
-            vang = Angle(0, 0, -90),
-        },
-        InstalledEles = {"no_fh"}
-    },
-    {
-        PrintName = "Tube",
+        PrintName = "Shell",
         Slot = "mifl_fas2_ks23_mag",
-        DefaultAttName = "3-Round 23mm Tube"
+        DefaultAttName = "12 Gauge"
     },
     {
         PrintName = "Stock",
@@ -267,17 +259,17 @@ SWEP.Animations = {
         LHIKEaseIn = 0.3,
         LHIKIn = 0.5,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.5,
+        LHIKEaseOut = 0.4,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		Time = 3,		
         LHIK = true,
-        LHIKEaseIn = 0.3,
-        LHIKIn = 0.5,
-        LHIKOut = 0.8,
-        LHIKEaseOut = 0.3,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.2,
     },
 
     ["reload_empty_1"] = {
@@ -288,6 +280,6 @@ SWEP.Animations = {
         LHIKEaseIn = 0.3,
         LHIKIn = 0.5,
         LHIKOut = 0.8,
-        LHIKEaseOut = 0.3,
+        LHIKEaseOut = 0.4,
     },	
 }
