@@ -481,7 +481,7 @@ SWEP.Attachments = {
 }
 
 function SWEP:Hook_NameChange(name)
-    local pre = GetConVar("arccw_truenames"):GetBool() and "MP5 " or "PXC"
+    local pre = GetConVar("arccw_truenames"):GetBool() and "MP5" or "PXC"
     local post = GetConVar("arccw_truenames"):GetBool() and "A3" or "-9"
     local mid = ""
     local ump = false

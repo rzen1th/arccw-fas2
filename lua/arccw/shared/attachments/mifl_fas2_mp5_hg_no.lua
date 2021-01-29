@@ -27,7 +27,7 @@ att.Mult_HipDispersion = 1.5
 att.Mult_MoveDispersion = 1.5
 
 att.Add_BarrelLength = -8
-att.Mult_ShootPitch = 0.8
+att.Mult_ShootPitch = 1
 
 att.LHIK = true
 att.LHIK_Priority = -2
