@@ -65,7 +65,7 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:DoLHIKAnimation("fire", 10/60)
 
-    wep:FireRocket("arccw_gl_m79_timed", 30000)
+    wep:FireRocket("arccw_mifl_fas2_m203", 30000)
 
     wep:EmitSound("weapons/arccw_mifl/fas2/explosive_m79/m79_fire1.wav", 100)
 
