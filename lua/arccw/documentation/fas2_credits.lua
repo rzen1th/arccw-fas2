@@ -32,7 +32,7 @@ XM8 - End of Days -- scrapped --
 https://gamebanana.com/skins/41834
 
 ---------------------------------------------------------------
-In Depth Credits		(using steam names)
+In Depth Credits
 slogkot (Fluffy Mammal)
 -model hacks
 -anims edits
@@ -54,6 +54,7 @@ TheOnly8Z
 -naming system
 -lotsa coding
 -m79 grenades 
+-the cooler akimbo system
 -stuff
 
 Tripwire (Killing Floor 2) --- very naisu

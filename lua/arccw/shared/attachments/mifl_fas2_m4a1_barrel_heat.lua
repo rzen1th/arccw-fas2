@@ -1,6 +1,6 @@
 att.PrintName = "HEAT Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_heat.png", "mips smooth")
-att.Description = "Heat-shielded handguard. Allows the use of underbarrel weapons."
+att.Description = "Heat-shielded handguard. Cooling system gives the weapon an edge over the laws of thermal dynamics."
 att.SortOrder = 1
 att.Desc_Pros = {
 }
@@ -18,3 +18,9 @@ att.Mult_AccuracyMOA = 0.9
 att.Add_BarrelLength = 2
 
 att.Mult_ShootPitch = 0.95
+
+
+att.Mult_HeatCapacity = 1.5
+att.Mult_FixTime = 1.5
+att.Mult_HeatDissipation = 0.75
+att.Mult_HeatDelayTime = 0.5

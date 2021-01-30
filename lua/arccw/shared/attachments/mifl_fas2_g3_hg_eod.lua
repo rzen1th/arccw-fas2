@@ -17,3 +17,8 @@ att.Mult_SightTime = 0.75
 att.Mult_Recoil = 1.25
 
 att.Add_BarrelLength = -2
+
+att.Mult_HeatCapacity = 1.5
+att.Mult_FixTime = 1.5
+att.Mult_HeatDissipation = 0.75
+att.Mult_HeatDelayTime = 0.5

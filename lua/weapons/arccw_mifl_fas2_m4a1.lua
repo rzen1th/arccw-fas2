@@ -419,7 +419,7 @@ SWEP.Attachments = {
             vpos = Vector(10, -0.5, 0),
             vang = Angle(0, 0, -90)
         },
-        RequireFlags = {"allowubgl"}
+        ExcludeFlags = {"mifl_fas2_m4a1_barrel_ar2", "mifl_fas2_m4a1_barrel_para_a1", "mifl_fas2_m4a1_barrel_commando", "mifl_fas2_m4a1_barrel_no"}
     },
     {
         PrintName = "Tactical",
