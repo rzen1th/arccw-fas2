@@ -60,6 +60,13 @@ $bodygroup "Handguard"
 $bodygroup "Stock"
 {
 	studio "Stock.smd"
+	studio "stock_adaptor.smd"	
+	studio "Stock_PDW.smd"
+	studio "Stock_Non.smd"
+	studio "Stock_Slide.smd"	
+	studio "Stock_RPK.smd"
+	studio "Stock_Fold.smd"		
+	studio "Stock_Ske2.smd"			
 	blank
 }
 
@@ -70,6 +77,10 @@ $cdmaterials "models\weapons\arccw_fas2\mac11\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
+$cdmaterials "models\weapons\arccw_fas2\akm\"
+$cdmaterials "models\weapons\arccw_fas2\ak_extra\"
+$cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1\"
 
 $attachment "muzzle" "Base" 13.52 1.66 0 rotate 0 0 0
 $attachment "ejector" "Base" 2.97 1.02 0.43 rotate -85 -130 130

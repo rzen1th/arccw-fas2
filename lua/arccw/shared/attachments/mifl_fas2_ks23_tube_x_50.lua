@@ -25,3 +25,8 @@ att.Override_Num = 1
 att.Override_Ammo = "SniperPenetratedRound"
 att.Override_IsShotgun = false
 att.Override_IsShotgun_Priority = 1000
+
+att.Hook_GetShootSound = function(wep, fsound)
+    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2/m82/m82_fire1.wav" end
+    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2/m82/m82_whisper.wav" end
+end

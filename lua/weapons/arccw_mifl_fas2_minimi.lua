@@ -207,6 +207,16 @@ SWEP.AttachmentElements = {
             {ind = 6, bg = 1},
         },
     },
+    ["buftube"] = {
+        VMBodygroups = {
+            {ind = 8, bg = 1}
+        }
+    },	
+    ["mifl_fas2_uni_rif_nostock"] = {
+        VMBodygroups = {
+            {ind = 8, bg = 3}
+        }
+    },		
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -284,6 +294,17 @@ SWEP.Attachments = {
         Slot = "go_ammo",
         DefaultAttName = "Standard Ammo"
     },
+    {
+        PrintName = "Stock",
+        Slot = {"go_stock", "mifl_fas2_uni_stock"},
+        DefaultAttName = "Standard Stock",
+        Bone = "Base",
+        Offset = {
+            vpos = Vector(-8, -2.5, 0),
+            vang = Angle(0, 0, -90)
+        },
+        VMScale = Vector(1, 1, 1)
+    },	
     {
         PrintName = "Perk",
         Slot = {"go_perk", "perk_fas2"}

@@ -23,6 +23,7 @@ $bodygroup "Barrel"
 	studio "Barrel_S.smd"
 	studio "Barrel_1.smd"
 	studio "Barrel_S1.smd"	
+	studio "Barrel_Valk.smd"		
 	blank
 }
 
@@ -37,7 +38,27 @@ $bodygroup "Shell"
 {
 	studio "Shell.smd"
 	studio "Shell_1.smd"
+	studio "ammo_50bmg.smd"
+	studio "ammo_50bmg1.smd"	
 	blank
+}
+
+$bodygroup "Rail1"
+{
+	blank
+	studio "Rail_Top.smd"
+}
+
+$bodygroup "Rail2"
+{
+	blank
+	studio "Rail_Bottom.smd"
+}
+
+$bodygroup "Rail3"
+{
+	blank
+	studio "Rail_Side.smd"
 }
 
 $illumposition 0 0 0
@@ -45,6 +66,8 @@ $illumposition 0 0 0
 $cdmaterials "models\weapons\arccw_fas2\toz34\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
+$cdmaterials "models\weapons\arccw_fas2\mp5_extra\"
+$cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 
 $attachment "muzzle" "Box03" 12.67 0.34 1.09 rotate 0 0 0
 $attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
@@ -193,6 +216,24 @@ $sequence "reload_empty" {
 	{ event 5004 88 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 112 "Arccw_FAS2_Weapon_M79.Close" }
 	{ event 5004 127 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_akimbo" {
+	"anims\reload_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 19 "Arccw_FAS2_Weapon_M79.Open" }
+	{ event 5004 23 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 37 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 60 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 64 "Arccw_FAS2_Weapon_REM870.Insert" }
+	{ event 5004 98 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 107 "Arccw_FAS2_Weapon_M79.Close" }
+	{ event 5004 121 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	snap
