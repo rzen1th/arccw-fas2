@@ -47,3 +47,5 @@ att.Override_Firemodes = {
 }
 
 att.AddSuffix = " Roni"
+
+att.Override_HoldtypeActive = "smg"

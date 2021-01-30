@@ -17,6 +17,8 @@ att.ExcludeFlags = {""}
 
 att.ActivateElements = {"ump_roni"}
 
+att.Override_HoldtypeActive = "smg"
+
 att.Add_BarrelLength = 4
 
 att.Mult_Recoil = 0.5

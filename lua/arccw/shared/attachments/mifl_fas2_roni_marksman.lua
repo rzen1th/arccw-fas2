@@ -32,4 +32,6 @@ att.Mult_DrawTime = 2
 att.Mult_HolsterTime = 2
 att.Mult_RPM = 0.75
 
+att.Override_HoldtypeActive = "ar2"
+
 att.AddSuffix = " Roni"
