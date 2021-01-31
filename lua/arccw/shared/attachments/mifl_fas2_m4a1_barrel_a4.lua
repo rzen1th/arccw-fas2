@@ -1,6 +1,6 @@
 att.PrintName = "A4 Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_a4.png", "mips smooth")
-att.Description = "Modern long barrel and handguard with extended rails allowing for the attachment of underbarrel launchers."
+att.Description = "Modern long barrel and handguard with extended rails."
 att.SortOrder = 10
 att.Desc_Pros = {
 }
