@@ -22,6 +22,13 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_m82.mdl"
 SWEP.ViewModelFOV = 57
 
+SWEP.WorldModelOffset = {
+    pos = Vector(-12, 6.5, -8),
+    ang = Angle(-10, 0, 180)
+}
+
+SWEP.MirrorVMWM = true
+
 SWEP.Damage = 250
 SWEP.DamageMin = 90 -- damage done at maximum range
 SWEP.Range = 250 -- in METRES

@@ -36,3 +36,5 @@ att.Override_Firemodes = {
         Mode = 1
     }
 }
+
+att.Override_HoldtypeActive = "ar2"
