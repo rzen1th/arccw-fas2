@@ -65,6 +65,13 @@ $sequence "idle" {
 	fadeout 0.2
 }
 
+$sequence "idle_empty" {
+	"anims\idle_empty.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+}
+
 $sequence "fire" {
 	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
