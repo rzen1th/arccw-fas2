@@ -1,7 +1,7 @@
-att.PrintName = "Kompak Handguard"
+att.PrintName = "Ukoro Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_k.png", "mips smooth")
-att.Description = "Shortened handguard for better CQB engagements."
-att.SortOrder = -2
+att.Description = "Not so authentic shorten barrel."
+att.SortOrder = -0.8
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -9,13 +9,13 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_hg"
 
-att.Mult_Range = 0.8
-att.Mult_Recoil = 1.2
-att.Mult_SightTime = 0.9
-att.Mult_DrawTime = 0.9
-att.Mult_AccuracyMOA = 1.3
+att.Mult_Range = 0.75
+att.Mult_Recoil = 1.25
+att.Mult_SightTime = 0.85
+att.Mult_DrawTime = 0.85
+att.Mult_AccuracyMOA = 1.2
 att.Mult_RPM = 1.2
-att.Mult_ReloadTime = 0.95
+att.Mult_ReloadTime = 0.975
 
 att.Add_BarrelLength = -4
 

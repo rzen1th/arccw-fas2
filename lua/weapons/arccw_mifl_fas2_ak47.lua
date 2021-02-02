@@ -163,6 +163,21 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["mifl_fas2_ak_hg_u"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 13}, {ind = 3, bg = 1}
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(0, 21.75, 1.8)
+            }
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.401, -10, 1.3),
+            Ang = Angle(0.1, 0, 0),
+            Magnification = 1.1
+        },		
+    },	
     ["mifl_fas2_ak_hg_saiga"] = {
         VMBodygroups = {
             {ind = 2, bg = 9},
@@ -513,7 +528,7 @@ function SWEP:Hook_NameChange(name)
             if post == "M" then pre = "AKM" post = "" end
             pre = pre .. "S"
         end
-        if (pre != "PP-19") and handguard == "mifl_fas2_ak_hg_k" then
+        if (pre != "PP-19") and handguard == "mifl_fas2_ak_hg_k" or "mifl_fas2_ak_hg_u" then
             post = post .. "U"
         elseif handguard == "mifl_fas2_ak_hg_xs" then
             post = post .. " Kurz"
