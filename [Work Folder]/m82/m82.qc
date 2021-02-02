@@ -119,6 +119,15 @@ $definebone "SMDImport001" "M82_Body" 2.136804 10.710583 3.007661 0 0 0 0 0 0 0 
 
 $sectionframes 30 119
 
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+}
+
 $sequence "idle" {
 	"m82_anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
