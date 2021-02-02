@@ -33,7 +33,7 @@ att.LHIK_MovementMult = 0
 att.UBGL = true
 
 att.UBGL_PrintName = "AKIMBO"
-att.UBGL_Automatic = false
+att.UBGL_Automatic = true
 att.UBGL_MuzzleEffect = "muzzleflash_pistol"
 att.UBGL_ClipSize = 33
 att.UBGL_Ammo = "pistol"
@@ -55,12 +55,15 @@ att.Hook_Think = function(wep)
         --wep:Reload()
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetInUBGL(false)
-	elseif wep:GetOwner():KeyDown(IN_ATTACK2) then -- Wake me up when Arctic picks up an interest in akimbo (I will die of oversleep!)
+    elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
         wep:SetInUBGL(true)
         wep:ShootUBGL()
-    --[[elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
-        wep:SetInUBGL(true)
-        wep:ShootUBGL()]]
+    end
+end
+
+att.Hook_LHIK_TranslateAnimation = function(wep, anim)
+    if anim == "idle" and wep:Clip2() <= 0 then
+        return "idle_empty"
     end
 end
 
@@ -107,9 +110,9 @@ att.UBGL_Fire = function(wep, ubgl)
     wep:SetClip2(wep:Clip2() - 1)
     
     if wep:Clip2() > 0 then
-        wep:DoLHIKAnimation("fire", 15/60)
+        wep:DoLHIKAnimation("fire", 12/60)
     else
-        wep:DoLHIKAnimation("last", 15/60)
+        wep:DoLHIKAnimation("last", 12/60)
     end
 
     wep:DoEffects()
