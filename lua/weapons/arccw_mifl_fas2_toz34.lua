@@ -319,6 +319,11 @@ SWEP.Animations = {
         LHIKEaseOut = 0.4,
     },
 
+    ["reload_akimbo"] = {
+        Source = "reload_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 3,
+    },	
     ["reload_empty_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
