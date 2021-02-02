@@ -55,7 +55,7 @@ att.Hook_Think = function(wep)
         --wep:Reload()
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetInUBGL(false)
-    elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
+	elseif wep:GetOwner():KeyDown(IN_ATTACK2) then -- Wake me up when Arctic picks up an interest in akimbo (I will die of oversleep!)
         wep:SetInUBGL(true)
         wep:ShootUBGL()
     end
