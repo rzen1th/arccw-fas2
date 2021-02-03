@@ -10,22 +10,22 @@ if CLIENT then
 		end,
 		bind = function( self, mat, ent )
 				local NumberToTexture = {
-						[1] = "models/weapons/view/hands/hand",
-						[2] = "models/weapons/view/hands/hand_tan",
-						[3] = "models/weapons/view/hands/hand_black",
-						[4] = "models/weapons/view/hands/hand_camo"
+						[1] = "models/weapons/fas-2hands/hand",
+						[2] = "models/weapons/fas-2hands/hand_tan",
+						[3] = "models/weapons/fas-2hands/hand_black",
+						[4] = "models/weapons/fas-2hands/hand_camo"
 				}
 						
 				local NumberToGlove = {
-						[1] = "models/weapons/view/hands/nomex",
-						[2] = "models/weapons/view/hands/black",
-						[3] = "models/weapons/view/hands/desertkhaki",
-						[4] = "models/weapons/view/hands/multicam"
+						[1] = "models/weapons/fas-2hands/nomex",
+						[2] = "models/weapons/fas-2hands/black",
+						[3] = "models/weapons/fas-2hands/desertkhaki",
+						[4] = "models/weapons/fas-2hands/multicam"
 				}
 						
 				local NumberToSleeve = {
-						[1] = "models/weapons/view/hands/sleeve",
-						[2] = "models/weapons/view/hands/sleeve2"
+						[1] = "models/weapons/fas-2hands/sleeve",
+						[2] = "models/weapons/fas-2hands/sleeve2"
 				}
 				
 				local conv = {
