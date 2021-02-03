@@ -136,10 +136,10 @@ att.UBGL_Reload = function(wep, ubgl)
             {s = "weapons/arccw_mifl/fas2/glock20/glock20_sliderelease.wav", 	t = (60/60)*1.15},
         })
     else
-        wep:DoLHIKAnimation("wet", (90/60)*1.15)
-        wep:SetNextSecondaryFire(CurTime() + (90/60)*1.15)
+        wep:DoLHIKAnimation("wet", (105/60)*1.15)
+        wep:SetNextSecondaryFire(CurTime() + (105/60)*1.15)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/glock20/glock20_magout_empty.wav", 	t = (10/60)*1.15},
+            {s = "weapons/arccw_mifl/fas2/glock20/glock20_magout_empty.wav", 	t = (12/60)*1.15},
             {s = "weapons/arccw_mifl/fas2/glock20/glock20_magin.wav", 	    t = (55/60)*1.15},
         })
     end

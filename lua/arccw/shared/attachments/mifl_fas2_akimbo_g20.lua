@@ -1,6 +1,6 @@
 att.PrintName = "Left G20"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_g20.png", "smooth")
-att.Description = "When people say polymers are light I don't think they meant use it with one hand."
+att.Description = "There's a saying that polymers are light but they sure don't refer about use it with one hand."
 att.Desc_Pros = {
     "pro.fas2.akimbo",
 }
@@ -135,10 +135,10 @@ att.UBGL_Reload = function(wep, ubgl)
             {s = "weapons/arccw_mifl/fas2/glock20/glock20_sliderelease.wav", 	t = 60/60},
         })
     else
-        wep:DoLHIKAnimation("wet", 90/60)
-        wep:SetNextSecondaryFire(CurTime() + 90/60)
+        wep:DoLHIKAnimation("wet", 105/60)
+        wep:SetNextSecondaryFire(CurTime() + 105/60)
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/glock20/glock20_magout_empty.wav", 	t = 10/60},
+            {s = "weapons/arccw_mifl/fas2/glock20/glock20_magout_empty.wav", 	t = 12/60},
             {s = "weapons/arccw_mifl/fas2/glock20/glock20_magin.wav", 	    t = 55/60},
         })
     end
