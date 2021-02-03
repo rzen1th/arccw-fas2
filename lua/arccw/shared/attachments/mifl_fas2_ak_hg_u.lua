@@ -1,5 +1,5 @@
 att.PrintName = "Ukoro Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_k.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_u.png", "mips smooth")
 att.Description = "Not so authentic shorten barrel."
 att.SortOrder = -0.8
 att.Desc_Pros = {
