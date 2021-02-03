@@ -1,6 +1,6 @@
 att.PrintName = "45.ACP Cylinder"
 att.Icon = Material("entities/arccw_mifl_fas2_r454_mag_9.png", "mips smooth")
-att.Description = "why would you do this"
+att.Description = "Conversion to a very weak calibre for first time user. Exelent handling."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -1,6 +1,6 @@
 att.PrintName = ".50 BMG"
 att.Icon = Material("entities/arccw_mifl_fas2_r454_mag_300.png", "mips smooth")
-att.Description = "Specialised cartidge that excel at long ranges."
+att.Description = "Just because it fits doesn't mean you should. But who is stopping you?"
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
