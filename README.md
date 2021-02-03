@@ -1,6 +1,6 @@
 "Top text, bottom text"
 
-22 Weapons, 255 Attachments. It's a lot of stuff 
+22 Weapons, 262 Attachments. It's a lot of stuff 
 
 The most* customisable weapon pack on the workshop with ludicrous amount of *fictional* customisations 
 
