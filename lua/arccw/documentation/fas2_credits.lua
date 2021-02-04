@@ -37,8 +37,10 @@ slogkot (Fluffy Mammal)
 -model hacks
 -anims edits
 -MASS26 anim
--new casing models
+-g36 ociw hybrid thing anim
+-ks23 casing
 -underbarrel stuff
+-left weapons anim
 
 Fesiug
 -akimbo (barely works but ok)
@@ -47,6 +49,7 @@ Fesiug
 -spawnicon
 -qci
 -tritium
+-white deagle
 
 TheOnly8Z
 -clean up crew
@@ -68,6 +71,7 @@ Tripwire (Killing Floor 2) --- very naisu
 -G18c/G17 Slide
 -Glock Stock
 -M3 parts
+-M203
 
 Infinity Ward / Beenox / Treyarch 
 -9mm Adaptor (MW19)
@@ -93,7 +97,7 @@ DICE
 -SAIGA 12 (BF3)
 -XM25 (BF4)
 
-They Hunger 
+They Hunger -- pretty sure its they hunger 
 -TOZ34
 
 Magmacow

@@ -171,9 +171,19 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_ks23_barrel_b"] = {
         VMBodygroups = {	{ind = 7, bg = 3}, {ind = 8, bg = 1},	},
+        Override_IronSightStruct = {
+			Pos = Vector(-3.8, -8, 3),
+			Ang = Angle(-1.45, 0, 0),
+			Magnification = 1.1,
+        },			
     },	
     ["mifl_fas2_ks23_barrel_sd"] = {
         VMBodygroups = {	{ind = 7, bg = 4}, {ind = 8, bg = 1},	},
+        Override_IronSightStruct = {
+			Pos = Vector(-3.8, -8, 2.95),
+			Ang = Angle(-1.3, 0, 0),
+			Magnification = 1.1,
+        },			
     },		
     ["mifl_fas2_ks23_barrel_k"] = {
         VMBodygroups = {	{ind = 7, bg = 2},	},
