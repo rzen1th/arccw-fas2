@@ -18,6 +18,14 @@ $bodygroup "barrel"
 	blank
 }
 
+$bodygroup "tube"
+{
+	studio "Mag.smd"
+	studio "Mag_X.smd"
+	studio "Mag_XX.smd"	
+	blank
+}
+
 $bodygroup "Iron"
 {
 	studio "Iron.smd"
@@ -128,6 +136,15 @@ $definebone "Bone01" "Dummy02" 1.239615 1.247105 0 0 0 0 0 0 0 0 0 0
 
 $sectionframes 30 120
 
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 0.01
+}
+
 $sequence "idle" {
 	"m3s90_anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
@@ -169,6 +186,17 @@ $sequence "deploy_first" {
 	fps 30
 }
 
+$sequence "pump" {
+	"anims\pump.smd"
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 4 "Arccw_FAS2_Weapon_KS23.PumpBack" }
+	{ event 5004 16 "Arccw_FAS2_Weapon_KS23.PumpForward" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 35
+}	
+	
 $sequence "fire1" {
 	"m3s90_anims\fire1.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
