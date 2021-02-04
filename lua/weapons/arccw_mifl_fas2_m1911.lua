@@ -153,6 +153,9 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m1911_mag50"] = {
         VMBodygroups = {{ind = 2, bg = 1}}
     },
+    ["mifl_fas2_m1911_mag14"] = {
+        VMBodygroups = {{ind = 2, bg = 2)}
+    },	
     ["mifl_fas2_m1911_slide_2x"] = {
         TrueNameChange = "AF-2011",
         NameChange = "22GI",
@@ -366,6 +369,10 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
         anim = anim .. "_50"
     end
 
+    if wep.Attachments[5].Installed == "mifl_fas2_m1911_mag14" then
+        anim = anim .. "_14"
+    end	
+
     return anim
 end
 
@@ -502,6 +509,43 @@ SWEP.Animations = {
         LHIKOut = 0.5,
         LHIKEaseOut = 0.3
     },
+    ---------------------------------------------------------
+    ["reload_14"] = {
+        Source = "reload_14",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.3
+    },
+    ["reload_empty_14"] = {
+        Source = "reload_empty_14",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5
+    },
+    ["reload_nomen_14"] = {
+        Source = "reload_nomen_14",
+        LastClip1OutTime = 0.5,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_nomen_empty_14"] = {
+        Source = "reload_empty_nomen_14",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3
+    },	
     --------------------------------------------------------
     ["reload_akimbo"] = {
         Source = "reload_akimbo",
@@ -562,6 +606,24 @@ SWEP.Animations = {
         LHIKOut = 0.5,
         LHIKEaseOut = 0.3
     },
+    ["reload_empty_roni_14"] = {
+        Source = "Reload_Empty_14_Roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.5
+    },
+    ["reload_nomen_empty_roni_14"] = {
+        Source = "Reload_Empty_Nomen_14_Roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3
+    },	
     --------------------------------------------------------
     ["fire_roni"] = {
         Source = "Fire1_Roni",

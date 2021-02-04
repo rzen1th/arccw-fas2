@@ -26,6 +26,7 @@ $bodygroup "Mag"
 {
 	studio "Mag.smd"
 	studio "Mag_X.smd"
+	studio "Mag_14.smd"	
 	blank	
 }
 
@@ -318,6 +319,74 @@ $sequence "Reload_Empty_Nomen" {
 
 
 
+
+
+
+$sequence "Reload_14" {
+	"anims\Reload_14.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 40 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "Reload_Empty_14" {
+	"anims\Reload_Empty_14.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOutEmpty" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 43 "Arccw_FAS2_Weapon_1911.SlideStop" }
+	{ event 3018 46 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "Reload_Nomen_14" {
+	"anims\Reload_SOH_14.smd"
+	activity "ACT_VM_RELOAD_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOut" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 3018 40 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 45
+}
+
+$sequence "Reload_Empty_Nomen_14" {
+	"anims\Reload_Empty_14.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOutEmpty" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 43 "Arccw_FAS2_Weapon_1911.SlideStop" }
+	{ event 3018 46 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 45
+}
+
+
+
+
 $sequence "Reload_50" {
 	"anims\Reload_50.smd"
 	activity "ACT_VM_RELOAD" 1
@@ -437,6 +506,22 @@ $sequence "Reload_Empty_50_Roni" {
 	fps 30
 }
 
+$sequence "Reload_Empty_14_Roni" {
+	"anims\Reload_Empty_14_Roni.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOutEmpty" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 43 "Arccw_FAS2_Weapon_1911.SlideStop" }
+	{ event 3018 46 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 30
+}
+
 $sequence "Reload_Empty_Nomen_50_Roni" {
 	"anims\Reload_Empty_50_Roni.smd"
 	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
@@ -453,6 +538,21 @@ $sequence "Reload_Empty_Nomen_50_Roni" {
 	fps 45
 }
 
+$sequence "Reload_Empty_Nomen_14_Roni" {
+	"anims\Reload_Empty_14_Roni.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_1911.MagOutEmpty" }
+	{ event 5004 19 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 24 "Arccw_FAS2_Weapon_1911.MagInPartial" }
+	{ event 5004 31 "Arccw_FAS2_Weapon_1911.MagIn" }
+	{ event 5004 30 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 43 "Arccw_FAS2_Weapon_1911.SlideStop" }
+	{ event 3018 46 "" }
+	fadein 0.05
+	fadeout 0.2
+	fps 45
+}
 
 $sequence "Reload_Empty_Roni" {
 	"anims\Reload_Empty_Roni.smd"
