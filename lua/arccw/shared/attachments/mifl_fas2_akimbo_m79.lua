@@ -12,7 +12,7 @@ att.AutoStats = true
 att.Mult_HipDispersion = 2
 att.Slot = "mifl_fas2_akimbo"
 
-att.ModelOffset = Vector(1, -0.5, 0)
+att.ModelOffset = Vector(-2, 0, 0)
 
 att.GivesFlags = {"handlocked"}
 
