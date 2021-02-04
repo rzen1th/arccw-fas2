@@ -1,4 +1,4 @@
-att.PrintName = "17-Round .45 ACP"
+att.PrintName = "17-Round .45ACP"
 att.Icon = Material("entities/arccw_mifl_fas2_m1911_mag_14.png", "mips smooth")
 att.Description = "Long straight magazine used by tankers and pilots increases ammo capacity."
 att.Desc_Pros = {

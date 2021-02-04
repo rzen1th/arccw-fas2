@@ -154,7 +154,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 1}}
     },
     ["mifl_fas2_m1911_mag14"] = {
-        VMBodygroups = {{ind = 2, bg = 2)}
+        VMBodygroups = {{ind = 2, bg = 2}}
     },	
     ["mifl_fas2_m1911_slide_2x"] = {
         TrueNameChange = "AF-2011",
