@@ -50,7 +50,8 @@ $bodygroup "Barrel"
 	studio "Barrel.smd"
 	studio "Barrel_Long.smd"
 	studio "Barrel_S.smd"	
-	studio "Barrel_Big.smd"		
+	studio "Barrel_Big.smd"	
+	studio "Barrel_SD.smd"		
 	blank	
 }
 $bodygroup "Adaptor"
@@ -69,6 +70,7 @@ $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\870\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\kf2_m3\"
+$cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 
 $attachment "muzzle" "ks23" 12.68 0.34 1.09 rotate 0 0 0
 $attachment "ejector" "ks23" -1.88 0.38 1.31 rotate -90 0 0

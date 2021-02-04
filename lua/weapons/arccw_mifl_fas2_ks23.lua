@@ -172,6 +172,9 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_ks23_barrel_b"] = {
         VMBodygroups = {	{ind = 7, bg = 3}, {ind = 8, bg = 1},	},
     },	
+    ["mifl_fas2_ks23_barrel_sd"] = {
+        VMBodygroups = {	{ind = 7, bg = 4}, {ind = 8, bg = 1},	},
+    },		
     ["mifl_fas2_ks23_barrel_k"] = {
         VMBodygroups = {	{ind = 7, bg = 2},	},
         AttPosMods = {
