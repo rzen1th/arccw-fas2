@@ -33,7 +33,7 @@ att.UBGL_Recoil = 3
 att.UBGL_Capacity = 1
 
 local function Ammo(wep)
-    return wep.Owner:GetAmmoCount("buckshot")
+    return wep.Owner:GetAmmoCount("smg1_grenade")
 end
 
 att.Hook_LHIK_TranslateAnimation = function(wep, key)
@@ -76,7 +76,6 @@ end
 
 att.UBGL_Reload = function(wep, ubgl)
     if wep:Clip2() >= 1 then return end
-    if Ammo(wep) <= 0 then return end
 
     if wep:Clip2() == 0 then
 
@@ -99,7 +98,7 @@ att.UBGL_Reload = function(wep, ubgl)
 
     local load = math.Clamp(clip, 0, reserve)
 
-    wep.Owner:SetAmmo(reserve - load, "buckshot")
+    wep.Owner:SetAmmo(reserve - load, "smg1_grenade")
 
     wep:SetClip2(load)
 end
