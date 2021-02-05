@@ -25,7 +25,7 @@ att.Override_ClipSize = 15
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2_custom/sg552/ak.wav" end
-    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2/sg552/aksd.wav" end
+    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2_custom/sg552/aksd.wav" end
 end
 
 att.Override_Trivia_Calibre = "7.62x39mm Soviet"

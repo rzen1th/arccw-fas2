@@ -5,7 +5,7 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.SortOrder = 2
+att.SortOrder = 1
 att.AutoStats = true
 att.Slot = {"mifl_fas2_toz34_mag"}
 
@@ -24,5 +24,5 @@ att.Override_Trivia_Calibre = "7.62x39mm Soviet"
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2_custom/sg552/ak.wav" end
-    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2/sg552/aksd.wav" end
+    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2_custom/sg552/aksd.wav" end
 end
