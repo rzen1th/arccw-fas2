@@ -95,7 +95,7 @@ att.UBGL_Reload = function(wep, ubgl)
 
     reserve = reserve + wep:Clip2()
 
-    local clip = 4
+    local clip = 1
 
     local load = math.Clamp(clip, 0, reserve)
 
