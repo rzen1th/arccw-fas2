@@ -157,12 +157,24 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local barrel = wep.Attachments[4].Installed
-    local ammobmg = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_300"
+    local ammobmg = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_50"
+    local ammosnip = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_300"	
+    local ammorif = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_762"	
 
     if ammobmg then vm:SetBodygroup(4, 2) end	
     if ammobmg and barrel == "mifl_fas2_toz_bar_1x_l" then vm:SetBodygroup(4, 3) end
     if ammobmg and barrel == "mifl_fas2_toz_bar_1x_s" then vm:SetBodygroup(4, 3) end
     if ammobmg and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 3) end	
+
+    if ammorif then vm:SetBodygroup(4, 4) end	
+    if ammorif and barrel == "mifl_fas2_toz_bar_1x_l" then vm:SetBodygroup(4, 5) end
+    if ammorif and barrel == "mifl_fas2_toz_bar_1x_s" then vm:SetBodygroup(4, 5) end
+    if ammorif and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 5) end	
+	
+    if ammosnip then vm:SetBodygroup(4, 6) end	
+    if ammosnip and barrel == "mifl_fas2_toz_bar_1x_l" then vm:SetBodygroup(4, 7) end
+    if ammosnip and barrel == "mifl_fas2_toz_bar_1x_s" then vm:SetBodygroup(4, 7) end
+    if ammosnip and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 7) end		
 end
 
 

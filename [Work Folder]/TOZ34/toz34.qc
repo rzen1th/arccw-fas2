@@ -40,6 +40,10 @@ $bodygroup "Shell"
 	studio "Shell_1.smd"
 	studio "ammo_50bmg.smd"
 	studio "ammo_50bmg1.smd"	
+	studio "Ammo_762.smd"
+	studio "Ammo_762_1.smd"	
+	studio "Ammo_300.smd"
+	studio "Ammo_300_1.smd"		
 	blank
 }
 
