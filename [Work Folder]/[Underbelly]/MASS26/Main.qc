@@ -101,4 +101,46 @@ $sequence "dry" {
 	fps 60
 }
 
+
+
+
+
+
+
+
+$sequence "in_cam" {
+	"anims\in.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$sequence "out_cam" {
+	"anims\out.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$sequence "fire_cam" {
+	"anims\fire.smd"
+	fps 60
+	snap
+}
+
+$sequence "wet_cam" {
+	"anims\wet.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$sequence "dry_cam" {
+	"anims\dry_cam.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+
 $collisionmodel "Main.smd"
