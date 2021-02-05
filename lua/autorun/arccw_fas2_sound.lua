@@ -961,3 +961,28 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/deserteagle/de_sliderelease.wav"}
 })
+
+
+
+
+
+
+//M3
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M3S90.Boltcatch",
+	channel = 		CHAN_ITEM5,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m3s90/m3s90_Boltcatch.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M3S90.LoadEjectorPort",
+	channel = 		CHAN_ITEM5,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m3s90/m3s90_load_ejectorport.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_M3S90.Load",
+	channel = 		CHAN_ITEM5,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/m3s90/m3s90_load1.wav"}
+})

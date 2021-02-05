@@ -320,7 +320,7 @@ $sequence "reload_start_empty" {
 $sequence "reload_load1" {
 	"m3s90_anims\reload_load1.smd"
 	activity "ACT_VM_RELOAD_LOAD1" 1
-	{ event 5004 9 "Weapon_M3S90.Load" }
+	{ event 5004 9 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 9 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -331,9 +331,9 @@ $sequence "reload_load1" {
 $sequence "reload_load2" {
 	"m3s90_anims\reload_load2.smd"
 	activity "ACT_VM_RELOAD_LOAD2" 1
-	{ event 5004 14 "Weapon_M3S90.Load" }
+	{ event 5004 14 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 14 "" }
-	{ event 5004 25 "Weapon_M3S90.Load" }
+	{ event 5004 25 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 25 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -344,11 +344,11 @@ $sequence "reload_load2" {
 $sequence "reload_load3" {
 	"m3s90_anims\reload_load3.smd"
 	activity "ACT_VM_RELOAD_LOAD3" 1
-	{ event 5004 11 "Weapon_M3S90.Load" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 11 "" }
-	{ event 5004 22 "Weapon_M3S90.Load" }
+	{ event 5004 22 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 22 "" }
-	{ event 5004 34 "Weapon_M3S90.Load" }
+	{ event 5004 34 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 34 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -359,13 +359,13 @@ $sequence "reload_load3" {
 $sequence "reload_load4" {
 	"m3s90_anims\reload_load4.smd"
 	activity "ACT_VM_RELOAD_LOAD4" 1
-	{ event 5004 8 "Weapon_M3S90.Load" }
+	{ event 5004 8 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 8 "" }
-	{ event 5004 16 "Weapon_M3S90.Load" }
+	{ event 5004 16 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 16 "" }
-	{ event 5004 26 "Weapon_M3S90.Load" }
+	{ event 5004 26 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 26 "" }
-	{ event 5004 38 "Weapon_M3S90.Load" }
+	{ event 5004 38 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 38 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -376,7 +376,7 @@ $sequence "reload_load4" {
 $sequence "reload_load1_end" {
 	"m3s90_anims\reload_load1_end.smd"
 	activity "ACT_VM_RELOAD_LOAD1_END" 1
-	{ event 5004 12 "Weapon_M3S90.Load" }
+	{ event 5004 12 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 12 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -387,9 +387,9 @@ $sequence "reload_load1_end" {
 $sequence "reload_load2_end" {
 	"m3s90_anims\reload_load2_end.smd"
 	activity "ACT_VM_RELOAD_LOAD2_END" 1
-	{ event 5004 12 "Weapon_M3S90.Load" }
+	{ event 5004 12 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 12 "" }
-	{ event 5004 22 "Weapon_M3S90.Load" }
+	{ event 5004 22 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 22 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -400,11 +400,11 @@ $sequence "reload_load2_end" {
 $sequence "reload_load3_end" {
 	"m3s90_anims\reload_load3_end.smd"
 	activity "ACT_VM_RELOAD_LOAD3_END" 1
-	{ event 5004 10 "Weapon_M3S90.Load" }
+	{ event 5004 10 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 10 "" }
-	{ event 5004 20 "Weapon_M3S90.Load" }
+	{ event 5004 20 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 20 "" }
-	{ event 5004 32 "Weapon_M3S90.Load" }
+	{ event 5004 32 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 32 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -415,13 +415,13 @@ $sequence "reload_load3_end" {
 $sequence "reload_load4_end" {
 	"m3s90_anims\reload_load4_end.smd"
 	activity "ACT_VM_RELOAD_LOAD4_END" 1
-	{ event 5004 11 "Weapon_M3S90.Load" }
+	{ event 5004 11 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 11 "" }
-	{ event 5004 21 "Weapon_M3S90.Load" }
+	{ event 5004 21 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 21 "" }
-	{ event 5004 32 "Weapon_M3S90.Load" }
+	{ event 5004 32 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 32 "" }
-	{ event 5004 44 "Weapon_M3S90.Load" }
+	{ event 5004 44 "Arccw_FAS2_Weapon_M3S90.Load" }
 	{ event 3018 44 "" }
 	fadein 0.2
 	fadeout 0.2

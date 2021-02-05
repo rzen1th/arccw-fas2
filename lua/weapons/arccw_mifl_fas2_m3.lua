@@ -43,8 +43,13 @@ SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PUMP"
+        PrintName = "Semi"
     },
+    {
+        Mode = 1,
+        PrintName = "Pump",
+		Override_ManualAction = true
+    },	
     {
         Mode = 0
     }
@@ -75,18 +80,18 @@ SWEP.MuzzleEffect = "muzzleflash_shotgun"
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
-SWEP.ShellScale = 1.5
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
+SWEP.ShellScale = 1.25
+SWEP.ShellRotateAngle = Angle(0, 0, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
-SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
+SWEP.CaseEffectAttachment = 3 -- which attachment to put the case effect on
 
 SWEP.SpeedMult = 0.95
 SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.25
-
+SWEP.NoLastCycle = true
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.28, -5, 2.7),
+    Pos = Vector(-4.52, -5, 3.4),
     Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -117,62 +122,34 @@ SWEP.CustomizeAng = Angle(5, 30, 30)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
-    ["rail"] = {
-        VMBodygroups = {{ind = 4, bg = 1}},
+    ["mifl_fas2_m3_stock_re"] = {
+        VMBodygroups = {	{ind = 4, bg = 1},	},	
     },
-    ["ubrms"] = {
+    ["mifl_fas2_m3_stock_ex"] = {
+        VMBodygroups = {	{ind = 4, bg = 2},	},	
+    },	
+    ["mifl_fas2_ks23_barrel_l"] = {
+        VMBodygroups = {	{ind = 1, bg = 2}, {ind = 3, bg = 2}	},
+        AttPosMods = {
+            [5] = {vpos = Vector(33, -0.7, 2.2),},
+        }		
+    },
+    ["mifl_fas2_ks23_barrel_k"] = {
+        VMBodygroups = {	{ind = 1, bg = 1}, {ind = 3, bg = 1}	},
+        AttPosMods = {
+            [5] = {vpos = Vector(17, -0.7, 2.2),},
+        }		
+    },
+    ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
     },
-    ["tacms"] = {
-        VMBodygroups = {{ind = 6, bg = 1}},
-    },
-    ["go_nova_barrel_short"] = {
-        VMBodygroups = {{ind = 1, bg = 1}},
-        AttPosMods = {
-            [5] = {
-                vpos = Vector(0, -1.7, 22.5),
-            }
-        }
-    },
-    ["go_nova_barrel_long"] = {
-        VMBodygroups = {{ind = 1, bg = 2}},
-        AttPosMods = {
-            [5] = {
-                vpos = Vector(0, -1.7, 33.5),
-            }
-        }
-    },
-    ["go_nova_mag_8"] = {
-        VMBodygroups = {{ind = 2, bg = 1}},
-    },
-    ["go_nova_stock_pistol"] = {
-        VMBodygroups = {{ind = 3, bg = 1}},
-        VMPoseParams = {["grip"] = 1}
-    },
-    ["go_nova_stock_sport"] = {
-        VMBodygroups = {{ind = 3, bg = 2}},
-        VMPoseParams = {["grip"] = 1}
-    },
-    ["go_nova_stock_folded"] = {
-        VMBodygroups = {{ind = 3, bg = 1}},
-        VMPoseParams = {["grip"] = 1}
-    },
-    ["go_stock"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 1},
-        },
-        VMElements = {
-            {
-                Model = "models/weapons/arccw_go/atts/stock_buftube_lp.mdl",
-                Bone = "v_weapon.NOVA_PARENT",
-                Offset = {
-                    pos = Vector(0, -0.25, 1),
-                    ang = Angle(90, 0, -90),
-                },
-            }
-        },
-    },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    if wep.Attachments[1].Installed then vm:SetBodygroup(3, 3) end
+end
+
 
 SWEP.ExtraSightDist = 10
 
@@ -187,19 +164,19 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = "optic",
-        Bone = "v_weapon.NOVA_PARENT",
+        Bone = "Dummy01",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, -2.6, 8),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(7.5, -2.5, 0),
+            vang = Angle(0, 0, -90),
         },
         CorrectiveAng = Angle(0, 0, 0),
-        InstalledEles = {"rail", "nors"},
+        InstalledEles = {"rail"},
     },
     {
         PrintName = "Underbarrel",
         Slot = "foregrip",
-        Bone = "v_weapon.NOVA_PUMP",
+        Bone = "Bone29",
         Offset = {
             vpos = Vector(0, 1.3, 1.75),
             vang = Angle(90, 0, -90),
@@ -209,7 +186,7 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "v_weapon.NOVA_PUMP",
+        Bone = "Bone29",
         Offset = {
             vpos = Vector(0.75, -0.65, 7.5),
             vang = Angle(90, 0, 0),
@@ -218,14 +195,14 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Barrel",
-        Slot = "go_nova_barrel",
-        DefaultAttName = "450mm Standard Barrel"
+        Slot = "mifl_fas2_m3_barrel",
+        DefaultAttName = "Standard Barrel"
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "v_weapon.NOVA_PARENT",
+        Bone = "Dummy01",
         Offset = {
             vpos = Vector(0, -1.7, 28),
             vang = Angle(90, 0, -90),
@@ -239,9 +216,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = {"go_nova_stock", "go_stock"},
+        Slot = {"mifl_fas2_m3_stock", "go_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "v_weapon.NOVA_PARENT",
+        Bone = "Dummy01",
         Offset = {
             vpos = Vector(0, -0.25, 1),
             vang = Angle(90, 0, -90),
@@ -260,7 +237,7 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "v_weapon.NOVA_PARENT", -- relevant bone any attachments will be mostly referring to
+        Bone = "Dummy01", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.5, -0.5, 4), -- offset that the attachment will be relative to the bone
             vang = Angle(90, 0, -90),
@@ -294,16 +271,18 @@ SWEP.Animations = {
         LHIKOut = 0.5,
     },
     ["fire"] = {
-        Source = "shoot",
-        Time = 0.5,
+        Source = "fire1",
+        ShellEjectAt = 0.1,		
     },
+    ["fire_pump"] = {
+        Source = "fire1",
+    },	
     ["fire_iron"] = {
         Source = "idle",
-        Time = 0.5,
     },
     ["cycle"] = {
-        Source = "cycle",
-        ShellEjectAt = 0.25,
+        Source = "pump",
+        ShellEjectAt = 0.15,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
     },
     ["sgreload_start"] = {
@@ -322,7 +301,7 @@ SWEP.Animations = {
     },
     ["sgreload_insert"] = {
         Source = "reload_load1",
-        Time = 1,
+       
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -331,7 +310,7 @@ SWEP.Animations = {
     },
     ["sgreload_insert1"] = {
         Source = "reload_load1",
-        Time = 1,
+       
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -340,7 +319,7 @@ SWEP.Animations = {
     },
     ["sgreload_insert2"] = {
         Source = "reload_load2",
-        Time = 1,
+       
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -349,7 +328,7 @@ SWEP.Animations = {
     },
     ["sgreload_insert3"] = {
         Source = "reload_load3",
-        Time = 1,
+       
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -358,7 +337,7 @@ SWEP.Animations = {
     },
     ["sgreload_insert4"] = {
         Source = "reload_load4",
-        Time = 1,
+       
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
