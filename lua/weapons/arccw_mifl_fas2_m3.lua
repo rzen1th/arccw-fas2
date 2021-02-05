@@ -39,7 +39,7 @@ SWEP.RecoilSide = 1.3
 SWEP.RecoilRise = 0.8
 
 SWEP.ShotgunReload = true
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 400 -- 60 / RPM.
 SWEP.Firemodes = {
     {
         Mode = 1,
@@ -49,6 +49,13 @@ SWEP.Firemodes = {
         Mode = 1,
         PrintName = "Pump",
 		Override_ManualAction = true
+		Mult_Recoil = 0.8
+		Mult_RecoilSide = 0.8
+		Mult_VisualRecoilMult = 0.8		
+		Mult_AccuracyMOA = 0.8
+		Mult_HipDispersion = 0.8
+		Mult_SightsDispersion = 0.5		
+		Mult_MoveDispersion = 0.75
     },	
     {
         Mode = 0
@@ -58,9 +65,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 170
 
-SWEP.AccuracyMOA = 25 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 150 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 25
+SWEP.AccuracyMOA = 30 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 50
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
@@ -91,7 +98,7 @@ SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.25
 SWEP.NoLastCycle = true
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.52, -5, 3.4),
+    Pos = Vector(-4.52, -5, 3.4	),
     Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -252,6 +259,12 @@ SWEP.Hook_SelectInsertAnimation = function(wep, data)
     local anim = "sgreload_insert" .. insertAmt
 
     return {count = insertAmt, anim = anim, empty = false}
+end
+
+SWEP.Hook_SelectFireAnimation = function(wep, data)
+    if wep:GetCurrentFiremode().Override_ManualAction then
+        return "fire_pump"
+    end
 end
 
 SWEP.Animations = {
