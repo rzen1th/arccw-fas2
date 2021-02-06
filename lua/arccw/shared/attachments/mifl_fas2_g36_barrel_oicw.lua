@@ -61,7 +61,7 @@ att.UBGL_Reload = function(wep, ubgl)
 
     wep:SetNextSecondaryFire(CurTime() + (wep:Clip2() == 0 and 3.5 or 3))
 
-    wep:PlayAnimation(wep:Clip2() == 0 and "oicw_dry" or "oicw_wet")
+    wep:PlayAnimation(wep:Clip2() == 0 and "oicw_dry" or "oicw_wet", nil, true)
 
     local reserve = Ammo(wep)
 
