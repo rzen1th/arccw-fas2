@@ -22,8 +22,8 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 19
-SWEP.DamageMin = 2 -- damage done at maximum range
+SWEP.Damage = 15
+SWEP.DamageMin = 4 -- damage done at maximum range
 SWEP.Num = 12
 SWEP.Range = 40 -- in METRES
 SWEP.Penetration = 1
@@ -57,17 +57,14 @@ SWEP.Firemodes = {
 		Mult_SightsDispersion = 0.5,	
 		Mult_MoveDispersion = 0.75,
     },	
-    {
-        Mode = 0
-    }
 }
 
 SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 170
 
 SWEP.AccuracyMOA = 30 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 50
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 100
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
@@ -114,17 +111,14 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_RPG
 SWEP.ActivePos = Vector(-1, -2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-4, 0, -1)
-SWEP.CrouchAng = Angle(0, 0, -10)
-
-SWEP.HolsterPos = Vector(1, 0, 2)
-SWEP.HolsterAng = Angle(-5, 5, 0)
-
+SWEP.CrouchPos = Vector(-0.2, 0, -1)
+SWEP.CrouchAng = Angle(0, 0, -5)
+SWEP.HolsterPos = Vector(1, -2, 1)
+SWEP.HolsterAng = Angle(-15, 25, -10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
-
-SWEP.CustomizePos = Vector(8, 0, 1)
-SWEP.CustomizeAng = Angle(5, 30, 30)
+SWEP.CustomizePos = Vector(6, -1, -5)
+SWEP.CustomizeAng = Angle(15, 15, -5)
 
 SWEP.BarrelLength = 24
 
@@ -167,7 +161,7 @@ end
 SWEP.ExtraSightDist = 10
 
 SWEP.WorldModelOffset = {
-    pos = Vector(-11.5, 6, -4),
+    pos = Vector(-14, 6, -7),
     ang = Angle(-10, 0, 180)
 }
 
@@ -191,8 +185,8 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "Bone29",
         Offset = {
-            vpos = Vector(0, 1.3, 1.75),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(4,1.3,0),
+            vang = Angle(0, 0, -90),
         },
         InstalledEles = {"ubrms"},
     },
@@ -201,10 +195,12 @@ SWEP.Attachments = {
         Slot = "tac",
         Bone = "Bone29",
         Offset = {
-            vpos = Vector(0.75, -0.65, 7.5),
-            vang = Angle(90, 0, 0),
+            vpos = Vector(5, -0.65, -1),
+            vang = Angle(0, 0, 0),
         },
         InstalledEles = {"tacms"},
+        ExtraSightDist = 20,
+        CorrectivePos = Vector(0.75, 0, -2)		
     },
     {
         PrintName = "Barrel",
@@ -312,68 +308,46 @@ SWEP.Animations = {
     },	
     ["cycle"] = {
         Source = "pump",
-        ShellEjectAt = 0.15,
+		Time = 0.8,
+        ShellEjectAt = 0.1,
         TPAnim = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN,
+        MinProgress = 0.5,		
     },
     ["sgreload_start"] = {
         Source = "reload_start",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0,
     },
     ["sgreload_start_empty"] = {
         Source = "reload_start_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0,
     },
     ["sgreload_insert"] = {
         Source = "reload_load1",   
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
     },
     ["sgreload_insert1"] = {
         Source = "reload_load1",     
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
     },
     ["sgreload_insert2"] = {
         Source = "reload_load2",     
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
     },
     ["sgreload_insert3"] = {
         Source = "reload_load3",    
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
     },
     ["sgreload_insert4"] = {
         Source = "reload_load4",
 		Time = 1.8,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
     },
     ["sgreload_finish"] = {
         Source = "reload_abort",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 1,
     },
 }
