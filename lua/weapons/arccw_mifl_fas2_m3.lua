@@ -50,9 +50,9 @@ SWEP.Firemodes = {
         PrintName = "Pump",
 		Override_ManualAction = true,
 		Mult_Recoil = 0.8,
-		Mult_RecoilSide = 0.8,
+		Mult_RecoilSide = 0.4,
 		Mult_VisualRecoilMult = 0.8,
-		Mult_AccuracyMOA = 0.8,
+		Mult_AccuracyMOA = 0.75,
 		Mult_HipDispersion = 0.8,
 		Mult_SightsDispersion = 0.5,	
 		Mult_MoveDispersion = 0.75,
@@ -150,6 +150,12 @@ SWEP.AttachmentElements = {
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
     },
+    ["go_ammo_sg_slug"] = {
+        VMBodygroups = {{ind = 6, bg = 1}},
+    },
+    ["go_ammo_sg_sabot"] = {
+        VMBodygroups = {{ind = 6, bg = 2}},
+    },	
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
