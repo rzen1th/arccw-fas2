@@ -14,7 +14,7 @@ att.Slot = {"ubgl"}
 
 att.LHIK = true
 att.LHIK_Animation = true
-
+att.LHIK_GunDriver = nil ---"UBGL_Frame"
 att.MountPositionOverride = 0
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/ubgl_mass26.mdl"

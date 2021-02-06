@@ -10,6 +10,9 @@ $illumposition 0 0 0
 
 $cdmaterials "models\weapons\mifl_custom\mass26\"
 
+$attachment "UBGL_Frame" "UBGL_Frame" 0 0 0 rotate 0 0 0
+$attachment "UBGL_TEST" "UBGL_TEST" 0 0 0 rotate 0 0 0
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"
@@ -49,6 +52,8 @@ $bonemerge "ValveBiped.Bip01_R_Finger12"
 $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
+$bonemerge "UBGL_Frame"
+$bonemerge "UBGL_TEST"
 
 
 $sectionframes 60 145
@@ -109,27 +114,27 @@ $sequence "dry" {
 
 
 $sequence "in_cam" {
-	"anims\in.smd"
+	"anims\in_cam.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 60
 }
 
 $sequence "out_cam" {
-	"anims\out.smd"
+	"anims\out_cam.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 60
 }
 
 $sequence "fire_cam" {
-	"anims\fire.smd"
+	"anims\fire_cam.smd"
 	fps 60
 	snap
 }
 
 $sequence "wet_cam" {
-	"anims\wet.smd"
+	"anims\wet_cam.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 60
@@ -137,6 +142,13 @@ $sequence "wet_cam" {
 
 $sequence "dry_cam" {
 	"anims\dry_cam.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$sequence "wet_gun" {
+	"anims\wet_gun.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 60
