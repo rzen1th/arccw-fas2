@@ -528,7 +528,7 @@ function SWEP:Hook_NameChange(name)
             if post == "M" then pre = "AKM" post = "" end
             pre = pre .. "S"
         end
-        if (pre != "PP-19") and handguard == "mifl_fas2_ak_hg_k" or "mifl_fas2_ak_hg_u" then
+        if (pre != "PP-19") and handguard == "mifl_fas2_ak_hg_k" or handguard == "mifl_fas2_ak_hg_u" then
             post = post .. "U"
         elseif handguard == "mifl_fas2_ak_hg_xs" then
             post = post .. " Kurz"

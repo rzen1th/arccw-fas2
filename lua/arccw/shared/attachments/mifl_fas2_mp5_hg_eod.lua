@@ -17,6 +17,6 @@ att.Add_BarrelLength = 3
 att.Mult_ShootPitch = 0.95
 
 att.Mult_HeatCapacity = 1.5
-att.Mult_FixTime = 1.5
-att.Mult_HeatDissipation = 0.75
+att.Mult_FixTime = 0.5
+att.Mult_HeatDissipation = 1.25
 att.Mult_HeatDelayTime = 0.5

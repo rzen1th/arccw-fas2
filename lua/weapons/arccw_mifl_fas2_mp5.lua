@@ -188,6 +188,9 @@ SWEP.AttachmentElements = {
             [3] = {
                 vpos = Vector(21.2, -1, 0),
             },
+            [4] = {
+					vpos = Vector(12, 0.5, 0),
+            },			
         },
     },
     ["mifl_fas2_mp5_hg_k"] = {
