@@ -159,10 +159,11 @@ SWEP.AttachmentElements = {
         },
     },	
     ["mifl_fas2_g36_barrel_oicw"] = {
+        Override_ActivePos = Vector(0, -5, -1.5),	
         NameChange = "Gewehr-OICW",
         TrueNameChange = "G36 OICW",
         VMBodygroups = {
-            {ind = 3, bg = 6}, {ind = 2, bg = 3}, {ind = 7, bg = 3},
+            {ind = 3, bg = 6}, {ind = 2, bg = 6}, {ind = 7, bg = 3},
         },
         Override_IronSightStruct = {
             Pos = Vector(-4.95, -8, 0),

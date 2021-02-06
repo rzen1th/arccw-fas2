@@ -24,6 +24,7 @@ $bodygroup "Iron"
 	blank	
 	studio "Iron_Compact1.smd"
 	studio "Iron_Compact2.smd"	
+	studio "Iron_OICW.smd"		
 }
 
 $bodygroup "HG"
