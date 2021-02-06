@@ -5,10 +5,12 @@ $modelname "weapons/arccw/mifl_atts/fas2_optic_acog.mdl"
 $bodygroup "body"
 {
 	studio "acog.smd"
+	blank
 }
 $bodygroup "hsp"
 {
 	studio "acog_hsp.smd"
+	blank
 }
 
 $surfaceprop "weapon"
