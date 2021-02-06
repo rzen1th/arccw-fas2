@@ -1,6 +1,6 @@
 att.PrintName = ".300 Winchester Magnum"
 att.Icon = Material("entities/arccw_mifl_fas2_toz_300.png", "mips smooth")
-att.Description = "Long range lol"
+att.Description = "Who is to say you can only put shotgun shell in a double barrelled? Specialised cartidge for longer range."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -57,7 +57,7 @@ att.Hook_OnDeselectUBGL = function(wep)
 	wep:DoLHIKAnimation("out", 0.7)
     wep:PlaySoundTable({
         {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
-        {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.3},
+        {s = "weapons/arccw_mifl/fas2/m3s90/m3s90_Boltcatch.wav",		t = 0.3},
         {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0.4},
     })
 end
@@ -89,7 +89,7 @@ att.UBGL_Fire = function(wep, ubgl)
         end
     })
 
-    wep:EmitSound("weapons/arccw_mifl/fas2/m3s90p/m3s90_fire1.wav", 120)
+    wep:EmitSound("weapons/arccw_mifl/fas2_custom/mass/fire.wav", 120)
 
     wep:SetClip2(wep:Clip2() - 1)
 
@@ -98,9 +98,8 @@ att.UBGL_Fire = function(wep, ubgl)
         wep:SetNextSecondaryFire( CurTime() + (60 / 60) )
         wep:PlaySoundTable({
             {s = "weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav",			t = 0.1},
-            {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav",		t = 0.4},
-            {s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 0.7},
-            {s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav",		t = 0.9},
+            {s = "weapons/arccw_mifl/fas2_custom/mass/pump.wav",		t = 0.45},
+            {s = "weapons/arccw_mifl/fas2/handling/generic_magpouch1.wav",		t = 0.9},
         })
     end
 
@@ -121,9 +120,8 @@ att.UBGL_Reload = function(wep, ubgl)
             {s = "weapons/arccw_mifl/fas2/famas/famas_magout_empty.wav", t = 0.25},
             {s = "weapons/arccw_mifl/fas2/famas/famas_magin.wav", t = 1.05},
 			{s = "weapons/arccw_mifl/fas2/sg55x/sg550_magout.wav",			t = 1.2 + 0.1},
-			{s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltforward.wav",		t = 1.2 + 0.4},
-			{s = "weapons/arccw_mifl/fas2/m3s90p/m3s90_Boltcatch.wav",		t = 1.2 + 0.7},
-			{s = "weapons/arccw_mifl/fas2/sg55x/sg550_boltback.wav",		t = 1.2 + 0.9},
+			{s = "weapons/arccw_mifl/fas2_custom/mass/pump.wav",		t = 1.2 + 0.45},
+			{s = "weapons/arccw_mifl/fas2/handling/generic_magpouch1.wav",		t = 1.2 + 0.9},
         })
 
     else

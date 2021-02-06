@@ -1,12 +1,12 @@
 SWEP.Base = "arccw_base"
-SWEP.Spawnable = true -- this obviously has to be set to true
+SWEP.Spawnable = false -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Rodger 400"
 SWEP.TrueName = "Remington 870"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "Semi auto shell fed shotgun."
+SWEP.Trivia_Desc = "Cut weapon cuz i dont wanna make this and fesiug just decided nah \nWont stop me from hide it doe \n\nYou aren't supposed to see this."
 SWEP.Trivia_Manufacturer = "Benelli Armi SpA"
 SWEP.Trivia_Calibre = "12 Gauge"
 SWEP.Trivia_Mechanism = "Pump-Action"

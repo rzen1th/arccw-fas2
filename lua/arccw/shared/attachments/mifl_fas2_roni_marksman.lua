@@ -21,7 +21,7 @@ att.Add_BarrelLength = 4
 
 att.Mult_Recoil = 0.5
 att.Mult_RecoilSide = 0.5
-att.Mult_SightTime = 1.5
+att.Mult_SightTime = 1.25
 att.Mult_Range = 2
 att.Mult_AccuracyMOA = 0.15
 att.Mult_MoveDispersion = 0.5

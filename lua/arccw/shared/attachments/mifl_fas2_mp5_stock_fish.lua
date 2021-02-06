@@ -9,9 +9,9 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_stock"
 att.SortOrder = 1
 
-att.Mult_SightTime = 1.4
-att.Mult_SightedSpeedMult = 0.5
-att.Mult_Recoil = 0.5
-att.Mult_RecoilSide = 0.5
-att.Mult_MoveDispersion = 0.5
-att.Mult_HipDispersion = 1.25
+att.Mult_SightTime = 1.25
+att.Mult_SightedSpeedMult = 0.75
+att.Mult_Recoil = 0.95
+att.Mult_RecoilSide = 0.75
+att.Mult_MoveDispersion = 0.75
+att.Mult_HipDispersion = 1.15
