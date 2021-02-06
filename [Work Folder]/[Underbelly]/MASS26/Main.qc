@@ -155,4 +155,42 @@ $sequence "wet_gun" {
 }
 
 
+
+
+
+
+$sequence "in_cam2" {
+	"anims\in_cam2.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$sequence "out_cam2" {
+	"anims\out_cam2.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$sequence "fire_cam2" {
+	"anims\fire_cam2.smd"
+	fps 60
+	snap
+}
+
+$sequence "wet_cam2" {
+	"anims\wet_cam2.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
+$sequence "dry_cam2" {
+	"anims\dry_cam2.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 60
+}
+
 $collisionmodel "Main.smd"
