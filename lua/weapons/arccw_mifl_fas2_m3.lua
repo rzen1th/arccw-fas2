@@ -330,8 +330,7 @@ SWEP.Animations = {
         LHIKOut = 0,
     },
     ["sgreload_insert"] = {
-        Source = "reload_load1",
-       
+        Source = "reload_load1",   
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -339,8 +338,7 @@ SWEP.Animations = {
         LHIKOut = 0,
     },
     ["sgreload_insert1"] = {
-        Source = "reload_load1",
-       
+        Source = "reload_load1",     
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -348,8 +346,7 @@ SWEP.Animations = {
         LHIKOut = 0,
     },
     ["sgreload_insert2"] = {
-        Source = "reload_load2",
-       
+        Source = "reload_load2",     
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -357,8 +354,7 @@ SWEP.Animations = {
         LHIKOut = 0,
     },
     ["sgreload_insert3"] = {
-        Source = "reload_load3",
-       
+        Source = "reload_load3",    
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
@@ -367,7 +363,7 @@ SWEP.Animations = {
     },
     ["sgreload_insert4"] = {
         Source = "reload_load4",
-       
+		Time = 1.8,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.3,
         LHIK = true,
