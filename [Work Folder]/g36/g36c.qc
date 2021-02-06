@@ -22,7 +22,7 @@ $bodygroup "Iron"
 	studio "Iron_Long.smd"	
 	studio "Iron_No.smd"		
 	blank	
-	studio "Iron_Compact1.smd"
+	studio "Iron_Compact2.smd"
 	studio "Iron_Compact2.smd"	
 	studio "Iron_OICW.smd"		
 }
@@ -84,9 +84,7 @@ $cdmaterials "models\weapons\arccw_fas2\shells\"
 
 $attachment "muzzle" "Dummy01" 11.25 0 0 rotate 0 0 0
 $attachment "ejector" "Dummy01" 2.62 0 0 rotate -70 30 -30
-$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
-$definebone "Akimbo_Base" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Dummy01" "" -2.323339 -7.870985 -3.402039 0.000019 -90.000016 90.000016 0 0 0 0 0 0
 $definebone "Dummy05" "Dummy01" -1.428614 -0.371249 0.557884 0 0 0 0 0 0 0 0 0
 $definebone "Bone07" "Dummy05" -0.570424 0.101755 -0.556206 88.794249 -179.999978 89.999982 0 0 0 0 0 0
@@ -138,7 +136,7 @@ $definebone "Left Polex Phalange3" "Left Polex Phalange2" 0.674675 0.000336 0.00
 $definebone "Right shoulder" "" -5.758168 7.237389 -3.577589 0.431323 -1.66851 179.738982 0 0 0 0 0 0
 $definebone "Right Upper Arm" "Right shoulder" 0 0 0 -1.190663 -89.788103 0.003667 0 0 0 0 0 0
 $definebone "Right Lower Arm" "Right Upper Arm" -9.996876 0 0 -0.054718 -3.963264 -0.000172 0 0 0 0 0 0
-$definebone "CompM4S" "Dummy01" 2.869866 1.558331 -0.000108 -89.980215 0 0 0 0 0 0 0 0
+
 
 $sequence "idle" {
 	"anims\idle.smd"

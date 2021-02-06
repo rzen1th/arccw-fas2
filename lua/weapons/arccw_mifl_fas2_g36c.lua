@@ -159,14 +159,14 @@ SWEP.AttachmentElements = {
         },
     },	
     ["mifl_fas2_g36_barrel_oicw"] = {
-        Override_ActivePos = Vector(0, -5, -1.5),	
+        Override_ActivePos = Vector(0, -1, -1),	
         NameChange = "Gewehr-OICW",
         TrueNameChange = "G36 OICW",
         VMBodygroups = {
             {ind = 3, bg = 6}, {ind = 2, bg = 6}, {ind = 7, bg = 3},
         },
         Override_IronSightStruct = {
-            Pos = Vector(-4.95, -8, 0),
+            Pos = Vector(-4.95, -15, -1.1),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1,
         },
@@ -369,6 +369,7 @@ SWEP.Attachments = {
             vpos = Vector(-2, 0.1, 0),
             vang = Angle(0, 0, -90),
         },
+        ExcludeFlags = {"mifl_fas2_g36_barrel_oicw"},		
         VMScale = Vector(1, 1, 1)
     },
     {

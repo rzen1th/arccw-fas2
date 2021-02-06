@@ -7,6 +7,7 @@
 --- to the 5 people that decompiled this mod for whatever reason and read this
 --- please dont fucking make cheaty attachment or anything like that
 --- thank you very much
+--- these models are SUPER destructive so even if you want to use them just be aware of shit like hard cut, trianglified n-gon and very very bad bevels 
 
 
 --- look ight these nibbas dont really give specific credits ---
