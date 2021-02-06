@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "M3 Super 90"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "Semi auto shell fed shotgun."
+SWEP.Trivia_Desc = "Modern shotgun with dual operation."
 SWEP.Trivia_Manufacturer = "Benelli Armi SpA"
 SWEP.Trivia_Calibre = "12 Gauge"
 SWEP.Trivia_Mechanism = "Pump-Action"
@@ -48,14 +48,14 @@ SWEP.Firemodes = {
     {
         Mode = 1,
         PrintName = "Pump",
-		Override_ManualAction = true
-		Mult_Recoil = 0.8
-		Mult_RecoilSide = 0.8
-		Mult_VisualRecoilMult = 0.8		
-		Mult_AccuracyMOA = 0.8
-		Mult_HipDispersion = 0.8
-		Mult_SightsDispersion = 0.5		
-		Mult_MoveDispersion = 0.75
+		Override_ManualAction = true,
+		Mult_Recoil = 0.8,
+		Mult_RecoilSide = 0.8,
+		Mult_VisualRecoilMult = 0.8,
+		Mult_AccuracyMOA = 0.8,
+		Mult_HipDispersion = 0.8,
+		Mult_SightsDispersion = 0.5,	
+		Mult_MoveDispersion = 0.75,
     },	
     {
         Mode = 0
@@ -134,7 +134,13 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_m3_stock_ex"] = {
         VMBodygroups = {	{ind = 4, bg = 2},	},	
+    },
+    ["mifl_fas2_m3_tube_x"] = {
+        VMBodygroups = {	{ind = 2, bg = 1},	},	
     },	
+    ["mifl_fas2_m3_tube_xx"] = {
+        VMBodygroups = {	{ind = 2, bg = 2},	},	
+    },		
     ["mifl_fas2_ks23_barrel_l"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 3, bg = 2}	},
         AttPosMods = {
@@ -214,11 +220,10 @@ SWEP.Attachments = {
             vpos = Vector(0, -1.7, 28),
             vang = Angle(90, 0, -90),
         },
-        InstalledEles = {"no_fh"}
     },
     {
         PrintName = "Magazine",
-        Slot = "go_nova_mag",
+        Slot = "mifl_fas2_m3_mag",
         DefaultAttName = "4-Round 12-Gauge Tube"
     },
     {
@@ -287,12 +292,24 @@ SWEP.Animations = {
         Source = "fire1",
         ShellEjectAt = 0.1,		
     },
+    ["fire_empty"] = {
+        Source = "fire_last",
+        ShellEjectAt = 0.1,		
+    },	
     ["fire_pump"] = {
         Source = "fire1",
     },	
+    ["fire_iron_pump"] = {
+        Source = "fire1_scoped",
+    },		
     ["fire_iron"] = {
-        Source = "idle",
+        Source = "fire1_scoped",
+        ShellEjectAt = 0.1,			
     },
+    ["fire_iron_empty"] = {
+        Source = "fire_last_iron",
+        ShellEjectAt = 0.1,			
+    },	
     ["cycle"] = {
         Source = "pump",
         ShellEjectAt = 0.15,

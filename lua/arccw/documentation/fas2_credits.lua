@@ -36,11 +36,12 @@ In Depth Credits
 slogkot (Fluffy Mammal)
 -model hacks
 -anims edits
--MASS26 anim
+-mag related anims
 -g36 ociw hybrid thing anim
+-MASS26 anim
+-akimbo anim
 -ks23 casing
 -underbarrel stuff
--left weapons anim
 
 Fesiug
 -akimbo (barely works but ok)
@@ -60,27 +61,28 @@ TheOnly8Z
 -the cooler akimbo system
 -stuff
 
+
+
 Tripwire (Killing Floor 2) --- very naisu
--HEAT Barrel (M4)
+-HEAT Barrel (M16)
 -EOD Barrel (MP5) 
 -10mm Mag (MP5) 
 -Thompson Kit
 -UMP45 (MP5) 
 -RIS Mount (Mac11)
--M3 Stock
 -G18c/G17 Slide
 -Glock Stock
 -M3 parts
 -M203
 
 Infinity Ward / Beenox / Treyarch 
--9mm Adaptor (MW19)
--Pistol Rail(MW2)
--Raptor Kit (MW2CR)
--AN94 (BO3)
--Single Drum Mag (MW19)
--Jungle Wraps (MWR)
--Suppressed sound and firing sound for calibre conversion (Mostly MW19)
+-9mm Adaptor (AUG, MW19)
+-Pistol Rail(Glock, MW2)
+-Raptor Kit (Raffica, MW2CR)
+-AN94 parts (BO3/MW19)
+-Single Drum Mag (Fennec, MW19)
+-Jungle Wraps (R700 and M24, MWR)
+-Suppressed sound and firing sound for calibre conversion (Mostly MW19, Cold War)
 
 Saber Interactive (AVA) -- quite ebin assets ngl
 -Felin (+big ass scope) -- look i dont fucking know if this is from ava or wwz, the fucker doesnt really specify but if i have to guess its ava cuz the poo texture
@@ -90,10 +92,11 @@ Crytek (Warface)
 -AS Val 
 -FO12
 
+BlackSpot Entertainment (Line of Sight)
+-MP5 Swordfish
+
 DICE 
 -M26 (BF4)
--M320 (BF4)
--GP30 (BF4)
 -SAIGA 12 (BF3)
 -XM25 (BF4)
 
@@ -118,7 +121,7 @@ Google Images
 -Stefano (MW2CR rip)
 -Dr Gordon Freeman (MW19,MWR rip)
 -Sirgibsalot (kf2,smod,half life 2 face fix and alot other stuff, this guy is a fucking chad)
--HK G41/empty (ava, warface, wwz rip, pretty fucking sure these two are the same)
+-HK G41/empty (ava, warface, wwz rip, pretty sure these two are the same)
 -ClearSkyC (warface rip)
 -Moon (BF4 rip)
 ---probably miss someone
@@ -178,7 +181,7 @@ mine has a lot
 +akimbo
 +roni 
 +super short barrel
-+suppressed barrel that isnt just thicc shrouded barrel lo
++suppressed barrel that isnt just thicc shrouded barrel lo (most of the time at least)
 [end]
 
 The FUNCTIONALITY side of things:
@@ -196,6 +199,12 @@ if you want to go outside and die a horrible death cuz muh realism go ahead
 
 havent you notice but i put this pretty low cuz well this is more like a challenge for me so fun comes last
 [end]
+
+---------------------
+In short: the uniqueness gets them to come, the functionality gets them to stay, the art gets them to comeback to
+---------------------
+
+
 
 The EGO side of things:
 the sole purpose 

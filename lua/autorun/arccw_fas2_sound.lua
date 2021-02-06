@@ -984,5 +984,14 @@ sound.Add({
 	name = 			"Arccw_FAS2_Weapon_M3S90.Load",
 	channel = 		CHAN_ITEM5,
 	volume = 		1.0,
-	sound = {"weapons/arccw_mifl/fas2/m3s90/m3s90_load1.wav"}
+	sound = {
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load1.wav",
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load2.wav",
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load3.wav",
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load4.wav",
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load5.wav",
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load6.wav",
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load7.wav",
+			"weapons/arccw_mifl/fas2/m3s90/m3s90_load8.wav",			
+}
 })
