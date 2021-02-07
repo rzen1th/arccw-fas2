@@ -19,6 +19,6 @@ att.Mult_Recoil = 1.25
 att.Add_BarrelLength = -2
 
 att.Mult_HeatCapacity = 1.5
-att.Mult_FixTime = 1.5
+att.Mult_FixTime = 0.5
 att.Mult_HeatDissipation = 1.25
 att.Mult_HeatDelayTime = 0.5

@@ -7,7 +7,7 @@ att.Desc_Cons = {
 }
 att.AutoStats = true
 
-att.SortOrder = 1
+att.SortOrder = 10
 
 att.ActivateElements = {"long"}
 
