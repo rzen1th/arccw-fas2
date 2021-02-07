@@ -141,13 +141,13 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_ks23_barrel_l"] = {
         VMBodygroups = {	{ind = 1, bg = 2}, {ind = 3, bg = 2}	},
         AttPosMods = {
-            [5] = {vpos = Vector(33, -0.7, 2.2),},
+            [5] = {vpos = Vector(49, -1.15, 0),},
         }		
     },
     ["mifl_fas2_ks23_barrel_k"] = {
         VMBodygroups = {	{ind = 1, bg = 1}, {ind = 3, bg = 1}	},
         AttPosMods = {
-            [5] = {vpos = Vector(17, -0.7, 2.2),},
+            [5] = {vpos = Vector(32, -1.15, 0),},
         }		
     },
     ["rail"] = {
@@ -222,8 +222,8 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(0, -1.7, 28),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(40, -1.15, 0),
+            vang = Angle(0, 0, -90),
         },
     },
     {
