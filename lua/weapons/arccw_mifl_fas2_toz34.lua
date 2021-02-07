@@ -201,6 +201,8 @@ SWEP.Attachments = {
             vang = Angle(90, 0, -90),
         },
         InstalledEles = {"rail_bottom"},
+		GivesFlags = {"Akimbo_No"},
+        ExcludeFlags = {"Akimbo_No1"},			
     },
     {
         PrintName = "Tactical",
@@ -234,6 +236,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"akimbo"},
+        ExcludeFlags = {"Akimbo_No"},	
+		GivesFlags = {"Akimbo_No1"},			
     },	
     {
         PrintName = "Stock",

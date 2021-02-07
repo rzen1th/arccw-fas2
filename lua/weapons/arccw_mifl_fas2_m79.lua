@@ -183,7 +183,8 @@ SWEP.Attachments = {
             vpos = Vector(0, 0.5, -5),
             vang = Angle(-90, 0, -90),
         },
-        ExcludeFlags = {"mifl_fas2_m79_tube_k"},
+		GivesFlags = {"Akimbo_No"},
+        ExcludeFlags = {"Akimbo_No1","mifl_fas2_m79_tube_k"},			
     },
     {
         PrintName = "Tactical",
@@ -217,6 +218,8 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"akimbo"},
+        ExcludeFlags = {"Akimbo_No"},	
+		GivesFlags = {"Akimbo_No1"},			
     },	
     {
         PrintName = "Stock",
@@ -286,9 +289,6 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "deploy",
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKOut = 0.4,
     },
     ["holster"] = {
         Source = "holster",
@@ -304,10 +304,6 @@ SWEP.Animations = {
     },	
     ["ready"] = {
         Source = "deploy1st",
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKOut = 0.7,
-        LHIKEaseOut = 0.4,
     },
     ["fire"] = {
         Source = "fire01",
