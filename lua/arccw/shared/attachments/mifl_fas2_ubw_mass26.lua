@@ -107,7 +107,9 @@ att.UBGL_Fire = function(wep, ubgl)
 end
 
 att.UBGL_Reload = function(wep, ubgl)
-    if wep:Clip2() >= 4 then return end
+    local clip = 4 + 1
+	
+    if wep:Clip2() >= clip then return end
     if Ammo(wep) <= 0 then return end
 
     if wep:Clip2() == 0 then
@@ -140,8 +142,6 @@ att.UBGL_Reload = function(wep, ubgl)
     local reserve = Ammo(wep)
 
     reserve = reserve + wep:Clip2()
-
-    local clip = 4
 
     local load = math.Clamp(clip, 0, reserve)
 

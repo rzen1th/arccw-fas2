@@ -32,7 +32,7 @@ att.UBGL_ClipSize = 1
 att.UBGL_Ammo = "smg1_grenade"
 att.UBGL_RPM = 120
 att.UBGL_Recoil = 1
-att.UBGL_Capacity = 5
+att.UBGL_Capacity = 4
 
 local function Ammo(wep)
     return wep.Owner:GetAmmoCount("smg1_grenade")
@@ -55,7 +55,9 @@ att.UBGL_Fire = function(wep, ubgl)
 end
 
 att.UBGL_Reload = function(wep, ubgl)
-    if wep:Clip2() >= 5 then return end
+	local clip = 4 + 1
+	
+    if wep:Clip2() >= clip then return end
 
     if Ammo(wep) <= 0 then return end
 
