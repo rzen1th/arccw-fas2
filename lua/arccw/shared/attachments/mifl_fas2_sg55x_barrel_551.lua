@@ -1,6 +1,6 @@
 att.PrintName = "551 Handguard"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_551.png", "mips smooth")
-att.Description = "Intermediate lengthed SG551 barrel for when the 550 is too unwieldy but the 552 too compactw."
+att.Description = "Intermediate lengthed SG551 barrel for when the 550 is too unwieldy but the 552 too compact."
 att.SortOrder = 10
 att.Desc_Pros = {}
 att.Desc_Cons = {}
