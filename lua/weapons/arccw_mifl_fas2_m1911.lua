@@ -162,7 +162,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 0, bg = 1},
             {ind = 1, bg = 5},
-            {ind = 2, bg = 2}
+            {ind = 2, bg = 3}
         }
     },
     ["mifl_fas2_m1911_slide_para"] = {
