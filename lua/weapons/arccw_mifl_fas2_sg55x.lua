@@ -193,7 +193,7 @@ SWEP.AttachmentElements = {
                     pos = Vector(4.822, -24.784, 6.864),
                     ang = Angle(0, -90, 0)
                 },
-                ModelBodygroups = "124220101",
+                ModelBodygroups = "124220108",
                 Scale = Vector(1, 0.8, 0.8)
             }
         },

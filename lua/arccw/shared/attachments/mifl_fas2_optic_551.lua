@@ -14,11 +14,11 @@ att.AutoStats = true
 att.Slot = {"optic"}
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2_optic_551.mdl"
-att.HolosightPiece = "models/weapons/arccw/mifl_atts/fas2_optic_551_hsp.mdl"
+att.HolosightPiece = "models/weapons/arccw/mifl_atts/fas2_optic_acog_551.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 12, -1.6),
+        Pos = Vector(0, 12, -2.05),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -31,9 +31,9 @@ att.Holosight = true
 att.HolosightMagnification = 6
 att.HolosightMagnificationMin = 6
 att.HolosightMagnificationMax = 6
-att.HolosightReticle = Material("mifl_fas2_reticle/mildot.png", "mips smooth")
+att.HolosightReticle = Material("mifl_fas2_reticle/scope_leo.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 5.5
+att.HolosightSize = 5
 att.HolosightBone = "holosight"
 att.Colorable = false
 att.HolosightBlackbox = true
