@@ -5,14 +5,14 @@ att.Description = "Heavy advance optic system. Comes with a Thermal option with 
 att.SortOrder = 12
 
 att.Desc_Pros = {
-    "Precision sight picture",
-    "Zoom",
+    "autostat.holosight",
+    "autostat.zoom"
 }
 att.Desc_Cons = {
 }
 
 att.AutoStats = true
-att.Slot = {"optic", "tarkov_optic_medium"}
+att.Slot = {"optic"}
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/felin_scope.mdl"
 

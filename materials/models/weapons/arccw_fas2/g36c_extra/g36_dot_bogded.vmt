@@ -1,0 +1,18 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"models\weapons\arccw_fas2\g36c_extra\g36_dot_bogded"
+	"$translucent" 	"1"
+
+	$color2 "[1 1 1]"
+	$selfillum 1
+	
+		"Proxies"
+	{
+		"ArcCW_FAS2_Color_Crosshair"
+		{
+			"resultVar"	"$color2"
+		}
+	}
+
+	"$nocull" "1"		
+}
