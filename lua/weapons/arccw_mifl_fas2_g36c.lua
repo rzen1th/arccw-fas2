@@ -172,7 +172,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [1] = {
-                vpos = Vector(10, -6, 0),
+                vpos = Vector(8.75, -6, 0),
             },
             [3] = {
                 vpos = Vector(23.5, -0.15, 0),
@@ -341,6 +341,7 @@ SWEP.Attachments = {
             vpos = Vector(11, 1.2, 0),
             vang = Angle(0, 0, -90),
         },
+        ExcludeFlags = {"mifl_fas2_g36_barrel_oicw"},			
     },
     {
         PrintName = "Tactical",

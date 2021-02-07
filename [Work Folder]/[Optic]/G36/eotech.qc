@@ -5,7 +5,6 @@ $modelname "weapons/arccw/mifl_atts/fas2_optic_g36.mdl"
 $bodygroup "body"
 {
 	studio "eotech.smd"
-	blank
 }
 $bodygroup "hsp"
 {
@@ -16,17 +15,11 @@ $bodygroup "hsp"
 $illumposition 0 0 0
 
 $cdmaterials "M4_textures\"
-$cdmaterials "models\weapons\arccw_fas2\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\accessories"
 $cdmaterials "models\weapons\arccw_fas2\g36c\"
 $cdmaterials "models\weapons\arccw_fas2\g36c_extra\"
 
 $attachment "holosight" "holosight" 0 0 0 rotate 0 0 0
-
-$cbox 0 0 0 0 0 0
-
-$definebone "root" "" 0 0 0 0 0 89.999982 0 0 0 0 0 0
-$definebone "holosight" "root" 0 1.423388 -0.048433 0 -0.000057 89.999982 0 0 0 0 0 0
-$definebone "blender_implicit" "" 0 0 0 0 0 0 0 0 0 0 0 0
 
 $sequence "idle" {
 	"anims\idle.smd"

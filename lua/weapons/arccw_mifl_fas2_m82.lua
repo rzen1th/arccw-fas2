@@ -193,7 +193,8 @@ SWEP.Attachments = {
             vmax = Vector(0, 15, 0),
             wmin = Vector(19, 0.832, -6),
             wmax = Vector(19, 0.832, -6),
-        }
+        },
+        ExcludeFlags = {"mifl_fas2_m82_obrez"},			
     },
     {
         PrintName = "Tactical",

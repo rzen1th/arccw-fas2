@@ -16,18 +16,18 @@ att.Model = "models/weapons/arccw/mifl_atts/fas2_optic_g36.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 7, -1.85),
+        Pos = Vector(0, 7, -1.9),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         ScrollFunc = ArcCW.SCROLL_NONE
     }
 }
-
 att.Holosight = true
 att.HolosightReticle = Material("mifl_fas2_reticle/dot.png" , "mips smooth")
 att.HolosightFlare = Material("mifl_fas2_reticle/dot_flare.png" , "mips smooth")
-att.HolosightSize = 2
+att.HolosightSize = 1.5
 att.HolosightBone = "holosight"
+
 att.Colorable = true
 
 att.Mult_SightTime = 1.075
