@@ -1,4 +1,4 @@
-att.PrintName = "Left G18"
+att.PrintName = "G18"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_g18.png", "smooth")
 att.Description = "Incase 1000 RPM isn't enough."
 att.Desc_Pros = {

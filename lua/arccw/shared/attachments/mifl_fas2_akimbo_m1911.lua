@@ -1,6 +1,6 @@
-att.PrintName = "Left M1911"
+att.PrintName = "M1911"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_1911.png", "smooth")
-att.Description = "You shoot pistols one-handed. But they never said you couldn't shoot two."
+att.Description = "You shoot pistols one-handed because you use one for each hand, no?"
 att.Hidden = false
 att.Desc_Pros = {
     "pro.fas2.akimbo",

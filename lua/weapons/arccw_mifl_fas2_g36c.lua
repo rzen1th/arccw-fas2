@@ -338,7 +338,7 @@ SWEP.Attachments = {
         Slot = "ubgl",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(11, 1.2, 0),
+            vpos = Vector(9, 1.2, 0),
             vang = Angle(0, 0, -90),
         },
         ExcludeFlags = {"mifl_fas2_g36_barrel_oicw"},			

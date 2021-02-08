@@ -1,4 +1,4 @@
-att.PrintName = "Left MP5K (test)"
+att.PrintName = "MP5K (test)"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_mp5k.png", "smooth")
 att.Description = "the most gamer of them all"
 att.Ignore = true

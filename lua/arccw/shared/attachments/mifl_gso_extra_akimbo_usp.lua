@@ -1,4 +1,4 @@
-att.PrintName = "Left USP"
+att.PrintName = "USP"
 att.Icon = Material("entities/acwatt_mw2_akimbo.png", "smooth")
 att.Description = "HOW."
 att.Hidden = false
