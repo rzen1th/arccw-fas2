@@ -23,3 +23,5 @@ att.Mult_RecoilSide = 0.5
 att.Mult_AccuracyMOA = 0.85
 
 att.Override_Num = 16
+
+att.Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/buck.mdl"

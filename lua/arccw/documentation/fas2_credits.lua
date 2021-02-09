@@ -41,7 +41,7 @@ slogkot (Fluffy Mammal)
 -g36 ociw hybrid thing anim
 -MASS26 anim
 -akimbo anim
--ks23 casing
+-shotgun fired shells
 -underbarrel stuff
 
 Fesiug
