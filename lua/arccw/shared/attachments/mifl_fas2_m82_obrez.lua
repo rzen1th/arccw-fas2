@@ -11,6 +11,8 @@ att.SortOrder = 1
 
 att.ActivateElements = {"obrez"}
 
+att.GivesFlags = {"mifl_fas2_m82_obrez"}
+
 att.Slot = "mifl_fas2_m82_hg"
 
 att.Mult_Damage = 0.7
