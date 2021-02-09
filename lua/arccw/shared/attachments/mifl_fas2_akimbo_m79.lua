@@ -18,7 +18,7 @@ att.GivesFlags = {"handlocked"}
 
 att.ModelScale = Vector(1, 1, 1)
 
-att.SortOrder = 700 + 3
+att.SortOrder = 700 + 250
 
 att.AddSuffix = " + M79"
 

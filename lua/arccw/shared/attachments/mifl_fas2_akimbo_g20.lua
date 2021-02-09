@@ -17,7 +17,7 @@ att.GivesFlags = {"handlocked"}
 
 att.ModelScale = Vector(1, 1, 1)
 
-att.SortOrder = 700 + 3
+att.SortOrder = 700 + 30
 
 att.AddSuffix = " + G20"
 
@@ -79,7 +79,7 @@ att.UBGL_Fire = function(wep, ubgl)
     wep.Owner:FireBullets({
 		Src = wep.Owner:EyePos(),
 		Num = 1,
-		Damage = 35,
+		Damage = 30,
 		Force = 1,
 		Attacker = wep.Owner,
 		Dir = wep.Owner:EyeAngles():Forward(),
