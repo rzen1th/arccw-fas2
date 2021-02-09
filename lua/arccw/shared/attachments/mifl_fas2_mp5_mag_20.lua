@@ -1,7 +1,7 @@
 att.PrintName = "20-Round .45 ACP"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_mag_20.png", "mips smooth")
 att.Description = "Convert weapon to fire .45 ACP with less load, which kicks harder but is especially powerful up close."
-att.SortOrder = 20 + 170
+att.SortOrder = 20 + 1700
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

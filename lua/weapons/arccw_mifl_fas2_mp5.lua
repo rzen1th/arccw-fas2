@@ -347,6 +347,10 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 4},
         },
     },
+    ["mifl_fas2_mp5_mag_20_70"] = {
+        VMBodygroups = {{ind = 4, bg = 10},}, },
+    ["mifl_fas2_mp5_mag_waffle_80"] = {
+        VMBodygroups = {{ind = 4, bg = 11},}, },		
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -537,7 +541,7 @@ function SWEP:Hook_NameChange(name)
         end
     end
 
-    if mag == "mifl_fas2_mp5_mag_20" or mag == "mifl_fas2_mp5_mag_45_30" then
+    if mag == "mifl_fas2_mp5_mag_20" or mag == "mifl_fas2_mp5_mag_45_30" or mag == "mifl_fas2_mp5_mag_20_70" then
         if ump then
             mid = "45"
         else
@@ -549,7 +553,7 @@ function SWEP:Hook_NameChange(name)
         else
             post = post .. "/40"
         end
-    elseif mag == "mifl_fas2_mp5_mag_waffle" then
+    elseif mag == "mifl_fas2_mp5_mag_waffle" or mag == "mifl_fas2_mp5_mag_waffle_80" then
         if ump then
             mid = "223"
         else
@@ -563,7 +567,7 @@ end
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
     local onehand = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_no"
     local kurz = wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_ump_k" or wep.Attachments[2].Installed == "mifl_fas2_mp5_hg_mw2"
-    local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80"
+    local eighty = wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_80" or wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_20_70" or wep.Attachments[7].Installed == "mifl_fas2_mp5_mag_waffle_80"
 
     if wep.Attachments[8].Installed  then
         return anim .. "_akimbo"

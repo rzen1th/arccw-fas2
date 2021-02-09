@@ -1,7 +1,7 @@
 att.PrintName = "25-Round X.223"
 att.Icon = Material("entities/arccw_mifl_fas2_mp5_mag_waffle.png", "mips smooth")
 att.Description = "Waffle magazine loaded with experimental fragmented .223R rounds. Fires multiple shrapnel out of the barrel with poor accuracy and range, but up close it will hurt a lot."
-att.SortOrder = 25 + 100
+att.SortOrder = 25 + 1000
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

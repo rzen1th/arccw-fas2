@@ -48,6 +48,8 @@ $bodygroup "Mag"
 	studio "Mag_Waffle.smd"	
 	studio "mag_10mm_20.smd"	
 	studio "Mag_45_30.smd"		
+	studio "Mag_45_80.smd"		
+	studio "Mag_Waf_80.smd"			
 }
 
 $bodygroup "Stock"
