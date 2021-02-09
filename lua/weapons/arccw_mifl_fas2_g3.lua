@@ -367,7 +367,6 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
     end
 end
 
-
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",

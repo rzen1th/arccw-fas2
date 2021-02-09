@@ -1,4 +1,4 @@
-att.PrintName = "70-Round 5.56mm"
+att.PrintName = "60-Round 5.56mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g3_mag_762_50.png", "mips smooth")
 att.Description = "Convert the weapon into a HK33, firing a less powerful intermediate cartridge from a cumbersome drum magazine."
 att.SortOrder = 5.3
@@ -10,7 +10,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "mifl_fas2_g3_mag"
 
-att.Override_ClipSize = 70
+att.Override_ClipSize = 60
 
 att.Mult_MoveSpeed = 0.8
 att.Mult_SightTime = 1.5
