@@ -1,4 +1,4 @@
-att.PrintName = "Left G20"
+att.PrintName = "G20"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_g20.png", "smooth")
 att.Description = "There's a saying that polymers are light but they sure don't refer about use it with one hand."
 att.Desc_Pros = {

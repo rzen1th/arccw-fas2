@@ -1,4 +1,4 @@
-att.PrintName = "Left G18"
+att.PrintName = "G18"
 att.Icon = Material("entities/acwatt_mw2_akimbo.png", "smooth")
 att.Description = "HOW."
 att.Hidden = false

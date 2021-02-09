@@ -1,4 +1,4 @@
-att.PrintName = "Left Shield"
+att.PrintName = "Shield"
 att.Icon = Material("entities/arccw_mifl_lhand_shield.png", "smooth")
 att.Description = "SHOE"
 att.Hidden = true

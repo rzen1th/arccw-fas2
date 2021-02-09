@@ -1,4 +1,4 @@
-att.PrintName = "Left Raging Bull"
+att.PrintName = "Raging Bull"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_ragbul.png", "smooth")
 att.Description = "Strong grip you got there mate. Only for the most ambidestrous of desperados."
 att.Hidden = false

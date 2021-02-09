@@ -1,6 +1,6 @@
-att.PrintName = "Left M79"
+att.PrintName = "M79"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_m79.png", "smooth")
-att.Description = "It's already small enough."
+att.Description = "*insert witty akimbo joke here*"
 att.Hidden = false
 att.Desc_Pros = {
     "pro.fas2.akimbo",

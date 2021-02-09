@@ -1,4 +1,4 @@
-att.PrintName = "Left Deagle"
+att.PrintName = "Deagle"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_deagle.png", "smooth")
 att.Description = "Become the American Action Hero."
 att.Hidden = false
@@ -20,7 +20,7 @@ att.ModelScale = Vector(1, 1, 1)
 
 att.SortOrder = 700 + 3
 
-att.AddSuffix = " + M1911"
+att.AddSuffix = " + Deagle"
 
 att.MountPositionOverride = 0
 

@@ -1,4 +1,4 @@
-att.PrintName = "Left P226"
+att.PrintName = "P226"
 att.Icon = Material("entities/arccw_mifl_fas2_akimbo_p226.png", "smooth")
 att.Description = "Widely use pistol. So widely used that it is useable on both hands."
 att.Hidden = false
