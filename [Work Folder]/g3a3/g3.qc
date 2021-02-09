@@ -36,7 +36,8 @@ $bodygroup "Mag"
 	studio "Mag_556_20.smd"
 	studio "Mag_556_30.smd"
 	studio "Mag_20.smd"	
-	studio "Mag_10mm.smd"		
+	studio "Mag_10mm.smd"	
+	studio "mag_556_75.smd"		
 	blank	
 }
 $bodygroup "Stock"

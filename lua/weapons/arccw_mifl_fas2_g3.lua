@@ -218,6 +218,9 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_g3_mag_556_30"] = {
         VMBodygroups = {	{ind = 3, bg = 5}, {ind = 6, bg = 1}	},
     },
+    ["mifl_fas2_g3_mag_556_75"] = {
+        VMBodygroups = {	{ind = 3, bg = 8}, {ind = 6, bg = 1}	},
+    },	
     ["mifl_fas2_g3_mag_45_25"] = {
         VMBodygroups = {	{ind = 3, bg = 6}, {ind = 6, bg = 2}	},
     },
@@ -353,7 +356,7 @@ SWEP.Attachments = {
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
     local kurz = wep.Attachments[2].Installed == "mifl_fas2_g3_hg_k"
-    local fifty = wep.Attachments[7].Installed == "mifl_fas2_g3_mag_762_50"
+    local fifty = wep.Attachments[7].Installed == "mifl_fas2_g3_mag_762_50" or wep.Attachments[7].Installed == "mifl_fas2_g3_mag_556_75"
 
     if	kurz and fifty then
         return anim .. "_k_50"
