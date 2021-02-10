@@ -80,7 +80,7 @@ SWEP.MuzzleEffect = "muzzleflash_m3"
 SWEP.ShellModel = "models/weapons/arccw/mifl/fas2/shell/buck.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
-SWEP.ShellScale = 0.75
+SWEP.ShellScale = 1
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

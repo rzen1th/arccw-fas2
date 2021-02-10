@@ -84,7 +84,7 @@ SWEP.MuzzleEffect = "muzzleflash_shotgun"
 SWEP.ShellModel = "models/weapons/arccw/mifl/fas2/shell/buck.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
-SWEP.ShellScale = 0.75
+SWEP.ShellScale = 1
 SWEP.ShellRotateAngle = Angle(0, 0, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
