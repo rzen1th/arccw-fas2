@@ -1,4 +1,4 @@
-att.PrintName = "fuck am i supposed to call this???? (RDS)"
+att.PrintName = "N43 High (RDS)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_g36.png", "mips smooth")
 att.Description = "Gigantic percision sight designed as a backup for another gigangitc percision scope."
 

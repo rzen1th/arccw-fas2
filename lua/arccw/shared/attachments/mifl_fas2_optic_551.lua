@@ -1,4 +1,4 @@
-att.PrintName = "Fuck am i suppposed to call this???? (6x)"
+att.PrintName = "Ujel (6x)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_551.png", "smooth")
 att.Description = "Swish long range optic."
 
