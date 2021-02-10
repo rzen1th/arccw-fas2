@@ -77,10 +77,10 @@ SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
 SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_m3"
-SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellModel = "models/weapons/arccw/mifl/fas2/shell/buck.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
-SWEP.ShellScale = 1.5
+SWEP.ShellScale = 0.75
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
