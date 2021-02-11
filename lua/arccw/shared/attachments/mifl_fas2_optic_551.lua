@@ -1,6 +1,6 @@
-att.PrintName = "Ujel (6x)"
+att.PrintName = "MRCS Scope (6x)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_551.png", "smooth")
-att.Description = "Swish long range optic."
+att.Description = "Swish mid-long range optic."
 
 att.SortOrder = 5
 
