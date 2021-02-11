@@ -1,5 +1,5 @@
 att.PrintName = "M79 Buckshot"
-att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_shotgun.png", "mips smooth")
 att.Description = "A grenade loaded with buckshot pellets and uses shotgun ammo. Because of the low grenade pressure, damage isn't as spectacular as one would expect."
 att.Desc_Pros = {
     "pro.fas2.m79.buck"

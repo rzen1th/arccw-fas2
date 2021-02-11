@@ -1,5 +1,5 @@
 att.PrintName = "M79 Mini Hornet"
-att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_hornet.png", "mips smooth")
 att.Description = "A mini grenade loaded with 5 .22LR rounds, and thus uses pistol ammo. It is much more accurate and has more range than buckshot, but doesn't do as much damage."
 att.Desc_Pros = {
     "pro.fas2.m79.hornet"

@@ -1,5 +1,5 @@
 att.PrintName = "M79 Timed"
-att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_time.png", "mips smooth")
 att.Description = "A high explosive grenade with configurable timed fuse and carrying a heavier payload. Does not detonate on impact. Useful when shooting around corners."
 att.Desc_Pros = {
     "pro.fas2.m79.dmg"

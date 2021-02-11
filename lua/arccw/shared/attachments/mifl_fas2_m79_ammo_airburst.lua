@@ -1,5 +1,5 @@
 att.PrintName = "M79 Airburst"
-att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_air.png", "mips smooth")
 att.Description = "A high explosive grenade with configurable timed fuse. Will defuse itself if impacted with a surface.\n\nBeware, as a low muzzle velocity and fuse length can explode yourself!"
 att.Desc_Pros = {
     "pro.fas2.m79.dmg",

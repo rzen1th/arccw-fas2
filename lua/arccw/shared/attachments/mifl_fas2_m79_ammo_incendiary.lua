@@ -1,5 +1,5 @@
 att.PrintName = "M79 Incendiary"
-att.Icon = nil --Material("entities/arccw_mifl_fas2_ak_mag_762s.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_fire.png", "mips smooth")
 att.Description = "A grenade loaded with flammable fuel, spreading fire on impact."
 att.Desc_Pros = {
     "pro.fas2.m79.incendiary"
