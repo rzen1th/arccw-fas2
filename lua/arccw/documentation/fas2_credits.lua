@@ -11,9 +11,6 @@
 
 
 --- look ight these nibbas dont really give specific credits ---
-M16A1 - ???
-https://gamebanana.com/skins/19381
-
 MP7 (ironsight for the roni) - Shumung/The_tub
 https://gamebanana.com/skins/19741
 
@@ -23,14 +20,11 @@ https://gamebanana.com/skins/105609
 SAF KIT - ???
 --- i dont even remember where i got it from ---
 
-Shield - ???  -- scrapped --
-https://gamebanana.com/skins/126616
-
 VOLKED KIT - ???
 http://gamer-lab.com/eng/mdl_source/X-90
 
-XM8 - End of Days -- scrapped --
-https://gamebanana.com/skins/41834
+M16A1 - ???
+https://gamebanana.com/skins/19381
 
 ---------------------------------------------------------------
 In Depth Credits
@@ -43,6 +37,7 @@ slogkot (Fluffy Mammal)
 -akimbo anim
 -shotgun fired shells
 -underbarrel stuff
+-horrible icons render/drawing (im not a fucking graphic designer mmkay?)
 
 Fesiug
 -akimbo (barely works but ok)
@@ -59,7 +54,7 @@ TheOnly8Z
 -naming system
 -lotsa coding
 -m79 grenades 
--the cooler akimbo system
+-the cooler akimbo (still in pre pre pre alpha)
 -stuff
 
 
@@ -80,26 +75,26 @@ Infinity Ward / Beenox / Treyarch
 -9mm Adaptor (AUG, MW19)
 -Pistol Rail(Glock, MW2)
 -Raptor Kit (Raffica, MW2CR)
--AN94 parts (BO3/MW19)
 -Single Drum Mag (Fennec, MW19)
--Jungle Wraps (R700 and M24, MWR)
+-Jungle Wraps (R700 and M21, MWR)
+-AN94 parts (BO3/MW19)
 -Suppressed sound and firing sound for calibre conversion (Mostly MW19, Cold War)
-
-Saber Interactive (AVA) -- quite ebin assets ngl
--Felin (+big ass scope) -- look i dont fucking know if this is from ava or wwz, the fucker doesnt really specify but if i have to guess its ava cuz the poo texture
 
 Crytek (Warface)
 -Roni Frame
 -AS Val 
 -FO12
 
-BlackSpot Entertainment (Line of Sight)
--MP5 Swordfish
-
 DICE 
 -M26 (BF4)
 -SAIGA 12 (BF3)
 -XM25 (BF4)
+
+Saber Interactive (AVA) -- quite ebin assets ngl
+-Felin (+big ass scope) -- look i dont fucking know if this is from ava or wwz, the fucker doesnt really specify but if i have to guess its ava cuz the poo texture
+
+BlackSpot Entertainment (Line of Sight)
+-MP5 Swordfish
 
 They Hunger -- pretty sure its they hunger 
 -TOZ34

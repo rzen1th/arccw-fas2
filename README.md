@@ -1,6 +1,6 @@
-"Top text, bottom text"
+"Fuck now I need a quote" -- Arctic
 
-22 Weapons, 262 Attachments. It's a lot of stuff 
+21 Weapons, 281 Attachments. It's a lot of stuff 
 
 The most* customisable weapon pack on the workshop with ludicrous amount of *fictional* customisations 
 
@@ -8,7 +8,7 @@ The most* customisable weapon pack on the workshop with ludicrous amount of *fic
 
 Development starts shortly after the disappointment that is Gunsmith Offensive
 
-Featuring nearly every weapon from Firearms Source 2 (and some custom one) packed to the brim with kitbashed attachments
+Featuring nearly* every weapon from Firearms Source 2 (and some custom one) packed to the brim with kitbashed attachments
 
 Words and previews alone cannot describe how much shit is in this so give it a go
 
