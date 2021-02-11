@@ -1,5 +1,5 @@
 att.PrintName = "M79 Mini-Buckshot"
-att.Icon = Material("entities/arccw_mifl_fas2_m79_shotgun.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_m79_shotgun_small.png", "mips smooth")
 att.Description = "Small buckshot-loaded shells for the quad-barrel M79, using uses shotgun ammo. Does much less damage even compared to regular shotguns, but it's a shotgun I guess."
 att.Desc_Pros = {
     "pro.fas2.m79.buck"
