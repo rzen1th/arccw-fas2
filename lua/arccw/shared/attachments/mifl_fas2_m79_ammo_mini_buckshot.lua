@@ -18,6 +18,7 @@ att.Mult_Damage = 100 / 150
 att.Mult_DamageMin = 20 / 60
 att.Mult_AccuracyMOA = 0.5
 att.Mult_ShootPitch = 1.1
+att.Mult_ReloadTime = 0.9
 
 att.Override_Ammo = "buckshot"
 

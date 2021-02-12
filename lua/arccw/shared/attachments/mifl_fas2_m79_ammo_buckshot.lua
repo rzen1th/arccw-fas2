@@ -17,6 +17,7 @@ att.Override_Num = 30
 att.Mult_Damage = 300 / 150
 att.Mult_DamageMin = 60 / 60
 att.Mult_ShootPitch = 0.75
+att.Mult_ReloadTime = 0.9
 
 att.Override_AmmoPerShot = 3
 att.Override_ClipSize = 3

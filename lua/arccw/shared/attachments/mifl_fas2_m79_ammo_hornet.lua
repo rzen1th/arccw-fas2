@@ -19,6 +19,7 @@ att.Mult_DamageMin = 90 / 60
 att.Mult_AccuracyMOA = 0.4
 att.Mult_Range = 2
 att.Mult_ShootPitch = 0.75
+att.Mult_ReloadTime = 0.9
 
 att.Override_AmmoPerShot = 18
 att.Override_ClipSize = 18
