@@ -120,7 +120,7 @@ SWEP.BarrelLength = 24
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    local optic = wep.Attachments[1].Installed or wep.Attachments[12].Installed
+    local optic = wep.Attachments[1].Installed or wep.Attachments[11].Installed
     local slide = wep.Attachments[3].Installed
     local laser = wep.Attachments[2].Installed
 
