@@ -246,7 +246,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90)
         },
         InstalledEles = {"rail"},
-        MergeSlots = {12},
+        MergeSlots = {11},
         ExtraSightDist = 13
     },
     {
@@ -330,16 +330,6 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Slot = {"go_perk", "go_perk_pistol", "perk_fas2"}
-    },
-    {
-        PrintName = "Charm",
-        Slot = "charm",
-        FreeSlot = true,
-        Bone = "glock_slide",
-        Offset = {
-            vpos = Vector(0.5, 3, -0.2),
-            vang = Angle(0, -90, 0)
-        }
     },
     {
         Slot = "optic",
@@ -550,7 +540,7 @@ SWEP.Animations = {
     ["reload_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 65 / 30
+        Time = 52 / 30
     },
     ["reload_empty_akimbo"] = {
         Source = "Reload_Empty_Akimbo",
@@ -561,7 +551,7 @@ SWEP.Animations = {
     ["reload_nomen_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 52 / 30
+        Time = 45 / 30
     },
     ["reload_nomen_empty_akimbo"] = {
         Source = "Reload_Empty_Akimbo",

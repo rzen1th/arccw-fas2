@@ -243,7 +243,6 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Slot = {"mifl_fas2_ks23_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "ks23",
         Offset = {
             vpos = Vector(0, -0.25, 1),
             vang = Angle(90, 0, -90),
@@ -262,10 +261,10 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "ks23", -- relevant bone any attachments will be mostly referring to
+        Bone = "Box03", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.5, -0.5, 4), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
+            vpos = Vector(8, -1, 0.5),
+            vang = Angle(0, 0, 0),
         },
     },
 }

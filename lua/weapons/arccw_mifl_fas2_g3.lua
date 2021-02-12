@@ -246,8 +246,6 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(8, -3.8, 0.7),
             vang = Angle(0, 0, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
         },
         ExtraSightDist = 7,
         InstalledEles = {"mount"},
@@ -348,8 +346,8 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "stock", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.8, 2, 0.8), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, -90, 0)
+            vpos = Vector(5, -1, -0.2), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, -90)
         }
     }
 }

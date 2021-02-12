@@ -235,17 +235,6 @@ SWEP.Attachments = {
         PrintName = "Perk",
         Slot = {"go_perk", "perk_fas2"}
     },
-    {
-        PrintName = "Charm",
-        DefaultAttName = "None",
-        Slot = {"charm"},
-        Bone = "RagingBullBase",
-        Offset = {
-            vpos = Vector(2, -3, -0.5),
-            vang = Angle(0, 0, -90),
-        },
-        FreeSlot = true,
-    },
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)

@@ -292,8 +292,6 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(5, -3.5, 0),
             vang = Angle(0, 0, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
         },
         InstalledEles = {"iron_none"},
         VMScale = Vector(1.2, 1.2, 1.2),
@@ -388,10 +386,8 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "Dummy01", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.6, -3.25, 4), -- offset that the attachment will be relative to the bone
-            vang = Angle(90, 0, -90),
-            wpos = Vector(6.099, 1.1, -3.301),
-            wang = Angle(171.817, 180-1.17, 0),
+            vpos = Vector(5, 0, -1),
+            vang = Angle(0, 0, -90),
         },
     },
 

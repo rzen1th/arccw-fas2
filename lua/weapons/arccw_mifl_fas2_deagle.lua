@@ -231,7 +231,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90)
         },
         InstalledEles = {"rail"},
-        MergeSlots = {12},
+        MergeSlots = {11},
         ExtraSightDist = 8
     },
     {
@@ -315,16 +315,6 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Slot = {"go_perk", "go_perk_pistol", "perk_fas2"}
-    },
-    {
-        PrintName = "Charm",
-        Slot = "charm",
-        FreeSlot = true,
-        Bone = "glock_slide",
-        Offset = {
-            vpos = Vector(0.5, 3, -0.2),
-            vang = Angle(0, -90, 0)
-        }
     },
     {
         Slot = "optic",

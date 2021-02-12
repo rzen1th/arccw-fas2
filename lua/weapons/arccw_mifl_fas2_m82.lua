@@ -222,10 +222,8 @@ SWEP.Attachments = {
         Slot = {"charm"},
         Bone = "M82_Body",
         Offset = {
-            vpos = Vector(1, -3, 3),
-            vang = Angle(90, 0, -90),
-            wpos = Vector(8, 1, -3),
-            wang = Angle(-9, 0, 180)
+            vpos = Vector(1.5, -3, 0),
+            vang = Angle(90, -90, -90),
         },
         FreeSlot = true,
     },

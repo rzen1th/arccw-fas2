@@ -244,7 +244,7 @@ SWEP.Attachments = {
             vang = Angle(180,0,90),
         },
         InstalledEles = {"rail"},
-        MergeSlots = {12},
+        MergeSlots = {11},
         VMScale = Vector(1.25, 1.25, 1.25),
     },
     {
@@ -329,16 +329,6 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Slot = {"go_perk", "go_perk_pistol", "perk_fas2"}
-    },
-    {
-        PrintName = "Charm",
-        Slot = "charm",
-        FreeSlot = true,
-        Bone = "glock_slide", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.5, 3, -0.2), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, -90, 0),
-        },
     },
     {
         Slot = "optic",
