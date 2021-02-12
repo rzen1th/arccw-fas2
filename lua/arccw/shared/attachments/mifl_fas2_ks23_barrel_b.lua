@@ -1,5 +1,5 @@
 att.PrintName = "Colossal Barrel"
-att.Icon = Material("entities/arccw_mifl_fas2_ks23_barrel_l.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ks23_barrel_big.png", "smooth")
 att.Description = "Weighted barrel that can reduce recoil even on high powered cartridges. And you thought 23mm is wide."
 att.Desc_Pros = {
 }
