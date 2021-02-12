@@ -96,3 +96,5 @@ att.ColorOptionsTable = {
     Color(255, 50, 50),
     Color(50, 255, 50)
 }
+
+att.Mult_VisualRecoilMult = 0.05

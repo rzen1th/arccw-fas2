@@ -10,6 +10,9 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
+att.Desc_Neutrals = {
+    "info.togglesight"
+}
 att.AutoStats = true
 att.Slot = "optic"
 
@@ -51,4 +54,6 @@ att.HolosightBlackbox = true
 
 att.Mult_SightTime = 1.08
 att.Mult_SpeedMult = 0.94
+
+att.Mult_VisualRecoilMult = 0.05
 
