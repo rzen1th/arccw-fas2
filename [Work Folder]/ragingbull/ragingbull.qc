@@ -503,3 +503,18 @@ $sequence "Reload5_nomen" {
 	snap
 	fps 37.33
 }
+
+
+
+
+
+
+$collisionmodel "ref.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
+}
