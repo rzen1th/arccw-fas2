@@ -29,7 +29,7 @@ att.Override_Trivia_Calibre = ".45 ACP"
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2_custom/sg552/45.wav" end
-    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2/sg552/45sd.wav" end
+    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2_custom/sg552/45sd.wav" end
 end
 
 att.InvAtt = {"mifl_fas2_g36_mag_9mm_15", "mifl_fas2_g20_mag_17_9", "mifl_fas2_m4a1_mag_9mm_21", "mifl_fas2_m11_mag_16", "mifl_fas2_m24_mag_9mm", "mifl_fas2_mp5_mag_15", "mifl_fas2_famas_mag_9mm_25"}
