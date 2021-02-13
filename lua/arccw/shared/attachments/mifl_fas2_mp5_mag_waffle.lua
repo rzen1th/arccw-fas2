@@ -14,7 +14,6 @@ att.Override_ClipSize = 25
 
 att.Mult_SightTime = 1.1
 att.Mult_ReloadTime = 1.1
-att.AddSuffix = "/X223"
 
 att.Mult_AccuracyMOA = 6
 att.Override_Num = 4

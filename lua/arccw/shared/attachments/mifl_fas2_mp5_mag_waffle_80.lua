@@ -16,8 +16,6 @@ att.Mult_SpeedMult = 0.9
 att.Mult_SightTime = 1.5
 att.Mult_ReloadTime = 1.3
 
-att.AddSuffix = "/X223"
-
 att.Mult_AccuracyMOA = 6
 att.Override_Num = 4
 att.Mult_Range = 0.5
