@@ -54,7 +54,7 @@ SWEP.VisualRecoilMult = 1.2
 SWEP.MaxRecoilBlowback = 3
 
 SWEP.Delay = 60 / 120 -- 60 / RPM.
-SWEP.Num = 1 -- number of shots per trigger pull.
+SWEP.Num = 1 
 SWEP.Firemodes = {
     {
         Mode = 1,
@@ -71,7 +71,6 @@ SWEP.AccuracyMOA = 1 -- accuracy in Minutes of Angle. There are 60 MOA in a degr
 SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
 
 SWEP.Primary.Ammo = "SniperPenetratedRound" -- what ammo type the gun uses
-SWEP.MagID = "bfg" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 150 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -358,6 +357,6 @@ SWEP.Animations = {
     },
 }
 
-SWEP.Bipod_Integral = true
+SWEP.Bipod_Integral = false
 SWEP.BipodRecoil = 0.1
 SWEP.BipodDispersion = 0.2
