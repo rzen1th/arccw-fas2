@@ -4,8 +4,9 @@ VertexLitGeneric
 	"$bumpmap" "models\weapons\arccw_fas2\mw2\mtl_attach_h2_m93_raffica_stock_base_normal"
     	"$surfaceprop" "metal"
 	"$phong" "1"
-	"$phongfresnelranges"	"[0.5 4.75 5]"
-	"$phongboost"	".3"
+	"$phongfresnelranges"	"[0.5 1 1]"
+	"$phongboost"	"0.5"
+	$phongexponent 60
 	"$envmaptint"	"[.135 .135 .135]"
 	"$envmapfresnel"	"1.4"
 	"$normalmapalphaenvmapmask" 1

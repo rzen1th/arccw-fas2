@@ -7,7 +7,7 @@
 	"$phongexponent"	"3"
 	"$phongalbedotint"	"1"
 	"$phongboost"	"0.3"
-	"$phongfresnelranges"	"[1 1 1]"
+	"$phongfresnelranges"	"[2 0 0]"
         "$phongdisablehalflambert"  "1"
 
         "$halflambert"                 "0"
