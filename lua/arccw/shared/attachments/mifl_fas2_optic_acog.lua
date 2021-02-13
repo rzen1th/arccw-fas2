@@ -55,5 +55,5 @@ att.HolosightBlackbox = true
 att.Mult_SightTime = 1.08
 att.Mult_SpeedMult = 0.94
 
-att.Mult_VisualRecoilMult = 0.05
+att.Mult_VisualRecoilMult = 0.2
 

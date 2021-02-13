@@ -1,4 +1,4 @@
-att.PrintName = "Elcan Hunter (4x)"
+att.PrintName = "Elcan Hunter (3.5x)"
 att.Icon = Material("entities/arccw_mifl_fas2_optic_elcan.png", "smooth")
 att.Description = "Camouflage mid range optic. Specialised in jungles."
 
@@ -26,9 +26,9 @@ att.AdditionalSights = {
     },	
 }
 att.Holosight = true
-att.HolosightMagnification = 4
-att.HolosightMagnificationMin = 4
-att.HolosightMagnificationMax = 4
+att.HolosightMagnification = 3.5
+att.HolosightMagnificationMin = 3.5
+att.HolosightMagnificationMax = 3.5
 att.HolosightReticle = Material("mifl_fas2_reticle/elcan.png", "mips smooth")
 att.HolosightNoFlare = true
 att.HolosightSize = 5
@@ -39,4 +39,4 @@ att.HolosightBlackbox = true
 att.Mult_SightTime = 1.08
 att.Mult_SpeedMult = 0.94
 
-att.Mult_VisualRecoilMult = 0.05
+att.Mult_VisualRecoilMult = 0.2
