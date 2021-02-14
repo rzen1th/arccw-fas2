@@ -345,6 +345,7 @@ SWEP.Attachments = {
             vpos = Vector(-3.4, 21, -6),
             vang = Angle(0, -90, 0),
         },
+        ExcludeFlags = {"mifl_fas2_famas_barrel_commando","mifl_fas2_famas_barrel_xs"}		
     },
     {
         PrintName = "Tactical",

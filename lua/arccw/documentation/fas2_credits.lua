@@ -78,6 +78,7 @@ Infinity Ward / Beenox / Treyarch
 -Single Drum Mag (Fennec, MW19)
 -Jungle Wraps (R700 and M21, MWR)
 -AN94 parts (BO3/MW19)
+-Kastet (Ghost)
 -Suppressed sound and firing sound for calibre conversion (Mostly MW19, Cold War)
 
 Crytek (Warface)
