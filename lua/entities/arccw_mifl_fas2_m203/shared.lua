@@ -45,7 +45,6 @@ else
 
 function ENT:Think()
 	if self.Ticks % 5 == 0 then
-        local emitter = ParticleEmitter(self:GetPos())
 
         if !self:IsValid() or self:WaterLevel() > 2 then return end
         if !IsValid(emitter) then return end

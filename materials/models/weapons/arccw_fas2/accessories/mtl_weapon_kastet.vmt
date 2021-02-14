@@ -1,0 +1,21 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\weapons\arccw_fas2\accessories\mtl_weapon_kastet_d"
+	"$bumpmap" "models\weapons\arccw_fas2\accessories\mtl_weapon_kastet_n"
+    	"$surfaceprop" "metal"
+	"$phong" "1"
+	"$phongfresnelranges"	"[0.5 1 1]"
+	"$phongboost"	"0.5"
+	$phongexponent 60
+	"$envmaptint"	"[.135 .135 .135]"
+	"$envmapfresnel"	"1.4"
+	"$normalmapalphaenvmapmask" 1
+	"$halflambert" "1"
+	"$ambientocclusion" "1"						
+	"$phongexponenttexture" "models\weapons\arccw_fas2\exponent"
+	"$cloakPassEnabled" 		"1"						
+	
+	"$color2" "[1.2 1.4 1.2]"
+
+	"$nocull" "1"
+}

@@ -1,6 +1,6 @@
-att.PrintName = "M203 (40mm)"
-att.Icon = Material("entities/arccw_mifl_fas2_ubw_m203.png")
-att.Description = "Explosive ordnance launcher."
+att.PrintName = "Kastet (40mm)"
+att.Icon = Material("entities/arccw_mifl_fas2_ubw_kastet.png")
+att.Description = "Soviet explosive ordnance launcher."
 att.Desc_Pros = {
     "+ Selectable underbarrel grenade launcher",
 }
@@ -17,7 +17,7 @@ att.LHIK_Animation = true
 
 att.MountPositionOverride = 0
 
-att.Model = "models/weapons/arccw/mifl_atts/fas2/ubgl_m203.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/ubgl_kastet.mdl"
 
 att.ModelOffset = Vector(5.5, 0, 0.25)
 
@@ -39,9 +39,9 @@ end
 att.Hook_LHIK_TranslateAnimation = function(wep, key)
     if key == "idle" then
         if wep:GetInUBGL() then
-            return "pose"
-        else
             return "idle"
+        else
+            return "pose"
         end
     end
 end
@@ -65,7 +65,7 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:DoLHIKAnimation("fire", 10/60)
 
-    wep:FireRocket("arccw_mifl_fas2_m203", 30000)
+    wep:FireRocket("arccw_mifl_fas2_m203", 22500)
 
     wep:EmitSound("weapons/arccw_mifl/fas2/explosive_m79/m79_fire1.wav", 100)
 
@@ -79,14 +79,14 @@ att.UBGL_Reload = function(wep, ubgl)
 
     if wep:Clip2() == 0 then
 
-        wep:DoLHIKAnimation("reload", 130/60)
+        wep:DoLHIKAnimation("reload", 90/60)
 
-        wep:SetNextSecondaryFire(CurTime() + 130/60)
+        wep:SetNextSecondaryFire(CurTime() + 90/60)
 
         wep:PlaySoundTable({
-            {s = "weapons/arccw_mifl/fas2/famas/famas_magout_empty.wav", t = 17/60},
-            {s = "weapons/arccw_mifl/fas2/famas/famas_magin.wav", t = 67/60},
-			{s = "weapons/arccw_mifl/fas2/g3/g3_magin.wav",		t = 102/60},
+			{s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+            {s = "weapons/arccw_mifl/fas2/famas/famas_magin.wav", t = 50/60},
+			{s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 80/60},
         })
     end
 
@@ -102,6 +102,7 @@ att.UBGL_Reload = function(wep, ubgl)
 
     wep:SetClip2(load)
 end
+
 
 att.Mult_SightTime = 1.15
 att.Mult_SpeedMult = 0.9
