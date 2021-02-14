@@ -155,9 +155,11 @@ SWEP.AttachmentElements = {
     },
     ["go_ammo_sg_slug"] = {
         VMBodygroups = {{ind = 6, bg = 1}},
+		Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/slug.mdl"		
     },
     ["go_ammo_sg_sabot"] = {
         VMBodygroups = {{ind = 6, bg = 2}},
+		Override_ShellModel = "models/weapons/arccw/mifl/fas2/shell/flet.mdl"			
     },	
 }
 
