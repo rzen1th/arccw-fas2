@@ -7,9 +7,9 @@
 	"$envmaptint" "[.1 .1 .1]"
 	"$basemapalphaphongmask" 	"1"
 	"$phong" 			"1"
-	"$phongexponent"                "30"	
-	"$phongboost"                   "5"
-	"$phongfresnelranges"           "[0.25 30 0]"
+	"$phongexponent"                "10"	
+	"$phongboost"                   ".5"
+	"$phongfresnelranges"           "[1 2 0]"
 	"$halflambert"			"1"
     $nocull  1	
 
