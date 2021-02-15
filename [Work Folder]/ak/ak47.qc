@@ -81,6 +81,18 @@ $bodygroup "Grip"
 	studio "Grip_Heavy.smd"	
 	blank
 }
+$bodygroup "HG_getting_railed"
+{
+	blank
+	studio "R_HG.smd"	
+	studio "R_HG_k.smd"	
+	studio "R_HG_k2.smd"	
+	studio "R_HG_RPK.smd"	
+	studio "R_HG_val.smd"	
+	studio "R_HG_valk.smd"	
+	studio "R_HG_SVD.smd"	
+	studio "R_HG_zeus.smd"	
+}
 
 $illumposition 0 0 0
 
