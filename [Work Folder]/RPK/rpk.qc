@@ -749,3 +749,15 @@ $sequence "reload_nomen_empty_drum" {
 	snap
 	fps 45
 }
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
+}
