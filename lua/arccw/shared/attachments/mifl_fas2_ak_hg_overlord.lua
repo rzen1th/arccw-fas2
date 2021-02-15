@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "mifl_fas2_ak_hg"
+att.Slot = {"mifl_fas2_ak_hg", "mifl_fas2_rpk_hg"}
 
 att.Mult_Damage = 1.25
 att.Mult_DamageMin = 1.25

@@ -5,7 +5,7 @@ att.Desc_Pros = {}
 att.Desc_Cons = {"con.magcap"}
 att.SortOrder = 12 - 700
 att.AutoStats = true
-att.Slot = "mifl_fas2_ak_mag"
+att.Slot = {"mifl_fas2_ak_mag", "mifl_fas2_rpk_mag"}
 att.ActivateElements = {"12_20g"}
 att.Override_ClipSize = 12
 

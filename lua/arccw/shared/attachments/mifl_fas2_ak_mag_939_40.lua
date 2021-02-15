@@ -9,7 +9,7 @@ att.Desc_Cons = {
 }
 att.SortOrder = 40 + 100
 att.AutoStats = true
-att.Slot = "mifl_fas2_ak_mag"
+att.Slot = {"mifl_fas2_ak_mag", "mifl_fas2_rpk_mag"}
 
 -- 40rnd
 att.ActivateElements = {"40_939", "9x39mm"}
