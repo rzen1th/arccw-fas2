@@ -2,7 +2,7 @@ att.PrintName = "Kastet (40mm)"
 att.Icon = Material("entities/arccw_mifl_fas2_ubw_kastet.png")
 att.Description = "Soviet explosive ordnance launcher."
 att.Desc_Pros = {
-    "+ Selectable underbarrel grenade launcher",
+    "Selectable underbarrel grenade launcher",
 }
 att.Desc_Cons = {
 }
@@ -28,7 +28,7 @@ att.UBGL_Automatic = false
 att.UBGL_MuzzleEffect = "muzzleflash_m3"
 att.UBGL_ClipSize = 1
 att.UBGL_Ammo = "smg1_grenade"
-att.UBGL_RPM = 60
+att.UBGL_RPM = 120
 att.UBGL_Recoil = 3
 att.UBGL_Capacity = 1
 

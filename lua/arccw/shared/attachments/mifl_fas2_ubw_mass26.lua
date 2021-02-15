@@ -2,7 +2,7 @@ att.PrintName = "MASS-26 (BUCK)"
 att.Icon = Material("entities/arccw_mifl_fas2_ubw_mass26.png")
 att.Description = "Magazine-fed pump-action 12 gauge underbarrel shotgun."
 att.Desc_Pros = {
-    "+ Selectable underbarrel shotgun",
+    "Selectable underbarrel shotgun",
 }
 att.Desc_Cons = {
 }
