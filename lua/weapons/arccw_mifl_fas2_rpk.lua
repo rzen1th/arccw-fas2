@@ -115,17 +115,12 @@ SWEP.AttachmentElements = {
     },
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 6}
+            {ind = 6, bg = 2}
         }
     },
     ["mifl_fas2_ak_stock_fold"] = {
         VMBodygroups = {
-            {ind = 5, bg = 7}
-        }
-    },
-    ["mifl_fas2_ak_stock_rpk"] = {
-        VMBodygroups = {
-            {ind = 5, bg = 2}
+            {ind = 6, bg = 3}
         }
     },
     ["mifl_fas2_ak_stock_svd"] = {
@@ -135,12 +130,12 @@ SWEP.AttachmentElements = {
     },	
     ["mifl_fas2_ak_stock_ske"] = {
         VMBodygroups = {
-            {ind = 5, bg = 3}
+            {ind = 6, bg = 1}
         }
     },
     ["mifl_fas2_ak_stock_no"] = {
         VMBodygroups = {
-            {ind = 5, bg = 1}
+            {ind = 5, bg = 4}
         }
     },
     ["mifl_fas2_ak_hg_k"] = {
@@ -188,13 +183,13 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [3] = {
-                vpos = Vector(0, 29, 1.5)
+                vpos = Vector(1, 0, 0)
             },
             [1] = {
                 vpos = Vector(-30, -2.3, 0),
             },
             [4] = {
-                vpos = Vector(0, 15, 0.5)
+                vpos = Vector(-20, 1.8, 0),
             }				
         }
     },
@@ -216,8 +211,8 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_ak_hg_sd"] = {
         Override_IronSightStruct = {
-            Pos = Vector(-4.401, -10, 1.3),
-            Ang = Angle(0.4, 0, 0),
+            Pos = Vector(-3.755, -8, 0.9),
+            Ang = Angle(0.15,0, 0),
             Magnification = 1.1
         },
         VMBodygroups = {
@@ -233,11 +228,6 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 2, bg = 3},
         },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(0, 30.8, 1.8)
-            }
-        }
     },
     ["5.45x39mm"] = {
         Override_Trivia_Calibre = "5.45x39mm Soviet"
@@ -283,7 +273,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end
 
-    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(6, 0) end	
+    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end	
 end
 
 
@@ -480,7 +470,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "RPK BipodPivot",
         Offset = {
-            vpos = Vector(-31.5, -2.25, 0),
+            vpos = Vector(2, 0, 0),
             vang = Angle(0, 0, -90),
         },
         ExcludeFlags = {"mifl_fas2_ak_hg_sd", "mifl_fas2_ak_hg_sdk", "mifl_fas2_ak_hg_an94", "mifl_fas2_ak_hg_ansd"},
@@ -538,10 +528,10 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Slot = {"go_stock", "mifl_fas2_rpk_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "ak_frame",
+        Bone = "RPK BipodPivot",
         Offset = {
-            vpos = Vector(0.1, -2, 1.2),
-            vang = Angle(0, -90, 0)
+            vpos = Vector(-36, 0.8, 0),
+            vang = Angle(0, 0, -90),
         },
         VMScale = Vector(1, 1, 1)
     },
@@ -609,9 +599,9 @@ SWEP.Animations = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 1.4,
+        LHIKEaseIn = 0.4,
+        LHIKIn = 0.6,
+        LHIKOut = 2,
         LHIKEaseOut = 0.4
     },
     ["reload_nomen"] = {
