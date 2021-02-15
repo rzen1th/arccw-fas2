@@ -2,15 +2,15 @@ SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
-SWEP.PrintName = "Kalash-7"
-SWEP.TrueName = "AKM"
+SWEP.PrintName = "Gun"
+SWEP.TrueName = "RPK"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Infamous Russian assault rifle known for its reliability in the field and its large kick. Comes in all kinds of configurations."
+SWEP.Trivia_Desc = "The big brother of the AKM. Cumbersome yet elegant."
 SWEP.Trivia_Manufacturer = "Izhmash"
 SWEP.Trivia_Calibre = "7.62x39mm Soviet"
 SWEP.Trivia_Mechanism = "Gas-Operated"
 SWEP.Trivia_Country = "Russia"
-SWEP.Trivia_Year = 1947
+SWEP.Trivia_Year = 1960
 
 if GetConVar("arccw_truenames"):GetBool() then
     SWEP.PrintName = SWEP.TrueName
@@ -18,26 +18,26 @@ end
 
 SWEP.Slot = 2
 SWEP.UseHands = true
-SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_ak47.mdl"
-SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_ak47.mdl"
+SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_rpk.mdl"
+SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_rpk.mdl"
 SWEP.ViewModelFOV = 54
 SWEP.DefaultBodygroups = "000000000000"
-SWEP.Damage = 42
-SWEP.DamageMin = 34 -- damage done at maximum range
-SWEP.Range = 120 -- in METRES
+SWEP.Damage = 32
+SWEP.DamageMin = 46 -- damage done at maximum range
+SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 45 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 900
-SWEP.Recoil = 0.55
-SWEP.RecoilSide = 0.45
-SWEP.RecoilRise = 1.3
-SWEP.MaxRecoilBlowback = 0.5
-SWEP.VisualRecoilMult = 0.9
+SWEP.Recoil = 0.75
+SWEP.RecoilSide = 0.25
+SWEP.RecoilRise = 1.15
+SWEP.MaxRecoilBlowback = 0.75
+SWEP.VisualRecoilMult = 1.2
 SWEP.Delay = 60 / 600
 SWEP.Num = 1 -- number of shots per trigger pull.
 
@@ -110,7 +110,7 @@ SWEP.AttachmentElements = {
     },
     ["mount"] = {
         VMBodygroups = {
-            {ind = 4, bg = 1}
+            {ind = 3, bg = 1}
         }
     },
     ["buftube"] = {
@@ -320,31 +320,18 @@ SWEP.AttachmentElements = {
     ["5.56x45mm"] = {
         Override_Trivia_Calibre = "5.46x45mm NATO"
     },
-    ["30_556"] = {
-        VMBodygroups = {{ind = 1, bg = 15}}
-    },
     ["30_545"] = {
         VMBodygroups = {{ind = 1, bg = 5}}
     },
     ["45_545"] = {
         VMBodygroups = {{ind = 1, bg = 14}}
     },
-    ["10_953"] = {
-        VMBodygroups = {{ind = 1, bg = 11}},
-        Override_Trivia_Calibre = "9x53mm Soviet"
-    },
-    ["200_762"] = {
-        VMBodygroups = {{ind = 1, bg = 16}}
-    },
-    ["45_762"] = {
-        VMBodygroups = {{ind = 1, bg = 2}}
-    },
-    ["60_762"] = {
-        VMBodygroups = {{ind = 1, bg = 3}}
-    },
-    ["15_762"] = {
+    ["75_762"] = {
         VMBodygroups = {{ind = 1, bg = 1}}
     },
+    ["64_57"] = {
+        VMBodygroups = {{ind = 1, bg = 2}}
+    },	
     ["9x39mm"] = {
         Override_Trivia_Calibre = "9x39mm"
     },
@@ -552,17 +539,14 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Slot = {"optic", "optic_lp"},
-        Bone = "ak_frame",
+        Bone = "RPK BipodPivot",
         DefaultAttName = "Iron Sights",
         Offset = {
-            vpos = Vector(0, 3, 4.425),
-            vang = Angle(0, -90, 0),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+            vpos = Vector(-31.5, -2.25, 0),
+            vang = Angle(0, 0, -90),
         },
         ExtraSightDist = 7,
         InstalledEles = {"mount"},
-        CorrectiveAng = Angle(0, 180, 0)
     },
     {
         PrintName = "Handguard",
@@ -572,7 +556,8 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(0.3, 11, 1.5),
             vang = Angle(90, -90, -90)
-        }
+        },
+		GivesFlags = {"fg_no"}
     },
     {
         PrintName = "Muzzle",
@@ -630,8 +615,13 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Magazine",
-        Slot = {"mifl_fas2_ak_mag"},
-        DefaultAttName = "30-Round 7.62mm"
+        Slot = {"mifl_fas2_rpk_mag"},
+        DefaultAttName = "30-Round 7.62mm",
+        Bone = "RPK BipodPivot",
+        Offset = {
+            vpos = Vector(-25, 3.5, -0.25),
+            vang = Angle(0, 0, -90),
+        },
     },
     {
         PrintName = "Stock",
@@ -681,33 +671,30 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local installed = wep.Attachments[7].Installed
 
-    if ( !installed or installed == "mifl_fas2_ak_mag_545" or installed == "mifl_fas2_ak_mag_545_45" ) and anim == "reload_nomen_empty" then
-        return "reload_nomen_empty_2"
-    end
+    if installed == "mifl_fas2_ak_mag_939_40" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_939" end
 
-    if installed == "mifl_fas2_ak_mag_919_30" or installed == "mifl_fas2_ak_mag_919_50" then return anim .. "_pp19" end
+    if installed == "mifl_fas2_ak_mag_drum" then return anim .. "_drum" end
 
-    if installed == "mifl_fas2_ak_mag_762_Inf" then return anim .. "_infinite" end
+    if installed == "mifl_fas2_ak_mag_helix" then return anim .. "_helix" end	
 end
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle" .. "_iron"
+        Source = "idle",
+		Time = 60
     },
     ["draw"] = {
         Source = "deploy",
-        Time = 1
     },
     ["ready"] = {
-        Source = "deploy",
-        Time = 1
+        Source = "deploy_first1",
     },
     ["fire"] = {
-        Source = {"fire"},
+        Source = {"fire1"},
         ShellEjectAt = 0
     },
     ["fire_iron"] = {
-        Source = "fire_scoped",
+        Source = "fire1_scoped",
         ShellEjectAt = 0
     },
     ["reload"] = {
@@ -746,17 +733,9 @@ SWEP.Animations = {
         LHIKOut = 1,
         LHIKEaseOut = 0.55
     },
-    ["reload_nomen_empty_2"] = {
-        Source = "reload_empty_nomen",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 1.2,
-        LHIKEaseOut = 0.4
-    },
-    ["reload_pp19"] = {
-        Source = "reload_pp19",
+
+    ["reload_939"] = {
+        Source = "reload_939",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKEaseIn = 0.3,
@@ -764,8 +743,8 @@ SWEP.Animations = {
         LHIKOut = 0.9,
         LHIKEaseOut = 0.7
     },
-    ["reload_empty_pp19"] = {
-        Source = "reload_empty_pp19",
+    ["reload_empty_939"] = {
+        Source = "reload_empty_939",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKEaseIn = 0.5,
@@ -773,8 +752,8 @@ SWEP.Animations = {
         LHIKOut = 1.4,
         LHIKEaseOut = 0.4
     },
-    ["reload_nomen_pp19"] = {
-        Source = "reload_pp19",
+    ["reload_nomen_939"] = {
+        Source = "reload_939",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         Time = (112/30)*0.8,
@@ -783,8 +762,8 @@ SWEP.Animations = {
         LHIKOut = 0.8,
         LHIKEaseOut = 0.6
     },
-    ["reload_nomen_empty_pp19"] = {
-        Source = "reload_empty_pp19",
+    ["reload_nomen_empty_939"] = {
+        Source = "reload_empty_939",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = (130/30)*0.8,
         LHIK = true,
@@ -794,8 +773,8 @@ SWEP.Animations = {
         LHIKEaseOut = 0.5
     },
 ----------------------------------------------
-    ["reload_infinite"] = {
-        Source = "reload_infinite",
+    ["reload_drum"] = {
+        Source = "reload_drum",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKEaseIn = 0.5,
@@ -803,8 +782,8 @@ SWEP.Animations = {
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4
     },
-    ["reload_empty_infinite"] = {
-        Source = "reload_empty_infinite",
+    ["reload_empty_drum"] = {
+        Source = "reload_empty_drum",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKEaseIn = 0.5,
@@ -812,8 +791,8 @@ SWEP.Animations = {
         LHIKOut = 1.4,
         LHIKEaseOut = 0.4
     },
-    ["reload_nomen_infinite"] = {
-        Source = "reload_nomen_infinite",
+    ["reload_nomen_drum"] = {
+        Source = "reload_nomen_drum",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         Mult = 0.8,
@@ -822,8 +801,8 @@ SWEP.Animations = {
         LHIKOut = 0.7,
         LHIKEaseOut = 0.4
     },
-    ["reload_nomen_empty_infinite"] = {
-        Source = "reload_empty_nomen_infinite",
+    ["reload_nomen_empty_drum"] = {
+        Source = "reload_empty_nomen_drum",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Mult = 0.8,
         LHIK = true,
@@ -831,5 +810,44 @@ SWEP.Animations = {
         LHIKIn = 1.2,
         LHIKOut = 1,
         LHIKEaseOut = 0.4
-    }
+    },
+----------------------------------------------
+    ["reload_helix"] = {
+        Source = "reload_helix",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_empty_helix"] = {
+        Source = "reload_empty_helix",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 1.4,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_nomen_helix"] = {
+        Source = "reload_nomen_helix",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LHIK = true,
+        Mult = 0.8,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 0.8,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4
+    },
+    ["reload_nomen_empty_helix"] = {
+        Source = "reload_empty_nomen_helix",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Mult = 0.8,
+        LHIK = true,
+        LHIKEaseIn = 0.5,
+        LHIKIn = 1.2,
+        LHIKOut = 1,
+        LHIKEaseOut = 0.4
+    },
 }

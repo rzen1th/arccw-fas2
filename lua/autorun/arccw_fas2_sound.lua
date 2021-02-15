@@ -640,6 +640,53 @@ sound.Add({
 
 
 
+//RPK
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RPK.BoltBack",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rpk47/rpk47_boltback.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RPK.BoltForward",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rpk47/rpk47_boltforward.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RPK.BoltPull",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rpk47/rpk47_cock.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RPK.MagOut",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rpk47/rpk47_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RPK.MagOutEmpty",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rpk47/rpk47_magout_empty.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RPK.MagOutEmptyNomen",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rpk47/rpk47_magout_empty_nomen.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_RPK.MagIn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/rpk47/rpk47_magin.wav"}
+})
+
+
+
+
 
 //M24
 sound.Add({
