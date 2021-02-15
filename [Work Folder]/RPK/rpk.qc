@@ -1,6 +1,8 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons\view\support\rpk.mdl"
+$modelname "weapons/arccw/mifl/fas2/c_rpk.mdl"
+$include fesiug.qci
+$scale 2
 
 $bodygroup "1"
 {
@@ -12,7 +14,7 @@ $bodygroup "Mag"
 	studio "Mag.smd"
 	studio "Mag_Drum.smd"	
 	studio "Mag_Bizon.smd"	
-	studio "762md"	
+	studio "762.smd"	
 	studio "545.smd"	
 	studio "556_30.smd"
 	studio "939_40.smd"	
@@ -69,6 +71,7 @@ $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\svd\"
 $cdmaterials "models\weapons\arccw_fas2\sterling\"
+$cdmaterials "models\weapons\arccw_fas2\bizon\"
 $cdmaterials "models\weapons\arccw_fas2\akm\"
 $cdmaterials "models\weapons\arccw_fas2\ak_extra\"
 $cdmaterials "models\weapons\arccw_fas2\hands\"
@@ -171,6 +174,19 @@ $sequence "deploy_first" {
 	{ event 5004 100 "Weapon_RPK.BoltBack" }
 	{ event 5004 106 "Weapon_RPK.BoltForward" }
 	{ event 5004 100 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "deploy_first1" {
+	"anims\deploy_first1.smd"
+	activity "ACT_VM_DRAW_FIRST" 1
+	{ event 5004 2 "Generic.Cloth_Movement" }
+	{ event 5004 22 "Weapon_Misc.Switch" }
+	{ event 5004 34 "Weapon_RPK.BoltBack" }
+	{ event 5004 41 "Weapon_RPK.BoltForward" }
+	{ event 5004 50 "Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -508,4 +524,145 @@ $sequence "reload_empty_nomen_bipod" {
 	fadeout 0.2
 	snap
 	fps 39
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$sequence "reload_helix" {
+	"anims\reload_helix.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Generic.Cloth_Movement" }
+	{ event 5004 21 "Weapon_RPK.MagOut" }
+	{ event 5004 21 "Generic.Cloth_Movement" }
+	{ event 5004 47 "Generic.Magpouch" }
+	{ event 5004 62 "Weapon_RPK.MagInPartial" }
+	{ event 5004 70 "Weapon_RPK.MagIn" }
+	{ event 5004 70 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_helix" {
+	"anims\reload_empty_helix.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Generic.Cloth_Movement" }
+	{ event 5004 22 "Weapon_RPK.MagOutEmpty" }
+	{ event 5004 22 "Generic.Cloth_Movement" }
+	{ event 5004 55 "Generic.Magpouch" }
+	{ event 5004 79 "Weapon_RPK.MagInPartial" }
+	{ event 5004 87 "Weapon_RPK.MagIn" }
+	{ event 5004 87 "Generic.Cloth_Movement" }
+	{ event 5004 118 "Weapon_RPK.BoltBack" }
+	{ event 5004 126 "Weapon_RPK.BoltForward" }
+	{ event 5004 137 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_939" {
+	"anims\reload_939.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Generic.Cloth_Movement" }
+	{ event 5004 21 "Weapon_RPK.MagOut" }
+	{ event 5004 21 "Generic.Cloth_Movement" }
+	{ event 5004 47 "Generic.Magpouch" }
+	{ event 5004 62 "Weapon_RPK.MagInPartial" }
+	{ event 5004 70 "Weapon_RPK.MagIn" }
+	{ event 5004 70 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_939" {
+	"anims\reload_empty_939.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Generic.Cloth_Movement" }
+	{ event 5004 22 "Weapon_RPK.MagOutEmpty" }
+	{ event 5004 22 "Generic.Cloth_Movement" }
+	{ event 5004 55 "Generic.Magpouch" }
+	{ event 5004 79 "Weapon_RPK.MagInPartial" }
+	{ event 5004 87 "Weapon_RPK.MagIn" }
+	{ event 5004 87 "Generic.Cloth_Movement" }
+	{ event 5004 118 "Weapon_RPK.BoltBack" }
+	{ event 5004 126 "Weapon_RPK.BoltForward" }
+	{ event 5004 137 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_empty_nomen_939" {
+	"anims\reload_empty_nomen_939.smd"
+	activity "ACT_VM_RELOAD_EMPTY_NOMEN" 1
+	{ event 5004 0 "Generic.Cloth_Movement" }
+	{ event 5004 11 "Generic.Magpouch" }
+	{ event 5004 23 "Weapon_RPK.MagOutEmptyNomen" }
+	{ event 5004 23 "Generic.Cloth_Movement" }
+	{ event 5004 42 "Weapon_RPK.MagInPartial" }
+	{ event 5004 46 "Weapon_RPK.MagIn" }
+	{ event 5004 46 "Generic.Cloth_Movement" }
+	{ event 5004 94 "Weapon_RPK.BoltBack" }
+	{ event 5004 100 "Weapon_RPK.BoltForward" }
+	{ event 5004 110 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_drum" {
+	"anims\reload_drum.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Generic.Cloth_Movement" }
+	{ event 5004 21 "Weapon_RPK.MagOut" }
+	{ event 5004 21 "Generic.Cloth_Movement" }
+	{ event 5004 47 "Generic.Magpouch" }
+	{ event 5004 62 "Weapon_RPK.MagInPartial" }
+	{ event 5004 70 "Weapon_RPK.MagIn" }
+	{ event 5004 70 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_drum" {
+	"anims\reload_empty_drum.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Generic.Cloth_Movement" }
+	{ event 5004 22 "Weapon_RPK.MagOutEmpty" }
+	{ event 5004 22 "Generic.Cloth_Movement" }
+	{ event 5004 55 "Generic.Magpouch" }
+	{ event 5004 79 "Weapon_RPK.MagInPartial" }
+	{ event 5004 87 "Weapon_RPK.MagIn" }
+	{ event 5004 87 "Generic.Cloth_Movement" }
+	{ event 5004 118 "Weapon_RPK.BoltBack" }
+	{ event 5004 126 "Weapon_RPK.BoltForward" }
+	{ event 5004 137 "Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
 }

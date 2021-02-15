@@ -1,0 +1,22 @@
+VertexLitGeneric
+{
+	$baseTexture "models\weapons\arccw_fas2\ak_extra\trhrpk2drum"
+	$bumpmap "models\weapons\arccw_fas2\ak_extra\trhrpk2drumn"
+	$phong "1"
+	$phongboost "3.0"
+	$phongfresnelranges "[1 1 10]"
+	$phongexponent "25"
+	$phongalbedotint "1"
+	$phongexponenttexture "models\weapons\arccw_fas2\ak_extra\trhrpk2drumg"
+
+
+	//$normalmapalphaenvmapmask 1
+	//$envmap env_cubemap
+	//$envmaptint "[0.12 0.22 0.35]"
+	//$envmaptint "[0.7 1.0 1.25]"
+	//$envmaptint "[0.3 0.35 0.4]"
+	//$envmapfresnel 1
+	//$envmapFresnelMinMaxExp "[.4 1 .4]"
+
+	//                "$halflambert" "1"
+}
