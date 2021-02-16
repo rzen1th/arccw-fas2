@@ -6,7 +6,7 @@ att.Desc_Pros = {
     "pro.fas2.saf"
 }
 att.Desc_Cons = {
-	"con.fas2.saf"
+	"con.fas2.saf",
 	"con.fas2.ubgl"
 }
 att.AutoStats = true
