@@ -11,7 +11,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Mult_HipDispersion = 2
 att.Slot = "mifl_fas2_akimbo"
-
+att.NotForNPCs = true
 att.ModelOffset = Vector(0.2, -0.8, 0)
 
 att.GivesFlags = {"handlocked"}
