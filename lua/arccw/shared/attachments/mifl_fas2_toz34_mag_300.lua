@@ -11,7 +11,7 @@ att.AutoStats = true
 att.Slot = {"mifl_fas2_toz34_mag"}
 
 att.Mult_Damage = 0.5
-att.Mult_DamageMin = 2
+att.Mult_DamageMin = 1.8
 att.Mult_Recoil = 1.4
 att.Override_Penetration = 18
 att.Mult_AccuracyMOA = 0.25
