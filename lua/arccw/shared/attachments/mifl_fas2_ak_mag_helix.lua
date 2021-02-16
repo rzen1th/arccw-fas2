@@ -31,6 +31,6 @@ end
 att.LHIK = true
 att.LHIK_Priority = 20000
 
-att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_k.mdl"
 
-att.ModelOffset = Vector(0, 0.5, 0)
+att.ModelOffset = Vector(1, -0.25, 0.5)

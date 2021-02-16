@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.Desc_Neutrals = {
-	"Double tap +ZOOM to equip/dequip",
+	"Double tap +ZOOM to toggle underbarrel",
 }
 att.AutoStats = true
 att.Slot = {"ubgl"}

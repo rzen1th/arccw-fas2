@@ -150,8 +150,11 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 36, 1.8)
-            }
-        }
+            },
+            [4] = {
+                vpos = Vector(0, 17, 0.7)
+            }		
+        },
     },
     ["mifl_fas2_ak_hg_k"] = {
         VMBodygroups = {
@@ -230,8 +233,8 @@ SWEP.AttachmentElements = {
     },
     ["mifl_fas2_ak_hg_12u"] = {
         Override_IronSightStruct = {
-    Pos = Vector(-4.401, -10, 1.8),
-    Ang = Angle(-1.1, 0, 0),
+        Pos = Vector(-4.401, -10, 1.8),
+        Ang = Angle(-1.1, 0, 0),
             Magnification = 1.1
         },
         VMBodygroups = {
@@ -275,6 +278,11 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 2, bg = 1},
             {ind = 3, bg = 1}
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, 16, 1.2)
+            }	
         }
     },
     ["mifl_fas2_ak_hg_sdk"] = {
@@ -286,6 +294,11 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 2, bg = 2},
             {ind = 3, bg = 1}
+        },
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(0, 16, 1.2)
+            }	
         }
     },
     ["mifl_fas2_ak_hg_rpk"] = {
@@ -295,7 +308,10 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 38, 1.8)
-            }
+            },
+            [4] = {
+                vpos = Vector(0, 15, -0.3)
+            }	
         }
     },
     ["mifl_fas2_ak_hg_overlord"] = {
@@ -311,14 +327,17 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [3] = {
                 vpos = Vector(0, 30.8, 1.8)
-            }
+            },
+            [4] = {
+                vpos = Vector(0, 16, -0.6)
+            }		
         }
     },
     ["5.45x39mm"] = {
         Override_Trivia_Calibre = "5.45x39mm Soviet"
     },
     ["5.56x45mm"] = {
-        Override_Trivia_Calibre = "5.46x45mm NATO"
+        Override_Trivia_Calibre = "5.56x45mm NATO"
     },
     ["30_556"] = {
         VMBodygroups = {{ind = 1, bg = 15}}
@@ -376,11 +395,36 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    if wep.Attachments[1].Installed and (wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12u" or wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" ) then vm:SetBodygroup(4, 0) end
+    local opt = wep.Attachments[1].Installed
+    local bar = wep.Attachments[2].Installed
+    local ubs = wep.Attachments[4].Installed
 
-    if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end
+    if opt and ( bar == "mifl_fas2_ak_hg_12u" or bar == "mifl_fas2_ak_hg_12" ) then
+        vm:SetBodygroup(4, 0)
+    end
 
-    if wep.Attachments[4].Installed and (wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12u" or wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" ) then vm:SetBodygroup(6, 0) end	
+    if opt and bar == "mifl_fas2_ak_hg_an94" then
+        vm:SetBodygroup(3, 1)
+    end
+
+    if ubs then
+        if bar and ( bar == "mifl_fas2_ak_hg_12u" or bar == "mifl_fas2_ak_hg_12" ) then
+        elseif bar == "mifl_fas2_ak_hg_overlord" then
+            vm:SetBodygroup(8, 8)
+        elseif bar == "mifl_fas2_ak_hg_svd" then
+            vm:SetBodygroup(8, 7)
+        elseif bar == "mifl_fas2_ak_hg_sdk" then
+            vm:SetBodygroup(8, 6)
+        elseif bar == "mifl_fas2_ak_hg_sd" then
+            vm:SetBodygroup(8, 5)
+        elseif bar == "mifl_fas2_ak_hg_rpk" then
+            vm:SetBodygroup(8, 4)
+        elseif bar == "mifl_fas2_ak_hg_u" or bar == "mifl_fas2_ak_hg_k" or bar == "mifl_fas2_ak_hg_xs" then
+            vm:SetBodygroup(8, 3)
+        else
+            vm:SetBodygroup(8, 1)
+        end
+    end	
 end
 
 
@@ -593,12 +637,12 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "ak_frame",
         Offset = {
-            vpos = Vector(0, 13, -0.6),
+            vpos = Vector(0, 15, 0.3),
             vang = Angle(90, -90, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        InstalledEles = {"rail_b"},		
+        --InstalledEles = {"rail_b"},		
         MergeSlots = {5}
     },
     {
@@ -613,7 +657,7 @@ SWEP.Attachments = {
             wang = Angle(-9.79, 0, 180)
         },
         ExcludeFlags = {"ubgl_no"},		
-        InstalledEles = {"rail_b"},			
+        --InstalledEles = {"rail_b"},			
     },
     {
         PrintName = "Tactical",

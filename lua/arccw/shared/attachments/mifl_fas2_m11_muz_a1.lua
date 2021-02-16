@@ -22,6 +22,6 @@ att.Mult_HipDispersion = 1.5
 att.Mult_SpeedMult = 0.9
 att.Mult_SightedSpeedMult = 0.8
 
-att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_k.mdl"
 
-att.ModelOffset = Vector(5, 0.2, 0)
+att.ModelOffset = Vector(5, -0.4, -0.2)

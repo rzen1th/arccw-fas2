@@ -18,13 +18,13 @@ att.Mult_RPM = 0.85
 
 att.Add_BarrelLength = -3
 
-att.ModelOffset = Vector(1, 0.5, -2)
+att.ModelOffset = Vector(2, 0, -1.5)
 att.Override_MuzzleEffect = "ar2_muzzle"
 
 att.LHIK = true
 att.LHIK_Priority = -2
 
-att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
+att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_k.mdl"
 
 att.Mult_HipDispersion = 1.25
 

@@ -16,7 +16,7 @@ att.Mult_RPM = 1.4
 
 att.Add_BarrelLength = -4
 
-att.ModelOffset = Vector(0, 0, 1)
+att.ModelOffset = Vector(1, -0.5, 1.5)
 
 att.LHIK = true
 att.LHIK_Priority = -2

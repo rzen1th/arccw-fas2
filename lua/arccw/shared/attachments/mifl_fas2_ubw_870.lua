@@ -1,18 +1,25 @@
 att.PrintName = "R870 (BUCK)"
-att.Icon = Material("entities/acwatt_mw2_ubgl_masterkey.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ubw_mass26.png", "smooth")
 att.Description = "Underslung shotgun used as a breaching device. The masterkey to any door."
 att.Desc_Pros = {
-	"pro.ubsg",
+    "Selectable underbarrel shotgun",
 }
 att.Desc_Cons = {
 }
 att.Desc_Neutrals = {
-	"info.toggleubgl"
+	"Double tap +ZOOM to toggle underbarrel",
 }
 att.AutoStats = true
 att.Slot = {"ubgl"}
 
+att.LHIK = true
+att.LHIK_Animation = true
+att.LHIK_GunDriver = nil ---"UBGL_Frame"
 att.MountPositionOverride = 0
+
+att.Model = "models/weapons/arccw/mifl_atts/fas2/ubgl_m870.mdl"
+
+att.ModelOffset = Vector(-5, 0, -2)
 
 att.UBGL = true
 
@@ -21,7 +28,7 @@ att.UBGL_Automatic = false
 att.UBGL_MuzzleEffect = "muzzleflash_m3"
 att.UBGL_ClipSize = 4
 att.UBGL_Ammo = "buckshot"
-att.UBGL_RPM = 1200
+att.UBGL_RPM = 60
 att.UBGL_Recoil = 0
 att.UBGL_Capacity = 4
 
@@ -30,15 +37,14 @@ local function Ammo(wep)
 end
 
 att.UBGL_Fire = function(wep, ubgl)
-	if wep:GetMW2Masterkey_Reloading() then
-		MW2Masterkey_ReloadFinish(wep)
+	if wep:GetNWBool("FAS2Masterkey_Reloading", false) then
+		FAS2Masterkey_ReloadFinish(wep)
 		return
 	end
-	if wep:GetMW2Masterkey_NeedPump() then return end
 	if wep:Clip2() <= 0 then return end
 
-	wep:PlayAnimation("alt_fire_masterkey", 1, true, nil, nil, nil, true)
-    wep:SetWeaponOpDelay(CurTime() + wep:GetAnimKeyTime("alt_fire_masterkey"))
+    wep:DoLHIKAnimation("fire", 1)
+    wep:SetWeaponOpDelay(CurTime() + 1)
 
 	wep.Owner:FireBullets({
 		Src = wep.Owner:EyePos(),
@@ -69,60 +75,51 @@ att.UBGL_Fire = function(wep, ubgl)
 	wep:SetClip2(wep:Clip2() - 1)
 
 	wep:DoEffects()
-	wep:SetMW2Masterkey_NeedPump(true)
 end
 
 att.UBGL_Reload = function(wep, ubgl)
 	if wep:Clip2() >= 4 then return end
 	if Ammo(wep) <= 0 then return end
-	if wep:GetMW2Masterkey_Reloading() then return end
+	if wep:GetNWBool("FAS2Masterkey_Reloading", false) then return end
 
-	MW2Masterkey_ReloadStart(wep)
-	wep:SetMW2Masterkey_Reloading(true)
+	FAS2Masterkey_ReloadStart(wep)
+	wep:SetNWBool("FAS2Masterkey_Reloading", true)
 end
 
 att.Hook_Think = function(wep)
-	if wep:GetMW2Masterkey_NeedPump() and wep:GetWeaponOpDelay() <= CurTime() and wep:Clip2() > 0 and !wep:GetMW2Masterkey_Reloading() and !wep.Owner:KeyDown(IN_ATTACK) then
-		wep:PlayAnimation("alt_cycle_masterkey", 1, true, nil, nil, nil, true)
-		wep:SetReloading(CurTime() + 15/30)
-		wep:SetMW2Masterkey_NeedPump(false)
+	if wep:GetNWBool("FAS2Masterkey_Reloading", false) and wep:GetNWBool("FAS2Masterkey_ReloadingTimer", false) < CurTime() then
+        if wep:Clip2() >= 4 then
+		    FAS2Masterkey_ReloadFinish(wep)
+	    elseif wep:Clip2() < 4 then
+		    FAS2Masterkey_ReloadLoop(wep)
+        end
 	end
-	if wep:GetMW2Masterkey_Reloading() and wep:GetMW2Masterkey_ReloadingTimer() < CurTime() and wep:Clip2() >= 4 then
-		MW2Masterkey_ReloadFinish(wep)
-	elseif wep:GetMW2Masterkey_Reloading() and wep:GetMW2Masterkey_ReloadingTimer() < CurTime() and wep:Clip2() < 4 then
-		MW2Masterkey_ReloadLoop(wep)
-	end
-
-    if wep:GetMW2Masterkey_ShellInsertTime() < CurTime() and wep:GetMW2Masterkey_ShellInsertTime() != 0 then
-	    MW2Masterkey_InsertShell(wep)
-        wep:SetMW2Masterkey_ShellInsertTime(0)
-    end
 end
 
-function MW2Masterkey_ReloadStart(wep)
-	wep:PlayAnimation("alt_reload_start_masterkey", 1, true, nil, nil, nil, true)
-	wep:SetMW2Masterkey_ReloadingTimer(CurTime() + 1)
-	
+function FAS2Masterkey_ReloadStart(wep)
+    wep:DoLHIKAnimation("reload1", 1)
+
+	wep:SetNWFloat("FAS2Masterkey_ReloadingTimer", CurTime() + 1)
 	wep:SetReloading(CurTime() + 1)
-    wep:SetMW2Masterkey_ShellInsertTime(CurTime() + 0.6)
-	wep:SetMW2Masterkey_Reloading(true)
 end
 
-function MW2Masterkey_ReloadLoop(wep)
-	wep:PlayAnimation("alt_reload_loop_masterkey", 1, true, nil, nil, nil, true)
-	wep:SetMW2Masterkey_ReloadingTimer(CurTime() + 0.75)
-    wep:SetMW2Masterkey_ShellInsertTime(CurTime() + 0.55)
+function FAS2Masterkey_ReloadLoop(wep)
+    wep:DoLHIKAnimation("reload2", 1)
+
+	wep:SetNWFloat("FAS2Masterkey_ReloadingTimer", CurTime() + 0.75)
 	wep:SetReloading(CurTime() + 0.75)
+    
+	FAS2Masterkey_InsertShell(wep)
 end
 
-function MW2Masterkey_ReloadFinish(wep)
-	wep:PlayAnimation("alt_reload_finish_masterkey", 1, true, nil, nil, nil, true)
+function FAS2Masterkey_ReloadFinish(wep)
+    wep:DoLHIKAnimation("reload3", 1)
+
+	wep:SetNWBool("FAS2Masterkey_Reloading", false)
 	wep:SetReloading(CurTime() + 1.35)
-	wep:SetMW2Masterkey_Reloading(false)
-	wep:SetMW2Masterkey_NeedPump(false)
 end
 
-function MW2Masterkey_InsertShell(wep)
+function FAS2Masterkey_InsertShell(wep)
 	wep.Owner:RemoveAmmo(1, "buckshot")
 	wep:SetClip2(wep:Clip2() + 1)
 end
