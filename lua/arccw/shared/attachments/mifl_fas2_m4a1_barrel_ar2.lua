@@ -3,8 +3,12 @@ att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_ar2.png", "mips smooth")
 att.Description = "Salvaged combine technology applied to a traditional ballistic weapon. Accelerates bullet with dark energy, giving it additional range and damage at little cost."
 att.SortOrder = -1
 att.Desc_Pros = {
+    "Selectable underbarrel grenade launcher",
 }
 att.Desc_Cons = {
+}
+att.Desc_Neutrals = {
+	"Double tap +ZOOM to equip/dequip",
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_m4a1_hg"

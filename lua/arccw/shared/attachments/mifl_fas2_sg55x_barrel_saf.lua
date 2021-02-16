@@ -3,10 +3,11 @@ att.Icon = Material("entities/arccw_mifl_fas2_sg55x_saf.png", "mips smooth")
 att.Description = "Compact paratrooper handguard with recoil-trapping hyper-burst mechanism, allowing for low recoil burst fire."
 att.SortOrder = 3
 att.Desc_Pros = {
-    "Halves recoil until the last shot"
+    "pro.fas2.saf"
 }
 att.Desc_Cons = {
-    "Last shot is disorienting"
+	"con.fas2.saf"
+	"con.fas2.ubgl"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_sg55x_hg"
