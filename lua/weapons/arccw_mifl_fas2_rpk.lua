@@ -492,12 +492,10 @@ SWEP.Attachments = {
         PrintName = "INTEG-UBGL",
         Hidden = true,
         Slot = "ubgl",
-        Bone = "ak_frame",
+        Bone = "RPK BipodPivot",
         Offset = {
-            vpos = Vector(0, 10.5, -0.6),
-            vang = Angle(90, -90, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+            vpos = Vector(-24,2,0),
+            vang = Angle(0, 0, -90),
         },
         ExcludeFlags = {"ubgl_no"},		
         InstalledEles = {"rail_b"},			
@@ -505,15 +503,13 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "ak_frame",
+        Bone = "RPK BipodPivot",
         Offset = {
-            vpos = Vector(-0.5, 10, 1),
-            vang = Angle(0, -90, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+            vpos = Vector(-23, 0, 1),
+            vang = Angle(0, 0, 180),
         },
-        ExtraSightDist = 18,
-        CorrectivePos = Vector(1, -3, 2)
+        ExtraSightDist = 12,
+        CorrectivePos = Vector(0, -3, 2)
     },
     {
         PrintName = "Magazine",
