@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.Desc_Neutrals = {
-	"Double tap +ZOOM to equip/dequip",
+    "Double tap +ZOOM to equip/dequip",
 }
 att.AutoStats = true
 att.Slot = {"ubgl"}
@@ -47,14 +47,14 @@ att.Hook_LHIK_TranslateAnimation = function(wep, key)
 end
 
 att.Hook_OnSelectUBGL = function(wep)
-	wep:DoLHIKAnimation("in", 25/60)
+    wep:DoLHIKAnimation("in", 25/60)
     wep:PlaySoundTable({
         {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
     })
 end
 
 att.Hook_OnDeselectUBGL = function(wep)
-	wep:DoLHIKAnimation("out", 25/60)
+    wep:DoLHIKAnimation("out", 25/60)
     wep:PlaySoundTable({
         {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
     })
@@ -86,7 +86,7 @@ att.UBGL_Reload = function(wep, ubgl)
         wep:PlaySoundTable({
             {s = "weapons/arccw_mifl/fas2/famas/famas_magout_empty.wav", t = 17/60},
             {s = "weapons/arccw_mifl/fas2/famas/famas_magin.wav", t = 67/60},
-			{s = "weapons/arccw_mifl/fas2/g3/g3_magin.wav",		t = 102/60},
+            {s = "weapons/arccw_mifl/fas2/g3/g3_magin.wav",		t = 102/60},
         })
     end
 

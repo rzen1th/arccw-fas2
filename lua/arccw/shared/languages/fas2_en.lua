@@ -31,3 +31,7 @@ L["con.fas2.ubgl"] = "Can not use underbarrel weapon"
 
 L["pro.fas2.saf"] = "Halves recoil until the last shot"
 L["con.fas2.saf"] = "Last shot is disorienting"
+
+L["pro.fas2.pen.25"] = "25mm Penetration"
+L["pro.fas2.pen.18"] = "18mm Penetration"
+L["pro.fas2.pen.12"] = "12mm Penetration"
