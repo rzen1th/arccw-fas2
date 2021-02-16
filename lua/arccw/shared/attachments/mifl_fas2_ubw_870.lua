@@ -1,5 +1,5 @@
 att.PrintName = "R870 (BUCK)"
-att.Icon = Material("entities/arccw_mifl_fas2_ubw_mass26.png", "smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_ubw_r870.png", "smooth")
 att.Description = "Underslung shotgun used as a breaching device. The masterkey to any door."
 att.Desc_Pros = {
     "Selectable underbarrel shotgun",
@@ -19,7 +19,7 @@ att.MountPositionOverride = 0
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/ubgl_m870.mdl"
 
-att.ModelOffset = Vector(-5, 0, -2)
+att.ModelOffset = Vector(-4.5, 0, -1.5)
 
 att.UBGL = true
 
@@ -29,11 +29,35 @@ att.UBGL_MuzzleEffect = "muzzleflash_m3"
 att.UBGL_ClipSize = 4
 att.UBGL_Ammo = "buckshot"
 att.UBGL_RPM = 60
-att.UBGL_Recoil = 0
+att.UBGL_Recoil = 2
 att.UBGL_Capacity = 4
 
 local function Ammo(wep)
 	return wep.Owner:GetAmmoCount("buckshot")
+end
+
+att.Hook_LHIK_TranslateAnimation = function(wep, key)
+    if key == "idle" then
+        if wep:GetInUBGL() then
+            return "idle"
+        else
+            return "pose"
+        end
+    end
+end
+
+att.Hook_OnSelectUBGL = function(wep)
+	wep:DoLHIKAnimation("in", 20/60)
+    wep:PlaySoundTable({
+        {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+    })
+end
+
+att.Hook_OnDeselectUBGL = function(wep)
+	wep:DoLHIKAnimation("out", 20/60)
+    wep:PlaySoundTable({
+        {s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+    })
 end
 
 att.UBGL_Fire = function(wep, ubgl)
@@ -48,17 +72,17 @@ att.UBGL_Fire = function(wep, ubgl)
 
 	wep.Owner:FireBullets({
 		Src = wep.Owner:EyePos(),
-		Num = 6,
+		Num = 15,
 		Damage = 25,
 		Force = 2,
 		Attacker = wep.Owner,
 		Dir = wep.Owner:EyeAngles():Forward(),
-		Spread = Vector(0.1, 0.1, 0),
+        Spread = Vector(0.05, 0.075, 0.075),
 		Callback = function(_, tr, dmg)
 			local dist = (tr.HitPos - tr.StartPos):Length() * ArcCW.HUToM
 
 			local dmgmax = 25
-			local dmgmin = 0
+			local dmgmin = 4
 
 			local delta = dist / 1750 * 0.025
 
@@ -70,7 +94,12 @@ att.UBGL_Fire = function(wep, ubgl)
 		end
 	})
 
-	wep:EmitSound("weapons/fesiugmw2/fire/shot_attach.wav", 100)
+	wep:EmitSound("weapons/arccw_mifl/fas2/rem870/rem870_fire1.wav", 100)
+	
+	wep:PlaySoundTable({
+		{s = "weapons/arccw_mifl/fas2/rem870/rem870_pump_back.wav" ,		t = 20/60},
+		{s = "weapons/arccw_mifl/fas2/rem870/rem870_pump_forward.wav" ,		t = 32/60},	
+    })		
 
 	wep:SetClip2(wep:Clip2() - 1)
 
@@ -97,26 +126,39 @@ att.Hook_Think = function(wep)
 end
 
 function FAS2Masterkey_ReloadStart(wep)
-    wep:DoLHIKAnimation("reload1", 1)
+    wep:DoLHIKAnimation("reload1", 26/60)
+	
+    wep:PlaySoundTable({
+		{s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+    })	
 
-	wep:SetNWFloat("FAS2Masterkey_ReloadingTimer", CurTime() + 1)
-	wep:SetReloading(CurTime() + 1)
+	wep:SetNWFloat("FAS2Masterkey_ReloadingTimer", CurTime() + 26/60)
+	wep:SetReloading(CurTime() + 26/60)
 end
 
 function FAS2Masterkey_ReloadLoop(wep)
-    wep:DoLHIKAnimation("reload2", 1)
+    wep:DoLHIKAnimation("reload2", 49/60)
 
-	wep:SetNWFloat("FAS2Masterkey_ReloadingTimer", CurTime() + 0.75)
-	wep:SetReloading(CurTime() + 0.75)
+	wep:SetNWFloat("FAS2Masterkey_ReloadingTimer", CurTime() + 49/60)
+	wep:SetReloading(CurTime() + 49/60)
+	
+	wep:PlaySoundTable({
+		{s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+		{s = "weapons/arccw_mifl/fas2/rem870/rem870_insert1.wav" ,		t = 12/60},	
+    })	
     
 	FAS2Masterkey_InsertShell(wep)
 end
 
 function FAS2Masterkey_ReloadFinish(wep)
-    wep:DoLHIKAnimation("reload3", 1)
+    wep:DoLHIKAnimation("reload3", 23/60)
+	
+    wep:PlaySoundTable({
+		{s = "Arccw_FAS2_Generic.Cloth_Movement" ,		t = 0},
+    })		
 
 	wep:SetNWBool("FAS2Masterkey_Reloading", false)
-	wep:SetReloading(CurTime() + 1.35)
+	wep:SetReloading(CurTime() + 23/60)
 end
 
 function FAS2Masterkey_InsertShell(wep)
@@ -124,6 +166,6 @@ function FAS2Masterkey_InsertShell(wep)
 	wep:SetClip2(wep:Clip2() + 1)
 end
 
-att.Mult_SightTime = 1.25
-att.Mult_SpeedMult = 0.8
-att.Mult_SightedSpeedMult = 0.85
+att.Mult_SightTime = 1.15
+att.Mult_SpeedMult = 0.85
+att.Mult_SightedSpeedMult = 0.9

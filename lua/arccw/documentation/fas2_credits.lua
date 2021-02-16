@@ -47,6 +47,7 @@ Fesiug
 -qci
 -tritium
 -white deagle
+-shell loading ubgl
 
 TheOnly8Z
 -clean up crew
