@@ -55,6 +55,7 @@ TheOnly8Z
 -naming system
 -lotsa coding
 -m79 grenades 
+-text
 -the cooler akimbo (still in pre pre pre alpha)
 -stuff
 

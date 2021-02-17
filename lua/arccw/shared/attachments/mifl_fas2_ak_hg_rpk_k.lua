@@ -1,10 +1,11 @@
-att.PrintName = "Kompak Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_k.png", "mips smooth")
+att.PrintName = "Ukoro Handguard"
+att.Icon = Material("entities/arccw_mifl_fas2_rpk_hg_ak.png", "mips smooth")
 att.Description = "Shortened handguard for better CQB engagements."
 att.SortOrder = -2
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
+	"con.fas2.ubgl"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_rpk_hg"
