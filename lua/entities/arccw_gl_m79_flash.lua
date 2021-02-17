@@ -11,12 +11,11 @@ if SERVER then
         self:EmitSound("arccw_go/flashbang/flashbang_explode1_distant.wav", 140, 100, 1, CHAN_WEAPON)
 
         local attacker = self
-
-        if self:GetOwner():IsValid() then
+        if IsValid(self:GetOwner()) then
             attacker = self:GetOwner()
         end
 
-        util.BlastDamage(self, attacker, self:GetPos(), 64, self:GetMini() and 10 or 20)
+        util.BlastDamage(self.Inflictor or self, attacker or self, self:GetPos(), 64, self:GetMini() and 10 or 20)
 
         local effectdata = EffectData()
         effectdata:SetOrigin( self:GetPos() )

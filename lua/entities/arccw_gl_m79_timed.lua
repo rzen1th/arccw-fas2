@@ -29,11 +29,11 @@ if SERVER then
         end
 
         local attacker = self
-        if self:GetOwner():IsValid() then
+        if IsValid(self:GetOwner()) then
             attacker = self:GetOwner()
         end
 
-        util.BlastDamage(self.Inflictor or self, attacker, self:GetPos(), 400 * (self:GetMini() and 0.5 or 1), 250 * (self:GetMini() and 0.5 or 1))
+        util.BlastDamage(self.Inflictor or self, attacker or self, self:GetPos(), 400 * (self:GetMini() and 0.5 or 1), 250 * (self:GetMini() and 0.5 or 1))
         self:Remove()
     end
 end

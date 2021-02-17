@@ -9,7 +9,7 @@ if SERVER then
         self:EmitSound("arccw_go/smokegrenade/smoke_emit.wav", 90, self:GetMini() and 150 or 100, 0.75)
 
         local attacker = self
-        if self:GetOwner():IsValid() then
+        if IsValid(self:GetOwner()) then
             attacker = self:GetOwner()
         end
 
@@ -18,7 +18,7 @@ if SERVER then
         cloud:SetPos(self:GetPos())
         cloud:Spawn()
 
-        util.BlastDamage(self.Inflictor or self, attacker, self:GetPos(), 400 * (self:GetMini() and 0.5 or 1), 50 * (self:GetMini() and 0.5 or 1))
+        util.BlastDamage(self.Inflictor or self, attacker or self, self:GetPos(), 400 * (self:GetMini() and 0.5 or 1), 50 * (self:GetMini() and 0.5 or 1))
         self:Remove()
     end
 end
