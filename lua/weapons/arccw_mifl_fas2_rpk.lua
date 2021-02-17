@@ -151,7 +151,7 @@ SWEP.AttachmentElements = {
             Ang = Angle(-0.1, 0, 0),
             Magnification = 1.1
         },
-        AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }	}
+        AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }, [4] = { vpos = Vector(-21, 1.5, 0),}, [5] = { vpos = Vector(-24, 1.5, 0),},	}
     },	
     ["mifl_fas2_ak_hg_12"] = {
         Override_IronSightStruct = {
@@ -170,8 +170,11 @@ SWEP.AttachmentElements = {
                 vpos = Vector(-30, -2.3, 0),
             },
             [4] = {
-                vpos = Vector(-20, 1.8, 0),
-            }				
+                vpos = Vector(-20, 1.2, 0),
+            },
+            [5] = {
+                vpos = Vector(-24, 1.2, 0),
+            },			
         }
     },
     ["mifl_fas2_ak_hg_xs"] = {
@@ -249,6 +252,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end
 
     if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end	
+    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end	
+
+    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end	
+    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end		
 end
 
 

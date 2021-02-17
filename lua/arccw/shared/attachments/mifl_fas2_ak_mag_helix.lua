@@ -1,6 +1,6 @@
 att.PrintName = "64-Round 5.7mm"
 att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_helix.png", "mips smooth")
-att.Description = "Strange Helix magazine packed with a proprietary cartridge designed for PDWs. Its length remove the ability to use foregrip."
+att.Description = "Strange Helix magazine packed with a proprietary cartridge designed for PDWs. Its length negates the ability to use foregrip."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
