@@ -252,7 +252,7 @@ SWEP.Attachments = {
             vpos = Vector(25.2, -0.7, 2.2),
             vang = Angle(0, 0, -90),
         },
-        InstalledEles = {"no_fh"}
+        ExcludeFlags = {"mifl_fas2_ks23_barrel_sd"},
     },
     {
         PrintName = "Tube",

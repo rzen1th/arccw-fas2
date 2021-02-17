@@ -150,6 +150,15 @@ SWEP.AttachmentElements = {
             [5] = {vpos = Vector(32, -1.15, 0),},
         }		
     },
+    ["mifl_fas2_ks23_barrel_sd"] = {
+        VMBodygroups = {	{ind = 1, bg = 4}, {ind = 3, bg = 4}	},	
+    },	
+    ["mifl_fas2_m3_barrel_s"] = {
+        VMBodygroups = {	{ind = 0, bg = 1}, {ind = 1, bg = 3}, {ind = 3, bg = 5}	},
+        AttPosMods = {
+            [5] = {vpos = Vector(32, -1.15, 0),},
+        }		
+    },	
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
     },
@@ -216,7 +225,12 @@ SWEP.Attachments = {
     {
         PrintName = "Barrel",
         Slot = "mifl_fas2_m3_barrel",
-        DefaultAttName = "Standard Barrel"
+        DefaultAttName = "Standard Barrel",
+        Bone = "Bone29",
+        Offset = {
+            vpos = Vector(4,1.3,0),
+            vang = Angle(0, 0, -90),
+        },		
     },
     {
         PrintName = "Muzzle",
@@ -227,6 +241,7 @@ SWEP.Attachments = {
             vpos = Vector(40, -1.15, 0),
             vang = Angle(0, 0, -90),
         },
+        ExcludeFlags = {"mifl_fas2_ks23_barrel_sd"},		
     },
     {
         PrintName = "Magazine",

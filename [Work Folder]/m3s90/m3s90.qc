@@ -7,6 +7,7 @@ $scale 2
 $bodygroup "studio"
 {
 	studio "Main.smd"
+	studio "Main2.smd"	
 	blank
 }
 
@@ -16,6 +17,7 @@ $bodygroup "barrel"
 	studio "Barrel_Kurz.smd"
 	studio "Barrel_Long.smd"	
 	blank
+	studio "Barrel_SD.smd"	
 }
 
 $bodygroup "tube"
@@ -32,6 +34,8 @@ $bodygroup "Iron"
 	studio "Iron_Kurz.smd"
 	studio "Iron_Long.smd"	
 	blank
+	studio "Iron_SD.smd"	
+	studio "Iron_Kurz2.smd"	
 }
 
 $bodygroup "stock"
@@ -65,6 +69,7 @@ $contents "solid"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\m3s90\"
+$cdmaterials "models\weapons\arccw_fas2\mp5sd\"
 $cdmaterials "models\weapons\arccw_fas2\accessories\"
 $cdmaterials "models\weapons\arccw_fas2\shells\"
 $cdmaterials "models\weapons\arccw_fas2\kf2_m3\"
