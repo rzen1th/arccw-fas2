@@ -3,6 +3,8 @@ att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_scoped.png", "mips smooth")
 att.Description = "Medium barrel fitted with an optic."
 att.SortOrder = 9.5
 att.Desc_Pros = {
+    "autostat.holosight",
+    "autostat.zoom"
 }
 att.Desc_Cons = {
 }

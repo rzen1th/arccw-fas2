@@ -3,8 +3,12 @@ att.Icon = Material("entities/arccw_mifl_fas2_g36_hg_oicw.png", "mips smooth")
 att.Description = "Prototype grenadier rifle with top-mounted XM25 grenade launcher. Very heavy and bulky."
 att.SortOrder = 8
 att.Desc_Pros = {
+    "Selectable underbarrel grenade launcher",
 }
 att.Desc_Cons = {
+}
+att.Desc_Neutrals = {
+	"Double tap +ZOOM to equip/dequip",
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_g36c_hg"

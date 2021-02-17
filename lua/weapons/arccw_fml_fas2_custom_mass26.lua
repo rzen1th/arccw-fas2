@@ -77,7 +77,7 @@ SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
 SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_m3"
-SWEP.ShellModel = "models/weapons/arccw/mifl/fas2/shell/buck.mdl"
+SWEP.ShellModel = "models/weapons/arccw/mifl/fas2/shell/slug.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
 SWEP.ShellScale = 1
