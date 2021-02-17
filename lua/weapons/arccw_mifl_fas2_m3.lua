@@ -247,6 +247,7 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Slot = "mifl_fas2_m3_mag",
         DefaultAttName = "4-Round 12-Gauge Tube"
+        ExcludeFlags = {"mifl_fas2_m3_barrel_s"},			
     },
     {
         PrintName = "Stock",
