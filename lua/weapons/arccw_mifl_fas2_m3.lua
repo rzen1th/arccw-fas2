@@ -154,7 +154,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {	{ind = 1, bg = 4}, {ind = 3, bg = 4}	},	
     },	
     ["mifl_fas2_m3_barrel_s"] = {
-        VMBodygroups = {	{ind = 0, bg = 1}, {ind = 1, bg = 3}, {ind = 3, bg = 5}	},
+        VMBodygroups = {	{ind = 0, bg = 1}, {ind = 1, bg = 3}, {ind = 2, bg = 3}, {ind = 3, bg = 5}	},
         AttPosMods = {
             [5] = {vpos = Vector(32, -1.15, 0),},
         }		
@@ -228,7 +228,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Barrel",
         Bone = "Bone29",
         Offset = {
-            vpos = Vector(4,1.3,0),
+            vpos = Vector(1,1,-0.8),
             vang = Angle(0, 0, -90),
         },		
     },
