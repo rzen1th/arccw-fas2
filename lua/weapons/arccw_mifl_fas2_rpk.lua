@@ -2,8 +2,8 @@ SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
-SWEP.PrintName = "hhh"
-SWEP.TrueName = "RPK"
+SWEP.PrintName = "KFG-7"
+SWEP.TrueName = "RPK47"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "The big brother of the AKM. Cumbersome yet elegant."
 SWEP.Trivia_Manufacturer = "Izhmash"
@@ -138,30 +138,11 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 4}
         }
     },
-    ["mifl_fas2_ak_hg_k"] = {
+    ["mifl_fas2_ak_hg_rpk_k"] = {
         VMBodygroups = {
-            {ind = 2, bg = 3}
+            {ind = 2, bg = 1}
         },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(0, 19.5, 1.8)
-            }
-        }
-    },
-    ["mifl_fas2_ak_hg_u"] = {
-        VMBodygroups = {
-            {ind = 2, bg = 13}, {ind = 3, bg = 1}
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(0, 21.75, 1.8)
-            }
-        },
-        Override_IronSightStruct = {
-            Pos = Vector(-4.401, -10, 1.3),
-            Ang = Angle(0.1, 0, 0),
-            Magnification = 1.1
-        },		
+        AttPosMods = {	[3] = {	vpos = Vector(-10, 0, 0) }	}
     },	
     ["mifl_fas2_ak_hg_an94"] = {
         VMBodygroups = {	{ind = 2, bg = 4}, {ind = 3, bg = 1}, {ind = 4, bg = 1}	},
@@ -170,7 +151,7 @@ SWEP.AttachmentElements = {
             Ang = Angle(-0.1, 0, 0),
             Magnification = 1.1
         },
-        AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }	}
+        AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }, [4] = { vpos = Vector(-21, 1.5, 0),}, [5] = { vpos = Vector(-24, 1.5, 0),},	}
     },	
     ["mifl_fas2_ak_hg_12"] = {
         Override_IronSightStruct = {
@@ -189,8 +170,11 @@ SWEP.AttachmentElements = {
                 vpos = Vector(-30, -2.3, 0),
             },
             [4] = {
-                vpos = Vector(-20, 1.8, 0),
-            }				
+                vpos = Vector(-20, 1.2, 0),
+            },
+            [5] = {
+                vpos = Vector(-24, 1.2, 0),
+            },			
         }
     },
     ["mifl_fas2_ak_hg_xs"] = {
@@ -235,15 +219,12 @@ SWEP.AttachmentElements = {
     ["5.56x45mm"] = {
         Override_Trivia_Calibre = "5.46x45mm NATO"
     },
-    ["30_545"] = {
-        VMBodygroups = {{ind = 1, bg = 5}}
-    },
-    ["45_545"] = {
-        VMBodygroups = {{ind = 1, bg = 14}}
-    },
     ["75_762"] = {
         VMBodygroups = {{ind = 1, bg = 1}}
     },
+    ["30_762"] = {
+        VMBodygroups = {{ind = 1, bg = 8}}
+    },	
     ["64_57"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
     },	
@@ -256,11 +237,8 @@ SWEP.AttachmentElements = {
     ["9x19mm"] = {
         Override_Trivia_Calibre = "9x19mm"
     },
-    ["30_919"] = {
-        VMBodygroups = {{ind = 1, bg = 9}}
-    },
-    ["50_919"] = {
-        VMBodygroups = {{ind = 1, bg = 10}}
+    ["30_556"] = {
+        VMBodygroups = {{ind = 1, bg = 5}}
     },
     ["12_20g"] = {
         VMBodygroups = {{ind = 1, bg = 7}}
@@ -274,6 +252,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end
 
     if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end	
+    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end	
+
+    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end	
+    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end		
 end
 
 
@@ -303,6 +285,9 @@ function SWEP:Hook_NameChange(name)
             elseif v == "5.45x39mm" then
                 mid = "/"
                 post = "545"
+            elseif v == "64_57" then
+                mid = "/"
+                post = "57"				
             elseif v == "5.56x45mm" then
                 mid = "/"
                 post = "556"
@@ -337,6 +322,8 @@ function SWEP:Hook_NameChange(name)
                 post = "9"
             elseif v == "10_953" then
                 post = "953"
+            elseif v == "64_57" then
+                post = "57"						
             elseif v == "12_20g" then
                 post = "20"
             end
@@ -353,6 +340,8 @@ function SWEP:Hook_NameChange(name)
                 post = "12"
             elseif v == "5.56x45mm" then
                 post = "19"
+            elseif v == "64_57" then
+                post = "57"						
             elseif v == "9x19mm" then
                 post = "19"
             elseif v == "10_953" then
@@ -377,6 +366,8 @@ function SWEP:Hook_NameChange(name)
                 post = "94"
             elseif v == "5.56x45mm" then
                 post = "556"
+            elseif v == "64_57" then
+                post = "57"						
             elseif v == "9x19mm" then
                 post = "9"
             elseif v == "10_953" then
@@ -394,6 +385,9 @@ function SWEP:Hook_NameChange(name)
             elseif v == "5.45x39mm" then
                 mid = "-"
                 post = "74"
+            elseif v == "64_57" then
+                mid = "-"			
+                post = "57"						
             elseif v == "5.56x45mm" then
                 mid = "-"
                 post = "101"

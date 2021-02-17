@@ -19,6 +19,7 @@ $bodygroup "Mag"
 	studio "556_30.smd"
 	studio "939_40.smd"	
 	studio "12G.smd"
+	studio "762_30.smd"	
 	blank
 }
 $bodygroup "HG"
@@ -150,6 +151,15 @@ $definebone "PSO1_Eyepiece1" "PSO-1Main Dummy" 0.000666 0.014168 -3.948097 89.99
 
 
 $sectionframes 30 120
+
+$sequence "idle_tpp" {
+	"anims\idle_tpp.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 
 $sequence "idle" {
 	"rpk_anims\idle.smd"

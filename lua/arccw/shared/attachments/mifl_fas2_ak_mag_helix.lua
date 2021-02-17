@@ -1,6 +1,6 @@
 att.PrintName = "64-Round 5.7mm"
 att.Icon = Material("entities/arccw_mifl_fas2_ak_mag_helix.png", "mips smooth")
-att.Description = "Strange Helix magazine packed with a proprietary cartridge designed for PDWs. Its length remove the ability to use foregrip."
+att.Description = "Strange Helix magazine packed with a proprietary cartridge designed for PDWs. Its length negates the ability to use foregrip."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -24,8 +24,8 @@ att.Override_Trivia_Calibre = "5.45x39mm"
 att.Override_Ammo = "smg1"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav" then return "weapons/arccw_mifl/fas2/ak74/ak74_fire1.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/sd.wav" end
+    if fsound == "weapons/arccw_mifl/fas2/rpk47/rpk47_fire1.wav" then return "weapons/arccw_mifl/fas2/ak74/ak74_fire1.wav" end
+    if fsound == "weapons/arccw_mifl/fas2/rpk47/rpk47_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/sd.wav" end
 end
 
 att.LHIK = true

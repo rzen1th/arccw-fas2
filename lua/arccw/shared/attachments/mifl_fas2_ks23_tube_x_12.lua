@@ -16,6 +16,7 @@ att.Mult_ReloadTime = 0.9
 att.Mult_SightTime = 0.9
 
 att.Mult_Damage = 0.5
+att.Mult_DamageMin = 0.5
 att.Mult_Range = 0.8
 att.Mult_Recoil = 0.8
 att.Mult_RecoilSide = 0.5
