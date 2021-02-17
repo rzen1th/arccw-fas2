@@ -36,7 +36,7 @@ att.UBGL_PrintName = "AKIMBO"
 att.UBGL_Automatic = false
 att.UBGL_MuzzleEffect = "muzzleflash_pistol"
 att.UBGL_ClipSize = 7
-att.UBGL_Ammo = "pistol"
+att.UBGL_Ammo = "357"
 att.UBGL_RPM = 300
 att.UBGL_Recoil = 1.5
 att.UBGL_RecoilSide = 0.8
@@ -68,7 +68,7 @@ att.Hook_LHIK_TranslateAnimation = function(wep, anim)
 end
 
 local function Ammo(wep)
-    return wep.Owner:GetAmmoCount("pistol") -- att.UBGL_Ammo
+    return wep.Owner:GetAmmoCount("357") -- att.UBGL_Ammo
 end
 
 att.UBGL_Fire = function(wep, ubgl)
@@ -150,7 +150,7 @@ att.UBGL_Reload = function(wep, ubgl)
 
     local load = math.Clamp(clip, 0, reserve)
 
-    wep.Owner:SetAmmo(reserve - load, "pistol") -- att.UBGL_Ammo
+    wep.Owner:SetAmmo(reserve - load, "357") -- att.UBGL_Ammo
 
     wep:SetClip2(load)
 end

@@ -11,6 +11,8 @@ att.Slot = {"mifl_fas2_ak_mag", "mifl_fas2_rpk_mag"}
 
 att.ActivateElements = {"30_556", "5.56x45mm"}
 
+att.Override_ClipSize = 30
+
 att.Mult_Damage = 0.85
 att.Mult_DamageMin = 0.85
 att.Mult_Penetration = 0.8
