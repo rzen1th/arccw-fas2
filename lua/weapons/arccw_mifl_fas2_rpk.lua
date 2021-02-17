@@ -2,7 +2,7 @@ SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - FA:S2" -- edit this if you like
 SWEP.AdminOnly = false
-SWEP.PrintName = "Gun"
+SWEP.PrintName = "hhh"
 SWEP.TrueName = "RPK"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "The big brother of the AKM. Cumbersome yet elegant."
@@ -61,9 +61,9 @@ SWEP.MoveDispersion = 100
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/ak47/ak47_suppressed_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/ak47/ak47_distance_fire1.wav"
+SWEP.ShootSound = "weapons/arccw_mifl/fas2/rpk47/rpk47_fire1.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rpk47/rpk47_suppressed_fire1.wav"
+SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/rpk47/rpk47_distance_fire1.wav"
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
 SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
@@ -278,7 +278,7 @@ end
 
 
 function SWEP:Hook_NameChange(name)
-    local pre = "AK"
+    local pre = "RPK"
     local post = "M"
     local mid = ""
     local handguard = self.Attachments[2].Installed
@@ -343,25 +343,21 @@ function SWEP:Hook_NameChange(name)
         end
     elseif handguard == "mifl_fas2_ak_hg_12" or handguard == "mifl_fas2_ak_hg_12u" then
         -- AK-12, AK-15 and variants
-        pre = "AK"
+        pre = "RPK"
         mid = "-"
         post = "15"
         for _, v in pairs(eles) do
             if v == "9x39mm" then
-                mid = "/"
-                post = "939"
+                post = "39"
             elseif v == "5.45x39mm" then
                 post = "12"
             elseif v == "5.56x45mm" then
                 post = "19"
             elseif v == "9x19mm" then
-                mid = "/"
-                post = "919"
+                post = "19"
             elseif v == "10_953" then
-                mid = "/"
-                post = "953"
+                post = "53"
             elseif v == "12_20g" then
-                mid = "/"
                 post = "20"
             end
         end
@@ -391,10 +387,6 @@ function SWEP:Hook_NameChange(name)
         end
     else
         -- Regular AK variants
-        if handguard == "mifl_fas2_ak_hg_rpk" then
-            pre = "RPK"
-            post = ""
-        end
         for _, v in pairs(eles) do
             if v == "9x39mm" then
                 mid = "-"
@@ -417,8 +409,8 @@ function SWEP:Hook_NameChange(name)
                 post = "20"
             end
         end
-        if (pre == "AK" or pre == "RPK") and stock == "mifl_fas2_ak_stock_ske" then
-            if post == "M" then pre = "AKM" post = "" end
+        if pre == "RPK" and stock == "mifl_fas2_ak_stock_ske" then
+            if post == "M" then pre = "RPK" post = "" end
             pre = pre .. "S"
         end
         if (pre != "PP-19") and handguard == "mifl_fas2_ak_hg_k" or handguard == "mifl_fas2_ak_hg_u" then
@@ -492,12 +484,10 @@ SWEP.Attachments = {
         PrintName = "INTEG-UBGL",
         Hidden = true,
         Slot = "ubgl",
-        Bone = "ak_frame",
+        Bone = "RPK BipodPivot",
         Offset = {
-            vpos = Vector(0, 10.5, -0.6),
-            vang = Angle(90, -90, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+            vpos = Vector(-24,2,0),
+            vang = Angle(0, 0, -90),
         },
         ExcludeFlags = {"ubgl_no"},		
         InstalledEles = {"rail_b"},			
@@ -505,15 +495,13 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "ak_frame",
+        Bone = "RPK BipodPivot",
         Offset = {
-            vpos = Vector(-0.5, 10, 1),
-            vang = Angle(0, -90, -90),
-            wpos = Vector(22, 1, -7),
-            wang = Angle(-9.79, 0, 180)
+            vpos = Vector(-23, 0, 1),
+            vang = Angle(0, 0, 180),
         },
-        ExtraSightDist = 18,
-        CorrectivePos = Vector(1, -3, 2)
+        ExtraSightDist = 12,
+        CorrectivePos = Vector(0, -3, 2)
     },
     {
         PrintName = "Magazine",

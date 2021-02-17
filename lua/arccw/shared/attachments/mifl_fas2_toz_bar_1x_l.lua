@@ -1,7 +1,7 @@
 att.PrintName = "Marksman Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_toz_1.png", "mips smooth")
 att.Description = "Use a single more accurate barrel instead of 2 barrels. The removal of the bottom barrel also improves weapon agility."
-att.SortOrder = 2
+att.SortOrder = 1
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

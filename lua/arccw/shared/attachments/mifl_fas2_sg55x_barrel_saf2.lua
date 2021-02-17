@@ -3,10 +3,10 @@ att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m249.png", "mips smooth")
 att.Description = "Full-length handguard making full use of the recoil-trappping hyper-burst mechanism, extending burst duration to 5 rounds instead of 3."
 att.SortOrder = 3
 att.Desc_Pros = {
-    "Halves recoil until the last shot"
+    "pro.fas2.saf"
 }
 att.Desc_Cons = {
-    "Last shot is disorienting"
+	"con.fas2.saf"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_sg55x_hg"

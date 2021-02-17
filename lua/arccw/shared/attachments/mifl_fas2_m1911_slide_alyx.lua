@@ -10,7 +10,12 @@ att.Add_BarrelLength = 4
 att.Mult_Recoil = 0.7
 att.Mult_RPM = 2.75
 att.Mult_ShootPitch = 0.95
-
+att.Desc_Pros = {
+    "pro.fas2.saf"
+}
+att.Desc_Cons = {
+	"con.fas2.saf"
+}
 att.Override_Firemodes = {
     {
         Mode = -7,

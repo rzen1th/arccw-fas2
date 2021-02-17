@@ -30,9 +30,13 @@ if SERVER then
         self:PhysicsInit(SOLID_VPHYSICS)
 
         local wep = self.Inflictor
-        if IsValid(wep) then
-            self:SetMini(wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q")
-            self.FuzeTime = 1 / wep:GetBuff("MuzzleVelocity") * 400
+        if IsValid(wep) then -- Assume only the M79 is capable of firing mini nades
+            if wep:GetClass() == "arccw_mifl_fas2_m79" then
+                self:SetMini(wep.Attachments[4].Installed == "mifl_fas2_m79_tube_q")
+                self.FuzeTime = 1 / wep:GetBuff("MuzzleVelocity") * 400
+            else
+                self.FuzeTime = 0.2
+            end
             --self:SetModelScale(0.5, 0)
         end
 

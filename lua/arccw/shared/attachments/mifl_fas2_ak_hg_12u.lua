@@ -5,6 +5,7 @@ att.SortOrder = -0.5
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
+	"con.fas2.ubgl"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_hg"

@@ -1,7 +1,7 @@
 att.PrintName = "Obrez Marksman Barrel"
 att.Icon = Material("entities/arccw_mifl_fas2_toz_1s.png", "mips smooth")
 att.Description = "A single shortened barrel. Slightly more agile and accurate than obrez barrels."
-att.SortOrder = 1
+att.SortOrder = 0
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

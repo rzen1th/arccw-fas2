@@ -31,7 +31,7 @@ att.HolosightMagnificationMin = 3.5
 att.HolosightMagnificationMax = 3.5
 att.HolosightReticle = Material("mifl_fas2_reticle/elcan.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 5
+att.HolosightSize = 9.5
 att.HolosightBone = "holosight"
 att.Colorable = true
 att.HolosightBlackbox = true
@@ -39,4 +39,4 @@ att.HolosightBlackbox = true
 att.Mult_SightTime = 1.08
 att.Mult_SpeedMult = 0.94
 
-att.Mult_VisualRecoilMult = 0.2
+att.Mult_VisualRecoilMult = 0.15

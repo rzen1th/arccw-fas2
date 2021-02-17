@@ -132,25 +132,25 @@ SWEP.AttachmentElements = {
     ["akimbo"] = {
         Override_ActivePos = Vector(2, 2, 1.2),
         Override_HolsterPos = Vector(2,2,2),
-        Override_HolsterAng = Angle(-20, 0, -5),			
+        Override_HolsterAng = Angle(-20, 0, -5),
     },
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
     },
     ["mifl_fas2_toz_bar_2x_s"] = {
-        VMBodygroups = {	{ind = 2, bg = 1},{ind = 1, bg = 1}	},
+        VMBodygroups = {{ind = 2, bg = 1},{ind = 1, bg = 1} },
     },
     ["mifl_fas2_toz_bar_1x_s"] = {
-        VMBodygroups = {	{ind = 2, bg = 3},{ind = 1, bg = 1},{ind = 4, bg = 1}	},
+        VMBodygroups = {{ind = 2, bg = 3},{ind = 1, bg = 1},{ind = 4, bg = 1}},
     },
     ["mifl_fas2_toz_bar_1x_l"] = {
-        VMBodygroups = {	{ind = 2, bg = 2},{ind = 4, bg = 1}	},
+        VMBodygroups = {{ind = 2, bg = 2},{ind = 4, bg = 1}	},
     },
     ["mifl_fas2_toz_bar_1x_sd"] = {
-        VMBodygroups = {	{ind = 2, bg = 4},{ind = 1, bg = 1}, {ind = 4, bg = 1}	},
-    },	
+        VMBodygroups = {{ind = 2, bg = 4},{ind = 1, bg = 1}, {ind = 4, bg = 1}},
+    },
     ["mifl_fas2_ks23_stock_k"] = {
-        VMBodygroups = {	{ind = 3, bg = 1},	},
+        VMBodygroups = {{ind = 3, bg = 1}},
     },
 }
 
@@ -158,23 +158,23 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local barrel = wep.Attachments[4].Installed
     local ammobmg = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_50"
-    local ammosnip = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_300"	
-    local ammorif = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_762"	
+    local ammosnip = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_300"
+    local ammorif = wep.Attachments[5].Installed == "mifl_fas2_toz34_mag_762"
 
-    if ammobmg then vm:SetBodygroup(4, 2) end	
+    if ammobmg then vm:SetBodygroup(4, 2) end
     if ammobmg and barrel == "mifl_fas2_toz_bar_1x_l" then vm:SetBodygroup(4, 3) end
     if ammobmg and barrel == "mifl_fas2_toz_bar_1x_s" then vm:SetBodygroup(4, 3) end
-    if ammobmg and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 3) end	
+    if ammobmg and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 3) end
 
-    if ammorif then vm:SetBodygroup(4, 4) end	
+    if ammorif then vm:SetBodygroup(4, 4) end
     if ammorif and barrel == "mifl_fas2_toz_bar_1x_l" then vm:SetBodygroup(4, 5) end
     if ammorif and barrel == "mifl_fas2_toz_bar_1x_s" then vm:SetBodygroup(4, 5) end
-    if ammorif and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 5) end	
-	
-    if ammosnip then vm:SetBodygroup(4, 6) end	
+    if ammorif and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 5) end
+
+    if ammosnip then vm:SetBodygroup(4, 6) end
     if ammosnip and barrel == "mifl_fas2_toz_bar_1x_l" then vm:SetBodygroup(4, 7) end
     if ammosnip and barrel == "mifl_fas2_toz_bar_1x_s" then vm:SetBodygroup(4, 7) end
-    if ammosnip and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 7) end		
+    if ammosnip and barrel == "mifl_fas2_toz_bar_1x_sd" then vm:SetBodygroup(4, 7) end
 end
 
 
@@ -201,8 +201,8 @@ SWEP.Attachments = {
             vang = Angle(90, 0, -90),
         },
         InstalledEles = {"rail_bottom"},
-		GivesFlags = {"Akimbo_No"},
-        ExcludeFlags = {"Akimbo_No1"},			
+        GivesFlags = {"Akimbo_No"},
+        ExcludeFlags = {"Akimbo_No1"},
     },
     {
         PrintName = "Tactical",
@@ -236,9 +236,9 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"akimbo"},
-        ExcludeFlags = {"Akimbo_No"},	
-		GivesFlags = {"Akimbo_No1"},			
-    },	
+        ExcludeFlags = {"Akimbo_No"},
+        GivesFlags = {"Akimbo_No1"},
+    },
     {
         PrintName = "Stock",
         Slot = {"mifl_fas2_ks23_stock"},
@@ -275,7 +275,7 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if wep.Attachments[6].Installed then
         return anim .. "_akimbo"
     end
-	
+
     if oneb then
         return anim .. "_1"
     end
@@ -338,10 +338,10 @@ SWEP.Animations = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 3,
-    },	
+    },
     ["reload_empty_akimbo"] = {
         Source = "reload_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 3,
-    },	
+    },
 }
