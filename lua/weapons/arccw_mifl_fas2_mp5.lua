@@ -555,9 +555,9 @@ function SWEP:Hook_NameChange(name)
         end
     elseif mag == "mifl_fas2_mp5_mag_waffle" or mag == "mifl_fas2_mp5_mag_waffle_80" then
         if ump then
-            mid = "223"
+            mid = "X223"
         else
-            post = post .. "/223"
+            post = post .. "/X223"
         end
     end
 
