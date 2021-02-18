@@ -500,7 +500,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_rpk_mag"},
-        DefaultAttName = "30-Round 7.62mm",
+        DefaultAttName = "45-Round 7.62mm",
         Bone = "RPK BipodPivot",
         Offset = {
             vpos = Vector(-25, 3.5, -0.25),

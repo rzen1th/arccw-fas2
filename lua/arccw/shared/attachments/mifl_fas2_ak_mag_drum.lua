@@ -13,12 +13,11 @@ att.Slot = "mifl_fas2_rpk_mag"
 att.ActivateElements = {"75_762"}
 att.Override_ClipSize = 75
 
-att.Mult_Damage = 0.9
-att.Mult_DamageMin = 0.9
-att.Mult_Penetration = 0.8
-att.Mult_Range = 0.8
-att.Mult_Recoil = 0.8
-att.Mult_RPM = 1.1
+att.Mult_Recoil = 0.95
+
+att.Mult_MoveSpeed = 0.95
+att.Mult_SightTime = 0.9
+att.Mult_ReloadTime = 0.9
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav" then return "weapons/arccw_mifl/fas2/ak74/ak74_fire1.wav" end
