@@ -531,11 +531,11 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "ak_frame", -- relevant bone any attachments will be mostly referring to
+        Bone = "RPK BipodPivot",
         Offset = {
-            vpos = Vector(0.8, 2, 0.8), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, -90, 0)
-        }
+            vpos = Vector(-32, 0.8, -0.75),
+            vang = Angle(0, 0, -90),
+        },
     },
 }
 

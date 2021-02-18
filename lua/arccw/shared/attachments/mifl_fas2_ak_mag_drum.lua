@@ -17,7 +17,7 @@ att.Mult_Recoil = 0.95
 
 att.Mult_MoveSpeed = 0.95
 att.Mult_SightTime = 0.9
-att.Mult_ReloadTime = 0.9
+att.Mult_ReloadTime = 1.1
 
 att.Hook_GetShootSound = function(wep, fsound)
     if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav" then return "weapons/arccw_mifl/fas2/ak74/ak74_fire1.wav" end
