@@ -1042,3 +1042,89 @@ sound.Add({
 			"weapons/arccw_mifl/fas2/m3s90/m3s90_load8.wav",			
 }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SR25
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.StockUnlock",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_stockunlock.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.StockPull",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_stockpull.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.StockLock",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_stocklock.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.ChargingHandleBack",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_charginghandle_back.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.ChargingHandleForward",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_charginghandle_forward.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.SupressorOn",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_supressoron.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.Magout",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_magout.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.Magin",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_magin.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.Magslap",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_charginghandle_forward.wav"}
+})
+sound.Add({
+	name = 			"Arccw_FAS2_Weapon_SR25.BoltcatchSlap",
+	channel = 		CHAN_ITEM1,
+	volume = 		1.0,
+	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_boltcatchslap.wav"}
+})

@@ -141,6 +141,15 @@ $definebone "Bone31" "Dummy01" 8.694202 -0.46393 0.427101 -3.196188 -3.48536 -13
 
 $sectionframes 30 190
 
+$sequence "idle" {
+	"sr25_anims\idle.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 20
+}
+
 $sequence "deploy_first" {
 	"sr25_anims\deploy_first.smd"
 	activity "ACT_VM_DRAW_FIRST" 1
@@ -204,15 +213,6 @@ $sequence "holster_empty" {
 	fps 60
 }
 
-$sequence "idle" {
-	"sr25_anims\idle.smd"
-	activity "ACT_VM_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 20
-}
-
 $sequence "idle_empty" {
 	"sr25_anims\idle_empty.smd"
 	activity "ACT_VM_IDLE_EMPTY" 1
@@ -224,9 +224,6 @@ $sequence "idle_empty" {
 $sequence "fire1" {
 	"sr25_anims\fire1.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_SR25_View" }
-	{ event AE_FAS_MUZZLE_EFFECT 1 "Ejector_Smoke" }
-	{ event AE_FAS_EJECT_BRASS 1 "" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -236,9 +233,6 @@ $sequence "fire1" {
 $sequence "fire2" {
 	"sr25_anims\fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_SR25_View" }
-	{ event AE_FAS_MUZZLE_EFFECT 1 "Ejector_Smoke" }
-	{ event AE_FAS_EJECT_BRASS 1 "" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -248,9 +242,6 @@ $sequence "fire2" {
 $sequence "fire3" {
 	"sr25_anims\fire3.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_SR25_View" }
-	{ event AE_FAS_MUZZLE_EFFECT 1 "Ejector_Smoke" }
-	{ event AE_FAS_EJECT_BRASS 1 "" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -260,9 +251,6 @@ $sequence "fire3" {
 $sequence "fire_last" {
 	"sr25_anims\fire_last.smd"
 	activity "ACT_VM_FIRE_LAST" 1
-	{ event AE_FAS_MUZZLE_EFFECT 0 "Muzzleflash_SR25_View" }
-	{ event AE_FAS_MUZZLE_EFFECT 1 "Ejector_Smoke" }
-	{ event AE_FAS_EJECT_BRASS 1 "" }
 	fadein 0.2
 	fadeout 0.2
 	snap
