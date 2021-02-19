@@ -10,8 +10,6 @@ att.SortOrder = 20 + 100
 att.AutoStats = true
 att.Slot = {"mifl_fas2_sr25_mag"}
 
-att.ActivateElements = {"20"}
-
 att.Mult_MoveSpeed = 1.1
 att.Mult_SightTime = 0.85
 att.Override_ClipSize = 20

@@ -74,7 +74,7 @@ SWEP.SightedSpeedMult = 0.8
 SWEP.SightTime = 0.27
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.086, -9, 0.898),
+    Pos = Vector(-4.086, -9, 1.05),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -109,20 +109,37 @@ SWEP.AttachmentElements = {
         },
     },
 
-    ["whisperer"] = {
-        NameChange = "AR-C4S",
-        TrueNameChange = "M4A1-S",
+    ["mifl_fas2_sr25_barrel_k"] = {
         VMBodygroups = {
-            {ind = 1, bg = 3},
-            {ind = 2, bg = 3},
+            {ind = 1, bg = 4}, {ind = 2, bg = 3}, 
         },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.086, -5, 1.8),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1
+        },		
     },
-
-    ["20"] = {
+    ["mifl_fas2_sr25_barrel_ak"] = {
         VMBodygroups = {
-            {ind = 3, bg = 2}
+            {ind = 1, bg = 3}, {ind = 2, bg = 4}, 
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-4.086, -7, 1.85),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.1
+        },	
+    },
+    ["mifl_fas2_sr25_barrel_auto"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 1}, {ind = 2, bg = 1}, 
         }
     },
+    ["mifl_fas2_sr25_barrel_c"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 2}, {ind = 2, bg = 2}, 
+        }
+    },	
+	
     ["60"] = {
         VMBodygroups = {
             {ind = 3, bg = 1}
@@ -153,6 +170,16 @@ SWEP.AttachmentElements = {
             {ind = 4, bg = 4},
         },
     },	
+    ["mifl_fas2_sr25_mag_9mm_50"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 5},
+        },
+    },	
+    ["mifl_fas2_sr25_mag_9mm_25"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 3},
+        },
+    },		
 }
 
 SWEP.ExtraSightDist = 10
@@ -211,11 +238,11 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(12, 0, 0),
+            vpos = Vector(12, 0.5, 0),
             vang = Angle(0, 0, -90)
         },
         MergeSlots = {5},
-        ExcludeFlags = {"mifl_fas2_m4a1_barrel_ar2"}
+        ExcludeFlags = {"mifl_fas2_sr25_barrel_k"}
     },
     {
         PrintName = "INTEG-UBGL",
@@ -226,7 +253,7 @@ SWEP.Attachments = {
             vpos = Vector(9, 0, 0),
             vang = Angle(0, 0, -90)
         },
-        ExcludeFlags = {"mifl_fas2_m4a1_barrel_ar2", "mifl_fas2_m4a1_barrel_para_a1", "mifl_fas2_m4a1_barrel_commando", "mifl_fas2_m4a1_barrel_no"}
+        ExcludeFlags = {"mifl_fas2_sr25_barrel_ak", "mifl_fas2_sr25_barrel_k"}
     },
     {
         PrintName = "Tactical",
@@ -284,7 +311,9 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_30" then return anim .. "_20" end	
     if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_20" then return anim .. "_20" end	
 	
-    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_32" then return anim .. "_20" end		
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_32" then return anim .. "_20" end	
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_25" then return anim .. "_20" end	
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_50" then return anim .. "_30" end		
 end
 
 SWEP.Animations = {
@@ -296,10 +325,7 @@ SWEP.Animations = {
         Source = "deploy"
     },
     ["ready"] = {
-        Source = "deploy_first",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.7
+        Source = "deploy"
     },
     ["fire"] = {
         Source = {"shoot"},

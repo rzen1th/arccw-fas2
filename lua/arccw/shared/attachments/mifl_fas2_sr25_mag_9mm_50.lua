@@ -1,17 +1,17 @@
-att.PrintName = "32-Round 9mm"
+att.PrintName = "50-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_32.png", "mips smooth")
 att.Description = "Conversion to a pistol caliber, offering lots of bullet really quickly. Stick magazine is lighter than standard magazines."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.SortOrder = 32 + 50
+att.SortOrder = 50 + 50
 att.AutoStats = true
 att.Slot = {"mifl_fas2_sr25_mag"}
 
 att.Mult_ReloadTime = 0.9
 att.Mult_SightTime = 0.9
-att.Override_ClipSize = 32
+att.Override_ClipSize = 50
 
 att.Mult_Damage = 0.8
 att.Mult_DamageMin = 0.8

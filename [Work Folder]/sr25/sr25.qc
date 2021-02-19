@@ -15,6 +15,7 @@ $bodygroup "HG"
 	studio "HG_C.smd"
 	studio "HG_AK.smd"
 	studio "HG_Kurz.smd"
+	blank
 }
 $bodygroup "Iron"
 {
@@ -574,7 +575,7 @@ $sequence "reload_nomen" {
 	{ event 5004 65 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
-	fps 45
+	fps 40
 }
 
 $sequence "reload_empty_nomen" {
@@ -593,7 +594,7 @@ $sequence "reload_empty_nomen" {
 	fadein 0.2
 	fadeout 0.2
 	snap
-	fps 45
+	fps 40
 }
 
 
@@ -642,7 +643,7 @@ $sequence "reload_nomen_20" {
 	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
-	fps 30
+	fps 40
 }
 
 $sequence "reload_empty_nomen_20" {
@@ -659,7 +660,7 @@ $sequence "reload_empty_nomen_20" {
 	fadein 0.2
 	fadeout 0.2
 	snap
-	fps 30
+	fps 40
 }
 
 
@@ -687,8 +688,8 @@ $sequence "reload_empty_30" {
 	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
 	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
 	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event 5004 73 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
-	{ event 5004 73 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
+	{ event 5004 69 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -706,7 +707,7 @@ $sequence "reload_nomen_30" {
 	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
-	fps 30
+	fps 40
 }
 
 $sequence "reload_empty_nomen_30" {
@@ -718,12 +719,12 @@ $sequence "reload_empty_nomen_30" {
 	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
 	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
 	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
-	{ event 5004 73 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
-	{ event 5004 73 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 69 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
+	{ event 5004 69 "Arccw_FAS2_Generic.Cloth_Movement" }
 	fadein 0.2
 	fadeout 0.2
 	snap
-	fps 30
+	fps 40
 }
 
 
