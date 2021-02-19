@@ -17,6 +17,7 @@ att.Mult_MoveSpeed = 0.95
 
 att.LHIK = true
 att.LHIK_Priority = -2
+
 att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_felin.mdl"
+
 att.ModelOffset = Vector(3.8, 0, 0)
-att.AddSuffix = "-G"
