@@ -1,5 +1,5 @@
 att.PrintName = "Obrez Handguard"
-att.Icon = Material("entities/arccw_mifl_fas2_rpk_hg_ak.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_rpk_hg_ak2.png", "mips smooth")
 att.Description = "The lightest of machinegun."
 att.SortOrder = -2
 att.Desc_Pros = {
@@ -29,6 +29,6 @@ att.LHIK_Priority = -2
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
 
-att.ModelOffset = Vector(2, 0.5, 1)
+att.ModelOffset = Vector(0, 0.5, 1)
 
 att.GivesFlags = {"ubgl_no"}
