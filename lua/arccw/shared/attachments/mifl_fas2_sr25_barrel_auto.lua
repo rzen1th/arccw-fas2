@@ -1,5 +1,5 @@
 att.PrintName = "CQB Handguard"
-att.Icon = nil --Material("entities/arccw_mifl_fas2_m4a1_hg_a2.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sr25_hg_auto.png", "mips smooth")
 att.Description = "Shorten handguard tuned for automatic fire capability."
 att.SortOrder = 10
 att.Desc_Pros = {

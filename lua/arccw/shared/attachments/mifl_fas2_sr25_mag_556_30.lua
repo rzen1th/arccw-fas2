@@ -1,5 +1,5 @@
 att.PrintName = "30-Round 5.56mm"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_20.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_g3_mag_556_30.png", "mips smooth")
 att.Description = "Smaller but lighter 20 round magazine."
 att.Desc_Pros = {
 }
