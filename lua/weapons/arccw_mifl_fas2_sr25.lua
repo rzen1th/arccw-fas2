@@ -108,7 +108,12 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 1},
         },
     },
-
+	
+    ["mifl_fas2_sr25_barrel_sd"] = {
+        VMBodygroups = {
+            {ind = 3, bg = 1}, 
+        },	
+    },
     ["mifl_fas2_sr25_barrel_k"] = {
         VMBodygroups = {
             {ind = 1, bg = 4}, {ind = 2, bg = 3}, 
@@ -117,6 +122,11 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4.086, -5, 1.8),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1
+        },		
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(11.5, -1.3, 0)
+            },
         },		
     },
     ["mifl_fas2_sr25_barrel_ak"] = {
@@ -128,16 +138,31 @@ SWEP.AttachmentElements = {
             Ang = Angle(0, 0, 0),
             Magnification = 1.1
         },	
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(17, -1.3, 0)
+            },
+        },		
     },
     ["mifl_fas2_sr25_barrel_auto"] = {
         VMBodygroups = {
             {ind = 1, bg = 1}, {ind = 2, bg = 1}, 
-        }
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(22, -1.3, 0)
+            },
+        },		
     },
     ["mifl_fas2_sr25_barrel_c"] = {
         VMBodygroups = {
             {ind = 1, bg = 2}, {ind = 2, bg = 2}, 
-        }
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(19, -1.3, 0)
+            },
+        },		
     },	
 	
     ["60"] = {
@@ -164,7 +189,17 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 4, bg = 6},
         },
+    },
+    ["mifl_fas2_sr25_mag_556_30"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 7},
+        },
     },	
+    ["mifl_fas2_sr25_mag_556_60"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 8},
+        },
+    },		
     ["mifl_fas2_sr25_mag_9mm_32"] = {
         VMBodygroups = {
             {ind = 4, bg = 4},
@@ -218,7 +253,7 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(10, 1, 0),
             vang = Angle(0, 0, -90)
-        }
+        },
     },
     {
         PrintName = "Muzzle",
@@ -226,12 +261,12 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(26, -1.3, 0),
+            vpos = Vector(30, -1.3, 0),
             vang = Angle(0, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_m4a1_barrel_sd", "mifl_fas2_m4a1_barrel_ar2"}
+        ExcludeFlags = {"mifl_fas2_sr25_barrel_sd"}	
     },
     {
         PrintName = "Underbarrel",
@@ -253,7 +288,7 @@ SWEP.Attachments = {
             vpos = Vector(9, 0, 0),
             vang = Angle(0, 0, -90)
         },
-        ExcludeFlags = {"mifl_fas2_sr25_barrel_ak", "mifl_fas2_sr25_barrel_k"}
+        ExcludeFlags = {"mifl_fas2_sr25_barrel_ak", "mifl_fas2_sr25_barrel_k", "mifl_fas2_sr25_barrel_c"}
     },
     {
         PrintName = "Tactical",
