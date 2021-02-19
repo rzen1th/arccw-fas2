@@ -68,7 +68,7 @@ SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 95
 SWEP.ShellScale = 1.25
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
-SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
+SWEP.CaseEffectAttachment = 3 -- which attachment to put the case effect on
 SWEP.SpeedMult = 0.95
 SWEP.SightedSpeedMult = 0.8
 SWEP.SightTime = 0.27
@@ -103,31 +103,12 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 4},
         },
     },
-    ["mifl_fas2_g20_stock_g18"] = {
-        VMBodygroups = {
-            {ind = 5, bg = 5},
-        },
-    },	
-    ["mifl_fas2_sg55x_stock_sd"] = {
-        VMBodygroups = {
-            {ind = 5, bg = 4},
-        },
-    },
     ["mifl_fas2_m4a1_stock_a2"] = {
         VMBodygroups = {
             {ind = 5, bg = 1},
         },
     },
-    ["mifl_fas2_m4a1_stock_sd"] = {
-        VMBodygroups = {
-            {ind = 5, bg = 2},
-        },
-    },
-    ["mifl_fas2_m4a1_stock_pdw"] = {
-        VMBodygroups = {
-            {ind = 5, bg = 3},
-        },
-    },
+
     ["whisperer"] = {
         NameChange = "AR-C4S",
         TrueNameChange = "M4A1-S",
@@ -136,170 +117,7 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 3},
         },
     },
-    ["mifl_fas2_m4a1_barrel_kompact"] = {
-        NameChange = "AR-G6c",
-        TrueNameChange = "M436",
-        VMBodygroups = {
-            {ind = 1, bg = 2},
-            {ind = 2, bg = 2},
-        },
-        Override_IronSightStruct = {
-            Pos = Vector(-4.07, -9, 1.67),
-            Ang = Angle(0.1, 0, 0.1),
-            Magnification = 1.1
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(19, -1.2, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_a2"] = {
-        NameChange = "AR-A2",
-        TrueNameChange = "M16A2",
-        VMBodygroups = {
-            {ind = 1, bg = 1},
-            {ind = 2, bg = 1},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(31, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_a3"] = {
-        NameChange = "AR-A3",
-        TrueNameChange = "M16A3",
-        VMBodygroups = {
-            {ind = 1, bg = 1},
-            {ind = 2, bg = 1},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(31, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_no"] = {
-        NameChange = "AR-Kurz",
-        TrueNameChange = "M4A1 Kurz",
-        VMBodygroups = {
-            {ind = 1, bg = 6},
-            {ind = 2, bg = 6},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(13, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_a1"] = {
-        NameChange = "AR-A1",
-        TrueNameChange = "M16A1",
-        VMBodygroups = {
-            {ind = 1, bg = 4},
-            {ind = 2, bg = 4},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(36, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_jungle"] = {
-        NameChange = "AR-A1",
-        TrueNameChange = "M16-S",
-        VMBodygroups = {
-            {ind = 1, bg = 14},
-            {ind = 2, bg = 4},
-        },
-    },
-    ["mifl_fas2_m4a1_barrel_para_a1"] = {
-        NameChange = "AR-A1C",
-        TrueNameChange = "M16 Para",
-        VMBodygroups = {
-            {ind = 1, bg = 8},
-            {ind = 2, bg = 7},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(23, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_a4"] = {
-        NameChange = "AR-A4",
-        TrueNameChange = "M16A4",
-        VMBodygroups = {
-            {ind = 1, bg = 13},
-            {ind = 2, bg = 12},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(35, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_famas"] = {
-        NameChange = "AR-CF",
-        TrueNameChange = "M4FA",
-        VMBodygroups = {
-            {ind = 1, bg = 12},
-            {ind = 2, bg = 8},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(21, -1.3, 0)
-            },
-            [1] = {
-                    vpos = Vector(8, -6.5, 0),
-            }
-        },
-        Override_IronSightStruct = {
-            Pos = Vector(-4.086, -9, 0.45),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.1
-        },
-    },
-    ["mifl_fas2_m4a1_barrel_commando"] = {
-        NameChange = "AR-C",
-        TrueNameChange = "M4C",
-        VMBodygroups = {
-            {ind = 1, bg = 10},
-            {ind = 2, bg = 9},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(17, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_ar2"] = {
-        NameChange = "AR-Overlord",
-        TrueNameChange = "AR4",
-        VMBodygroups = {
-            {ind = 1, bg = 11},
-            {ind = 2, bg = 10},
-        },
-    },
-    ["mifl_fas2_m4a1_barrel_heat"] = {
-        NameChange = "AR-EOD",
-        TrueNameChange = "M16 EOD",
-        VMBodygroups = {
-            {ind = 1, bg = 5},
-            {ind = 2, bg = 5},
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(29, -1.3, 0)
-            }
-        }
-    },
-    ["mifl_fas2_m4a1_barrel_ribs"] = {
-        VMBodygroups = {
-            {ind = 1, bg = 7},
-        },
-    },
+
     ["20"] = {
         VMBodygroups = {
             {ind = 3, bg = 2}
@@ -315,24 +133,26 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 8}
         }
     },
-    ["mifl_fas2_m4a1_mag_9mm_21"] = {
+    ["mifl_fas2_sr25_mag_762_30"] = {
         VMBodygroups = {
-            {ind = 3, bg = 4},
+            {ind = 4, bg = 2},
+        },
+    },
+    ["mifl_fas2_sr25_mag_762_20"] = {
+        VMBodygroups = {
             {ind = 4, bg = 1},
         },
     },
-    ["mifl_fas2_m4a1_mag_9mm_50"] = {
+    ["mifl_fas2_sr25_mag_556_20"] = {
         VMBodygroups = {
-            {ind = 3, bg = 6},
-            {ind = 4, bg = 1},
+            {ind = 4, bg = 6},
         },
     },	
-    ["mifl_fas2_m4a1_mag_9mm_32"] = {
+    ["mifl_fas2_sr25_mag_9mm_32"] = {
         VMBodygroups = {
-            {ind = 3, bg = 3},
-            {ind = 4, bg = 1},
+            {ind = 4, bg = 4},
         },
-    }
+    },	
 }
 
 SWEP.ExtraSightDist = 10
@@ -345,15 +165,7 @@ SWEP.WorldModelOffset = {
 SWEP.MirrorVMWM = true
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    local eles = data.eles
-    for i, k in pairs(eles or {}) do
-        if k == "mifl_fas2_m4a1_barrel_famas" and wep.Attachments[1].Installed then
-            vm:SetBodygroup(2, 11)
-        end
-        if k == "iron_none" then
-            vm:SetBodygroup(2, 8)
-        end
-    end
+    if wep.Attachments[1].Installed then vm:SetBodygroup(2, 4) end
 end
 
 SWEP.Attachments = {
@@ -373,7 +185,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Handguard",
-        Slot = "mifl_fas2_m4a1_hg",
+        Slot = "mifl_fas2_sr25_hg",
         Bone = "Dummy01",
         DefaultAttName = "Standard Handguard",
         Offset = {
@@ -429,12 +241,12 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Magazine",
-        Slot = {"mifl_fas2_m4a1_mag"},
+        Slot = {"mifl_fas2_sr25_mag"},
         DefaultAttName = "30-Round 5.56mm"
     },
     {
         PrintName = "Stock",
-        Slot = {"go_stock", "mifl_fas2_m4a1_stock", "mifl_fas2_uni_stock"},
+        Slot = {"go_stock", "mifl_fas2_sr25_stock", "mifl_fas2_uni_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
@@ -465,12 +277,20 @@ SWEP.Attachments = {
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
-    if wep.Attachments[7].Installed == "mifl_fas2_m4a1_mag_9mm_50" then return anim .. "_50" end
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_762_30" then return anim .. "_30" end
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_762_20" then return anim .. "_20" end	
+	
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_60" then return anim .. "_20" end
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_30" then return anim .. "_20" end	
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_20" then return anim .. "_20" end	
+	
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_32" then return anim .. "_20" end		
 end
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle"
+        Source = "idle",
+		Time = 0
     },
     ["draw"] = {
         Source = "deploy"
@@ -520,35 +340,67 @@ SWEP.Animations = {
         LHIKOut = 0.5
     },
     --------------------------------------------------------
-    ["reload_50"] = {
-        Source = "reload_50",
+    ["reload_30"] = {
+        Source = "reload_30",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.6,
 		LHIKEaseOut = 0.4,
     },
-    ["reload_empty_50"] = {
-        Source = "Reload_Empty_50",
+    ["reload_empty_30"] = {
+        Source = "Reload_Empty_30",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5		
     },
-    ["reload_nomen_50"] = {
-        Source = "reload_nomen_50",
+    ["reload_nomen_30"] = {
+        Source = "reload_nomen_30",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5	
     },
-    ["reload_nomen_empty_50"] = {
-        Source = "reload_empty_nomen_50",
+    ["reload_nomen_empty_30"] = {
+        Source = "reload_empty_nomen_30",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5
-    }	
+    },
+    --------------------------------------------------------
+    ["reload_20"] = {
+        Source = "reload_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.6,
+		LHIKEaseOut = 0.4,
+    },
+    ["reload_empty_20"] = {
+        Source = "Reload_Empty_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5		
+    },
+    ["reload_nomen_20"] = {
+        Source = "reload_nomen_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5	
+    },
+    ["reload_nomen_empty_20"] = {
+        Source = "reload_empty_nomen_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LastClip1OutTime = 0.5,
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.5
+    }		
 }

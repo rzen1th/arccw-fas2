@@ -22,6 +22,7 @@ $bodygroup "Iron"
 	studio "Iron_Auto.smd"
 	studio "Iron_C.smd"
 	studio "Iron_Kurz.smd"
+	blank
 }
 $bodygroup "Barrel"
 {
@@ -61,6 +62,8 @@ $cdmaterials "models\weapons\arccw_fas2\akm\"
 $cdmaterials "models\weapons\arccw_fas2\ak_extra\"
 $cdmaterials "models\weapons\arccw_fas2\m4a1\"
 $cdmaterials "models\weapons\arccw_fas2\sg55x\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1_extra\"
+$cdmaterials "models\weapons\arccw_fas2\famas\"
 
 $attachment "muzzle" "Dummy01" 18.38 0.67 0 rotate 0 0 0
 $attachment "muzzle_suppressor" "Dummy01" 18.38 0.67 0 rotate 0 0 0
@@ -524,7 +527,7 @@ $sequence "bipod_fire_last_scoped" {
 
 
 $sequence "reload" {
-	"sr25_anims\reload.smd"
+	"anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
@@ -540,7 +543,7 @@ $sequence "reload" {
 }
 
 $sequence "reload_empty" {
-	"sr25_anims\reload_empty.smd"
+	"anims\reload_empty.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
@@ -558,12 +561,47 @@ $sequence "reload_empty" {
 	fps 30
 }
 
+$sequence "reload_nomen" {
+	"anims\reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 65 "Arccw_FAS2_Weapon_SR25.Magslap" }
+	{ event 5004 65 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 45
+}
+
+$sequence "reload_empty_nomen" {
+	"anims\reload_empty.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 65 "Arccw_FAS2_Weapon_SR25.Magslap" }
+	{ event 5004 65 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 81 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
+	{ event 5004 81 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 45
+}
+
 
 
 
 
 $sequence "reload_20" {
-	"sr25_anims\reload.smd"
+	"anims\reload_20.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
@@ -577,7 +615,38 @@ $sequence "reload_20" {
 }
 
 $sequence "reload_empty_20" {
-	"sr25_anims\reload_empty.smd"
+	"anims\reload_empty_20.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 73 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
+	{ event 5004 73 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_nomen_20" {
+	"anims\reload_20.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_nomen_20" {
+	"anims\reload_empty_20.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1
 	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
 	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
@@ -594,6 +663,68 @@ $sequence "reload_empty_20" {
 }
 
 
+
+$sequence "reload_30" {
+	"anims\reload_30.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_30" {
+	"anims\reload_empty_30.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 73 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
+	{ event 5004 73 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "reload_nomen_30" {
+	"anims\reload_30.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "reload_empty_nomen_30" {
+	"anims\reload_empty_30.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1
+	{ event 5004 0 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 13 "Arccw_FAS2_Weapon_SR25.Magout" }
+	{ event 5004 15 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 35 "Arccw_FAS2_Generic.Magpouch" }
+	{ event 5004 51 "Arccw_FAS2_Weapon_SR25.Magin" }
+	{ event 5004 51 "Arccw_FAS2_Generic.Cloth_Movement" }
+	{ event 5004 73 "Arccw_FAS2_Weapon_SR25.BoltcatchSlap" }
+	{ event 5004 73 "Arccw_FAS2_Generic.Cloth_Movement" }
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
 
 
 
