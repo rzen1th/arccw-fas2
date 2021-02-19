@@ -44,7 +44,8 @@ $bodygroup "HG"
 	studio "HG_12.smd"	
 	studio "HG_12U.smd"		
 	studio "HG_Spuk.smd"
-	studio "HG_K2.smd"	
+	studio "HG_K2.smd"
+	studio "HG_12pt.smd"	
 }
 $bodygroup "Sights"
 {
