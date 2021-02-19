@@ -350,6 +350,11 @@ SWEP.AttachmentElements = {
             }				
         }
     },
+    ["zen_fas2_ak_grip_poly"] = {
+        VMBodygroups = {
+            {ind = 7, bg = 3}
+        }
+    },	
     ["5.45x39mm"] = {
         Override_Trivia_Calibre = "5.45x39mm Soviet"
     },

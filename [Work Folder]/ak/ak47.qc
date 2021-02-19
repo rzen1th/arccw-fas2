@@ -1,5 +1,3 @@
-// Created by Crowbar 0.68
-
 $modelname "weapons/arccw/mifl/fas2/c_ak47.mdl"
 $include fesiug.qci
 $scale 2
@@ -81,6 +79,7 @@ $bodygroup "Grip"
 	studio "Grip.smd"
 	studio "Grip_Heavy.smd"	
 	blank
+	studio "Grip_Poly.smd"
 }
 $bodygroup "HG_getting_railed"
 {
