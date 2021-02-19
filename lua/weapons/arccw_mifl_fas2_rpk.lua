@@ -691,18 +691,18 @@ SWEP.Animations = {
         Source = "reload_nomen_helix",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 0.8,
-        LHIKOut = 0.7,
-        LHIKEaseOut = 0.4
+        LHIKEaseIn = 0.4,
+        LHIKIn = 0.6,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3
     },
     ["reload_nomen_empty_helix"] = {
         Source = "reload_nomen_empty_helix",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
-        LHIKEaseIn = 0.5,
-        LHIKIn = 1.2,
-        LHIKOut = 2,
-        LHIKEaseOut = 0.5
+        LHIKEaseIn = 0.4,
+        LHIKIn = 0.8,
+        LHIKOut = 1.8,
+        LHIKEaseOut = 0.4
     },
 }
