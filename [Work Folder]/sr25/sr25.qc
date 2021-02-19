@@ -1,29 +1,49 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons\view\support\sr25.mdl"
+$modelname "weapons/arccw/mifl/fas2/c_sr25.mdl"
+$include fesiug.qci
+$scale 2
 
 $bodygroup "studio"
 {
-	studio "ref.smd"
+	studio "Main.smd"
 }
-$bodygroup "Hands"
+$bodygroup "HG"
 {
-	studio "ref_hand_red.smd"
-	studio "ref_hand_blue.smd"
+	studio "HG.smd"
+	studio "HG_Auto.smd"
+	studio "HG_C.smd"
+	studio "HG_AK.smd"
+	studio "HG_Kurz.smd"
+}
+$bodygroup "Iron"
+{
+	studio "Iron.smd"
+	studio "Iron_Auto.smd"
+	studio "Iron_C.smd"
+	studio "Iron_Kurz.smd"
 }
 $bodygroup "Barrel"
 {
 	blank
-	studio "ref_suppressor_sr25.smd"
-	studio "ref_suppressor_surefire.smd"
+	studio "Barrel_SD.smd"
 }
-$bodygroup "Bipod"
+$bodygroup "Mag"
 {
-	studio "ref_bipod.smd"
+	studio "Mag_762_10.smd"
+	studio "Mag_762_20.smd"	
+	studio "Mag_762_30.smd"	
+	studio "Mag_9mm_21.smd"
+	studio "Mag_9mm_32.smd"	
+	studio "Mag_9mm_50.smd"	
+	studio "Mag_556_20.smd"
+	studio "Mag_556_30.smd"	
+	studio "Mag_556_60.smd"		
 }
-$bodygroup "Sights"
+$bodygroup "Stock"
 {
-	studio "ref_leupold.smd"
+	studio "Stock.smd"
+	studio "Stock_Adaptor.smd"	
 }
 
 
@@ -33,10 +53,14 @@ $contents "solid"
 
 $illumposition 12.789 -0.785 -6.786
 
-$cdmaterials "models\weapons\view\support\sr25\"
-$cdmaterials "models\weapons\view\hands\"
-$cdmaterials "models\weapons\view\accessories\"
-$cdmaterials "models\weapons\shells\"
+$cdmaterials "models\weapons\arccw_fas2\sr25\"
+$cdmaterials "models\weapons\arccw_fas2\mp5sd\"
+$cdmaterials "models\weapons\arccw_fas2\accessories\"
+$cdmaterials "models\weapons\arccw_fas2\shells\"
+$cdmaterials "models\weapons\arccw_fas2\akm\"
+$cdmaterials "models\weapons\arccw_fas2\ak_extra\"
+$cdmaterials "models\weapons\arccw_fas2\m4a1\"
+$cdmaterials "models\weapons\arccw_fas2\sg55x\"
 
 $attachment "muzzle" "Dummy01" 18.38 0.67 0 rotate 0 0 0
 $attachment "muzzle_suppressor" "Dummy01" 18.38 0.67 0 rotate 0 0 0
@@ -579,4 +603,18 @@ $sequence "reload_empty_20" {
 	fadeout 0.2
 	snap
 	fps 30
+}
+
+
+
+
+
+$collisionmodel "Phys.smd"
+{
+	$mass 10
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+
 }
