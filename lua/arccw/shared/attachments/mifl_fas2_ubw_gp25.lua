@@ -1,6 +1,6 @@
 att.PrintName = "Kastet (40mm)"
 att.Icon = Material("entities/arccw_mifl_fas2_ubw_kastet.png")
-att.Description = "Soviet explosive ordnance launcher."
+att.Description = "Soviet explosive ordnance launcher. Has more AOE damage compare to its NATO counterpart."
 att.Desc_Pros = {
     "Selectable underbarrel grenade launcher",
 }
@@ -65,7 +65,7 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:DoLHIKAnimation("fire", 10/60)
 
-    wep:FireRocket("arccw_mifl_fas2_m203", 22500)
+    wep:FireRocket("arccw_mifl_fas2_gp25", 21000)
 
     wep:EmitSound("weapons/arccw_mifl/fas2/explosive_m79/m79_fire1.wav", 100)
 
