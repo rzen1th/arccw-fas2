@@ -13,7 +13,8 @@ att.Slot = "mifl_fas2_m4a1_hg"
 att.Override_ShootWhileSprint = true
 att.Mult_MoveSpeed = 1.15
 att.Mult_SightedMoveSpeed = 1.3
-
+att.Mult_MoveDispersion = 3
+att.Mult_HipDispersion = 1.5
 att.Mult_Range = 0.4
 att.Mult_Recoil = 1.75
 att.Mult_SightTime = 0.5

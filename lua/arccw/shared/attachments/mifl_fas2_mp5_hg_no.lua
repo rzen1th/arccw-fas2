@@ -11,7 +11,8 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_hg"
 att.Override_ShootWhileSprint = true
 att.Mult_RPM = 1.2
-
+att.Mult_MoveDispersion = 3
+att.Mult_HipDispersion = 1.5
 att.Mult_SightTime = 0.7
 att.Mult_ReloadTime = 0.9
 
@@ -24,7 +25,6 @@ att.Mult_SightedSpeedMult = 1.4
 att.Mult_AccuracyMOA = 3
 att.Mult_Range = 0.5
 
-att.Mult_HipDispersion = 1.5
 att.Mult_MoveDispersion = 1.5
 
 att.Add_BarrelLength = -8

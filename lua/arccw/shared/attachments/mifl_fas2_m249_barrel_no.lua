@@ -10,7 +10,8 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Override_ShootWhileSprint = true
 att.Slot = "mifl_fas2_m249_hg"
-
+att.Mult_MoveDispersion = 3
+att.Mult_HipDispersion = 1.5
 att.Add_BarrelLength = -10
 
 att.Mult_Range = 0.6

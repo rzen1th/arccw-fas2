@@ -12,7 +12,8 @@ att.AutoStats = true
 att.Slot = "mifl_fas2_ak_hg"
 att.Override_ShootWhileSprint = true
 att.ModelOffset = Vector(-5, -4.5, -1)
-
+att.Mult_MoveDispersion = 3
+att.Mult_HipDispersion = 1.5
 att.LHIK = true
 att.LHIK_Priority = -2
 
@@ -34,6 +35,6 @@ att.Mult_ReloadTime = 0.9
 att.Mult_DrawSpeeed = 1.5
 att.Mult_HolsterSpeed = 1.5
 
-att.Mult_HipDispersion = 0.6
+
 
 att.GivesFlags = {"ubgl_no"}
