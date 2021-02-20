@@ -3,11 +3,12 @@ att.Icon = Material("entities/arccw_mifl_fas2_m249_hg_xs.png", "mips smooth")
 att.Description = "Shorten the gun by half at the cost of everything, including your humanity."
 att.SortOrder = 8
 att.Desc_Pros = {
+	"pro.fas2.xs",
 }
 att.Desc_Cons = {
 }
 att.AutoStats = true
-
+att.Override_ShootWhileSprint = true
 att.Slot = "mifl_fas2_m249_hg"
 
 att.Add_BarrelLength = -10

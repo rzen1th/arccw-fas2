@@ -3,12 +3,13 @@ att.Icon = Material("entities/arccw_mifl_fas2_mp5_hg_no.png", "mips smooth")
 att.Description = "Completely disregarding the millions of dollars H&K spent on R&D to perfect the MP5 formula, you choose to cut off the barrel and worsen its ballistic performance. Since there's no actual handguard left, you also need to hold the weapon one-handed, making it even worse. Good job, genius!"
 att.SortOrder = -2
 att.Desc_Pros = {
+	"pro.fas2.xs",
 }
 att.Desc_Cons = {
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_mp5_hg"
-
+att.Override_ShootWhileSprint = true
 att.Mult_RPM = 1.2
 
 att.Mult_SightTime = 0.7

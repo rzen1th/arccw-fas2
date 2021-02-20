@@ -3,13 +3,14 @@ att.Icon = Material("entities/arccw_mifl_fas2_sg55x_xbarrel.png", "mips smooth")
 att.Description = "\"Ok, not that short!\""
 att.SortOrder = 1
 att.Desc_Pros = {
+	"pro.fas2.xs",
 }
 att.Desc_Cons = {
 	"con.fas2.ubgl",
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_sg55x_hg"
-
+att.Override_ShootWhileSprint = true
 att.Mult_MoveSpeed = 1.2
 att.Mult_Range = 0.5
 att.Mult_Recoil = 1.5

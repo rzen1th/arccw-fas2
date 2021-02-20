@@ -28,6 +28,7 @@ L["pro.fas2.akimbo"] = "100% more guns"
 L["con.fas2.akimbo"] = "No point of aiming"
 
 L["con.fas2.ubgl"] = "Can not use underbarrel weapon"
+L["pro.fas2.xs"] = "Shoot while sprinting"
 
 L["pro.fas2.saf"] = "Halves recoil until the last shot"
 L["con.fas2.saf"] = "Last shot is disorienting"
@@ -35,3 +36,4 @@ L["con.fas2.saf"] = "Last shot is disorienting"
 L["pro.fas2.pen.25"] = "25mm Penetration"
 L["pro.fas2.pen.18"] = "18mm Penetration"
 L["pro.fas2.pen.12"] = "12mm Penetration"
+

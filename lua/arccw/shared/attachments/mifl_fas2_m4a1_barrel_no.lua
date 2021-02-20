@@ -3,13 +3,14 @@ att.Icon = Material("entities/arccw_mifl_fas2_m4a1_hg_no.png", "mips smooth")
 att.Description = "You seem to have taken a little too much off the front there."
 att.SortOrder = -10
 att.Desc_Pros = {
+	"pro.fas2.xs",
 }
 att.Desc_Cons = {
 	"con.fas2.ubgl"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_m4a1_hg"
-
+att.Override_ShootWhileSprint = true
 att.Mult_MoveSpeed = 1.15
 att.Mult_SightedMoveSpeed = 1.3
 

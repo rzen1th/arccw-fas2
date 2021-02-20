@@ -3,13 +3,14 @@ att.Icon = Material("entities/arccw_mifl_fas2_famas_hg_no.png", "mips smooth")
 att.Description = "Reduced the length by half. Its insane firerate may be of use, if one can still hit their target."
 att.SortOrder = 2
 att.Desc_Pros = {
+	"pro.fas2.xs",
 }
 att.Desc_Cons = {
 	"con.fas2.ubgl",
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_famas_hg"
-
+att.Override_ShootWhileSprint = true
 att.Mult_Range = 0.3
 att.Mult_Recoil = 1.5
 att.Mult_SightTime = 0.75

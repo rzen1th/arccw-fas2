@@ -3,13 +3,14 @@ att.Icon = Material("entities/arccw_mifl_fas2_ak_hg_xs.png", "mips smooth")
 att.Description = "The most compact comrade around."
 att.SortOrder = -10
 att.Desc_Pros = {
+	"pro.fas2.xs",
 }
 att.Desc_Cons = {
 	"con.fas2.ubgl"
 }
 att.AutoStats = true
 att.Slot = "mifl_fas2_ak_hg"
-
+att.Override_ShootWhileSprint = true
 att.ModelOffset = Vector(-5, -4.5, -1)
 
 att.LHIK = true
