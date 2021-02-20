@@ -1,5 +1,5 @@
 att.PrintName = "30-Round 7.62x51mm"
-att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_20.png", "mips smooth")
+att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
 att.Description = "Curved mag straight from an AK. Not even the same calibre."
 att.Desc_Pros = {
 }

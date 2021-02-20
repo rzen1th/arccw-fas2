@@ -304,7 +304,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = {"mifl_fas2_sr25_mag"},
-        DefaultAttName = "30-Round 5.56mm"
+        DefaultAttName = "10-Round 7.62x51mm"
     },
     {
         PrintName = "Stock",
@@ -363,11 +363,12 @@ SWEP.Animations = {
         Source = "deploy"
     },
     ["fire"] = {
-        Source = {"shoot"},
+        Source = {"fire1"},
         ShellEjectAt = 0
     },
     ["fire_iron"] = {
         Source = "idle",
+		Time = 0,		
         ShellEjectAt = 0
     },
     ["reload"] = {
