@@ -37,6 +37,7 @@ slogkot (Fluffy Mammal)
 -akimbo anim
 -shotgun fired shells
 -underbarrel stuff
+-sr25 new reload animation
 -horrible icons render/drawing (im not a fucking graphic designer mmkay?)
 
 Fesiug
