@@ -20,7 +20,7 @@ att.Mult_ReloadTime = 0.75
 att.Mult_Damage = 1.15
 att.Mult_DamageMin = 1.5
 att.LHIK = true
-att.LHIK_Priority = -2
+att.LHIK_Priority = -20
 
 att.Model = "models/weapons/arccw/mifl_atts/fas2/grip_famas_sd.mdl"
 

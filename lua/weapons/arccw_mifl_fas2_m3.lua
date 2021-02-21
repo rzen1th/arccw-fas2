@@ -156,7 +156,7 @@ SWEP.AttachmentElements = {
     ["mifl_fas2_m3_barrel_s"] = {
         VMBodygroups = {	{ind = 0, bg = 1}, {ind = 1, bg = 3}, {ind = 2, bg = 3}, {ind = 3, bg = 5}	},
         AttPosMods = {
-            [5] = {vpos = Vector(32, -1.15, 0),},
+            [5] = {vpos = Vector(25.5, -1.15, 0),},
         }		
     },	
     ["rail"] = {
