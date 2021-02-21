@@ -87,7 +87,7 @@ SWEP.HoldtypeSights = "rpg"
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.ActivePos = Vector(1, 1, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
-SWEP.CrouchPos = Vector(-0.45, 0, -0.2)
+SWEP.CrouchPos = Vector(-0.2, 1, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -10)
 SWEP.HolsterPos = Vector(1, -2, 1)
 SWEP.HolsterAng = Angle(-15, 25, -10)
@@ -100,10 +100,10 @@ SWEP.BarrelLength = 24
 SWEP.AttachmentElements = {
     ["buftube"] = {
         VMBodygroups = {
-            {ind = 5, bg = 4},
+            {ind = 5, bg = 1},
         },
     },
-    ["mifl_fas2_m4a1_stock_a2"] = {
+    ["mifl_fas2_uni_rif_nostock"] = {
         VMBodygroups = {
             {ind = 5, bg = 1},
         },
@@ -298,7 +298,7 @@ SWEP.Attachments = {
             vpos = Vector(10, -2, 0.5),
             vang = Angle(0, 0, 180)
         },
-        ExtraSightDist = 12,
+        ExtraSightDist = 13,
         CorrectivePos = Vector(0, -2, 1.5)
     },
     {
@@ -312,10 +312,10 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Stock",
         Bone = "Dummy01",
         Offset = {
-            vpos = Vector(-2, -1.3, 0),
+            vpos = Vector(-2.2, -1.25, 0),
             vang = Angle(0, 0, -90)
         },
-        VMScale = Vector(1, 1, 1)
+        VMScale = Vector(1.2, 1.2, 1.2)
     },
     {
         PrintName = "Ammo Type",
@@ -412,7 +412,7 @@ SWEP.Animations = {
     --------------------------------------------------------
     ["reload_30"] = {
         Source = "reload_30",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.6,
@@ -420,7 +420,7 @@ SWEP.Animations = {
     },
     ["reload_empty_30"] = {
         Source = "Reload_Empty_30",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
@@ -428,14 +428,14 @@ SWEP.Animations = {
     },
     ["reload_nomen_30"] = {
         Source = "reload_nomen_30",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5	
     },
     ["reload_nomen_empty_30"] = {
         Source = "reload_empty_nomen_30",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
@@ -444,7 +444,7 @@ SWEP.Animations = {
     --------------------------------------------------------
     ["reload_20"] = {
         Source = "reload_20",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.6,
@@ -452,7 +452,7 @@ SWEP.Animations = {
     },
     ["reload_empty_20"] = {
         Source = "Reload_Empty_20",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
@@ -460,14 +460,14 @@ SWEP.Animations = {
     },
     ["reload_nomen_20"] = {
         Source = "reload_nomen_20",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5	
     },
     ["reload_nomen_empty_20"] = {
         Source = "reload_empty_nomen_20",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,

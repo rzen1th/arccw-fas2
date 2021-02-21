@@ -1,10 +1,10 @@
 att.PrintName = "20-Round 7.62x51mm"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_20.png", "mips smooth")
-att.Description = "Curved mag straight from an AK. Not even the same calibre."
+att.Description = "Longer magazine that increased capacity."
 att.Desc_Pros = {
+    "pro.magcap"
 }
 att.Desc_Cons = {
-    "con.magcap"
 }
 att.SortOrder = 20 + 1000
 att.AutoStats = true

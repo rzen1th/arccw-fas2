@@ -3,6 +3,7 @@ att.Icon = Material("entities/arccw_mifl_fas2_sr25_hg_auto.png", "mips smooth")
 att.Description = "Shorten handguard tuned for automatic fire capability."
 att.SortOrder = 10
 att.Desc_Pros = {
+	"pro.fullauto",
 }
 att.Desc_Cons = {
 }
@@ -21,4 +22,10 @@ att.Override_Firemodes = {
     }
 }
 
+att.Mult_Range = 0.8
+att.Mult_SightTime = 0.9
+att.Mult_HipDispersion = 1.15
+att.Mult_MoveSpeed = 0.95
 
+att.Add_BarrelLength = -2
+att.Mult_ShootPitch = 1.05

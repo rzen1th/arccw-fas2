@@ -527,7 +527,7 @@ SWEP.Animations = {
     --------------------------------------------------------
     ["reload_50"] = {
         Source = "reload_50",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.6,
@@ -535,7 +535,7 @@ SWEP.Animations = {
     },
     ["reload_empty_50"] = {
         Source = "Reload_Empty_50",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
@@ -543,14 +543,14 @@ SWEP.Animations = {
     },
     ["reload_nomen_50"] = {
         Source = "reload_nomen_50",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5	
     },
     ["reload_nomen_empty_50"] = {
         Source = "reload_empty_nomen_50",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,

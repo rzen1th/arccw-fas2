@@ -9,7 +9,6 @@ att.SortOrder = 32 + 50
 att.AutoStats = true
 att.Slot = {"mifl_fas2_sr25_mag"}
 
-att.Mult_ReloadTime = 1.15
 att.Mult_SightTime = 1.05
 att.Override_ClipSize = 32
 
