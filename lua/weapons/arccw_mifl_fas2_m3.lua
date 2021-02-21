@@ -300,16 +300,10 @@ SWEP.Animations = {
         Source = "idle"
     },
     ["draw"] = {
-        Source = "draw",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
+        Source = "deploy",
     },
     ["ready"] = {
-        Source = "ready",
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.5,
+        Source = "deploy",
     },
     ["fire"] = {
         Source = "fire1",

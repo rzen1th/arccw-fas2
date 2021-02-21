@@ -16,13 +16,16 @@ att.Override_ClipSize = 50
 att.Mult_Damage = 0.9
 att.Mult_DamageMin = 0.15
 att.Mult_Range = 0.25
-att.Mult_Penetration = 0.7
+att.Mult_Penetration = 0.25
 att.Mult_Recoil = 0.5
 att.Mult_RecoilSide = 0.2
 att.Mult_VisualRecoilMult = 0.75
 att.Mult_RPM = 1.5
 att.Mult_AccuracyMOA = 5
-att.Mult_ShootPitch = 0.9
+att.Mult_ShootPitch = 1.2
+
+att.Mult_MoveSpeed = 0.9
+att.Mult_SightTime = 0.95
 
 att.Override_Ammo = "pistol"
 att.Override_ShellModel = "models/shells/shell_9mm.mdl"

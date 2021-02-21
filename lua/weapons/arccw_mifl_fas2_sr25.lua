@@ -366,11 +366,19 @@ SWEP.Animations = {
         Source = {"fire1"},
         ShellEjectAt = 0
     },
+    ["fire_empty"] = {
+        Source = "fire_last",
+        ShellEjectAt = 0,		
+    },	
     ["fire_iron"] = {
         Source = "idle",
 		Time = 0,		
         ShellEjectAt = 0
     },
+    ["fire_iron_empty"] = {
+        Source = "fire_last",
+        ShellEjectAt = 0,			
+    },		
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
