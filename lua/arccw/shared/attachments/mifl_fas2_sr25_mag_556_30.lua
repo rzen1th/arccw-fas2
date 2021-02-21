@@ -2,9 +2,9 @@ att.PrintName = "30-Round 5.56mm"
 att.Icon = Material("entities/arccw_mifl_fas2_g3_mag_556_30.png", "mips smooth")
 att.Description = "Conversion to a weaker calibre option."
 att.Desc_Pros = {
+    "pro.magcap"
 }
 att.Desc_Cons = {
-    "con.magcap"
 }
 att.SortOrder = 30 + 100
 att.AutoStats = true

@@ -2,9 +2,9 @@ att.PrintName = "60-Round 5.56mm"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_60.png", "mips smooth")
 att.Description = "Quad stack magazine in a lower calibre."
 att.Desc_Pros = {
+    "pro.magcap"
 }
 att.Desc_Cons = {
-    "con.magcap"
 }
 att.SortOrder = 60 + 100
 att.AutoStats = true

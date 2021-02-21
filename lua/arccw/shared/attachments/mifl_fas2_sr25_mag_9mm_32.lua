@@ -2,6 +2,7 @@ att.PrintName = "32-Round 9mm"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_32.png", "mips smooth")
 att.Description = "Conversion to a pistol caliber, offering lots of bullet really quickly packed in a longer stick mag."
 att.Desc_Pros = {
+    "pro.magcap"
 }
 att.Desc_Cons = {
 }
