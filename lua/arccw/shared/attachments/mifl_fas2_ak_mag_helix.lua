@@ -12,6 +12,7 @@ att.Slot = "mifl_fas2_rpk_mag"
 att.ActivateElements = {"64_57"}
 att.Override_ClipSize = 64
 att.ExcludeFlags = {"fg_no"}
+att.GivesFlags = {"helix_no"}
 
 att.Mult_Damage = 0.9
 att.Mult_DamageMin = 0.9

@@ -21,6 +21,7 @@ $bodygroup "Mag"
 	studio "12G.smd"
 	studio "762_30.smd"	
 	blank
+	studio "556_60.smd"	
 }
 $bodygroup "HG"
 {

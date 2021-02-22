@@ -251,6 +251,9 @@ SWEP.AttachmentElements = {
     ["30_556"] = {
         VMBodygroups = {{ind = 1, bg = 5}}
     },
+    ["60_556"] = {
+        VMBodygroups = {{ind = 1, bg = 10}}
+    },	
     ["12_20g"] = {
         VMBodygroups = {{ind = 1, bg = 7}}
     }
@@ -494,7 +497,7 @@ SWEP.Attachments = {
             vpos = Vector(-24,2,0),
             vang = Angle(0, 0, -90),
         },
-        ExcludeFlags = {"ubgl_no"},		
+        ExcludeFlags = {"ubgl_no", "helix_no"},		
         InstalledEles = {"rail_b"},			
     },
     {
