@@ -74,7 +74,7 @@ SWEP.SightedSpeedMult = 0.8
 SWEP.SightTime = 0.27
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.086, -9, 1.05),
+    Pos = Vector(-4.086, -7, 1.05),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -85,10 +85,10 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.ActivePos = Vector(1, 1, 1)
+SWEP.ActivePos = Vector(0, 4, 1.25)
 SWEP.ActiveAng = Angle(0, 0, 0)
-SWEP.CrouchPos = Vector(-0.2, 1, -0.2)
-SWEP.CrouchAng = Angle(0, 0, -10)
+SWEP.CrouchPos = Vector(-0.2, 3, -0.2)
+SWEP.CrouchAng = Angle(0, 0, -7.5)
 SWEP.HolsterPos = Vector(1, -2, 1)
 SWEP.HolsterAng = Angle(-15, 25, -10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
@@ -391,7 +391,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5
+        LHIKOut = 0.4
     },
     ["reload_nomen"] = {
         Source = "reload_nomen",
@@ -407,7 +407,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5
+        LHIKOut = 0.25
     },
     --------------------------------------------------------
     ["reload_30"] = {
@@ -415,8 +415,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.6,
-		LHIKEaseOut = 0.4,
+        LHIKOut = 0.5
     },
     ["reload_empty_30"] = {
         Source = "Reload_Empty_30",
@@ -424,7 +423,7 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5		
+        LHIKOut = 0.4	
     },
     ["reload_nomen_30"] = {
         Source = "reload_nomen_30",
@@ -436,10 +435,9 @@ SWEP.Animations = {
     ["reload_nomen_empty_30"] = {
         Source = "reload_empty_nomen_30",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5
+        LHIKOut = 0.25
     },
     --------------------------------------------------------
     ["reload_20"] = {
@@ -447,8 +445,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.6,
-		LHIKEaseOut = 0.4,
+        LHIKOut = 0.5
     },
     ["reload_empty_20"] = {
         Source = "Reload_Empty_20",
@@ -456,7 +453,7 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5		
+        LHIKOut = 0.4	
     },
     ["reload_nomen_20"] = {
         Source = "reload_nomen_20",
@@ -468,9 +465,8 @@ SWEP.Animations = {
     ["reload_nomen_empty_20"] = {
         Source = "reload_empty_nomen_20",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5
+        LHIKOut = 0.25
     }		
 }

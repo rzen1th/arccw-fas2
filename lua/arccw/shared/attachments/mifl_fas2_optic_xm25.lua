@@ -18,7 +18,7 @@ att.HolosightPiece = "models/weapons/arccw/mifl_atts/fas2_optic_xm25_hsp.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 10, -2.5),
+        Pos = Vector(0, 12, -2.5),
         Ang = Angle(0, 0, 0),
         Magnification = 1.2,
         Thermal = true,
@@ -36,7 +36,7 @@ att.HolosightMagnification = 4
 att.HolosightMagnificationMin = 6
 att.HolosightMagnificationMax = 6
 att.HolosightNoFlare = true
-att.HolosightSize = 10
+att.HolosightSize = 15
 att.HolosightBone = "holosight"
 att.HolosightBlackbox = true
 att.Colorable = true

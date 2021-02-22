@@ -53,7 +53,7 @@ $surfaceprop "default"
 
 $contents "solid"
 
-$illumposition 12.789 -0.785 -6.786
+$illumposition 0 0 0
 
 $cdmaterials "models\weapons\arccw_fas2\sr25\"
 $cdmaterials "models\weapons\arccw_fas2\mp5sd\"
@@ -72,10 +72,6 @@ $attachment "ejector" "Dummy01" 0.38 0.9 -0.15 rotate -70 60 -60
 $attachment "3" "Dummy01" 0.45 1.13 0.22 rotate -60 35 -25
 $attachment "scopeoffset" "Dummy01" -4.12 -2.03 0.6 rotate 0 0 0
 $attachment "scopeoffset_bipod" "Dummy01" -5.02 -2.03 0.6 rotate 0 0 0
-
-$cbox 0 0 0 0 0 0
-
-$bbox -11.394 -12.245 -22.295 31.62 9.948 7.861
 
 $definebone "Dummy01" "" -2.031752 -8.061662 -2.944043 0 -89.999982 89.999982 0 0 0 0 0 0
 $definebone "Dummy06" "Dummy01" 12.202965 0.65435 -0.000003 0.000019 -180.000005 180.000005 0 0 0 0 0 0

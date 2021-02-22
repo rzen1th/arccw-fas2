@@ -37,3 +37,9 @@ L["pro.fas2.pen.25"] = "25mm Penetration"
 L["pro.fas2.pen.18"] = "18mm Penetration"
 L["pro.fas2.pen.12"] = "12mm Penetration"
 
+
+
+
+
+
+L["pro.fullauto"] = "Full Auto"

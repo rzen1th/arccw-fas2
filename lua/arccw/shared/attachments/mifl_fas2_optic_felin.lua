@@ -18,7 +18,7 @@ att.Model = "models/weapons/arccw/mifl_atts/fas2/felin_scope.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 17, -1.2),
+        Pos = Vector(0, 17, -1.25),
         Ang = Angle(0, 0, 0),
         Magnification = 2,
         ScopeMagnification = 2,
@@ -30,7 +30,7 @@ att.AdditionalSights = {
             HolosightMagnificationMax = 12,
             HolosightReticle = Material("mifl_fas2_reticle/frf3.png", "mips smooth"),
             HolosightNoFlare = true,
-            HolosightSize = 6,
+            HolosightSize = 12,
             HolosightBlackbox = true,
             Colorable = true,
             HolosightPiece = "weapons/arccw/mifl_atts/fas2/felin_scope_hsp.mdl"
@@ -41,7 +41,7 @@ att.AdditionalSights = {
         IgnoreExtra = true,
     },
     {
-        Pos = Vector(0, 17, -1.2),
+        Pos = Vector(0, 17, -1.25),
         Ang = Angle(0, 0, 0),
         Magnification = 2,
         ScopeMagnification = 2,
@@ -56,7 +56,7 @@ att.AdditionalSights = {
             HolosightMagnificationMax = 6,
             HolosightReticle = Material("mifl_fas2_reticle/frf2.png", "mips smooth"),
             HolosightNoFlare = true,
-            HolosightSize = 6,
+            HolosightSize = 12,
             HolosightBlackbox = true,
             Colorable = true,
             HolosightPiece = "weapons/arccw/mifl_atts/fas2/felin_scope_hsp.mdl"
