@@ -21,6 +21,11 @@ att.Mult_Recoil = 0.7
 att.Mult_RecoilSide = 0.5
 att.Mult_RPM = 1.35
 
+att.Mult_ReloadTime = 1.1
+att.Mult_DrawTime = 1.1
+att.Mult_SightTime = 1.1
+att.Mult_MoveSpeed = 0.95
+
 att.Override_Ammo = "smg1"
 
 att.Hook_GetShootSound = function(wep, fsound)
