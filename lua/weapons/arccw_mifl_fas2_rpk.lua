@@ -557,7 +557,7 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local installed = wep.Attachments[7].Installed
 
-    if installed == "mifl_fas2_ak_mag_939_40" or installed == "mifl_fas2_ak_mag_20g" or installed == "mifl_fas2_ak_mag_556" then return anim .. "_939" end
+    if installed == "mifl_fas2_ak_mag_939_40" or installed == "mifl_fas2_ak_mag_20g" or installed == "mifl_fas2_ak_mag_556" or installed == "mifl_fas2_ak_mag_556_60" then return anim .. "_939" end
 
     if installed == "mifl_fas2_ak_mag_drum" then return anim .. "_drum" end
 
