@@ -351,7 +351,8 @@ end
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle"
+        Source = "idle",
+		Time = 0
     },
     ["idle_empty"] = {
         Source = "idle_empty"

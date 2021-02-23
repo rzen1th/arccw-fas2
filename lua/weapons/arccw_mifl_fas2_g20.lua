@@ -87,7 +87,7 @@ SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.200
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.856, -1, 1.164),
+    Pos = Vector(-2.856, -1, 1.15),
     Ang = Angle(0, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -432,7 +432,8 @@ end
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle"
+        Source = "idle",
+		Time = 0
     },
     ["idle_empty"] = {
         Source = "idle_empty"

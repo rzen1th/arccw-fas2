@@ -108,8 +108,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.071, 0, 2.659),
-    Ang = Angle(-0.2, 0, 0),
+    Pos = Vector(-4.071, 0, 2.6),
+    Ang = Angle(-0.05, 0, 0),
     Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
@@ -252,6 +252,10 @@ SWEP.Hook_SelectFireAnimation = function(wep, anim)
 end
 
 SWEP.Animations = {
+    ["idle"] = {
+        Source = "idle",
+		Time = 0
+    },
     ["ready"] = {
         Source = "draw",
     },
