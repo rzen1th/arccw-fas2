@@ -126,6 +126,13 @@ SWEP.BarrelLength = 60
 
 SWEP.ShellRotateAngle = Angle(0, 90, 0)
 
+SWEP.Bipod_Integral = nil
+SWEP.O_Hook_Bipod = function(wep, data)
+    if wep.Attachments[2].Installed == nil then return {buff = "Bipod", current = true} end
+    if wep.Attachments[2].Installed then return {buff = "Bipod", current = true}	end
+	if wep.Attachments[2].Installed == "mifl_fas2_m82_obrez" then return {buff = "Bipod", current = false}	end
+end
+
 SWEP.AttachmentElements = {
     ["whisperer"] = {
         TrueNameChange = "M82S",
@@ -357,6 +364,5 @@ SWEP.Animations = {
     },
 }
 
-SWEP.Bipod_Integral = false
 SWEP.BipodRecoil = 0.1
 SWEP.BipodDispersion = 0.2
