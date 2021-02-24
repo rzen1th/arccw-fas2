@@ -133,7 +133,7 @@ SWEP.AttachmentElements = {
             Magnification = 1.05,
         },
         AttPosMods = {
-            [3] = {	vpos = Vector(29.5, -1.3, 0.8) } 	},		
+            [3] = {	vpos = Vector(49, -1.3, 0.8) } 	},		
     },
     ["mifl_fas2_g3_hg_psg2"] = {
         VMBodygroups = {	{ind = 1, bg = 6}	},
