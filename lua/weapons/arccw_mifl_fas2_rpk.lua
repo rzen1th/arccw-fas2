@@ -102,6 +102,11 @@ SWEP.CustomizePos = Vector(3, 0, -1)
 SWEP.CustomizeAng = Angle(10, 10, 5)
 SWEP.BarrelLength = 24
 
+SWEP.Bipod_Integral = nil
+SWEP.O_Hook_Bipod = function(wep, data)
+    if wep.Attachments[2].Installed == nil then return {buff = "Bipod", current = true} end
+end
+
 SWEP.AttachmentElements = {
     ["rail_b"] = {
         VMBodygroups = {
@@ -127,7 +132,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 7, bg = 1}, {ind = 6, bg = 4}
         }
-    },	
+    },
     ["mifl_fas2_ak_stock_ske"] = {
         VMBodygroups = {
             {ind = 6, bg = 1}
@@ -143,18 +148,18 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 1}
         },
         AttPosMods = {	[3] = {	vpos = Vector(-10, 0, 0) }	}
-    },	
+    },
     ["mifl_fas2_ak_hg_rpk_kkk"] = {
         VMBodygroups = {
             {ind = 2, bg = 2}
         },
         Override_IronSightStruct = {
-			Pos = Vector(-3.755, -8, 1.2),
-			Ang = Angle(0, 0, 0),
+            Pos = Vector(-3.755, -8, 1.2),
+            Ang = Angle(0, 0, 0),
             Magnification = 1.1
-        },		
+        },
         AttPosMods = {	[3] = {	vpos = Vector(-17, 0, 0) }	}
-    },		
+    },
     ["mifl_fas2_ak_hg_an94"] = {
         VMBodygroups = {	{ind = 2, bg = 4}, {ind = 3, bg = 1}, {ind = 4, bg = 1}	},
         Override_IronSightStruct = {
@@ -163,13 +168,13 @@ SWEP.AttachmentElements = {
             Magnification = 1.1
         },
         AttPosMods = {	[3] = {	vpos = Vector(0, 34, 3.1) }, [4] = { vpos = Vector(-21, 1.5, 0),}, [5] = { vpos = Vector(-24, 1.5, 0),},	}
-    },	
+    },
     ["mifl_fas2_ak_hg_12"] = {
         Override_IronSightStruct = {
             Pos = Vector(-3.755, -8, 0.6),
             Ang = Angle(-0.2, 0, 0),
             Magnification = 1.1
-        },	
+        },
         VMBodygroups = {
             {ind = 2, bg = 6},
         },
@@ -185,7 +190,7 @@ SWEP.AttachmentElements = {
             },
             [5] = {
                 vpos = Vector(-24, 1.2, 0),
-            },			
+            },
         }
     },
     ["mifl_fas2_ak_hg_xs"] = {
@@ -235,10 +240,10 @@ SWEP.AttachmentElements = {
     },
     ["30_762"] = {
         VMBodygroups = {{ind = 1, bg = 8}}
-    },	
+    },
     ["64_57"] = {
         VMBodygroups = {{ind = 1, bg = 2}}
-    },	
+    },
     ["9x39mm"] = {
         Override_Trivia_Calibre = "9x39mm"
     },
@@ -253,7 +258,7 @@ SWEP.AttachmentElements = {
     },
     ["60_556"] = {
         VMBodygroups = {{ind = 1, bg = 10}}
-    },	
+    },
     ["12_20g"] = {
         VMBodygroups = {{ind = 1, bg = 7}}
     }
@@ -262,16 +267,12 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(3, 0) end
-
     if wep.Attachments[1].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(3, 1) end
-
-    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end	
-    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end	
-
-    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end	
-    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end		
+    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end
+    if wep.Attachments[4].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end
+    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_12" then vm:SetBodygroup(5, 0) end
+    if wep.Attachments[5].Installed and wep.Attachments[2].Installed == "mifl_fas2_ak_hg_an94" then vm:SetBodygroup(5, 0) end
 end
-
 
 function SWEP:Hook_NameChange(name)
     local pre = "RPK"
@@ -301,7 +302,7 @@ function SWEP:Hook_NameChange(name)
                 post = "545"
             elseif v == "64_57" then
                 mid = "/"
-                post = "57"				
+                post = "57"
             elseif v == "5.56x45mm" then
                 mid = "/"
                 post = "556"
@@ -337,7 +338,7 @@ function SWEP:Hook_NameChange(name)
             elseif v == "10_953" then
                 post = "953"
             elseif v == "64_57" then
-                post = "57"						
+                post = "57"
             elseif v == "12_20g" then
                 post = "20"
             end
@@ -355,7 +356,7 @@ function SWEP:Hook_NameChange(name)
             elseif v == "5.56x45mm" then
                 post = "19"
             elseif v == "64_57" then
-                post = "57"						
+                post = "57"
             elseif v == "9x19mm" then
                 post = "19"
             elseif v == "10_953" then
@@ -381,7 +382,7 @@ function SWEP:Hook_NameChange(name)
             elseif v == "5.56x45mm" then
                 post = "556"
             elseif v == "64_57" then
-                post = "57"						
+                post = "57"
             elseif v == "9x19mm" then
                 post = "9"
             elseif v == "10_953" then
@@ -400,8 +401,8 @@ function SWEP:Hook_NameChange(name)
                 mid = "-"
                 post = "74"
             elseif v == "64_57" then
-                mid = "-"			
-                post = "57"						
+                mid = "-"
+                post = "57"
             elseif v == "5.56x45mm" then
                 mid = "-"
                 post = "101"
@@ -483,9 +484,9 @@ SWEP.Attachments = {
             vpos = Vector(-21, 2.5, 0),
             vang = Angle(0, 0, -90),
         },
-        InstalledEles = {"rail_b"},	
-		ExcludeFlags = {"helix_no"},		
-		GivesFlags = {"fg_no"},	
+        InstalledEles = {"rail_b"},
+        ExcludeFlags = {"helix_no"},
+        GivesFlags = {"fg_no"},
         MergeSlots = {5},
     },
     {
@@ -497,8 +498,8 @@ SWEP.Attachments = {
             vpos = Vector(-24,2,0),
             vang = Angle(0, 0, -90),
         },
-        ExcludeFlags = {"ubgl_no", "helix_no"},		
-        InstalledEles = {"rail_b"},			
+        ExcludeFlags = {"ubgl_no", "helix_no"},
+        InstalledEles = {"rail_b"},
     },
     {
         PrintName = "Tactical",
@@ -561,13 +562,13 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
 
     if installed == "mifl_fas2_ak_mag_drum" then return anim .. "_drum" end
 
-    if installed == "mifl_fas2_ak_mag_helix" then return anim .. "_helix" end	
+    if installed == "mifl_fas2_ak_mag_helix" then return anim .. "_helix" end
 end
 
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-		Time = 0
+        Time = 0
     },
     ["draw"] = {
         Source = "deploy",
