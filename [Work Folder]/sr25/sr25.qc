@@ -7,6 +7,8 @@ $scale 2
 $bodygroup "studio"
 {
 	studio "Main.smd"
+	studio "Main_Ske.smd"	
+	blank
 }
 $bodygroup "HG"
 {

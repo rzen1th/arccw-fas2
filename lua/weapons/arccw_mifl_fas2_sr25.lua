@@ -85,9 +85,9 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.ActivePos = Vector(0, 4, 1.25)
+SWEP.ActivePos = Vector(0, 1, 1.25)
 SWEP.ActiveAng = Angle(0, 0, 0)
-SWEP.CrouchPos = Vector(-0.2, 3, -0.2)
+SWEP.CrouchPos = Vector(-0.2, 1, -0.2)
 SWEP.CrouchAng = Angle(0, 0, -7.5)
 SWEP.HolsterPos = Vector(1, -2, 1)
 SWEP.HolsterAng = Angle(-15, 25, -10)
@@ -98,6 +98,11 @@ SWEP.CustomizeAng = Angle(10, 15, 15)
 SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {
+    ["go_perk_light"] = {
+        VMBodygroups = {
+            {ind = 0, bg = 1},
+        },
+    },
     ["buftube"] = {
         VMBodygroups = {
             {ind = 5, bg = 1},
