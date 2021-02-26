@@ -19,17 +19,17 @@ att.ActivateElements = {"roni"}
 
 att.Add_BarrelLength = 4
 
-att.Mult_Recoil = 0.4
-att.Mult_RecoilSide = 0.5
-att.Mult_SightTime = 1.5
+att.Mult_Recoil = 0.75
+att.Mult_RecoilSide = 0.75
+att.Mult_SightTime = 1.35
 att.Mult_Range = 1.5
-att.Mult_AccuracyMOA = 0.25
-att.Mult_MoveDispersion = 0.25
+att.Mult_AccuracyMOA = 0.5
+att.Mult_MoveDispersion = 0.5
 att.Mult_HipDispersion = 1.75
-att.Mult_SpeedMult = 0.9
+att.Mult_SpeedMult = 0.85
 att.Mult_SightedSpeedMult = 0.75
-att.Mult_DrawTime = 1.5
-att.Mult_HolsterTime = 1.5
+att.Mult_DrawTime = 1.35
+att.Mult_HolsterTime = 1.35
 att.Mult_RPM = 1.2
 
 att.Override_Firemodes = {
