@@ -1,4 +1,4 @@
-att.PrintName = "60-Round 5.56mm"
+att.PrintName = "60-Round 5.56mm SR-25"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_60.png", "mips smooth")
 att.Description = "Quad stack magazine in a lower calibre."
 att.Desc_Pros = {
@@ -10,16 +10,17 @@ att.SortOrder = 60 + 100
 att.AutoStats = true
 att.Slot = {"mifl_fas2_sr25_mag"}
 
-att.Mult_AccuracyMOA = 2.5
-att.Mult_MoveSpeed = 0.95
-att.Mult_SightTime = 1.05
 att.Override_ClipSize = 60
-att.Mult_ReloadTime = 1.1
-att.Mult_RPM = 1.2
 
-att.Mult_Damage = 1.5
-att.Mult_DamageMin = 0.2
-att.Mult_Range = 0.5
+att.Mult_AccuracyMOA = 3
+att.Mult_RPM = 1.1
+
+att.Mult_Damage = 0.8
+att.Mult_DamageMin = 0.7
+
+att.Mult_Recoil = 0.6
+att.Mult_RecoilSide = 0.5
+att.Mult_VisualRecoilMult = 0.8
 
 att.Mult_Recoil = 0.8
 att.Mult_RecoilSide = 0.4

@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "KSE-25"
 SWEP.TrueName = "SR-25"
 SWEP.Trivia_Class = "Designated Marksman Rifle"
-SWEP.Trivia_Desc = "Long range marksman rifle."
+SWEP.Trivia_Desc = "AR pattern marksman rifle with free-floating barrel."
 SWEP.Trivia_Manufacturer = "KAC"
 SWEP.Trivia_Calibre = "7.62×51mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -22,9 +22,9 @@ SWEP.ViewModel = "models/weapons/arccw/mifl/fas2/c_sr25.mdl"
 SWEP.WorldModel = "models/weapons/arccw/mifl/fas2/c_sr25.mdl"
 SWEP.ViewModelFOV = 62
 SWEP.DefaultBodygroups = "000000000000"
-SWEP.Damage = 25
-SWEP.DamageMin = 98 -- damage done at maximum range
-SWEP.Range = 100 -- in METRES
+SWEP.Damage = 45
+SWEP.DamageMin = 65 -- damage done at maximum range
+SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 17
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -33,9 +33,9 @@ SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 10 -- DefaultClip is automatically set.
 SWEP.PhysBulletMuzzleVelocity = 1200
-SWEP.Recoil = 1.2
-SWEP.RecoilSide = 0.5
-SWEP.RecoilRise = 0.85
+SWEP.Recoil = 0.9
+SWEP.RecoilSide = 0.3
+SWEP.RecoilRise = 0.5
 SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
@@ -50,9 +50,9 @@ SWEP.Firemodes = {
 
 SWEP.NPCWeaponType = {"weapon_ar2", "weapon_smg1"}
 SWEP.NPCWeight = 150
-SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 0.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 120
+SWEP.MoveDispersion = 150
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -69,9 +69,9 @@ SWEP.ShellPitch = 95
 SWEP.ShellScale = 1.25
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 3 -- which attachment to put the case effect on
-SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.8
-SWEP.SightTime = 0.27
+SWEP.SpeedMult = 0.93
+SWEP.SightedSpeedMult = 0.5
+SWEP.SightTime = 0.34
 
 SWEP.IronSightStruct = {
     Pos = Vector(-4.086, -7, 1.05),
@@ -113,63 +113,63 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 1},
         },
     },
-	
+
     ["mifl_fas2_sr25_barrel_sd"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1}, 
-        },	
+            {ind = 3, bg = 1},
+        },
     },
     ["mifl_fas2_sr25_barrel_k"] = {
         VMBodygroups = {
-            {ind = 1, bg = 4}, {ind = 2, bg = 3}, 
+            {ind = 1, bg = 4}, {ind = 2, bg = 3},
         },
         Override_IronSightStruct = {
             Pos = Vector(-4.086, -5, 1.8),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1
-        },		
+        },
         AttPosMods = {
             [3] = {
                 vpos = Vector(11.5, -1.3, 0)
             },
-        },		
+        },
     },
     ["mifl_fas2_sr25_barrel_ak"] = {
         VMBodygroups = {
-            {ind = 1, bg = 3}, {ind = 2, bg = 4}, 
+            {ind = 1, bg = 3}, {ind = 2, bg = 4},
         },
         Override_IronSightStruct = {
             Pos = Vector(-4.086, -7, 1.85),
             Ang = Angle(0, 0, 0),
             Magnification = 1.1
-        },	
+        },
         AttPosMods = {
             [3] = {
                 vpos = Vector(17, -1.3, 0)
             },
-        },		
+        },
     },
     ["mifl_fas2_sr25_barrel_auto"] = {
         VMBodygroups = {
-            {ind = 1, bg = 1}, {ind = 2, bg = 1}, 
+            {ind = 1, bg = 1}, {ind = 2, bg = 1},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(22, -1.3, 0)
             },
-        },		
+        },
     },
     ["mifl_fas2_sr25_barrel_c"] = {
         VMBodygroups = {
-            {ind = 1, bg = 2}, {ind = 2, bg = 2}, 
+            {ind = 1, bg = 2}, {ind = 2, bg = 2},
         },
         AttPosMods = {
             [3] = {
                 vpos = Vector(19, -1.3, 0)
             },
-        },		
-    },	
-	
+        },
+    },
+
     ["60"] = {
         VMBodygroups = {
             {ind = 3, bg = 1}
@@ -199,27 +199,27 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 4, bg = 7},
         },
-    },	
+    },
     ["mifl_fas2_sr25_mag_556_60"] = {
         VMBodygroups = {
             {ind = 4, bg = 8},
         },
-    },		
+    },
     ["mifl_fas2_sr25_mag_9mm_32"] = {
         VMBodygroups = {
             {ind = 4, bg = 4},
         },
-    },	
+    },
     ["mifl_fas2_sr25_mag_9mm_50"] = {
         VMBodygroups = {
             {ind = 4, bg = 5},
         },
-    },	
+    },
     ["mifl_fas2_sr25_mag_9mm_25"] = {
         VMBodygroups = {
             {ind = 4, bg = 3},
         },
-    },		
+    },
 }
 
 SWEP.ExtraSightDist = 10
@@ -271,7 +271,7 @@ SWEP.Attachments = {
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },
-        ExcludeFlags = {"mifl_fas2_sr25_barrel_sd"}	
+        ExcludeFlags = {"mifl_fas2_sr25_barrel_sd"}
     },
     {
         PrintName = "Underbarrel",
@@ -345,21 +345,44 @@ SWEP.Attachments = {
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_762_30" then return anim .. "_30" end
-    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_762_20" then return anim .. "_20" end	
-	
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_762_20" then return anim .. "_20" end
+
     if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_60" then return anim .. "_20" end
-    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_30" then return anim .. "_20" end	
-    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_20" then return anim .. "_20" end	
-	
-    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_32" then return anim .. "_20" end	
-    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_25" then return anim .. "_20" end	
-    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_50" then return anim .. "_30" end		
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_30" then return anim .. "_20" end
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_556_20" then return anim .. "_20" end
+
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_32" then return anim .. "_20" end
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_25" then return anim .. "_20" end
+    if wep.Attachments[7].Installed == "mifl_fas2_sr25_mag_9mm_50" then return anim .. "_30" end
+end
+
+function SWEP:Hook_NameChange(name)
+    local pre = "SR"
+    if !GetConVar("arccw_truenames"):GetBool() then pre = "KSE" end
+    local post = "25"
+    local mid = "-"
+    local hg = self.Attachments[2].Installed
+
+    if hg == "mifl_fas2_sr25_barrel_ak" then
+        pre = "SK"
+        post = post .. "U"
+    elseif hg == "mifl_fas2_sr25_barrel_c" then
+        post = "15"
+    elseif hg == "mifl_fas2_sr25_barrel_auto" then
+        pre = "ASR"
+    elseif hg == "mifl_fas2_sr25_barrel_sd" then
+        post = post .. " SD"
+    elseif hg == "mifl_fas2_sr25_barrel_k" then
+        post = post .. " Kurz"
+    end
+
+    return pre .. mid .. post
 end
 
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-		Time = 0
+        Time = 0
     },
     ["draw"] = {
         Source = "deploy"
@@ -373,17 +396,17 @@ SWEP.Animations = {
     },
     ["fire_empty"] = {
         Source = "fire_last",
-        ShellEjectAt = 0,		
-    },	
+        ShellEjectAt = 0,
+    },
     ["fire_iron"] = {
         Source = "idle",
-		Time = 0,		
+        Time = 0,
         ShellEjectAt = 0
     },
     ["fire_iron_empty"] = {
         Source = "fire_last",
-        ShellEjectAt = 0,			
-    },		
+        ShellEjectAt = 0,
+    },
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -428,14 +451,14 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.4	
+        LHIKOut = 0.4
     },
     ["reload_nomen_30"] = {
         Source = "reload_nomen_30",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5	
+        LHIKOut = 0.5
     },
     ["reload_nomen_empty_30"] = {
         Source = "reload_empty_nomen_30",
@@ -458,14 +481,14 @@ SWEP.Animations = {
         LastClip1OutTime = 0.5,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.4	
+        LHIKOut = 0.4
     },
     ["reload_nomen_20"] = {
         Source = "reload_nomen_20",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.5,
-        LHIKOut = 0.5	
+        LHIKOut = 0.5
     },
     ["reload_nomen_empty_20"] = {
         Source = "reload_empty_nomen_20",
@@ -473,5 +496,5 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.25
-    }		
+    }
 }

@@ -1,6 +1,6 @@
-att.PrintName = "32-Round 9mm"
+att.PrintName = "32-Round 9mm SR-25"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_32.png", "mips smooth")
-att.Description = "Conversion to a pistol caliber, offering lots of bullet really quickly packed in a longer stick mag."
+att.Description = "Convert the marksman rifle to fire pistol caliber cartridges, packed in a long stick mag."
 att.Desc_Pros = {
     "pro.magcap"
 }
@@ -10,18 +10,19 @@ att.SortOrder = 32 + 50
 att.AutoStats = true
 att.Slot = {"mifl_fas2_sr25_mag"}
 
-att.Mult_SightTime = 1.05
+att.Mult_SightTime = 1.1
+att.Mult_ReloadTime = 1.1
+att.Mult_SpeedMult = 0.95
 att.Override_ClipSize = 32
 
-att.Mult_Damage = 0.9
-att.Mult_DamageMin = 0.15
-att.Mult_Range = 0.25
+att.Mult_Damage = 0.6
+att.Mult_DamageMin = 0.4
 att.Mult_Penetration = 0.25
-att.Mult_Recoil = 0.5
+att.Mult_Recoil = 0.25
 att.Mult_RecoilSide = 0.2
 att.Mult_VisualRecoilMult = 0.75
-att.Mult_RPM = 1.5
-att.Mult_AccuracyMOA = 5
+att.Mult_RPM = 1.3
+att.Mult_AccuracyMOA = 6
 att.Mult_ShootPitch = 1.2
 
 att.Override_Ammo = "pistol"

@@ -1,6 +1,6 @@
-att.PrintName = "50-Round 9mm"
+att.PrintName = "50-Round 9mm SR-25"
 att.Icon = Material("entities/arccw_mifl_fas2_m4a1_ammo_50.png", "mips smooth")
-att.Description = "Conversion to a pistol caliber. The drum is slightly lighter than a quad stack casket."
+att.Description = "9mm drum magazine for a converted SR-25. By conversion, we mean in a religious sense, not in a mechanical sense. This SR-25 is a new man now. Or new gun, I dunno."
 att.Desc_Pros = {
     "pro.magcap"
 }
@@ -10,23 +10,20 @@ att.SortOrder = 50 + 50
 att.AutoStats = true
 att.Slot = {"mifl_fas2_sr25_mag"}
 
-att.Mult_ReloadTime = 1.15
-att.Mult_SightTime = 1.05
+att.Mult_SightTime = 1.15
+att.Mult_ReloadTime = 1.25
+att.Mult_SpeedMult = 0.9
 att.Override_ClipSize = 50
 
-att.Mult_Damage = 0.9
-att.Mult_DamageMin = 0.15
-att.Mult_Range = 0.25
+att.Mult_Damage = 0.6
+att.Mult_DamageMin = 0.4
 att.Mult_Penetration = 0.25
-att.Mult_Recoil = 0.5
+att.Mult_Recoil = 0.25
 att.Mult_RecoilSide = 0.2
 att.Mult_VisualRecoilMult = 0.75
-att.Mult_RPM = 1.5
-att.Mult_AccuracyMOA = 5
+att.Mult_RPM = 1.3
+att.Mult_AccuracyMOA = 6
 att.Mult_ShootPitch = 1.2
-
-att.Mult_MoveSpeed = 0.9
-att.Mult_SightTime = 0.95
 
 att.Override_Ammo = "pistol"
 att.Override_ShellModel = "models/shells/shell_9mm.mdl"

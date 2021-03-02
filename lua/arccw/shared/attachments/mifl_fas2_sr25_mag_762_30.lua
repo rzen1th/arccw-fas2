@@ -1,6 +1,6 @@
-att.PrintName = "30-Round 7.62x51mm"
+att.PrintName = "30-Round 7.62x51mm SR-25"
 att.Icon = Material("entities/arccw_mifl_fas2_sg55x_m_762.png", "mips smooth")
-att.Description = "Curved mag straight from an AK. Not even the same calibre."
+att.Description = "Curved AK magazine that got converted for 7.62x51mm use. The sight of this on the weapon is concerning, but what's a little Russian flavor on an American gun?"
 att.Desc_Pros = {
     "pro.magcap"
 }
@@ -10,9 +10,10 @@ att.SortOrder = 30 + 1000
 att.AutoStats = true
 att.Slot = {"mifl_fas2_sr25_mag"}
 
-att.Mult_MoveSpeed = 0.9
-att.Mult_SightTime = 1.2
 att.Override_ClipSize = 30
+
+att.Mult_MoveSpeed = 0.95
+att.Mult_SightTime = 1.1
 att.Mult_ReloadTime = 1.15
 
 att.Hook_GetShootSound = function(wep, fsound)
