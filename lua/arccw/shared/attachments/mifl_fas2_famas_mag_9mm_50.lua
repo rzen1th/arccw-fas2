@@ -30,6 +30,6 @@ att.Override_Trivia_Class = "Submachine Gun"
 att.Override_Trivia_Calibre = "9x19mm Parabellum"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/famas/famas_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/famas/9.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/famas/famas_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/famas/9_s.wav" end
+    if fsound == "ARCCW_FAS2_FAMAS" then return "ARC_FAS2_FAMAS9" end
+    if fsound == "ARCCW_FAS2_FAMAS_S" then return "ARC_FAS2_FAMAS9_S" end
 end

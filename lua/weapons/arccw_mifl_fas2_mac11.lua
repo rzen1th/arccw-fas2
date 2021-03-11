@@ -64,12 +64,12 @@ SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 
-SWEP.ShootVol = 110 -- volume of shoot sound
+SWEP.ShootVol = 160 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/mac11/mac11_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/mac11/mac11_suppressed_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/mac11/mac11_distance_fire1.wav"
+SWEP.ShootSound = "ARC_FAS2_MAC11"
+SWEP.ShootSoundSilenced = "ARC_FAS2_MAC11_S"
+SWEP.DistantShootSound = nil
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
@@ -79,7 +79,7 @@ SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 SWEP.MuzzleEffect = "muzzleflash_mp5"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellPitch = 95
-SWEP.ShellScale = 1.25
+SWEP.ShellScale = 2
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

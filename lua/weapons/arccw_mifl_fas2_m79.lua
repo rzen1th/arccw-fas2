@@ -64,8 +64,8 @@ SWEP.Primary.Ammo = "smg1_grenade" -- what ammo type the gun uses
 SWEP.ShootVol = 75 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/explosive_m79/m79_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rem870/sd_fire.wav"
+SWEP.ShootSound = "ARC_FAS2_M79"
+SWEP.ShootSoundSilenced = "ARC_FAS2_REM870_S"
 SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/explosive_m79/m79_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"

@@ -76,17 +76,17 @@ SWEP.MoveDispersion = 300
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 
-SWEP.ShootVol = 110 -- volume of shoot sound
+SWEP.ShootVol = 165 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/m249/m249_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/m249/m249_suppressed_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m249/m249_distance_fire1.wav"
+SWEP.ShootSound = "ARC_FAS2_M249"
+SWEP.ShootSoundSilenced = "ARC_FAS2_M249_S"
+SWEP.DistantShootSound = nil
 
 SWEP.MuzzleEffect = "muzzleflash_1"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 95
-SWEP.ShellScale = 1
+SWEP.ShellScale = 2
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

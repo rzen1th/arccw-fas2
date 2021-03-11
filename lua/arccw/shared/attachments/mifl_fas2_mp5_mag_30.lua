@@ -21,6 +21,6 @@ att.Mult_ReloadTime = 1.1
 att.Mult_SightTime = 1.1
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/mp5/30.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/mp5/mp5k_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/mp5/30sd.wav" end
+    if fsound == "ARC_FAS2_MP5A5" then return "ARC_FAS2_MP510" end
+    if fsound == "ARC_FAS2_MP5A5_S" then return "ARC_FAS2_MP510_S" end
 end

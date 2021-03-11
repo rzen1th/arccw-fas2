@@ -72,17 +72,17 @@ SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
 
 SWEP.Primary.Ammo = "SniperPenetratedRound" -- what ammo type the gun uses
 
-SWEP.ShootVol = 150 -- volume of shoot sound
+SWEP.ShootVol = 225 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/m82/m82_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/m82/m82_whisper.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m82/m82_distance_fire1.wav"
+SWEP.ShootSound = "ARC_FAS2_M82"
+SWEP.ShootSoundSilenced = "ARC_FAS2_M82_S"
+SWEP.DistantShootSound = nil
 
 SWEP.MuzzleEffect = "muzzleflash_1"
 SWEP.ShellModel = "models/shells/shell_338mag.mdl"
 SWEP.ShellPitch = 60
-SWEP.ShellScale = 2
+SWEP.ShellScale = 2.65
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

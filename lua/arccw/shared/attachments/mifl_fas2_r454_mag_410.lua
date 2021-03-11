@@ -29,6 +29,6 @@ att.Mult_AccuracyMOA = 10
 att.Mult_RPM = 2
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2_custom/asval/20g.wav" end
-    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2/p226/p226_suppressed_fire1.wav" end
+    if fsound == wep.ShootSound then return "ARC_FAS2_S12" end
+    if fsound == wep.ShootSoundSilenced then return "ARC_FAS2_P226_S" end
 end

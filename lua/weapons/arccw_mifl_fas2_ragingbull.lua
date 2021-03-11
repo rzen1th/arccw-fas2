@@ -75,16 +75,16 @@ SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
 SWEP.Primary.Ammo = "357" -- what ammo type the gun uses
 SWEP.MagID = "gce" -- the magazine pool this gun draws from
 
-SWEP.ShootVol = 130 -- volume of shoot sound
+SWEP.ShootVol = 195 -- volume of shoot sound
 SWEP.ShootPitch = 95 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/ragingbull/ragingbull_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/ragingbull/ragingbull_distance_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/ragingbull/rag_whisper.wav"
+SWEP.ShootSound = "ARC_FAS2_RAGINGBULL"
+SWEP.DistantShootSound = nil
+SWEP.ShootSoundSilenced = "ARC_FAS2_RAGINGBULL_S"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol_deagle"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellScale = 2
+SWEP.ShellScale = 2.5
 SWEP.ShellPitch = 85
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on

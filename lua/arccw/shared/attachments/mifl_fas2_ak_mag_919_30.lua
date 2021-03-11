@@ -23,9 +23,14 @@ att.Mult_Range = 0.5
 
 att.Mult_ShootPitch = 0.8
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav" then return "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/mp5/mp5k_suppressed_fire1.wav" end
+    if fsound == "ARC_FAS2_AK47" then return "ARC_FAS2_MP5A5" end
+    if fsound == "ARC_FAS2_AK47" then return "ARC_FAS2_MP5K_S" end
 end
+
+att.Hook_GetDistantShootSound = function(wep, distancesound)
+    if distancesound == "weapons/arccw_mifl/fas2/ak47/ak47_distance_fire1.wav" then return "weapons/arccw_mifl/fas2/mp5/mp5k_distance_fire1.wav" end
+end
+
 att.Override_Ammo = "pistol"
 att.Override_ShellModel = "models/shells/shell_9mm.mdl"
 att.Override_Trivia_Class = "Submachine Gun"

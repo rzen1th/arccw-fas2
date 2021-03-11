@@ -25,6 +25,6 @@ att.Override_Trivia_Calibre = ".50 BMG"
 att.AddSuffix = " .50"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/m24/m24_fire1.wav" then return "weapons/arccw_mifl/fas2/m82/m82_fire1.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/m24/m24_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/m82/m82_whisper.wav" end
+    if fsound == "ARC_FAS2_M24" then return "ARC_FAS2_M82" end
+    if fsound == "ARC_FAS2_M24_S" then return "ARC_FAS2_M82_S" end
 end

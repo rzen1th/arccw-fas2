@@ -61,12 +61,12 @@ SWEP.MoveDispersion = 100
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "glock" -- the magazine pool this gun draws from
 
-SWEP.ShootVol = 110 -- volume of shoot sound
+SWEP.ShootVol = 160 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/glock20/glock20_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/glock20/glock20_suppressed_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/glock20/glock20_distance_fire1.wav"
+SWEP.ShootSound = "ARC_FAS2_GLOCK20"
+SWEP.ShootSoundSilenced = "ARC_FAS2_GLOCK20_S"
+SWEP.DistantShootSound = nil
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
@@ -76,7 +76,7 @@ SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 SWEP.MuzzleEffect = "muzzleflash_pistol"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellPitch = 100
-SWEP.ShellScale = 1.25
+SWEP.ShellScale = 2.15
 SWEP.ShellRotateAngle = Angle(0, 180, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on

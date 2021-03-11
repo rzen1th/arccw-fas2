@@ -29,6 +29,6 @@ att.Mult_ShootVol = 0.8
 att.AddSuffix = " 9mm"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/m24/m24_fire1.wav" then return "weapons/arccw_mifl/fas2/mac11/mac11_fire1.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/m24/m24_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/mac11/mac11_suppressed_fire1.wav" end
+    if fsound == "ARC_FAS2_M24" then return "ARC_FAS2_MAC11" end
+    if fsound == "ARC_FAS2_M24_S" then return "ARC_FAS2_MAC11_S" end
 end

@@ -30,6 +30,6 @@ att.Override_Ammo = "smg1"
 att.Override_Trivia_Calibre = "Assault Rifle"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2/m4a1/m4_fire1.wav" end
-    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2/m4a1/m4_suppressed_fire1.wav" end
+    if fsound == wep.ShootSound then return "ARC_FAS2_M4A1" end
+    if fsound == wep.ShootSoundSilenced then return "ARC_FAS2_M4A1_S" end
 end

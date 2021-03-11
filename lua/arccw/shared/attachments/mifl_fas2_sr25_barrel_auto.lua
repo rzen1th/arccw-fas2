@@ -28,3 +28,5 @@ att.Mult_Recoil = 1.25
 
 att.Add_BarrelLength = -2
 att.Mult_ShootPitch = 1.05
+
+att.Mult_RPM = 1.25

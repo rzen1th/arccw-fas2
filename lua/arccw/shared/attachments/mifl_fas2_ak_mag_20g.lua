@@ -24,6 +24,8 @@ att.Override_Trivia_Calibre = "20 Gauge"
 att.Override_Trivia_Class = "Shotgun"
 att.Override_ShellModel = "models/shells/shell_12gauge.mdl"
 att.Override_IsShotgun = true
+att.Override_ShootSound = "ARC_FAS2_S12"
+att.Override_ShootSoundSilenced = "ARC_FAS2_S12_S"
 
 att.Mult_AccuracyMOA = 10
 att.Mult_RPM = 0.5
@@ -39,9 +41,9 @@ att.Override_Firemodes = {
 }
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/20g.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/rem870/sd_fire.wav" end
+    if fsound == "ARC_FAS2_AK47" then return "ARC_FAS2_S12" end
+    if fsound == "ARC_FAS2_AK47_S" then return "ARC_FAS2_REM870_S" end
 
-    if fsound == "weapons/arccw_mifl/fas2/rpk47/rpk47_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/20g.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/rpk47/rpk47_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/rem870/sd_fire.wav" end	
+    if fsound == "ARC_FAS2_RPK" then return "ARC_FAS2_S12" end
+    if fsound == "ARC_FAS2_RPK_S" then return "ARC_FAS2_REM870_S" end	
 end

@@ -26,5 +26,5 @@ att.Override_Trivia_Calibre = ".357 Magnum"
 att.AddSuffix = " .357"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2_custom/deagle/357.wav" end
+    if fsound == wep.ShootSound then return "ARC_FAS2_DEAGLE357" end
 end

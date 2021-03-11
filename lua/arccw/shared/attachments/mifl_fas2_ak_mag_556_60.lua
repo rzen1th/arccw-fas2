@@ -29,10 +29,14 @@ att.Mult_MoveSpeed = 0.95
 att.Override_Ammo = "smg1"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/556.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/ak47/ak47_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/556sd.wav" end
+    if fsound == "ARC_FAS2_AK47" then return "ARC_FAS2_AK101" end
+    if fsound == "ARC_FAS2_AK47_S" then return "ARC_FAS2_AK101_S" end
 
-    if fsound == "weapons/arccw_mifl/fas2/rpk47/rpk47_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/556.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/rpk47/rpk47_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2_custom/asval/556sd.wav" end
+    if fsound == "ARC_FAS2_RPK" then return "ARC_FAS2_AK101" end
+    if fsound == "ARC_FAS2_RPK_S" then return "ARC_FAS2_AK101_S" end
 
 end
+
+--[[att.Hook_GetDistantShootSound = function(wep, distancesound)
+    if distancesound == wep.DistantShootSound then return "weapons/arccw_mifl/fas2/ak74/ak74_distance_fire1.wav" end
+end]]

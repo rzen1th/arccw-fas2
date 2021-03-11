@@ -68,12 +68,12 @@ SWEP.MoveDispersion = 100
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
-SWEP.ShootVol = 120 -- volume of shoot sound
+SWEP.ShootVol = 215 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/m3s90/m3s90_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rem870/sd_fire.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/m3s90/m3s90_distance_fire1.wav"
+SWEP.ShootSound = "ARC_FAS2_M3S90"
+SWEP.ShootSoundSilenced = "ARC_FAS2_M3S90_S"
+SWEP.DistantShootSound = nil
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
@@ -307,11 +307,11 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire1",
-        ShellEjectAt = 0.1,		
+        ShellEjectAt = 0,		
     },
     ["fire_empty"] = {
         Source = "fire_last",
-        ShellEjectAt = 0.1,		
+        ShellEjectAt = 0,		
     },	
     ["fire_pump"] = {
         Source = "fire1",
@@ -321,11 +321,11 @@ SWEP.Animations = {
     },		
     ["fire_iron"] = {
         Source = "fire1_scoped",
-        ShellEjectAt = 0.1,			
+        ShellEjectAt = 0,			
     },
     ["fire_iron_empty"] = {
         Source = "fire_last_iron",
-        ShellEjectAt = 0.1,			
+        ShellEjectAt = 0,			
     },	
     ["cycle"] = {
         Source = "pump",

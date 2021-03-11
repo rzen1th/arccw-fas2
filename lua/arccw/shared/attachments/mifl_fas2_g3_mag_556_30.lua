@@ -25,6 +25,6 @@ att.Override_Trivia_Class = "Assault Rifle"
 att.Override_Trivia_Calibre = "5.56x45mm NATO"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2_custom/g3/556.wav" end
-    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2_custom/g3/556sd.wav" end
+    if fsound == wep.ShootSound then return "ARC_FAS2_G3556" end
+    if fsound == wep.ShootSoundSilenced then return "ARC_FAS2_G3556_S" end
 end

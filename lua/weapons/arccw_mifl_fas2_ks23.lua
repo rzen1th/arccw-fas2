@@ -63,12 +63,12 @@ SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
-SWEP.ShootVol = 120 -- volume of shoot sound
+SWEP.ShootVol = 225 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/ks23/ks23_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rem870/sd_fire.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/ks23/ks23_distance_fire1.wav"
+SWEP.ShootSound = "ARC_FAS2_KS23"
+SWEP.ShootSoundSilenced = "ARC_FAS2_REM870_S"
+SWEP.DistantShootSound = nil
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"

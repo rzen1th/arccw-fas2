@@ -63,9 +63,9 @@ SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/toz34/toz_fp.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rem870/sd_fire.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/toz34/toz_suppressed_fp.wav"
+SWEP.ShootSound = "ARC_FAS2_TOZ34"
+SWEP.ShootSoundSilenced = "ARC_FAS2_REM870_S"
+SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/rem870/rem870_distance_fire1.wav"
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
@@ -76,7 +76,7 @@ SWEP.MuzzleEffect = "muzzleflash_shotgun"
 SWEP.ShellModel = "models/weapons/arccw/mifl/fas2/shell/23mm.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
-SWEP.ShellScale = 1
+SWEP.ShellScale = 2
 SWEP.ShellRotateAngle = Angle(-20, 0, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on

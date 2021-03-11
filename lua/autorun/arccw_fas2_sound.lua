@@ -1048,25 +1048,6 @@ sound.Add({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //SR25
 sound.Add({
 	name = 			"Arccw_FAS2_Weapon_SR25.StockUnlock",
@@ -1128,3 +1109,243 @@ sound.Add({
 	volume = 		1.0,
 	sound = {"weapons/arccw_mifl/fas2/sr25/sr25_boltcatchslap.wav"}
 })
+
+local sadd = sound.Add -- :(
+local ups = util.PrecacheSound -- yeah
+
+local ARC_FAS_FS = {} -- firing sounds
+
+-- Rifles
+-- ARC_FAS_FS["ARC_FAS2_SKS"] = "weapons/arccw_mifl/fas2/sks/sks_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_G3"] = "weapons/arccw_mifl/fas2/g3/g3_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_G3556"] = "weapons/arccw_mifl/fas2_custom/g3/556.wav"
+ARC_FAS_FS["ARC_FAS2_AK74"] = "weapons/arccw_mifl/fas2/ak74/ak74_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_AK47"] = "weapons/arccw_mifl/fas2/ak47/ak47_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_AK101"] = {"weapons/arccw_mifl/fas2_custom/asval/556_1.wav", "weapons/arccw_mifl/fas2_custom/asval/556_2.wav", "weapons/arccw_mifl/fas2_custom/asval/556_3.wav"}
+ARC_FAS_FS["ARC_FAS2_ASVAL"] = {"weapons/arccw_mifl/fas2_custom/asval/556_1.wav", "weapons/arccw_mifl/fas2_custom/asval/556_2.wav", "weapons/arccw_mifl/fas2_custom/asval/556_3.wav"}
+-- ARC_FAS_FS["ARC_FAS2_RK95"] = "weapons/arccw_mifl/fas2/sako95/sako95_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M4A1"] = "weapons/arccw_mifl/fas2/m4a1/m4_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M16A2"] = "weapons/arccw_mifl/fas2/m4a1/m16a2_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_SG550"] = "weapons/arccw_mifl/fas2/sg55x/sg550_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_SG552"] = "weapons/arccw_mifl/fas2/sg55x/sg552_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_SG55245"] = "weapons/arccw_mifl/fas2_custom/sg552/45.wav"
+ARC_FAS_FS["ARC_FAS2_SG552762"] = "weapons/arccw_mifl/fas2_custom/sg552/ak.wav"
+-- ARC_FAS_FS["ARC_FAS2_M21"] = "weapons/arccw_mifl/fas2/m21/m21_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_M14"] = "weapons/arccw_mifl/fas2/m14/m14_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M24"] = "weapons/arccw_mifl/fas2/m24/m24_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_G36C"] = "weapons/arccw_mifl/fas2/g36c/g36c_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_G36C9"] = "weapons/arccw_mifl/fas2_custom/g36/9mm.wav"
+ARC_FAS_FS["ARC_FAS2_G36C762"] = "weapons/arccw_mifl/fas2_custom/g36/762.wav"
+ARC_FAS_FS["ARC_FAS2_RPK"] = "weapons/arccw_mifl/fas2/rpk47/rpk47_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_SR25"] = "weapons/arccw_mifl/fas2/sr25/sr25_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_FAMAS"] = "weapons/arccw_mifl/fas2/famas/famas_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_FAMAS50"] = "weapons/arccw_mifl/fas2_custom/famas/50.wav"
+ARC_FAS_FS["ARC_FAS2_FAMAS9"] = "weapons/arccw_mifl/fas2_custom/famas/9.wav"
+ARC_FAS_FS["ARC_FAS2_M82"] = "weapons/arccw_mifl/fas2/m82/m82_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_SVD"] = "weapons/arccw_mifl/fas2/svd/svd_fire1.wav"
+
+-- M249
+ARC_FAS_FS["ARC_FAS2_M249"] = "weapons/arccw_mifl/fas2/m249/m249_fire1.wav"
+
+-- Shotguns
+ARC_FAS_FS["ARC_FAS2_M3S90"] = "weapons/arccw_mifl/fas2/m3s90/m3s90_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_REM870"] = "weapons/arccw_mifl/fas2/rem870/rem870_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_KS23"] = "weapons/arccw_mifl/fas2/ks23/ks23_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_MASS"] = "weapons/arccw_mifl/fas2_custom/mass/fire.wav"
+ARC_FAS_FS["ARC_FAS2_S12"] = "weapons/arccw_mifl/fas2_custom/asval/20g.wav"
+ARC_FAS_FS["ARC_FAS2_TOZ34"] = "weapons/arccw_mifl/fas2/toz34/toz_fp.wav"
+
+-- Pistols
+ARC_FAS_FS["ARC_FAS2_RAGINGBULL"] = "weapons/arccw_mifl/fas2/ragingbull/ragingbull_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_P226"] = "weapons/arccw_mifl/fas2/p226/p226_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M1911"] = "weapons/arccw_mifl/fas2/1911/1911_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_GLOCK20"] = "weapons/arccw_mifl/fas2/glock20/glock20_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_DEAGLE"] = "weapons/arccw_mifl/fas2/deserteagle/de_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_DEAGLE44"] = "weapons/arccw_mifl/fas2_custom/deagle/44.wav"
+ARC_FAS_FS["ARC_FAS2_DEAGLE9"] = "weapons/arccw_mifl/fas2_custom/deagle/9.wav"
+ARC_FAS_FS["ARC_FAS2_DEAGLE357"] = "weapons/arccw_mifl/fas2_custom/deagle/357.wav"
+-- ARC_FAS_FS["ARC_FAS2_OTS33"] = "weapons/arccw_mifl/fas2/ots33/ots33_fire1.wav"
+
+-- M79
+ARC_FAS_FS["ARC_FAS2_M79"] = "weapons/arccw_mifl/fas2/explosive_m79/m79_fire1.wav"
+
+-- SMGs
+ARC_FAS_FS["ARC_FAS2_MAC11"] = "weapons/arccw_mifl/fas2/mac11/mac11_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_PP19"] = "weapons/arccw_mifl/fas2/bizon/bizon_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_MP5A5"] = "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_MP510"] = "weapons/arccw_mifl/fas2_custom/mp5/30.wav"
+ARC_FAS_FS["ARC_FAS2_MP545"] = "weapons/arccw_mifl/fas2_custom/mp5/45.wav"
+ARC_FAS_FS["ARC_FAS2_MP540"] = "weapons/arccw_mifl/fas2/mp5/mp5_40cal_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_MP5K"] = "weapons/arccw_mifl/fas2/mp5/mp5k_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_UZI"] = "weapons/arccw_mifl/fas2/uzi/uzi_fire1.wav"
+
+-- what the fuck
+ARC_FAS_FS["ARC_FAS2_AR2"] = "weapons/arccw_mifl/fas2_custom/ar2/fire1"
+
+local ARC_FAS_FSS = {} -- firing sounds suppressed
+
+-- Suppressed rifles
+-- ARC_FAS_FSS["ARC_FAS2_SKS_S"] = "weapons/arccw_mifl/fas2/sks/sks_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_G3_S"] = "weapons/arccw_mifl/fas2/g3/g3_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_G3556_S"] = "weapons/arccw_mifl/fas2_custom/g3/556sd.wav"
+ARC_FAS_FSS["ARC_FAS2_AK74_S"] = "weapons/arccw_mifl/fas2/ak74/ak74_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_AK47_S"] = "weapons/arccw_mifl/fas2/ak47/ak47_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_AK101_S"] = "weapons/arccw_mifl/fas2_custom/asval/556sd.wav"
+ARC_FAS_FSS["ARC_FAS2_ASVAL_S"] = "weapons/arccw_mifl/fas2_custom/asval/sd.wav"
+-- ARC_FAS_FSS["ARC_FAS2_RK95_S"] = "weapons/arccw_mifl/fas2/sako95/sako95_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_M4A1_S"] = "weapons/arccw_mifl/fas2/m4a1/m4_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_M16A2_S"] = "weapons/arccw_mifl/fas2/m4a1/m16a2_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_SG550_S"] = "weapons/arccw_mifl/fas2/sg55x/sg550_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_SG552_S"] = "weapons/arccw_mifl/fas2/sg55x/sg552_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_SG55245_S"] = "weapons/arccw_mifl/fas2_custom/sg552/45sd.wav"
+ARC_FAS_FSS["ARC_FAS2_SG552762_S"] = "weapons/arccw_mifl/fas2_custom/sg552/aksd.wav"
+-- ARC_FAS_FSS["ARC_FAS2_M21_S"] = "weapons/arccw_mifl/fas2/m21/m21_suppressed_fire1.wav"
+-- ARC_FAS_FSS["ARC_FAS2_M14_S"] = "weapons/arccw_mifl/fas2/m14/m14_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_M24_S"] = "weapons/arccw_mifl/fas2/m24/m24_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_G36C_S"] = "weapons/arccw_mifl/fas2/g36c/g36c_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_G36C9_S"] = "weapons/arccw_mifl/fas2_custom/g36/9sd.wav"
+ARC_FAS_FSS["ARC_FAS2_G36C762_S"] = "weapons/arccw_mifl/fas2_custom/g36/7sd.wav"
+ARC_FAS_FSS["ARC_FAS2_RPK_S"] = "weapons/arccw_mifl/fas2/rpk47/rpk47_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_SR25_S"] = "weapons/arccw_mifl/fas2/sr25/sr25_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_FAMAS_S"] = "weapons/arccw_mifl/fas2/famas/famas_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_FAMAS50_S"] = "weapons/arccw_mifl/fas2_custom/famas/50_s.wav"
+ARC_FAS_FSS["ARC_FAS2_FAMAS9_S"] = "weapons/arccw_mifl/fas2_custom/famas/9_s.wav"
+ARC_FAS_FSS["ARC_FAS2_M82_S"] = "weapons/arccw_mifl/fas2/m82/m82_whisper.wav"
+-- ARC_FAS_FSS["ARC_FAS2_SVD_S"] = "weapons/arccw_mifl/fas2/svd/svd_suppressed_fire1.wav"
+
+-- Suppressed M249
+ARC_FAS_FSS["ARC_FAS2_M249_S"] = "weapons/arccw_mifl/fas2/m249/m249_suppressed_fire1.wav"
+
+--Suppressed shotguns
+ARC_FAS_FSS["ARC_FAS2_REM870_S"] = "weapons/arccw_mifl/fas2/rem870/sd_fire.wav"
+ARC_FAS_FSS["ARC_FAS2_TOZ34_S"] = "weapons/arccw_mifl/fas2/toz34/toz_suppressed_fp.wav"
+
+-- Suppressed SMGs
+ARC_FAS_FSS["ARC_FAS2_MAC11_S"] = "weapons/arccw_mifl/fas2/mac11/mac11_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_PP19_S"] = "weapons/arccw_mifl/fas2/bizon/bizon_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_MP5A5_S"] = "weapons/arccw_mifl/fas2/mp5/mp5k_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_MP510_S"] = "weapons/arccw_mifl/fas2_custom/mp5/30sd.wav"
+ARC_FAS_FSS["ARC_FAS2_MP545_S"] = "weapons/arccw_mifl/fas2_custom/mp5/45sd.wav"
+ARC_FAS_FSS["ARC_FAS2_MP540"] = "weapons/arccw_mifl/fas2/mp5/mp5_40cal_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_MP5K_S"] = "weapons/arccw_mifl/fas2/mp5/mp5k_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_UZI_S"] = "weapons/arccw_mifl/fas2/uzi/uzi_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_MP5SD6"] = "weapons/arccw_mifl/fas2/mp5/mp5sd_fire1.wav"
+
+-- Suppressed pistols
+ARC_FAS_FSS["ARC_FAS2_P226_S"] = "weapons/arccw_mifl/fas2/p226/p226_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_M1911_S"] = "weapons/arccw_mifl/fas2/1911/1911_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_GLOCK20_S"] = "weapons/arccw_mifl/fas2/glock20/glock20_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_DEAGLE_S"] = "weapons/arccw_mifl/fas2/deserteagle/de_suppressed_fire1.wav"
+ARC_FAS_FSS["ARC_FAS2_RAGINGBULL_S"] = "weapons/arccw_mifl/fas2/ragingbull/rag_whisper.wav"
+
+--[[local ARC_FAS_FSD = {}-- firing sounds distant
+
+-- Distant Rifles
+-- ARC_FAS_FS["ARC_FAS2_SKS_D"] = "weapons/arccw_mifl/fas2/sks/sks_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_G3_D"] = "weapons/arccw_mifl/fas2/g3a3/g3_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_AK74_D"] = "weapons/arccw_mifl/fas2/ak74/ak74_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_AK47_D"] = "weapons/arccw_mifl/fas2/ak47/ak47_distance_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_RK95_D"] = "weapons/arccw_mifl/fas2/sako95/sako95_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M4A1_D"] = "weapons/arccw_mifl/fas2/m4a1/m4_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_SG550_D"] = "weapons/arccw_mifl/fas2/sg55x/sg550_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_SG552_D"] = "weapons/arccw_mifl/fas2/sg55x/sg552_distance_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_M21_D"] = "weapons/arccw_mifl/fas2/m21/m21_distance_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_M14_D"] = "weapons/arccw_mifl/fas2/m14/m14_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M24_D"] = "weapons/arccw_mifl/fas2/m24/m24_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_G36C_D"] = "weapons/arccw_mifl/fas2/g36c/g36c_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_RPK_D"] = "weapons/arccw_mifl/fas2/rpk47/rpk47_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_SR25_D"] = "weapons/arccw_mifl/fas2/sr25/sr25_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_FAMAS_D"] = "weapons/arccw_mifl/fas2/famas/famas_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M82_D"] = "weapons/arccw_mifl/fas2/m82/m82_distance_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_SVD_D"] = "weapons/arccw_mifl/fas2/svd/svd_distance_fire1.wav"
+
+-- Distant M249
+ARC_FAS_FS["ARC_FAS2_M249_D"] = "weapons/arccw_mifl/fas2/m249/m249_distance_fire1.wav"
+
+-- Distant Shotguns
+ARC_FAS_FS["ARC_FAS2_M3S90_D"] = "weapons/arccw_mifl/fas2/m3s90/m3s90_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_REM870_D"] = "weapons/arccw_mifl/fas2/rem870/rem870_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_KS23_D"] = "weapons/arccw_mifl/fas2/ks23/ks23_distance_fire1.wav"
+
+-- Distant Pistols
+ARC_FAS_FS["ARC_FAS2_RAGINGBULL_D"] = "weapons/arccw_mifl/fas2/ragingbull/ragingbull_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_P226_D"] = "weapons/arccw_mifl/fas2/p226/p226_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_M1911_D"] = "weapons/arccw_mifl/fas2/1911/1911_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_GLOCK20_D"] = "weapons/arccw_mifl/fas2/glock20/glock20_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_DEAGLE_D"] = "weapons/arccw_mifl/fas2/deserteagle/de_distance_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_OTS33_D"] = "weapons/arccw_mifl/fas2/ots33/ots33_distance_fire1.wav"
+
+-- Distant M79
+ARC_FAS_FS["ARC_FAS2_M79_D"] = "weapons/arccw_mifl/fas2/explosive_m79/m79_distance_fire1.wav"
+
+-- Distant SMGs
+ARC_FAS_FS["ARC_FAS2_MAC11_D"] = "weapons/arccw_mifl/fas2/mac11/mac11_distance_fire1.wav"
+-- ARC_FAS_FS["ARC_FAS2_PP19_D"] = "weapons/arccw_mifl/fas2/bizon/bizon_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_MP5A5_D"] = "weapons/arccw_mifl/fas2/mp5/mp5_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_MP5K_D"] = "weapons/arccw_mifl/fas2/mp5/mp5k_distance_fire1.wav"
+ARC_FAS_FS["ARC_FAS2_UZI_D"] = "weapons/arccw_mifl/fas2/uzi/uzi_distance_fire1.wav"]]
+
+-- set them all up at once and save a lot of effort
+
+local tbl = {channel = CHAN_STATIC, 
+	volume = 1,
+	soundlevel = 100,
+	pitchstart = 92,
+	pitchend = 112}
+
+for k, v in pairs(ARC_FAS_FS) do
+	tbl.name = k
+	tbl.sound = v
+		
+	sadd(tbl)
+	
+	if type(v) == "table" then
+		for k2, v2 in pairs(v) do
+			ups(v2)
+		end
+	else
+		ups(v)
+	end
+end	
+
+local tbl = {channel = CHAN_STATIC,
+	volume = 1,
+	soundlevel = 70,
+	pitchstart = 92,
+	pitchend = 112}
+
+for k, v in pairs(ARC_FAS_FSS) do
+	tbl.name = k
+	tbl.sound = v
+		
+	sadd(tbl)
+	
+	if type(v) == "table" then
+		for k2, v2 in pairs(v) do
+			ups(v2)
+		end
+	else
+		ups(v)
+	end
+end	
+
+--[[local tbl = {channel = CHAN_AUTO,
+	volume = 0.5,
+	soundlevel = 149,
+	pitchstart = 92,
+	pitchend = 112}
+
+	for k, v in pairs(ARC_FAS_FSD) do
+	tbl.name = k
+	tbl.sound = v
+		
+	sadd(tbl)
+	
+	if type(v) == "table" then
+		for k2, v2 in pairs(v) do
+			ups(v2)
+		end
+	else
+		ups(v)
+	end
+end]]

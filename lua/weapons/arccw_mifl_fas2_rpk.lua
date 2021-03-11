@@ -59,11 +59,11 @@ SWEP.AccuracyMOA = 3.5 -- accuracy in Minutes of Angle. There are 60 MOA in a de
 SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 100
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
-SWEP.ShootVol = 110 -- volume of shoot sound
+SWEP.ShootVol = 165 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
-SWEP.ShootSound = "weapons/arccw_mifl/fas2/rpk47/rpk47_fire1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_mifl/fas2/rpk47/rpk47_suppressed_fire1.wav"
-SWEP.DistantShootSound = "weapons/arccw_mifl/fas2/rpk47/rpk47_distance_fire1.wav"
+SWEP.ShootSound = "ARC_FAS2_RPK"
+SWEP.ShootSoundSilenced = "ARC_FAS2_RPK_S"
+SWEP.DistantShootSound = nil
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
 SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
@@ -71,7 +71,7 @@ SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 SWEP.MuzzleEffect = "muzzleflash_3"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 95
-SWEP.ShellScale = 1.25
+SWEP.ShellScale = 2
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.SpeedMult = 0.9
@@ -558,7 +558,7 @@ SWEP.Attachments = {
 SWEP.Hook_SelectReloadAnimation = function(wep, anim)
     local installed = wep.Attachments[7].Installed
 
-    if installed == "mifl_fas2_ak_mag_939_40" or installed == "mifl_fas2_ak_mag_20g" or installed == "mifl_fas2_ak_mag_556" or installed == "mifl_fas2_ak_mag_556_60" then return anim .. "_939" end
+    if installed == "mifl_fas2_ak_mag_939_40" or installed == "mifl_fas2_ak_mag_20g" or installed == "mifl_fas2_ak_mag_556_60" then return anim .. "_939" end
 
     if installed == "mifl_fas2_ak_mag_drum" then return anim .. "_drum" end
 
@@ -577,7 +577,7 @@ SWEP.Animations = {
         Source = "deploy_first1",
     },
     ["fire"] = {
-        Source = {"fire1"},
+        Source = {"fire1_scoped"},
         ShellEjectAt = 0
     },
     ["fire_iron"] = {

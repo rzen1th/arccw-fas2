@@ -35,6 +35,6 @@ att.Override_Firemodes = {
 att.Hook_GetShootSound = function(wep, fsound)
     local mag = wep.Attachments[7].Installed
     if mag == "mifl_fas2_sg55x_mag_45" or mag == "mifl_fas2_sg55x_mag_45_64" then return end
-    if fsound == "weapons/arccw_mifl/fas2/sg55x/sg552_fire1.wav" then return "weapons/arccw_mifl/fas2/sg55x/sg550_fire1.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/sg55x/sg552_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/sg55x/sg550_suppressed_fire1.wav" end
+    if fsound == "ARC_FAS2_SG552" then return "ARC_FAS2_SG550" end
+    if fsound == "ARC_FAS2_SG552_S" then return "ARC_FAS2_SG550_S" end
 end

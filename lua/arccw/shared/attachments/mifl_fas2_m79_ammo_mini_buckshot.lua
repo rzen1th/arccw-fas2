@@ -29,5 +29,5 @@ att.Hook_Compatible = function(wep, data)
 end
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2/ks23/ks23_fire1.wav" end
+    if fsound == wep.ShootSound then return "ARC_FAS2_KS23" end
 end

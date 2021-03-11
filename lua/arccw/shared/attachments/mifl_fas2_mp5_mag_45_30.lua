@@ -20,6 +20,6 @@ att.Mult_Recoil = 1.2
 att.Mult_ShootPitch = 0.9
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == "weapons/arccw_mifl/fas2/mp5/mp5_fire1.wav" then return "weapons/arccw_mifl/fas2/mp5/mp5_40cal_fire1.wav" end
-    if fsound == "weapons/arccw_mifl/fas2/mp5/mp5k_suppressed_fire1.wav" then return "weapons/arccw_mifl/fas2/mp5/mp5_40cal_suppressed_fire1.wav" end
+    if fsound == "ARC_FAS2_MP5A5" then return "ARC_FAS2_MP540" end
+    if fsound == "ARC_FAS2_MP5A5_S" then return "ARC_FAS2_MP540_S" end
 end

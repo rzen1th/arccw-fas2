@@ -32,6 +32,6 @@ att.Override_Trivia_Calibre = "9x19mm Parabellum"
 att.AddSuffix = " 9mm"
 
 att.Hook_GetShootSound = function(wep, fsound)
-    if fsound == wep.ShootSound then return "weapons/arccw_mifl/fas2/mp5/mp5k_fire1.wav" end
-    if fsound == wep.ShootSoundSilenced then return "weapons/arccw_mifl/fas2/mp5/mp5k_suppressed_fire1.wav" end
+    if fsound == wep.ShootSound then return "ARC_FAS2_MP5K" end
+    if fsound == wep.ShootSoundSilenced then return "ARC_FAS2_MP5K_S" end
 end
