@@ -36,7 +36,7 @@ SWEP.PhysBulletMuzzleVelocity = 900
 SWEP.Recoil = 0.4
 SWEP.RecoilSide = 0.25
 SWEP.RecoilRise = 0.8
-SWEP.Delay = 60 / 901 -- 60 / RPM.
+SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Firemodes = {

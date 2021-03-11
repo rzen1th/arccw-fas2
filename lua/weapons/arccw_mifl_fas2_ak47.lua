@@ -333,28 +333,6 @@ SWEP.AttachmentElements = {
             }		
         }
     },
-    ["zen_fas2_ak_hg_12pt"] = {
-        VMBodygroups = {
-            {ind = 2, bg = 14},
-            {ind = 3, bg = 1}
-        },
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(0, 29, 1.5)
-            },
-            [1] = {
-                vpos = Vector(0, 3, 4.05)
-            },
-            [4] = {
-                vpos = Vector(0, 15, 0.5)
-            }				
-        }
-    },
-    ["zen_fas2_ak_grip_poly"] = {
-        VMBodygroups = {
-            {ind = 7, bg = 3}
-        }
-    },	
     ["5.45x39mm"] = {
         Override_Trivia_Calibre = "5.45x39mm Soviet"
     },
@@ -421,7 +399,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local bar = wep.Attachments[2].Installed
     local ubs = wep.Attachments[4].Installed
 
-    if opt and ( bar == "mifl_fas2_ak_hg_12u" or bar == "mifl_fas2_ak_hg_12" or bar == "zen_fas2_ak_hg_12pt") then
+    if opt and ( bar == "mifl_fas2_ak_hg_12u" or bar == "mifl_fas2_ak_hg_12" ) then
         vm:SetBodygroup(4, 0)
     end
 
@@ -430,7 +408,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 
     if ubs then
-        if bar and ( bar == "mifl_fas2_ak_hg_12u" or bar == "mifl_fas2_ak_hg_12" or bar == "zen_fas2_ak_hg_12pt") then
+        if bar and ( bar == "mifl_fas2_ak_hg_12u" or bar == "mifl_fas2_ak_hg_12" ) then
         elseif bar == "mifl_fas2_ak_hg_overlord" then
             vm:SetBodygroup(8, 8)
         elseif bar == "mifl_fas2_ak_hg_svd" then
@@ -514,7 +492,7 @@ function SWEP:Hook_NameChange(name)
                 post = "20"
             end
         end
-    elseif handguard == "mifl_fas2_ak_hg_12" or handguard == "mifl_fas2_ak_hg_12u" or handguard == "zen_fas2_ak_hg_12pt" then
+    elseif handguard == "mifl_fas2_ak_hg_12" or handguard == "mifl_fas2_ak_hg_12u" then
         -- AK-12, AK-15 and variants
         pre = "AK"
         mid = "-"

@@ -37,7 +37,7 @@ $bodygroup "Sights"
 	studio "Iron_Heat.smd"	
 	studio "Iron_X.smd"		
 	studio "Iron_Para.smd"			
-	blank
+	blank	
 	studio "Iron_Commando.smd"	
 	studio "Iron_AR2.smd"	
 	studio "Iron_Famas.smd"	
