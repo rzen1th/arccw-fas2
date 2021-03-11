@@ -25,7 +25,7 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 15
+SWEP.Damage = 22
 SWEP.DamageMin = 6 -- damage done at maximum range
 SWEP.Num = 25
 SWEP.Range = 50 -- in METRES
@@ -33,7 +33,7 @@ SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.ChamberSize = 1
-SWEP.Primary.ClipSize = 3 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 2 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 700
 
@@ -63,7 +63,7 @@ SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
-SWEP.ShootVol = 225 -- volume of shoot sound
+SWEP.ShootVol = 250 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "ARC_FAS2_KS23"
@@ -257,7 +257,7 @@ SWEP.Attachments = {
     {
         PrintName = "Tube",
         Slot = "mifl_fas2_ks23_mag",
-        DefaultAttName = "3-Round 23mm Tube"
+        DefaultAttName = "2-Round 23mm Tube"
     },
     {
         PrintName = "Stock",
