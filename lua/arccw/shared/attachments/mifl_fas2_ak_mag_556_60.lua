@@ -19,7 +19,7 @@ att.Mult_Penetration = 0.8
 att.Mult_Range = 0.8
 att.Mult_Recoil = 0.7
 att.Mult_RecoilSide = 0.5
-att.Mult_RPM = 1.35
+att.Mult_RPM = 1.084
 
 att.Mult_ReloadTime = 1.1
 att.Mult_DrawTime = 1.1
