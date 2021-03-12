@@ -84,7 +84,7 @@ SWEP.ShootSoundSilenced = "ARC_FAS2_RAGINGBULL_S"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol_deagle"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellScale = 2.5
+SWEP.ShellScale = 3.5
 SWEP.ShellPitch = 85
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
